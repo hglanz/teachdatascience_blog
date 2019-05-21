@@ -8,7 +8,7 @@ theme: cayman-hugo-theme
 googleAnalytics: UA-123456789-1
 
 # Disqus comments
-disqusShortname: yourdiscussshortname
+disqusShortname: teachdatascience-com
 
 # Syntax highlighting
 pygmentsCodefences: true
