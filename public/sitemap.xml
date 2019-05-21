@@ -3,179 +3,179 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>teachdatascience.com/about/</loc>
+    <loc>https://teachdatascience.com/about/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/</loc>
+    <loc>https://teachdatascience.com/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/cayman-typography/</loc>
+    <loc>https://teachdatascience.com/cayman-typography/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/post/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>teachdatascience.com/tags/</loc>
+    <loc>https://teachdatascience.com/post/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/markdown/</loc>
+    <loc>https://teachdatascience.com/tags/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/typography/</loc>
+    <loc>https://teachdatascience.com/tags/markdown/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/katex-math-typesetting/</loc>
+    <loc>https://teachdatascience.com/tags/typography/</loc>
+    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/katex-math-typesetting/</loc>
     <lastmod>2019-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/hugo/</loc>
-    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>teachdatascience.com/tags/katex/</loc>
+    <loc>https://teachdatascience.com/tags/hugo/</loc>
     <lastmod>2019-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/math/</loc>
+    <loc>https://teachdatascience.com/tags/katex/</loc>
     <lastmod>2019-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/typesetting/</loc>
+    <loc>https://teachdatascience.com/tags/math/</loc>
     <lastmod>2019-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/nasa-images/</loc>
+    <loc>https://teachdatascience.com/tags/typesetting/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/nasa-images/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/earth/</loc>
+    <loc>https://teachdatascience.com/tags/earth/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/figure/</loc>
+    <loc>https://teachdatascience.com/tags/figure/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/moon/</loc>
+    <loc>https://teachdatascience.com/tags/moon/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/nasa/</loc>
+    <loc>https://teachdatascience.com/tags/nasa/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/shortcodes/</loc>
+    <loc>https://teachdatascience.com/tags/shortcodes/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/sun/</loc>
+    <loc>https://teachdatascience.com/tags/sun/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://teachdatascience.com/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>teachdatascience.com/tags/plot/</loc>
+    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/regression/</loc>
+    <loc>https://teachdatascience.com/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/hugo-template-primer/</loc>
+    <loc>https://teachdatascience.com/tags/regression/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/hugo-template-primer/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/development/</loc>
+    <loc>https://teachdatascience.com/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/go/</loc>
+    <loc>https://teachdatascience.com/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/golang/</loc>
+    <loc>https://teachdatascience.com/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/templates/</loc>
+    <loc>https://teachdatascience.com/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/themes/</loc>
+    <loc>https://teachdatascience.com/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>teachdatascience.com/migrate-from-jekyll/</loc>
+    <loc>https://teachdatascience.com/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>teachdatascience.com/tags/jekyll/</loc>
+    <loc>https://teachdatascience.com/tags/jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

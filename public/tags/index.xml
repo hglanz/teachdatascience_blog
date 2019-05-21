@@ -2,201 +2,201 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cayman</title>
-    <link>teachdatascience.com/tags/</link>
+    <link>https://teachdatascience.com/tags/</link>
     <description>Recent content in Tags on Cayman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>markdown</title>
-      <link>teachdatascience.com/tags/markdown/</link>
+      <link>https://teachdatascience.com/tags/markdown/</link>
       <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/markdown/</guid>
+      <guid>https://teachdatascience.com/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>typography</title>
-      <link>teachdatascience.com/tags/typography/</link>
+      <link>https://teachdatascience.com/tags/typography/</link>
       <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/typography/</guid>
+      <guid>https://teachdatascience.com/tags/typography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>teachdatascience.com/tags/hugo/</link>
+      <link>https://teachdatascience.com/tags/hugo/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/hugo/</guid>
+      <guid>https://teachdatascience.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>katex</title>
-      <link>teachdatascience.com/tags/katex/</link>
+      <link>https://teachdatascience.com/tags/katex/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/katex/</guid>
+      <guid>https://teachdatascience.com/tags/katex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>math</title>
-      <link>teachdatascience.com/tags/math/</link>
+      <link>https://teachdatascience.com/tags/math/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/math/</guid>
+      <guid>https://teachdatascience.com/tags/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>typesetting</title>
-      <link>teachdatascience.com/tags/typesetting/</link>
+      <link>https://teachdatascience.com/tags/typesetting/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/typesetting/</guid>
+      <guid>https://teachdatascience.com/tags/typesetting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>earth</title>
-      <link>teachdatascience.com/tags/earth/</link>
+      <link>https://teachdatascience.com/tags/earth/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/earth/</guid>
+      <guid>https://teachdatascience.com/tags/earth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>figure</title>
-      <link>teachdatascience.com/tags/figure/</link>
+      <link>https://teachdatascience.com/tags/figure/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/figure/</guid>
+      <guid>https://teachdatascience.com/tags/figure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>moon</title>
-      <link>teachdatascience.com/tags/moon/</link>
+      <link>https://teachdatascience.com/tags/moon/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/moon/</guid>
+      <guid>https://teachdatascience.com/tags/moon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nasa</title>
-      <link>teachdatascience.com/tags/nasa/</link>
+      <link>https://teachdatascience.com/tags/nasa/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/nasa/</guid>
+      <guid>https://teachdatascience.com/tags/nasa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>teachdatascience.com/tags/shortcodes/</link>
+      <link>https://teachdatascience.com/tags/shortcodes/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/shortcodes/</guid>
+      <guid>https://teachdatascience.com/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sun</title>
-      <link>teachdatascience.com/tags/sun/</link>
+      <link>https://teachdatascience.com/tags/sun/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/sun/</guid>
+      <guid>https://teachdatascience.com/tags/sun/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>teachdatascience.com/tags/r-markdown/</link>
+      <link>https://teachdatascience.com/tags/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>teachdatascience.com/tags/r-markdown/</guid>
+      <guid>https://teachdatascience.com/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>plot</title>
-      <link>teachdatascience.com/tags/plot/</link>
+      <link>https://teachdatascience.com/tags/plot/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>teachdatascience.com/tags/plot/</guid>
+      <guid>https://teachdatascience.com/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>teachdatascience.com/tags/regression/</link>
+      <link>https://teachdatascience.com/tags/regression/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>teachdatascience.com/tags/regression/</guid>
+      <guid>https://teachdatascience.com/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>teachdatascience.com/tags/development/</link>
+      <link>https://teachdatascience.com/tags/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/development/</guid>
+      <guid>https://teachdatascience.com/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>teachdatascience.com/tags/go/</link>
+      <link>https://teachdatascience.com/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/go/</guid>
+      <guid>https://teachdatascience.com/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>teachdatascience.com/tags/golang/</link>
+      <link>https://teachdatascience.com/tags/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/golang/</guid>
+      <guid>https://teachdatascience.com/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>templates</title>
-      <link>teachdatascience.com/tags/templates/</link>
+      <link>https://teachdatascience.com/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/templates/</guid>
+      <guid>https://teachdatascience.com/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>teachdatascience.com/tags/themes/</link>
+      <link>https://teachdatascience.com/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/themes/</guid>
+      <guid>https://teachdatascience.com/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jekyll</title>
-      <link>teachdatascience.com/tags/jekyll/</link>
+      <link>https://teachdatascience.com/tags/jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>teachdatascience.com/tags/jekyll/</guid>
+      <guid>https://teachdatascience.com/tags/jekyll/</guid>
       <description></description>
     </item>
     
