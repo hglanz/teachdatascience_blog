@@ -1,7 +1,7 @@
 baseURL: https://teachdatascience.com/
 languageCode: en-us
 defaultContentLanguage: en
-title: Cayman
+title: Teach Data Science
 theme: cayman-hugo-theme
 
 # Google analytics
@@ -22,8 +22,8 @@ permalinks:
 
 params:
   # Header text, can be markdown
-  project_name: Cayman Hugo Theme
-  project_tagline: A clean, responsive Hugo theme, ported from the original Jekyll Cayman theme
+  project_name: Teach Data Science
+  project_tagline: A guide to the current state of data science education
 
   # Date format for post list and single pages
   # For more date formats see https://gohugo.io/functions/format/
