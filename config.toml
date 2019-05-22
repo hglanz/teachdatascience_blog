@@ -23,14 +23,14 @@ pygmentsStyle = "pygments"
 [params]
   # Header text, can be markdown
   project_name = "Teach Data Science"
-  project_tagline = "A guide to the current state of data science education"
+  project_tagline = "A roadmap to recent developments in teaching data science"
 
   # Date format for post list and single pages
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "2006-01-02"
 
   # Footer text, can be markdown
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/). Designed and written in California and Massachusetts"
 
   # If true, the CSS/JS for Katex math typesetting are enabled
   katex = true
