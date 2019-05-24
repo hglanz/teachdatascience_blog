@@ -13,7 +13,7 @@ Each day during the summer we intend to add a new entry on a given topic, along 
 
 There is definitely an art to googling well that not everyone (including the three of us) can master. The data science field is also moving quickly, so answers from useful sites such as [StackOverflow](https://stackoverflow.com) may be quickly out of date.  Our ambition is that by reading the short overview entries, a variety of instructors will take the opportunity to learn more about the exciting developments in data science and statistics.  
 
-To get started we plan to blog daily this summer starting on Tuesday, May 28th.  We hope that you bookmark the site and check in regularly.  Want a reminder?  Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+To get started we plan to blog daily during summer 2019 starting on Tuesday, May 28th.  We hope that you bookmark the site and check in regularly.  Want a reminder?  Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
 
 ##  What topics will the blog cover?
 

@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 21 May 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://pensive-bartik-e3e658.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Studio</title>
+      <link>https://pensive-bartik-e3e658.netlify.com/tags/r-studio/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://pensive-bartik-e3e658.netlify.com/tags/r-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://pensive-bartik-e3e658.netlify.com/tags/education/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://pensive-bartik-e3e658.netlify.com/tags/education/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
