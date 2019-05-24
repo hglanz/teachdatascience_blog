@@ -1,4 +1,4 @@
-baseURL = "https://teachdatascience.com/"
+baseURL = "https://pensive-bartik-e3e658.netlify.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Teach Data Science"
@@ -8,7 +8,7 @@ theme = "cayman-hugo-theme"
 googleAnalytics = "UA-123456789-1"
 
 # Disqus comments
-disqusShortname = "teachdatascience-com"
+disqusShortname = "https-pensive-bartik-e3e658-netlify-com-1"
 
 # Syntax highlighting
 pygmentsCodefences = true
@@ -30,7 +30,7 @@ pygmentsStyle = "pygments"
   dateFormat = "2006-01-02"
 
   # Footer text, can be markdown
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/). Designed and written in California and Massachusetts"
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/). Designed and written in California and Massachusetts."
 
   # If true, the CSS/JS for Katex math typesetting are enabled
   katex = true
