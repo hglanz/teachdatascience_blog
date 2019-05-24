@@ -3,18 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://teachdatascience.com/about/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <loc>https://pensive-bartik-e3e658.netlify.com/</loc>
+    <lastmod>2019-05-22T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <loc>https://pensive-bartik-e3e658.netlify.com/intro/</loc>
+    <lastmod>2019-05-22T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/</loc>
+    <loc>https://pensive-bartik-e3e658.netlify.com/post/</loc>
+    <lastmod>2019-05-22T21:13:14-05:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pensive-bartik-e3e658.netlify.com/tags/r-studio/</loc>
+    <lastmod>2019-05-22T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pensive-bartik-e3e658.netlify.com/tags/</loc>
+    <lastmod>2019-05-22T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pensive-bartik-e3e658.netlify.com/tags/education/</loc>
+    <lastmod>2019-05-22T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pensive-bartik-e3e658.netlify.com/about/</loc>
+    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
