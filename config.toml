@@ -1,4 +1,4 @@
-baseURL = "https://pensive-bartik-e3e658.netlify.com/"
+baseURL = "https://teachdatascience.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Teach Data Science"
@@ -8,7 +8,7 @@ theme = "cayman-hugo-theme"
 googleAnalytics = "UA-123456789-1"
 
 # Disqus comments
-disqusShortname = "https-pensive-bartik-e3e658-netlify-com-1"
+disqusShortname = "teachdatascience-com"
 
 # Syntax highlighting
 pygmentsCodefences = true
