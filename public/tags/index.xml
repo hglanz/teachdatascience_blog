@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 May 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>R Markdown</title>
       <link>https://teachdatascience.com/tags/r-markdown/</link>
-      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
+      <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wrangling</title>
+      <link>https://teachdatascience.com/tags/wrangling/</link>
+      <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/wrangling/</guid>
       <description></description>
     </item>
     
