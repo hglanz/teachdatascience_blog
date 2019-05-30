@@ -6,10 +6,20 @@
     <description>Recent content in Blog on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting Started With R Markdown</title>
+      <link>https://teachdatascience.com/rmarkdown/</link>
+      <pubDate>Wed, 29 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/rmarkdown/</guid>
+      <description>What is R Markdown?Straight from RStudio’s wonderful tutorial, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
+By including data work, code, and analysis narrative into a single document, R Markdown provides a fully reproducible vehicle for data science projects!</description>
+    </item>
     
     <item>
       <title>Ingesting Data</title>

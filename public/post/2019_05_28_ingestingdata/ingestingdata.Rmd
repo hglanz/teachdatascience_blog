@@ -158,6 +158,8 @@ lm(diffLit~year, data=literacy) %>% tidy()
 
 * Hardin, J. *Dynamic Data in the Statistics Classroom*, **TISE 11(1)**, 2018: https://escholarship.org/uc/item/13g5g3dm
 
+* R Markdown file for this blog post [here](https://github.com/hglanz/teachdatascience_blog/blob/master/content/post/2019_05_28_ingestingdata/ingestingdata.Rmd)
+
 
 ### About this blog 
 
