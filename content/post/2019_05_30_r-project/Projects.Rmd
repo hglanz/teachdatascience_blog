@@ -7,7 +7,8 @@ output:
     df_print: paged
 tags:
 - R Markdown
-- R Projects
+- workflow
+- reproducibility
 categories: R
 ---
 
@@ -47,7 +48,7 @@ organize files and datasets.
 
 Generally, the working directory is the place where R looks for files (most importantly, **data files**).  If you aren't using a project, you will likely need to `setwd` in your RMarkdown or R script file before running your R code.  However, if you send your code to someone else, then (a) they need to change the filepath that you set to a local place on your own computer, (b) you have to remember to send the exact data file.   We strongly discourage **ever** using the `setwd` command.
 
-An alternative to `setwd` to a local path on your own computer is to keep the data in a specified place within your Project so that you can pass the entire project to your collaborator (ideally using collaborative software like Git).
+An alternative to `setwd()` to a local path on your own computer is to keep the data in a specified place within your Project so that you can pass the entire project to your collaborator (ideally using collaborative software like Git).
 
 Below is the file structure from the R package `lubridate` (taken from downloading the package code from GitHub).  The file `lubridate.Rproj` keeps track of where all the other files reside.  Data live in the `data` folder, R code lives in the `R` folder, etc.  When opening `lubridate.Rpoj` within RStudio, the script files will automatically be directed to the appropriate working directories within the `lubridate` Project.
 
