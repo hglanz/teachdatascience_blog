@@ -4,12 +4,53 @@
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-05-30T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-05-30T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tidyverse/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/data-wrangling/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/tidyverse/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/visualization/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/workflow/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -19,19 +60,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
-    <lastmod>2019-05-30T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/r-projects/</loc>
-    <lastmod>2019-05-30T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/</loc>
     <lastmod>2019-05-30T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -39,12 +68,6 @@
   <url>
     <loc>https://teachdatascience.com/rmarkdown/</loc>
     <lastmod>2019-05-29T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/workflow/</loc>
-    <lastmod>2019-05-29T21:13:14-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
