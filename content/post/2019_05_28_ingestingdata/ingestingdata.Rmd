@@ -7,7 +7,8 @@ output:
     df_print: paged
 tags:
 - R Markdown
-- wrangling
+- data wrangling
+- data ingestation
 categories: R
 ---
 
