@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jun 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 03 Jun 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,45 @@
     <item>
       <title>R Markdown</title>
       <link>https://teachdatascience.com/tags/r-markdown/</link>
-      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>https://teachdatascience.com/tags/tidyverse/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualization</title>
+      <link>https://teachdatascience.com/tags/visualization/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://teachdatascience.com/tags/workflow/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wrangling</title>
+      <link>https://teachdatascience.com/tags/wrangling/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/wrangling/</guid>
       <description></description>
     </item>
     
@@ -30,65 +66,47 @@
     </item>
     
     <item>
-      <title>tidyverse</title>
-      <link>https://teachdatascience.com/tags/tidyverse/</link>
-      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/tidyverse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visualization</title>
-      <link>https://teachdatascience.com/tags/visualization/</link>
-      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>workflow</title>
-      <link>https://teachdatascience.com/tags/workflow/</link>
-      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/workflow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Projects</title>
-      <link>https://teachdatascience.com/tags/r-projects/</link>
+      <title>reproducibility</title>
+      <link>https://teachdatascience.com/tags/reproducibility/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/r-projects/</guid>
+      <guid>https://teachdatascience.com/tags/reproducibility/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>wrangling</title>
-      <link>https://teachdatascience.com/tags/wrangling/</link>
+      <title>communication</title>
+      <link>https://teachdatascience.com/tags/communication/</link>
+      <pubDate>Wed, 29 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data ingestation</title>
+      <link>https://teachdatascience.com/tags/data-ingestation/</link>
       <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/wrangling/</guid>
+      <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>plot</title>
-      <link>https://teachdatascience.com/tags/plot/</link>
+      <title>data technologies</title>
+      <link>https://teachdatascience.com/tags/data-technologies/</link>
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/plot/</guid>
+      <guid>https://teachdatascience.com/tags/data-technologies/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>regression</title>
-      <link>https://teachdatascience.com/tags/regression/</link>
+      <title>reports</title>
+      <link>https://teachdatascience.com/tags/reports/</link>
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/regression/</guid>
+      <guid>https://teachdatascience.com/tags/reports/</guid>
       <description></description>
     </item>
     

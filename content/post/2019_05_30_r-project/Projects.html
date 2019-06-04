@@ -7,7 +7,8 @@ output:
     df_print: paged
 tags:
 - R Markdown
-- R Projects
+- workflow
+- reproducibility
 categories: R
 ---
 
@@ -38,7 +39,7 @@ categories: R
 <div id="keeping-track-of-data" class="section level3">
 <h3>Keeping track of data</h3>
 <p>Generally, the working directory is the place where R looks for files (most importantly, <strong>data files</strong>). If you aren’t using a project, you will likely need to <code>setwd</code> in your RMarkdown or R script file before running your R code. However, if you send your code to someone else, then (a) they need to change the filepath that you set to a local place on your own computer, (b) you have to remember to send the exact data file. We strongly discourage <strong>ever</strong> using the <code>setwd</code> command.</p>
-<p>An alternative to <code>setwd</code> to a local path on your own computer is to keep the data in a specified place within your Project so that you can pass the entire project to your collaborator (ideally using collaborative software like Git).</p>
+<p>An alternative to <code>setwd()</code> to a local path on your own computer is to keep the data in a specified place within your Project so that you can pass the entire project to your collaborator (ideally using collaborative software like Git).</p>
 <p>Below is the file structure from the R package <code>lubridate</code> (taken from downloading the package code from GitHub). The file <code>lubridate.Rproj</code> keeps track of where all the other files reside. Data live in the <code>data</code> folder, R code lives in the <code>R</code> folder, etc. When opening <code>lubridate.Rpoj</code> within RStudio, the script files will automatically be directed to the appropriate working directories within the <code>lubridate</code> Project.</p>
 <p><img alt = 'Project File Structure' width='400' src='/post/r-project/Proj3screenshot.png' /></p>
 </div>

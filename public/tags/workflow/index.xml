@@ -6,10 +6,20 @@
     <description>Recent content in workflow on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jun 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 03 Jun 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Watching an expert work through a data analysis using the tidyverse</title>
+      <link>https://teachdatascience.com/2019-05-07-hadley-screencast/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/2019-05-07-hadley-screencast/</guid>
+      <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
+We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
+    </item>
     
     <item>
       <title>The Tidyverse</title>
@@ -18,6 +28,16 @@
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
       <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+    </item>
+    
+    <item>
+      <title>Projects in RStudio</title>
+      <link>https://teachdatascience.com/projects/</link>
+      <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/projects/</guid>
+      <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
+Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
     <item>

@@ -6,18 +6,19 @@
     <description>Recent content in wrangling on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 03 Jun 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/wrangling/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ingesting Data</title>
-      <link>https://teachdatascience.com/ingestingdata/</link>
-      <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
+      <title>Watching an expert work through a data analysis using the tidyverse</title>
+      <link>https://teachdatascience.com/2019-05-07-hadley-screencast/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/ingestingdata/</guid>
-      <description>Why use data from outside sources?The world is awash in data, and whatever else we teach in a data science curriculum, data must be at the center. Calls to modernize statistics and data science courses regularly point to using “real” data. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem/) reports Data Management &amp;amp; Curation as a core part of data acumen. Indeed, they recognize data provenance to be a key skill which is “important for all students in [a] data science program.</description>
+      <guid>https://teachdatascience.com/2019-05-07-hadley-screencast/</guid>
+      <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
+We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
     </item>
     
   </channel>
