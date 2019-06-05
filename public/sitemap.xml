@@ -4,23 +4,40 @@
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-06-03T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/nssd/</loc>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-06-03T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
-    <lastmod>2019-06-03T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/entertainment/</loc>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/podcast/</loc>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
     <lastmod>2019-06-03T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>

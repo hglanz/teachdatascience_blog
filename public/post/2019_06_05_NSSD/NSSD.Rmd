@@ -1,7 +1,7 @@
 ---
 title: "Not So Standard Deviations: not your average data science podcast"
 author: "Jo Hardin"
-date: '2019-06-05T21:13:14-05:00'
+date: '2019-06-04T21:13:14-05:00'
 output:
   html_document:
     df_print: paged

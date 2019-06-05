@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jun 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>entertainment</title>
+      <link>https://teachdatascience.com/tags/entertainment/</link>
+      <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/entertainment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podcast</title>
+      <link>https://teachdatascience.com/tags/podcast/</link>
+      <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/podcast/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R Markdown</title>

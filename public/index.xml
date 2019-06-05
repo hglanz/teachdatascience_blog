@@ -6,10 +6,20 @@
     <description>Recent content in Blog on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jun 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Not So Standard Deviations: not your average data science podcast</title>
+      <link>https://teachdatascience.com/nssd/</link>
+      <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/nssd/</guid>
+      <description>As an instructor teaching data, it is often difficult to explain the world the students will be joining (industry) given the experiences of the instructor (academia). One way to bridge the two worlds is to peek into the world of data science outside of academia and then tell your students about it.
+Hilary Parker and Roger Peng’s podcast, Not So Standard Deviations provides glimpses into data science challenges, obstacles, opportunities, and solutions in the real world.</description>
+    </item>
     
     <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
