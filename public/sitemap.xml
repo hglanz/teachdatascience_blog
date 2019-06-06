@@ -4,24 +4,65 @@
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nssd/</loc>
-    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+    <loc>https://teachdatascience.com/gaise/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/simpsons-paradox/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/multivariate-thinking/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/regression/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/report/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/visualization/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/nssd/</loc>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -37,24 +78,18 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
-    <lastmod>2019-06-03T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/screencast/</loc>
     <lastmod>2019-06-03T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/tidyverse/</loc>
+    <loc>https://teachdatascience.com/tags/data-wrangling/</loc>
     <lastmod>2019-06-03T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/visualization/</loc>
+    <loc>https://teachdatascience.com/tags/tidyverse/</loc>
     <lastmod>2019-06-03T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -66,20 +101,8 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/wrangling/</loc>
-    <lastmod>2019-06-03T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tidyverse/</loc>
     <lastmod>2019-06-02T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/data-wrangling/</loc>
-    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
