@@ -11,7 +11,7 @@ tags:
 - multivariate thinking
 - Simpson's paradox
 - regression
-- report
+- reports
 categories: R
 ---
 
@@ -54,8 +54,8 @@ library(tidyverse)
 ```
 
 ```{r}
-ds <- mdsr::SAT_2010
-ggplot(ds, aes(x = salary, y = total)) + stat_smooth(method = lm) + 
+sat <- mdsr::SAT_2010
+ggplot(sat, aes(x = salary, y = total)) + stat_smooth(method = lm) + 
   geom_point()
 ```
 
@@ -65,8 +65,8 @@ The GAISE College report writes:
 
 > But the real story is hidden behind one of the "other factors" that we warn students about but do not generally teach how to address! The proportion of students taking the SAT varies dramatically between states, as do teacher salaries. In the Midwest and Plains states, where teacher salaries tend to be lower, relatively few high school students take the SAT. Those that do are typically the top students who are planning to attend college out of state, while many others take the alternative standardized ACT test that is required for their state. For each of the three groups of states defined by the fraction taking the SAT, the association is non-negative. The net result is that the fraction taking the SAT is a confounding factor.
 
-```{r}
-ds <- ds %>%
+```{r warning = FALSE}
+sat <- sat %>%
   mutate(
     fracgrp = cut(sat_pct, 
       breaks = c(0, 30, 60, 94), 
@@ -76,16 +76,16 @@ ds <- ds %>%
 ```
 
 ```{r}
-ggplot(ds, aes(x = salary, y = total, colour = fracgrp)) + 
+ggplot(sat, aes(x = salary, y = total, colour = fracgrp)) + 
   stat_smooth(method = lm) + geom_point()
 ```
 
 By stratifying (a simple process achieved with the `ggplot()` function using the `colour` aesthetic) we can start to disentangle the complex and interesting set of relationships seen with the SAT data.  We may take a step back and start to explore each of the three pairwise relationships.
 
 ```{r}
-dssmall <- ds %>% 
+satsmall <- sat %>% 
   select(salary, total, sat_pct)
-GGally::ggpairs(dssmall)
+GGally::ggpairs(satsmall)
 ```
 
 Here we see strong bivariate relationships and evidence of confounding.
@@ -93,8 +93,8 @@ Here we see strong bivariate relationships and evidence of confounding.
 We can also fit regression models to explore the relationships:
 
 ```{r}
-coef(lm(salary ~ total, data = ds))
-coef(lm(salary ~ total + sat_pct, data = ds))
+coef(lm(salary ~ total, data = sat))
+coef(lm(salary ~ total + sat_pct, data = sat))
 ```
 
 The sign of the coefficient for total SAT score has flipped which is described by [Simpson's Paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox).

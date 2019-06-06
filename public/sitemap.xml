@@ -49,7 +49,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/report/</loc>
+    <loc>https://teachdatascience.com/tags/reports/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -111,6 +111,12 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/tags/collaboration/</loc>
+    <lastmod>2019-05-30T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/reproducibility/</loc>
     <lastmod>2019-05-30T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -145,12 +151,6 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/data-technologies/</loc>
-    <lastmod>2019-05-27T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/reports/</loc>
     <lastmod>2019-05-27T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>

@@ -11,13 +11,14 @@ tags:
 - multivariate thinking
 - Simpson's paradox
 - regression
-- report
+- reports
 categories: R
 ---
 
 
 
-<p>The <a href="https://www.amstat.org">American Statistical Association</a> has placed a priority on how best to <em>teach</em> statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) <a href="https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx">reports</a> have served a key role in guiding instructors and institutions in their pedagogical choices.</p>
+<p>The <a href="https://www.amstat.org">American Statistical Association</a> has placed
+a priority on how best to <em>teach</em> statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) <a href="https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx">reports</a> have served a key role in guiding instructors and institutions in their pedagogical choices.</p>
 <p>Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</p>
 <p>The key findings from the report remain consistent from the original GAISE report:</p>
 <ol style="list-style-type: decimal">
@@ -49,8 +50,8 @@ categories: R
 <h2>Implementing the GAISE recommendations using R</h2>
 <p>What does this mean for instructors? For me it has caused me to ensure that my students engage almost immediately with technology to start to explore multivariate relationships. Here’s an example in R (taken from the appendix of the revised college report) that explores the relationship between teacher salaries (in thousands of dollars) and SAT scores (a high-stakes college entrance exam) at the state level from the year 2010.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre class="r"><code>ds &lt;- mdsr::SAT_2010
-ggplot(ds, aes(x = salary, y = total)) + stat_smooth(method = lm) + 
+<pre class="r"><code>sat &lt;- mdsr::SAT_2010
+ggplot(sat, aes(x = salary, y = total)) + stat_smooth(method = lm) + 
   geom_point()</code></pre>
 <p><img src="/post/2019_06_06_GAISE/gaise_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>We see that there is a strong negative association between the explanatory and response variables. Should we conclude that reducing teacher salary is the best way to increase SAT scores? Not at all, it turns out, due to the role of a third variable.</p>
@@ -58,28 +59,30 @@ ggplot(ds, aes(x = salary, y = total)) + stat_smooth(method = lm) +
 <blockquote>
 <p>But the real story is hidden behind one of the “other factors” that we warn students about but do not generally teach how to address! The proportion of students taking the SAT varies dramatically between states, as do teacher salaries. In the Midwest and Plains states, where teacher salaries tend to be lower, relatively few high school students take the SAT. Those that do are typically the top students who are planning to attend college out of state, while many others take the alternative standardized ACT test that is required for their state. For each of the three groups of states defined by the fraction taking the SAT, the association is non-negative. The net result is that the fraction taking the SAT is a confounding factor.</p>
 </blockquote>
-<pre class="r"><code>ds &lt;- ds %&gt;%
+<pre class="r"><code>sat &lt;- sat %&gt;%
   mutate(
     fracgrp = cut(sat_pct, 
       breaks = c(0, 30, 60, 94), 
       labels = c(&quot;low fraction&quot;, &quot;medium fraction&quot;, &quot;high fraction&quot;)
     )
-  )
-## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4</code></pre>
-<pre class="r"><code>ggplot(ds, aes(x = salary, y = total, colour = fracgrp)) + 
+  )</code></pre>
+<pre class="r"><code>ggplot(sat, aes(x = salary, y = total, colour = fracgrp)) + 
   stat_smooth(method = lm) + geom_point()</code></pre>
 <p><img src="/post/2019_06_06_GAISE/gaise_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>By stratifying (a simple process achieved with the <code>ggplot()</code> function using the <code>colour</code> aesthetic) we can start to disentangle the complex and interesting set of relationships seen with the SAT data. We may take a step back and start to explore each of the three pairwise relationships.</p>
-<pre class="r"><code>dssmall &lt;- ds %&gt;% 
+<pre class="r"><code>satsmall &lt;- sat %&gt;% 
   select(salary, total, sat_pct)
-GGally::ggpairs(dssmall)</code></pre>
+GGally::ggpairs(satsmall)
+## Registered S3 method overwritten by &#39;GGally&#39;:
+##   method from   
+##   +.gg   ggplot2</code></pre>
 <p><img src="/post/2019_06_06_GAISE/gaise_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>Here we see strong bivariate relationships and evidence of confounding.</p>
 <p>We can also fit regression models to explore the relationships:</p>
-<pre class="r"><code>coef(lm(salary ~ total, data = ds))
+<pre class="r"><code>coef(lm(salary ~ total, data = sat))
 ## (Intercept)       total 
 ## 90108.48337   -22.16604
-coef(lm(salary ~ total + sat_pct, data = ds))
+coef(lm(salary ~ total + sat_pct, data = sat))
 ##  (Intercept)        total      sat_pct 
 ## -15926.04951     38.22782    249.69211</code></pre>
 <p>The sign of the coefficient for total SAT score has flipped which is described by <a href="https://en.wikipedia.org/wiki/Simpson%27s_paradox">Simpson’s Paradox</a>.</p>

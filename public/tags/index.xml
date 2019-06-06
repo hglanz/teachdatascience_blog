@@ -48,11 +48,11 @@
     </item>
     
     <item>
-      <title>report</title>
-      <link>https://teachdatascience.com/tags/report/</link>
+      <title>reports</title>
+      <link>https://teachdatascience.com/tags/reports/</link>
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/report/</guid>
+      <guid>https://teachdatascience.com/tags/reports/</guid>
       <description></description>
     </item>
     
@@ -111,6 +111,15 @@
     </item>
     
     <item>
+      <title>collaboration</title>
+      <link>https://teachdatascience.com/tags/collaboration/</link>
+      <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/collaboration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>reproducibility</title>
       <link>https://teachdatascience.com/tags/reproducibility/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
@@ -143,15 +152,6 @@
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-technologies/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reports</title>
-      <link>https://teachdatascience.com/tags/reports/</link>
-      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/reports/</guid>
       <description></description>
     </item>
     
