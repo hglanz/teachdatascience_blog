@@ -56,7 +56,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
-      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>
@@ -95,6 +95,15 @@ By including data work, code, and analysis narrative into a single document, R M
       
       <guid>https://teachdatascience.com/nasem/</guid>
       <description>Data Science for UndergraduatesAs the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
+    </item>
+    
+    <item>
+      <title>Data Science for Undergraduates</title>
+      <link>https://teachdatascience.com/nasem.knit/</link>
+      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/nasem.knit/</guid>
+      <description>Data Science for Undergraduates As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report &amp;ldquo;Data Science for Undergraduates: Opportunities and Options&amp;rdquo;. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     
     <item>

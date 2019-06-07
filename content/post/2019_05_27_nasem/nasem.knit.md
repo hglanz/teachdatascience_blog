@@ -6,15 +6,12 @@ output:
   html_document:
     df_print: paged
 tags:
-- R Markdown
-- plot
-- regression
+- reports
+- data technologies
 categories: R
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
-```
+
 
 ### Data Science for Undergraduates
 
