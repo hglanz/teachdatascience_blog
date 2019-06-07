@@ -3,19 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://teachdatascience.com/diversity/</loc>
+    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/post/</loc>
+    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/</loc>
+    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/education/</loc>
+    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/gaise/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -26,12 +44,6 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/simpsons-paradox/</loc>
-    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -164,17 +176,6 @@
     <loc>https://teachdatascience.com/tags/r-studio/</loc>
     <lastmod>2019-05-21T21:13:14-05:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/education/</loc>
-    <lastmod>2019-05-21T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/about/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
