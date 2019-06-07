@@ -25,6 +25,14 @@ By including data work, code, and analysis narrative into a single document, R M
 
 In fact, most of this blog was produced using RStudio and R Markdown.
 
+To start a new R Markdown file, simply go to "File" (or the "New File" icon) in the upper left corner of RStudio and select "R Markdown".
+
+<center>
+
+![](/post/rmarkdown/NewRMarkdownFile.png)
+
+</center>
+
 
 ## Why Should You Use R Markdown?
 
