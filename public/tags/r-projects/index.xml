@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Projects on Teach Data Science</title>
+    <link>https://teachdatascience.com/tags/r-projects/</link>
+    <description>Recent content in R Projects on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Jun 2018 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="https://teachdatascience.com/tags/r-projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using GitHub in R</title>
+      <link>https://teachdatascience.com/githubinr/</link>
+      <pubDate>Tue, 12 Jun 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/githubinr/</guid>
+      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+Previous posts have described working with R Projects and working with GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>

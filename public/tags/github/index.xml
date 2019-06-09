@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Teach Data Science</title>
+    <link>https://teachdatascience.com/tags/github/</link>
+    <description>Recent content in GitHub on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jun 2018 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="https://teachdatascience.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Github Classroom</title>
+      <link>https://teachdatascience.com/gitclass/</link>
+      <pubDate>Wed, 13 Jun 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/gitclass/</guid>
+      <description>GitHub ClassroomIf you have been reading along in the blog, you’ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
+But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
+    </item>
+    
+    <item>
+      <title>Using GitHub in R</title>
+      <link>https://teachdatascience.com/githubinr/</link>
+      <pubDate>Tue, 12 Jun 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/githubinr/</guid>
+      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+Previous posts have described working with R Projects and working with GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>
