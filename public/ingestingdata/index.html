@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Hugo 0.55.5" />
+  <meta name="generator" content="Hugo 0.55.4" />
   <link rel="stylesheet" href="https://teachdatascience.com/css/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   
@@ -224,9 +224,11 @@ Figure 1: The plot shows that the higher the female literacy rate, the higher th
 <p>It might be interesting, however, to look at the relationship between literacy rates over time. To do that, we create a new variable which is the difference between male and female literacy rates.</p>
 <pre class="r"><code>literacy &lt;- literacy %&gt;% mutate(diffLit = litRateM - litRateF)
 lm(diffLit~year, data=literacy) %&gt;% tidy()
-##          term    estimate   std.error statistic      p.value
-## 1 (Intercept) 417.9034529 80.11740154  5.216138 2.563743e-07
-## 2        year  -0.2041913  0.04005828 -5.097356 4.697986e-07</code></pre>
+## # A tibble: 2 x 5
+##   term        estimate std.error statistic     p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;
+## 1 (Intercept)  418.      80.1         5.22 0.000000256
+## 2 year          -0.204    0.0401     -5.10 0.000000470</code></pre>
 <div id="learn-more" class="section level2">
 <h2>Learn more</h2>
 <ul>
