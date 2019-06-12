@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>collaboration</title>
+      <link>https://teachdatascience.com/tags/collaboration/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/collaboration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://teachdatascience.com/tags/github/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://teachdatascience.com/tags/workflow/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/workflow/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R Markdown</title>
@@ -129,29 +156,11 @@
     </item>
     
     <item>
-      <title>workflow</title>
-      <link>https://teachdatascience.com/tags/workflow/</link>
-      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/workflow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R Studio</title>
       <link>https://teachdatascience.com/tags/r-studio/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/r-studio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>collaboration</title>
-      <link>https://teachdatascience.com/tags/collaboration/</link>
-      <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/collaboration/</guid>
       <description></description>
     </item>
     

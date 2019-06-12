@@ -104,7 +104,8 @@
   
 
 
-<p>The <a href="https://www.amstat.org">American Statistical Association</a> has placed a priority on how best to <em>teach</em> statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) <a href="https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx">reports</a> have served a key role in guiding instructors and institutions in their pedagogical choices.</p>
+<p>The <a href="https://www.amstat.org">American Statistical Association</a> has placed
+a priority on how best to <em>teach</em> statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) <a href="https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx">reports</a> have served a key role in guiding instructors and institutions in their pedagogical choices.</p>
 <p>Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</p>
 <p>The key findings from the report remain consistent from the original GAISE report:</p>
 <ol style="list-style-type: decimal">
@@ -158,7 +159,10 @@ ggplot(sat, aes(x = salary, y = total)) + stat_smooth(method = lm) +
 <p>By stratifying (a simple process achieved with the <code>ggplot()</code> function using the <code>colour</code> aesthetic) we can start to disentangle the complex and interesting set of relationships seen with the SAT data. We may take a step back and start to explore each of the three pairwise relationships.</p>
 <pre class="r"><code>satsmall &lt;- sat %&gt;% 
   select(salary, total, sat_pct)
-GGally::ggpairs(satsmall)</code></pre>
+GGally::ggpairs(satsmall)
+## Registered S3 method overwritten by &#39;GGally&#39;:
+##   method from   
+##   +.gg   ggplot2</code></pre>
 <p><img src="/post/2019_06_06_GAISE/gaise_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>Here we see strong bivariate relationships and evidence of confounding.</p>
 <p>We can also fit regression models to explore the relationships:</p>
