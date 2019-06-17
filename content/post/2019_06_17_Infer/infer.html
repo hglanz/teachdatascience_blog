@@ -1,0 +1,88 @@
+---
+title: "infer"
+author: "Jo Hardin"
+date: '2019-06-16'
+output:
+  html_document:
+    df_print: paged
+tags:
+- tidyverse
+- statistical inference
+- education
+categories: R
+---
+
+
+
+<p>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis. Sometimes the process of hypothesis testing is taught as a series of different test procedures (depending on the data structure and research hypothesis), and sometimes it is taught in a uniform framework. The <code>infer</code> package works to help students understand the creation of a sampling distribution under some model, likely the null model.</p>
+<p>Among countless applications of statistical inference in the natural sciences and social sciences, one place that inference plays an important role in the technology field is in A/B testing. Teaching statistical inference (particularly when using the tidy pipeline provided by <code>infer</code>) will help students grok sampling distributions, inference, and p-values. The deep understanding will benefit students when they move from the two-sample setting to more complex models like multivariate linear or generalized linear models.</p>
+<div id="tidy-statistical-inference" class="section level3">
+<h3>Tidy statistical inference</h3>
+<p>Many statistics educators may have recognized the value in teaching the <code>tidyverse</code> and providing students a fluency with data wrangling. However, they may also have felt a disconnect between the computational tools for tidy data wrangling and the (often) central inferential ideas being taught in an introductory statistics course. That is, the majority of R inferential tests (e.g., <code>t.test</code>, <code>chisq.test</code>, etc.) do not play nicely with the tidyverse.</p>
+<p>To connect the the tidyverse with the central inferential ideas from introductory statistics, <a href="http://andrewpbray.github.io/">Andrew Bray</a> and <a href="http://ismayc.github.io/">Chester Ismay</a> have built the R package <code>infer</code>. Along with creating syntax that flows seamlessly through a tidy pipeline, the brilliance of the <code>infer</code> package is that it breaks hypothesis testing down into its <strong>tidy components</strong>! That is, virtually all hypothesis testing (and certainly that which is taught in Introductory Statistics) can be broken town into the following <code>infer</code> verbs:</p>
+<ul>
+<li><code>specify()</code> the variables of interest</li>
+<li><code>hypothesize()</code> about a null claim (or don’t if you plan to create an interval)</li>
+<li><code>generate()</code> observations from the null hypothesis or from the data set (e.g., using bootstrapping) if there is no null hypothesis</li>
+<li><code>calculate()</code> a test statistic</li>
+<li><code>visualize()</code> the test statistics from the null distribution as compared with the observed test statistic</li>
+</ul>
+<center>
+<img width='800' src='/post/2019_06_17_Infer/inferverbs.png' />
+</center>
+</div>
+<div id="using-infer" class="section level3">
+<h3>Using <code>infer</code></h3>
+<p>The example below is from one of the <code>infer</code> <a href="https://cran.r-project.org/web/packages/infer/vignettes/mtcars_examples.html">vignettes</a> and walks the student through a two sample difference in proportions test. Note that the <em>structure</em> of the R code forces the student to think carefully about each step in the process.</p>
+<pre class="r"><code>library(infer)
+library(dplyr)
+mtcars &lt;- mtcars %&gt;%
+  mutate(vs = factor(vs),
+         am = factor(am))
+# For reproducibility         
+set.seed(4747)   
+
+cars2props &lt;- mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;% # alt: response = am, explanatory = vs
+  hypothesize(null = &quot;independence&quot;) %&gt;%
+  generate(reps = 100, type = &quot;permute&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;)) %&gt;%
+  visualize(method = &quot;both&quot;)
+cars2props</code></pre>
+<p><img src="/post/2019_06_17_Infer/infer_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The p-value calculation can be done with the <code>get_p_value</code> function. Or alternatively, the observed statistic can be calculated using the same pipeline steps (no <code>hypothesize</code> or <code>generate</code>!) and can be visualized on top of the sampling distribution created above.</p>
+<pre class="r"><code>obs_stat &lt;- mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;))
+obs_stat
+## # A tibble: 1 x 1
+##     stat
+##    &lt;dbl&gt;
+## 1 -0.952
+
+mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;% # alt: response = am, explanatory = vs
+  hypothesize(null = &quot;independence&quot;) %&gt;%
+  generate(reps = 100, type = &quot;permute&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;)) %&gt;%
+  get_p_value(obs_stat, direction = &quot;both&quot;)
+## # A tibble: 1 x 1
+##   p_value
+##     &lt;dbl&gt;
+## 1     0.5
+
+cars2props + shade_p_value(obs_stat, direction = &quot;both&quot;)</code></pre>
+<p><img src="/post/2019_06_17_Infer/infer_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><code>infer</code> R package: <a href="https://infer.netlify.com/" class="uri">https://infer.netlify.com/</a></li>
+<li>Andrew Bray’s <code>infer</code> talk at rstudio::conf 2018: <a href="https://resources.rstudio.com/rstudio-conf-2018/infer-a-package-for-tidy-statistical-inference-andrew-bray" class="uri">https://resources.rstudio.com/rstudio-conf-2018/infer-a-package-for-tidy-statistical-inference-andrew-bray</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>

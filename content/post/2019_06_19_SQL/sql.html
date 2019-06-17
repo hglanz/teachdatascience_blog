@@ -1,0 +1,279 @@
+---
+title: "SQL 101 in R"
+author: "Nicholas Horton"
+date: '2019-06-17T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- database
+- visualization
+- data technologies
+- data wrangling
+- SQL
+categories: R
+---
+
+
+
+<p>The NASEM Data Science for Undergraduates <a href="https://teachdatascience.com/nasem">report</a> noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.</p>
+<p>SQL (pronounced <em>sequel</em>) stands for <a href="https://en.wikipedia.org/wiki/SQL">Structured Query Language</a>; it is a language designed to manage data in a relational database system. The papers <a href="https://chance.amstat.org/2015/04/setting-the-stage" class="uri">https://chance.amstat.org/2015/04/setting-the-stage</a> and <a href="https://chance.amstat.org/2015/04/databases/" class="uri">https://chance.amstat.org/2015/04/databases/</a> provide a high level overview of database systems.</p>
+<p>We will use a public facing MySQL <a href="http://www.science.smith.edu/wai-database/home/about">database</a> containing wideband acoustic immittance (WAI) measures made on normal ears of adults. (The project is funded by the National Institutes of Health, NIDCD, and hosted on a server at Smith College, <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=8769352&amp;icde=44962011&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=46&amp;csb=default&amp;cs=ASC&amp;pball=">PI Susan Voss, R15 DC014129-01</a>.) The database was created to enable auditory researchers to share WAI measurements and combine analyses over multiple datasets.</p>
+<p>We begin by demonstrating how SQL queries can be sent to a database. We begin by setting up a connection using the <code>dbConnect()</code> function.</p>
+<pre class="r"><code>library(mosaic)
+library(RMySQL) # that there are plans to move this support to RMariaDB 
+con &lt;- dbConnect(
+  MySQL(), host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
+  password = &quot;smith_waiDB&quot;, dbname = &quot;wai&quot;)</code></pre>
+<p>Next a series of SQL queries can be sent to the database using the <code>DBI::dbGetQuery()</code> function: each query returns an R dataframe.</p>
+<pre class="r"><code>class(dbGetQuery(con, &quot;SHOW TABLES&quot;))
+## [1] &quot;data.frame&quot;</code></pre>
+<p>There are multiple tables within the <code>wai</code> database.</p>
+<pre class="r"><code>dbGetQuery(con, &quot;SHOW TABLES&quot;)
+##   Tables_in_wai
+## 1  Measurements
+## 2       PI_Info
+## 3       Subject</code></pre>
+<p>The <code>EXPLAIN</code> command describes the ten field names (variables) in the <code>PI_Info</code> table.</p>
+<pre class="r"><code>dbGetQuery(con, &quot;EXPLAIN PI_Info&quot;)
+##          Field          Type Null Key Default Extra
+## 1   Identifier   varchar(20)  YES        &lt;NA&gt;      
+## 2      PI_Year       int(11)  YES        &lt;NA&gt;      
+## 3           PI  varchar(500)  YES        &lt;NA&gt;      
+## 4  Affiliation  varchar(500)  YES        &lt;NA&gt;      
+## 5        Email   varchar(30)  YES        &lt;NA&gt;      
+## 6        Title  varchar(140)  YES        &lt;NA&gt;      
+## 7          Pub   varchar(30)  YES        &lt;NA&gt;      
+## 8         Date      char(20)  YES        &lt;NA&gt;      
+## 9          URL  varchar(140)  YES        &lt;NA&gt;      
+## 10    PI_Notes varchar(1500)  YES        &lt;NA&gt;</code></pre>
+<p>The <code>SELECT</code> statement can be used to select all fields for eight observations in the <code>Measurements</code> table.</p>
+<pre class="r"><code>eightobs &lt;- dbGetQuery(con, &quot;SELECT * FROM Measurements LIMIT 8&quot;)
+eightobs
+##   Identifier Sub_Number Session Left_Ear MEP Instrument    Freq Absorbance
+## 1  Abur_2014          1       1        0  -5          1 210.938  0.0451375
+## 2  Abur_2014          1       1        0  -5          1 234.375  0.0441247
+## 3  Abur_2014          1       1        0  -5          1 257.812  0.0495935
+## 4  Abur_2014          1       1        0  -5          1 281.250  0.0516088
+## 5  Abur_2014          1       1        0  -5          1 304.688  0.0590836
+## 6  Abur_2014          1       1        0  -5          1 328.125  0.0628038
+## 7  Abur_2014          1       1        0  -5          1 351.562  0.0682962
+## 8  Abur_2014          1       1        0  -5          1 375.000  0.0738373
+##        Zmag      Zang Canal_Area
+## 1 110638000 -0.228113         NA
+## 2 100482000 -0.230561         NA
+## 3  90561100 -0.230213         NA
+## 4  83515500 -0.230959         NA
+## 5  77476800 -0.229652         NA
+## 6  71229100 -0.230026         NA
+## 7  66615500 -0.229576         NA
+## 8  61996200 -0.229327         NA</code></pre>
+<p>More interesting and complicated <code>SELECT</code> calls can be used to undertake grouping and aggregation. Here we calculate the sample size for each study</p>
+<pre class="r"><code>dbGetQuery(con, 
+  &quot;SELECT Identifier, count(*) AS NUM FROM Measurements GROUP BY Identifier ORDER BY NUM&quot;)
+##       Identifier    NUM
+## 1       Sun_2016   2604
+## 2    Shaver_2013   2880
+## 3    Feeney_2017   3162
+## 4      Voss_1994   5120
+## 5       Liu_2008   5520
+## 6    Werner_2010   7935
+## 7  Rosowski_2012  14384
+## 8      Voss_2010  14880
+## 9      Abur_2014  21328
+## 10  Shahnaz_2006  58776
+## 11    Neely_2015 114716
+## 12    Lewis_2015 114716</code></pre>
+<div id="accessing-a-database-using-dplyr-commands" class="section level2">
+<h2>Accessing a database using dplyr commands</h2>
+<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl
+objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
+<p>The setup process looks similar.</p>
+<pre class="r"><code>db &lt;- src_mysql(dbname = &quot;wai&quot;, host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
+          password=&quot;smith_waiDB&quot;)
+Measurements &lt;- tbl(db, &quot;Measurements&quot;)
+class(Measurements)
+## [1] &quot;tbl_MySQLConnection&quot; &quot;tbl_dbi&quot;             &quot;tbl_sql&quot;            
+## [4] &quot;tbl_lazy&quot;            &quot;tbl&quot;
+PI_Info &lt;- tbl(db, &quot;PI_Info&quot;)
+Subject &lt;- tbl(db, &quot;Subject&quot;)</code></pre>
+<p>We explore the <code>PI_Info</code> table using the <code>collect()</code> function used to force computation on the database (and return the results). One attractive aspect of database systems is that they feature <a href="https://en.wikipedia.org/wiki/Lazy_evaluation"><em>lazy evaluation</em></a>, where computation is optimized and postponed as long as possible.</p>
+<pre class="r"><code>PI_Info  %&gt;% summarise(total = n())
+## # Source:   lazy query [?? x 1]
+## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log
+## #   [waiuser@scidb.smith.edu:/wai]
+##   total
+##   &lt;dbl&gt;
+## 1    12
+PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()   
+##       Identifier PI_Year
+## 1  Rosowski_2012    2012
+## 2      Abur_2014    2014
+## 3   Shahnaz_2006    2006
+## 4      Voss_1994    1994
+## 5    Werner_2010    2010
+## 6       Sun_2016    2016
+## 7      Voss_2010    2010
+## 8       Liu_2008    2008
+## 9    Shaver_2013    2013
+## 10    Neely_2015    2015
+## 11   Feeney_2017    2017
+## 12    Lewis_2015    2015
+##                                                                                                         PI
+## 1                                                                                         John J. Rosowski
+## 2                                                            Defne Abur; Nicholas J. Horton; Susan E. Voss
+## 3                                                                                Navid Shahnaz; Karin Bork
+## 4                                                                                            Susan E. Voss
+## 5                                                                                            Douglas Keefe
+## 6                                                                                            Xiao-Ming Sun
+## 7                                                                                            Susan E. Voss
+## 8  Yi-Wen Liu; Chris A. Sanford; John C. Ellison; Denis F. Fitzpatrick; Michael P. Gorga; Douglas H. Keefe
+## 9                                                                            Mark D. Shaver, Xiao-Ming Sun
+## 10                                                                                        Stephen T. Neely
+## 11                                                                     M. Patrick Feeney; Douglas H. Keefe
+## 12                                                                           James D. Lewis; Stephen Neely
+##                                                                                                                                                                                                                                                               Affiliation
+## 1  Eaton-Peabody Laboratory, Massachusetts Eye and Ear Infirmary, Boston; Department of Otology and Laryngology, Harvard Medical School, Boston; Speech and Hearing Bioscience and Technology Program, Harvard-MIT Division of Health Sciences and Technology, Cambridge.
+## 2                                                                                                                                                                                                                                                           Smith College
+## 3                                                                                                                                                                                                                                          University of British Columbia
+## 4                                                                                                                                                                                                                                  Smith College, formerly AT&amp;T Bell Labs
+## 5                                                                                                                                                                                                                                             Boys Town National Hospital
+## 6                                                                                                                                                                                                                                                Wichita State University
+## 7                                                                                                                                                                                                                                                           Smith College
+## 8                                                                                                                                                                                                                                    Boys Town National Research Hospital
+## 9                                                                                                                                                                                                                                                Wichita State University
+## 10                                                                                                                                                                                                                                   Boys Town National Research Hospital
+## 11                                                                                                                                                                     National Center for Rehabilitative Auditory Research (NCRAR) ,Boys Town National Research Hospital
+## 12                                                                                                                                                                                                                                 Boys Town National Research Laboratory
+##                                                                                                                                     Title
+## 1                                                         Ear-Canal Reflectance, Umbo Velocity, and Tympanometry in Normal-Hearing Adults
+## 2                                                                                           Intrasubject Variability in Power Reflectance
+## 3                                                                       Wideband Reflectance Norms for Caucasian and Chinese Young Adults
+## 4                                                                Measurement of acoustic impedance and reflectance in the human ear canal
+## 5                                             Ear-Canal Wideband Acoustic Transfer Functions of Adults and Two- to Nine-Month-Old Infants
+## 6                       Wideband acoustic immittance: Normative study and test-retest reliability of tympanometric measurements in adults
+## 7                                                                Posture systematically alters ear-canal reflectance and DPOAE properties
+## 8                    Wideband absorbance tympanometry using pressure sweeps: System development and results on adults with normal hearing
+## 9  Wideband energy reflectance measurements: Effects of negative middle ear pressure and application of a pressure compensation procedure
+## 10                                                                  Non-invasive estimation of middle-ear input impedance and efficiency.
+## 11      Normative wideband reflectance, equivalent admittance at the tympanic membrane, and acoustic stapedius reflex threshold in adults
+## 12                                                                   Non-invasive estimation of middle-ear input impedance and efficiency
+##                               Pub        Date
+## 1                   Ear &amp; Hearing  11/06/2015
+## 2               J. Am Acad Audiol  08/24/2016
+## 3                  Ear &amp; Hearing   08/24/2016
+## 4  Journal of the Acoustical Soci  02/16/2017
+## 5                 Ear and Hearing    9/1/2017
+## 6  Journal of Speech, Language, a  10/31/2017
+## 7                Hearing Research  03/02/2010
+## 8  The Journal of the Acoustical   09/25/2008
+## 9  The Journal of the Acoustical   10/06/2018
+## 10 Journal of the Acoustical Soci 10/10/2018.
+## 11                  Ear &amp; Hearing  06/07/2018
+## 12 Journal of the Acoustical Soci  10/10/2018
+##                                                                                                               URL
+## 1                                                                     http://www.ncbi.nlm.nih.gov/pubmed/21857517
+## 2                                                                                                   Not available
+## 3   http://journals.lww.com/ear-hearing/Abstract/2006/12000/Wideband_Reflectance_Norms_for_Caucasian_and.15.aspx 
+## 4                                                                     http://www.ncbi.nlm.nih.gov/pubmed/21857517
+## 5                                                                    https://www.ncbi.nlm.nih.gov/pubmed/20517155
+## 6                                                                    https://www.ncbi.nlm.nih.gov/pubmed/27517667
+## 7                                                                    https://www.ncbi.nlm.nih.gov/pubmed/20227475
+## 8                                                                    https://www.ncbi.nlm.nih.gov/pubmed/19206798
+## 9              https://www.ncbi.nlm.nih.gov/pubmed/23862811\nhttps://asa.scitation.org/doi/full/10.1121/1.4807509
+## 10                                                            https://asa.scitation.org/doi/abs/10.1121/1.4927408
+## 11                                                                  https://www.ncbi.nlm.nih.gov/pubmed/28045835 
+## 12                                                            https://asa.scitation.org/doi/abs/10.1121/1.4927408
+##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  PI_Notes
+## 1  HearID (Mimosa Acoustics); \nNormal Criteria as follows: \n(1) There was no history of significant middle ear disease (e.g., otitis media or effusion 2 or more years previously were not considered significant if there were no known residual consequences).\n(2) There was no history of otologic surgery, with the exception of myringotomy or tympanostomy tube placement over 2 yr prior. \n(3) The external ear and TM revealed no abnormalities on otoscopic examination. \n(4) Audiometric measurements had pure-tone thresholds of 20 dB HL or better at octave frequen- cies between 0.250 and 8 kHz. \n(5) Air-bone gaps were no greater than 15 dB at 0.25 kHz and 10 dB between frequencies of 0.5 to 4 kHz. Most subjects had air and bone thresholds between 0 and 10 dB HL with an average near 8 to 9 dB HL at the highest frequencies. \n(6) Tympanograms were Type-A peaked, with peak pressures of 100 to 50 daPa, static compliance of 0.3 to 2.0 cc, total tympanometric volumes (static compliance ear canal volume) between 0.7 and 2.7 cc, and normal-appearing shape that is neither rounded nor sharp. \n(7) All subjects included in the “normal hearing” population were required to have two “normal” ears (as defined by criteria described earlier).
+## 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Database includes measurements at Position 1 and Channel B only.
+## 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+## 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Measurements taken with a system using sysid and the Etymotic ER-2 pressure transducer and ER-7c probe microphone
+## 5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Used an ER-1 earphone and ER-7C microphone.  Data provided by Doug Keefe and formatted by Susan Voss with help.  Lynne Werner is retired.
+## 6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     N/A
+## 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     N/A
+## 8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     N/A
+## 9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  A research version of Titan (Interacoustics) was used. In this study, a total of five reflectance measurements at ambient pressure were taken per ear (detailed in the article). But, results from only two sessions were reported in this article. Included in this database is the second session (baseline), as the normative data.
+## 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Custom system used for measurement of ear canal impedance designed by Dr. J. H. Siegel at Northwestern University. Ear canal areas were estimated from the surge impedance. Impedance was measured at 2 insertion depths (deep – session 1, shallow – session 2).
+## 11                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    N/A
+## 12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    NaN
+# be careful with collect() when dealing with large tables!</code></pre>
+<p>Note how the number of rows is unknown (<code>??</code> at the top of the output above) for the lazy query.</p>
+<p>Similarly, we can explore the <code>Subjects</code> table.</p>
+<pre class="r"><code>Subject  %&gt;% summarise(total = n())
+## # Source:   lazy query [?? x 1]
+## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log
+## #   [waiuser@scidb.smith.edu:/wai]
+##   total
+##   &lt;dbl&gt;
+## 1   633
+Subject %&gt;% collect()  # be careful with collect() with large tables!
+## # A tibble: 633 x 10
+##    Identifier Sub_Number Session_Total   Age Female  Race Ethnicity
+##    &lt;chr&gt;      &lt;chr&gt;              &lt;int&gt; &lt;int&gt;  &lt;int&gt; &lt;int&gt;     &lt;int&gt;
+##  1 Rosowski_~ 3                      1    30      1     5         2
+##  2 Rosowski_~ 6                      1    29      0     5         2
+##  3 Rosowski_~ 11                     1    64      1     5         2
+##  4 Rosowski_~ 12                     1    42      1     5         2
+##  5 Rosowski_~ 14                     1    24      0     5         2
+##  6 Rosowski_~ 15                     1    32      1     5         2
+##  7 Rosowski_~ 17                     1    22      0     5         2
+##  8 Rosowski_~ 18                     1    33      1     5         2
+##  9 Rosowski_~ 21                     1    36      1     3         2
+## 10 Rosowski_~ 22                     1    33      0     5         2
+## # ... with 623 more rows, and 3 more variables: Left_Ear_Status &lt;int&gt;,
+## #   Right_Ear_Status &lt;int&gt;, Sub_Notes &lt;chr&gt;</code></pre>
+<p>Let’s explore the <code>Measurements</code> table.</p>
+<pre class="r"><code>Measurements %&gt;% summarise(total = n())
+## # Source:   lazy query [?? x 1]
+## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log
+## #   [waiuser@scidb.smith.edu:/wai]
+##    total
+##    &lt;dbl&gt;
+## 1 366021</code></pre>
+<p>There are more than a quarter million observations.</p>
+<p>In the next step, we will download the data from a given subject for a specific study, in this case a paper by Rosowski et al (2012) entitled <a href="https://www.ncbi.nlm.nih.gov/pubmed/21857517">“Ear-canal reflectance, umbo velocity, and tympanometry in normal-hearing adults”</a>.</p>
+<p>Arbitrarily we choose to collect data from subject number three.</p>
+<pre class="r"><code>onesubj &lt;- 
+  Measurements %&gt;% 
+  filter(Identifier == &quot;Rosowski_2012&quot;, Sub_Number == 3) %&gt;%
+  collect %&gt;%
+  mutate(SessionNum = as.factor(Session))
+head(onesubj)
+## # A tibble: 6 x 12
+##   Identifier Sub_Number Session Left_Ear   MEP Instrument  Freq Absorbance
+##   &lt;chr&gt;           &lt;int&gt;   &lt;int&gt;    &lt;int&gt; &lt;dbl&gt;      &lt;int&gt; &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Rosowski_~          3       1        1    NA          1  211.     0.0852
+## 2 Rosowski_~          3       1        1    NA          1  234.     0.0903
+## 3 Rosowski_~          3       1        1    NA          1  258.     0.112 
+## 4 Rosowski_~          3       1        1    NA          1  281.     0.103 
+## 5 Rosowski_~          3       1        1    NA          1  305.     0.129 
+## 6 Rosowski_~          3       1        1    NA          1  328.     0.136 
+## # ... with 4 more variables: Zmag &lt;dbl&gt;, Zang &lt;dbl&gt;, Canal_Area &lt;dbl&gt;,
+## #   SessionNum &lt;fct&gt;</code></pre>
+<p>Finally we can display the results of the measurements as a function of frequency and which ear (left or right) that was used.</p>
+<pre class="r"><code>onesubj &lt;- mutate(onesubj, Ear = ifelse(Left_Ear == 1, &quot;Left&quot;, &quot;Right&quot;))
+ggplot(onesubj, aes(x = Freq, y = Absorbance)) + geom_point() +
+  aes(colour = Ear) + scale_x_log10() + labs(title=&quot;Absorbance by ear Rosowski subject 3&quot;)</code></pre>
+<p><img src="/post/2019_06_19_SQL/sql_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>In summary, while SQL is a powerful tool, there are straightforward ways to integrate existing databases into analyses using a small number of commands. Particularly if instructors use <a href="https://teachdatascience.com/rmarkdown">RMarkdown</a>, data ingestation can be scaffolded with students able to modify and augment code that is provided to them.</p>
+<p>We note that a number of relational database systems exist, including MySQL (illustrated here), PostgreSQL, and SQLite. More information about databases within R can be found in the CRAN <a href="https://cran.r-project.org/web/views/Databases.html">Databases with R</a> Task View.</p>
+<p>Setting up and managing a database is a topic for a different day: here we focused on how SQL can be used within R to access data in a flexible and powerful manner.</p>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://chance.amstat.org/2015/04/setting-the-stage/" class="uri">https://chance.amstat.org/2015/04/setting-the-stage/</a> (Setting the stage for data technologies)</li>
+<li><a href="https://www.w3schools.com/sql/sql_intro.asp" class="uri">https://www.w3schools.com/sql/sql_intro.asp</a> (Intro to SQL)</li>
+<li><a href="http://www.science.smith.edu/wai-database/home/about/" class="uri">http://www.science.smith.edu/wai-database/home/about/</a> (WAI SQL Database)</li>
+<li><a href="https://cran.r-project.org/web/views/Databases.html" class="uri">https://cran.r-project.org/web/views/Databases.html</a> (CRAN Task View on Databases with R)</li>
+<li><a href="https://db.rstudio.com" class="uri">https://db.rstudio.com</a> (RStudio Database resources)</li>
+<li><a href="https://dbplyr.tidyverse.org/articles/dbplyr.html" class="uri">https://dbplyr.tidyverse.org/articles/dbplyr.html</a> (dbplyr package)</li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>education</title>
+      <link>https://teachdatascience.com/tags/education/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistical inference</title>
+      <link>https://teachdatascience.com/tags/statistical-inference/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/statistical-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>https://teachdatascience.com/tags/tidyverse/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/tidyverse/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R Markdown</title>
@@ -17,15 +44,6 @@
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>education</title>
-      <link>https://teachdatascience.com/tags/education/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/education/</guid>
       <description></description>
     </item>
     
@@ -152,15 +170,6 @@
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tidyverse</title>
-      <link>https://teachdatascience.com/tags/tidyverse/</link>
-      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/tidyverse/</guid>
       <description></description>
     </item>
     
