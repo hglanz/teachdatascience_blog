@@ -6,10 +6,64 @@
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Markdown</title>
+      <link>https://teachdatascience.com/tags/r-markdown/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://teachdatascience.com/tags/sql/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data technologies</title>
+      <link>https://teachdatascience.com/tags/data-technologies/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/data-technologies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data wrangling</title>
+      <link>https://teachdatascience.com/tags/data-wrangling/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://teachdatascience.com/tags/database/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualization</title>
+      <link>https://teachdatascience.com/tags/visualization/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/visualization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>education</title>
@@ -35,15 +89,6 @@
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/tidyverse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>https://teachdatascience.com/tags/r-markdown/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/r-markdown/</guid>
       <description></description>
     </item>
     
@@ -89,15 +134,6 @@
       <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/mapping/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visualization</title>
-      <link>https://teachdatascience.com/tags/visualization/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/visualization/</guid>
       <description></description>
     </item>
     
@@ -165,15 +201,6 @@
     </item>
     
     <item>
-      <title>data wrangling</title>
-      <link>https://teachdatascience.com/tags/data-wrangling/</link>
-      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R Studio</title>
       <link>https://teachdatascience.com/tags/r-studio/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
@@ -206,15 +233,6 @@
       <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data technologies</title>
-      <link>https://teachdatascience.com/tags/data-technologies/</link>
-      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/data-technologies/</guid>
       <description></description>
     </item>
     
