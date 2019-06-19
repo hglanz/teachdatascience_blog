@@ -1,7 +1,7 @@
 ---
 title: "Less Volume More Creativity in R"
 author: "Nicholas Horton"
-date: '2019-06-18T21:13:14-05:00'
+date: '2019-06-18'
 output:
   html_document:
     df_print: paged
@@ -116,7 +116,11 @@ However, all of the alternative approaches require new idioms and learning outco
 
 ### Notes
 
-The `mosaic` package *masks* certain functions from other packages when it loads (for example, the `mosaic::mean()` function has augmented functionality related to formulas and the `data=` option). The `find()` function can be used to identify which function is referenced in the user's environment.
+- Different instructors will make different pedagogical choices depending on the courses and their students.  For instructors hesitant to use modern tools, the `mosaic` package may simplify the process of getting students started while minimizing cognitive load.
+
+- If R was rewritten from scratch, functions such as `mean()` would probably support a formula interface as well as a `data=` option.  Unfortunately, the core R interface is (wisely) not being modified so additional packages such as `mosaic` or the tidyverse are needed to provide a more coherent and consistent experience.
+
+- The `mosaic` package *masks* certain functions from other packages when it loads (for example, the `mosaic::mean()` function has augmented functionality related to formulas and the `data=` option). The `find()` function can be used to identify which function is referenced in the user's environment.
 
 ```{r}
 find("mean")
@@ -128,6 +132,7 @@ find("mean")
 - https://cran.r-project.org/web/packages/mosaic/vignettes/mosaic-resources.html (mosaic teaching resources)
 - https://cran.r-project.org/web/packages/mosaic/vignettes/MinimalRgg.pdf (minimal R commands)
 - https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula-blog.html (ggformula: another option for teaching graphics in R to beginners)
+- https://nhorton.people.amherst.edu/is5/about.html (Intro Stats 5th edition in R with mosaic)
 
 ### About this blog 
 

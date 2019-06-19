@@ -146,11 +146,9 @@ Figure 1: The plot shows that the higher the female literacy rate, the higher th
 <p>It might be interesting, however, to look at the relationship between literacy rates over time. To do that, we create a new variable which is the difference between male and female literacy rates.</p>
 <pre class="r"><code>literacy &lt;- literacy %&gt;% mutate(diffLit = litRateM - litRateF)
 lm(diffLit~year, data=literacy) %&gt;% tidy()
-## # A tibble: 2 x 5
-##   term        estimate std.error statistic     p.value
-##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;
-## 1 (Intercept)  418.      80.1         5.22 0.000000256
-## 2 year          -0.204    0.0401     -5.10 0.000000470</code></pre>
+##          term    estimate   std.error statistic      p.value
+## 1 (Intercept) 417.9034529 80.11740154  5.216138 2.563743e-07
+## 2        year  -0.2041913  0.04005828 -5.097356 4.697986e-07</code></pre>
 <div id="learn-more" class="section level2">
 <h2>Learn more</h2>
 <ul>

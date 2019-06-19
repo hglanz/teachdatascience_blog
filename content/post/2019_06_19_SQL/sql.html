@@ -22,7 +22,14 @@ categories: R
 <p>We will use a public facing MySQL <a href="http://www.science.smith.edu/wai-database/home/about">database</a> containing wideband acoustic immittance (WAI) measures made on normal ears of adults. (The project is funded by the National Institutes of Health, NIDCD, and hosted on a server at Smith College, <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=8769352&amp;icde=44962011&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=46&amp;csb=default&amp;cs=ASC&amp;pball=">PI Susan Voss, R15 DC014129-01</a>.) The database was created to enable auditory researchers to share WAI measurements and combine analyses over multiple datasets.</p>
 <p>We begin by demonstrating how SQL queries can be sent to a database. We begin by setting up a connection using the <code>dbConnect()</code> function.</p>
 <pre class="r"><code>library(mosaic)
+## Warning: package &#39;mosaic&#39; was built under R version 3.4.4
+## Warning: package &#39;dplyr&#39; was built under R version 3.4.4
+## Warning: package &#39;ggformula&#39; was built under R version 3.4.4
+## Warning: package &#39;ggplot2&#39; was built under R version 3.4.4
+## Warning: package &#39;ggstance&#39; was built under R version 3.4.4
+## Warning: package &#39;mosaicData&#39; was built under R version 3.4.4
 library(RMySQL) # that there are plans to move this support to RMariaDB 
+## Warning: package &#39;RMySQL&#39; was built under R version 3.4.4
 con &lt;- dbConnect(
   MySQL(), host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
   password = &quot;smith_waiDB&quot;, dbname = &quot;wai&quot;)</code></pre>
@@ -86,15 +93,13 @@ eightobs
 ## 11    Lewis_2015 114716</code></pre>
 <div id="accessing-a-database-using-dplyr-commands" class="section level2">
 <h2>Accessing a database using dplyr commands</h2>
-<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl
-objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
+<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
 <p>The setup process looks similar.</p>
 <pre class="r"><code>db &lt;- src_mysql(dbname = &quot;wai&quot;, host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
           password=&quot;smith_waiDB&quot;)
 Measurements &lt;- tbl(db, &quot;Measurements&quot;)
 class(Measurements)
-## [1] &quot;tbl_MySQLConnection&quot; &quot;tbl_dbi&quot;             &quot;tbl_sql&quot;            
-## [4] &quot;tbl_lazy&quot;            &quot;tbl&quot;
+## [1] &quot;tbl_dbi&quot;  &quot;tbl_sql&quot;  &quot;tbl_lazy&quot; &quot;tbl&quot;
 PI_Info &lt;- tbl(db, &quot;PI_Info&quot;)
 Subject &lt;- tbl(db, &quot;Subject&quot;)</code></pre>
 <p>We explore the <code>PI_Info</code> table using the <code>collect()</code> function used to force computation on the database (and return the results). One attractive aspect of database systems is that they feature <a href="https://en.wikipedia.org/wiki/Lazy_evaluation"><em>lazy evaluation</em></a>, where computation is optimized and postponed as long as possible.</p>
@@ -104,7 +109,7 @@ Subject &lt;- tbl(db, &quot;Subject&quot;)</code></pre>
 ## #   [waiuser@scidb.smith.edu:/wai]
 ##   total
 ##   &lt;dbl&gt;
-## 1    11
+## 1    12
 PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()   
 ##       Identifier PI_Year
 ## 1    Werner_2010    2010
@@ -116,8 +121,9 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 ## 7   Shahnaz_2006    2006
 ## 8  Rosowski_2012    2012
 ## 9       Liu_2008    2008
-## 10   Feeney_2017    2017
-## 11     Abur_2014    2014
+## 10     Abur_2014    2014
+## 11   Feeney_2017    2017
+## 12    Groon_2015    2015
 ##                                                                                                         PI
 ## 1                                                                                            Douglas Keefe
 ## 2                                                                                            Susan E. Voss
@@ -128,8 +134,9 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 ## 7                                                                                Navid Shahnaz; Karin Bork
 ## 8                                                                                         John J. Rosowski
 ## 9  Yi-Wen Liu; Chris A. Sanford; John C. Ellison; Denis F. Fitzpatrick; Michael P. Gorga; Douglas H. Keefe
-## 10                                                                     M. Patrick Feeney; Douglas H. Keefe
-## 11                                                           Defne Abur; Nicholas J. Horton; Susan E. Voss
+## 10                                                           Defne Abur; Nicholas J. Horton; Susan E. Voss
+## 11                                                                     M. Patrick Feeney; Douglas H. Keefe
+## 12                                                                                           Stephen Neely
 ##                                                                                              Affiliation
 ## 1                                                                 Boys Town National Research Laboratory
 ## 2                                                                  Smith College, formerly ATT Bell Labs
@@ -140,8 +147,9 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 ## 7                                                                         University of British Columbia
 ## 8                                  Eaton-Peabody Laboratory, Massachusetts Eye and Ear Infirmary, Boston
 ## 9                                                                   Boys Town National Research Hospital
-## 10 National Center for Rehabilitative Auditory Research (NCRAR) and Boys Town National Research Hospital
-## 11                                                                                         Smith College
+## 10                                                                                         Smith College
+## 11 National Center for Rehabilitative Auditory Research (NCRAR) and Boys Town National Research Hospital
+## 12                                                                  Boys Town National Research Hospital
 ##                                                                                                                                     Title
 ## 1                                             Ear-Canal Wideband Acoustic Transfer Functions of Adults and Two- to Nine-Month-Old Infants
 ## 2                                                                Measurement of acoustic impedance and reflectance in the human ear canal
@@ -152,8 +160,9 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 ## 7                                                                       Wideband Reflectance Norms for Caucasian and Chinese Young Adults
 ## 8                                                          Ear-Canal Reflectance, Umbo Velocity, and Tympanometry in Normal-Hearing Adult
 ## 9                    Wideband absorbance tympanometry using pressure sweeps: System development and results on adults with normal hearing
-## 10      Normative wideband reflectance, equivalent admittance at the tympanic membrane, and acoustic stapedius reflex threshold in adults
-## 11                                                                                          Intrasubject Variability in Power Reflectance
+## 10                                                                                          Intrasubject Variability in Power Reflectance
+## 11      Normative wideband reflectance, equivalent admittance at the tympanic membrane, and acoustic stapedius reflex threshold in adults
+## 12                                                                                      Air-Leak Effects on Ear-Canal Acoustic Absorbance
 ##                                                  PUB       Date
 ## 1                                    Ear and Hearing   9/1/2017
 ## 2       Journal of the Acoustical Society of America 02/08/2017
@@ -164,20 +173,22 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 ## 7                                    Ear and Hearing 08/24/2016
 ## 8                                    Ear and Hearing 11/06/2015
 ## 9   The Journal of the Acoustical Society of America  6/26/2018
-## 10                                   Ear and Hearing 06/07/2018
-## 11                                  J Am Acad Audiol 08/24/2016
-##                                                                                                             URL
-## 1                                                                  https://www.ncbi.nlm.nih.gov/pubmed/20517155
-## 2                                                            https://asa.scitation.org/doi/abs/10.1121/1.408329
-## 3                                                           https://asa.scitation.org/doi/abs/10.1121/1.4927408
-## 4                                                                  https://www.ncbi.nlm.nih.gov/pubmed/20227475
-## 5                                                                  https://www.ncbi.nlm.nih.gov/pubmed/27517667
-## 6                                                                  https://www.ncbi.nlm.nih.gov/pubmed/23862811
-## 7  http://journals.lww.com/ear-hearing/Abstract/2006/12000/Wideband_Reflectance_Norms_for_Caucasian_and.15.aspx
-## 8                                                                   http://www.ncbi.nlm.nih.gov/pubmed/21857517
-## 9                                                                  https://www.ncbi.nlm.nih.gov/pubmed/19206798
-## 10                                                                 https://www.ncbi.nlm.nih.gov/pubmed/28045835
-## 11                                                                 https://www.ncbi.nlm.nih.gov/pubmed/25257718
+## 10                                  J Am Acad Audiol 08/24/2016
+## 11                                   Ear and Hearing 06/07/2018
+## 12                                   Ear and Hearing 06/18/2019
+##                                                                                                                   URL
+## 1                                                                        https://www.ncbi.nlm.nih.gov/pubmed/20517155
+## 2                                                                  https://asa.scitation.org/doi/abs/10.1121/1.408329
+## 3                                                                 https://asa.scitation.org/doi/abs/10.1121/1.4927408
+## 4                                                                        https://www.ncbi.nlm.nih.gov/pubmed/20227475
+## 5                                                                        https://www.ncbi.nlm.nih.gov/pubmed/27517667
+## 6                                                                        https://www.ncbi.nlm.nih.gov/pubmed/23862811
+## 7        http://journals.lww.com/ear-hearing/Abstract/2006/12000/Wideband_Reflectance_Norms_for_Caucasian_and.15.aspx
+## 8                                                                         http://www.ncbi.nlm.nih.gov/pubmed/21857517
+## 9                                                                        https://www.ncbi.nlm.nih.gov/pubmed/19206798
+## 10                                                                       https://www.ncbi.nlm.nih.gov/pubmed/25257718
+## 11                                                                       https://www.ncbi.nlm.nih.gov/pubmed/28045835
+## 12 https://journals.lww.com/ear-hearing/fulltext/2015/01000/Air_Leak_Effects_on_Ear_Canal_Acoustic_Absorbance.16.aspx
 ##                                                                                                                                                                                                                                                                                                                                   PI_Notes
 ## 1                                                    Used an ER-1 earphone and ER-7C microphone.  Data provided by Doug Keefe and formatted by Susan Voss with help.  Lynne Werner is retired.  In Subject Table, Sub_Notes=1  means part of 183 subjects included in the  means in paper and Sub_Notes=0 means not part of mean in paper.
 ## 2                                                                                                                                                                                                                       Measurements taken with a system using sysid and the Etymotic ER-2 pressure transducer and ER-7c probe microphone.
@@ -188,8 +199,9 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 ## 7                                                                                                                                                                                                                                                                                                                                 No Notes
 ## 8                                                                                                                                                                                                                                                                                                                                No Notes 
 ## 9                                                                                                                                                                                                                                                                                                                                No Notes 
-## 10                                                                                                                                                                                                                                                                                                                               No Notes 
-## 11                                                                                                                                                                                                                                                                         Database includes measurements at Position 1 and Channel B only
+## 10                                                                                                                                                                                                                                                                         Database includes measurements at Position 1 and Channel B only
+## 11                                                                                                                                                                                                                                     Sub_Notes=Boys Town National Lab are data taken by Keefe; Sub_Notes=NCRAR are data taken by Feeney 
+## 12                                                                                                                                                                                                                  First author is Groon, PI for grant is Steve Neely, data collected on system described in Rasetshwane and Neely (2011)
 # be careful with collect() when dealing with large tables!</code></pre>
 <p>Note how the number of rows is unknown (<code>??</code> at the top of the output above) for the lazy query.</p>
 <p>Similarly, we can explore the <code>Subjects</code> table.</p>
@@ -199,9 +211,9 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 ## #   [waiuser@scidb.smith.edu:/wai]
 ##   total
 ##   &lt;dbl&gt;
-## 1   619
+## 1   640
 Subject %&gt;% collect()  # be careful with collect() with large tables!
-## # A tibble: 619 x 10
+## # A tibble: 640 x 10
 ##    Identifier Sub_Number Session_Total   Age Female  Race Ethnicity
 ##    &lt;chr&gt;      &lt;chr&gt;              &lt;int&gt; &lt;int&gt;  &lt;int&gt; &lt;int&gt;     &lt;int&gt;
 ##  1 Voss_2010  1                      5    20      1     0         0
@@ -214,7 +226,7 @@ Subject %&gt;% collect()  # be careful with collect() with large tables!
 ##  8 Voss_2010  8                      5    42      1     0         0
 ##  9 Voss_2010  9                      5    38      0     0         0
 ## 10 Voss_2010  10                     5    20      1     0         0
-## # ... with 609 more rows, and 3 more variables: Left_Ear_Status &lt;int&gt;,
+## # ... with 630 more rows, and 3 more variables: Left_Ear_Status &lt;int&gt;,
 ## #   Right_Ear_Status &lt;int&gt;, Sub_Notes &lt;chr&gt;</code></pre>
 <p>Let’s explore the <code>Measurements</code> table.</p>
 <pre class="r"><code>Measurements %&gt;% summarise(total = n())
@@ -232,6 +244,7 @@ Subject %&gt;% collect()  # be careful with collect() with large tables!
   filter(Identifier == &quot;Rosowski_2012&quot;, Sub_Number == 3) %&gt;%
   collect %&gt;%
   mutate(SessionNum = as.factor(Session))
+## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4
 head(onesubj)
 ## # A tibble: 6 x 12
 ##   Identifier Sub_Number Session Left_Ear   MEP Instrument  Freq Absorbance

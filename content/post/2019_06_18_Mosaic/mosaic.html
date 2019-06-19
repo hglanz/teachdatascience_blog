@@ -1,7 +1,7 @@
 ---
 title: "Less Volume More Creativity in R"
 author: "Nicholas Horton"
-date: '2019-06-18T21:13:14-05:00'
+date: '2019-06-18'
 output:
   html_document:
     df_print: paged
@@ -22,11 +22,16 @@ categories: R
 </blockquote>
 <p>The package builds on the formula object in R, which allows the specification of models in a compact symbolic form. As an example, consider the <code>drugrisk</code> measure of drug related risk behaviors from the <code>mosaicData::HELPmiss</code> Health Evaluation and Linkage to Primary Care (HELP) study.</p>
 <pre class="r"><code>library(mosaic)
+## Warning: package &#39;mosaic&#39; was built under R version 3.4.4
+## Warning: package &#39;dplyr&#39; was built under R version 3.4.4
+## Warning: package &#39;ggformula&#39; was built under R version 3.4.4
+## Warning: package &#39;ggplot2&#39; was built under R version 3.4.4
+## Warning: package &#39;ggstance&#39; was built under R version 3.4.4
+## Warning: package &#39;mosaicData&#39; was built under R version 3.4.4
 favstats(~ drugrisk, data = HELPmiss)
 ##  min Q1 median Q3 max     mean       sd   n missing
 ##    0  0      0  1  21 1.869658 4.313479 468       2</code></pre>
-<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for
-the <code>drugrisk</code> variable.</p>
+<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for the <code>drugrisk</code> variable.</p>
 <p>Alternative the <code>df_stats()</code> function provides a similar display (but returns a dataframe).</p>
 <pre class="r"><code>df_stats(~ drugrisk, data = HELPmiss)
 ##   min Q1 median Q3 max     mean       sd   n missing
@@ -56,8 +61,7 @@ the <code>drugrisk</code> variable.</p>
 <p>The key insight is the dramatic skew for the risk score: describing the distribution with means (as done with the <code>lm()</code> call) may be misleading.</p>
 <div id="a-more-complicated-example" class="section level3">
 <h3>A more complicated example</h3>
-<p>What if we were also interested in a third variable? The formula interface accommodates
-<em>multivariate thinking</em>.</p>
+<p>What if we were also interested in a third variable? The formula interface accommodates <em>multivariate thinking</em>.</p>
 <pre class="r"><code>gf_point(pcs ~ drugrisk, data = HELPmiss, color = ~ homeless) %&gt;%
   gf_lm()</code></pre>
 <p><img src="/post/2019_06_18_Mosaic/mosaic_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
@@ -73,8 +77,7 @@ the <code>drugrisk</code> variable.</p>
 </div>
 <div id="replicating-the-above-analyses-without-mosaic" class="section level3">
 <h3>Replicating the above analyses without mosaic</h3>
-<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code>
-for graphics. But it’s more complicated to have beginning students run commands like:</p>
+<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code> for graphics. But it’s more complicated to have beginning students run commands like:</p>
 <pre class="r"><code>tapply(HELPmiss$drugrisk, HELPmiss$homeless, mean)
 ##   housed homeless 
 ##       NA       NA</code></pre>
@@ -87,6 +90,7 @@ for graphics. But it’s more complicated to have beginning students run command
 <pre class="r"><code>HELPmiss %&gt;%
   group_by(homeless) %&gt;%
   summarize(meanval = mean(drugrisk, na.rm=TRUE))
+## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4
 ## # A tibble: 2 x 2
 ##   homeless meanval
 ##   &lt;fct&gt;      &lt;dbl&gt;
@@ -98,7 +102,11 @@ for graphics. But it’s more complicated to have beginning students run command
 </div>
 <div id="notes" class="section level3">
 <h3>Notes</h3>
-<p>The <code>mosaic</code> package <em>masks</em> certain functions from other packages when it loads (for example, the <code>mosaic::mean()</code> function has augmented functionality related to formulas and the <code>data=</code> option). The <code>find()</code> function can be used to identify which function is referenced in the user’s environment.</p>
+<ul>
+<li><p>Different instructors will make different pedagogical choices depending on the courses and their students. For instructors hesitant to use modern tools, the <code>mosaic</code> package may simplify the process of getting students started while minimizing cognitive load.</p></li>
+<li><p>If R was rewritten from scratch, functions such as <code>mean()</code> would probably support a formula interface as well as a <code>data=</code> option. Unfortunately, the core R interface is (wisely) not being modified so additional packages such as <code>mosaic</code> or the tidyverse are needed to provide a more coherent and consistent experience.</p></li>
+<li><p>The <code>mosaic</code> package <em>masks</em> certain functions from other packages when it loads (for example, the <code>mosaic::mean()</code> function has augmented functionality related to formulas and the <code>data=</code> option). The <code>find()</code> function can be used to identify which function is referenced in the user’s environment.</p></li>
+</ul>
 <pre class="r"><code>find(&quot;mean&quot;)
 ## [1] &quot;package:mosaic&quot; &quot;package:Matrix&quot; &quot;package:base&quot;</code></pre>
 </div>
@@ -109,6 +117,7 @@ for graphics. But it’s more complicated to have beginning students run command
 <li><a href="https://cran.r-project.org/web/packages/mosaic/vignettes/mosaic-resources.html" class="uri">https://cran.r-project.org/web/packages/mosaic/vignettes/mosaic-resources.html</a> (mosaic teaching resources)</li>
 <li><a href="https://cran.r-project.org/web/packages/mosaic/vignettes/MinimalRgg.pdf" class="uri">https://cran.r-project.org/web/packages/mosaic/vignettes/MinimalRgg.pdf</a> (minimal R commands)</li>
 <li><a href="https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula-blog.html" class="uri">https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula-blog.html</a> (ggformula: another option for teaching graphics in R to beginners)</li>
+<li><a href="https://nhorton.people.amherst.edu/is5/about.html" class="uri">https://nhorton.people.amherst.edu/is5/about.html</a> (Intro Stats 5th edition in R with mosaic)</li>
 </ul>
 </div>
 <div id="about-this-blog" class="section level3">
