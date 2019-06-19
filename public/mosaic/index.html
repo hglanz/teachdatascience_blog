@@ -103,12 +103,6 @@
 </blockquote>
 <p>The package builds on the formula object in R, which allows the specification of models in a compact symbolic form. As an example, consider the <code>drugrisk</code> measure of drug related risk behaviors from the <code>mosaicData::HELPmiss</code> Health Evaluation and Linkage to Primary Care (HELP) study.</p>
 <pre class="r"><code>library(mosaic)
-## Warning: package &#39;mosaic&#39; was built under R version 3.4.4
-## Warning: package &#39;dplyr&#39; was built under R version 3.4.4
-## Warning: package &#39;ggformula&#39; was built under R version 3.4.4
-## Warning: package &#39;ggplot2&#39; was built under R version 3.4.4
-## Warning: package &#39;ggstance&#39; was built under R version 3.4.4
-## Warning: package &#39;mosaicData&#39; was built under R version 3.4.4
 favstats(~ drugrisk, data = HELPmiss)
 ##  min Q1 median Q3 max     mean       sd   n missing
 ##    0  0      0  1  21 1.869658 4.313479 468       2</code></pre>

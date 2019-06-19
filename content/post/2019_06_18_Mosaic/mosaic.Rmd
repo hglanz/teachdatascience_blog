@@ -25,7 +25,7 @@ The [mosaic](https://cran.r-project.org/web/packages/mosaic) package was created
 
 The package builds on the formula object in R, which allows the specification of models in a compact symbolic form.  As an example, consider the `drugrisk` measure of drug related risk behaviors from the `mosaicData::HELPmiss` Health Evaluation and Linkage to Primary Care (HELP) study.
 
-```{r message = FALSE}
+```{r message = FALSE, warning = FALSE}
 library(mosaic)
 favstats(~ drugrisk, data = HELPmiss)
 ```
