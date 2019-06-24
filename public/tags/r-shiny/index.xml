@@ -1,34 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>R Shiny on Teach Data Science</title>
-    <link>https://pensive-bartik-e3e658.netlify.com/tags/r-shiny/</link>
-    <description>Recent content in R Shiny on Teach Data Science</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://pensive-bartik-e3e658.netlify.com/tags/r-shiny/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Using Shiny in the Classroom</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/06/28/shiny2/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/06/28/shiny2/</guid>
-      <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
-    </item>
-    
-    <item>
-      <title>An Introduction to R Shiny</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/06/27/shiny1/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/06/27/shiny1/</guid>
-      <description>What is R Shiny?Straight from RStudio’s wonderful introduction, shiny is an R package that makes it easy to build interactive web applications straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
-    </item>
-    
-  </channel>
-</rss>

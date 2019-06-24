@@ -1,121 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>plot on Teach Data Science</title>
-    <link>https://pensive-bartik-e3e658.netlify.com/tags/plot/</link>
-    <description>Recent content in plot on Teach Data Science</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Sat, 28 Jul 2018 21:13:14 -0500</lastBuildDate>
-    
-	<atom:link href="https://pensive-bartik-e3e658.netlify.com/tags/plot/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Statistics at Google Scale</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/28/googlescale/</link>
-      <pubDate>Sat, 28 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/28/googlescale/</guid>
-      <description>XXMaps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>Algorithmic interpretability</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/25/interpretability/</link>
-      <pubDate>Wed, 25 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/25/interpretability/</guid>
-      <description>XXMaps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>AP CS Principles (and Data as a Big Idea)</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/22/apcsprinciples/</link>
-      <pubDate>Sun, 22 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/22/apcsprinciples/</guid>
-      <description>XXMaps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>Comparing SAS, R, and Python</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/18/sasrpython/</link>
-      <pubDate>Wed, 18 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/18/sasrpython/</guid>
-      <description>XXMaps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>more Less Volume More Creativity (R vs. Python)</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/14/data8/</link>
-      <pubDate>Sat, 14 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/14/data8/</guid>
-      <description>Upon completion of CS/STAT/INFO C8, students should be able to:
-Write correct small programs that manipulate and combine data sets and carry out iterative procedures.Extend a program with multiple functions so that it runs correctly with additional functionality.Calculate specified statistics of a given dataset.Identify the sources of randomness in an experiment.Formulate a null hypothesis that relates to a given question, which can be assessed using a statistical test.</description>
-    </item>
-    
-    <item>
-      <title>forcats and other anagrams</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/09/forcats/</link>
-      <pubDate>Mon, 09 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/09/forcats/</guid>
-      <description>forcatsMaps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>Refactoring for fun and profit</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/07/refactoring/</link>
-      <pubDate>Sat, 07 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/07/refactoring/</guid>
-      <description>XXMaps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>Creating tutorials in R using learnr</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/07/02/learnr/</link>
-      <pubDate>Mon, 02 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/07/02/learnr/</guid>
-      <description>XXMaps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>Teaching Data Visualization</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/06/24/dataviz/</link>
-      <pubDate>Sun, 24 Jun 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/06/24/dataviz/</guid>
-      <description>As statistics educators, it is often easier to focus our teaching on methods instead of communication. And while many of us understand the value of good communication, actually teaching it is difficult and outside of our comfort zone. There has been quite a bit of work done on the science of visualization (e.g., the Grammar of Graphics by Wilkinson). There is general consensus that teaching students to communicate using visualizations is of paramount importance (see recent blog entries: National Academies Report on Data Science and GAISE).</description>
-    </item>
-    
-    <item>
-      <title>Data Science for Undergraduates</title>
-      <link>https://pensive-bartik-e3e658.netlify.com/2018/05/27/nasem/</link>
-      <pubDate>Sun, 27 May 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://pensive-bartik-e3e658.netlify.com/2018/05/27/nasem/</guid>
-      <description>Data Science for UndergraduatesAs the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
-    </item>
-    
-  </channel>
-</rss>
