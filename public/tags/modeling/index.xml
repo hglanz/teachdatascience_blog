@@ -14,10 +14,10 @@
     
     <item>
       <title>Less Volume More Creativity in R</title>
-      <link>https://teachdatascience.com/2019/06/18/mosaic/</link>
+      <link>https://teachdatascience.com/mosaic/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/18/mosaic/</guid>
+      <guid>https://teachdatascience.com/mosaic/</guid>
       <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
 The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
     </item>

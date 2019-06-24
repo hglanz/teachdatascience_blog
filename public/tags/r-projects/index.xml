@@ -14,10 +14,10 @@
     
     <item>
       <title>Using GitHub in R</title>
-      <link>https://teachdatascience.com/2019/06/12/githubinr/</link>
+      <link>https://teachdatascience.com/githubinr/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/12/githubinr/</guid>
+      <guid>https://teachdatascience.com/githubinr/</guid>
       <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
 Previous posts have described working with R Projects and working with GitHub.</description>
     </item>

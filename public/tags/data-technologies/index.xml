@@ -14,20 +14,20 @@
     
     <item>
       <title>SQL 101 in R</title>
-      <link>https://teachdatascience.com/2019/06/17/sql/</link>
+      <link>https://teachdatascience.com/sql/</link>
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/17/sql/</guid>
+      <guid>https://teachdatascience.com/sql/</guid>
       <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
 SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
     </item>
     
     <item>
       <title>Data Science for Undergraduates</title>
-      <link>https://teachdatascience.com/2019/05/27/nasem/</link>
+      <link>https://teachdatascience.com/nasem/</link>
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/2019/05/27/nasem/</guid>
+      <guid>https://teachdatascience.com/nasem/</guid>
       <description>Data Science for UndergraduatesAs the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     

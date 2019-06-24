@@ -14,10 +14,10 @@
     
     <item>
       <title>SQL 101 in R</title>
-      <link>https://teachdatascience.com/2019/06/17/sql/</link>
+      <link>https://teachdatascience.com/sql/</link>
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/17/sql/</guid>
+      <guid>https://teachdatascience.com/sql/</guid>
       <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
 SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
     </item>

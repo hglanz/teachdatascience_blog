@@ -14,39 +14,39 @@
     
     <item>
       <title>SQL 101 in R</title>
-      <link>https://teachdatascience.com/2019/06/17/sql/</link>
+      <link>https://teachdatascience.com/sql/</link>
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/17/sql/</guid>
+      <guid>https://teachdatascience.com/sql/</guid>
       <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
 SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
     </item>
     
     <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
-      <link>https://teachdatascience.com/2019/06/03/screencast/</link>
+      <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/03/screencast/</guid>
+      <guid>https://teachdatascience.com/screencast/</guid>
       <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
 We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
     </item>
     
     <item>
       <title>The Tidyverse</title>
-      <link>https://teachdatascience.com/2019/06/02/tidyverse/</link>
+      <link>https://teachdatascience.com/tidyverse/</link>
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/02/tidyverse/</guid>
-      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <guid>https://teachdatascience.com/tidyverse/</guid>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>
       <title>Ingesting Data</title>
-      <link>https://teachdatascience.com/2019/05/28/ingestingdata/</link>
+      <link>https://teachdatascience.com/ingestingdata/</link>
       <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/2019/05/28/ingestingdata/</guid>
+      <guid>https://teachdatascience.com/ingestingdata/</guid>
       <description>Why use data from outside sources?The world is awash in data, and whatever else we teach in a data science curriculum, data must be at the center. Calls to modernize statistics and data science courses regularly point to using “real” data. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem/) reports Data Management &amp;amp; Curation as a core part of data acumen. Indeed, they recognize data provenance to be a key skill which is “important for all students in [a] data science program.</description>
     </item>
     

@@ -14,10 +14,10 @@
     
     <item>
       <title>RStudio Server Pro and Rstudio.cloud installations</title>
-      <link>https://teachdatascience.com/2019/06/23/cloud/</link>
+      <link>https://teachdatascience.com/cloud/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/23/cloud/</guid>
+      <guid>https://teachdatascience.com/cloud/</guid>
       <description>When people ask about how to get their students engaged with R in their introductory statistics and data science courses we offer three pieces of advice:
 keep it simple (discussed in the “Less Volume, More Creativity” blog entry)engage students to provide peer-tutoring and drop-in office hours to assist with questions and coding to complement class and office hours (at Amherst College this is coordinated by the Statistics and Data Science Fellows)have students use a dedicated server to access RSlide credit: Mine Çetinkaya-Rundel</description>
     </item>

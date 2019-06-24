@@ -9,7 +9,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/23/cloud/</loc>
+    <loc>https://teachdatascience.com/cloud/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -66,7 +66,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/20/pairprogramming/</loc>
+    <loc>https://teachdatascience.com/pairprogramming/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -89,7 +89,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/19/peerj/</loc>
+    <loc>https://teachdatascience.com/peerj/</loc>
     <lastmod>2019-06-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -100,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/18/mosaic/</loc>
+    <loc>https://teachdatascience.com/mosaic/</loc>
     <lastmod>2019-06-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -135,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/17/sql/</loc>
+    <loc>https://teachdatascience.com/sql/</loc>
     <lastmod>2019-06-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/16/infer/</loc>
+    <loc>https://teachdatascience.com/infer/</loc>
     <lastmod>2019-06-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -181,7 +181,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/13/gitclass/</loc>
+    <loc>https://teachdatascience.com/gitclass/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/12/githubinr/</loc>
+    <loc>https://teachdatascience.com/githubinr/</loc>
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -209,13 +209,19 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/11/github/</loc>
+    <loc>https://teachdatascience.com/github/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/10/leaflet/</loc>
+    <loc>https://teachdatascience.com/leaflet/</loc>
     <lastmod>2019-06-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/dynamic-visualization/</loc>
+    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -225,7 +231,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/09/dsert/</loc>
+    <loc>https://teachdatascience.com/dsert/</loc>
     <lastmod>2019-06-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -236,12 +242,12 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/06/diversity/</loc>
+    <loc>https://teachdatascience.com/diversity/</loc>
     <lastmod>2019-06-06T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/05/gaise/</loc>
+    <loc>https://teachdatascience.com/gaise/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
   </url>
   
@@ -264,7 +270,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/04/nssd/</loc>
+    <loc>https://teachdatascience.com/nssd/</loc>
     <lastmod>2019-06-04T21:13:14-05:00</lastmod>
   </url>
   
@@ -281,17 +287,17 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/03/screencast/</loc>
+    <loc>https://teachdatascience.com/screencast/</loc>
     <lastmod>2019-06-03T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/06/02/tidyverse/</loc>
+    <loc>https://teachdatascience.com/tidyverse/</loc>
     <lastmod>2019-06-02T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/05/30/projects/</loc>
+    <loc>https://teachdatascience.com/projects/</loc>
     <lastmod>2019-05-30T21:13:14-05:00</lastmod>
   </url>
   
@@ -308,7 +314,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/05/29/rmarkdown/</loc>
+    <loc>https://teachdatascience.com/rmarkdown/</loc>
     <lastmod>2019-05-29T21:13:14-05:00</lastmod>
   </url>
   
@@ -319,17 +325,17 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/05/28/ingestingdata/</loc>
+    <loc>https://teachdatascience.com/ingestingdata/</loc>
     <lastmod>2019-05-28T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/05/27/nasem/</loc>
+    <loc>https://teachdatascience.com/nasem/</loc>
     <lastmod>2019-05-27T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/2019/05/21/intro/</loc>
+    <loc>https://teachdatascience.com/intro/</loc>
     <lastmod>2019-05-21T21:13:14-05:00</lastmod>
   </url>
   

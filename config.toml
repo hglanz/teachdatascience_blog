@@ -32,7 +32,7 @@ disqusShortname = "teachdatascience-com"
 
 
 [permalinks]
-post = "/:year/:month/:day/:filename/"
+post = "/:filename/"
 code = "/:filename/"
 
 [taxonomies]

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>infer  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="tidyverse, statistical inference, education, ">
+
+
+<meta property="og:title" content="infer  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/infer/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_06_17_Infer\infer.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-06-16T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-06-16T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="tidyverse">
+    
+<meta property="og:article:tag" content="statistical inference">
+    
+<meta property="og:article:tag" content="education">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/infer/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>infer
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-16">16 Jun, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Jo Hardin
+  
+  &middot; Read in about 4 min
+  &middot; (804 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=infer&amp;url=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2finfer%2f&amp;title=infer" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=infer&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2finfer%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/tidyverse" class="label label-primary">tidyverse</a>
+  
+  <a href="https://teachdatascience.com/tags/statistical-inference" class="label label-primary">statistical inference</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<p>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis. Sometimes the process of hypothesis testing is taught as a series of different test procedures (depending on the data structure and research hypothesis), and sometimes it is taught in a uniform framework. The <code>infer</code> package works to help students understand the creation of a sampling distribution under some model, likely the null model.</p>
+<p>Among countless applications of statistical inference in the natural sciences and social sciences, one place that inference plays an important role in the technology field is in A/B testing. Teaching statistical inference (particularly when using the tidy pipeline provided by <code>infer</code>) will help students grok sampling distributions, inference, and p-values. The deep understanding will benefit students when they move from the two-sample setting to more complex models like multivariate linear or generalized linear models.</p>
+<div id="tidy-statistical-inference" class="section level3">
+<h3>Tidy statistical inference</h3>
+<p>Many statistics educators may have recognized the value in teaching the <code>tidyverse</code> and providing students a fluency with data wrangling. However, they may also have felt a disconnect between the computational tools for tidy data wrangling and the (often) central inferential ideas being taught in an introductory statistics course. That is, the majority of R inferential tests (e.g., <code>t.test</code>, <code>chisq.test</code>, etc.) do not play nicely with the tidyverse.</p>
+<p>To connect the the tidyverse with the central inferential ideas from introductory statistics, <a href="http://andrewpbray.github.io/">Andrew Bray</a> and <a href="http://ismayc.github.io/">Chester Ismay</a> have built the R package <code>infer</code>. Along with creating syntax that flows seamlessly through a tidy pipeline, the brilliance of the <code>infer</code> package is that it breaks hypothesis testing down into its <strong>tidy components</strong>! That is, virtually all hypothesis testing (and certainly that which is taught in Introductory Statistics) can be broken town into the following <code>infer</code> verbs:</p>
+<ul>
+<li><code>specify()</code> the variables of interest</li>
+<li><code>hypothesize()</code> about a null claim (or don’t if you plan to create an interval)</li>
+<li><code>generate()</code> observations from the null hypothesis or from the data set (e.g., using bootstrapping) if there is no null hypothesis</li>
+<li><code>calculate()</code> a test statistic</li>
+<li><code>visualize()</code> the test statistics from the null distribution as compared with the observed test statistic</li>
+</ul>
+<center>
+<img width='800' src='https://teachdatascience.com/post/2019_06_17_Infer/inferverbs.png' />
+</center>
+</div>
+<div id="using-infer" class="section level3">
+<h3>Using <code>infer</code></h3>
+<p>The example below is from one of the <code>infer</code> <a href="https://cran.r-project.org/web/packages/infer/vignettes/mtcars_examples.html">vignettes</a> and walks the student through a two sample difference in proportions test. Note that the <em>structure</em> of the R code forces the student to think carefully about each step in the process.</p>
+<pre class="r"><code>library(infer)
+library(dplyr)
+mtcars &lt;- mtcars %&gt;%
+  mutate(vs = factor(vs),
+         am = factor(am))
+# For reproducibility         
+set.seed(4747)   
+
+cars2props &lt;- mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;% # alt: response = am, explanatory = vs
+  hypothesize(null = &quot;independence&quot;) %&gt;%
+  generate(reps = 100, type = &quot;permute&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;)) %&gt;%
+  visualize(method = &quot;both&quot;)
+cars2props</code></pre>
+<p><img src="https://teachdatascience.com/post/2019_06_17_Infer/infer_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The p-value calculation can be done with the <code>get_p_value</code> function. Or alternatively, the observed statistic can be calculated using the same pipeline steps (no <code>hypothesize</code> or <code>generate</code>!) and can be visualized on top of the sampling distribution created above.</p>
+<pre class="r"><code>obs_stat &lt;- mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;))
+obs_stat
+## # A tibble: 1 x 1
+##     stat
+##    &lt;dbl&gt;
+## 1 -0.952
+
+mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;% # alt: response = am, explanatory = vs
+  hypothesize(null = &quot;independence&quot;) %&gt;%
+  generate(reps = 100, type = &quot;permute&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;)) %&gt;%
+  get_p_value(obs_stat, direction = &quot;both&quot;)
+## # A tibble: 1 x 1
+##   p_value
+##     &lt;dbl&gt;
+## 1     0.5
+
+cars2props + shade_p_value(obs_stat, direction = &quot;both&quot;)</code></pre>
+<p><img src="https://teachdatascience.com/post/2019_06_17_Infer/infer_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><code>infer</code> R package: <a href="https://infer.netlify.com/" class="uri">https://infer.netlify.com/</a></li>
+<li>Andrew Bray’s <code>infer</code> talk at rstudio::conf 2018: <a href="https://resources.rstudio.com/rstudio-conf-2018/infer-a-package-for-tidy-statistical-inference-andrew-bray" class="uri">https://resources.rstudio.com/rstudio-conf-2018/infer-a-package-for-tidy-statistical-inference-andrew-bray</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=infer&amp;url=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2finfer%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2finfer%2f&amp;title=infer" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=infer&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2finfer%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/gitclass/" title="Github Classroom">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/sql/" title="SQL 101 in R">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pairprogramming/">Pair Programming for Data Science and Statistics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/peerj/">Practical Data Science: an introduction to the PeerJ collection</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/mosaic/">Less Volume More Creativity in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/sql/">SQL 101 in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/infer/">infer</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/gitclass/">Github Classroom</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/githubinr/">Using GitHub in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/github/">Github for Fun and Profit</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/leaflet/">Leaflet for mapping</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

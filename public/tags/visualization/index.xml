@@ -14,30 +14,30 @@
     
     <item>
       <title>Less Volume More Creativity in R</title>
-      <link>https://teachdatascience.com/2019/06/18/mosaic/</link>
+      <link>https://teachdatascience.com/mosaic/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/18/mosaic/</guid>
+      <guid>https://teachdatascience.com/mosaic/</guid>
       <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
 The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
     </item>
     
     <item>
       <title>SQL 101 in R</title>
-      <link>https://teachdatascience.com/2019/06/17/sql/</link>
+      <link>https://teachdatascience.com/sql/</link>
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/17/sql/</guid>
+      <guid>https://teachdatascience.com/sql/</guid>
       <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
 SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
     </item>
     
     <item>
       <title>Leaflet for mapping</title>
-      <link>https://teachdatascience.com/2019/06/10/leaflet/</link>
+      <link>https://teachdatascience.com/leaflet/</link>
       <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/10/leaflet/</guid>
+      <guid>https://teachdatascience.com/leaflet/</guid>
       <description>Leaflet for mappingMaps are an important way of displaying data.
 The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
 Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
@@ -45,31 +45,31 @@ Here’s a simple example where data from higher education institutions from wit
     
     <item>
       <title>Guidelines for Assessment and Instruction in Statistics Education</title>
-      <link>https://teachdatascience.com/2019/06/05/gaise/</link>
+      <link>https://teachdatascience.com/gaise/</link>
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/05/gaise/</guid>
-      <description>The American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
+      <guid>https://teachdatascience.com/gaise/</guid>
+      <description>The American Statistical Association has placeda priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
 Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
     </item>
     
     <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
-      <link>https://teachdatascience.com/2019/06/03/screencast/</link>
+      <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/03/screencast/</guid>
+      <guid>https://teachdatascience.com/screencast/</guid>
       <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
 We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
     </item>
     
     <item>
       <title>The Tidyverse</title>
-      <link>https://teachdatascience.com/2019/06/02/tidyverse/</link>
+      <link>https://teachdatascience.com/tidyverse/</link>
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/2019/06/02/tidyverse/</guid>
-      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <guid>https://teachdatascience.com/tidyverse/</guid>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
   </channel>
