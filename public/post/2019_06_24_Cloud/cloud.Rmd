@@ -1,0 +1,77 @@
+---
+title: "RStudio Server Pro and Rstudio.cloud installations"
+author: "Nicholas Horton"
+date: '2019-06-23'
+output:
+  html_document:
+    df_print: paged
+tags:
+- cloud computing
+- education
+- RStudio server
+- RStudio.cloud
+- server 
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+When people ask about how to get their students engaged with R in their introductory statistics and data science courses we offer three pieces of advice:
+
+1. keep it simple (discussed in the ["Less Volume, More Creativity"](https://teachdatascience.com/mosaic) blog entry)
+2. engage students to provide peer-tutoring and drop-in office hours to assist with questions and coding to complement class and office hours (at Amherst College this is coordinated by the [Statistics and Data Science Fellows](https://www.amherst.edu/news/news_releases/2018/11-18/sds-fellows-give-back))
+3. have students use a dedicated server to access R
+
+![Slide credit: [Mine &Ccedil;etinkaya-Rundel](https://resources.rstudio.com/webinars/rstudio-cloud-in-the-classroom)](/post/cloud/starting.jpg)
+
+We'll talk more about the innovative [Data 8](http://data8.org) project later this summer, but for now we note that they have used these same strategies (see https://data.berkeley.edu/undergraduate-ds-pedagogy).
+
+Today's blog entry talks about the third point: how the use of cloud based versions of RStudio facilitates startup for students and instructors.  While this setup requires some up-front efforts by instructors and departments it pays off handsomely.
+
+Instead of installing R, RStudio, and packages, all that students need to do to get started on the first day is to connect to the server and log in. They can then start to work in R within minutes.  We call this the "bring a browser" model. 
+
+Using an RStudio server is attractive because:
+
+- no installation of software is needed by students (they just connect)
+- they can jump in from day one to do interesting analyses (see [Data Visualization on Day One: Bringing Big Ideas into Intro Stats Early and Often](https://escholarship.org/uc/item/84v3774z))
+- the motley variability in hardware and operating systems that characterize most students' laptops is rendered moot: all they need is a relatively modern browser
+- relatively cheap devices like Chromebooks (typical price around $150) work well with this setup.  Some institutions have purchased a set of notebooks that can be checked out from the library or IT department.
+- perhaps most importantly, the [cognitive load](https://www.mindtools.com/pages/article/cognitive-load-theory.htm) related to technology is kept to a minimum.  For students with concerns about technology or prior challenges with computing, getting up and running quickly is especially important.
+
+The results are transformative, particularly for the fraction of students who are easily intimidated by computing and/or who have obsolete equipment, outdated operating systems, or minimal free space.  Being able to jump into R from day one with an ability to do interesting things makes a huge difference in motivating students.
+
+### Options
+
+*RStudio Server Pro*: academics using R for teaching purposes can get a free license for RStudio Server Pro, Shiny Server Pro, and RS Connect Pro by providing a copy of their syllabus that specifies that RStudio will be used in the course (see [RStudio Academic Pricing Policy](https://www.rstudio.com/pricing/academic-pricing). This is what a number of institutions (examples include Duke University, Amherst College, Calvin College, Macalester College) have done.  The RStudio servers run under Linux, the typical environment that academic institutions use to support their back-office operations such as their course management system.  At Amherst College, our server has 32GB of memory and 8 cores and routinely supports 30-40 simultaneous users.  
+
+*RStudio.Cloud*: RStudio created RStudio Cloud to provide cloud computing to those unable to or uninterested in setting up their own server.  As of June 2019 the system is still in alpha release, so pricing is not yet available. [Mine &Ccedil;etinkaya-Rundel](https://github.com/mine-cetinkaya-rundel) has created a webinar with related resources entitled [RStudio.cloud in the classroom](https://resources.rstudio.com/webinars/rstudio-cloud-in-the-classroom).
+
+*RStudio Server on Digital Ocean*: Before the advent of RStudio.cloud, the best way to explore an RStudio server was by setting one up using cloud-based resources.  Dean Attali has created detailed [instructions](https://deanattali.com/2015/05/09/setup-rstudio-shiny-server-digital-ocean).
+Remarkably, this process can be completed in under an hour (note: Nick did this last month to support a workshop on statistics education and had things running in 45 minutes).
+
+*RStudio server using containers*: for the technologically savvy instructor with non-technologically savvy students, Docker images with customized R environments can be set up through an institution's computing infrastructure or in the cloud.  Boettiger and Eddelbuettel (2017) write about their process in the [R Journal](https://journal.r-project.org/archive/2017/RJ-2017-065/RJ-2017-065.pdf)  and &Ccedil;etinkaya-Rundel and Rundel discuss their process in an [article](https://peerj.com/preprints/3181v1.pdf) in the [previously discussed](https://teachdatascience.com/peerj) PeerJ collection.  
+
+### Closing thoughts
+
+While each institution needs to make their own decisions as to how to support technology, the use of a cloud-based server has considerable advantages over a school-maintained computer lab.  Students are no longer restricted to a specific time and place to do their computing.  Classrooms with tables are now effectively computer labs since the computing is in the cloud.  Students can pick up their sessions partway through their analyses.  Instructors can install needed packages on one server rather than installing them on all of the lab computers.  
+
+
+Have students had concerns about the use of technology in your course?  Are you requiring them to install and configure software (be it a commercial package or R/RStudio)?  Consider whether cloud solutions might simplify their lives (and yours) while simultaneously facilitating the use of modern tools.
+
+
+### Learn more
+
+- https://rstudio.cloud (RStudio.cloud)
+- https://resources.rstudio.com/webinars/rstudio-cloud-in-the-classroom (RStudio.cloud in the classroom)
+- https://www.mindtools.com/pages/article/cognitive-load-theory.htm (Cognitive load theory)
+- https://peerj.com/preprints/3181 (Infrastructure and tools for teaching computing throughout the statistical curriculum)
+- https://deanattali.com/2015/05/09/setup-rstudio-shiny-server-digital-ocean (Setting up an RStudio Server on Digital Ocean)
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

@@ -12,6 +12,7 @@ tags:
 - data technologies
 - data wrangling
 - SQL
+- data ingestation
 categories: R
 ---
 

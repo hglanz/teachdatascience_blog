@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>server on Teach Data Science</title>
+    <link>https://teachdatascience.com/tags/server/</link>
+    <description>Recent content in server on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Sun, 23 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://teachdatascience.com/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RStudio Server Pro and Rstudio.cloud installations</title>
+      <link>https://teachdatascience.com/2019/06/23/cloud/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/2019/06/23/cloud/</guid>
+      <description>When people ask about how to get their students engaged with R in their introductory statistics and data science courses we offer three pieces of advice:
+keep it simple (discussed in the “Less Volume, More Creativity” blog entry)engage students to provide peer-tutoring and drop-in office hours to assist with questions and coding to complement class and office hours (at Amherst College this is coordinated by the Statistics and Data Science Fellows)have students use a dedicated server to access RSlide credit: Mine Çetinkaya-Rundel</description>
+    </item>
+    
+  </channel>
+</rss>

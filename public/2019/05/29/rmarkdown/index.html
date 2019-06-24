@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Getting Started With R Markdown  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, workflow, communication, ">
+
+
+<meta property="og:title" content="Getting Started With R Markdown  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/2019/05/29/rmarkdown/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_05_29_rmarkdown\rmarkdown.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-05-29T21:13:14-05:00" />
+<meta property="og:article:modified_time" content="2019-05-29T21:13:14-05:00" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="workflow">
+    
+<meta property="og:article:tag" content="communication">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/2019/05/29/rmarkdown/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Getting Started With R Markdown
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-05-29">29 May, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Hunter Glanz
+  
+  &middot; Read in about 5 min
+  &middot; (1028 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Getting%20Started%20With%20R%20Markdown&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f&amp;title=Getting%20Started%20With%20R%20Markdown" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Getting%20Started%20With%20R%20Markdown&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://teachdatascience.com/tags/workflow" class="label label-primary">workflow</a>
+  
+  <a href="https://teachdatascience.com/tags/communication" class="label label-primary">communication</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<div id="what-is-r-markdown" class="section level2">
+<h2>What is R Markdown?</h2>
+<p>Straight from RStudio’s wonderful <a href="https://rmarkdown.rstudio.com/">tutorial</a>, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.</p>
+<p>By including data work, code, and analysis narrative into a single document, R Markdown provides a fully reproducible vehicle for data science projects! Not only does it support multiple languages like R, Python, and SQL but it also accommodates numerous static and dynamic output formats. When you hear the term <em>document</em>, you’re probably thinking of a Microsoft Word document or PDF file. R Markdown files support the creation of these two types of output along with many others such as HTML, slides, dashboards, beamer, latex, books, and websites.</p>
+<p>In fact, most of this blog was produced using RStudio and R Markdown.</p>
+<p>To start a new R Markdown file, simply go to “File” (or the “New File” icon) in the upper left corner of RStudio and select “R Markdown”.</p>
+<center>
+<div class="figure">
+<img src="https://teachdatascience.com/post/rmarkdown/NewRMarkdownFile.png" />
+
+</div>
+</center>
+</div>
+<div id="why-should-you-use-r-markdown" class="section level2">
+<h2>Why Should You Use R Markdown?</h2>
+<center>
+<div class="figure">
+<img src="https://teachdatascience.com/post/rmarkdown/rmarkdownhex.png" width="125" />
+
+</div>
+</center>
+<p>R Markdown has helped transform the landscape of statistical computation and data science workflow. Brian Granger, co-founder of the <a href="https://jupyter.org/">Jupyter Project</a> summarized it best <a href="https://github.com/ellisonbg/jupyter-talks">here</a> when he said that computational notebooks are making “computational reproducibility enjoyable and minimizing the ‘distance’ between a human user and their code/data through interactivity.” There are two key ideas here:</p>
+<ol style="list-style-type: decimal">
+<li><p>Improved computational reproducibility</p></li>
+<li><p>More efficient and accessible data science narratives</p></li>
+</ol>
+<p>Whether you are a student, faculty, or a professional these are principles we can all get behind.</p>
+</div>
+<div id="why-teach-using-r-markdown" class="section level2">
+<h2>Why Teach using R Markdown</h2>
+<p>We’ve moved to introducing students to R Markdown on day one (or day two) of our classes, since it provides a clean and consistent interface that students can use to begin to explore R and RStudio.</p>
+<p>R Markdown allows us as instructors to begin with a focus on statistics and data science concepts. The computational steps are scaffolded, with an R Markdown file that ingests data, does necessary wrangling, and generates a visualization. Later on (when the students have developed some level of comfort with all of the powerful tools they are seeing) other workflows can be introduced, and the students can begin to practice using the tools and idioms they have seen throughout the semester.</p>
+</div>
+<div id="reproducibility-and-accessible-data-science-narratives" class="section level2">
+<h2>Reproducibility and Accessible Data Science Narratives</h2>
+<p><a href="https://escholarship.org/uc/item/90b2f5xh">Baumer et al.</a> acknowledge and argue importance of the following two abilities and the capacity of R Markdown to address them:</p>
+<ol style="list-style-type: decimal">
+<li><p>The ability to express statistical computations</p></li>
+<li><p>The ability to conduct and present data analysis in a way that another person can understand and replicate</p></li>
+</ol>
+<p>These concepts are at the heart of the <em>workflow and communication</em> aspects of data acumen as described by the NASEM Data Science for Undergraduates report (see <a href="https://teachdatascience.com/nasem" class="uri">https://teachdatascience.com/nasem</a>).</p>
+<p>In industry, you will inevitably need to communicate your work to others. This could be to members of the team you are on; to members of a team you lead; to bosses or members of other teams; or to a new employee taking over your position. Or even to yourself (six months in the future.) And even though all of these situations are different, the process of telling the story of your work remains more or less the same at a certain level. The typical data analysis workflow has historically been riddled with error-prone copy-and-pasting and a morass of code, image, and documentation files.</p>
+<p>Faculty and student experiences have involved much of the same. Whether it’s to teach or to demonstrate understanding, the workflow invariably included copious files in need of instructions for how to navigate them, or a final report-like document to incorporate it all.</p>
+<p>The success and ease of these processes have been limited by the technology of the past. R Markdown elegantly solves these challenges.</p>
+<ul>
+<li><p>Code no longer needs to exist independently of the output it is producing and the text explaining it. <strong>R Markdown allows for code to be run as part of the document generation process.</strong></p></li>
+<li><p>Graphics and other output no longer need to be exported to their own files, to only later be imported into a report document. <strong>R Markdown allows for the production and inclusion of graphics in-line.</strong></p></li>
+<li><p>Views of data no longer need to be exported or copy-and-pasted into the report document. <strong>R Markdown allows for printing/viewing of many objects, including data, in-line.</strong></p></li>
+</ul>
+<p>The commands in an R script proceed chronologically, and so does the reading of a written report. So why not interweave the commands and text? All of these materials (and more) benefit from such an upgrade:</p>
+<ul>
+<li>Project reports</li>
+<li>Memos</li>
+<li>Lecture notes</li>
+<li>Class activities</li>
+<li>Homework assignments</li>
+</ul>
+<p>Everything, except for maybe the data itself, needed to produce your analysis, graphics, and results can now be contained in a single vehicle: R Markdown. Reproducibility in data science just got a whole lot easier, thanks to the original ideas of <a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a> and his concept of <a href="https://en.wikipedia.org/wiki/Literate_programming">Literate Programming</a> implemented into R Markdown notebooks.</p>
+</div>
+<div id="learn-more" class="section level2">
+<h2>Learn more</h2>
+<ul>
+<li><p>Lessons in R Markdown: <a href="https://rmarkdown.rstudio.com/lesson-1.html" class="uri">https://rmarkdown.rstudio.com/lesson-1.html</a></p></li>
+<li><p>Baumer, Ben; Çetinkaya-Rundel, Mine; Bray, Andrew; Loi, Linda; Horton, Nicholas J. <em>R Markdown: Integrating A Reproducible Analysis Tool into Introductory Statistics</em>, <strong>TISE 8(1)</strong>, 2014: <a href="https://escholarship.org/uc/item/90b2f5xh" class="uri">https://escholarship.org/uc/item/90b2f5xh</a></p></li>
+<li><p>NASEM Data Science for Undergraduates: Opportunities and Options consensus report, 2018: <a href="https://nas.edu/envisioningds" class="uri">https://nas.edu/envisioningds</a></p></li>
+</ul>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Getting%20Started%20With%20R%20Markdown&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f&amp;title=Getting%20Started%20With%20R%20Markdown" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Getting%20Started%20With%20R%20Markdown&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f29%2frmarkdown%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/2019/05/28/ingestingdata/" title="Ingesting Data">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/2019/05/30/projects/" title="Projects in RStudio">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/23/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/20/pairprogramming/">Pair Programming for Data Science and Statistics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/19/peerj/">Practical Data Science: an introduction to the PeerJ collection</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/18/mosaic/">Less Volume More Creativity in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/17/sql/">SQL 101 in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/16/infer/">infer</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/13/gitclass/">Github Classroom</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/12/githubinr/">Using GitHub in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/11/github/">Github for Fun and Profit</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/10/leaflet/">Leaflet for mapping</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

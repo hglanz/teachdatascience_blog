@@ -1,0 +1,112 @@
+---
+title: "Data Science for Good"
+author: "Jo Hardin"
+date: '2019-06-26'
+output:
+  html_document:
+    df_print: paged
+tags:
+- collaboration
+- education
+- communication
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers.  It is also validating that when the graduate, our students are able to support themselves doing interesting and engaging work.  However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.  Instead, it is worth introducing our students to the range of industries that require skilled data scientists, including what is broadly understood to be data science for good.
+
+##  Organizations worth noting
+
+* [Human Rights Data Analysis Group](https://hrdag.org/), who is, from their website, "a non-profit, non-partisan organization that applies rigorous science to the analysis of human rights violations around the world." In particular, the following "are the data pitfalls that HRDAG has identified."  
+      * under-registration  
+      * selection bias  
+      * duplicate reporting and multiple systems estimation  
+      * complexity  
+      * data security  
+    
+
+<center>
+<figure>
+<img alt = 'hrdag' width='400' src='/post/data4good/hrdag.jpg' />
+</figure>
+</center>
+
+[Apply here](https://hrdag.org/category/hrdag-jobs/)  
+
+* [Data Science for Social Good](https://dssg.uchicago.edu/) at the University of Chicago.  DSSG works hard to train a generation of scientists who are committed to doing good with their data science skills.  [Apply here](https://dssg.uchicago.edu/faq-page/)
+    * DSSG funds and trains fellows & mentors
+    * DSSG holds regular conferences
+    * DSSG [blogs](https://dssg.uchicago.edu/blog/) about their projects 
+    
+
+* [Stanford Computational Policy Lab](https://policylab.stanford.edu/) From their website:  [Apply here](https://policylab.stanford.edu/jobs/)
+
+>At the Stanford Computational Policy Lab, we use technology to tackle pressing issues in criminal justice, education, voting rights, and beyond. Leveraging advances in data science, we study the impact of policy choices at unprecedented scales, and build algorithmic tools to guide high-stakes decisions. By bringing a computational perspective to public policy, we aim to improve the lives of millions of people — especially those affected by inefficient and unfair systems and practices.
+
+* [The Global Data Ethics Project](https://www.datafordemocracy.org/project/global-data-ethics-project)  is built on five principles that provide an ethical framework for doing datascience.  They encourage all data scientists to [sign the ethics pledge](https://www.datafordemocracy.org/pledge).  [Apply here](https://www.datafordemocracy.org/join-us)
+
+<center>
+<figure>
+<img alt = 'pledge' width='600' src='/post/data4good/FORTS.jpg' />
+</figure>
+</center>
+
+* [Classy](https://www.classy.org/) is an integrated suite of fundraising tools for nonprofits.  From their website "We welcome any nonprofits who want to empower their teams to create a modern and engaging online presence."  And later, "Classy is trusted by more than 4,000+ organizations of all sizes and causes, from major events like disease outbreaks, disasters, mass shootings, and social movements, to mainstay world challenges like environmental issues, child trafficking, human rights, and animal rights."  [Apply here](https://www.classy.org/careers/)
+
+* [fwd.us](https://www.fwd.us/) is a "group of business and tech leaders committed to meaningful reform and moving America forward."  In particular, fwd.us is working on issues of criminal justice and immigration.  They have been involved in pushing the [Dream and Promise Act](https://www.fwd.us/action/dream-and-promise-act-thank-you/) which recently passed the U.S. House of Representatives.  [Apply here](https://www.fwd.us/careers/)
+
+
+* [MIT Media Lab](https://www.media.mit.edu/)  From their website:
+
+> True to Jerry’s vision, for over 30 years Media Lab researchers have anticipated and created technologies to make our lives safer, cleaner, healthier, fairer, and more productive. But along with benefits, technology’s everyday efficiencies have also brought their share of issues: obesity, poverty, ethical implications, bullying, divergent politics. The Media Lab’s antidisciplinary research community is uniquely equipped to address these concerns, leveraging the best that technology has to offer, and connecting technology back to the social and the human. Current Lab research examines the deeper implications of where technology creation and adoption has led us—and where we want to go next. 
+
+[Apply here](https://www.media.mit.edu/about/job-opportunities/)
+
+* [AI for Good Foundation](https://ai4good.org/) From their website:
+
+>  To date, the unbalanced nature of incentives and funding for Artificial Intelligence research has favored commercial applications, such as defense and advertising, at the expense of altruistic applications. Artificial Intelligence research must be applied beyond these sectors — to help solve social, economic, and environmental problems — if it will benefit society to the fullest extent possible.
+
+> The Artificial Intelligence for Good Foundation applies Artificial Intelligence research for global sustainable development. Our current projects are helping to advance the global sustainable development agenda — a set of goals adopted by 150 countries to end poverty, protect the planet, and ensure prosperity for all.
+
+[Get involved](https://ai4good.org/about/membership/)
+
+* [DataKind](https://www.datakind.org/)  From their website:
+
+> DataKind is always looking for enthusiastic do-gooders to join us in tackling the world’s toughest problems with data science. We're a fast-growing, global team that believes in the power of data and collaboration to change the world. We want to build a diverse and inclusive work environment that reflects the society and communities in which we are located. We’re committed to diversity and actively seek out applicants from groups facing systemic inequities in the tech sector. We also encourage individuals with non-traditional backgrounds to apply and to include and describe parallel or equivalent experience wherever appropriate.
+
+[Apply here](https://www.datakind.org/careers/)
+
+## Collections of Data Science for Good Resources
+
+Our blog isn't the only place to find out about data science for good endeavors and opportunities.
+
+* AMSTAT News has a regular column, [Stats4Good](https://magazine.amstat.org/blog/category/columnnews/stats4good/) with resources, suggestions, and musings.
+
+
+<center>
+<figure>
+<img alt = 'hrdag' width='800' src='/post/data4good/amstatnews.jpg' />
+</figure>
+</center>
+
+
+* The National Academies recently focused one of their roundtables on [Motivating Data Science Education through Social Good](http://sites.nationalacademies.org/DEPS/BMSA/DEPS_189279).  The complete [recorded webcast](https://vimeo.com/showcase/5686009) is available to watch along with a narrative [summary](http://sites.nationalacademies.org/cs/groups/depssite/documents/webpage/deps_191820.pdf).
+
+* Mass Mutual, a leader in [data science education](https://datascience.massmutual.com/), has a regular [Data Days for Good](https://blog.massmutual.com/post/data-days-good) initiative.  
+
+
+### Learn more
+
+- American Statistical Association's annual [Stewardship Report](https://www.amstat.org/asa/files/pdfs/2018StewardshipReport.pdf)
+- Tobias Pfaff's blog [The Definitive Guide to Do Data Science for Good](http://blog.datalook.io/definitive-guide-data-science-good/) which includes a list of international group meetings and events which are opportunities to network.
+- [Statistics Without Borders](https://swb.wildapricot.org/), a volunteer outreach group providing statistics and data science services.
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

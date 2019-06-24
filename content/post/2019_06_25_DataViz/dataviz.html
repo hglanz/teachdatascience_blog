@@ -1,0 +1,95 @@
+---
+title: "Teaching Data Visualization"
+author: "Jo Hardin"
+date: '2019-06-25'
+output:
+  html_document:
+    df_print: paged
+tags:
+- visualization
+- communication
+- R Markdown
+- plot
+categories: R
+---
+
+
+
+<p>As statistics educators, it is often easier to focus our teaching on <em>methods</em> instead of <em>communication</em>. And while many of us understand the value of good communication, actually <strong>teaching</strong> it is difficult and outside of our comfort zone. There has been quite a bit of work done on the science of visualization (e.g., <a href="https://www.springer.com/us/book/9780387245447">the Grammar of Graphics by Wilkinson</a>). There is general consensus that teaching students to <em>communicate</em> using visualizations is of paramount importance (see recent blog entries: <a href="https://teachdatascience.com/nasem/">National Academies Report on Data Science</a> and <a href="https://teachdatascience.com/gaise/">GAISE</a>). However, the connection between the work done on visualization methods and the teaching of data science and statistics is weaker.</p>
+<p>When trying to incorporate data visualization into the classroom, we find ourselves asking the following questions:</p>
+<ul>
+<li>What does data visualization in a statistics or data science class even mean?<br />
+</li>
+<li>How do you teach data visualization?</li>
+<li>What are successful and unsuccessful approaches to teaching visualization in the classroom?</li>
+<li>What types of assignments can you give for visualization assignments?</li>
+<li>How can visualization assignments be assessed effectively? efficiently?</li>
+</ul>
+<div id="examples-of-teaching-visualization" class="section level2">
+<h2>Examples of Teaching Visualization</h2>
+<p>For inspiration, we look to our colleagues who are already implementing either full courses on data visualization or substantial sections of data visualization into their statistics or data science courses.</p>
+<ul>
+<li><a href="http://www.amelia.mn/">Amelia McNamara</a> from University of St. Thomas is a leader in teaching visualization. Her course on <a href="http://www.amelia.mn/sds136/index.html">Communicating with Data</a> incorporates many different aspects of visualization which are well detailed on her website.
+<ul>
+<li>topics include: <code>plotly</code>, color theory, graphical perception, design principles, hand-drawn visualizations, spatial data, visualizing uncertainty, and more.<br />
+</li>
+<li>assignments include: reading responses, visualization in the wild, and a final project.</li>
+<li>readings include: key standards like <strong>Visualize This</strong> by Nathan Yau and <strong>The Visual Display of Quantitative Information</strong> by Edward Tufte. Other great resources are Wickham and Stryjewski <a href="http://vita.had.co.nz/papers/boxplots.html">40 Years of Boxplots</a> and <a href="http://www.dear-data.com/">Dear Data</a> by Lupi and Posavec.</li>
+</ul></li>
+</ul>
+<center>
+<figure>
+<img alt = 'inspiration' width='800' src='/post/dataviz/vizinspire.jpg' />
+<figcaption>
+From a <a href="https://www.amelia.mn/TeachingDataCommunication.pdf">recent talk</a> by Amelia McNamara at <a href="https://ww2.amstat.org/meetings/sdss/2019/">SDSS 2019</a>
+</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Nolan and Perrett’s 2016 TAS paper <a href="https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2015.1123651">“Teaching and learning data visualization: ideas and assignments”</a> provides guidance on bolstering the role of graphics in the undergraduate statistics curriculum.</p></li>
+<li>Silas Bergen’s course on <a href="http://driftlessdata.space/courses/dsci310/dsci310-home/">Data summarization and visualization</a> (among many other aspects of the course) assigns three design tasks, representing a way of scaffolding assignments to build student competencies throughout the semester.
+<ul>
+<li>Design Task #1: a single, static dashboard visualizing antibiotic data</li>
+<li>Design Task #2: a visualization meant to answer a series of research questions based on census data</li>
+<li>Design Task #3: a visualization which answers more complex research question and includes interactivity</li>
+</ul></li>
+<li>The blog <a href="http://www.citizen-statistician.org/">citizen-statistician</a> provides a handful of posts which are relevant to teaching data visualization including:
+<ul>
+<li><a href="http://www.citizen-statistician.org/2017/10/data-visualization-course-for-freshmen/">Data Visualization Course for First-Year Students</a></li>
+<li><a href="http://www.citizen-statistician.org/2017/10/hand-drawn-data-visualizations/">Hand Drawn Data Visualizations</a></li>
+<li>An assignment <a href="http://www.citizen-statistician.org/2012/12/turning-tables-into-graphs/">Turning Tables into Graphs</a></li>
+</ul></li>
+<li><p>In his STATS337 (“Readings in Applied Data Science”) course at Stanford, Hadley Wickham has his students create annotated bibliographies describing different aspects of data science. <a href="https://github.com/hadley/stats337/blob/master/annotated-bibs/communication.pdf">Kenneth Tay’s Annotated Bibliography</a> on “Communication and Visualization in Data Science” provides context and resources for an instructor looking for ideas in teaching visualization.</p></li>
+<li>The rich history of graphics and visualization is an additional venue to pursue with your students. Understanding how visualizations have played a role in scientific discoveries as well as understanding the evolution of different methods helps students
+<ul>
+<li><a href="https://www.edwardtufte.com/tufte/books_textb">Visual and Statistical Thinking</a> by Tufte discusses two compelling examples where in one the graphic saved the day, and in the second, the graphic was terrible and led to disaster.</li>
+<li><a href="https://projecteuclid.org/euclid.ss/1242049392">The Golden Age of Statistical Graphics</a> traces the origins of statistical graphics and how the last 150 years of graphics paved the way for the explosion in visualization theory and techniques seen recently. The <a href="http://www.datavis.ca/milestones/">Milestones Project</a> by Friendly and Denis is a fun and interactive way for students to experience the evolution of graphical techniques.</li>
+</ul></li>
+</ul>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li>List of Data Viz books: <a href="https://policyviz.com/better-presentations/data-viz-resources/data-viz-books/" class="uri">https://policyviz.com/better-presentations/data-viz-resources/data-viz-books/</a></li>
+<li>Even more references to visualization courses: <a href="http://civilstat.com/2015/11/teaching-data-visualization-approaches-and-syllabi/" class="uri">http://civilstat.com/2015/11/teaching-data-visualization-approaches-and-syllabi/</a></li>
+<li>Online data viz text: <a href="https://serialmentor.com/dataviz/">Fundamentals of Data Visualization</a></li>
+<li>Nathan Yau, <a href="https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/">One Dataset, Visualized 25 Ways</a></li>
+<li>Mine Çetinkaya-Rundel’s 2018 Pickard Lecture describing how powerful teaching visualization in the classroom can be: <a href="https://www.youtube.com/watch?v=RsVOrpXAPXo&amp;feature=youtu.be&amp;t=1020">Let Them Eat Cake (First)!</a>, <a href="https://speakerdeck.com/minecr/let-them-eat-cake-first">slides</a></li>
+<li>Nolan and Perrett <a href="https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2015.1123651">Teaching and Learning Data Visualization: Ideas and Assignments</a>, <em>TAS</em> 2016.</li>
+<li>McNamara [Key Attributes of a Modern Statistical Computing Tool](<a href="https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1482784?journalCode=utas20" class="uri">https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1482784?journalCode=utas20</a>, <em>TAS</em>, 2018.</li>
+<li><a href="https://mdsr-book.github.io/index.html">Modern Data Science with R</a> by Baumer, Kaplan, and Horton devotes chapters to: data visualization, the grammar of graphics, interactive data graphics, and working with spatial data. (As a textbook, MDSR provides many great examples and end of chapter exercises.)</li>
+</ul>
+<center>
+<figure>
+<img alt = 'FL guns' width='800' src='/post/dataviz/FLguns.jpg' />
+<figcaption>
+A great example of a misleading image taken from <strong>Modern Data Science with R</strong> by Baumer, Kaplan, and Horton
+</figcaption>
+</figure>
+</center>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>

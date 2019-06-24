@@ -1,0 +1,29 @@
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+{{ "<![endif]-->" | safeHTML }}
+
+<!-- selection of themed bootstrap css to load-->
+{{ .Scratch.Set "bootstrap" (slice (resources.Get "css/bootswatch/default/bootstrap.min.css"))}}
+{{ if isset .Site.Params "bootswatchtheme" }}
+    {{ $theme := printf "css/bootswatch/%s/bootstrap.min.css" $.Site.Params.bootswatchtheme }}
+    {{ .Scratch.Set "bootstrap" (slice (resources.Get $theme))}}
+{{ end }}
+{{ .Scratch.Add "css" (.Scratch.Get "bootstrap")}}
+{{ .Scratch.Add "css" (slice (resources.Get "css/font-awesome.min.css"))}}
+{{ .Scratch.Add "css" (slice (resources.Get "css/google-fonts.css"))}}
+{{ .Scratch.Add "css" (slice (resources.Get "css/style.css"))}}
+
+{{ .Scratch.Set "highlight" (slice (resources.Get "css/highlight/default.css")) }}
+{{ if isset .Site.Params "highlight" }}
+    {{ $htTheme := printf "css/highlight/%s.css" $.Site.Params.highlight }}
+    {{ .Scratch.Set "highlight" (slice (resources.Get $htTheme))}}
+{{ end }}
+{{ .Scratch.Add "css" (.Scratch.Get "highlight")}}
+
+{{ range .Site.Params.customCSS }}
+    {{ $.Scratch.Add "css" (slice (resources.Get .)) }}
+{{ end }}
+
+{{ $css := .Scratch.Get "css" | resources.Concat "css/bundle.css" | resources.Minify| resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" >

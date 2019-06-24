@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Data Science for Undergraduates  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, plot, regression, ">
+
+
+<meta property="og:title" content="Data Science for Undergraduates  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://pensive-bartik-e3e658.netlify.com/2018/05/27/nasem/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_05_28_NASEM\nasem.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-05-27T21:13:14-05:00" />
+<meta property="og:article:modified_time" content="2018-05-27T21:13:14-05:00" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="plot">
+    
+<meta property="og:article:tag" content="regression">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://pensive-bartik-e3e658.netlify.com/2018/05/27/nasem/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://pensive-bartik-e3e658.netlify.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://pensive-bartik-e3e658.netlify.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://pensive-bartik-e3e658.netlify.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://pensive-bartik-e3e658.netlify.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Data Science for Undergraduates
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2018-05-27">27 May, 2018</time>
+</small>
+
+
+  <small>
+    &middot; by Nicholas Horton
+  
+  &middot; Read in about 4 min
+  &middot; (714 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data%20Science%20for%20Undergraduates&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f&amp;title=Data%20Science%20for%20Undergraduates" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data%20Science%20for%20Undergraduates&amp;body=Check out this site https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/plot" class="label label-primary">plot</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/regression" class="label label-primary">regression</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<div id="data-science-for-undergraduates" class="section level3">
+<h3>Data Science for Undergraduates</h3>
+<p>As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, <a href="https://www.cics.umass.edu/faculty/directory/haas-laura" class="uri">https://www.cics.umass.edu/faculty/directory/haas-laura</a>) and Al Hero (University of Michigan, <a href="https://hero.engin.umich.edu" class="uri">https://hero.engin.umich.edu</a>). The report can be downloaded for free from <a href="https://nas.edu/envisioningds" class="uri">https://nas.edu/envisioningds</a></p>
+<div class="figure">
+<img src="https://pensive-bartik-e3e658.netlify.com/post/nasem/nasem1.png" />
+
+</div>
+<p>From the blurb: As our economy, society, and daily life become increasingly dependent on data, work across nearly all fields is becoming more data driven, affecting both the jobs that are available and the skills that are required. At the request of the National Science Foundation, the National Academies of Sciences, Engineering, and Medicine were asked to set forth a vision for the emerging discipline of data science at the undergraduate level. The study committee considered the core principles and skills undergraduates should learn and discussed the pedagogical issues that must be addressed to build effective data science education programs. Data Science for Undergraduates: Opportunities and Options underscores the importance of preparing undergraduates for a data-enabled world and recommends that academic institutions and other stakeholders take steps to meet the evolving data science needs of students.</p>
+<p>What did the report find? What implications are there for educators working to help their students extract meaning from data? What key concepts and capacities are needed at the undergraduate level?</p>
+<p>While the authors (wisely) didn’t define data science, chapter two of the report defined <em>data acumen</em>:</p>
+<p>Finding 2.3: A critical task in the education of future data scientists is to instill <strong>data acumen</strong>. This requires exposure to <em>key concepts in data science</em>, <em>real-world data and problems</em> that can reinforce the limitations of tools, and <em>ethical considerations</em> that permeate many applications.</p>
+<p>Key concepts involved in developing data acumen include the following:</p>
+<ul>
+<li>Mathematical foundations,</li>
+<li>Computational foundations,</li>
+<li>Statistical foundations,</li>
+<li>Data management and curation,</li>
+<li>Data description and visualization,</li>
+<li>Data modeling and assessment,</li>
+<li>Workflow and reproducibility,</li>
+<li>Communication and teamwork,</li>
+<li>Domain-specific considerations, and (last but not least…)</li>
+<li>Ethical problem solving.</li>
+</ul>
+<p>Each of these areas has an associated list of concepts and topics. As an example, <em>Data Management and Curation</em> includes the following:</p>
+<ul>
+<li>Data provenance;</li>
+<li>Data preparation, especially data cleansing and data transformation;</li>
+<li>Data management (of a variety of data types);</li>
+<li>Record retention policies;</li>
+<li>Data subject privacy;</li>
+<li>Missing and conflicting data; and</li>
+<li>Modern databases.</li>
+</ul>
+<p>We’ve chosen to focus on the use of <a href="https://www.r-project.org">R</a> and <a href="https://www.rstudio.com">RStudio</a> in our blog, but other environments (e.g., python) are equally flexible, powerful, and attractive.</p>
+<p>A number of programs and departments have been using the report as they consider changes to their statistics and data science curricula. More such work is needed.</p>
+<p>Many other resources are available in addition to the report at <a href="https://nas.edu/envisioningds" class="uri">https://nas.edu/envisioningds</a>, including webinars (slides + recording) on a number of a key topics:</p>
+<ul>
+<li>overview of the study</li>
+<li>building data acumen</li>
+<li>incorporating real-world applications</li>
+<li>faculty training and curriculum development</li>
+<li>communication skills and teamwork</li>
+<li>inter-departmental collaboroation and institutional organization</li>
+<li>ethics</li>
+<li>assessment and evaluation</li>
+<li>diversity, inclusion, and increasing participation</li>
+<li>two year colleges and institutional partnerships</li>
+</ul>
+<p>While reading the full report or skimming these resources will take longer than our usual 20-30 minutes we think that it will be worthwhile to do so as a way of developing a baseline familiarity with the state of the art for undergraduate data science circa 2018.</p>
+</div>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://nas.edu/envisioningds" class="uri">https://nas.edu/envisioningds</a></li>
+<li><a href="http://nas.edu/dsert" class="uri">http://nas.edu/dsert</a></li>
+<li><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-statistics-060116-053930" class="uri">https://www.annualreviews.org/doi/abs/10.1146/annurev-statistics-060116-053930</a></li>
+<li><a href="https://www.amstat.org/asa/files/pdfs/EDU-DataScienceGuidelines.pdf" class="uri">https://www.amstat.org/asa/files/pdfs/EDU-DataScienceGuidelines.pdf</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data%20Science%20for%20Undergraduates&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f&amp;title=Data%20Science%20for%20Undergraduates" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data%20Science%20for%20Undergraduates&amp;body=Check out this site https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f05%2f27%2fnasem%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/05/21/intro/" title="Introduction: A summer of data science education">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://pensive-bartik-e3e658.netlify.com/2018/05/28/ingestingdata/" title="Ingesting Data">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//https-pensive-bartik-e3e658-netlify-com-1.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/28/googlescale/">Statistics at Google Scale</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/25/interpretability/">Algorithmic interpretability</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/22/apcsprinciples/">AP CS Principles (and Data as a Big Idea)</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/18/sasrpython/">Comparing SAS, R, and Python</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/14/data8/">more Less Volume More Creativity (R vs. Python)</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/11/r-addtips/">R Studio Add-Ins and Tips</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/09/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/09/forcats/">forcats and other anagrams</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/07/refactoring/">Refactoring for fun and profit</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/04/teaching_programming_tips/">Five Quick Tips for Coding in the Classroom</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://pensive-bartik-e3e658.netlify.com/tags/r-markdown">r-markdown</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/plot">plot</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/regression">regression</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/workflow">workflow</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/education">education</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/visualization">visualization</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/collaboration">collaboration</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/github">github</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/tidyverse">tidyverse</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/r-projects">r-projects</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://pensive-bartik-e3e658.netlify.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

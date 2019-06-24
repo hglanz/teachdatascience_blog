@@ -1,0 +1,65 @@
+---
+title: "`sparklyr` and parallel processing"
+author: "Jo Hardin"
+date: '2018-06-17T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- tidyverse
+- statistical inference
+- education
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, fig.align = "center")
+
+require(parallel)
+
+```
+
+hype
+transparency
+embarrassingly parallel
+
+flow chart, send out 100 tasks, bring back together
+
+Hana's example (around 30min)
+
+```{r error = TRUE}
+library(parallel)
+P <- detectCores(logical=FALSE)
+P
+cl <- makeCluster(P)
+cl
+cl[[1]]
+
+stopCluster(cl)
+cl[[1]]
+```
+
+
+spark:  distributed computing
+
+
+a brief mention of parallel computation to do embarassingly parallel things (simulation study?)
+a shoutout to Spark and sparklyr to do the same thing?
+
+
+
+### Learn more
+
+- Hana Sevcikova [Introduction to parallel computing with R](https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/Introduction-to-parallel-computing-with-R) useR 2017 in Brussels, [tutorial here](https://rawgit.com/PPgp/useR2017public/master/tutorial.html)
+- `sparklyr` to do [parallel cross-validation](https://blog.rstudio.com/2018/05/14/sparklyr-0-8/)
+- https://www.rstudio.com/resources/cheatsheets/  
+    - https://www.rstudio.com/resources/cheatsheets/#sparklyr       
+    - https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+
+

@@ -1,0 +1,57 @@
+---
+title: "GitHub and RStudio Projects - Test?"
+author: "Jo Hardin"
+date: '2018-05-15T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- GitHub
+- R Projects
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project.  If so, you will want to set up a Project that links directly to GitHub.  By having your project on GitHub (**and** regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+
+
+Previous blogs have described working with R Projects (link to that blog) and working with GitHub (link to that blog).  
+
+## Good News!
+
+If you have already become familiar with using Projects in RStudio and GitHub with collaborative projects, then putting them together is a matter of opening the project in RStudio by cloning the Git repository.  If you have not yet set Git up within your RStudio IDE, your best strategy for problem solving is Jenny Bryan's Happy Git and GitHub for the useR website, https://happygitwithr.com/
+
+
+<img alt = 'Project Step 1' width='400' src='/post/r-git/Proj2screenshot.png' />
+
+<img alt = 'Project Step 2' width='400' src='/post/r-git/Proj5screenshot.png' />
+
+<img alt = 'Project Step 3' width='400' src='/post/r-git/Proj6screenshot.png' />
+
+##  Working with GitHub in R
+
+After your project is cloned from GitHub into the RStudio IDE, you should find the Git command interface (usually) in the top right corner of your RStudio IDE.  From there, you can pull, commit, and push.  You will also have the ability to investigate the diff files and state/unstage etc.
+
+<img alt = 'Git Interface' width='400' src='/post/r-git/Proj7screenshot.png' />
+
+
+## Learn more
+
+* Jenny Bryan's Happy Git and GitHub for the useR: https://happygitwithr.com/  (a must read for all R users who are new to Git)
+
+* Jenny Bryan's package `usethis` "facilitates interactive workflows for R project creation and development."  https://www.tidyverse.org/articles/2019/04/usethis-1.5.0/
+
+* Emily Riederer's streamlined process for interfacing R Projects and GitHub https://emilyriederer.github.io/projmgr/, and associated blog about the work: https://emilyriederer.netlify.com/post/rmarkdown-driven-development/ .
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

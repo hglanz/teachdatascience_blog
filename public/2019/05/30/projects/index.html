@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Projects in RStudio  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, R Studio, workflow, collaboration, reproducibility, ">
+
+
+<meta property="og:title" content="Projects in RStudio  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/2019/05/30/projects/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_05_30_r-project\Projects.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-05-30T21:13:14-05:00" />
+<meta property="og:article:modified_time" content="2019-05-30T21:13:14-05:00" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="R Studio">
+    
+<meta property="og:article:tag" content="workflow">
+    
+<meta property="og:article:tag" content="collaboration">
+    
+<meta property="og:article:tag" content="reproducibility">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/2019/05/30/projects/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Projects in RStudio
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-05-30">30 May, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Jo Hardin
+  
+  &middot; Read in about 4 min
+  &middot; (789 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Projects%20in%20RStudio&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f&amp;title=Projects%20in%20RStudio" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Projects%20in%20RStudio&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://teachdatascience.com/tags/r-studio" class="label label-primary">R Studio</a>
+  
+  <a href="https://teachdatascience.com/tags/workflow" class="label label-primary">workflow</a>
+  
+  <a href="https://teachdatascience.com/tags/collaboration" class="label label-primary">collaboration</a>
+  
+  <a href="https://teachdatascience.com/tags/reproducibility" class="label label-primary">reproducibility</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<div id="what-are-projects" class="section level2">
+<h2>What are Projects?</h2>
+<p>RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.</p>
+</div>
+<div id="why-rstudio" class="section level2">
+<h2>Why RStudio?</h2>
+<p>It goes almost without saying that as a group we have moved completely to the RStudio interface to R. We made the switch years ago and have never looked back.</p>
+<p>RStudio is an integrated development environment (IDE) that provides a more coherent and consistent interface to R that is well suited to experts and novices. It is available in both open source and commercial editions on Windows, Mac OS X, and Linux. (We will talk more about the cloud (server) interface in a future entry.)</p>
+<p>For those not using (and teaching with) RStudio, we strongly urge you to make the switch.</p>
+</div>
+<div id="why-use-projects" class="section level2">
+<h2>Why use Projects?</h2>
+<p>The NASEM report on data science (see blog entry at <a href="https://teachdatascience.com/nasem/" class="uri">https://teachdatascience.com/nasem/</a>) discussed the importance of <em>workflow and reproducibility</em> as one important component of data acumen. Their list of key concepts includes:</p>
+<ul>
+<li>Workflows and workflow systems,</li>
+<li>Reproducible analysis,</li>
+<li>Documentation and code standards,</li>
+<li>Source code (version) control systems, and</li>
+<li>Collaboration.</li>
+</ul>
+<p>We will discuss many of these topics over the coming weeks, but wanted to start with the use of projects to help students begin to think more holistically about workflow.</p>
+<p>Projects provide a simple way to isolate work on a single analysis and to organize files and datasets.</p>
+<div id="keeping-track-of-data" class="section level3">
+<h3>Keeping track of data</h3>
+<p>Generally, the working directory is the place where R looks for files (most importantly, <strong>data files</strong>). If you aren’t using a project, you will likely need to <code>setwd</code> in your RMarkdown or R script file before running your R code. However, if you send your code to someone else, then (a) they need to change the filepath that you set to a local place on your own computer, (b) you have to remember to send the exact data file. We strongly discourage <strong>ever</strong> using the <code>setwd</code> command.</p>
+<p>An alternative to <code>setwd()</code> to a local path on your own computer is to keep the data in a specified place within your Project so that you can pass the entire project to your collaborator (ideally using collaborative software like Git).</p>
+<p>Below is the file structure from the R package <code>lubridate</code> (taken from downloading the package code from GitHub). The file <code>lubridate.Rproj</code> keeps track of where all the other files reside. Data live in the <code>data</code> folder, R code lives in the <code>R</code> folder, etc. When opening <code>lubridate.Rpoj</code> within RStudio, the script files will automatically be directed to the appropriate working directories within the <code>lubridate</code> Project.</p>
+<p><img alt = 'Project File Structure' width='400' src='https://teachdatascience.com/post/r-project/Proj3screenshot.png' /></p>
+</div>
+<div id="creating-projects-is-easy" class="section level3">
+<h3>Creating projects is easy</h3>
+<p>Before starting a new project, select New Project to create a space for all of your work to live. Then start on your research by writing R code or R Markdown reports.</p>
+<p><img alt = 'New R Project' width='400' src='https://teachdatascience.com/post/r-project/Proj1screenshot.png' /></p>
+</div>
+<div id="rstudio-projects-and-github" class="section level3">
+<h3>RStudio Projects and GitHub</h3>
+<p>Another important reason to work with Projects is that they work easily within the most used code sharing software, Git. Of the respondents to the Kaggle 2017 survey, 58.4% responded that Git is how code is shared at work. <a href="https://www.kaggle.com/surveys/2017" class="uri">https://www.kaggle.com/surveys/2017</a>. (We’ll return to Git in a future entry.)</p>
+<p><img alt = 'Git Popularity' width='400' src='https://teachdatascience.com/post/r-project/Proj4screenshot.png' /></p>
+<p>The options for creating a new project in RStudio include a new folder, an existing folder, or a version control (e.g., GitHub) software. By seamlessly saving the entire project in a Project, updates to data or source code get updated along with the update to the actual code. By organizing research into Projects, the chance of breaking the reproducibility chain is minimized.</p>
+<p><img alt = 'Git Projects' width='400' src='https://teachdatascience.com/post/r-project/Proj2screenshot.png' /></p>
+</div>
+</div>
+<div id="learn-more" class="section level2">
+<h2>Learn more</h2>
+<ul>
+<li><p>Basics of R Projects (for those new to R) from Jenny Bryan’s Stat 545 course: <a href="http://stat545.com/block002_hello-r-workspace-wd-project.html" class="uri">http://stat545.com/block002_hello-r-workspace-wd-project.html</a></p></li>
+<li><p>Jenny Bryan’s evolving thoughts on Project-oriented workflows: <a href="https://whattheyforgot.org/project-oriented-workflow.html" class="uri">https://whattheyforgot.org/project-oriented-workflow.html</a></p></li>
+<li><p>Workflow: projects in <em>R for Data Science</em> <a href="https://r4ds.had.co.nz/workflow-projects.html" class="uri">https://r4ds.had.co.nz/workflow-projects.html</a></p></li>
+<li><p>RStudio support for projects: <a href="https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects" class="uri">https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects</a></p></li>
+<li><p>More on Workflow (and the evils of <code>setwd</code>): <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/" class="uri">https://www.tidyverse.org/articles/2017/12/workflow-vs-script/</a></p></li>
+</ul>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Projects%20in%20RStudio&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f&amp;title=Projects%20in%20RStudio" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Projects%20in%20RStudio&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2f2019%2f05%2f30%2fprojects%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/2019/05/29/rmarkdown/" title="Getting Started With R Markdown">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/2019/06/02/tidyverse/" title="The Tidyverse">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/23/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/20/pairprogramming/">Pair Programming for Data Science and Statistics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/19/peerj/">Practical Data Science: an introduction to the PeerJ collection</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/18/mosaic/">Less Volume More Creativity in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/17/sql/">SQL 101 in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/16/infer/">infer</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/13/gitclass/">Github Classroom</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/12/githubinr/">Using GitHub in R</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/11/github/">Github for Fun and Profit</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/2019/06/10/leaflet/">Leaflet for mapping</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

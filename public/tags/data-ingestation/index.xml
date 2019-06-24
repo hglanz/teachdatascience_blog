@@ -5,18 +5,29 @@
     <link>https://teachdatascience.com/tags/data-ingestation/</link>
     <description>Recent content in data ingestation on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 21:13:14 -0500</lastBuildDate>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Mon, 17 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/data-ingestation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>SQL 101 in R</title>
+      <link>https://teachdatascience.com/2019/06/17/sql/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/2019/06/17/sql/</guid>
+      <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
+SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
+    </item>
+    
+    <item>
       <title>Ingesting Data</title>
-      <link>https://teachdatascience.com/ingestingdata/</link>
+      <link>https://teachdatascience.com/2019/05/28/ingestingdata/</link>
       <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/ingestingdata/</guid>
+      <guid>https://teachdatascience.com/2019/05/28/ingestingdata/</guid>
       <description>Why use data from outside sources?The world is awash in data, and whatever else we teach in a data science curriculum, data must be at the center. Calls to modernize statistics and data science courses regularly point to using “real” data. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem/) reports Data Management &amp;amp; Curation as a core part of data acumen. Indeed, they recognize data provenance to be a key skill which is “important for all students in [a] data science program.</description>
     </item>
     

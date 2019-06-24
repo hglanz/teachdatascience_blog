@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Watching an expert work through a data analysis using the tidyverse  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, visualization, tidyverse, workflow, wrangling, ">
+
+
+<meta property="og:title" content="Watching an expert work through a data analysis using the tidyverse  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://pensive-bartik-e3e658.netlify.com/2018/06/04/screencast/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_06_04_Screencast\screencast.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-06-04T21:13:14-05:00" />
+<meta property="og:article:modified_time" content="2018-06-04T21:13:14-05:00" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="visualization">
+    
+<meta property="og:article:tag" content="tidyverse">
+    
+<meta property="og:article:tag" content="workflow">
+    
+<meta property="og:article:tag" content="wrangling">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://pensive-bartik-e3e658.netlify.com/2018/06/04/screencast/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://pensive-bartik-e3e658.netlify.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://pensive-bartik-e3e658.netlify.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://pensive-bartik-e3e658.netlify.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://pensive-bartik-e3e658.netlify.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Watching an expert work through a data analysis using the tidyverse
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2018-06-04">4 Jun, 2018</time>
+</small>
+
+
+  <small>
+    &middot; by Nicholas Horton
+  
+  &middot; Read in about 3 min
+  &middot; (523 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Watching%20an%20expert%20work%20through%20a%20data%20analysis%20using%20the%20tidyverse&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f&amp;title=Watching%20an%20expert%20work%20through%20a%20data%20analysis%20using%20the%20tidyverse" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Watching%20an%20expert%20work%20through%20a%20data%20analysis%20using%20the%20tidyverse&amp;body=Check out this site https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/visualization" class="label label-primary">visualization</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/tidyverse" class="label label-primary">tidyverse</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/workflow" class="label label-primary">workflow</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/wrangling" class="label label-primary">wrangling</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<div id="watching-an-expert-work-through-a-data-analysis-using-the-tidyverse" class="section level3">
+<h3>Watching an expert work through a data analysis using the tidyverse</h3>
+<p>Teaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.</p>
+<p>We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, <a href="https://r4ds.had.co.nz" class="uri">https://r4ds.had.co.nz</a>.</p>
+<div class="figure">
+<img src="https://pensive-bartik-e3e658.netlify.com/post/screencast/cycle.png" />
+
+</div>
+<p>Back in 2018, Hadley recorded a video of his analysis of a dataset with the goal of demonstrating his workflow. I’ve found this remarkably illuminating viewing and have incorporated this into my Introductory Data Science class. I’ve shown the first five minutes or so of the video (<a href="https://www.youtube.com/watch?v=go5Au01Jrvs" class="uri">https://www.youtube.com/watch?v=go5Au01Jrvs</a>) then assigned the students to watch the remainder in the privacy of of their own room.</p>
+<div class="figure">
+<img src="https://pensive-bartik-e3e658.netlify.com/post/screencast/hadley.png" />
+
+</div>
+<p>I like one of the comments:</p>
+<blockquote>
+<p>Amazing to see Hadley’s approach and thinking. We need more videos like this. It also shows even Hadley makes silly mistake so remember its ok to get frustrated.</p>
+</blockquote>
+<p>I find this screencast really interesting for a number of reasons:</p>
+<ol style="list-style-type: decimal">
+<li>Hadley provides an oddly compelling stream of consciousness narrative (akin to a director’s commentary on a movie) that helps to clarify <em>why</em> he’s doing what he is doing</li>
+<li>He makes mistakes (quite a few). It’s humorous when he forgets the calling structures for routines he’s written. But it’s even more powerful that he shrugs off the mistake, corrects it, and moves forward. He’s a zen master of calm (see <a href="http://pamvictor.blogspot.com/2015/02/the-zen-of-improv-how-to-make-sweet.html" class="uri">http://pamvictor.blogspot.com/2015/02/the-zen-of-improv-how-to-make-sweet.html</a> for a lovely essay on how fear of making mistakes can paralyze us)</li>
+<li>We learn some cool idioms and approaches to data wrangling and exploration</li>
+<li>He’s having so much fun diving into the dataset: it’s wonderful to watch his unbridled excitement and his New Zealand accent.</li>
+<li>He shows off the power and flexibility of the tidyverse (see <a href="https://teachdatascience.com/tidyverse" class="uri">https://teachdatascience.com/tidyverse</a>).</li>
+</ol>
+<p>So far I’ve only had the students watch the video. Next time I might imagine having students explore an extension of the original data (<a href="https://github.com/hadley/building-permits" class="uri">https://github.com/hadley/building-permits</a>) and communicate their results. Or even more ambitiously, give students a dataset where I’ve done some preliminary work and have them record a five minute screencast.</p>
+</div>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://r4ds.had.co.nz" class="uri">https://r4ds.had.co.nz</a></li>
+<li><a href="https://www.youtube.com/watch?v=go5Au01Jrvs" class="uri">https://www.youtube.com/watch?v=go5Au01Jrvs</a></li>
+<li><a href="https://github.com/hadley/building-permits" class="uri">https://github.com/hadley/building-permits</a></li>
+<li><a href="https://https://teachdatascience.com/tidyverse" class="uri">https://https://teachdatascience.com/tidyverse</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Watching%20an%20expert%20work%20through%20a%20data%20analysis%20using%20the%20tidyverse&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f&amp;title=Watching%20an%20expert%20work%20through%20a%20data%20analysis%20using%20the%20tidyverse" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Watching%20an%20expert%20work%20through%20a%20data%20analysis%20using%20the%20tidyverse&amp;body=Check out this site https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f06%2f04%2fscreencast%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/06/03/tidyverse/" title="The Tidyverse">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://pensive-bartik-e3e658.netlify.com/2018/06/05/nssd/" title="Not So Standard Deviations: not your average data science podcast">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//https-pensive-bartik-e3e658-netlify-com-1.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/28/googlescale/">Statistics at Google Scale</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/25/interpretability/">Algorithmic interpretability</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/22/apcsprinciples/">AP CS Principles (and Data as a Big Idea)</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/18/sasrpython/">Comparing SAS, R, and Python</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/14/data8/">more Less Volume More Creativity (R vs. Python)</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/11/r-addtips/">R Studio Add-Ins and Tips</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/09/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/09/forcats/">forcats and other anagrams</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/07/refactoring/">Refactoring for fun and profit</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/04/teaching_programming_tips/">Five Quick Tips for Coding in the Classroom</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://pensive-bartik-e3e658.netlify.com/tags/r-markdown">r-markdown</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/plot">plot</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/regression">regression</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/workflow">workflow</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/education">education</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/visualization">visualization</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/collaboration">collaboration</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/github">github</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/tidyverse">tidyverse</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/r-projects">r-projects</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://pensive-bartik-e3e658.netlify.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

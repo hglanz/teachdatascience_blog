@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Teach Data Science</title>
+    <link>https://dazzling-lichterman-6802d7.netlify.com/about/</link>
+    <description>Recent content in Abouts on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>yourname@example.com (yourname)</managingEditor>
+    <webMaster>yourname@example.com (yourname)</webMaster>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dazzling-lichterman-6802d7.netlify.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://dazzling-lichterman-6802d7.netlify.com/about/about/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>https://dazzling-lichterman-6802d7.netlify.com/about/about/</guid>
+      <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+    </item>
+    
+  </channel>
+</rss>

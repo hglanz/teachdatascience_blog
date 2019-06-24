@@ -5,7 +5,8 @@
     <link>https://teachdatascience.com/tags/mapping/</link>
     <description>Recent content in mapping on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Mon, 10 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/mapping/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +14,10 @@
     
     <item>
       <title>Leaflet for mapping</title>
-      <link>https://teachdatascience.com/leaflet/</link>
+      <link>https://teachdatascience.com/2019/06/10/leaflet/</link>
       <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/leaflet/</guid>
+      <guid>https://teachdatascience.com/2019/06/10/leaflet/</guid>
       <description>Leaflet for mappingMaps are an important way of displaying data.
 The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
 Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>

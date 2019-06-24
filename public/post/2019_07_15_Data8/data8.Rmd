@@ -1,0 +1,47 @@
+---
+title: "more Less Volume More Creativity (R vs. Python)"
+author: "Nicholas Horton"
+date: '2018-07-14T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- plot
+- regression
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+Upon completion of CS/STAT/INFO C8, students should be able to:
+
+- Write correct small programs that manipulate and combine data sets and carry out iterative procedures.
+- Extend a program with multiple functions so that it runs correctly with additional functionality.
+- Calculate specified statistics of a given dataset.
+- Identify the sources of randomness in an experiment.
+- Formulate a null hypothesis that relates to a given question, which can be assessed using a statistical test.
+- Carry out statistical analyses including computing confidence intervals and performing hypothesis tests in a variety of data settings.
+- Given the result of a statistical analysis from the course, form correct conclusions about a question based on its meaning.
+- Given a question and an analysis, explain whether the analysis addresses the question and how the analysis could change and still address the question.
+- Articulate the benefits and limits of computing technology for analyzing data and answering questions.
+- Correctly generate and interpret histograms, bar charts, and box plots.
+- Correctly make predictions using regression and classification techniques.
+- Assess the accuracy and variability of a prediction.
+
+
+
+
+### Learn more
+
+- data8.org
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

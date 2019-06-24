@@ -1,0 +1,109 @@
+---
+title: "Getting Started With R Markdown"
+author: "Hunter Glanz"
+date: '2018-05-29T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- workflow
+categories: R
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, fig.align = "center")
+```
+
+
+## What is R Markdown? 
+
+Straight from RStudio's wonderful [tutorial](https://rmarkdown.rstudio.com/), R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
+
+By including data work, code, and analysis narrative into a single document, R Markdown provides a fully reproducible vehicle for data science projects! Not only does it support multiple languages like R, Python, and SQL but it also accommodates numerous static and dynamic output formats. When you hear the term *document*, you're probably thinking of a Microsoft Word document or PDF file. R Markdown files support the creation of these two types of output along with many others such as HTML, slides, dashboards, beamer, latex, books, and websites. 
+
+In fact, most of this blog was produced using RStudio and R Markdown.
+
+To start a new R Markdown file, simply go to "File" (or the "New File" icon) in the upper left corner of RStudio and select "R Markdown".
+
+<center>
+
+![](/post/rmarkdown/NewRMarkdownFile.png)
+
+</center>
+
+
+## Why Should You Use R Markdown?
+
+<center>
+
+![](/post/rmarkdown/rmarkdownhex.png){width=125px}
+
+</center>
+
+R Markdown has helped transform the landscape of statistical computation and data science workflow. Brian Granger, co-founder of the [Jupyter Project](https://jupyter.org/) summarized it best [here](https://github.com/ellisonbg/jupyter-talks) when he said that computational notebooks are making "computational reproducibility enjoyable and minimizing the 'distance' between a human user and their code/data through interactivity." There are two key ideas here:
+
+1. Improved computational reproducibility
+
+2. More efficient and accessible data science narratives
+
+Whether you are a student, faculty, or a professional these are principles we can all get behind.
+
+
+## Why Teach using R Markdown
+
+We've moved to introducing students to R Markdown on day one (or day two) of our classes, since it provides a clean and consistent interface that students can use to begin to explore R and RStudio. 
+
+R Markdown allows us as instructors to begin with a focus on statistics and data science concepts.  The computational steps are scaffolded, with an R Markdown file that ingests data, does necessary wrangling, and generates a visualization.  Later on (when the students have developed some level of comfort with all of the powerful tools they are seeing) other workflows can be introduced, and the students can begin to practice using the tools and idioms they have seen throughout the semester.
+
+
+## Reproducibility and Accessible Data Science Narratives
+
+[Baumer et al.](https://escholarship.org/uc/item/90b2f5xh) acknowledge and argue importance of the following two abilities and the capacity of R Markdown to address them:
+
+1. The ability to express statistical computations
+
+2. The ability to conduct and present data analysis in a way that another person can understand and replicate
+
+These concepts are at the heart of the *workflow and communication* aspects of data acumen as described by the NASEM Data Science for Undergraduates report (see https://teachdatascience.com/nasem).
+
+In industry, you will inevitably need to communicate your work to others. This could be to members of the team you are on; to members of a team you lead; to bosses or members of other teams; or to a new employee taking over your position. Or even to yourself (six months in the future.)  And even though all of these situations are different, the process of telling the story of your work remains more or less the same at a certain level. The typical data analysis workflow has historically been riddled with error-prone copy-and-pasting and a morass of code, image, and documentation files. 
+
+Faculty and student experiences have involved much of the same. Whether it's to teach or to demonstrate understanding, the workflow invariably included copious files in need of instructions for how to navigate them, or a final report-like document to incorporate it all. 
+
+The success and ease of these processes have been limited by the technology of the past. R Markdown elegantly solves these challenges.
+
+* Code no longer needs to exist independently of the output it is producing and the text explaining it. **R Markdown allows for code to be run as part of the document generation process.**
+
+* Graphics and other output no longer need to be exported to their own files, to only later be imported into a report document. **R Markdown allows for the production and inclusion of graphics in-line.**
+
+* Views of data no longer need to be exported or copy-and-pasted into the report document. **R Markdown allows for printing/viewing of many objects, including data, in-line.**
+
+The commands in an R script proceed chronologically, and so does the reading of a written report. So why not interweave the commands and text? All of these materials (and more) benefit from such an upgrade:
+
+* Project reports 
+* Memos
+* Lecture notes
+* Class activities
+* Homework assignments
+
+Everything, except for maybe the data itself, needed to produce your analysis, graphics, and results can now be contained in a single vehicle: R Markdown. Reproducibility in data science just got a whole lot easier, thanks to the original ideas of [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) and his concept of [Literate Programming](https://en.wikipedia.org/wiki/Literate_programming) implemented into R Markdown notebooks.
+
+
+
+
+## Learn more
+
+* Lessons in R Markdown: https://rmarkdown.rstudio.com/lesson-1.html
+
+* Baumer, Ben; &Ccedil;etinkaya-Rundel, Mine; Bray, Andrew; Loi, Linda; Horton, Nicholas J. *R Markdown: Integrating A Reproducible Analysis Tool into Introductory Statistics*, **TISE 8(1)**, 2014: https://escholarship.org/uc/item/90b2f5xh
+
+* NASEM Data Science for Undergraduates: Opportunities and Options consensus report, 2018: https://nas.edu/envisioningds
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

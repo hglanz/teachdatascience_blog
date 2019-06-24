@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>report on Teach Data Science</title>
+    <link>https://pensive-bartik-e3e658.netlify.com/tags/report/</link>
+    <description>Recent content in report on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Wed, 06 Jun 2018 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="https://pensive-bartik-e3e658.netlify.com/tags/report/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guidelines for Assessment and Instruction in Statistics Education</title>
+      <link>https://pensive-bartik-e3e658.netlify.com/2018/06/06/gaise/</link>
+      <pubDate>Wed, 06 Jun 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://pensive-bartik-e3e658.netlify.com/2018/06/06/gaise/</guid>
+      <description>Guidelines for Assessment and Instruction in Statistics EducationThe American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
+Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses.</description>
+    </item>
+    
+  </channel>
+</rss>

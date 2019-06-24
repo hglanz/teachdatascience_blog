@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Creating tutorials in R using learnr  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, plot, regression, ">
+
+
+<meta property="og:title" content="Creating tutorials in R using learnr  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://pensive-bartik-e3e658.netlify.com/2018/07/02/learnr/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_03_Learnr\learnr.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-07-02T21:13:14-05:00" />
+<meta property="og:article:modified_time" content="2018-07-02T21:13:14-05:00" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="plot">
+    
+<meta property="og:article:tag" content="regression">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://pensive-bartik-e3e658.netlify.com/2018/07/02/learnr/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://pensive-bartik-e3e658.netlify.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://pensive-bartik-e3e658.netlify.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://pensive-bartik-e3e658.netlify.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://pensive-bartik-e3e658.netlify.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://pensive-bartik-e3e658.netlify.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Creating tutorials in R using learnr
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2018-07-02">2 Jul, 2018</time>
+</small>
+
+
+  <small>
+    &middot; by Nicholas Horton
+  
+  &middot; Read in about 3 min
+  &middot; (618 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Creating%20tutorials%20in%20R%20using%20learnr&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f&amp;title=Creating%20tutorials%20in%20R%20using%20learnr" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Creating%20tutorials%20in%20R%20using%20learnr&amp;body=Check out this site https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/plot" class="label label-primary">plot</a>
+  
+  <a href="https://pensive-bartik-e3e658.netlify.com/tags/regression" class="label label-primary">regression</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+<script src="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<link href="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
+<script src="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/leaflet-label/leaflet.label.js"></script>
+<script src="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<script src="https://pensive-bartik-e3e658.netlify.com/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+
+
+<div id="xx" class="section level1">
+<h1>XX</h1>
+<p>Maps are an important way of displaying data.<br />
+The leaflet package in R provides access to the Leaflet Javascript libraries (<a href="http://leafletjs.com" class="uri">http://leafletjs.com</a>), an open-source mechanism to create interactive maps. The leaflet package (<a href="https://rstudio.github.io/leaflet/" class="uri">https://rstudio.github.io/leaflet/</a>) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, <a href="https://www.openstreetmap.org/#map=5/38.007/-95.844" class="uri">https://www.openstreetmap.org/#map=5/38.007/-95.844</a>) that can be annotated with markers, lines, popups.</p>
+<p>Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</p>
+<p>There are four steps:</p>
+<ol style="list-style-type: decimal">
+<li>Create the dataset that will be displayed</li>
+<li>Create a map <em>widget</em> (according to Wikipedia, a component of an interface that enables a user to perform a function): here we call this <code>m</code></li>
+<li>Add layers and tiles</li>
+<li>Print the map widget to see the results</li>
+</ol>
+<pre class="r"><code># step 1: create the dataset
+institution &lt;- c(&quot;Amherst College&quot;, &quot;Hampshire College&quot;, &quot;Mount Holyoke College&quot;,
+                 &quot;Smith College&quot;, &quot;University of Massachusetts&quot;)
+lat &lt;- c(42.3709, 42.325079, 42.255586, 42.318119, 42.3912)
+lng &lt;- c(-72.5170, -72.530837, -72.574503, -72.638139, -72.5267)
+students &lt;- c(1792, 1175, 2255, 2600, 28635)
+label &lt;- paste0(&quot;&lt;b&gt;&quot;, institution, &quot;&lt;/b&gt;&lt;br&gt;&quot;, students, &quot; students&quot;, sep=&quot;&quot;)
+ds &lt;- dplyr::tibble(institution, lat, lng, students, label)
+dplyr::glimpse(ds)
+## Observations: 5
+## Variables: 5
+## $ institution &lt;chr&gt; &quot;Amherst College&quot;, &quot;Hampshire College&quot;, &quot;Mount Hol...
+## $ lat         &lt;dbl&gt; 42.37090, 42.32508, 42.25559, 42.31812, 42.39120
+## $ lng         &lt;dbl&gt; -72.51700, -72.53084, -72.57450, -72.63814, -72.52670
+## $ students    &lt;dbl&gt; 1792, 1175, 2255, 2600, 28635
+## $ label       &lt;chr&gt; &quot;&lt;b&gt;Amherst College&lt;/b&gt;&lt;br&gt;1792 students&quot;, &quot;&lt;b&gt;Ham...</code></pre>
+<p>Here we have used simple html markup to create a two line label, with institution bolded, that will be displayed.</p>
+<pre class="r"><code># steps 2-3: generate leaflet map 
+library(leaflet)
+m &lt;- leaflet(ds) %&gt;% 
+  addTiles() %&gt;% 
+  addMarkers(~lng, ~lat, popup = ~ label)
+m # step 4: display the results</code></pre>
+<p><div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[42.3709,42.325079,42.255586,42.318119,42.3912],[-72.517,-72.530837,-72.574503,-72.638139,-72.5267],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<b>Amherst College<\/b><br>1792 students","<b>Hampshire College<\/b><br>1175 students","<b>Mount Holyoke College<\/b><br>2255 students","<b>Smith College<\/b><br>2600 students","<b>University of Massachusetts<\/b><br>28635 students"],null,null,null,null,null,null]}],"limits":{"lat":[42.255586,42.3912],"lng":[-72.638139,-72.517]}},"evals":[],"jsHooks":[]}</script> The popups for each of the five institutions can be clicked to see information contained in the <code>label</code> variable. Here’s an example of what happens if Amherst College is clicked:</p>
+<div class="figure">
+<img src="https://pensive-bartik-e3e658.netlify.com/post/leaflet/popup.png" />
+
+</div>
+<div id="notes" class="section level3">
+<h3>Notes</h3>
+<p>MORE INFORMATION: The RStudio leaflet webpage (<a href="https://rstudio.github.io/leaflet/" class="uri">https://rstudio.github.io/leaflet/</a>) has more details about the following topics: The Map Widget, Basemaps, Markers, Popups and Labels, Lines and Shapes, GeoJSON and TopoJSON, Raster Images, Shiny Integration, Colors, Legends, Show/Hide Layers, Choropleths, Projections, and Additional Features.</p>
+<p>HTML OUTPUT: Because of the interactive nature of the underlying JavaScript library, leaflet maps created within an R Markdown file can’t be rendered to pdf or Microsoft Word. If you try, you will see the following error message:</p>
+<blockquote>
+<p>Error: Functions that produce HTML output found in document targeting latex output. Please change the output type of this document to HTML. Alternatively, you can allow HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:</p>
+</blockquote>
+<blockquote>
+<p>always_allow_html: yes</p>
+</blockquote>
+<blockquote>
+<p>Note however that the HTML output will not be visible in non-HTML formats.</p>
+</blockquote>
+</div>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://rstudio.github.io/leaflet/" class="uri">https://rstudio.github.io/leaflet/</a></li>
+<li><a href="https://leafletjs.com" class="uri">https://leafletjs.com</a></li>
+<li><a href="http://shiny.rstudio.com/gallery/superzip-example.html" class="uri">http://shiny.rstudio.com/gallery/superzip-example.html</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Creating%20tutorials%20in%20R%20using%20learnr&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f&amp;title=Creating%20tutorials%20in%20R%20using%20learnr" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Creating%20tutorials%20in%20R%20using%20learnr&amp;body=Check out this site https%3a%2f%2fpensive-bartik-e3e658.netlify.com%2f2018%2f07%2f02%2flearnr%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/06/28/shiny2/" title="Using Shiny in the Classroom">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/04/teaching_programming_tips/" title="Five Quick Tips for Coding in the Classroom">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//https-pensive-bartik-e3e658-netlify-com-1.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/28/googlescale/">Statistics at Google Scale</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/25/interpretability/">Algorithmic interpretability</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/22/apcsprinciples/">AP CS Principles (and Data as a Big Idea)</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/18/sasrpython/">Comparing SAS, R, and Python</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/14/data8/">more Less Volume More Creativity (R vs. Python)</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/11/r-addtips/">R Studio Add-Ins and Tips</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/09/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/09/forcats/">forcats and other anagrams</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/07/refactoring/">Refactoring for fun and profit</a>
+          </li>
+        
+          <li>
+          <a href="https://pensive-bartik-e3e658.netlify.com/2018/07/04/teaching_programming_tips/">Five Quick Tips for Coding in the Classroom</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://pensive-bartik-e3e658.netlify.com/tags/r-markdown">r-markdown</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/plot">plot</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/regression">regression</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/workflow">workflow</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/education">education</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/visualization">visualization</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/collaboration">collaboration</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/github">github</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/tidyverse">tidyverse</a></li><li><a href="https://pensive-bartik-e3e658.netlify.com/tags/r-projects">r-projects</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://pensive-bartik-e3e658.netlify.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

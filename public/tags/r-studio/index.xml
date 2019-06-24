@@ -5,7 +5,8 @@
     <link>https://teachdatascience.com/tags/r-studio/</link>
     <description>Recent content in R Studio on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 30 May 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/r-studio/index.xml" rel="self" type="application/rss+xml" />
@@ -13,20 +14,20 @@
     
     <item>
       <title>Projects in RStudio</title>
-      <link>https://teachdatascience.com/projects/</link>
+      <link>https://teachdatascience.com/2019/05/30/projects/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/projects/</guid>
+      <guid>https://teachdatascience.com/2019/05/30/projects/</guid>
       <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
 Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
     <item>
       <title>Introduction: A summer of data science education</title>
-      <link>https://teachdatascience.com/intro/</link>
+      <link>https://teachdatascience.com/2019/05/21/intro/</link>
       <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/intro/</guid>
+      <guid>https://teachdatascience.com/2019/05/21/intro/</guid>
       <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     

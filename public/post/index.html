@@ -1,251 +1,464 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Posts  &middot; Teach Data Science</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Hugo 0.55.5" />
-  <link rel="stylesheet" href="https://teachdatascience.com/css/normalize.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  
-  
-  
-  <link rel="stylesheet" href="https://teachdatascience.com/css/cayman.87415a4997c8d6c666624ff26c8812f27f42b4cf5dc18c45fc8dcb0cd7d6d2f5.css">
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Posts | Teach Data Science</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Posts  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/post/" />
+<meta property="og:locale" content="en">
+
+<meta property="og:type" content="website" />
+
+
+
+<link href="https://teachdatascience.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Posts" />
+
+<link rel="canonical" href="https://teachdatascience.com/post/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
 </head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="active">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
 
-<body>
-  <section class="page-header">
-  <h1 class="project-name">
-    Teach Data Science
-  </h1>
-  <h2 class="project-tagline">
-    A roadmap to recent developments in teaching data science
-  </h2>
-  <nav>
-    
-    
-      
-      
-      
-      
-      <a href="/" class="btn">Blog</a>
-    
-      
-      
-      
-      
-      <a href="/tags/" class="btn">Tags</a>
-    
-      
-      
-      
-      
-      <a href="/about/" class="btn">About</a>
-    
-      
-      
-      
-      
-      <a href="/index.xml" class="btn">RSS</a>
-    
-  </nav>
-</section>
 
-  <section class="main-content">
-    
-  <h1>Posts</h1>
-<ul>
+<div id="main-content" class="container">
+  <header>
+    <h1>Posts
+</h1>
 
-  <li>
+  </header>
+  
+  
+    <div>
+  <h2><a href="https://teachdatascience.com/2019/06/23/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
+</h2>
+
+  <div class="margin-10">
+    <small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-23">23 Jun, 2019</time>
+</small>
+
     
-    2019-06-20
-    <a href="https://teachdatascience.com/pairprogramming/">
-      Pair Programming for Data Science and Statistics
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/cloud-computing" class="label label-primary">cloud computing</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+  <a href="https://teachdatascience.com/tags/rstudio-server" class="label label-primary">RStudio server</a>
+  
+  <a href="https://teachdatascience.com/tags/rstudio.cloud" class="label label-primary">RStudio.cloud</a>
+  
+  <a href="https://teachdatascience.com/tags/server" class="label label-primary">server</a>
+  
+
+
+  </div>
+</div>
+
+
+  
+    <div>
+  <h2><a href="https://teachdatascience.com/2019/06/20/pairprogramming/">Pair Programming for Data Science and Statistics</a>
+</h2>
+
+  <div class="margin-10">
+    <small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-20">20 Jun, 2019</time>
+</small>
+
+    
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/teaching" class="label label-primary">teaching</a>
+  
+  <a href="https://teachdatascience.com/tags/workflow" class="label label-primary">workflow</a>
+  
+  <a href="https://teachdatascience.com/tags/teamwork" class="label label-primary">teamwork</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+
+
+  </div>
+</div>
+
+
+  
+    <div>
+  <h2><a href="https://teachdatascience.com/2019/06/19/peerj/">Practical Data Science: an introduction to the PeerJ collection</a>
+</h2>
+
+  <div class="margin-10">
+    <small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-19">19 Jun, 2019</time>
+</small>
+
+    
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/reports" class="label label-primary">reports</a>
+  
+
+
+  </div>
+</div>
+
+
+  
+    <div>
+  <h2><a href="https://teachdatascience.com/2019/06/18/mosaic/">Less Volume More Creativity in R</a>
+</h2>
+
+  <div class="margin-10">
+    <small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-18">18 Jun, 2019</time>
+</small>
+
+    
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://teachdatascience.com/tags/visualization" class="label label-primary">visualization</a>
+  
+  <a href="https://teachdatascience.com/tags/modeling" class="label label-primary">modeling</a>
+  
+  <a href="https://teachdatascience.com/tags/statistics" class="label label-primary">statistics</a>
+  
+
+
+  </div>
+</div>
+
+
+  
+    <div>
+  <h2><a href="https://teachdatascience.com/2019/06/17/sql/">SQL 101 in R</a>
+</h2>
+
+  <div class="margin-10">
+    <small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-17">17 Jun, 2019</time>
+</small>
+
+    
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://teachdatascience.com/tags/database" class="label label-primary">database</a>
+  
+  <a href="https://teachdatascience.com/tags/visualization" class="label label-primary">visualization</a>
+  
+  <a href="https://teachdatascience.com/tags/data-technologies" class="label label-primary">data technologies</a>
+  
+  <a href="https://teachdatascience.com/tags/data-wrangling" class="label label-primary">data wrangling</a>
+  
+  <a href="https://teachdatascience.com/tags/sql" class="label label-primary">SQL</a>
+  
+  <a href="https://teachdatascience.com/tags/data-ingestation" class="label label-primary">data ingestation</a>
+  
+
+
+  </div>
+</div>
+
+
+  
+  
+<nav>
+  <ul class="pagination">
+    
+
+
+<li  class="disabled" >
+  <a aria-label="First" href="https://teachdatascience.com//post/">
+    <span aria-hidden="true">&laquo;&laquo;</span>
+  </a>
+</li>
+
+<li  class="disabled" >
+  <a aria-label="Previous" href="#">
+    <span aria-hidden="true">&laquo;</span>
     </a>
-  </li>        
+</li>
 
-  <li>
-    
-    2019-06-19
-    <a href="https://teachdatascience.com/peerj/">
-      Practical Data Science: an introduction to the PeerJ collection
+<li  class="active" >
+  <a href="https://teachdatascience.com//post/">
+    1
     </a>
-  </li>        
+</li>
 
-  <li>
-    
-    2019-06-18
-    <a href="https://teachdatascience.com/mosaic/">
-      Less Volume More Creativity in R
+<li >
+  <a href="https://teachdatascience.com//post/page/2/">
+    2
     </a>
-  </li>        
+</li>
 
-  <li>
-    
-    2019-06-17
-    <a href="https://teachdatascience.com/sql/">
-      SQL 101 in R
+<li >
+  <a href="https://teachdatascience.com//post/page/3/">
+    3
     </a>
-  </li>        
+</li>
 
-  <li>
-    
-    2019-06-16
-    <a href="https://teachdatascience.com/infer/">
-      infer
+<li >
+  <a href="https://teachdatascience.com//post/page/4/">
+    4
     </a>
-  </li>        
+</li>
 
-  <li>
-    
-    2019-06-13
-    <a href="https://teachdatascience.com/gitclass/">
-      Github Classroom
+<li >
+  <a href="https://teachdatascience.com//post/page/5/">
+    5
     </a>
-  </li>        
+</li>
 
-  <li>
-    
-    2019-06-12
-    <a href="https://teachdatascience.com/githubinr/">
-      Using GitHub in R
+
+<li >
+  <a aria-label="Next" href="https://teachdatascience.com//post/page/2/">
+    <span aria-hidden="true">&raquo;</span>
     </a>
-  </li>        
+</li>
+<li >
+  <a aria-label="Last" href="https://teachdatascience.com//post/page/5/">
+    <span aria-hidden="true">&raquo;&raquo;</span>
+  </a>
+</li>
 
-  <li>
+
+  </ul>
+</nav>
+
+
+</div>
     
-    2019-06-11
-    <a href="https://teachdatascience.com/github/">
-      Github for Fun and Profit
-    </a>
-  </li>        
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
 
-  <li>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
     
-    2019-06-10
-    <a href="https://teachdatascience.com/leaflet/">
-      Leaflet for mapping
-    </a>
-  </li>        
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
 
-  <li>
+</small>
+</div>
+
+
     
-    2019-06-09
-    <a href="https://teachdatascience.com/dsert/">
-      Roundtable on Data Science Post Secondary Education
-    </a>
-  </li>        
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
 
-  <li>
-    
-    2019-06-06
-    <a href="https://teachdatascience.com/diversity/">
-      Diversity in Data Science &amp; Statistics
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-06-05
-    <a href="https://teachdatascience.com/gaise/">
-      Guidelines for Assessment and Instruction in Statistics Education
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-06-04
-    <a href="https://teachdatascience.com/nssd/">
-      Not So Standard Deviations: not your average data science podcast
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-06-03
-    <a href="https://teachdatascience.com/screencast/">
-      Watching an expert work through a data analysis using the tidyverse
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-06-02
-    <a href="https://teachdatascience.com/tidyverse/">
-      The Tidyverse
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-05-30
-    <a href="https://teachdatascience.com/projects/">
-      Projects in RStudio
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-05-29
-    <a href="https://teachdatascience.com/rmarkdown/">
-      Getting Started With R Markdown
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-05-28
-    <a href="https://teachdatascience.com/ingestingdata/">
-      Ingesting Data
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-05-27
-    <a href="https://teachdatascience.com/nasem/">
-      Data Science for Undergraduates
-    </a>
-  </li>        
-
-  <li>
-    
-    2019-05-21
-    <a href="https://teachdatascience.com/intro/">
-      Introduction: A summer of data science education
-    </a>
-  </li>        
-
-</ul>
+  </small>
+</div>
 
 
-    <footer class="site-footer">
-  <span class="site-footer-credits">
-    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cayman-hugo-theme">Cayman</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
-  </span>
+
+        </div>
+    </div>
+  </div>
 </footer>
 
-  </section>
-  
-  
-  <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', 'UA-123456789-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
-  
+    
 
-</body>
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
 </html>
+

@@ -1,0 +1,26 @@
+---
+title: "R Studio Add-Ins and Tips"
+author: "Jo Hardin"
+date: '2018-07-11T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- RStudio
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, fig.align = "center")
+```
+
+
+RStudio tips / tricks						annotating, table of contents, etc.	
+
+I don't know what Nick means, but he said something along the line of Add-Ins.  Ask him.
+
+https://cran.r-project.org/web/packages/addinslist/README.html
+
+
+https://simplystatistics.org/2019/03/13/10-things-r-can-do-that-might-surprise-you/
+
