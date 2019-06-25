@@ -22,7 +22,9 @@ Hilary Parker and Roger Peng's podcast, [Not So Standard Deviations](http://nssd
 
 I've detailed a few episodes that speak directly to the idea of statistics and data science education.  The topics raised can be used in the classroom setting to help students think more broadly about how and why learning data science is important.
 
+<center>
 <img alt = 'NSSD' width='600' src='/post/nssd/nssd1screenshot.png' />
+</center>
 
 
 ## Who are they?
@@ -30,11 +32,15 @@ I've detailed a few episodes that speak directly to the idea of statistics and d
 **Roger Peng** is a Biostatistician and Data Scientist whose research is on the health effects of air pollution and climate change.  He is a collaborator in the [Johns Hopkins Data Science Lab](https://jhudatascience.org/).  Roger has long worked hard to share his ideas broadly: in 2011 he co-founded the [SimplyStatistics blog](https://simplystatistics.org/); with co-authors Jeff Leek and Brian Caffo, he created the [Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specializations/jhu-data-science); and he has written seven books describing different aspects of Data Science. 
 
 
+<center>
 <img alt = 'Johns Hopkins Data Science Lab' width='600' src='/post/nssd/nssd3screenshot.png' />
+</center>
 
 **Hilary Parker** is a Data Scientist at Stitch Fix where she works on the Styling Algorithms team.  Formerly, she worked at Etsy as a Senior Data Analyst on data-informed development.  She received her PhD in Biostatistics from Johns Hopkins working with Jeff Leek (after receiving her BA from Pomona College).  She is well known for her [opinionated data analysis development](https://resources.rstudio.com/wistia-rstudio-conf-2017/opinionated-analysis-development-hilary-parker), a topic discussed directly and indirectly on the podcast regularly.      
 
+<center>
 <img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd5screenshot.png' />
+</center>
 
 
 
@@ -53,23 +59,28 @@ In episode [#34 - F Dist](http://nssdeviations.com/episode-34-f-dist) Hilary and
 * domain knowledge -- clothing trends, warehouse operations
 * software engineering -- smoothly making the analysis pieces work together
 
-
+<center>
 <img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd4screenshot.png' />
+</center>
 
 ####  Data Analysis as Music
 
 In episode [#38 - Banging on the Piano](http://nssdeviations.com/episode-38-banging-on-the-piano) Roger discusses his Johns Hopkins Dean's Lecture on the [Past and Future of Data Analysis](https://www.youtube.com/watch?v=qFtJaq4TlqE).  Roger spends the majority of the talk connecting the structure of data analysis to the core tenets of music theory.  Seemingly, music (and data analysis) is a subjective area where different people enjoy different genres of music.  But that said, there is an understanding across the music community of some basic tenets.  For example, many people agree on what harmonies sound good and which don't; that agreement leads to an ability to predict what will sound good before the music is even played.  The understanding of the sounds leads to what we know of as music theory.  Roger takes the idea of music theory and argues that the future of good data analysis is theory.  You know good data analysis when you see it, but teaching someone how to create a good data analysis requires an understanding of the theoretical aspects (e.g., reproducibility).   Of course, just like music, once there is a foundational structure to the theory of data analysis, there is plenty of room for creativity and new ideas.
 
+<center>
 <img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd6screenshot.png' />
 
 <img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd7screenshot.png' />
+</center>
 
 
 ####  Data Science Case Study
 
 In episode [#71 - Compromised Shoe Situation](http://nssdeviations.com/71-compromised-shoe-situation) Hilary talked about trying to collect data on what might seemingly be a straightforward research question:  how long does it take to get to work?  Hilary and Roger discussed the scenario in such a way that the data science challenges were apparent to both experts and those new to the field alike.  After the discussion, Roger wrote a blog at [Simply Statistics](https://simplystatistics.org/2019/01/09/how-data-scientists-think-a-mini-case-study/) about the data science challenges and how data scientists approach problems.  Indeed, the case study is one that could be used in any statistics or data science course as a way to generate discussion on how data is / should be used as a way of understanding the world around us.
 
+<center>
 <img alt = 'Case Study' width='600' src='/post/nssd/nssd2screenshot.png' />
+</center>
 
 
 

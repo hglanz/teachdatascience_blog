@@ -28,18 +28,21 @@ Previous posts have described working with [R Projects](https://teachdatascience
 
 If you have already become familiar with using Projects in RStudio and GitHub with collaborative projects, then putting them together is a matter of opening the project in RStudio by cloning the Git repository.  If you have not yet set Git up within your RStudio IDE, your best strategy for problem solving is Jenny Bryan's Happy Git and GitHub for the useR website, https://happygitwithr.com/
 
-
+<center>
 <img alt = 'Project Step 1' width='400' src='/post/r-git/Proj2screenshot.png' />
 
 <img alt = 'Project Step 2' width='400' src='/post/r-git/Proj5screenshot.png' />
 
 <img alt = 'Project Step 3' width='400' src='/post/r-git/Proj6screenshot.png' />
+</center>
 
 ##  Working with GitHub in R
 
 After your project is cloned from GitHub into the RStudio IDE, you should find the Git command interface (usually) in the top right corner of your RStudio IDE.  From there, you can pull, commit, and push.  You will also have the ability to investigate the diff files and stage/unstage etc.
 
+<center>
 <img alt = 'Git Interface' width='400' src='/post/r-git/Proj7screenshot.png' />
+</center>
 
 ## Teaching with GitHub in R
 

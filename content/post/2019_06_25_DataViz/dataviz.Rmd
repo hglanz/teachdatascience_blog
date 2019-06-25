@@ -41,7 +41,7 @@ For inspiration, we look to our colleagues who are already implementing either f
 
 <center>
 <figure>
-<img alt = 'inspiration' width='800' src='/post/dataviz/vizinspire.jpg' />
+<img alt = 'inspiration' width='600' src='/post/dataviz/vizinspire.jpg' />
 <figcaption>From a <a href="https://www.amelia.mn/TeachingDataCommunication.pdf">recent talk</a> by Amelia McNamara at <a href="https://ww2.amstat.org/meetings/sdss/2019/">SDSS 2019</a></figcaption> 
 </figure>
 </center>
