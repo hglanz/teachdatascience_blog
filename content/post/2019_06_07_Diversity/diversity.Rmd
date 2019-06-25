@@ -73,7 +73,7 @@ Recently, *Significance* magazine put together a comprehensive set of [resources
 
 Additionally, the [resources](https://www.significancemagazine.com/2-uncategorised/624-lgbt-resources-for-statisticians-and-data-scientists?highlight=WyJsZ2J0Il0=) above give suggestions for data sets that are inclusive and tips for using data in class.  For educators, being thoughtful to introduce data in a respectful and inclusive manner seems a low bar that we should all be able to cross when working with students.
 
-[Catherine D'Ignazio](https://twitter.com/kanarinka) is doing a lot of work on [Non-Binary Gender and Big Data](https://civic.mit.edu/2016/6/3/a-primer-on-non-binary-gender-and-big-data/) which is important for all data scientists to think about.
+[Catherine D'Ignazio](https://twitter.com/kanarinka) is working on [Non-Binary Gender and Big Data](https://civic.mit.edu/2016/6/3/a-primer-on-non-binary-gender-and-big-data/) an important topic for all data scientists to think about.
 
 ### Moving Forward
 
