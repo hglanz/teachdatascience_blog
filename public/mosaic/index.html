@@ -166,7 +166,7 @@
     &middot; by Nicholas Horton
   
   &middot; Read in about 6 min
-  &middot; (1212 words)
+  &middot; (1222 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fmosaic%2f" onclick="window.open(this.href, 'mywin',
@@ -225,8 +225,7 @@
 favstats(~ drugrisk, data = HELPmiss)
 ##  min Q1 median Q3 max     mean       sd   n missing
 ##    0  0      0  1  21 1.869658 4.313479 468       2</code></pre>
-<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for
-the <code>drugrisk</code> variable.</p>
+<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for the <code>drugrisk</code> variable.</p>
 <p>Alternative the <code>df_stats()</code> function provides a similar display (but returns a dataframe).</p>
 <pre class="r"><code>df_stats(~ drugrisk, data = HELPmiss)
 ##   min Q1 median Q3 max     mean       sd   n missing
@@ -256,8 +255,7 @@ the <code>drugrisk</code> variable.</p>
 <p>The key insight is the dramatic skew for the risk score: describing the distribution with means (as done with the <code>lm()</code> call) may be misleading.</p>
 <div id="a-more-complicated-example" class="section level3">
 <h3>A more complicated example</h3>
-<p>What if we were also interested in a third variable? The formula interface accommodates
-<em>multivariate thinking</em>.</p>
+<p>What if we were also interested in a third variable? The formula interface accommodates <em>multivariate thinking</em>.</p>
 <pre class="r"><code>gf_point(pcs ~ drugrisk, data = HELPmiss, color = ~ homeless) %&gt;%
   gf_lm()</code></pre>
 <p><img src="https://teachdatascience.com/post/2019_06_18_Mosaic/mosaic_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
@@ -273,8 +271,7 @@ the <code>drugrisk</code> variable.</p>
 </div>
 <div id="replicating-the-above-analyses-without-mosaic" class="section level3">
 <h3>Replicating the above analyses without mosaic</h3>
-<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code>
-for graphics. But it’s more complicated to have beginning students run commands like:</p>
+<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code> for graphics. But it’s more complicated to have beginning students run commands like:</p>
 <pre class="r"><code>tapply(HELPmiss$drugrisk, HELPmiss$homeless, mean)
 ##   housed homeless 
 ##       NA       NA</code></pre>
@@ -287,6 +284,7 @@ for graphics. But it’s more complicated to have beginning students run command
 <pre class="r"><code>HELPmiss %&gt;%
   group_by(homeless) %&gt;%
   summarize(meanval = mean(drugrisk, na.rm=TRUE))
+## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4
 ## # A tibble: 2 x 2
 ##   homeless meanval
 ##   &lt;fct&gt;      &lt;dbl&gt;
@@ -405,6 +403,10 @@ for graphics. But it’s more complicated to have beginning students run command
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/dataviz/">Teaching Data Visualization</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
           </li>
         
@@ -440,10 +442,6 @@ for graphics. But it’s more complicated to have beginning students run command
           <a href="https://teachdatascience.com/github/">Github for Fun and Profit</a>
           </li>
         
-          <li>
-          <a href="https://teachdatascience.com/leaflet/">Leaflet for mapping</a>
-          </li>
-        
         </ul>
       </div>
     </div>
@@ -456,7 +454,7 @@ for graphics. But it’s more complicated to have beginning students run command
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li>
           </ul>
         </div>
       </div>

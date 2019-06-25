@@ -164,7 +164,7 @@
     &middot; by Jo Hardin
   
   &middot; Read in about 8 min
-  &middot; (1704 words)
+  &middot; (1691 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fingestingdata%2f" onclick="window.open(this.href, 'mywin',
@@ -343,11 +343,9 @@ Figure 1: The plot shows that the higher the female literacy rate, the higher th
 <p>It might be interesting, however, to look at the relationship between literacy rates over time. To do that, we create a new variable which is the difference between male and female literacy rates.</p>
 <pre class="r"><code>literacy &lt;- literacy %&gt;% mutate(diffLit = litRateM - litRateF)
 lm(diffLit~year, data=literacy) %&gt;% tidy()
-## # A tibble: 2 x 5
-##   term        estimate std.error statistic     p.value
-##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;
-## 1 (Intercept)  418.      80.1         5.22 0.000000256
-## 2 year          -0.204    0.0401     -5.10 0.000000470</code></pre>
+##          term    estimate   std.error statistic      p.value
+## 1 (Intercept) 417.9034529 80.11740154  5.216138 2.563743e-07
+## 2        year  -0.2041913  0.04005828 -5.097356 4.697986e-07</code></pre>
 <div id="learn-more" class="section level2">
 <h2>Learn more</h2>
 <ul>
@@ -450,6 +448,10 @@ lm(diffLit~year, data=literacy) %&gt;% tidy()
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/dataviz/">Teaching Data Visualization</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
           </li>
         
@@ -485,10 +487,6 @@ lm(diffLit~year, data=literacy) %&gt;% tidy()
           <a href="https://teachdatascience.com/github/">Github for Fun and Profit</a>
           </li>
         
-          <li>
-          <a href="https://teachdatascience.com/leaflet/">Leaflet for mapping</a>
-          </li>
-        
         </ul>
       </div>
     </div>
@@ -501,7 +499,7 @@ lm(diffLit~year, data=literacy) %&gt;% tidy()
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li>
           </ul>
         </div>
       </div>
