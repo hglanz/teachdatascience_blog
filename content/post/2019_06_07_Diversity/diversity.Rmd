@@ -73,6 +73,8 @@ Recently, *Significance* magazine put together a comprehensive set of [resources
 
 Additionally, the [resources](https://www.significancemagazine.com/2-uncategorised/624-lgbt-resources-for-statisticians-and-data-scientists?highlight=WyJsZ2J0Il0=) above give suggestions for data sets that are inclusive and tips for using data in class.  For educators, being thoughtful to introduce data in a respectful and inclusive manner seems a low bar that we should all be able to cross when working with students.
 
+[Catherine D'Ignazio](https://twitter.com/kanarinka) is doing a lot of work on [Non-Binary Gender and Big Data](https://civic.mit.edu/2016/6/3/a-primer-on-non-binary-gender-and-big-data/) which is important for all data scientists to think about.
+
 ### Moving Forward
 
 It is worth pointing out those who **support** data scientists who are women, LGBTQ+ persons, differently abled persons,  and people of color continue to play a role in improving dynamics of the R community.  Shout out to those in positions of privilege who, when offered an invitation to speak at a conference, ask about the gender, racial, LGBTQ+, and able-bodied balance of the other speakers.  [New York R Conference](https://www.rstats.nyc/) did a great job last month with their female speakers.  Here's to continued support of data scientists whose voices are not typically or publicly lifted up.
@@ -87,6 +89,7 @@ It is worth pointing out those who **support** data scientists who are women, LG
 - Black in AI: https://blackinai.github.io/
 - LatinX in AI: http://www.latinxinai.org/
 - R-Ladies: https://rladies.org/
+- [Resources for Women in Data Science](https://reshamas.github.io/resources-for-women-in-data-science/)
 - Women in Statistics and Data Science conference: https://ww2.amstat.org/meetings/wsds/2019/
 - ASA LGBT Concerns Committee: https://ww2.amstat.org/committees/commdetails.cfm?txtComm=CCNDVR04
 - Computing Research Association has a Grad Cohort for Underrepresented Minorities & Persons with Disabilities: https://cra.org/events/2019-urmd-grad-cohort/
