@@ -16,7 +16,7 @@ categories: R
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers.  It is also validating that when the graduate, our students are able to support themselves doing interesting and engaging work.  However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.  Instead, it is worth introducing our students to the range of industries that require skilled data scientists, including what is broadly understood to be data science for good.
+As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers.  It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work.  However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.  Instead, it is worth introducing our students to the range of industries that require skilled data scientists, including what is broadly understood to be data science for good.
 
 ##  Organizations worth noting
 
