@@ -28,7 +28,7 @@ We will use a public facing MySQL [database](http://www.science.smith.edu/wai-da
 
 We begin by demonstrating how SQL queries can be sent to a database.  We begin by setting up a connection using the `dbConnect()` function.
 
-```{r message = FALSE}
+```{r message = FALSE, warning=FALSE}
 library(mosaic)
 library(RMySQL) # that there are plans to move this support to RMariaDB 
 con <- dbConnect(

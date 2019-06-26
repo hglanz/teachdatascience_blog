@@ -41,7 +41,7 @@ For inspiration, we look to our colleagues who are already implementing either f
 
 <center>
 <figure>
-<img alt = 'inspiration' width='800' src='/post/dataviz/vizinspire.jpg' />
+<img alt = 'inspiration' width='600' src='/post/dataviz/vizinspire.jpg' />
 <figcaption>From a <a href="https://www.amelia.mn/TeachingDataCommunication.pdf">recent talk</a> by Amelia McNamara at <a href="https://ww2.amstat.org/meetings/sdss/2019/">SDSS 2019</a></figcaption> 
 </figure>
 </center>
@@ -69,9 +69,6 @@ For inspiration, we look to our colleagues who are already implementing either f
     * [The Golden Age of Statistical Graphics](https://projecteuclid.org/euclid.ss/1242049392) traces the origins of statistical graphics and how the last 150 years of graphics paved the way for the explosion in visualization theory and techniques seen recently.  The [Milestones Project](http://www.datavis.ca/milestones/) by Friendly and Denis is a fun and interactive way for students to experience the evolution of graphical techniques. 
 
 
-
-
-
  
 ### Learn more
 
@@ -81,12 +78,12 @@ For inspiration, we look to our colleagues who are already implementing either f
 - Nathan Yau, [One Dataset, Visualized 25 Ways](https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/)
 - Mine &Ccedil;etinkaya-Rundel's 2018 Pickard Lecture describing how powerful teaching visualization in the classroom can be:  [Let Them Eat Cake (First)!](https://www.youtube.com/watch?v=RsVOrpXAPXo&feature=youtu.be&t=1020), [slides](https://speakerdeck.com/minecr/let-them-eat-cake-first)
 - Nolan and Perrett [Teaching and Learning Data Visualization: Ideas and Assignments](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2015.1123651), *TAS* 2016.
-- McNamara [Key Attributes of a Modern Statistical Computing Tool](https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1482784?journalCode=utas20, *TAS*, 2018.
+- McNamara [Key Attributes of a Modern Statistical Computing Tool](https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1482784?journalCode=utas20), *TAS*, 2018.
 - [Modern Data Science with R](https://mdsr-book.github.io/index.html) by Baumer, Kaplan, and Horton devotes chapters to: data visualization, the grammar of graphics, interactive data graphics, and working with spatial data.  (As a textbook, MDSR provides many great examples and end of chapter exercises.)
 
 <center>
 <figure>
-<img alt = 'FL guns' width='800' src='/post/dataviz/FLguns.jpg' />
+<img alt = 'FL guns' width='600' src='/post/dataviz/FLguns.jpg' />
 <figcaption>A great example of a misleading image taken from **Modern Data Science with R** by Baumer, Kaplan, and Horton</figcaption> 
 </figure>
 </center>

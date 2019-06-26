@@ -43,19 +43,27 @@ categories: R
 <p>Generally, the working directory is the place where R looks for files (most importantly, <strong>data files</strong>). If you aren’t using a project, you will likely need to <code>setwd</code> in your RMarkdown or R script file before running your R code. However, if you send your code to someone else, then (a) they need to change the filepath that you set to a local place on your own computer, (b) you have to remember to send the exact data file. We strongly discourage <strong>ever</strong> using the <code>setwd</code> command.</p>
 <p>An alternative to <code>setwd()</code> to a local path on your own computer is to keep the data in a specified place within your Project so that you can pass the entire project to your collaborator (ideally using collaborative software like Git).</p>
 <p>Below is the file structure from the R package <code>lubridate</code> (taken from downloading the package code from GitHub). The file <code>lubridate.Rproj</code> keeps track of where all the other files reside. Data live in the <code>data</code> folder, R code lives in the <code>R</code> folder, etc. When opening <code>lubridate.Rpoj</code> within RStudio, the script files will automatically be directed to the appropriate working directories within the <code>lubridate</code> Project.</p>
-<p><img alt = 'Project File Structure' width='400' src='/post/r-project/Proj3screenshot.png' /></p>
+<center>
+<img alt = 'Project File Structure' width='400' src='/post/r-project/Proj3screenshot.png' />
+</center>
 </div>
 <div id="creating-projects-is-easy" class="section level3">
 <h3>Creating projects is easy</h3>
 <p>Before starting a new project, select New Project to create a space for all of your work to live. Then start on your research by writing R code or R Markdown reports.</p>
-<p><img alt = 'New R Project' width='400' src='/post/r-project/Proj1screenshot.png' /></p>
+<center>
+<img alt = 'New R Project' width='400' src='/post/r-project/Proj1screenshot.png' />
+</center>
 </div>
 <div id="rstudio-projects-and-github" class="section level3">
 <h3>RStudio Projects and GitHub</h3>
 <p>Another important reason to work with Projects is that they work easily within the most used code sharing software, Git. Of the respondents to the Kaggle 2017 survey, 58.4% responded that Git is how code is shared at work. <a href="https://www.kaggle.com/surveys/2017" class="uri">https://www.kaggle.com/surveys/2017</a>. (We’ll return to Git in a future entry.)</p>
-<p><img alt = 'Git Popularity' width='400' src='/post/r-project/Proj4screenshot.png' /></p>
+<center>
+<img alt = 'Git Popularity' width='400' src='/post/r-project/Proj4screenshot.png' />
+</center>
 <p>The options for creating a new project in RStudio include a new folder, an existing folder, or a version control (e.g., GitHub) software. By seamlessly saving the entire project in a Project, updates to data or source code get updated along with the update to the actual code. By organizing research into Projects, the chance of breaking the reproducibility chain is minimized.</p>
-<p><img alt = 'Git Projects' width='400' src='/post/r-project/Proj2screenshot.png' /></p>
+<center>
+<img alt = 'Git Projects' width='400' src='/post/r-project/Proj2screenshot.png' />
+</center>
 </div>
 </div>
 <div id="learn-more" class="section level2">

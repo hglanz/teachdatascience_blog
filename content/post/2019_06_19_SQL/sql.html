@@ -23,14 +23,7 @@ categories: R
 <p>We will use a public facing MySQL <a href="http://www.science.smith.edu/wai-database/home/about">database</a> containing wideband acoustic immittance (WAI) measures made on normal ears of adults. (The project is funded by the National Institutes of Health, NIDCD, and hosted on a server at Smith College, <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=8769352&amp;icde=44962011&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=46&amp;csb=default&amp;cs=ASC&amp;pball=">PI Susan Voss, R15 DC014129-01</a>.) The database was created to enable auditory researchers to share WAI measurements and combine analyses over multiple datasets.</p>
 <p>We begin by demonstrating how SQL queries can be sent to a database. We begin by setting up a connection using the <code>dbConnect()</code> function.</p>
 <pre class="r"><code>library(mosaic)
-## Warning: package &#39;mosaic&#39; was built under R version 3.4.4
-## Warning: package &#39;dplyr&#39; was built under R version 3.4.4
-## Warning: package &#39;ggformula&#39; was built under R version 3.4.4
-## Warning: package &#39;ggplot2&#39; was built under R version 3.4.4
-## Warning: package &#39;ggstance&#39; was built under R version 3.4.4
-## Warning: package &#39;mosaicData&#39; was built under R version 3.4.4
 library(RMySQL) # that there are plans to move this support to RMariaDB 
-## Warning: package &#39;RMySQL&#39; was built under R version 3.4.4
 con &lt;- dbConnect(
   MySQL(), host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
   password = &quot;smith_waiDB&quot;, dbname = &quot;wai&quot;)</code></pre>
