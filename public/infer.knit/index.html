@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Roundtable on Data Science Post Secondary Education  &middot; Teach Data Science</title>
+  <title>infer  &middot; Teach Data Science</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,25 +14,27 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="reports, community colleges, ">
+<meta name="keywords" content="tidyverse, statistical inference, education, ">
 
 
-<meta property="og:title" content="Roundtable on Data Science Post Secondary Education  &middot; Teach Data Science ">
+<meta property="og:title" content="infer  &middot; Teach Data Science ">
 <meta property="og:site_name" content="Teach Data Science"/>
-<meta property="og:url" content="https://teachdatascience.com/dsert/" />
+<meta property="og:url" content="https://teachdatascience.com/infer.knit/" />
 <meta property="og:locale" content="en">
 
-<meta property="content-source" content="post\2019_06_10_Roundtable\dsert.html">
+<meta property="content-source" content="post\2019_06_17_Infer\infer.knit.md">
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2019-06-09T00:00:00Z" />
-<meta property="og:article:modified_time" content="2019-06-09T00:00:00Z" />
+<meta property="og:article:published_time" content="2019-06-16T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-06-16T00:00:00Z" />
 
   
     
-<meta property="og:article:tag" content="reports">
+<meta property="og:article:tag" content="tidyverse">
     
-<meta property="og:article:tag" content="community colleges">
+<meta property="og:article:tag" content="statistical inference">
+    
+<meta property="og:article:tag" content="education">
     
   
 
@@ -42,7 +44,7 @@
 
 
 
-<link rel="canonical" href="https://teachdatascience.com/dsert/" />
+<link rel="canonical" href="https://teachdatascience.com/infer.knit/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
 <meta name="generator" content="Hugo 0.55.5" />
@@ -148,39 +150,39 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="title-metas text-center">
 
-    <h1>Roundtable on Data Science Post Secondary Education
+    <h1>infer
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2019-06-09">9 Jun, 2019</time>
+  <time datetime="2019-06-16">16 Jun, 2019</time>
 </small>
 
 
   <small>
-    &middot; by Nicholas Horton
+    &middot; by Jo Hardin
   
   &middot; Read in about 4 min
-  &middot; (752 words)
+  &middot; (804 words)
   &middot; 
 <span class="share-box">Share this on:
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
 
-    <a href="https://twitter.com/intent/tweet?text=Roundtable%20on%20Data%20Science%20Post%20Secondary%20Education&amp;url=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://twitter.com/intent/tweet?text=infer&amp;url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
 
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
 
-    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
 
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fdsert%2f&amp;title=Roundtable%20on%20Data%20Science%20Post%20Secondary%20Education" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f&amp;title=infer" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
 
-    <a href="mailto:?subject=Roundtable%20on%20Data%20Science%20Post%20Secondary%20Education&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fdsert%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+    <a href="mailto:?subject=infer&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
   </span>
 
   </small>
@@ -188,9 +190,11 @@
 <div class="margin-10">
   <i class="fa fa-tags"></i>
   
-  <a href="https://teachdatascience.com/tags/reports" class="label label-primary">reports</a>
+  <a href="https://teachdatascience.com/tags/tidyverse" class="label label-primary">tidyverse</a>
   
-  <a href="https://teachdatascience.com/tags/community-colleges" class="label label-primary">community colleges</a>
+  <a href="https://teachdatascience.com/tags/statistical-inference" class="label label-primary">statistical inference</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
   
 
 
@@ -206,51 +210,90 @@
       <div class="content">
   
 
+<p>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data.  One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset.  Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.  Sometimes the process of hypothesis testing is taught as a series of different test procedures (depending on the data structure and research hypothesis), and sometimes it is taught in a uniform framework.  The <code>infer</code> package works to help students understand the creation of a sampling distribution under some model, likely the null model.</p>
 
-<p>The <a href="https://nas.edu">National Academies of Science, Engineering, and Medicine</a> Roundtable on Data Science Postsecondary Education was convened in 2016 to work to develop a coherent vision for the emerging field of data science. The Roundtable, which consists of representatives from industry, government, and academia meets quarterly for a day to discuss best practices, ways to support the growing community, and approaches to help advance data science education.</p>
-<div class="figure">
-<img src="https://teachdatascience.com/post/dsert/roundtable.png" />
+<p>Among countless applications of statistical inference in the natural sciences and social sciences, one place that inference plays an important role in the technology field is in A/B testing.  Teaching statistical inference (particularly when using the tidy pipeline provided by <code>infer</code>) will help students grok sampling distributions, inference, and p-values.  The deep understanding will benefit students when they move from the two-sample setting to more complex models like multivariate linear or generalized linear models.</p>
 
-</div>
-<p>Full information about the roundtable including narrative summaries of past meetings can be found at <a href="https://nas.edu/dsert" class="uri">https://nas.edu/dsert</a></p>
-<p>We thought that the record of the roundtable would be blog-worthy for a number of reasons. First, each of the prior roundtable meetings have focused on a number of provocative and important topics, with narrative summaries provided (as well as high quality recording of the presentations and discussion). Second, it’s timely, as on Wednesday, June 12th the roundtable will be meeting virtually from noon-5:00pm EDT to discuss “data science education at two-year colleges”. Want to participate live? Free signups are available at <a href="https://www.eventbrite.com/e/data-science-education-at-two-year-colleges-registration-60945737341" class="uri">https://www.eventbrite.com/e/data-science-education-at-two-year-colleges-registration-60945737341</a></p>
-<p>Past meeting topics include:</p>
+<h3 id="tidy-statistical-inference">Tidy statistical inference</h3>
+
+<p>Many statistics educators may have recognized the value in teaching the <code>tidyverse</code> and providing students a fluency with data wrangling.  However, they may also have felt a disconnect between the computational tools for tidy data wrangling and the (often) central inferential ideas being taught in an introductory statistics course.  That is, the majority of R inferential tests (e.g., <code>t.test</code>, <code>chisq.test</code>, etc.) do not play nicely with the tidyverse.</p>
+
+<p>To connect the the tidyverse with the central inferential ideas from introductory statistics, <a href="http://andrewpbray.github.io/">Andrew Bray</a> and <a href="http://ismayc.github.io/">Chester Ismay</a> have built the R package <code>infer</code>.  Along with creating syntax that flows seamlessly through a tidy pipeline, the brilliance of the <code>infer</code> package is that it breaks hypothesis testing down into its <strong>tidy components</strong>!  That is, virtually all hypothesis testing (and certainly that which is taught in Introductory Statistics) can be broken town into the following <code>infer</code> verbs:</p>
+
 <ul>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_191553">March 29, 2019</a> Improving Coordination between Academia and Industry</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_189279">December 10, 2018</a>: Motivating Data Science Education through Social Good</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_187416">September 17, 2018</a>: Challenges and Opportunities to Better Engage Women and Minorities in Data Science Education</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_185819">June 13, 2018</a>: Programs and Approaches for Data Science Education at the PhD Level</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_184420">March 23, 2018</a>: Improving Reproducibility by Teaching Data Science as a Scientific Process</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_178021">December 8, 2017</a>: Integrating Ethical and Privacy Concerns into Data Science Education</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_178020">October 20, 2017</a>: Alternative Mechanisms for Data Science Education</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_178019">May 1, 2017</a>: Data Science Education in the Workplace</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_176954">March 20, 2017</a>: Examining the Intersection of Domain Expertise and Data Science</li>
-<li><a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_175092">December 14, 2016</a>: The Foundations of Data Science from Statistics, Computer Science, Mathematics, and Engineering</li>
+<li><code>specify()</code> the variables of interest</li>
+<li><code>hypothesize()</code> about a null claim (or don&rsquo;t if you plan to create an interval)</li>
+<li><code>generate()</code> observations from the null hypothesis or from the data set (e.g., using bootstrapping) if there is no null hypothesis</li>
+<li><code>calculate()</code> a test statistic</li>
+<li><code>visualize()</code> the test statistics from the null distribution as compared with the observed test statistic</li>
 </ul>
-<div id="take-home" class="section level3">
-<h3>Take home</h3>
-<p>I’ve found each of the roundtable meetings to be rewarding in that they have focused on a particular angle and brought together top experts to share their insights, vision for the future, and areas that require more work. Two examples that stand out for me are the discussions of ethical and privacy concerns (<a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_178021" class="uri">https://sites.nationalacademies.org/DEPS/BMSA/DEPS_178021</a>) and the discussions of diversity and inclusion (see <a href="https://sites.nationalacademies.org/DEPS/BMSA/DEPS_187416" class="uri">https://sites.nationalacademies.org/DEPS/BMSA/DEPS_187416</a> and also <a href="https://teachdatascience.com/diversity" class="uri">https://teachdatascience.com/diversity</a>). The roundtables have brought many voices together to share their wisdom. I’d encourage you to download a few of the narrative summaries as well as to sign up and participate in the two year college discussion on June 12th.</p>
-</div>
-<div id="learn-more" class="section level3">
-<h3>Learn more</h3>
+
+<p><center>
+<img width='800' src='https://teachdatascience.com/post/2019_06_17_Infer/inferverbs.png' />
+</center></p>
+
+<h3 id="using-infer">Using <code>infer</code></h3>
+
+<p>The example below is from one of the <code>infer</code> <a href="https://cran.r-project.org/web/packages/infer/vignettes/mtcars_examples.html">vignettes</a> and walks the student through a two sample difference in proportions test.  Note that the <em>structure</em> of the R code forces the student to think carefully about each step in the process.</p>
+
+<pre><code class="language-r">library(infer)
+library(dplyr)
+mtcars &lt;- mtcars %&gt;%
+  mutate(vs = factor(vs),
+         am = factor(am))
+# For reproducibility         
+set.seed(4747)   
+
+cars2props &lt;- mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;% # alt: response = am, explanatory = vs
+  hypothesize(null = &quot;independence&quot;) %&gt;%
+  generate(reps = 100, type = &quot;permute&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;)) %&gt;%
+  visualize(method = &quot;both&quot;)
+cars2props
+</code></pre>
+
+<p><img src="infer_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+
+<p>The p-value calculation can be done with the <code>get_p_value</code> function.  Or alternatively, the observed statistic can be calculated using the same pipeline steps (no <code>hypothesize</code> or <code>generate</code>!) and can be visualized on top of the sampling distribution created above.</p>
+
+<pre><code class="language-r">obs_stat &lt;- mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;))
+obs_stat
+## # A tibble: 1 x 1
+##     stat
+##    &lt;dbl&gt;
+## 1 -0.952
+
+mtcars %&gt;%
+  specify(am ~ vs, success = &quot;1&quot;) %&gt;% # alt: response = am, explanatory = vs
+  hypothesize(null = &quot;independence&quot;) %&gt;%
+  generate(reps = 100, type = &quot;permute&quot;) %&gt;%
+  calculate(stat = &quot;z&quot;, order = c(&quot;0&quot;, &quot;1&quot;)) %&gt;%
+  get_p_value(obs_stat, direction = &quot;both&quot;)
+## # A tibble: 1 x 1
+##   p_value
+##     &lt;dbl&gt;
+## 1    0.54
+
+cars2props + shade_p_value(obs_stat, direction = &quot;both&quot;)
+</code></pre>
+
+<p><img src="infer_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+
+<h3 id="learn-more">Learn more</h3>
+
 <ul>
-<li><a href="https://nas.edu/dsert" class="uri">https://nas.edu/dsert</a></li>
-<li><a href="https://nas.edu/envisioningds" class="uri">https://nas.edu/envisioningds</a></li>
-<li><a href="https://www.amstat.org/ASA/Education/Two-Year-College-Data-Science-Summit.aspx" class="uri">https://www.amstat.org/ASA/Education/Two-Year-College-Data-Science-Summit.aspx</a></li>
+<li><code>infer</code> R package: <a href="https://infer.netlify.com/">https://infer.netlify.com/</a></li>
+<li>Andrew Bray&rsquo;s <code>infer</code> talk at rstudio::conf 2018: <a href="https://resources.rstudio.com/rstudio-conf-2018/infer-a-package-for-tidy-statistical-inference-andrew-bray">https://resources.rstudio.com/rstudio-conf-2018/infer-a-package-for-tidy-statistical-inference-andrew-bray</a></li>
 </ul>
-</div>
-<div id="more-about-the-roundtable-from-the-nasem-website" class="section level3">
-<h3>More About the Roundtable (from the NASEM website)</h3>
-<p>The Roundtable on Data Science Postsecondary Education brings together representatives from academic data science programs, funding agencies, professional societies, foundations, and industry to discuss the community’s needs, best practices, and ways to move forward. The roundtable will help affected communities develop a coherent and shared view of the emerging field of data science and of how best to prepare large numbers of professionals to help realize the potential of this field.</p>
-<p>The roundtable convenes four meetings per year. Each meeting focuses on a topic related to data science education or practice, and consists of presentations from experts followed by open discussions of the roundtable. All meetings are open to the public and advertised to the broader data science community. Meetings will be webcast live with the capability for remote participation, and all videos and slides from each meeting will be posted online. Meeting highlights will be produced following each meeting to summarize the presentations and discussions that occurred.</p>
-<p>Roundtable members: <a href="http://sites.nationalacademies.org/DEPS/BMSA/DEPS_175782" class="uri">http://sites.nationalacademies.org/DEPS/BMSA/DEPS_175782</a></p>
-<p>The roundtable is sponsored by the Gordon and Betty Moore Foundation, the National Institutes of Health, the National Academy of Sciences W. K. Kellogg Foundation Fund, the Association for Computing Machinery, the American Statistical Association, and the Mathematical Association of America.</p>
-</div>
-<div id="about-this-blog" class="section level3">
-<h3>About this blog</h3>
-<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
 <p>We always welcome comments on entries and suggestions for new ones.</p>
-</div>
 
 </div>
 
@@ -258,22 +301,22 @@
       <footer>
   
 <span class="share-box">Share this on:
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
 
-    <a href="https://twitter.com/intent/tweet?text=Roundtable%20on%20Data%20Science%20Post%20Secondary%20Education&amp;url=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://twitter.com/intent/tweet?text=infer&amp;url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
 
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
 
-    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fdsert%2f" onclick="window.open(this.href, 'mywin',
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
 
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fdsert%2f&amp;title=Roundtable%20on%20Data%20Science%20Post%20Secondary%20Education" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2finfer.knit%2f&amp;title=infer" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
 
-    <a href="mailto:?subject=Roundtable%20on%20Data%20Science%20Post%20Secondary%20Education&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fdsert%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+    <a href="mailto:?subject=infer&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2finfer.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
   </span>
 
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -282,7 +325,7 @@
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="https://teachdatascience.com/diversity/" title="Diversity in Data Science &amp; Statistics">
+          <a href="https://teachdatascience.com/gitclass/" title="Github Classroom">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
@@ -290,7 +333,7 @@
 
     
       <li class="next">
-        <a href="https://teachdatascience.com/leaflet/" title="Leaflet for mapping">
+        <a href="https://teachdatascience.com/infer/" title="infer">
             Next <span aria-hidden="true">&rarr;</span>
         </a>
       </li>

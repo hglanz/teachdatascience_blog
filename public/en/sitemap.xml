@@ -197,6 +197,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/infer.knit/</loc>
+    <lastmod>2019-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/statistical-inference/</loc>
     <lastmod>2019-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -237,11 +242,6 @@
   
   <url>
     <loc>https://teachdatascience.com/leaflet/</loc>
-    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/leaflet.knit/</loc>
     <lastmod>2019-06-10T00:00:00+00:00</lastmod>
   </url>
   

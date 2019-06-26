@@ -1,0 +1,109 @@
+---
+title: "infer"
+author: "Jo Hardin"
+date: '2019-06-16'
+output:
+  html_document:
+    df_print: paged
+tags:
+- tidyverse
+- statistical inference
+- education
+categories: R
+---
+
+
+
+
+Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data.  One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset.  Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.  Sometimes the process of hypothesis testing is taught as a series of different test procedures (depending on the data structure and research hypothesis), and sometimes it is taught in a uniform framework.  The `infer` package works to help students understand the creation of a sampling distribution under some model, likely the null model.
+
+
+Among countless applications of statistical inference in the natural sciences and social sciences, one place that inference plays an important role in the technology field is in A/B testing.  Teaching statistical inference (particularly when using the tidy pipeline provided by `infer`) will help students grok sampling distributions, inference, and p-values.  The deep understanding will benefit students when they move from the two-sample setting to more complex models like multivariate linear or generalized linear models.
+
+### Tidy statistical inference
+
+Many statistics educators may have recognized the value in teaching the `tidyverse` and providing students a fluency with data wrangling.  However, they may also have felt a disconnect between the computational tools for tidy data wrangling and the (often) central inferential ideas being taught in an introductory statistics course.  That is, the majority of R inferential tests (e.g., `t.test`, `chisq.test`, etc.) do not play nicely with the tidyverse.  
+
+To connect the the tidyverse with the central inferential ideas from introductory statistics, [Andrew Bray](http://andrewpbray.github.io/) and [Chester Ismay](http://ismayc.github.io/) have built the R package `infer`.  Along with creating syntax that flows seamlessly through a tidy pipeline, the brilliance of the `infer` package is that it breaks hypothesis testing down into its **tidy components**!  That is, virtually all hypothesis testing (and certainly that which is taught in Introductory Statistics) can be broken town into the following `infer` verbs:
+
+* `specify()` the variables of interest
+* `hypothesize()` about a null claim (or don't if you plan to create an interval)
+* `generate()` observations from the null hypothesis or from the data set (e.g., using bootstrapping) if there is no null hypothesis
+* `calculate()` a test statistic
+* `visualize()` the test statistics from the null distribution as compared with the observed test statistic
+
+
+<center>
+<img width='800' src='/post/2019_06_17_Infer/inferverbs.png' />
+</center>
+
+### Using `infer`
+
+The example below is from one of the `infer` [vignettes](https://cran.r-project.org/web/packages/infer/vignettes/mtcars_examples.html) and walks the student through a two sample difference in proportions test.  Note that the *structure* of the R code forces the student to think carefully about each step in the process.    
+
+
+```r
+library(infer)
+library(dplyr)
+mtcars <- mtcars %>%
+  mutate(vs = factor(vs),
+         am = factor(am))
+# For reproducibility         
+set.seed(4747)   
+
+cars2props <- mtcars %>%
+  specify(am ~ vs, success = "1") %>% # alt: response = am, explanatory = vs
+  hypothesize(null = "independence") %>%
+  generate(reps = 100, type = "permute") %>%
+  calculate(stat = "z", order = c("0", "1")) %>%
+  visualize(method = "both")
+cars2props
+```
+
+<img src="infer_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" />
+
+
+The p-value calculation can be done with the `get_p_value` function.  Or alternatively, the observed statistic can be calculated using the same pipeline steps (no `hypothesize` or `generate`!) and can be visualized on top of the sampling distribution created above.
+
+
+```r
+obs_stat <- mtcars %>%
+  specify(am ~ vs, success = "1") %>%
+  calculate(stat = "z", order = c("0", "1"))
+obs_stat
+## # A tibble: 1 x 1
+##     stat
+##    <dbl>
+## 1 -0.952
+
+mtcars %>%
+  specify(am ~ vs, success = "1") %>% # alt: response = am, explanatory = vs
+  hypothesize(null = "independence") %>%
+  generate(reps = 100, type = "permute") %>%
+  calculate(stat = "z", order = c("0", "1")) %>%
+  get_p_value(obs_stat, direction = "both")
+## # A tibble: 1 x 1
+##   p_value
+##     <dbl>
+## 1    0.54
+
+cars2props + shade_p_value(obs_stat, direction = "both")
+```
+
+<img src="infer_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" />
+
+
+
+### Learn more
+
+- `infer` R package: https://infer.netlify.com/
+- Andrew Bray's `infer` talk at rstudio::conf 2018: https://resources.rstudio.com/rstudio-conf-2018/infer-a-package-for-tidy-statistical-inference-andrew-bray
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+
+
