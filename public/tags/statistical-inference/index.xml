@@ -21,14 +21,5 @@
       <description>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.</description>
     </item>
     
-    <item>
-      <title>infer</title>
-      <link>https://teachdatascience.com/infer.knit/</link>
-      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/infer.knit/</guid>
-      <description>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.</description>
-    </item>
-    
   </channel>
 </rss>

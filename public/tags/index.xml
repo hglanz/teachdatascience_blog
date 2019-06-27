@@ -7,10 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Tue, 25 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Shiny</title>
+      <link>https://teachdatascience.com/tags/r-shiny/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/r-shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dynamic visualization</title>
+      <link>https://teachdatascience.com/tags/dynamic-visualization/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/dynamic-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reactive</title>
+      <link>https://teachdatascience.com/tags/reactive/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/reactive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rstudio</title>
+      <link>https://teachdatascience.com/tags/rstudio/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualization</title>
+      <link>https://teachdatascience.com/tags/visualization/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://teachdatascience.com/tags/workflow/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/workflow/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>collaboration</title>
@@ -54,15 +108,6 @@
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visualization</title>
-      <link>https://teachdatascience.com/tags/visualization/</link>
-      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/visualization/</guid>
       <description></description>
     </item>
     
@@ -117,15 +162,6 @@
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/teamwork/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>workflow</title>
-      <link>https://teachdatascience.com/tags/workflow/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/workflow/</guid>
       <description></description>
     </item>
     
@@ -234,15 +270,6 @@
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/r-projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dynamic visualization</title>
-      <link>https://teachdatascience.com/tags/dynamic-visualization/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/dynamic-visualization/</guid>
       <description></description>
     </item>
     
