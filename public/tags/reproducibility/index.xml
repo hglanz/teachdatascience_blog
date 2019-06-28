@@ -18,8 +18,8 @@
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/projects/</guid>
-      <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
-Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
+      <description>What are Projects? RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
+ Why RStudio? It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
   </channel>

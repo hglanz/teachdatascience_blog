@@ -18,10 +18,9 @@ categories: R
 <link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
 <link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
-<link href="/rmarkdown-libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/leaflet-label/leaflet.label.js"></script>
 <script src="/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
 <script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
 
 
@@ -48,11 +47,11 @@ ds &lt;- dplyr::tibble(institution, lat, lng, students, label)
 dplyr::glimpse(ds)
 ## Observations: 5
 ## Variables: 5
-## $ institution &lt;chr&gt; &quot;Amherst College&quot;, &quot;Hampshire College&quot;, &quot;Mount Hol...
+## $ institution &lt;chr&gt; &quot;Amherst College&quot;, &quot;Hampshire College&quot;, &quot;Mount Holyo…
 ## $ lat         &lt;dbl&gt; 42.37090, 42.32508, 42.25559, 42.31812, 42.39120
 ## $ lng         &lt;dbl&gt; -72.51700, -72.53084, -72.57450, -72.63814, -72.52670
 ## $ students    &lt;dbl&gt; 1792, 1175, 2255, 2600, 28635
-## $ label       &lt;chr&gt; &quot;&lt;b&gt;Amherst College&lt;/b&gt;&lt;br&gt;1792 students&quot;, &quot;&lt;b&gt;Ham...</code></pre>
+## $ label       &lt;chr&gt; &quot;&lt;b&gt;Amherst College&lt;/b&gt;&lt;br&gt;1792 students&quot;, &quot;&lt;b&gt;Hamps…</code></pre>
 <p>Here we have used simple html markup to create a two line label, with institution bolded, that will be displayed.</p>
 <pre class="r"><code># steps 2-3: generate leaflet map 
 library(leaflet)
@@ -61,17 +60,18 @@ m &lt;- leaflet(ds) %&gt;%
   addMarkers(~lng, ~lat, popup = ~ label)
 m # step 4: display the results</code></pre>
 <p><div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[42.3709,42.325079,42.255586,42.318119,42.3912],[-72.517,-72.530837,-72.574503,-72.638139,-72.5267],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<b>Amherst College<\/b><br>1792 students","<b>Hampshire College<\/b><br>1175 students","<b>Mount Holyoke College<\/b><br>2255 students","<b>Smith College<\/b><br>2600 students","<b>University of Massachusetts<\/b><br>28635 students"],null,null,null,null,null,null]}],"limits":{"lat":[42.255586,42.3912],"lng":[-72.638139,-72.517]}},"evals":[],"jsHooks":[]}</script> The popups for each of the five institutions can be clicked to see information contained in the <code>label</code> variable. Here’s an example of what happens if Amherst College is clicked:</p>
-<div class="figure">
-<img src="/post/leaflet/popup.png" />
-
-</div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[42.3709,42.325079,42.255586,42.318119,42.3912],[-72.517,-72.530837,-72.574503,-72.638139,-72.5267],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<b>Amherst College<\/b><br>1792 students","<b>Hampshire College<\/b><br>1175 students","<b>Mount Holyoke College<\/b><br>2255 students","<b>Smith College<\/b><br>2600 students","<b>University of Massachusetts<\/b><br>28635 students"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[42.255586,42.3912],"lng":[-72.638139,-72.517]}},"evals":[],"jsHooks":[]}</script>
+The popups for each of the five institutions can be clicked to see information contained in the <code>label</code> variable. Here’s an example of what happens if Amherst College is clicked:</p>
+<p><img src="/post/leaflet/popup.png" /></p>
 <div id="notes" class="section level3">
 <h3>Notes</h3>
 <p>MORE INFORMATION: The RStudio leaflet webpage (<a href="https://rstudio.github.io/leaflet/" class="uri">https://rstudio.github.io/leaflet/</a>) has more details about the following topics: The Map Widget, Basemaps, Markers, Popups and Labels, Lines and Shapes, GeoJSON and TopoJSON, Raster Images, Shiny Integration, Colors, Legends, Show/Hide Layers, Choropleths, Projections, and Additional Features.</p>
 <p>HTML OUTPUT: Because of the interactive nature of the underlying JavaScript library, leaflet maps created within an R Markdown file can’t be rendered to pdf or Microsoft Word. If you try, you will see the following error message:</p>
 <blockquote>
-<p>Error: Functions that produce HTML output found in document targeting latex output. Please change the output type of this document to HTML. Alternatively, you can allow HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:</p>
+<p>Error: Functions that produce HTML output found in document targeting latex output.
+Please change the output type of this document to HTML. Alternatively, you can allow
+HTML output in non-HTML formats by adding this option to the YAML front-matter of
+your rmarkdown file:</p>
 </blockquote>
 <blockquote>
 <p>always_allow_html: yes</p>

@@ -88,13 +88,15 @@ eightobs
 ## 12    Lewis_2015 114716</code></pre>
 <div id="accessing-a-database-using-dplyr-commands" class="section level2">
 <h2>Accessing a database using dplyr commands</h2>
-<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
+<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl
+objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
 <p>The setup process looks similar.</p>
 <pre class="r"><code>db &lt;- src_mysql(dbname = &quot;wai&quot;, host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
           password=&quot;smith_waiDB&quot;)
 Measurements &lt;- tbl(db, &quot;Measurements&quot;)
 class(Measurements)
-## [1] &quot;tbl_dbi&quot;  &quot;tbl_sql&quot;  &quot;tbl_lazy&quot; &quot;tbl&quot;
+## [1] &quot;tbl_MySQLConnection&quot; &quot;tbl_dbi&quot;             &quot;tbl_sql&quot;            
+## [4] &quot;tbl_lazy&quot;            &quot;tbl&quot;
 PI_Info &lt;- tbl(db, &quot;PI_Info&quot;)
 Subject &lt;- tbl(db, &quot;Subject&quot;)</code></pre>
 <p>We explore the <code>PI_Info</code> table using the <code>collect()</code> function used to force computation on the database (and return the results). One attractive aspect of database systems is that they feature <a href="https://en.wikipedia.org/wiki/Lazy_evaluation"><em>lazy evaluation</em></a>, where computation is optimized and postponed as long as possible.</p>
@@ -221,7 +223,7 @@ Subject %&gt;% collect()  # be careful with collect() with large tables!
 ##  8 Voss_2010  8                      5    42      1     0         0
 ##  9 Voss_2010  9                      5    38      0     0         0
 ## 10 Voss_2010  10                     5    20      1     0         0
-## # ... with 630 more rows, and 3 more variables: Left_Ear_Status &lt;int&gt;,
+## # … with 630 more rows, and 3 more variables: Left_Ear_Status &lt;int&gt;,
 ## #   Right_Ear_Status &lt;int&gt;, Sub_Notes &lt;chr&gt;</code></pre>
 <p>Let’s explore the <code>Measurements</code> table.</p>
 <pre class="r"><code>Measurements %&gt;% summarise(total = n())
@@ -239,18 +241,17 @@ Subject %&gt;% collect()  # be careful with collect() with large tables!
   filter(Identifier == &quot;Rosowski_2012&quot;, Sub_Number == 3) %&gt;%
   collect %&gt;%
   mutate(SessionNum = as.factor(Session))
-## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4
 head(onesubj)
 ## # A tibble: 6 x 12
 ##   Identifier Sub_Number Session Left_Ear   MEP Instrument  Freq Absorbance
 ##   &lt;chr&gt;           &lt;int&gt;   &lt;int&gt;    &lt;int&gt; &lt;dbl&gt;      &lt;int&gt; &lt;dbl&gt;      &lt;dbl&gt;
-## 1 Rosowski_~          3       1        1    NA          1  211.     0.0852
-## 2 Rosowski_~          3       1        1    NA          1  234.     0.0903
-## 3 Rosowski_~          3       1        1    NA          1  258.     0.112 
-## 4 Rosowski_~          3       1        1    NA          1  281.     0.103 
-## 5 Rosowski_~          3       1        1    NA          1  305.     0.129 
-## 6 Rosowski_~          3       1        1    NA          1  328.     0.136 
-## # ... with 4 more variables: Zmag &lt;dbl&gt;, Zang &lt;dbl&gt;, Canal_Area &lt;dbl&gt;,
+## 1 Rosowski_…          3       1        1    NA          1  211.     0.0852
+## 2 Rosowski_…          3       1        1    NA          1  234.     0.0903
+## 3 Rosowski_…          3       1        1    NA          1  258.     0.112 
+## 4 Rosowski_…          3       1        1    NA          1  281.     0.103 
+## 5 Rosowski_…          3       1        1    NA          1  305.     0.129 
+## 6 Rosowski_…          3       1        1    NA          1  328.     0.136 
+## # … with 4 more variables: Zmag &lt;dbl&gt;, Zang &lt;dbl&gt;, Canal_Area &lt;dbl&gt;,
 ## #   SessionNum &lt;fct&gt;</code></pre>
 <p>Finally we can display the results of the measurements as a function of frequency and which ear (left or right) that was used.</p>
 <pre class="r"><code>onesubj &lt;- mutate(onesubj, Ear = ifelse(Left_Ear == 1, &quot;Left&quot;, &quot;Right&quot;))

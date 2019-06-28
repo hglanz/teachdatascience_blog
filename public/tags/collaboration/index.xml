@@ -39,7 +39,7 @@ Previous posts have described working with R Projects and working with GitHub.</
       <guid>https://teachdatascience.com/github/</guid>
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
-“Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
+ “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
     </item>
     
     <item>
@@ -48,8 +48,8 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/projects/</guid>
-      <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
-Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
+      <description>What are Projects? RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
+ Why RStudio? It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
   </channel>
