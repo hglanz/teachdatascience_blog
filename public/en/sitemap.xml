@@ -3,31 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://teachdatascience.com/shiny1/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/r-shiny/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -42,33 +37,43 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/shiny2/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/dynamic-visualization/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/reactive/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/rstudio/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/visualization/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/workflow/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/shiny1/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
