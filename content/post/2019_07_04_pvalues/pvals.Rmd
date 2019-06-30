@@ -6,7 +6,8 @@ output:
   html_document:
     df_print: paged
 tags:
-- statistical-inference
+- inference
+- statistics
 - communication
 - education
 categories: notR
