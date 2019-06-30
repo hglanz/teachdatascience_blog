@@ -72,7 +72,7 @@ The case against p-values focuses on type II errors.  Amrhein et al. (including 
 
 ## ATOM
 
-We appreciate the editorial in *The American Statisitican*, "[Moving to a World Beyond `p < 0.05`](https://doi.org/10.1080/00031305.2019.1583913)" by Wasserstein, Schirm, and Lazar.    Instead of focusing only on the "don'ts", they provide guidance on how statistical inference can be used effectively through the acronym **ATOM**.
+We appreciate the editorial in *The American Statistician*, "[Moving to a World Beyond `p < 0.05`](https://doi.org/10.1080/00031305.2019.1583913)" by Wasserstein, Schirm, and Lazar.    Instead of focusing only on the "don'ts", they provide guidance on how statistical inference can be used effectively through the acronym **ATOM**.
 
 * *A*ccept uncertainty, and be
 * **t**houghtful,
@@ -81,7 +81,7 @@ We appreciate the editorial in *The American Statisitican*, "[Moving to a World 
 
 Indeed, being thoughtful, open, and modest leads to one important "don't" recommendation from Wasserstein et al. which is:
 
-> 'statistically signficant' -- don't say it and don't use it.
+> 'statistically significant' -- don't say it and don't use it.
 
 
 

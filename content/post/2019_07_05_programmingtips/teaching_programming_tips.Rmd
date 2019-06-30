@@ -89,7 +89,7 @@ R: A new phone           |  R Packages: Apps you can download
 ![](https://github.com/moderndive/moderndive_book/blob/master/images/apps.jpg?raw=true){ height=1.5in } |  ![](https://github.com/moderndive/moderndive_book/blob/master/images/iphone.jpg?raw=true){ height=1.5in }
 
 
-However, the demystifying step is integral to the learning process.  It may be tempting to jump right in to what you may think is more important or interesting - but if you skip over the basic building blocks that seem obvious to you, the important stuff becomes difficutl to explain.  For example, suppose a student comes to you with the following code:
+However, the demystifying step is integral to the learning process.  It may be tempting to jump right in to what you may think is more important or interesting - but if you skip over the basic building blocks that seem obvious to you, the important stuff becomes difficult to explain.  For example, suppose a student comes to you with the following code:
 
 ```{r warning=TRUE, message = TRUE}
 dat <- data.frame(
@@ -230,7 +230,7 @@ Hoo boy, did I regret that.
 <br>
 
 
-Putting aside all noble thought of training responsible coders and imparting principles of readibility - my instruction created a scenario where it was a nightmare to help students debug code.
+Putting aside all noble thought of training responsible coders and imparting principles of readability - my instruction created a scenario where it was a nightmare to help students debug code.
 
 ```{r}
 # Find the typo, I dare you.
