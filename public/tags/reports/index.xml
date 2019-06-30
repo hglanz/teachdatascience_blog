@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 19 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/reports/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Undergraduate Curriculum Guidelines</title>
+      <link>https://teachdatascience.com/pcmi/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pcmi/</guid>
+      <description>Throughout the summer 2019 blog series, we have given teaching tips, best data science practices, links to compilations of papers in data science and in teaching data science, and ways to participate in the larger data science community. That is, for anyone already working in a data science community (e.g., in a job or an academic institution) or for anyone doing data science for fun, we have provided myriad rabbit holes in which to get lost for your entire summer.</description>
+    </item>
     
     <item>
       <title>Practical Data Science: an introduction to the PeerJ collection</title>
