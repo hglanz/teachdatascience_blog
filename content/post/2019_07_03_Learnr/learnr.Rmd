@@ -1,0 +1,88 @@
+---
+title: "Creating Tutorials and Lessons in R using learnr"
+author: "Hunter Glanz"
+date: '2019-07-06'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- plot
+- regression
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# What is the `learnr` package?
+
+The `learnr` package makes it easy to turn any [R Markdown](https://teachdatascience.com/rmarkdown/) document into an interactive tutorial. With this vehicle instructors can offer interactive tools to their students to allow them to explore datasets in use from the class, a textbook, or even collected themselves. Straight from Garrett Grolemund's fantastic [introduction](https://blog.rstudio.com/2017/07/11/introducing-learnr/) to the package, tutorials can include any or all of the following:
+
+* Narrative, figures, illustrations, and equations.
+
+* Code exercises (R code chunks that users can edit and execute directly).
+
+* Multiple choice quizzes.
+
+* Videos (supported services include YouTube and Vimeo).
+
+* Interactive Shiny components.
+
+With our two-part introduction to `shiny` last week ([part 1](https://teachdatascience.com/shiny1) and [part 2](https://teachdatascience.com/shiny2)), your excitement for `learnr` should be multiplicative. Each `learnr` tutorial is a `shiny` interactive document.
+
+Note that as with any shiny app, the `learnr` activity needs a home in the cloud if it is to be shared across users.  If you have an RStudio server (see our recent blog on [RStudio in the cloud](https://teachdatascience.com/cloud/) ), a `shiny` server can be set up in parallel.  Alternatively, [rstudio.com hosts](https://shiny.rstudio.com/deploy/) `shiny` apps and `learnr` apps for free (with certain size and use limits).
+
+<center>
+<figure>
+<img alt = 'learnr' width='600' src='/post/learnr/learnrdatabasics.png' />
+<figcaption>Screenshot from RStudio's Examples</figcaption> 
+</figure>
+</center><br>
+
+In the [example above](https://jjallaire.shinyapps.io/learnr-tutorial-01-data-basics/) you can see the section headings on the left, and the selected section's content in the center which includes information and an area for code to be entered, run, and submitted.
+
+# Teaching with `learnr`
+
+The example above is the tip of the iceberg. With `learnr`, instead of a single `shiny` application that you may have created for a particular activity, imagine building an entire lesson out as a series of sections/pages which inform students of new ideas and ask that they play around with `R` code, submit code, and answer questions... all using a single R Markdown document. Suddenly there are even fewer software applications to jump between for students.
+
+Instead of giving students:
+
+* an `R` code file to run piece-wise in order to answer questions in a separate file, or
+
+* a pre-built R Markdown file to work through by reading and adding code to answer questions (which might then be knit at the end), or
+
+* a `shiny` app to play around with in order to answer questions within a separate document
+
+they can now be directed to a single webpage hosting your `learnr` lesson.  Your `learnr` lesson is experienced like an interactive section of a textbook that was custom-build by YOU.
+
+ Recall the [recent blog entry](https://teachdatascience.com/tidyverse/) on the `tidyverse`.  Danny Kaplan and colleagues have set up `learnr` tutorials [like this one](https://dtkaplan.shinyapps.io/Diabetes/#section-cross-tabulation) (screen shot below) that can get a student up and running quickly with the fundamentals of working with data in the `tidyverse` before the student moves to the RStudio environment.   The tutorials are part of [StatPREP](http://statprep.org/) a workshop designed by Danny Kaplan and others to teach data-centric statistics with a primary audience of two-year college instructors.<br>
+
+
+<center>
+<figure>
+<img alt = 'dplyrlearnr' width='600' src='/post/learnr/dplyrlearnr.png' />
+<figcaption>`learnr` to teach `dplyr` at the StatPREP workshop</figcaption> 
+</figure>
+</center>
+
+<br>
+
+A word of caution, though. A common challenge for instructors is that students can tend to rush through tutorials such as these. Instructors need to ensure that students know they are responsible for what is covered, possibly with low-stakes quizzes on a regular basis or some other kind of check-in type assessment.
+
+Despite the name of the package implying that the tutorials and lessons you create are intended for students learning `R`, this technology could be leveraged for many data science topics. In a given tutorial, whether the use of `R` is required, optional, or non-existent the `learnr` package provides a way to create interactive lessons for those instructors who are comfortable working with `R` and R Markdown files.  We **highly** recommend you spending some time going through the examples below to get a sense for how `learnr` can be used and the power it has to help students work through new ideas.
+
+### Learn more
+
+* Garrett Grolemund's introduction to `learnr`: [https://blog.rstudio.com/2017/07/11/introducing-learnr/](https://blog.rstudio.com/2017/07/11/introducing-learnr/)
+
+* RStudio's home for `learnr` including tutorials for creating your own lessons: [https://rstudio.github.io/learnr/](https://rstudio.github.io/learnr/)
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

@@ -1,0 +1,316 @@
+---
+title: "Five Quick Tips for Coding in the Classroom"
+author: "Kelly Bodwin"
+date: '2018-07-04'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- workflow
+- education
+- collaboration
+categories: R
+---
+
+
+
+<div id="intro" class="section level2">
+<h2>Intro</h2>
+<div id="hello" class="section level3">
+<h3>Hello!</h3>
+<p>It’s my distinct pleasure to be guest-blogging for you today! My name is <a href="https://statistics.calpoly.edu/kelly-bodwin">Kelly Bodwin</a> and I’m an Assistant Professor of Statistics at Cal Poly, San Luis Obispo. In my two years at Cal Poly I have taught</p>
+<ul>
+<li>Stat 218 - An introductory course for non-majors</li>
+<li>Stat 419 - An upper-level course in multivariate analysis</li>
+<li>Stat 331 - Our department’s introductory R class</li>
+</ul>
+<p>In all of these courses, I make extensive use of R. Despite the huge differences in the experience level of the students, the course objectives, and the prerequisite knowledge required, I’ve found that some key principles have guided me in how I ease programming into a statistics classroom. I’d like to share a few of these tips with you today.</p>
+</div>
+<div id="the-quick-tips" class="section level3">
+<h3>The Quick Tips</h3>
+<p>My goal in this post is not to focus on the nitty-gritty of teaching pure programming, nor to give advice that is specific to any one language. (Since I use R, and it is the <em>lingua franca</em> of this blog, my examples will all be in R.) Rather, I want to share a few high-level ideas and philosophies that have helped me refine my courses, so that the presence of code in a non-coding class isn’t too big of a hurdle for students. (This entry builds on the prior blog entry on <a href="https://teachdatascience.com/Rstyle">R Style guides</a>.)</p>
+<p>In a nutshell, my five quick tips include:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Define your terms.</strong>
+<ul>
+<li>Establish basic coding vocabulary, such as object types, early on.</li>
+</ul></li>
+<li><strong>Be deliberate about teaching versus bypassing peripheral skills.</strong>
+<ul>
+<li>Use tools like <a href="https://rstudio.cloud">RStudio Cloud</a>, R Markdown, and <a href="https://github.com/r-lib/usethis"><code>usethis</code></a> to shelter students from setup.</li>
+</ul></li>
+<li><strong>Read code like English.</strong>
+<ul>
+<li>The best way to debug is to read your process out loud as a sentence.</li>
+</ul></li>
+<li><strong>Require good coding practices from Day One.</strong>
+<ul>
+<li>Save a headache - add “Code Style” to your grading rubric.</li>
+</ul></li>
+<li><strong>Leave room for creativity.</strong>
+<ul>
+<li>Open-ended questions let students explore and shine.</li>
+</ul></li>
+</ol>
+<p>And away we go!</p>
+</div>
+</div>
+<div id="define-your-terms." class="section level2">
+<h2>1. Define your terms.</h2>
+<p><em>Quick:</em> What is the difference between <strong>R</strong>, <strong>RStudio</strong>, and <strong>R Markdown</strong>?</p>
+<p>What about the <strong>console</strong>, a <strong>script</strong>, and the <strong>environment</strong>?</p>
+<p>A <strong>function</strong>, a <strong>variable</strong>, and an <strong>input option</strong>? A <strong>data frame</strong>, <strong>list</strong>, or <strong>matrix</strong>, <strong>vector</strong>, or <strong>tibble</strong>???</p>
+<br>
+<center>
+<embed src="https://forums.boxofficetheory.com/applications/core/interface/imageproxy/imageproxy.php?img=http://gifimage.net/wp-content/uploads/2017/08/i-know-some-of-these-words-gif-1.gif&amp;key=0cd04317c4b736e6678fc4d528a87e0b20d18d53abd712b0af3b49890a881e5b" />
+</center>
+<p><br></p>
+<p>Perhaps you are thinking, “Psh, of course I know what these things are. I’m reading a Data Science blog, after all.” But can you <em>explain</em> them to a student? One who has never seen a single line of code?</p>
+<p>In my experience, the hardest topics to teach are the ones that feel like second nature. Maybe you answered the first question with, “R is a language, while RStudio is an IDE.” Correct! But does your student know what an IDE is? Or even what makes something a programming language?</p>
+<p><em>(Author’s note: I definitely did NOT just have to Google “IDE” to learn that it stands for Integrated Development Environment…)</em></p>
+<p>There are plenty of resources out there to help you demystify concepts in a way that is accessible to beginners. (Some suggestions are linked at the end of this post.) For example, I’m particularly fond of this analogy, from the <a href="https://moderndive.com/2-getting-started.html" title="Modern Dive">Modern Dive textbook</a>:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">R: A new phone</th>
+<th align="center">R Packages: Apps you can download</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="https://github.com/moderndive/moderndive_book/blob/master/images/apps.jpg?raw=true" height="144" /></td>
+<td align="center"><img src="https://github.com/moderndive/moderndive_book/blob/master/images/iphone.jpg?raw=true" height="144" /></td>
+</tr>
+</tbody>
+</table>
+<p>However, the demystifying step is integral to the learning process. It may be tempting to jump right in to what you may think is more important or interesting - but if you skip over the basic building blocks that seem obvious to you, the important stuff becomes difficutl to explain. For example, suppose a student comes to you with the following code:</p>
+<pre class="r"><code>dat &lt;- data.frame(
+  x = 1:10
+)
+
+mean(dat)</code></pre>
+<p>How will you explain what went wrong? My first response to this mistake (which I see frequently) is to ask, “What type of input did the function expect?” (a numeric vector) “What type of input did you give the function?” (a data frame)</p>
+<p>The above example leads to a smooth debugging process, but it requires that the student has a basic grasp of what “function input” and “data types” are, neither of which is everyday knowledge for a student new to programming.</p>
+<p>I’m not advocating for replacing cool, modern, interactive data analysis with flash cards and vocab tests. Just be aware of the words you are using that may not yet have meaning to your audience.</p>
+</div>
+<div id="be-deliberate-about-teaching-or-bypassing-peripheral-skills." class="section level2">
+<h2>2. Be deliberate about teaching or bypassing peripheral skills.</h2>
+<p>There are some things that need to happen before a student is able to start actually writing code. For my classes, we used to follow the seven steps below before we could really do any work in R.</p>
+<ol style="list-style-type: decimal">
+<li>Download and install <strong>R</strong></li>
+<li>Download and install <strong>RStudio</strong></li>
+<li>Install packages.</li>
+<li>Create an R Markdown file.</li>
+<li>Load packages.</li>
+<li>Load the dataset.</li>
+<li>Save your work and/or data in a reasonable folder.</li>
+</ol>
+<br>
+<center>
+<div class="figure">
+<img src="https://media3.giphy.com/media/kaq6GnxDlJaBq/giphy.gif" />
+
+</div>
+Pictured: A student being told to find her Downloads folder.
+</center>
+<p><br></p>
+<p>Ask yourself: Which of these skills are part of the <em>learning objectives</em> of the course? Which are <em>necessary background</em> for them to move forward in their studies? Ideally, the focus should be on the learning objectives, as other unneeded steps are often a confusing distraction.</p>
+<p>Steps <strong>1, 2, &amp; 3</strong> can be bypassed with cloud environments, so students don’t have to get set up R on their personal computers. (I recommend <a href="https://rstudio.cloud/">RStudio Cloud</a>: see the related blog entry here: <a href="https://teachdatascience.com/cloud" class="uri">https://teachdatascience.com/cloud</a>.) Steps <strong>4, 5, &amp; 6</strong> can be bypassed by supplying source documents in R Markdown (see <a href="https://teachdatascience.com/rmarkdown" class="uri">https://teachdatascience.com/rmarkdown</a>), including scaffolding code for package and dataset management. For step <strong>7</strong>, the <code>usethis</code> package is a blessing!</p>
+<p>Here is my personal checklist of peripherals skills including which ones I include in introductory courses:</p>
+<table style="width:97%;">
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Course Type</th>
+<th>Install/Update R and RStudio</th>
+<th>R Markdown fluency</th>
+<th>Package management</th>
+<th>Data management</th>
+<th>File and folder organization</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intro Stat for Non-Majors</td>
+<td>⚠️</td>
+<td>⚠️</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr class="even">
+<td>Intro Stat for Majors</td>
+<td>✅</td>
+<td>✅</td>
+<td>⚠️</td>
+<td>⚠️</td>
+<td>⚠️</td>
+<td>⚠️</td>
+</tr>
+<tr class="odd">
+<td>Advanced Statistics</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>⚠️</td>
+<td>⚠️</td>
+</tr>
+<tr class="even">
+<td>Intro to Statistical Computation</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<center>
+✅ = required course skill       ⚠️ = optional, proceed with caution       ❌ = avoid entirely
+</center>
+<p><br> <br></p>
+<p>Whatever elements you choose to emphasize or “erase” in class creation, <strong>choose purposefully!</strong> It is worth the effort to remove as much complication as possible from the coding process, leaving brain space and class time for target topics (see also the <a href="https://teachdatascience.com/mosaic">‘Less Volume, More Creativity’</a> entry).</p>
+</div>
+<div id="read-code-like-english." class="section level2">
+<h2>3. Read code like English.</h2>
+<p>When seeing code for the first time, symbols and syntax can be as mystifying as alien hieroglyphics. A good first habit to impart to students - and to model in your speech - is reading code out loud in lay terms. After all, we don’t call them “programming languages” for nothing.</p>
+<p>For example, in R, the pipe (<code>%&gt;%</code>) is typically read as “then”.</p>
+<p>Consider the following example:</p>
+<pre class="r"><code>titanic %&gt;%
+  filter(Gender == &quot;male&quot;) %&gt;%
+  mutate(
+    logFare = log(Fare)
+  ) %&gt;%
+  ggplot(aes(x = Passenger.Class, y = logFare)) + geom_boxplot()</code></pre>
+<p>Explaining the code to a fellow statistician, I might say:</p>
+<blockquote>
+<p>Take the dataset <code>titanic</code>, then narrow it down to only male-identified passengers, then calculate the log of the fares, then visualize the fares paid by each travel class.</p>
+</blockquote>
+<p>For beginning students, I usually get more specific. First, I will often read code as a “request” to the computer, to emphasize that code will only do exactly what you tell it to. Second, I will use the function verbs and variable names in my sentence, to reference where each step happens in code.</p>
+<blockquote>
+<p>Hey R, please take the dataset called <code>titanic</code> and filter down to only rows where <code>Gender</code> is “male”.</p>
+</blockquote>
+<blockquote>
+<p>Then mutate the dataset to include a variable called <code>logFare</code> that contains log of the fares paid each passenger.</p>
+</blockquote>
+<blockquote>
+<p>Then use these results to generate a plot comparing <code>Passenger.Class</code> and <code>logFare</code>, in the form of boxplots.</p>
+</blockquote>
+<p>When students have practice “translating” their code - or at least, if they have heard you do it enough to emulate it - you can trick them into debugging their own code by simply reading aloud. My most common response to a student question of “Why doesn’t my code work?” is, “Talk me through what you asked the computer to do.”</p>
+<p>Here is a common mistake I see in student code:</p>
+<pre class="r"><code>titanic %&gt;%
+  filter(Gender == &quot;male&quot;) %&gt;%
+  logFare = log(Fare)</code></pre>
+<p>The conversation usually goes like this:</p>
+<p>Student: My code doesn’t work.</p>
+<p>Me: Talk me through your steps. What did you do to the dataset first?</p>
+<p>Student: I filtered it to males.</p>
+<p>Me: Then what did you do to the dataset?</p>
+<p>Student: I logFare …. Oh, I’m supposed to mutate it!</p>
+<p>The instant their spoken sentence landed on “logFare” without a verb in between, the issue was flagged!</p>
+</div>
+<div id="require-good-coding-practices-from-day-one." class="section level2">
+<h2>4. Require good coding practices from day one.</h2>
+<p>My first time teaching introductory statistical computing, I made the mistake of saying something I will never say again:</p>
+<blockquote>
+<p>If your code works correctly, you will not lose points.</p>
+</blockquote>
+<p>Hoo boy, did I regret that.</p>
+<center>
+<img src="https://media1.tenor.com/images/3721598372d9890bc5faad05e03a6aeb/tenor.gif?itemid=11979588" /> <br> <em>Me @ my former self.</em>
+</center>
+<p><br> <br></p>
+<p>Putting aside all noble thought of training responsible coders and imparting principles of readibility - my instruction created a scenario where it was a nightmare to help students debug code.</p>
+<pre class="r"><code># Find the typo, I dare you.
+
+var1&lt;-titanic%&gt;%select(Sex,Passenger.Class,Fare)%&gt;%filter(Sex==&quot;Female&quot;)%&gt;%filter(Passenger.Class==3)%&gt;%pull(Fare)
+var2&lt;-titanic%&gt;%select(Fare,Sex,Passenger.Class)%&gt;%filter(Passenger.Class=3)%&gt;%filter(Sex==&quot;Male&quot;)%&gt;%pull(Fare)
+pv=t.test(var1,var2,&quot;greater&quot;,0.1)$p.value</code></pre>
+<p>These days, I regularly rant about readability, reproducibility, and the importance of clear code.<br />
+<a href="https://speakerdeck.com/jennybc/code-smells-and-feels">Here</a> is a great talk by Jenny Bryan on how to recognize “good” code.</p>
+<div id="hint-students-are-grade-motivated." class="section level3">
+<h3>Hint: Students are grade-motivated.</h3>
+<p>The new mantra in my courses is:</p>
+<blockquote>
+<p>Code that works is not necessarily good code.</p>
+</blockquote>
+<center>
+<img src="https://i.imgur.com/Ge1y7TI.gif?noredirect" />
+</center>
+<p><br> <br></p>
+<p>Fortunately, it is easy to sneak good coding practice into the course objectives. I strongly recommend including <strong>STYLE</strong> within a formal grade rubric on all exams and homeworks. Both <a href="https://google.github.io/styleguide/Rguide.xml">Google</a> and <a href="https://style.tidyverse.org/">Hadley Wickham</a> have great style guides for programming in R, and we discuss some of the important features in a previous blog on <a href="https://teachdatascience.com/Rstyle/">R style guides</a>.</p>
+<p>For me, good coding practice includes:</p>
+<ul>
+<li>Clear code formatting</li>
+<li>Object names follow consistent conventions</li>
+<li>Lack of unnecessary code repetition</li>
+<li>Reproducibility</li>
+<li>Unit tests before large calculations</li>
+<li>Commenting and/or documentation</li>
+</ul>
+<p>Of course, the level of formality you expect will vary by class. In an introductory non-major class, good coding accountability may be as simple as taking off points for hard-coding or poorly named variables. The example below represents the kind of error that is common among beginners:</p>
+<pre class="r"><code>mean(titanic$Fare)
+## [1] 32.30542
+
+xbar &lt;- 32.3</code></pre>
+<p>In a coding-focused class, you may enforce rigorous levels of reproducibility, like setting seeds and dealing with working directories. In any case, even a 5 point penalty out of 100 is enough to get students thinking about their style.</p>
+</div>
+</div>
+<div id="leave-room-for-creativity." class="section level2">
+<h2>5. Leave room for creativity.</h2>
+<p>I’m frequently asked,</p>
+<blockquote>
+<p>“Why do you use R in intro classes? Why not stick to applets or point-and-click?”</p>
+</blockquote>
+<p>It’s a reasonable question. After all, the overhead on interweaving coding with a statistics class is non-trivial. (I mean, heck, you just read a whole blog post of advice on teaching statistics that had exactly zero statistical content.)</p>
+<p>If there’s one message I can leave you with, it’s this:</p>
+<p>Students can do so much more than they realize. Give them the tools to creatively explore data, and they will surprise you!</p>
+<div id="anecdotal-evidence-is-fun" class="section level3">
+<h3>Anecdotal evidence is fun</h3>
+<p>I would like to provide one last example. I teach an introductory class for non-majors, “Introduction to Statistics for the Life Sciences”. For many of the students, my course is the one mathematical class they have to survive to achieve their Life Science major. When they learn there is a coding element to the course, they are scandalized.</p>
+<p>The last R assignment of the year involves a dataset of baby name counts in the United States. At the end, students are asked to</p>
+<blockquote>
+<p>Choose your own name(s) and do an analysis.</p>
+</blockquote>
+<p>Most simply select their own name, and follow all the steps in my example. But just getting to choose their own name was exciting for them. There was a lot of buzz in the room as they laughed about whose names are getting more popular, whose are going out of style, and whose have swapped genders.</p>
+<p>Some took it a step further and got creative with their name choices and plot design. Here is my favorite example, from a student who had never seen a line of code before entering my class:</p>
+<img src="/post/2019_06_20_programmingtips/teaching_programming_tips_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /> <br> Not bad for a first-time coder! <br>
+<center>
+<img src="https://media.giphy.com/media/Jpz5sYbge4sFy/giphy.gif" />
+<center>
+</div>
+</div>
+<div id="signing-off" class="section level2">
+<h2>Signing off</h2>
+<p>I hope these quick thoughts give you a few new ideas or cautionary tales about how to incorporate coding into your class. Guiding new students through the complications of coding is no small task, but the payoff in their ability to independently create results is enormous.</p>
+<p>If nothing else, remember: Every mistake is a new tip to discover! All the advice in this blog was born of something gone wrong, and the solutions I’ve found are the result of trial-and-error. Perhaps I’ll be back next summer with “5 More Quick Tips” to share.</p>
+<ul>
+<li>Kelly Bodwin</li>
+</ul>
+</div>
+<div id="learn-more" class="section level2">
+<h2>Learn more</h2>
+<ul>
+<li>Find Kelly at <span class="citation">[@kellybodwin]</span>(<a href="https://twitter.com/kellybodwin" class="uri">https://twitter.com/kellybodwin</a>), <a href="https://github.com/kbodwin">github.com/kbodwin</a>, and <a href="https://www.calpoly.edu/~kbodwin">calpoly.edu/~kbodwin</a></li>
+<li><a href="https://r4ds.had.co.nz/introduction.html" title="R for Data Science">R for Data Science</a> online textbook</li>
+<li><a href="https://moderndive.com/2-getting-started.html" title="Modern Dive">Modern Dive</a> online textbook</li>
+</ul>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>

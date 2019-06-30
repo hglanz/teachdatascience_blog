@@ -1,0 +1,136 @@
+---
+title: "The Conversation Around p-values"
+author: "Jo Hardin"
+date: '2019-07-06'
+output:
+  html_document:
+    df_print: paged
+tags:
+- statistical-inference
+- communication
+- education
+categories: notR
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+
+<center>
+<figure>
+<img alt = 'p-values' width='400' src='/post/pvalues/xkcd_p.png' />
+<figcaption>Image credit: xkcd.com</figcaption> 
+</figure>
+</center>
+
+## Statistics for science
+
+Figuring out truth is really hard to do.  Teaching students how to attempt it may be even harder.  As statisticians we know that statistical significance isn't truth, but we still hope that the process by which we analyze data will lead us on a path toward scientific discovery.  How do we teach students the best way to stay on the path of using statistics to move science forward?  Teaching about p-values has always been hard, but it is especially hard when there is so much controversy surrounding any use of p-values at all.
+
+In 1929, Fisher ("The statistical method in psychical research". *Proceedings of the Society for Psychical Research*. 1929;39:189–192.) wrote that .05 was an "arbitrary, but convenient" criteria for determining **what to ignore**.  That is, Fisher did not consider a p-value to determine the truth of a scientific claim, rather it was a method for knowing which lines of scientific inquiry to drop.
+
+> An observation is judged significant, if it would rarely have been produced, in the absence of a real cause of the kind we are seeking. It is a common practice to judge a result significant, if it is of such a magnitude that it would have been produced by chance not more frequently than once in twenty trials. This is an arbitrary, but convenient, level of significance for the practical investigator, but it does not mean that he allows himself to be deceived once in every twenty experiments. The test of significance only tells him what to ignore, namely all experiments in which significant results are not obtained. He should only claim that a phenomenon is experimentally demonstrable when he knows how to design an experiment so that it will rarely fail to give a significant result. Consequently, isolated significant results which he does not know how to reproduce are left in suspense pending further investigation.
+
+
+The American Statistical Association has put out a [Statement on Statistical Significance and p-values](https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf) which can serve as a template for what your students should believe about p-values.
+
+1. P-values can indicate how incompatible the data are with a specified statistical model.
+2. P-values do not measure the probability that the studied hypothesis is true, or the
+probability that the data were produced by random chance alone.
+3. Scientific conclusions and business or policy decisions should not be based only on
+whether a p-value passes a specific threshold.
+4. Proper inference requires full reporting and transparency.
+5. A p-value, or statistical significance, does not measure the size of an effect or the
+importance of a result.
+6. By itself, a p-value does not provide a good measure of evidence regarding a model or
+hypothesis.
+
+
+Of course, the topic would not be so heated if it were not also nuanced.  Below we provide some details of the sides, but our blog is not nearly long enough to include a thorough treatment of the details of both sides.  We encourage you to bring up the debate in class and have your students argue one side or another.  If each student researches one small detail of the conversation, your class discussion can be incredibly rich and interesting.
+
+##  The case for p-values (worries about type I errors)
+
+The case for p-values centers around the idea that without p-values, making scientific claims is even harder to do than if we use them.  Indeed, the human eye is drawn toward seeing trends, especially if the human has a vested interest in the research result!
+
+In 2016, the journal *Basic and Applied Social Psychology* banned the use of p-values and other measures of statistical significance (e.g., confidence intervals).  Fricker et al. [look back](https://tandfonline.com/doi/full/10.1080/00031305.2018.1537892) at one year of articles in *BASP* after the ban. They "found multiple instances of authors overstating conclusions beyond what the data would support if statistical significance had been considered. Readers would be largely unable to recognize this because the necessary information to do so was not readily available...In our opinion, the practices we have observed in the papers published in *BASP* post-ban will not help to solve this problem; in fact, we believe they will make it worse."
+
+Indeed, Ioannidis makes a huge case for the worry about type I errors in his article on [Why Most Published Research Findings are False](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124)  (which has now been viewed almost 3 million time).  That is, without some (or rather, strict!) control on the false positive rate, there is no good mechanism for a reader to distinguish between a true result and a false positive.
+
+##  The case against p-values (worries about type II errors)
+
+The case against p-values focuses on type II errors.  Amrhein et al. (including 800+ signatories) [call for an end](https://www.nature.com/articles/d41586-019-00857-9) to using statistical significance in scientific reporting.  Their main concern is in interpreting non-significant results as "no difference."  The key to their argument (and the argument of many of those who warn against using p-values) is that the crux of the problem lies in the dichotomization of the p-value (into two groups: significant and non significant).  Indeed, they accurately report on the vast problem of incorrect interpretations of "large" p-values indicating no effect.  
+
+
+<center>
+<figure>
+<img alt = 'p-values' width='600' src='/post/pvalues/noeffect.png' />
+<figcaption>Image from: "Scientists rise up against statistical significance", *Nature*, 20 March 2019.</figcaption> 
+</figure>
+</center>
+
+## ATOM
+
+We appreciate the editorial in *The American Statisitican*, "[Moving to a World Beyond `p < 0.05`](https://doi.org/10.1080/00031305.2019.1583913)" by Wasserstein, Schirm, and Lazar.    Instead of focusing only on the "don'ts", they provide guidance on how statistical inference can be used effectively through the acronym **ATOM**.
+
+* *A*ccept uncertainty, and be
+* **t**houghtful,
+* **o**pen, and 
+* **m**odest
+
+Indeed, being thoughtful, open, and modest leads to one important "don't" recommendation from Wasserstein et al. which is:
+
+> 'statistically signficant' -- don't say it and don't use it.
+
+
+
+##  Teaching the conversation
+
+While it may seem like an additional topic to cover in an already packed introductory statistics curriculum, we suggest that teaching about the conversation around p-values not only **helps** students understand the meaning of a p-value, but the information is part of the larger context necessary for doing ethical data science.  One possible assignment would be for each student to choose a different journal article / editorial / newspaper article and present the issue in the article in either writing or as a brief in-class presentation.  A possible structure to the presentation might be:
+
+1. An introduction / motivation to the problem. Why did the authors decide to tackle the
+problem you are about to tell us? 
+2. The specific problem which you will address. 
+3. The logical argument, derivation, proof etc. The main gist of your paper is to convince the reader that the specific issue presented in your article is true (or false if your goal is to discount the author's claim). Using what you know about statistics (and multiple comparisons) as well as what the paper argues, convince the reader. Again, be sure to
+cite anything that is not your own idea.
+4. Conclusion / discussion. Contextualize your result in the general field of natural science, social science, or medicine.
+
+Some possible papers for students to work with include the following list:
+
+* [Why Most Published Research Findings Are False](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124)
+* [Is everything we eat associated with cancer? A systematic cookbook review] (http://ajcn.nutrition.org/content/97/1/127.long)
+* [P values, hypothesis testing, and model selection: it's deja vu all over again](https://esajournals.onlinelibrary.wiley.com/doi/10.1890/13-1911.1)
+* [In defense of p-values](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/13-0590.1)
+* [The common sense of P values](https://esajournals.onlinelibrary.wiley.com/doi/10.1890/13-1271.1)
+* [To P or not to P?](https://esajournals.onlinelibrary.wiley.com/action/doSearch?AllField=%5CTo+P+or+not+to+P.%22&SeriesKey=19399170)
+* [P values are only an index to evidence: 20th‐ vs. 21st‐century statistical science](https://esajournals.onlinelibrary.wiley.com/doi/10.1890/13-1066.1)
+* [Moving to a World Beyond "p<0.05"](https://tandfonline.com/doi/full/10.1080/00031305.2019.1583913)
+* [What Have We (Not) Learnt from Millions of Scientific Papers with P Values?](https://tandfonline.com/doi/full/10.1080/00031305.2018.1447512)
+* [Why is Getting Rid of P-Values So Hard? Musings on Science and Statistics](Why is Getting Rid of P-Values So Hard? Musings on Science and Statistics)
+* [Correcting Corrupt Research: Recommendations for the Profession to Stop Misuse of p-Values](https://tandfonline.com/doi/full/10.1080/00031305.2018.1518271)
+* [Before p<0.05 to Beyond p<0.05: Using History to Contextualize p-Values and Significance Testing](https://tandfonline.com/doi/full/10.1080/00031305.2018.1537891)
+* [The Limited Role of Formal Statistical Inference in Scientific Inference](https://tandfonline.com/doi/full/10.1080/00031305.2018.1464947)
+* [Valid P-Values Behave Exactly as They Should: Some Misleading Criticisms of P-Values and Their Resolution With S-Values](https://tandfonline.com/doi/full/10.1080/00031305.2018.1529625)
+* [The p-Value Requires Context, Not a Threshold](https://tandfonline.com/doi/full/10.1080/00031305.2018.1529624)
+* [Putting the P-Value in its Place](https://tandfonline.com/doi/full/10.1080/00031305.2018.1470033)
+* [Abandon Statistical Significance](https://tandfonline.com/doi/full/10.1080/00031305.2018.1527253)
+* [Five Nonobvious Changes in Editorial Practice for Editors and Reviewers to Consider When Evaluating Submissions in a Post p<0.05 Universe](https://tandfonline.com/doi/full/10.1080/00031305.2018.1537888)
+* [Coup de Grace for a Tough Old Bull: "Statistically Significant" Expires](https://tandfonline.com/doi/full/10.1080/00031305.2018.1543616)
+* [Assessing the Statistical Analyses Used in *Basic and Applied Social Psychology* After Their p-Value Ban](https://tandfonline.com/doi/full/10.1080/00031305.2018.1537892)
+* [The earth is flat (p > 0.05): significance thresholds and the crisis of unreplicable research](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5502092/)
+
+### Learn more
+
+- ASA's [Statement on Statistical Significance and p-values](https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf) 
+- [Special issue of *The American Statistician* on p-values](https://tandfonline.com/toc/utas20/73/sup1)
+- ASA President Karen Kafadar's regular President's Corner in Amstat News reflects on p-values: [Statistic and Unintended Consequences](https://magazine.amstat.org/blog/2019/06/01/unintended-consequences/)
+- March 20, 2019, [Nature editorial](https://www.nature.com/articles/d41586-019-00874-8) on ditching statistical significance.
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+
