@@ -7,7 +7,7 @@ output:
     df_print: paged
 tags:
 - R Markdown
-- R Studio
+- RStudio
 - workflow
 - collaboration
 - reproducibility
