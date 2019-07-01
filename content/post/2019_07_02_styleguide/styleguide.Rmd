@@ -20,7 +20,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 To begin with another quote from Hadley Wickham: "Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read." In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style. Coding style is important because while *your* code only has one author, it'll usually have multiple readers.
 
-At UseR! 2018, Jenny Bryan gave a talk on [Code smells and feels](https://www.youtube.com/watch?v=7oyiPBjLAWY&feature=youtu.be) detailing why good coding practice is important.  We recommend everyone listen to her advice.  Indeed, it is also worth checking out our Teach Data Science blog about [her talk and refactoring](https://teachdatascience.com/refactoring/), available on Monday, July 8, 2019.
+At UseR! 2018, Jenny Bryan gave a talk on [Code smells and feels](https://www.youtube.com/watch?v=7oyiPBjLAWY&feature=youtu.be) detailing why good coding practice is important.  We recommend everyone listen to her advice.  
 
 As the term "style" usually implies, this can be a very subjective thing. Everyone thinks differently and hence likely codes differently too (i.e. with their own style). So what is meant by "good coding style"? To frame this in a way invariant to the programming language being discussed, you should think of "good coding style" as a set of guidelines to follow which make your code
 
@@ -40,7 +40,7 @@ Before we dive into some of the specifics of `R` coding style it should be noted
 
 # `R` Style Guides
 
-There are multiple `R` style guides out there (some of which are linked at the bottom of this post), but most of them begin with [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml).
+There are multiple `R` style guides out there (some of which are linked at the bottom of this post), but most of them are derived from [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml).
 
 <center>
 
@@ -86,7 +86,7 @@ At the end of the day, style guides can seem arbitrary but they reinforce practi
 
 * [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml): https://google.github.io/styleguide/Rguide.xml
 
-* Hadley Wickham's Advanced R Style Guide: [http://adv-r.had.co.nz/Style.html#undefined](http://adv-r.had.co.nz/Style.html#undefined)
+* Tidyverse Style Guide: https://style.tidyverse.org
 
 * R Coding Style Guide via R-Bloggers: [https://www.r-bloggers.com/%F0%9F%96%8A-r-coding-style-guide/](https://www.r-bloggers.com/%F0%9F%96%8A-r-coding-style-guide/)
 
