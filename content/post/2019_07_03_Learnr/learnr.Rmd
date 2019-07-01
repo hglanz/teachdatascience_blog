@@ -79,6 +79,10 @@ Despite the name of the package implying that the tutorials and lessons you crea
 
 * RStudio's home for `learnr` including tutorials for creating your own lessons: [https://rstudio.github.io/learnr/](https://rstudio.github.io/learnr/)
 
+* [Less Volume](https://rpruim.shinyapps.io/Less-Volume-JMM2019/#section-one-template-to-rule-a-lot) tutorial
+
+* [Source](https://raw.githubusercontent.com/rpruim/JMM2019/master/docs/less-volume/less-volume-slides.Rmd) for the Less Volume example
+
 
 ### About this blog 
 
