@@ -57,13 +57,13 @@ Instead of giving students:
 
 they can now be directed to a single webpage hosting your `learnr` lesson.  Your `learnr` lesson is experienced like an interactive section of a textbook that was custom-build by YOU.
 
- Recall the [recent blog entry](https://teachdatascience.com/tidyverse/) on the `tidyverse`.  Danny Kaplan and colleagues have set up `learnr` tutorials [like this one](https://dtkaplan.shinyapps.io/Diabetes/#section-cross-tabulation) (screen shot below) that can get a student up and running quickly with the fundamentals of working with data in the `tidyverse` before the student moves to the RStudio environment.   The tutorials are part of [StatPREP](http://statprep.org/) a workshop designed by Danny Kaplan and others to teach data-centric statistics with a primary audience of two-year college instructors.<br>
+ Recall the [recent blog entry](https://teachdatascience.com/mosaic/) on `mosaic`.  Randy Pruim set up a `learnr` tutorial [Less Volume, More Creativity](https://rpruim.shinyapps.io/Less-Volume-JMM2019/#section-one-template-to-rule-a-lot) (screen shot below) that can get a student up and running quickly with the fundamentals of working with `mosaic` before the student moves to the RStudio environment.  Importantly, Randy has also provided open access to the R [source code](https://raw.githubusercontent.com/rpruim/JMM2019/master/docs/less-volume/less-volume-slides.Rmd) used to create the `learnr` tutorial for `mosaic`. The tutorials were part of a  [JMM 2019](http://jointmathematicsmeetings.org/meetings/national/jmm2019/2217_minicourses) minicourses.<br>
 
 
 <center>
 <figure>
-<img alt = 'dplyrlearnr' width='600' src='/post/learnr/dplyrlearnr.png' />
-<figcaption>`learnr` to teach `dplyr` at the StatPREP workshop</figcaption> 
+<img alt = 'mosaiclearnr' width='600' src='/post/learnr/mosaiclearnr.png' />
+<figcaption>`learnr` to teach `mosaic` at the JMM minicourse</figcaption> 
 </figure>
 </center>
 
