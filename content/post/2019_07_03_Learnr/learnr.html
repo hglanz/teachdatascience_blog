@@ -1,7 +1,7 @@
 ---
 title: "Creating Tutorials and Lessons in R using learnr"
 author: "Hunter Glanz"
-date: '2019-07-06'
+date: '2019-07-02'
 output:
   html_document:
     df_print: paged
@@ -25,7 +25,7 @@ categories: R
 <li><p>Interactive Shiny components.</p></li>
 </ul>
 <p>With our two-part introduction to <code>shiny</code> last week (<a href="https://teachdatascience.com/shiny1">part 1</a> and <a href="https://teachdatascience.com/shiny2">part 2</a>), your excitement for <code>learnr</code> should be multiplicative. Each <code>learnr</code> tutorial is a <code>shiny</code> interactive document.</p>
-<p>Note that as with any shiny app, the <code>learnr</code> activity needs a home in the cloud if it is to be shared across users. If you have an RStudio server (see our recent blog on <a href="https://teachdatascience.com/cloud/">RStudio in the cloud</a> ), a <code>shiny</code> server can be set up in parallel. Alternatively, <a href="https://shiny.rstudio.com/deploy/">rstudio.com hosts</a> <code>shiny</code> apps and <code>learnr</code> apps for free (with certain size and use limits).</p>
+<p>Note that as with any shiny app, the <code>learnr</code> activity needs a home in the cloud if it is to be shared across users. If you have an RStudio server (see our recent blog on <a href="https://teachdatascience.com/cloud/">RStudio in the cloud</a>), an RS Connect server can be set up in parallel. Alternatively, <a href="https://shiny.rstudio.com/deploy/">rstudio.com hosts</a> <code>shiny</code> apps and <code>learnr</code> apps for free (with certain size and use limits).</p>
 <center>
 <figure>
 <img alt = 'learnr' width='600' src='/post/learnr/learnrdatabasics.png' />
@@ -47,18 +47,22 @@ Screenshot from RStudio’s Examples
 <li><p>a <code>shiny</code> app to play around with in order to answer questions within a separate document</p></li>
 </ul>
 <p>they can now be directed to a single webpage hosting your <code>learnr</code> lesson. Your <code>learnr</code> lesson is experienced like an interactive section of a textbook that was custom-build by YOU.</p>
-<p>Recall the <a href="https://teachdatascience.com/tidyverse/">recent blog entry</a> on the <code>tidyverse</code>. Danny Kaplan and colleagues have set up <code>learnr</code> tutorials <a href="https://dtkaplan.shinyapps.io/Diabetes/#section-cross-tabulation">like this one</a> (screen shot below) that can get a student up and running quickly with the fundamentals of working with data in the <code>tidyverse</code> before the student moves to the RStudio environment. The tutorials are part of <a href="http://statprep.org/">StatPREP</a> a workshop designed by Danny Kaplan and others to teach data-centric statistics with a primary audience of two-year college instructors.<br></p>
+<p>Recall the <a href="https://teachdatascience.com/mosaic/">recent blog entry</a> on <code>mosaic</code>. Randy Pruim set up a <code>learnr</code> tutorial <a href="https://rpruim.shinyapps.io/Less-Volume-JMM2019/#section-one-template-to-rule-a-lot">Less Volume, More Creativity</a> (screen shot below) that can get a student up and running quickly with the fundamentals of working with <code>mosaic</code> before the student moves to the RStudio environment. Importantly, Randy has also provided open access to the R <a href="https://raw.githubusercontent.com/rpruim/JMM2019/master/docs/less-volume/less-volume-slides.Rmd">source code</a> used to create the <code>learnr</code> tutorial for <code>mosaic</code>. The tutorials were part of a <a href="http://jointmathematicsmeetings.org/meetings/national/jmm2019/2217_minicourses">JMM 2019</a> minicourses.<br></p>
 <center>
 <figure>
-<img alt = 'dplyrlearnr' width='600' src='/post/learnr/dplyrlearnr.png' />
+<img alt = 'mosaiclearnr' width='600' src='/post/learnr/mosaiclearnr.png' />
 <figcaption>
-<code>learnr</code> to teach <code>dplyr</code> at the StatPREP workshop
+<code>learnr</code> to teach <code>mosaic</code> at the JMM minicourse
 </figcaption>
 </figure>
 </center>
 <p><br></p>
+<p>Want to explore on your own? Open a new R Markdown file, select “From Template”, then “Interactive Tutorial”.</p>
+<div id="pedagogical-notes" class="section level3">
+<h3>Pedagogical notes</h3>
 <p>A word of caution, though. A common challenge for instructors is that students can tend to rush through tutorials such as these. Instructors need to ensure that students know they are responsible for what is covered, possibly with low-stakes quizzes on a regular basis or some other kind of check-in type assessment.</p>
 <p>Despite the name of the package implying that the tutorials and lessons you create are intended for students learning <code>R</code>, this technology could be leveraged for many data science topics. In a given tutorial, whether the use of <code>R</code> is required, optional, or non-existent the <code>learnr</code> package provides a way to create interactive lessons for those instructors who are comfortable working with <code>R</code> and R Markdown files. We <strong>highly</strong> recommend you spending some time going through the examples below to get a sense for how <code>learnr</code> can be used and the power it has to help students work through new ideas.</p>
+</div>
 <div id="learn-more" class="section level3">
 <h3>Learn more</h3>
 <ul>
