@@ -68,7 +68,7 @@ they can now be directed to a single webpage hosting your `learnr` lesson.  Your
 </center>
 <br>
 
-Want to explore on your own?  Install the `learnr package`.  Then open a new R Markdown file by selecting "File" / "New File" / "R Markdown" / "From Template", then "Interactive Tutorial (learnr)".  Click "Run Document".
+Want to explore on your own?  Install the `learnr` package.  Then open a new R Markdown file by selecting "File" / "New File" / "R Markdown" / "From Template", then "Interactive Tutorial (learnr)".  Click "Run Document".
 
 ### Pedagogical notes
 
