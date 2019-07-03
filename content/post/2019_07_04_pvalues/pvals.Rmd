@@ -127,6 +127,7 @@ Some possible papers for students to work with include the following list:
 - [Special issue of *The American Statistician* on p-values](https://tandfonline.com/toc/utas20/73/sup1)
 - ASA President Karen Kafadar's regular President's Corner in Amstat News reflects on p-values: [Statistic and Unintended Consequences](https://magazine.amstat.org/blog/2019/06/01/unintended-consequences/)
 - March 20, 2019, [Nature editorial](https://www.nature.com/articles/d41586-019-00874-8) on ditching statistical significance.
+- Andy Zieffler's blog reflecting on [What to do about p-values](http://www.datadreaming.org/post/what-to-do-about-p-values/) in the classroom.
 
 
 ### About this blog 
