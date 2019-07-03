@@ -1,7 +1,7 @@
 ---
 title: "Creating Tutorials and Lessons in R using learnr"
 author: "Hunter Glanz"
-date: '2019-07-06'
+date: '2019-07-02'
 output:
   html_document:
     df_print: paged
@@ -32,7 +32,7 @@ The `learnr` package makes it easy to turn any [R Markdown](https://teachdatasci
 
 With our two-part introduction to `shiny` last week ([part 1](https://teachdatascience.com/shiny1) and [part 2](https://teachdatascience.com/shiny2)), your excitement for `learnr` should be multiplicative. Each `learnr` tutorial is a `shiny` interactive document.
 
-Note that as with any shiny app, the `learnr` activity needs a home in the cloud if it is to be shared across users.  If you have an RStudio server (see our recent blog on [RStudio in the cloud](https://teachdatascience.com/cloud/) ), a `shiny` server can be set up in parallel.  Alternatively, [rstudio.com hosts](https://shiny.rstudio.com/deploy/) `shiny` apps and `learnr` apps for free (with certain size and use limits).
+Note that as with any shiny app, the `learnr` activity needs a home in the cloud if it is to be shared across users.  If you have an RStudio server (see our recent blog on [RStudio in the cloud](https://teachdatascience.com/cloud/)), an RS Connect  server can be set up in parallel.  Alternatively, [rstudio.com hosts](https://shiny.rstudio.com/deploy/) `shiny` apps and `learnr` apps for free (with certain size and use limits).
 
 <center>
 <figure>
@@ -66,8 +66,11 @@ they can now be directed to a single webpage hosting your `learnr` lesson.  Your
 <figcaption>`learnr` to teach `mosaic` at the JMM minicourse</figcaption> 
 </figure>
 </center>
-
 <br>
+
+Want to explore on your own?  Open a new R Markdown file, select "From Template", then "Interactive Tutorial".  
+
+### Pedagogical notes
 
 A word of caution, though. A common challenge for instructors is that students can tend to rush through tutorials such as these. Instructors need to ensure that students know they are responsible for what is covered, possibly with low-stakes quizzes on a regular basis or some other kind of check-in type assessment.
 
