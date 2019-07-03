@@ -57,7 +57,7 @@ Instead of giving students:
 
 they can now be directed to a single webpage hosting your `learnr` lesson.  Your `learnr` lesson is experienced like an interactive section of a textbook that was custom-build by YOU.
 
- Recall the [recent blog entry](https://teachdatascience.com/mosaic/) on `mosaic`.  Randy Pruim set up a `learnr` tutorial [Less Volume, More Creativity](https://rpruim.shinyapps.io/Less-Volume-JMM2019/#section-one-template-to-rule-a-lot) (screen shot below) that can get a student up and running quickly with the fundamentals of working with `mosaic` before the student moves to the RStudio environment.  Importantly, Randy has also provided open access to the R [source code](https://raw.githubusercontent.com/rpruim/JMM2019/master/docs/less-volume/less-volume-slides.Rmd) used to create the `learnr` tutorial for `mosaic`. The tutorials were part of a  [JMM 2019](http://jointmathematicsmeetings.org/meetings/national/jmm2019/2217_minicourses) minicourses.<br>
+ Recall the [recent blog entry](https://teachdatascience.com/mosaic/) on `mosaic`.  Randy Pruim set up a `learnr` tutorial [Less Volume, More Creativity](https://rpruim.shinyapps.io/Less-Volume-JMM2019/#section-one-template-to-rule-a-lot) (screen shot below) that can get a student up and running quickly with the fundamentals of working with `mosaic` before the student moves to the RStudio environment.  Importantly, Randy has also provided open access to the R [source code](https://raw.githubusercontent.com/rpruim/JMM2019/master/docs/less-volume/less-volume-slides.Rmd) used to create the `learnr` tutorial for `mosaic`. The tutorials were part of a pair of [JMM 2019](http://jointmathematicsmeetings.org/meetings/national/jmm2019/2217_minicourses) minicourses.<br>
 
 
 <center>
@@ -68,7 +68,7 @@ they can now be directed to a single webpage hosting your `learnr` lesson.  Your
 </center>
 <br>
 
-Want to explore on your own?  Open a new R Markdown file, select "From Template", then "Interactive Tutorial".  
+Want to explore on your own?  Install the `learnr package`.  Then open a new R Markdown file by selecting "File" / "New File" / "R Markdown" / "From Template", then "Interactive Tutorial (learnr)".  Click "Run Document".
 
 ### Pedagogical notes
 
