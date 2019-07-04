@@ -18,8 +18,8 @@
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/learnr/</guid>
-      <description>What is the learnr package? The learnr package makes it easy to turn any R Markdown document into an interactive tutorial. With this vehicle instructors can offer interactive tools to their students to allow them to explore datasets in use from the class, a textbook, or even collected themselves. Straight from Garrett Grolemund’s fantastic introduction to the package, tutorials can include any or all of the following:
- Narrative, figures, illustrations, and equations.</description>
+      <description>What is the learnr package?The learnr package makes it easy to turn any R Markdown document into an interactive tutorial. With this vehicle instructors can offer interactive tools to their students to allow them to explore datasets in use from the class, a textbook, or even collected themselves. Straight from Garrett Grolemund’s fantastic introduction to the package, tutorials can include any or all of the following:
+Narrative, figures, illustrations, and equations.</description>
     </item>
     
   </channel>

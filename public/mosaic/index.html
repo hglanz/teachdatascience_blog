@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://teachdatascience.com/mosaic/" />
 <meta property="og:locale" content="en">
 
-<meta property="content-source" content="post/2019_06_18_Mosaic/mosaic.html">
+<meta property="content-source" content="post\2019_06_18_Mosaic\mosaic.html">
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
 <meta property="og:article:published_time" content="2019-06-18T00:00:00Z" />
@@ -49,7 +49,7 @@
 <link rel="canonical" href="https://teachdatascience.com/mosaic/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.55.5" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -225,8 +225,7 @@
 favstats(~ drugrisk, data = HELPmiss)
 ##  min Q1 median Q3 max     mean       sd   n missing
 ##    0  0      0  1  21 1.869658 4.313479 468       2</code></pre>
-<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for
-the <code>drugrisk</code> variable.</p>
+<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for the <code>drugrisk</code> variable.</p>
 <p>Alternative the <code>df_stats()</code> function provides a similar display (but returns a dataframe).</p>
 <pre class="r"><code>df_stats(~ drugrisk, data = HELPmiss)
 ##   min Q1 median Q3 max     mean       sd   n missing
@@ -256,8 +255,7 @@ the <code>drugrisk</code> variable.</p>
 <p>The key insight is the dramatic skew for the risk score: describing the distribution with means (as done with the <code>lm()</code> call) may be misleading.</p>
 <div id="a-more-complicated-example" class="section level3">
 <h3>A more complicated example</h3>
-<p>What if we were also interested in a third variable? The formula interface accommodates
-<em>multivariate thinking</em>.</p>
+<p>What if we were also interested in a third variable? The formula interface accommodates <em>multivariate thinking</em>.</p>
 <pre class="r"><code>gf_point(pcs ~ drugrisk, data = HELPmiss, color = ~ homeless) %&gt;%
   gf_lm()</code></pre>
 <p><img src="https://teachdatascience.com/post/2019_06_18_Mosaic/mosaic_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
@@ -273,8 +271,7 @@ the <code>drugrisk</code> variable.</p>
 </div>
 <div id="replicating-the-above-analyses-without-mosaic" class="section level3">
 <h3>Replicating the above analyses without mosaic</h3>
-<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code>
-for graphics. But it’s more complicated to have beginning students run commands like:</p>
+<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code> for graphics. But it’s more complicated to have beginning students run commands like:</p>
 <pre class="r"><code>tapply(HELPmiss$drugrisk, HELPmiss$homeless, mean)
 ##   housed homeless 
 ##       NA       NA</code></pre>
@@ -405,6 +402,10 @@ for graphics. But it’s more complicated to have beginning students run command
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/pvals/">The Conversation Around p-values</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/learnr/">Creating Tutorials and Lessons in R using learnr</a>
           </li>
         
@@ -440,10 +441,6 @@ for graphics. But it’s more complicated to have beginning students run command
           <a href="https://teachdatascience.com/pairprogramming/">Pair Programming for Data Science and Statistics</a>
           </li>
         
-          <li>
-          <a href="https://teachdatascience.com/peerj/">Practical Data Science: an introduction to the PeerJ collection</a>
-          </li>
-        
         </ul>
       </div>
     </div>
@@ -456,7 +453,7 @@ for graphics. But it’s more complicated to have beginning students run command
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
           </ul>
         </div>
       </div>
