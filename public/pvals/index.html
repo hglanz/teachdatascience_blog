@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>The Conversation Around p-values  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="inference, statistics, communication, education, ">
+
+
+<meta property="og:title" content="The Conversation Around p-values  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/pvals/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_04_pvalues\pvals.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-03T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-03T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="inference">
+    
+<meta property="og:article:tag" content="statistics">
+    
+<meta property="og:article:tag" content="communication">
+    
+<meta property="og:article:tag" content="education">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/pvals/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>The Conversation Around p-values
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-03">3 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Jo Hardin
+  
+  &middot; Read in about 8 min
+  &middot; (1586 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=The%20Conversation%20Around%20p-values&amp;url=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fpvals%2f&amp;title=The%20Conversation%20Around%20p-values" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=The%20Conversation%20Around%20p-values&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fpvals%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/inference" class="label label-primary">inference</a>
+  
+  <a href="https://teachdatascience.com/tags/statistics" class="label label-primary">statistics</a>
+  
+  <a href="https://teachdatascience.com/tags/communication" class="label label-primary">communication</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<center>
+<figure>
+<img alt = 'p-values' width='400' src='https://teachdatascience.com/post/pvalues/xkcd_p.png' />
+<figcaption>
+Image credit: xkcd.com
+</figcaption>
+</figure>
+</center>
+<div id="statistics-for-science" class="section level2">
+<h2>Statistics for science</h2>
+<p>Figuring out truth is really hard to do. Teaching students how to attempt it may be even harder. As statisticians we know that statistical significance isn’t truth, but we still hope that the process by which we analyze data will lead us on a path toward scientific discovery. How do we teach students the best way to stay on the path of using statistics to move science forward? Teaching about p-values has always been hard, but it is especially hard when there is so much controversy surrounding any use of p-values at all.</p>
+<p>In 1929, Fisher (“The statistical method in psychical research”. <em>Proceedings of the Society for Psychical Research</em>. 1929;39:189–192.) wrote that .05 was an “arbitrary, but convenient” criteria for determining <strong>what to ignore</strong>. That is, Fisher did not consider a p-value to determine the truth of a scientific claim, rather it was a method for knowing which lines of scientific inquiry to drop.</p>
+<blockquote>
+<p>An observation is judged significant, if it would rarely have been produced, in the absence of a real cause of the kind we are seeking. It is a common practice to judge a result significant, if it is of such a magnitude that it would have been produced by chance not more frequently than once in twenty trials. This is an arbitrary, but convenient, level of significance for the practical investigator, but it does not mean that he allows himself to be deceived once in every twenty experiments. The test of significance only tells him what to ignore, namely all experiments in which significant results are not obtained. He should only claim that a phenomenon is experimentally demonstrable when he knows how to design an experiment so that it will rarely fail to give a significant result. Consequently, isolated significant results which he does not know how to reproduce are left in suspense pending further investigation.</p>
+</blockquote>
+<p>The American Statistical Association has put out a <a href="https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf">Statement on Statistical Significance and p-values</a> which can serve as a template for what your students should believe about p-values.</p>
+<ol style="list-style-type: decimal">
+<li>P-values can indicate how incompatible the data are with a specified statistical model.</li>
+<li>P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.</li>
+<li>Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold.</li>
+<li>Proper inference requires full reporting and transparency.</li>
+<li>A p-value, or statistical significance, does not measure the size of an effect or the importance of a result.</li>
+<li>By itself, a p-value does not provide a good measure of evidence regarding a model or hypothesis.</li>
+</ol>
+<p>Of course, the topic would not be so heated if it were not also nuanced. Below we provide some details of the sides, but our blog is not nearly long enough to include a thorough treatment of the details of both sides. We encourage you to bring up the debate in class and have your students argue one side or another. If each student researches one small detail of the conversation, your class discussion can be incredibly rich and interesting.</p>
+</div>
+<div id="the-case-for-p-values-worries-about-type-i-errors" class="section level2">
+<h2>The case for p-values (worries about type I errors)</h2>
+<p>The case for p-values centers around the idea that without p-values, making scientific claims is even harder to do than if we use them. Indeed, the human eye is drawn toward seeing trends, especially if the human has a vested interest in the research result!</p>
+<p>In 2016, the journal <em>Basic and Applied Social Psychology</em> banned the use of p-values and other measures of statistical significance (e.g., confidence intervals). Fricker et al. <a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1537892">look back</a> at one year of articles in <em>BASP</em> after the ban. They “found multiple instances of authors overstating conclusions beyond what the data would support if statistical significance had been considered. Readers would be largely unable to recognize this because the necessary information to do so was not readily available…In our opinion, the practices we have observed in the papers published in <em>BASP</em> post-ban will not help to solve this problem; in fact, we believe they will make it worse.”</p>
+<p>Indeed, Ioannidis makes a huge case for the worry about type I errors in his article on <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124">Why Most Published Research Findings are False</a> (which has now been viewed almost 3 million time). That is, without some (or rather, strict!) control on the false positive rate, there is no good mechanism for a reader to distinguish between a true result and a false positive.</p>
+</div>
+<div id="the-case-against-p-values-worries-about-type-ii-errors" class="section level2">
+<h2>The case against p-values (worries about type II errors)</h2>
+<p>The case against p-values focuses on type II errors. Amrhein et al. (including 800+ signatories) <a href="https://www.nature.com/articles/d41586-019-00857-9">call for an end</a> to using statistical significance in scientific reporting. Their main concern is in interpreting non-significant results as “no difference.” The key to their argument (and the argument of many of those who warn against using p-values) is that the crux of the problem lies in the dichotomization of the p-value (into two groups: significant and non significant). Indeed, they accurately report on the vast problem of incorrect interpretations of “large” p-values indicating no effect.</p>
+<center>
+<figure>
+<img alt = 'p-values' width='600' src='https://teachdatascience.com/post/pvalues/noeffect.png' />
+<figcaption>
+Image from: “Scientists rise up against statistical significance”, <em>Nature</em>, 20 March 2019.
+</figcaption>
+</figure>
+</center>
+</div>
+<div id="atom" class="section level2">
+<h2>ATOM</h2>
+<p>We appreciate the editorial in <em>The American Statistician</em>, “<a href="https://doi.org/10.1080/00031305.2019.1583913">Moving to a World Beyond <code>p &lt; 0.05</code></a>” by Wasserstein, Schirm, and Lazar. Instead of focusing only on the “don’ts”, they provide guidance on how statistical inference can be used effectively through the acronym <strong>ATOM</strong>.</p>
+<ul>
+<li><em>A</em>ccept uncertainty, and be</li>
+<li><strong>t</strong>houghtful,</li>
+<li><strong>o</strong>pen, and</li>
+<li><strong>m</strong>odest</li>
+</ul>
+<p>Indeed, being thoughtful, open, and modest leads to one important “don’t” recommendation from Wasserstein et al. which is:</p>
+<blockquote>
+<p>‘statistically significant’ – don’t say it and don’t use it.</p>
+</blockquote>
+</div>
+<div id="teaching-the-conversation" class="section level2">
+<h2>Teaching the conversation</h2>
+<p>While it may seem like an additional topic to cover in an already packed introductory statistics curriculum, we suggest that teaching about the conversation around p-values not only <strong>helps</strong> students understand the meaning of a p-value, but the information is part of the larger context necessary for doing ethical data science. One possible assignment would be for each student to choose a different journal article / editorial / newspaper article and present the issue in the article in either writing or as a brief in-class presentation. A possible structure to the presentation might be:</p>
+<ol style="list-style-type: decimal">
+<li>An introduction / motivation to the problem. Why did the authors decide to tackle the problem you are about to tell us?</li>
+<li>The specific problem which you will address.</li>
+<li>The logical argument, derivation, proof etc. The main gist of your paper is to convince the reader that the specific issue presented in your article is true (or false if your goal is to discount the author’s claim). Using what you know about statistics (and multiple comparisons) as well as what the paper argues, convince the reader. Again, be sure to cite anything that is not your own idea.</li>
+<li>Conclusion / discussion. Contextualize your result in the general field of natural science, social science, or medicine.</li>
+</ol>
+<p>Some possible papers for students to work with include the following list:</p>
+<ul>
+<li><a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124">Why Most Published Research Findings Are False</a></li>
+<li>[Is everything we eat associated with cancer? A systematic cookbook review] (<a href="http://ajcn.nutrition.org/content/97/1/127.long" class="uri">http://ajcn.nutrition.org/content/97/1/127.long</a>)</li>
+<li><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1890/13-1911.1">P values, hypothesis testing, and model selection: it’s deja vu all over again</a></li>
+<li><a href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/13-0590.1">In defense of p-values</a></li>
+<li><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1890/13-1271.1">The common sense of P values</a></li>
+<li><a href="https://esajournals.onlinelibrary.wiley.com/action/doSearch?AllField=%5CTo+P+or+not+to+P.%22&amp;SeriesKey=19399170">To P or not to P?</a></li>
+<li><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1890/13-1066.1">P values are only an index to evidence: 20th‐ vs. 21st‐century statistical science</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2019.1583913">Moving to a World Beyond “p&lt;0.05”</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1447512">What Have We (Not) Learnt from Millions of Scientific Papers with P Values?</a></li>
+<li><a href="Why%20is%20Getting%20Rid%20of%20P-Values%20So%20Hard?%20Musings%20on%20Science%20and%20Statistics">Why is Getting Rid of P-Values So Hard? Musings on Science and Statistics</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1518271">Correcting Corrupt Research: Recommendations for the Profession to Stop Misuse of p-Values</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1537891">Before p&lt;0.05 to Beyond p&lt;0.05: Using History to Contextualize p-Values and Significance Testing</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1464947">The Limited Role of Formal Statistical Inference in Scientific Inference</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1529625">Valid P-Values Behave Exactly as They Should: Some Misleading Criticisms of P-Values and Their Resolution With S-Values</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1529624">The p-Value Requires Context, Not a Threshold</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1470033">Putting the P-Value in its Place</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1527253">Abandon Statistical Significance</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1537888">Five Nonobvious Changes in Editorial Practice for Editors and Reviewers to Consider When Evaluating Submissions in a Post p&lt;0.05 Universe</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1543616">Coup de Grace for a Tough Old Bull: “Statistically Significant” Expires</a></li>
+<li><a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1537892">Assessing the Statistical Analyses Used in <em>Basic and Applied Social Psychology</em> After Their p-Value Ban</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5502092/">The earth is flat (p &gt; 0.05): significance thresholds and the crisis of unreplicable research</a></li>
+</ul>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li>ASA’s <a href="https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf">Statement on Statistical Significance and p-values</a></li>
+<li><a href="https://tandfonline.com/toc/utas20/73/sup1">Special issue of <em>The American Statistician</em> on p-values</a></li>
+<li>ASA President Karen Kafadar’s regular President’s Corner in Amstat News reflects on p-values: <a href="https://magazine.amstat.org/blog/2019/06/01/unintended-consequences/">Statistic and Unintended Consequences</a></li>
+<li>March 20, 2019, <a href="https://www.nature.com/articles/d41586-019-00874-8">Nature editorial</a> on ditching statistical significance.</li>
+<li>Andy Zieffler’s blog reflecting on <a href="http://www.datadreaming.org/post/what-to-do-about-p-values/">What to do about p-values</a> in the classroom.</li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=The%20Conversation%20Around%20p-values&amp;url=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fpvals%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fpvals%2f&amp;title=The%20Conversation%20Around%20p-values" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=The%20Conversation%20Around%20p-values&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fpvals%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/learnr/" title="Creating Tutorials and Lessons in R using learnr">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/pvals/">The Conversation Around p-values</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/learnr/">Creating Tutorials and Lessons in R using learnr</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/styleguide/">Style Guides for Coding</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pcmi/">Undergraduate Curriculum Guidelines</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/shiny2/">Using Shiny in the Classroom</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/shiny1/">An Introduction to R Shiny</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/data4good/">Data Science for Good</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/dataviz/">Teaching Data Visualization</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pairprogramming/">Pair Programming for Data Science and Statistics</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

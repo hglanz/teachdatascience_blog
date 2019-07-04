@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>inference on Teach Data Science</title>
+    <link>https://teachdatascience.com/tags/inference/</link>
+    <description>Recent content in inference on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://teachdatascience.com/tags/inference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Conversation Around p-values</title>
+      <link>https://teachdatascience.com/pvals/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pvals/</guid>
+      <description>Image credit: xkcd.comStatistics for scienceFiguring out truth is really hard to do. Teaching students how to attempt it may be even harder. As statisticians we know that statistical significance isn’t truth, but we still hope that the process by which we analyze data will lead us on a path toward scientific discovery. How do we teach students the best way to stay on the path of using statistics to move science forward?</description>
+    </item>
+    
+    <item>
+      <title>infer</title>
+      <link>https://teachdatascience.com/infer/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/infer/</guid>
+      <description>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.</description>
+    </item>
+    
+  </channel>
+</rss>
