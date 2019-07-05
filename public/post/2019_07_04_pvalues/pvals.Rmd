@@ -51,6 +51,8 @@ hypothesis.
 
 Of course, the topic would not be so heated if it were not also nuanced.  Below we provide some details of the sides, but our blog is not nearly long enough to include a thorough treatment of the details of both sides.  We encourage you to bring up the debate in class and have your students argue one side or another.  If each student researches one small detail of the conversation, your class discussion can be incredibly rich and interesting.
 
+(note: The following interpretation of p-values and type I vs type II errors is credited to Roger Peng's musings during an episode of Not So Standard Deviations, see our write up [here](https://teachdatascience.com/nssd/).)
+
 ##  The case for p-values (worries about type I errors)
 
 The case for p-values centers around the idea that without p-values, making scientific claims is even harder to do than if we use them.  Indeed, the human eye is drawn toward seeing trends, especially if the human has a vested interest in the research result!

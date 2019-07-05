@@ -3,20 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://teachdatascience.com/teaching_programming_tips/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -31,18 +42,30 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/tags/collaboration/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/education/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/workflow/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/pvals/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/communication/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/education/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -65,12 +88,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/plot/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -83,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/r-studio/</loc>
+    <loc>https://teachdatascience.com/tags/rstudio/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -91,12 +108,6 @@
   <url>
     <loc>https://teachdatascience.com/styleguide/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/collaboration/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -123,12 +134,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/rstudio/</loc>
-    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/shiny2/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
   </url>
@@ -147,12 +152,6 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/visualization/</loc>
-    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/workflow/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
