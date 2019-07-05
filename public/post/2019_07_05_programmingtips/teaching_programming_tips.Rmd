@@ -344,7 +344,7 @@ If nothing else, remember:  Every mistake is a new tip to discover!  All the adv
 
 ## Learn more
 
-* Find Kelly at [@kellybodwin](https://twitter.com/kellybodwin), [github.com/kbodwin](https://github.com/kbodwin), and [calpoly.edu/~kbodwin](https://www.calpoly.edu/~kbodwin)
+* Find Kelly on [twitter](https://twitter.com/kellybodwin) at @kellybodwin, [github.com/kbodwin](https://github.com/kbodwin), and [calpoly.edu/~kbodwin](https://www.calpoly.edu/~kbodwin)
 * [R for Data Science](https://r4ds.had.co.nz/introduction.html "R for Data Science") online textbook
 * [Modern Dive](https://moderndive.com/2-getting-started.html "Modern Dive") online textbook
 
