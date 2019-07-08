@@ -1,0 +1,161 @@
+---
+title: "Parallel processing and sparklyr"
+author: "Jo Hardin"
+date: '2019-07-12'
+output:
+  html_document:
+    df_print: paged
+tags:
+- rstudio
+- workflow
+- parallel programming
+- cluster computing
+- grid computing
+- high performance computing
+- spark
+categories: R
+---
+
+
+
+<p>Today’s blog entry is on parallel computing. As a data science education blog, our focus is more on how to discuss ideas of parallel computing in the classroom rather than parallel computing for particular research projects. Indeed, at times there seems to be quite a bit of hype around parallel computing when it isn’t particularly necessary or helpful.</p>
+<p>In this blog, we’ll perform tasks that are <strong>embarassingly parallel</strong> which means there is no dependency or communication between the parallel tasks. Again, parallel computing can be powerful in ways that link computational tasks in complicated ways. But we believe that as a <em>first</em> pass at teaching parallel computing, we should teach the parallel structure before bringing in dependence across the parallel tasks. Examples of <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">embarrassingly parallel</a> algorithms include: Monte Carlo analysis, bootstrapping, growing trees for Random Forests, <code>group_by</code> analyses, and cross-validation. Additionally, data science methods increasingly use <a href="https://en.wikipedia.org/wiki/Randomized_algorithm">randomized algorithms</a> which can often be written in parallel.</p>
+<p>Indeed, it isn’t always easy to know when to use a parallel construction. Because of existing overhead processes (e.g., copying data across many threads, bring results together, etc.) an algorithm run on 10 parallel strands will not reduce an original (non-parallel) run time by 10-fold. Figuring out when a parallel implementation is appropriate is beyond the scope of this blog but should be carefully considered before embarking on large projects.</p>
+<div id="cluster-computing" class="section level2">
+<h2>Cluster computing</h2>
+<p>The R package <code>parallel</code> is designed to send tasks to each of multiple cores. Today’s computers (even small laptops!) typically have multiple cores, and any server or cloud computing infrastructure can easily handle dozens or hundreds of parallel tasks. The structure of the R <code>parallel</code> implementation sends tasks to workers that don’t talk to one another until compiling their results at the end. In her <a href="https://rawgit.com/PPgp/useR2017public/master/tutorial.html">2017 UseR! tutorial</a>, Hana Sevcikova describes the function of workers which run code/functions/iterations separately before results are subsequently combined.</p>
+<center>
+<figure>
+<img alt = 'master-slave' width='600' src='/post/parallel/flow.png' />
+<figcaption>
+Image from Sevcikova UseR! 2017 <a href="https://rawgit.com/PPgp/useR2017public/master/tutorial.html">tutorial on parallel computing</a>
+</figcaption>
+</figure>
+</center>
+<p>As computing infrastructure becomes more sophisticated, it is important for our students to have the language to describe how connected components work. Parallel processing allows for a conversation on the <a href="https://en.wikipedia.org/wiki/Grid_computing">differences between</a> distributed computing, cluster computing, and grid computing, introducing students to the larger framework of high performance computing. The benefit of parallel computing to introduce students to the larger infrastructure is that the task of each worker is clear, important, and easy to describe. The student can focus more on the larger architecture and describing how the pieces fit together.</p>
+</div>
+<div id="some-parallel-examples" class="section level2">
+<h2>Some parallel examples</h2>
+<p>Before running code in parallel, it is valuable to know how many cores your computer has to work with. Note that the <code>detectCores</code> function will provide information about the specific device you are using (<code>logical = FALSE</code> tells you only the physical cores which is likely what you want). Note that after <code>makeCluster</code> the separate threads have information. After <code>stopCluster</code>, the code is no longer connecting to the cluster structure.</p>
+<pre class="r"><code>library(parallel)
+P &lt;- detectCores(logical=FALSE)
+P
+## [1] 4
+cl &lt;- makeCluster(P)
+cl[[1]]
+## node of a socket cluster on host &#39;localhost&#39; with pid 1916
+
+stopCluster(cl)
+cl[[1]]
+## Error in summary.connection(connection): invalid connection</code></pre>
+</div>
+<div id="embarassingly-embarassing-example" class="section level2">
+<h2>Embarassingly embarassing example</h2>
+<p>In the example below, we generate some Cauchy data and find the max of each sample. Note that for the current device there are 4 cores, so the process will happen 100/P = 25 times on each core. The second argument of <code>clusterApply</code> is a sequence of numbers that gets passed to each worker as the (first) argument of <code>func1</code>. Below, I’ve specified that the value 50 (number of reps) should be passed separately to 100 different workers.</p>
+<pre class="r"><code>W &lt;- 100
+P &lt;- detectCores(logical=FALSE)
+cl &lt;- makeCluster(P)
+
+func1 &lt;- function(reps){
+  max(rcauchy(reps))
+}
+
+
+clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
+## [[1]]
+## [1] 8.815234
+## 
+## [[2]]
+## [1] 11.95691
+## 
+## [[3]]
+## [1] 540.8893
+
+stopCluster(cl)</code></pre>
+<p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
+<pre class="r"><code>library(doParallel)
+## Loading required package: foreach
+## Loading required package: iterators
+cl &lt;- parallel::makeCluster(P)
+
+doParallel::registerDoParallel(cl)
+foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
+  max(rcauchy(reps))
+       } %&gt;% head(3)
+## [1]  10.00085  20.01913 335.91521
+
+stopCluster(cl)</code></pre>
+</div>
+<div id="example-bootstrapping" class="section level2">
+<h2>Example bootstrapping</h2>
+<p>A slightly less embarrassingly parallel example comes with bootstrapping. Below we have used parallel implementation to bootstrap the mean of the iris data petal length (Virginica only).</p>
+<pre class="r"><code>data(iris)
+
+iris_bs &lt;- iris %&gt;%
+  filter(Species == &quot;virginica&quot;) %&gt;%
+  select(Petal.Length)</code></pre>
+<pre class="r"><code>cl &lt;- parallel::makeCluster(P)
+
+doParallel::registerDoParallel(cl)
+bsmean_PL &lt;- foreach(i = 1:100, .combine = &#39;c&#39;) %dopar% {
+  mean(sample(iris_bs$Petal.Length, replace = TRUE))
+}
+bootstrap &lt;- tibble(bsmean_PL)
+stopCluster(cl)
+
+ggplot(bootstrap, aes(x = bsmean_PL)) + geom_histogram(bins = 25) + ggtitle(&quot;Histogram of 100 Bootstrapped Means using foreach&quot;)</code></pre>
+<p><img src="/post/2019_07_12_Parallel/parallel_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="spark-and-sparklyr" class="section level2">
+<h2>Spark and <code>sparklyr</code></h2>
+<p>Some of you may be familiar with <a href="http://spark.apache.org/">Apache Spark</a> which is an open-source product for distributed cluster-computing. You may want to learn more about its capabilities, including scheduling workflow, dispatching tasks, and consolidating end results. While incredibly powerful, there has historically been a steep learning curve to getting R to work smoothly with a Spark connection. Recently, RStudio has come out with a new package <a href="https://spark.rstudio.com/"><code>sparklyr</code></a> which integrates R and Spark seamlessly. Note that in the example below, we’ve set up a local connection just for the purposes of the example. For your work, you may want to connect to a cluster or cloud space with many cores.</p>
+<p>The <a href="https://spark.rstudio.com/">RStudio <code>sparklyr</code> webpage</a> provides a plethora of good examples demonstrating the sophistication and power of the technology. <code>sparklyr</code> has particularly strong connections to the suite of <code>tidyverse</code> functions. Indeed, the power of <code>sparklyr</code> is more about distributing the computing than about parallelizing it. For example, with <code>sparklyr</code> the computations are delayed until you need the results. Additionally, Spark is doing the heavy lifting and only at the very end (when your results are called) do you need to worry about the size of the table, results, or computational space. The example below repeats the bootstrapping work that was done previously.</p>
+<p>Note, it is important to look at your data structures and variables names. For example, when copying the local dataframe <code>iris_samps</code> to the remote data source called <code>iris_samps_tbl</code>, the variable <code>Petal.Length</code> was changed to <code>Petal_Length</code>.</p>
+<pre class="r"><code>library(sparklyr)
+spark_install()
+
+sc &lt;- spark_connect(master = &quot;local&quot;)
+
+n_sim = 100
+iris_samps &lt;- iris %&gt;% dplyr::filter(Species == &quot;virginica&quot;) %&gt;%
+  sapply(rep.int, times=n_sim) %&gt;% cbind(replicate = rep(1:n_sim, each = 50)) %&gt;% 
+  data.frame() %&gt;%
+  dplyr::group_by(replicate) %&gt;%
+  dplyr::sample_n(50, replace = TRUE)
+
+iris_samps_tbl &lt;- copy_to(sc, iris_samps)
+
+iris_samps_tbl %&gt;% 
+  spark_apply(function(x) {mean(x$Petal_Length)}, 
+    group_by = &quot;replicate&quot;) %&gt;%
+  ggplot(aes(x = result)) + geom_histogram(bins = 20) + ggtitle(&quot;Histogram of 100 Bootstrapped Means using sparklyr&quot;)</code></pre>
+<p><img src="/post/2019_07_12_Parallel/parallel_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>
+spark_disconnect(sc)
+## NULL</code></pre>
+<p>For our particular application, the adept reader has probably noticed that the average of a variable using <code>group_by</code> is a very quick and easy task for <code>dplyr</code>. Indeed, the use of <code>sparklyr</code> above is overkill and is presented only as a way to demonstrate using <code>sparklyr</code>. We recommend working through RStudio’s help pages on <code>sparklyr</code> if you or your students are working with big datasets that require large computing infrastructure. Additionally, there are many instances of working with <code>Spark</code> in the wild, and you might consider a class activity of working through someone else’s <code>Spark</code> analysis like this <a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/">fantastic example</a> on splitting up large amounts of raw DNA sequencing to get data for a given genetic location.</p>
+<pre class="r"><code>iris_samps %&gt;% dplyr::group_by(replicate) %&gt;%
+  dplyr::summarize(result = mean(Petal.Length)) %&gt;%
+  ggplot(aes(x = result)) + geom_histogram(bins = 25) + ggtitle(&quot;Histogram of 100 Bootstrapped Means using dplyr&quot;)</code></pre>
+<p><img src="/post/2019_07_12_Parallel/parallel_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>While we continue to believe that introducing students to modern technology early and often will help them become more adept and less apprehensive about using the tools, we also recognize that students need sufficient background in computer science to be able to fully engage with principles of high performance computing. You are likely to know your student audience well enough to determine the benefits of introducing ideas of parallel processing and distributed computing.</p>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li>Hana Sevcikova <a href="https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/Introduction-to-parallel-computing-with-R">Introduction to parallel computing with R</a> useR 2017 in Brussels, <a href="https://rawgit.com/PPgp/useR2017public/master/tutorial.html">tutorial here</a></li>
+<li><code>sparklyr</code> to do <a href="https://blog.rstudio.com/2018/05/14/sparklyr-0-8/">parallel cross-validation</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/" class="uri">https://www.rstudio.com/resources/cheatsheets/</a>
+<ul>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/#sparklyr" class="uri">https://www.rstudio.com/resources/cheatsheets/#sparklyr</a><br />
+</li>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf</a></li>
+</ul></li>
+<li>Great blog <a href="https://thecodeforest.github.io/post/two_flavors_of_parallel_simulation.html">Two Flavors of Parallel Simulation</a> by Mark LeBoeuf comparing different ways to process code in parallel.</li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>

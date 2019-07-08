@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,27 @@
     <item>
       <title>R Markdown</title>
       <link>https://teachdatascience.com/tags/r-markdown/</link>
-      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functions</title>
+      <link>https://teachdatascience.com/tags/functions/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>refactoring</title>
+      <link>https://teachdatascience.com/tags/refactoring/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/refactoring/</guid>
       <description></description>
     </item>
     
@@ -121,11 +139,11 @@
     </item>
     
     <item>
-      <title>R Shiny</title>
-      <link>https://teachdatascience.com/tags/r-shiny/</link>
+      <title>Shiny</title>
+      <link>https://teachdatascience.com/tags/shiny/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/r-shiny/</guid>
+      <guid>https://teachdatascience.com/tags/shiny/</guid>
       <description></description>
     </item>
     

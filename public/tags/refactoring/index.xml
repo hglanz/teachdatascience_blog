@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>refactoring on Teach Data Science</title>
+    <link>https://teachdatascience.com/tags/refactoring/</link>
+    <description>Recent content in refactoring on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://teachdatascience.com/tags/refactoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teaching refactoring to improve code</title>
+      <link>https://teachdatascience.com/refactoring/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/refactoring/</guid>
+      <description>A previous entry discussed the importance of coding style and “code smell” to help data analyses be clearer and more comprehensible. In this entry we will extend that discussion to describe ways of teaching code refactoring.
+Wikipedia defines code refactoring as “the process of restructuring existing computer code—changing the factoring—without changing its external behavior. Refactoring is intended to improve nonfunctional attributes of the software. Advantages include improved code readability and reduced complexity; these can improve source-code maintainability and create a more expressive internal architecture or object model to improve extensibility.</description>
+    </item>
+    
+  </channel>
+</rss>

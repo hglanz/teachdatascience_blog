@@ -1,0 +1,124 @@
+---
+title: "reprex:  Help me help you"
+author: "Jo Hardin"
+date: '2019-07-12'
+output:
+  html_document:
+    df_print: paged
+tags:
+- rstudio
+- github
+- debugging
+- collaboration
+categories: R
+---
+
+
+
+<blockquote>
+<p>…if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.</p>
+</blockquote>
+<p>The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie’s novel, <em>Mrs. Dymond</em> (1885). The point is well understood – one of the most important things we can teach our students is how they can help themselves. For today’s challenges, some common ways to get help with computing problems are through <a href="https://stackoverflow.com/">Stack Overflow</a>, <a href="https://stat.ethz.ch/mailman/listinfo/r-help">R-help mailing lists</a>, course <a href="https://slack.com/">Slack channels</a>, and <strong>issues</strong> in a GitHub repo (see previous blog post on <a href="https://teachdatascience.com/github/">GitHub</a>). In order to get help with a particular problem, you must provide enough information that the person helping you with the problem understands the crux of the issue. Indeed, they should be able to reproduce the problem on their own machine.</p>
+<p>Stack Overflow provides advice not only on technical questions but also on how to ask good questions! A very popular post addresses <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">how to make a great R reproducible example</a>:</p>
+<center>
+<figure>
+<img alt = 'stackov' width='400' src='/post/reprex/stackov.png' />
+<figcaption>
+<a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">how to make a great R reproducible example</a>
+</figcaption>
+</figure>
+</center>
+<div id="how-to-create-a-minimal-reproducible-example-using-reprex" class="section level2">
+<h2>How to create a minimal <code>repr</code>oducible <code>ex</code>ample using <code>reprex</code></h2>
+<p>While teaching cadres of students at University of British Columbia in <a href="https://stat545.com/">Stat 545</a>, Jenny Bryan found herself trying to parse snippets of code from GitHub issues where students had posted questions. Some questions were easy to address, but other questions were not clear about what was being asked. She found that it was not straightforward for her students to create reproducible examples. That experience led her to create the R package <a href="https://reprex.tidyverse.org/index.html"><code>reprex</code></a>.</p>
+<p>By running code with the <code>reprex</code>, you can create a reproducible example to post to Stack Overflow, Slack, GitHub, or an email to your collaborator.</p>
+</div>
+<div id="using-reprex" class="section level2">
+<h2>Using <code>reprex</code></h2>
+<p>One important aspect of <code>reprex</code> is that it works best with whatever is currently saved on your clipboard (that is, highlight with your mouse and use command-c or control-c). The <code>reprex</code> vignettes provide great examples that are definitely worth looking through!</p>
+<p>Below we work through a few examples of using <code>reprex</code> to debug some code. We include the code-to-debug directly into the <code>reprex()</code> command, but again, you may want to work entirely within copy-and-paste.</p>
+<div id="example-first-try" class="section level4">
+<h4>Example: first try</h4>
+<pre class="r"><code>library(reprex)
+data(iris)
+
+reprex(iris %&gt;% summarize(Petal.Length))</code></pre>
+<center>
+<figure>
+<img alt = 'iris1' width='400' src='/post/reprex/iris1.png' />
+<figcaption>
+Information is now on your clipboard! Paste directly to Stack Overflow, Slack, or GitHub.
+</figcaption>
+</figure>
+</figure>
+</center>
+<p>Note that the error message given is that the <code>library(dplyr)</code> command is missing. <code>reprex</code> is checking to make sure all the data <strong>and</strong> packages are appropriately loaded! The information above is now <em>automatically</em> stored on your clipboard, and you can paste it directly to Stack Overflow, Slack, or GitHub issues as needed.</p>
+</div>
+<div id="example-second-try" class="section level4">
+<h4>Example: second try</h4>
+<pre class="r"><code>library(dplyr)
+data(iris)
+
+reprex(iris %&gt;% summarize(Petal.Length))</code></pre>
+<center>
+<figure>
+<img alt = 'iris2' width='400' src='/post/reprex/iris2.png' />
+<figcaption>
+Information is now on your clipboard! Paste directly to Stack Overflow, Slack, or GitHub.
+</figcaption>
+</figure>
+</center>
+<p>Wait, I thought I loaded <code>dplyr</code>??? But the <code>library(dplyr)</code> command is not contained in the code which was submitted to <code>reprex</code>, so <code>reprex</code> didn’t know that <code>library(dplyr)</code> command had been provided previously.</p>
+</div>
+<div id="example-third-try" class="section level4">
+<h4>Example: third try</h4>
+<pre class="r"><code>data(iris)
+
+reprex({library(dplyr); iris %&gt;% summarize(Petal.Length)})</code></pre>
+<center>
+<figure>
+<img alt = 'iris3' width='400' src='/post/reprex/iris3.png' />
+<figcaption>
+Information is now on your clipboard! Paste directly to Stack Overflow, Slack, or GitHub.
+</figcaption>
+</figure>
+</center>
+<p>For the third try, we make sure that the <code>library(dplyr)</code> command is part of the reproducible example. Now it seems like there is a different error; we forgot the <code>mean</code> function in <code>summarize</code>.</p>
+</div>
+<div id="example-fourth-try" class="section level4">
+<h4>Example: fourth try</h4>
+<pre class="r"><code>data(iris)
+
+reprex({library(dplyr); iris %&gt;% summarize(Petal.Length)})</code></pre>
+<center>
+<figure>
+<img alt = 'iris4' width='400' src='/post/reprex/iris4.png' />
+<figcaption>
+Information is now on your clipboard! Paste directly to Stack Overflow, Slack, or GitHub.
+</figcaption>
+</figure>
+</center>
+<p>On the fourth try, it works! The code runs as we thought it would.</p>
+</div>
+</div>
+<div id="copy-and-paste" class="section level2">
+<h2>Copy and paste</h2>
+<p>It’s worth pointing out one more time that <code>reprex</code> works extremely well with code that is on your clipboard. So instead of writing the code inside the <code>reprex()</code> call (as done above), a more typical use would be to copy the code with your mouse and then type <code>reprex()</code> in the console of RStudio. The output (seen above) is then automatically copied onto your clipboard (replacing the code) and you can paste into Stack Overflow, Slack, or GitHub as needed.</p>
+</div>
+<div id="in-the-classroom" class="section level2">
+<h2>In the classroom</h2>
+<p>As with all things in life, practice is key. <code>reprex</code> is surprisingly straightforward, despite possibly seeming like <em>one more thing to learn</em>. If your class uses a <a href="https://slack.com/">slack channel</a> or <a href="https://piazza.com/">piazza</a> for classroom communication, a very short semester-long assignment would be a requirement of posting at least one <code>reprex</code>-generated technical question to the class. Our experience is that if students get used to posting technical questions to the class, the process immediately becomes nonthreatening and useful.</p>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><code>reprex</code> <a href="https://reprex.tidyverse.org/index.html">vignette</a></li>
+<li><code>reprex</code> <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html">dos and don’ts</a></li>
+<li><a href="https://resources.rstudio.com/webinars/help-me-help-you-creating-reproducible-examples-jenny-bryan">Help me help you. Creating reproducible examples.</a> Jenny Bryan webinar for RStudio.</li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>

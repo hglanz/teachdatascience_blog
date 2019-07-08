@@ -1,0 +1,107 @@
+---
+title: "useR!"
+author: "Jo Hardin"
+date: '2019-07-12'
+output:
+  html_document:
+    df_print: paged
+tags:
+- rstudio
+- useR conference
+- communication
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year's [useR!](http://www.user2019.fr/) conference.  We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the [useR! 2019 twitter page](https://twitter.com/UseR2019_Conf) and the [#user2019 hashtag](https://twitter.com/hashtag/useR2019?src=hash).  
+
+> And, great news!!!!  The keynote addresses will be live streaming at [R Consortium youtube](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg).  Thanks to the support of [RConsortium](https://twitter.com/RConsortium) for making the live stream possible.
+
+## useR! 2019 - Toulouse
+
+Not to worry, we'll get to the talks and the amazing content that comes out every year from the rock star R community.  But we'd like to start by highlighting two aspects of useR! that we appreciate in a conference and a community.
+
+###  Code of conduct
+
+Right at the top of their website, useR! highlights their [code of conduct](http://www.user2019.fr/coc/) and communicate the sanctions which will be applied if participants are out of line.  Setting standards at the onset creates a safe space for attendants, and encourages all different people to want to attend the conference.<br>
+
+<center>
+<figure>
+<img alt = 'coc' width='400' src='/post/user/coc.png' />
+</figure>
+</center> <br>
+
+### diversity scholarships
+
+Additionally, as a way to diversify the individuals who attend useR!, the organizers provided diversity scholarships to attendants from historically marginalized groups.  Thank you to useR! for creating a diverse space where ideas can flourish.
+
+>useR! 2019 is proud to propose a diversity scholarship program. The program aims at providing a financial help to members of underrepresented or historically marginalized groups in the R community who may not otherwise be able to attend our conference for financial reasons.
+
+###  What to expect
+
+As today is the first day of the conference, we can't actually know which was the best talk.  But we have taken a look at the line-up, and we'd like to highlight a few talks with lots of promise (and if you aren't at useR! this year, don't worry, all the talks will be available after the conference).  (Thanks to [Mine &Ccedil;etinkaya-Rundel](https://twitter.com/minebocek) for some of the pointers below!)
+
+
+* [Julia Stewart Lowndes'](https://twitter.com/juliesquid) keynote address about [R for better science in less time](http://www.user2019.fr/program/) will be hugely impactful.  We will learn how R can accelerate scientific research, help the environment, and support scientific leaders.  
+
+* [Joe Cheng](https://twitter.com/jcheng) is upping his game and his keynote on [Shiny's Holy Grail: Interactivity with reproducibility](http://www.user2019.fr/program/) promises to be amazing.
+
+* [Julien Cornebise](https://twitter.com/JCornebise) is not a very common #rstats household name, but his keynote on ["AI for Good" in the R and Python ecosystems](http://www.user2019.fr/program/) is sure to help move our work in positive ways.
+
+* In the education session is a talk by [Kenia Wiedemann](https://twitter.com/keniatw) on "Mathematical Modeling with R: Embedding Computational Thinking into High School Math Classes in the United States".  It will be refreshing to hear how R is being used in high schools.
+
+* Lots of great talks in the reproducibility session, including "The 'Rmd first' method: when projects start with the documentation" by [Sébastien Rochette](https://twitter.com/statnmap). 
+
+* We could all use more reminders about our manners ...  [Dmytro Perepolkin](https://twitter.com/dmi3k)'s talk on "`polite` - web etiquette for R users" should be quite helpful.
+
+* [Angela Li](https://twitter.com/civicangela) speaks to the education community about "Teaching reproducible spatial analysis in R".  She has us sold with `teaching`, `reproducible`, `spatial analysis`, and `R`!  So much great content in one talk! 
+
+* For those interested in NLP and the `keras` package, you won't want to miss "Die Nutella oder Das Nutella? Grammatical Gender Prediction of German Nouns" by [Chung-hong Chan](https://twitter.com/chainsawriot).
+
+* [Jenny Bryan's](https://twitter.com/JennyBryan) talks are always amazing, and her `usethis` package is equally terrific.  Don't miss her describing it in her talk on "DRY out your workflow with the `usethis` package".
+
+* For anyone ready to take the next step learning `Git`, check out [Kelly O'Briant's](https://twitter.com/kellrstats?lang=en) talk "Advanced Git Integrations for Automating the Delivery of Reproducible Data Products in R".
+
+* [Francois Michonneau](https://twitter.com/fmic_) will be talking about "How a non-profit uses R for its daily operations".  His work at The Carpentries, a non-profit organization teaching data science globally, is changing the face of data science.
+
+* Verena Held and [Max Held](https://twitter.com/maxheld) will be talking about "GitHub actions for R" which work to more seamlessly integrate docker practices into your workflow. And relatedly, "`ghclass`: an R package for managing classes with GitHub" by [Colin Rundel](https://twitter.com/rundel) will describe doing such work in the classroom.
+
+
+* Last but not least, [Hadley Wickham](https://twitter.com/hadleywickham) will speak on "Enhancements to data tidying", a must see for all useRs.
+
+
+## past useR! conferences
+
+While July 2019 should focus on useR! 2019, if you've got extra time this summer to watch data science videos, we've put together a highlights reel from past useR! conferences.
+
+* At the top of our highlights is [Hadley Wickham's](https://twitter.com/hadleywickham) useR! 2016 keynote address [Toward a grammar of interactive graphics](https://channel9.msdn.com/events/useR-international-R-User-conference/useR2016/Towards-a-grammar-of-interactive-graphics?term=wickham&lang-en=true) where he introduces list columns and the umbrella term `tidyverse`  (previously, the community had called the suite of tools the `hadleyverse`).  Of particular note is his little bunny foo foo example to explain piping which happens at about 34:00.
+
+* Many of you are familiar with [R-Ladies Global](https://twitter.com/rladiesglobal) who talked about the [mission and outreach](https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/R-Ladies-Global-Community) at the useR! 2017 conference.
+
+* [Max Humber](https://twitter.com/maxhumber) at useR! 2017  talked about [Webscraping with `rvest` and `purrr`](https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/Scraping-data-with-rvest-and-purrr).  The example is heavy on the sports application, but it's a quick talk and does a good job getting into the tools.
+
+* Possibly my favorite highlight is [Roger Peng's](https://twitter.com/rdpeng) useR! 2018 keynote [Teaching R to New Users: From tapply to Tidyverse](https://www.youtube.com/watch?v=5033jBHFiHE).  While we understand that you might not take our advice on which talk is the best to watch, just last month Hadley Wickham recommended Roger's talk!<br>
+
+<center>
+<figure>
+<img alt = 'tweet' width='400' src='/post/user/hadleytweet.png' />
+</figure>
+</center> <br>
+
+
+* Another big highlight is from last year's useR! 2018 keynote by [Jenny Bryan](https://twitter.com/JennyBryan), [Code Smells and Feels](https://www.youtube.com/watch?v=7oyiPBjLAWY).  We liked her talk so much that we wrote an entire blog entry on [refactoring](https://teachdatascience.com/refactoring/).
+
+* A personal favorite is [`simsurv`: A Package for Simulating Simple or Complex Survival Data](https://www.youtube.com/watch?v=fJTYsncvpvI) by Sam Brilleman at useR! 2018. I like this talk because I teach survival analysis, and simulation is always good for the educational setting. It's hard to come up with realistic ways to simulate data in the survival setting, and the `simsurv` package is incredibly powerful.
+
+* [Elizabeth Stark](https://twitter.com/tech_is_dead) gave a great useR! 2018 tutorial on [Production-ready R: Getting started with R and docker](https://www.youtube.com/watch?v=lfG8cTqRRNA).  It is becoming more and more clear that docker can help individuals at institutions with light computing infrastructure.  Docker puts your products on the cloud, but you don't need IT help to purchase or set up a server.
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

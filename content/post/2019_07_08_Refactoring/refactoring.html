@@ -1,0 +1,98 @@
+---
+title: "Teaching refactoring to improve code"
+author: "Nicholas Horton"
+date: '2019-07-07'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- refactoring
+- functions
+categories: R
+---
+
+
+
+<p>A previous entry discussed the importance of <a href="https://teachdatascience.com/codingstyle">coding style and “code smell”</a> to help data analyses be clearer and more comprehensible. In this entry we will extend that discussion to describe ways of teaching code refactoring.</p>
+<p><a href="https://en.wikipedia.org/wiki/Code_refactoring">Wikipedia</a> defines code refactoring as “the process of restructuring existing computer code—changing the factoring—without changing its external behavior. Refactoring is intended to improve nonfunctional attributes of the software. Advantages include improved code readability and reduced complexity; these can improve source-code maintainability and create a more expressive internal architecture or object model to improve extensibility.”</p>
+<p>The goal is then to make code 1) easier to understand and 2) modified without changing the underlying behavior</p>
+<p>Jenny Bryan defines refactoring structures in code that suggest (or as she says, screams for) refactoring. As we have done <a href="https://teachdatascience.com/screencast">before</a>, we will encourage you and your students to watch her excellent <a href="https://www.youtube.com/watch?v=7oyiPBjLAWY">keynote address from UseR 2018</a>. In her typical useful fashion, a <a href="https://github.com/jennybc/code-smells-and-feels">github repo</a> contains a link to the video, slides, and files mentioned in the talk.</p>
+<p>Her sound advice includes:</p>
+<ol style="list-style-type: decimal">
+<li>never use attach() (or setwd()!)</li>
+<li>add a space before and after =</li>
+<li>“have better taste”</li>
+<li>write more elegant code</li>
+</ol>
+<p>Jenny introduces the idea of a <a href="https://en.wikipedia.org/wiki/Code_smell"><em>code smell</em></a> as a signal that more elegant code is needed (and it’s time to refactor). In her talk, she describes how writing elegant code is particularly challenging for new programmers and analysts since their “taste develops faster than their ability”.</p>
+<p>She provides several motivating examples, beginning with the <code>bizarro()</code> function. Here’s another function where considerable error checking is undertaken.</p>
+<p>The <strong>BEFORE</strong> version works just fine, but it is criticized as being much harder to comprehend.</p>
+<pre><code>get_some_data &lt;- function(config, outfile) {
+  if (config_ok(config)) {
+    if (can_write(outfile)) {
+      if (can_open_network_connection(config)) {
+        data &lt;- parse_something_from_network()
+        if(makes_sense(data)) {
+          data &lt;- beautify(data)
+          write_it(data, outfile)
+          return(TRUE)
+        } else {
+          return(FALSE)
+        }
+      } else {
+        stop(&quot;Can&#39;t access network&quot;)
+      }
+    } else {
+      ## uhm. What was this else for again?
+    }
+  } else {
+    ## maybe, some bad news about ... the config? 
+  }
+}</code></pre>
+<p>The <strong>AFTER</strong> version has the same functionality but is simpler to understand and boasts far less indentation.</p>
+<pre><code>get_some_data &lt;- function(config, outfile) {
+  if (config_bad(config)) {
+    stop(&quot;Bad config&quot;)
+  }
+  
+  if (!can_write(outfile)) {
+    stop(&quot;Can&#39;t write outfile&quot;)
+  }
+  
+  if (!can_open_network_connection(config)) {
+    stop(&quot;Can&#39;t access network&quot;)
+  }
+  
+  data &lt;- parse_something_from_network()
+  if(!makes_sense(data)) {
+    return(FALSE)
+  }
+  
+  data &lt;- beautify(data)
+  write_it(data, outfile)
+  TRUE
+}</code></pre>
+<p>Jenny’s advice:</p>
+<ol style="list-style-type: decimal">
+<li>use if() else() in moderation</li>
+<li>use functions</li>
+<li>use guard clauses</li>
+<li>clarify the “happy path”</li>
+</ol>
+<p>Aspects of programming style differ but key principles exist and it behooves us to introduce students to them. We found her talk really helpful in thinking about how to introduce higher-level aspects of algorithmic thinking in data science courses. Your summer reading list might includes several refactoring books, including <a href="https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)">Martin Fowler’s</a> “Refactoring: Improving the Design of Existing Code” and the second edition of Hadley Wickham’s <a href="https://adv-r.hadley.nz">Advanced R</a> book.</p>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://github.com/jennybc/code-smells-and-feels" class="uri">https://github.com/jennybc/code-smells-and-feels</a> (Code smells and feels keynote materials)</li>
+<li><a href="https://en.wikipedia.org/wiki/Code_refactoring" class="uri">https://en.wikipedia.org/wiki/Code_refactoring</a> (Code refactoring)</li>
+<li><a href="https://en.wikipedia.org/wiki/Code_smell" class="uri">https://en.wikipedia.org/wiki/Code_smell</a> (Code smells)</li>
+<li><a href="https://adv-r.hadley.nz" class="uri">https://adv-r.hadley.nz</a> (Advanced R, second edition)</li>
+<li><a href="https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)" class="uri">https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)</a> (Martin Fowler)</li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>

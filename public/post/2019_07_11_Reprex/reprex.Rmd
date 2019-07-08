@@ -1,0 +1,144 @@
+---
+title: "reprex:  Help me help you"
+author: "Jo Hardin"
+date: '2019-07-12'
+output:
+  html_document:
+    df_print: paged
+tags:
+- rstudio
+- github
+- debugging
+- collaboration
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, fig.align = "center")
+```
+
+
+> ...if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+
+The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie's novel, *Mrs. Dymond* (1885).  The point is well understood -- one of the most important things we can teach our students is how they can help themselves.  For today's challenges, some common ways to get help with computing problems are through [Stack Overflow](https://stackoverflow.com/), [R-help mailing lists](https://stat.ethz.ch/mailman/listinfo/r-help), course [Slack channels](https://slack.com/), and **issues** in a GitHub repo (see previous blog post on [GitHub](https://teachdatascience.com/github/)).  In order to get help with a particular problem, you must provide enough information that the person helping you with the problem understands the crux of the issue.  Indeed, they should be able to reproduce the problem on their own machine.
+
+Stack Overflow provides advice not only on technical questions but also on how to ask good questions!  A very popular post addresses [how to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example):
+
+<center>
+<figure>
+<img alt = 'stackov' width='400' src='/post/reprex/stackov.png' />
+<figcaption> [how to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)</figcaption> 
+</figure>
+</center>
+
+
+## How to create a minimal `repr`oducible `ex`ample using `reprex`
+
+While teaching cadres of students at University of British Columbia in [Stat 545](https://stat545.com/), Jenny Bryan found herself trying to parse snippets of code from GitHub issues where students had posted questions.  Some questions were easy to address, but other questions were not clear about what was being asked.  She found that it was not straightforward for her students to create reproducible examples.  That experience led her to create the R package [`reprex`](https://reprex.tidyverse.org/index.html).  
+
+By running code with the `reprex`, you can create a reproducible example to post to Stack Overflow, Slack, GitHub, or an email to your collaborator.
+
+
+## Using `reprex`
+
+One important aspect of `reprex` is that it works best with whatever is currently saved on your clipboard (that is, highlight with your mouse and use command-c or control-c).  The `reprex` vignettes provide great examples that are definitely worth looking through!
+
+Below we work through a few examples of using `reprex` to debug some code.  We include the code-to-debug directly into the `reprex()` command, but again, you may want to work entirely within copy-and-paste.
+
+
+####  Example: first try
+
+ 
+
+```{r eval=FALSE}
+library(reprex)
+data(iris)
+
+reprex(iris %>% summarize(Petal.Length))
+```
+
+<center>
+<figure>
+<img alt = 'iris1' width='400' src='/post/reprex/iris1.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption> 
+</figure>
+</figure>
+</center>
+
+Note that the error message given is that the `library(dplyr)` command is missing.  `reprex` is checking to make sure all the data **and** packages are appropriately loaded!  The information above is now *automatically* stored on your clipboard, and you can paste it directly to Stack Overflow, Slack, or GitHub issues as needed.
+
+####  Example: second try
+
+
+```{r eval=FALSE}
+library(dplyr)
+data(iris)
+
+reprex(iris %>% summarize(Petal.Length))
+```
+
+<center>
+<figure>
+<img alt = 'iris2' width='400' src='/post/reprex/iris2.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption> 
+</figure>
+</center>
+
+Wait, I thought I loaded `dplyr`???  But the `library(dplyr)` command is not contained in the code which was submitted to `reprex`, so `reprex` didn't know that `library(dplyr)` command had been provided previously.
+
+####  Example: third try
+
+```{r eval=FALSE}
+data(iris)
+
+reprex({library(dplyr); iris %>% summarize(Petal.Length)})
+```
+<center>
+<figure>
+<img alt = 'iris3' width='400' src='/post/reprex/iris3.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption> 
+</figure>
+</center>
+
+For the third try, we make sure that the `library(dplyr)` command is part of the reproducible example.  Now it seems like there is a different error; we forgot the `mean` function in `summarize`.  
+
+####  Example: fourth try
+```{r eval=FALSE}
+data(iris)
+
+reprex({library(dplyr); iris %>% summarize(Petal.Length)})
+```
+
+<center>
+<figure>
+<img alt = 'iris4' width='400' src='/post/reprex/iris4.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption> 
+</figure>
+</center>
+
+On the fourth try, it works!   The code runs as we thought it would.  
+
+## Copy and paste 
+
+It's worth pointing out one more time that `reprex` works extremely well with code that is on your clipboard.  So instead of writing the code inside the `reprex()` call (as done above), a more typical use would be to copy the code with your mouse and then type `reprex()` in the console of RStudio.  The output (seen above) is then automatically copied onto your clipboard (replacing the code) and you can paste into Stack Overflow, Slack, or GitHub as needed.
+
+
+## In the classroom
+
+As with all things in life, practice is key.  `reprex` is surprisingly straightforward, despite possibly seeming like *one more thing to learn*.  If your class uses a [slack channel](https://slack.com/) or [piazza](https://piazza.com/) for classroom communication, a very short semester-long assignment would be a requirement of posting at least one `reprex`-generated technical question to the class.  Our experience is that if students get used to posting technical questions to the class, the process immediately becomes nonthreatening and useful.
+
+
+### Learn more
+
+- `reprex` [vignette](https://reprex.tidyverse.org/index.html)
+- `reprex` [dos and don'ts](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html)
+- [Help me help you.  Creating reproducible examples.](https://resources.rstudio.com/webinars/help-me-help-you-creating-reproducible-examples-jenny-bryan)  Jenny Bryan webinar for RStudio.
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+
+

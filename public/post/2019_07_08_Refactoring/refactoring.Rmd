@@ -1,0 +1,115 @@
+---
+title: "Teaching refactoring to improve code"
+author: "Nicholas Horton"
+date: '2019-07-07'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Markdown
+- refactoring
+- functions
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+A previous entry discussed the importance of [coding style and "code smell"](https://teachdatascience.com/codingstyle) to help data analyses be clearer and more comprehensible.  In this entry we will extend that discussion to describe ways of teaching code refactoring.
+
+[Wikipedia](https://en.wikipedia.org/wiki/Code_refactoring) defines code refactoring as "the process of restructuring existing computer code—changing the factoring—without changing its external behavior. Refactoring is intended to improve nonfunctional attributes of the software. Advantages include improved code readability and reduced complexity; these can improve source-code maintainability and create a more expressive internal architecture or object model to improve extensibility."
+
+The goal is then to make code 1) easier to understand and 2) modified without changing the underlying behavior
+
+Jenny Bryan defines refactoring structures in code that suggest (or as she says, screams for) refactoring.  As we have done [before](https://teachdatascience.com/screencast), we will encourage you and your students to watch her excellent [keynote address from UseR 2018](https://www.youtube.com/watch?v=7oyiPBjLAWY).  In her typical useful fashion, a [github repo](https://github.com/jennybc/code-smells-and-feels) contains a link to the video, slides, and files mentioned in the talk.
+
+Her sound advice includes:
+
+1. never use attach() (or setwd()!)
+2. add a space before and after =
+3. "have better taste"
+4. write more elegant code
+
+Jenny introduces the idea of a [*code smell*](https://en.wikipedia.org/wiki/Code_smell) as a signal that more elegant code is needed (and it's time to refactor).  In her talk, she describes how writing elegant code is particularly challenging for new programmers and analysts since their "taste develops faster than their ability".
+
+She provides several motivating examples, beginning with the `bizarro()` function.  Here's another function where considerable error checking is undertaken.
+
+The **BEFORE** version works just fine, but it is criticized as being much harder to comprehend.
+
+```
+get_some_data <- function(config, outfile) {
+  if (config_ok(config)) {
+    if (can_write(outfile)) {
+      if (can_open_network_connection(config)) {
+        data <- parse_something_from_network()
+        if(makes_sense(data)) {
+          data <- beautify(data)
+          write_it(data, outfile)
+          return(TRUE)
+        } else {
+          return(FALSE)
+        }
+      } else {
+        stop("Can't access network")
+      }
+    } else {
+      ## uhm. What was this else for again?
+    }
+  } else {
+    ## maybe, some bad news about ... the config? 
+  }
+}
+```
+
+The **AFTER** version has the same functionality but is simpler to understand and boasts far less indentation.  
+
+```
+get_some_data <- function(config, outfile) {
+  if (config_bad(config)) {
+    stop("Bad config")
+  }
+  
+  if (!can_write(outfile)) {
+    stop("Can't write outfile")
+  }
+  
+  if (!can_open_network_connection(config)) {
+    stop("Can't access network")
+  }
+  
+  data <- parse_something_from_network()
+  if(!makes_sense(data)) {
+    return(FALSE)
+  }
+  
+  data <- beautify(data)
+  write_it(data, outfile)
+  TRUE
+}
+```
+
+Jenny's advice:
+
+1. use if() else() in moderation
+2. use functions
+3. use guard clauses
+4. clarify the "happy path"
+
+Aspects of programming style differ but key principles exist and it behooves us to introduce students to them.  We found her talk really helpful in thinking about how to introduce higher-level aspects of algorithmic thinking in data science courses.  Your summer reading list might includes several refactoring books, including [Martin Fowler's](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)) "Refactoring: Improving the Design of Existing Code" and the second edition of Hadley Wickham's [Advanced R](https://adv-r.hadley.nz) book.
+
+
+### Learn more
+
+- https://github.com/jennybc/code-smells-and-feels (Code smells and feels keynote materials)
+- https://en.wikipedia.org/wiki/Code_refactoring (Code refactoring)
+- https://en.wikipedia.org/wiki/Code_smell (Code smells)
+- https://adv-r.hadley.nz (Advanced R, second edition)
+- https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer) (Martin Fowler)
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

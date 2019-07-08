@@ -1,0 +1,204 @@
+---
+title: "Using the Common Online Data Analysis Platform (CODAP) to teach data science"
+author: "Tim Erickson and Bill Finzer"
+date: '2019-07-12'
+output:
+  html_document:
+    df_print: paged
+tags:
+- CODAP
+- visualization 
+- education
+- multivariate thinking
+- data ingestation
+categories: notR
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+
+Today we have a guest entry authored by Tim Erickson (eeps media) and Bill Finzer (Concord Consortium) about the use of the Common Online Data Analysis Platform (CODAP) to teach data science.  They write:
+
+We've been designing *point-and-click* data software since the early 90's. From the beginning, though, we wanted to get beyond *point-and-click* to a user experience of data immersion. (William Gibson's 1984 cyberpunk novel _Neuromancer_ and its "cyberspace" both inspired and eluded us.) We strove for a tool/learning environment that would draw learners into data, encouraging a drive to question and explore. Truth to tell, we remain in that striving place today.
+
+## Why bother with CODAP in an Intro Data Science course?
+
+It depends on your students and what you want their early experiences with data science to be. How quickly do you want them to become engaged with data? How adept are they with technical challenges? Will programmer-style tools pose no significant obstacles, or will some students who might later turn out to be gifted at data science be put off and give up prematurely? We think that for many students a programming-free on-ramp such as CODAP can take them to the heart of doing data science where they can discover how exciting and fun it can be. Programming will likely prove essential for them later on when the limits and shortcomings of a data immersion environment become apparent.
+
+Here are a few things about CODAP that make it especially easy to use in a course:
+
+* It is free, runs in a browser, and doesn't require an account or login.
+* There are many example documents, including one that leads you through the basics. And a **Help** link takes you to tutorial videos and other documentation.
+* CODAP documents can be saved on your computer or in Google Drive.
+* It is simple to create a link (URL) for a document that you can share with students. Clicking the link opens an individual copy of the document right in CODAP. Each invocation produces a separate, independent copy. Students can easily use the same method to share their work with each other or with the instructor.
+* There are many ways to get data into CODAP, the simplest being to drag a CSV file into CODAP's browser window.
+
+[Here is a link](https://codap.concord.org) to CODAP's home page, but we hope you'll hang in with us for some examples.
+
+## An interactive example
+
+Let's give you some experience with CODAP. We won't try to create a comprehensive course, a "CODAP 101," but you will see how it feels to use a tool like CODAP for doing introductory data science. The upcoming illustrations will all be interactive (provided your system is mouse-based, not a touch-based phone or tablet).
+
+### Trying out the basics
+
+Let's begin. In the upcoming "figure," you can see the top of a table, showing column headings. 
+It's a big table, with 1000 cases.
+Each row---each case---is a Californian from the 2013 American Community Survey. 
+We know many things about these people, including their sex, race, and education; and what makes this especially juicy: their total income.
+
+You should also see a dot plot showing the income distribution where each dot represents an individual person. Do the following:
+
+1. Drag the column heading for **sex** to the vertical axis of the graph. It should split to show two parallel dot plots.
+1. At the right of the graph, notice an icon palette which reveals "inspectors." Using the "ruler" inspector, add the median (and anything else you want) to the graph.
+1. With your pointer, hover over the median lines to see the numerical values of median incomes for males and females. 
+1. To see the difference better, rescale the graph: grab a high number from the **TotalIncome** _axis_ (e.g., 400000) and drag it to the right. 
+
+```{r, echo=FALSE}
+htmltools::includeHTML("acs01.html")
+```
+
+Having done just that much, let's point out a few things.
+
+* One underlying principle for making graphs is "label your axes." The labels come from the table, which is where the data is stored.
+* The interface makes it easy to create and alter graphs. No syntax, just dragging.
+* We're looking at microdata---data about individuals---and we construct the aggregate measures---in this case, the medians---ourselves. 
+* The CODAP process is different from the traditional intro-stats situation in several ways. 
+    * You have much more data.
+    * You have more variables than you actually need.
+    * The difference seen on the plot (men, in general, have higher total incomes than women) is really obvious; it doesn't require inferential statistical tools to notice that it didn't occur by chance. 
+    
+### Filtering: not your grandmother's EDA
+    
+You might rightly say that this is "just" exploratory data analysis: the thing you do before deploying inferential tools. What makes the analysis data science? Let us go further and notice:
+
+* There is something deeply wrong about our comparison. 
+
+Note that when you hover over the lines to see the values, you should see that the median income for males is 20000 and the median for females is 7500. The difference represents a lamentable gender gap, and in the direction that our stereotypes would predict, but the numbers just don't seem reasonable. 
+
+One problem is that in our data, as one teacher described it, "all the three-year-olds drag the average down." True. Let's see how to address that. In the next figure, we'll start with the medians already calculated, and learn one way (out of several) to _filter_ data in CODAP.
+
+1. We will filter by age; to do that we need a graph of **age**. So make a new graph by clicking the **graph** icon in the toolbar. A new graph appears, with 1000 points---all mixed up.
+1. Make it an age graph by dragging the column heading **Age** to the horizontal axis of the new graph. 
+1. Think about what ages you want to include in your analysis; maybe from about 25 to about 65.
+1. Drag a rectangle around the cases you want to keep. One way is to start high up in the graph above where 25 is. Depress the mouse button and drag _diagonally_, down and to the right, to about 65 on the axis. Notice that the relevant swath of **Age** is selected, and also all of those points in the original income graph.
+1. Now a tricky part. Click the title bar of the _table_ where it says **ACStable**. (Click the title bar so you don't lose your selection. If you click somewhere else and it goes away, no problem: just re-draw that rectangle.) 
+1. Now, in the "eyeball" palette of the _table_, choose **Set aside unselected cases**.
+
+
+```{r, echo=FALSE}
+htmltools::includeHTML("acs02.html")
+```
+
+Shazam! You have just restricted your analysis to the cases you had previously selected. Check out the values for the medians; they should have changed. They should now be something like 30000 and 20000. Still a big gap, but at least we're not including the kids.
+
+What we just did, _filtering_, is an example of what we call a *data move*. Students generally don’t filter data in intro stats because we instructors and textbook authors pre-digest the data. We probably do this in order to focus students on t-tests and sampling distributions rather than on deciding which cases to include in an analysis. And perhaps we have avoided teaching stuff like filtering because how you do it depends on your technology, and we want to teach concepts, not the nitty-gritty details of driving some software package.
+
+But maybe we can change that. With today’s technology, we don’t have to settle for pre-digested data. Besides, in data science, deciding what to include is part of the job. And when you read somebody’s data-based conclusions, asking what data were included is part of being a critical consumer of data.
+
+### Grouping, hierarchy, and aggregate measures
+
+Let's do one more lesson which demonstrates that, even though a tool like CODAP can't do everything a professional data-science tool can do, it can give students access to other data moves---other ways to organize data for analysis and visualization. 
+
+Suppose we wanted to see median incomes in a table instead of only as lines on a graph. In the next illustration, we have dragged **Sex** to the left in the table to _promote_ it. We have made the table _hierarchical_, so that at the top level, we have just _Female_ and _Male_, and under each of those top-level headings, we have a table with the values for the individuals in each group. 
+
+We have done a _grouping_ move: we grouped "by **Sex**," and now have two groups, _Female_ and _Male_. 
+
+We have also made a blank, new column _at the top level of the table_ and named it **MedInc**, for median income.
+
+1. To see what we mean by this grouping thing, in the table, click the word `Female`. The table scrolls to the _beginning_ of all the females; the last male is number 304.
+1. Now let's give that new column a formula. Left-click on the column heading, **MedInc**. A menu appears; choose **Edit Formula...**.
+1. Enter `median(TotalIncome)` and press **Apply**. You will notice typeahead in the formula editor. The median incomes should appear.
+
+```{r, echo=FALSE}
+htmltools::includeHTML("acs03.html")
+```
+
+Calculating the medians by sex is nice but hardly exciting. We're not done. Strap in.
+
+Suppose we wanted to see if differences in **Education** could explain the sex differences in income.
+
+4.  Drag the column heading for **Education** to the left and drop it next to **Sex**. 
+    Now we have every combination of **Sex** and **Education** as a separate group, and our **MedInc** column computes the median total income _for each group_.
+1. Not only that, but you can treat the aggregate data in the table on the left as you would any data. Drag **Education** to the vertical axis of the graph and **MedInc** to the horizontal axis. You get a graph of the medians. 
+1. The categories are out of order. Drag them up and down to fix that.
+1. Which dot is which sex? Drag **Sex** to the middle of the graph and drop it to create a legend. And weep.
+
+You should see that, for this set of data, for any level of education, males in that category have a higher median income than females.
+
+Let's reflect on the data moves we made:
+
+* We _filtered_ the data to get people in a certain range of ages.
+* We _grouped_ the data by sex and education 
+* We _summarized_ the incomes in each group by computing the median
+
+Then, of course, we made a graph so we would see the pattern more easily.
+
+Of course what we did is "just" exploratory data analysis, and we have not looked into the data very deeply, but we hope you can see how CODAP helped us reveal an intriguing story that was not obvious in our medium-sized dataset. While introductory statistics has traditionally focused on testing and confidence intervals, we have provided tools for some serious data wrangling.
+
+## What? You want more??
+
+Suppose you wanted to carry this further. Here is one idea:
+
+Someone might argue that the median comparison across sex is still unfair if there are a disproportionate number of women in the dataset with incomes set to zero because they do not in fact have jobs. What if women who have jobs get paid the same as men who have jobs, but the overall median for the women is depressed because more women than men work in the home and do not have traditional incomes?
+
+
+That drags down the graduate women's median income and makes it look as if women _with jobs_ get paid less
+than men, when in fact (one could claim) the incomes are really the same.
+
+Do you think that the overall median difference might be from inaccurate summarizing due to different proportions in the labor force? As you will see, we can find out who is employed and who is not, so we can answer the question using data.
+
+While we're at it, we reveal another wonderful secret:
+The 1000 cases you were working with before were not the only cases (or the only attributes) you have access to.
+The next illustration has a CODAP _plugin_, a data portal that connects to a database of 10122 Californians collected in 2013,
+with many more attributes that you saw last time. 
+
+1. Look in the **options** tab to choose which attributes to collect.
+    * Look under **Basic interesting stuff** and check **Education**
+    * Look under **Work and employment** and check **EmplStatus** (employment status)
+    * Check other attributes you might be interested in
+1.  Edit the "10" cases to be "1000" and click **Get 1000 people**
+
+You already know how to filter, make graphs, and compute summaries such as the median. 
+
+3. Select only the employed people and exclude everybody else, then compare males and females (or any other groups) with respect to their incomes. 
+
+Note: the window in this blog is small, so you will probably run out of screen space. Two strategies for making CODAP easier to use:
+
+* Minimize the portal itself (labeled ACS) by clicking the minus sign at its upper right.
+* Open the file in a separate browser window. [Use this link](https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=108852).
+
+
+```{r, echo=FALSE}
+htmltools::includeHTML("acsX01.html")
+```
+
+If you try CODAP with a class, let us ([Bill](mailto:wfinzer@concord.org) and [Tim](mailto:eepsmedia@gmail.com)) know!
+
+Tim Erickson is a freelance science and mathematics educator who served on the design teams Fathom, a piece of software for data analysis and statistics education, and its nephew, Data Games. Bill Finzer's work has long centered on getting students using data in every subject they study. He led the Fathom Dynamic Data Software development team at KCP Technologies before joining the Concord Consortium in 2014 where he leads the CODAP and Data Science Games projects. 
+
+### Learn more
+
+* https://codap.concord.org (CODAP home page)
+* Take a look at Tim's [A Best Case Scenario](https://bestcase.wordpress.com) blog for interesting CODAP examples along with Data Science Education ruminations.
+* [CODAP Data Interactive Plugins](https://concord-consortium.github.io/codap-data-interactives/) extend its functionality with portals to data, simulations that produce data and data munging capabilities.
+* Tim has some cool plugin examples at [codap.xyz](http://codap.xyz). There's even a tutorial for creating plugins.
+* Post questions at [The CODAP Help Forum](https://codap.concord.org/forums/forum/test/).
+* Visit CODAP's github repository for [latest release notes](https://github.com/concord-consortium/codap/wiki/Release-Notes), [documentation on how to create your own plugins](https://github.com/concord-consortium/codap/wiki/Getting-Started-With-CODAP-Plugins), and, of course the complete, open source, [code for CODAP](https://github.com/concord-consortium/codap).
+* https://repository.isls.org/bitstream/1/636/1/304.pdf (Data Transformations: Restructuring Data for Inquiry in a Simulation and Data Analysis Environment)
+* https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=108692 (First example)
+* https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=108694 (Second example)
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+
