@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>useR conference on Teach Data Science</title>
+    <link>https://teachdatascience.com/tags/user-conference/</link>
+    <description>Recent content in useR conference on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Mon, 08 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://teachdatascience.com/tags/user-conference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>useR!</title>
+      <link>https://teachdatascience.com/user/</link>
+      <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/user/</guid>
+      <description>Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year’s useR! conference. We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the useR! 2019 twitter page and the #user2019 hashtag.
+And, great news!!!! The keynote addresses will be live streaming at R Consortium youtube. Thanks to the support of RConsortium for making the live stream possible.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>useR!</title>
+      <link>https://teachdatascience.com/user/</link>
+      <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/user/</guid>
+      <description>Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year’s useR! conference. We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the useR! 2019 twitter page and the #user2019 hashtag.
+And, great news!!!! The keynote addresses will be live streaming at R Consortium youtube. Thanks to the support of RConsortium for making the live stream possible.</description>
+    </item>
     
     <item>
       <title>Teaching refactoring to improve code</title>
@@ -138,21 +148,22 @@ There are many aspects of day-to-day data analytical work that are almost absent
     </item>
     
     <item>
+      <title>Practical Data Science: an introduction to the PeerJ collection</title>
+      <link>https://teachdatascience.com/peerj.utf8/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/peerj.utf8/</guid>
+      <description>In 2017, Jenny Bryan and Hadley Wickham published the &amp;laquo;Practical Data Science for Stats&amp;raquo; PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
+The &amp;laquo;Practical Data Science for Stats&amp;raquo; Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
+There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
+    </item>
+    
+    <item>
       <title>Less Volume More Creativity in R</title>
       <link>https://teachdatascience.com/mosaic/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/mosaic/</guid>
-      <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
-The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
-    </item>
-    
-    <item>
-      <title>Less Volume More Creativity in R</title>
-      <link>https://teachdatascience.com/mosaic.knit/</link>
-      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/mosaic.knit/</guid>
       <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
 The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
     </item>

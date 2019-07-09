@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Using Shiny in the Classroom  &middot; Teach Data Science</title>
+  <title>useR!  &middot; Teach Data Science</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,33 +14,27 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="Shiny, workflow, visualization, dynamic visualization, rstudio, reactive, ">
+<meta name="keywords" content="rstudio, useR conference, communication, ">
 
 
-<meta property="og:title" content="Using Shiny in the Classroom  &middot; Teach Data Science ">
+<meta property="og:title" content="useR!  &middot; Teach Data Science ">
 <meta property="og:site_name" content="Teach Data Science"/>
-<meta property="og:url" content="https://teachdatascience.com/shiny2/" />
+<meta property="og:url" content="https://teachdatascience.com/user/" />
 <meta property="og:locale" content="en">
 
-<meta property="content-source" content="post\2019_06_28_shiny2\shiny2.html">
+<meta property="content-source" content="post\2019_07_09_UseR\user.html">
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2019-06-27T00:00:00Z" />
-<meta property="og:article:modified_time" content="2019-06-27T00:00:00Z" />
+<meta property="og:article:published_time" content="2019-07-08T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-08T00:00:00Z" />
 
   
-    
-<meta property="og:article:tag" content="Shiny">
-    
-<meta property="og:article:tag" content="workflow">
-    
-<meta property="og:article:tag" content="visualization">
-    
-<meta property="og:article:tag" content="dynamic visualization">
     
 <meta property="og:article:tag" content="rstudio">
     
-<meta property="og:article:tag" content="reactive">
+<meta property="og:article:tag" content="useR conference">
+    
+<meta property="og:article:tag" content="communication">
     
   
 
@@ -50,7 +44,7 @@
 
 
 
-<link rel="canonical" href="https://teachdatascience.com/shiny2/" />
+<link rel="canonical" href="https://teachdatascience.com/user/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
 <meta name="generator" content="Hugo 0.55.5" />
@@ -156,39 +150,39 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="title-metas text-center">
 
-    <h1>Using Shiny in the Classroom
+    <h1>useR!
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2019-06-27">27 Jun, 2019</time>
+  <time datetime="2019-07-08">8 Jul, 2019</time>
 </small>
 
 
   <small>
-    &middot; by Hunter Glanz
+    &middot; by Jo Hardin
   
-  &middot; Read in about 5 min
-  &middot; (912 words)
+  &middot; Read in about 6 min
+  &middot; (1199 words)
   &middot; 
 <span class="share-box">Share this on:
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
 
-    <a href="https://twitter.com/intent/tweet?text=Using%20Shiny%20in%20the%20Classroom&amp;url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://twitter.com/intent/tweet?text=useR%21&amp;url=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
 
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
 
-    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
 
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f&amp;title=Using%20Shiny%20in%20the%20Classroom" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fuser%2f&amp;title=useR%21" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
 
-    <a href="mailto:?subject=Using%20Shiny%20in%20the%20Classroom&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fshiny2%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+    <a href="mailto:?subject=useR%21&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fuser%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
   </span>
 
   </small>
@@ -196,17 +190,11 @@
 <div class="margin-10">
   <i class="fa fa-tags"></i>
   
-  <a href="https://teachdatascience.com/tags/shiny" class="label label-primary">Shiny</a>
-  
-  <a href="https://teachdatascience.com/tags/workflow" class="label label-primary">workflow</a>
-  
-  <a href="https://teachdatascience.com/tags/visualization" class="label label-primary">visualization</a>
-  
-  <a href="https://teachdatascience.com/tags/dynamic-visualization" class="label label-primary">dynamic visualization</a>
-  
   <a href="https://teachdatascience.com/tags/rstudio" class="label label-primary">rstudio</a>
   
-  <a href="https://teachdatascience.com/tags/reactive" class="label label-primary">reactive</a>
+  <a href="https://teachdatascience.com/tags/user-conference" class="label label-primary">useR conference</a>
+  
+  <a href="https://teachdatascience.com/tags/communication" class="label label-primary">communication</a>
   
 
 
@@ -223,60 +211,69 @@
   
 
 
-<div id="shiny-recap" class="section level2">
-<h2>Shiny Recap</h2>
+<p>Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year’s <a href="http://www.user2019.fr/">useR!</a> conference. We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the <a href="https://twitter.com/UseR2019_Conf">useR! 2019 twitter page</a> and the <a href="https://twitter.com/hashtag/useR2019?src=hash">#user2019 hashtag</a>.</p>
+<blockquote>
+<p>And, great news!!!! The keynote addresses will be live streaming at <a href="https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg">R Consortium youtube</a>. Thanks to the support of <a href="https://twitter.com/RConsortium">RConsortium</a> for making the live stream possible.</p>
+</blockquote>
+<div id="user-2019---toulouse" class="section level2">
+<h2>useR! 2019 - Toulouse</h2>
+<p>Not to worry, we’ll get to the talks and the amazing content that comes out every year from the rock star R community. But we’d like to start by highlighting two aspects of useR! that we appreciate in a conference and a community.</p>
+<div id="code-of-conduct" class="section level3">
+<h3>Code of conduct</h3>
+<p>Right at the top of their website, useR! highlights their <a href="http://www.user2019.fr/coc/">code of conduct</a> and communicate the sanctions which will be applied if participants are out of line. Setting standards at the onset creates a safe space for attendants, and encourages all different people to want to attend the conference.<br></p>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny2/shinyhex.jpg" />
-
-</div>
+<figure>
+<img alt = 'coc' width='400' src='https://teachdatascience.com/post/user/coc.png' />
+</figure>
 </center>
-<p>Yesterday we introduced <a href="https://shiny.rstudio.com/">R Shiny</a> and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at <a href="https://teachdatascience.com/shiny1/" class="uri">https://teachdatascience.com/shiny1/</a> and be sure to go play around with some Shiny apps at RStudio’s gallery at <a href="https://shiny.rstudio.com/gallery/" class="uri">https://shiny.rstudio.com/gallery/</a>.</p>
-<p><code>shiny</code> is powerful and should be used in as many ways as possible. Today’s post will detail a few of the major ways it can be integrated into the classroom.</p>
+<p><br></p>
 </div>
-<div id="shiny-apps-for-student-users" class="section level2">
-<h2>Shiny Apps for Student Users</h2>
-<p>With <code>shiny</code>, instructors with knowledge of R have the ability to create their own “applets” or demos to connect students with myriad datasets and data science topics. The pedagogical importance of tools like the Rossman/Chance <a href="http://www.rossmanchance.com/applets/">applets</a> and <a href="http://www.lock5stat.com/StatKey/">statkey</a> cannot be overstated, but curriculum and activities no longer need to conform to existing applets and web-based tools. As educators and R users, most classroom activities that involve the computer in some way can be converted into an interactive <code>shiny</code> app.</p>
-<p><code>shiny</code> activities are not limited to introductory topics. To a very large extent, if it can be done in R then it can be incorporated into a <code>shiny</code> app in some fashion. Although <code>shiny</code> apps use R on the back end, remember that they can be deployed to a website to be viewed and used within any browser with internet access. If your home institution/organization does not have access to a Shiny server, <a href="https://www.shinyapps.io/">shinyapps.io</a> by RStudio will host your <code>shiny</code> app for free. If the resources accompanying the free usage tier are not sufficient for your use, remember that many of RStudio’s pro products are free for educators.</p>
-<p>Especially cool is the unprecedented ability to connect students’ novel methods and research via <code>shiny</code> In a 2018 TAS paper, Lee Fawcett <a href="https://amstat.tandfonline.com/doi/full/10.1080/10691898.2018.1436999#.XQ7XIetKiHt">outlines</a> a collaborative and interactive environment for students to learn about and apply new methods via <code>shiny</code> apps.</p>
-<p>Beyond statistical concepts like data visualization and analysis, <code>shiny</code> apps are a great way to teach R skills themselves. The <a href="https://blog.rstudio.com/2017/07/11/introducing-learnr/"><code>learnr</code></a> package facilitates the learning process explicitly by making the construction of custom R tutorials easier than ever. Each <code>learnr</code> tutorial is a <code>shiny</code> interactive document. Keep an eye out for a future blog post all about the <code>learnr</code> package!</p>
+<div id="diversity-scholarships" class="section level3">
+<h3>diversity scholarships</h3>
+<p>Additionally, as a way to diversify the individuals who attend useR!, the organizers provided diversity scholarships to attendants from historically marginalized groups. Thank you to useR! for creating a diverse space where ideas can flourish.</p>
+<blockquote>
+<p>useR! 2019 is proud to propose a diversity scholarship program. The program aims at providing a financial help to members of underrepresented or historically marginalized groups in the R community who may not otherwise be able to attend our conference for financial reasons.</p>
+</blockquote>
 </div>
-<div id="shiny-apps-by-students" class="section level2">
-<h2>Shiny Apps By Students</h2>
-<p>Give students a <code>shiny</code> app and they will exhaust what the app can do. Give students the ability and opportunity to <em>build</em> a <code>shiny</code> app and the sky’s the limit!</p>
-<p>Equipping students with statistical computing and programming skills empowers them to own and drive their work with data. Add to that the creation of a <code>shiny</code> app and there’s nothing they’ll feel they can’t do with data. We’ve had great success asking teams of students (~3) to create a <code>shiny</code> app as a final project. Not only does the assignment give students fantastic practice with R, but the result is a <strong>product</strong> that they can literally show off to peers and prospective advisers, employers, etc.</p>
-<div id="student-nasa-shiny-app" class="section level3">
-<h3>Student NASA Shiny App</h3>
-<p>The NASA app was created by a team of three students as a final project. The goal was exploratory data analysis with a dataset of their choice. The app can be found <a href="https://mschroth.shinyapps.io/lisinkershinyapp/">here</a>.</p>
-<center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny2/nasaapp.png" />
-
-</div>
-</center>
-<p>Based on the apps in the RStudio gallery, you know that the students who created the NASA app had the enthusiasm to customize the theme of the page. The students not only found an interesting dataset and exciting ways to explore it, but they even added a gif on the last tab. It’s clear they had fun creating it!</p>
-</div>
-<div id="student-classification-shiny-app" class="section level3">
-<h3>Student Classification Shiny App</h3>
-<p>The Classification app was also created by a team of three students as a final project, and they chose to build a tool for exploring different classification methods. The app can be found <a href="https://mschroth.shinyapps.io/classificationapp/">here</a></p>
-<center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny2/classifyapp.png" />
-
-</div>
-</center>
-<p>The app is fun for its simultaneous simplicity and complexity. The classification methods included are somewhat advanced and nice to visualize. However, the coup de grace is the choice of datasets which provides stunning clarity to how the different methods handle different data situations.</p>
-</div>
-</div>
-<div id="beyond-the-classroom" class="section level2">
-<h2>Beyond the Classroom</h2>
-<p>Whether it’s exposure to <code>shiny</code> as a learning tool or the process of building an app from scratch, there is tremendous pedagogical value from using in the classroom. However, beyond the classroom, fluency with a product like <code>shiny</code> sets-up students with valuable skills for almost any employer. Interactive visualizations and dashboards are all but ubiquitous in industry for both monitoring and gaining insight from a company’s data.</p>
-</div>
-<div id="learn-more" class="section level2">
-<h2>Learn more</h2>
+<div id="what-to-expect" class="section level3">
+<h3>What to expect</h3>
+<p>As today is the first day of the conference, we can’t actually know which was the best talk. But we have taken a look at the line-up, and we’d like to highlight a few talks with lots of promise (and if you aren’t at useR! this year, don’t worry, all the talks will be available after the conference). (Thanks to <a href="https://twitter.com/minebocek">Mine Çetinkaya-Rundel</a> for some of the pointers below!)</p>
 <ul>
-<li><p><code>shiny</code> Home: <a href="https://shiny.rstudio.com/" class="uri">https://shiny.rstudio.com/</a></p></li>
-<li><p>RStudio <code>shiny</code> Gallery (there are others): <a href="https://shiny.rstudio.com/gallery/" class="uri">https://shiny.rstudio.com/gallery/</a></p></li>
+<li><p><a href="https://twitter.com/juliesquid">Julia Stewart Lowndes’</a> keynote address about <a href="http://www.user2019.fr/program/">R for better science in less time</a> will be hugely impactful. We will learn how R can accelerate scientific research, help the environment, and support scientific leaders.</p></li>
+<li><p><a href="https://twitter.com/jcheng">Joe Cheng</a> is upping his game and his keynote on <a href="http://www.user2019.fr/program/">Shiny’s Holy Grail: Interactivity with reproducibility</a> promises to be amazing.</p></li>
+<li><p><a href="https://twitter.com/JCornebise">Julien Cornebise</a> is not a very common #rstats household name, but his keynote on <a href="http://www.user2019.fr/program/">“AI for Good” in the R and Python ecosystems</a> is sure to help move our work in positive ways.</p></li>
+<li><p>In the education session is a talk by <a href="https://twitter.com/keniatw">Kenia Wiedemann</a> on “Mathematical Modeling with R: Embedding Computational Thinking into High School Math Classes in the United States”. It will be refreshing to hear how R is being used in high schools.</p></li>
+<li><p>Lots of great talks in the reproducibility session, including “The ‘Rmd first’ method: when projects start with the documentation” by <a href="https://twitter.com/statnmap">Sébastien Rochette</a>.</p></li>
+<li><p>We could all use more reminders about our manners … <a href="https://twitter.com/dmi3k">Dmytro Perepolkin</a>’s talk on “<code>polite</code> - web etiquette for R users” should be quite helpful.</p></li>
+<li><p><a href="https://twitter.com/civicangela">Angela Li</a> speaks to the education community about “Teaching reproducible spatial analysis in R”. She has us sold with <code>teaching</code>, <code>reproducible</code>, <code>spatial analysis</code>, and <code>R</code>! So much great content in one talk!</p></li>
+<li><p>For those interested in NLP and the <code>keras</code> package, you won’t want to miss “Die Nutella oder Das Nutella? Grammatical Gender Prediction of German Nouns” by <a href="https://twitter.com/chainsawriot">Chung-hong Chan</a>.</p></li>
+<li><p><a href="https://twitter.com/JennyBryan">Jenny Bryan’s</a> talks are always amazing, and her <code>usethis</code> package is equally terrific. Don’t miss her describing it in her talk on “DRY out your workflow with the <code>usethis</code> package”.</p></li>
+<li><p>For anyone ready to take the next step learning <code>Git</code>, check out <a href="https://twitter.com/kellrstats?lang=en">Kelly O’Briant’s</a> talk “Advanced Git Integrations for Automating the Delivery of Reproducible Data Products in R”.</p></li>
+<li><p><a href="https://twitter.com/fmic_">Francois Michonneau</a> will be talking about “How a non-profit uses R for its daily operations”. His work at The Carpentries, a non-profit organization teaching data science globally, is changing the face of data science.</p></li>
+<li><p>Verena Held and <a href="https://twitter.com/maxheld">Max Held</a> will be talking about “GitHub actions for R” which work to more seamlessly integrate docker practices into your workflow. And relatedly, “<code>ghclass</code>: an R package for managing classes with GitHub” by <a href="https://twitter.com/rundel">Colin Rundel</a> will describe doing such work in the classroom.</p></li>
+<li><p>Last but not least, <a href="https://twitter.com/hadleywickham">Hadley Wickham</a> will speak on “Enhancements to data tidying”, a must see for all useRs.</p></li>
+</ul>
+</div>
+</div>
+<div id="past-user-conferences" class="section level2">
+<h2>past useR! conferences</h2>
+<p>While July 2019 should focus on useR! 2019, if you’ve got extra time this summer to watch data science videos, we’ve put together a highlights reel from past useR! conferences.</p>
+<ul>
+<li><p>At the top of our highlights is <a href="https://twitter.com/hadleywickham">Hadley Wickham’s</a> useR! 2016 keynote address <a href="https://channel9.msdn.com/events/useR-international-R-User-conference/useR2016/Towards-a-grammar-of-interactive-graphics?term=wickham&amp;lang-en=true">Toward a grammar of interactive graphics</a> where he introduces list columns and the umbrella term <code>tidyverse</code> (previously, the community had called the suite of tools the <code>hadleyverse</code>). Of particular note is his little bunny foo foo example to explain piping which happens at about 34:00.</p></li>
+<li><p>Many of you are familiar with <a href="https://twitter.com/rladiesglobal">R-Ladies Global</a> who talked about the <a href="https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/R-Ladies-Global-Community">mission and outreach</a> at the useR! 2017 conference.</p></li>
+<li><p><a href="https://twitter.com/maxhumber">Max Humber</a> at useR! 2017 talked about <a href="https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/Scraping-data-with-rvest-and-purrr">Webscraping with <code>rvest</code> and <code>purrr</code></a>. The example is heavy on the sports application, but it’s a quick talk and does a good job getting into the tools.</p></li>
+<li><p>Possibly my favorite highlight is <a href="https://twitter.com/rdpeng">Roger Peng’s</a> useR! 2018 keynote <a href="https://www.youtube.com/watch?v=5033jBHFiHE">Teaching R to New Users: From tapply to Tidyverse</a>. While we understand that you might not take our advice on which talk is the best to watch, just last month Hadley Wickham recommended Roger’s talk!<br></p></li>
+</ul>
+<center>
+<figure>
+<img alt = 'tweet' width='400' src='https://teachdatascience.com/post/user/hadleytweet.png' />
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li><p>Another big highlight is from last year’s useR! 2018 keynote by <a href="https://twitter.com/JennyBryan">Jenny Bryan</a>, <a href="https://www.youtube.com/watch?v=7oyiPBjLAWY">Code Smells and Feels</a>. We liked her talk so much that we wrote an entire blog entry on <a href="https://teachdatascience.com/refactoring/">refactoring</a>.</p></li>
+<li><p>A personal favorite is <a href="https://www.youtube.com/watch?v=fJTYsncvpvI"><code>simsurv</code>: A Package for Simulating Simple or Complex Survival Data</a> by Sam Brilleman at useR! 2018. I like this talk because I teach survival analysis, and simulation is always good for the educational setting. It’s hard to come up with realistic ways to simulate data in the survival setting, and the <code>simsurv</code> package is incredibly powerful.</p></li>
+<li><p><a href="https://twitter.com/tech_is_dead">Elizabeth Stark</a> gave a great useR! 2018 tutorial on <a href="https://www.youtube.com/watch?v=lfG8cTqRRNA">Production-ready R: Getting started with R and docker</a>. It is becoming more and more clear that docker can help individuals at institutions with light computing infrastructure. Docker puts your products on the cloud, but you don’t need IT help to purchase or set up a server.</p></li>
 </ul>
 <div id="about-this-blog" class="section level3">
 <h3>About this blog</h3>
@@ -291,22 +288,22 @@
       <footer>
   
 <span class="share-box">Share this on:
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
 
-    <a href="https://twitter.com/intent/tweet?text=Using%20Shiny%20in%20the%20Classroom&amp;url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://twitter.com/intent/tweet?text=useR%21&amp;url=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
 
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
 
-    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f" onclick="window.open(this.href, 'mywin',
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fuser%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
 
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fshiny2%2f&amp;title=Using%20Shiny%20in%20the%20Classroom" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fuser%2f&amp;title=useR%21" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
 
-    <a href="mailto:?subject=Using%20Shiny%20in%20the%20Classroom&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fshiny2%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+    <a href="mailto:?subject=useR%21&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fuser%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
   </span>
 
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -315,18 +312,12 @@
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="https://teachdatascience.com/shiny1/" title="An Introduction to R Shiny">
+          <a href="https://teachdatascience.com/refactoring/" title="Teaching refactoring to improve code">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
     
 
-    
-      <li class="next">
-        <a href="https://teachdatascience.com/pcmi/" title="Undergraduate Curriculum Guidelines">
-            Next <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
     
     </ul> </nav>
   
