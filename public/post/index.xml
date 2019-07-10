@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 08 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using the Common Online Data Analysis Platform (CODAP) to teach data science</title>
+      <link>https://teachdatascience.com/codap/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/codap/</guid>
+      <description>Today we have a guest entry authored by Tim Erickson (eeps media) and Bill Finzer (Concord Consortium) about the use of the Common Online Data Analysis Platform (CODAP) to teach data science. They write:
+We’ve been designing point-and-click data software since the early 90’s. From the beginning, though, we wanted to get beyond point-and-click to a user experience of data immersion. (William Gibson’s 1984 cyberpunk novel Neuromancer and its “cyberspace” both inspired and eluded us.</description>
+    </item>
     
     <item>
       <title>useR!</title>
@@ -144,17 +154,6 @@ Photo credit: Esti Alvarez
       <guid>https://teachdatascience.com/peerj/</guid>
       <description>In 2017, Jenny Bryan and Hadley Wickham published the “Practical Data Science for Stats” PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
 The “Practical Data Science for Stats” Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
-There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
-    </item>
-    
-    <item>
-      <title>Practical Data Science: an introduction to the PeerJ collection</title>
-      <link>https://teachdatascience.com/peerj.utf8/</link>
-      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/peerj.utf8/</guid>
-      <description>In 2017, Jenny Bryan and Hadley Wickham published the &amp;laquo;Practical Data Science for Stats&amp;raquo; PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
-The &amp;laquo;Practical Data Science for Stats&amp;raquo; Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
 There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
     </item>
     

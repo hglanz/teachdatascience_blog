@@ -1,7 +1,7 @@
 ---
 title: "Using the Common Online Data Analysis Platform (CODAP) to teach data science"
 author: "Tim Erickson and Bill Finzer"
-date: '2019-07-12'
+date: '2019-07-09'
 output:
   html_document:
     df_print: paged

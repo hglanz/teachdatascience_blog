@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 08 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CODAP</title>
+      <link>https://teachdatascience.com/tags/codap/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/codap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data ingestation</title>
+      <link>https://teachdatascience.com/tags/data-ingestation/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://teachdatascience.com/tags/education/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multivariate thinking</title>
+      <link>https://teachdatascience.com/tags/multivariate-thinking/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/multivariate-thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualization</title>
+      <link>https://teachdatascience.com/tags/visualization/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/visualization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>RStudio</title>
@@ -72,15 +117,6 @@
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/collaboration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>education</title>
-      <link>https://teachdatascience.com/tags/education/</link>
-      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/education/</guid>
       <description></description>
     </item>
     
@@ -175,15 +211,6 @@
     </item>
     
     <item>
-      <title>visualization</title>
-      <link>https://teachdatascience.com/tags/visualization/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>RStudio server</title>
       <link>https://teachdatascience.com/tags/rstudio-server/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
@@ -252,15 +279,6 @@
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data ingestation</title>
-      <link>https://teachdatascience.com/tags/data-ingestation/</link>
-      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
       <description></description>
     </item>
     
@@ -342,15 +360,6 @@
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/simpsons-paradox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>multivariate thinking</title>
-      <link>https://teachdatascience.com/tags/multivariate-thinking/</link>
-      <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/multivariate-thinking/</guid>
       <description></description>
     </item>
     
