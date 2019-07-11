@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>reprex:  Help me help you</title>
+      <link>https://teachdatascience.com/reprex/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reprex/</guid>
+      <description>…if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie’s novel, Mrs. Dymond (1885). The point is well understood – one of the most important things we can teach our students is how they can help themselves.</description>
+    </item>
     
     <item>
       <title>Using the Common Online Data Analysis Platform (CODAP) to teach data science</title>
@@ -340,16 +350,6 @@ By including data work, code, and analysis narrative into a single document, R M
       
       <guid>https://teachdatascience.com/about/</guid>
       <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
-    </item>
-    
-    <item>
-      <title>more Less Volume More Creativity (R vs. Python)</title>
-      <link>https://teachdatascience.com/parallelnotreally/</link>
-      <pubDate>Sat, 14 Jul 2018 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/parallelnotreally/</guid>
-      <description>Parallel entry isn’t working for NIck: temporary wrkaround.
-Learn moredata8.orgAbout this blogEach day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching.</description>
     </item>
     
     <item>
