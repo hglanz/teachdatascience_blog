@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,63 @@
     <item>
       <title>RStudio</title>
       <link>https://teachdatascience.com/tags/rstudio/</link>
-      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cluster computing</title>
+      <link>https://teachdatascience.com/tags/cluster-computing/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/cluster-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grid computing</title>
+      <link>https://teachdatascience.com/tags/grid-computing/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/grid-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>high performance computing</title>
+      <link>https://teachdatascience.com/tags/high-performance-computing/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/high-performance-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parallel programming</title>
+      <link>https://teachdatascience.com/tags/parallel-programming/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/parallel-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spark</title>
+      <link>https://teachdatascience.com/tags/spark/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://teachdatascience.com/tags/workflow/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/workflow/</guid>
       <description></description>
     </item>
     
@@ -135,15 +189,6 @@
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/refactoring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>workflow</title>
-      <link>https://teachdatascience.com/tags/workflow/</link>
-      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/workflow/</guid>
       <description></description>
     </item>
     

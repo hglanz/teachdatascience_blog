@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Parallel processing and sparklyr</title>
+      <link>https://teachdatascience.com/parallel/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/parallel/</guid>
+      <description>Today’s blog entry is on parallel computing. As a data science education blog, our focus is more on how to discuss ideas of parallel computing in the classroom rather than parallel computing for particular research projects. Indeed, at times there seems to be quite a bit of hype around parallel computing when it isn’t particularly necessary or helpful.
+In this blog, we’ll perform tasks that are embarassingly parallel which means there is no dependency or communication between the parallel tasks.</description>
+    </item>
     
     <item>
       <title>reprex:  Help me help you</title>
@@ -19,8 +29,7 @@
       
       <guid>https://teachdatascience.com/reprex/</guid>
       <description>…if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
-
-The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie’s novel, Mrs. Dymond (1885). The point is well understood – one of the most important things we can teach our students is how they can help themselves.</description>
+The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie’s novel, Mrs. Dymond (1885). The point is well understood – one of the most important things we can teach our students is how they can help themselves.</description>
     </item>
     
     <item>
@@ -40,8 +49,7 @@ We’ve been designing point-and-click data software since the early 90’s. Fro
       
       <guid>https://teachdatascience.com/user/</guid>
       <description>Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year’s useR! conference. We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the useR! 2019 twitter page and the #user2019 hashtag.
-
-And, great news!!!! The keynote addresses will be live streaming at R Consortium youtube. Thanks to the support of RConsortium for making the live stream possible.</description>
+And, great news!!!! The keynote addresses will be live streaming at R Consortium youtube. Thanks to the support of RConsortium for making the live stream possible.</description>
     </item>
     
     <item>
@@ -60,15 +68,8 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/teaching_programming_tips/</guid>
-      <description>Intro
-Hello!
-It’s my distinct pleasure to be guest-blogging for you today! My name is Kelly Bodwin and I’m an Assistant Professor of Statistics at Cal Poly, San Luis Obispo. In my two years at Cal Poly I have taught
-
-Stat 218 - An introductory course for non-majors
-Stat 419 - An upper-level course in multivariate analysis
-Stat 331 - Our department’s introductory R class
-
-In all of these courses, I make extensive use of R.</description>
+      <description>IntroHello!It’s my distinct pleasure to be guest-blogging for you today! My name is Kelly Bodwin and I’m an Assistant Professor of Statistics at Cal Poly, San Luis Obispo. In my two years at Cal Poly I have taught
+Stat 218 - An introductory course for non-majorsStat 419 - An upper-level course in multivariate analysisStat 331 - Our department’s introductory R classIn all of these courses, I make extensive use of R.</description>
     </item>
     
     <item>
@@ -77,12 +78,7 @@ In all of these courses, I make extensive use of R.</description>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/pvals/</guid>
-      <description>Image credit: xkcd.com
-
-
-
-Statistics for science
-Figuring out truth is really hard to do. Teaching students how to attempt it may be even harder. As statisticians we know that statistical significance isn’t truth, but we still hope that the process by which we analyze data will lead us on a path toward scientific discovery. How do we teach students the best way to stay on the path of using statistics to move science forward?</description>
+      <description>Image credit: xkcd.comStatistics for scienceFiguring out truth is really hard to do. Teaching students how to attempt it may be even harder. As statisticians we know that statistical significance isn’t truth, but we still hope that the process by which we analyze data will lead us on a path toward scientific discovery. How do we teach students the best way to stay on the path of using statistics to move science forward?</description>
     </item>
     
     <item>
@@ -91,10 +87,8 @@ Figuring out truth is really hard to do. Teaching students how to attempt it may
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/learnr/</guid>
-      <description>What is the learnr package?
-The learnr package makes it easy to turn any R Markdown document into an interactive tutorial. With this vehicle instructors can offer interactive tools to their students to allow them to explore datasets in use from the class, a textbook, or even collected themselves. Straight from Garrett Grolemund’s fantastic introduction to the package, tutorials can include any or all of the following:
-
-Narrative, figures, illustrations, and equations.</description>
+      <description>What is the learnr package?The learnr package makes it easy to turn any R Markdown document into an interactive tutorial. With this vehicle instructors can offer interactive tools to their students to allow them to explore datasets in use from the class, a textbook, or even collected themselves. Straight from Garrett Grolemund’s fantastic introduction to the package, tutorials can include any or all of the following:
+Narrative, figures, illustrations, and equations.</description>
     </item>
     
     <item>
@@ -103,8 +97,7 @@ Narrative, figures, illustrations, and equations.</description>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/styleguide/</guid>
-      <description>The Importance of Good Coding Style
-To begin with another quote from Hadley Wickham: “Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.” In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
+      <description>The Importance of Good Coding StyleTo begin with another quote from Hadley Wickham: “Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.” In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
     </item>
     
     <item>
@@ -122,11 +115,7 @@ To begin with another quote from Hadley Wickham: “Good coding style is like us
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny2/</guid>
-      <description>Shiny Recap
-
-
-
-Yesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
+      <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
     </item>
     
     <item>
@@ -135,11 +124,7 @@ Yesterday we introduced R Shiny and discussed how it allows you to build interac
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny1/</guid>
-      <description>What is R Shiny?
-
-
-
-shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
+      <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
@@ -167,11 +152,7 @@ shiny is a powerful and flexible R package that makes it easy to build interacti
       
       <guid>https://teachdatascience.com/cloud/</guid>
       <description>When people ask about how to get their students engaged with R in their introductory statistics and data science courses we offer three pieces of advice:
-keep it simple (discussed in the “Less Volume, More Creativity” blog entry)
-engage students to provide peer-tutoring and drop-in office hours to assist with questions and coding to complement class and office hours (at Amherst College this is coordinated by the Statistics and Data Science Fellows)
-have students use a dedicated server to access R
-
-Slide credit: Mine Çetinkaya-Rundel</description>
+keep it simple (discussed in the “Less Volume, More Creativity” blog entry)engage students to provide peer-tutoring and drop-in office hours to assist with questions and coding to complement class and office hours (at Amherst College this is coordinated by the Statistics and Data Science Fellows)have students use a dedicated server to access RSlide credit: Mine Çetinkaya-Rundel</description>
     </item>
     
     <item>
@@ -182,8 +163,7 @@ Slide credit: Mine Çetinkaya-Rundel</description>
       <guid>https://teachdatascience.com/pairprogramming/</guid>
       <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
 Photo credit: Esti Alvarez
-
-Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
+Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
     </item>
     
     <item>
@@ -193,8 +173,7 @@ Pair programming has been thought to lead to better code, more enjoyable coding,
       
       <guid>https://teachdatascience.com/peerj/</guid>
       <description>In 2017, Jenny Bryan and Hadley Wickham published the “Practical Data Science for Stats” PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
-
-The “Practical Data Science for Stats” Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
+The “Practical Data Science for Stats” Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
 There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
     </item>
     
@@ -228,13 +207,21 @@ SQL (pronounced sequel) stands for Structured Query Language; it is a language d
     </item>
     
     <item>
+      <title>infer</title>
+      <link>https://teachdatascience.com/infer.utf8/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/infer.utf8/</guid>
+      <description>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.</description>
+    </item>
+    
+    <item>
       <title>Github Classroom</title>
       <link>https://teachdatascience.com/gitclass/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/gitclass/</guid>
-      <description>GitHub Classroom
-If you have been reading along in the blog, you’ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
+      <description>GitHub ClassroomIf you have been reading along in the blog, you’ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
 But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
     </item>
     
@@ -256,8 +243,7 @@ Previous posts have described working with R Projects and working with GitHub.</
       <guid>https://teachdatascience.com/github/</guid>
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
-
-“Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
+“Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
     </item>
     
     <item>
@@ -266,8 +252,7 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
       <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/leaflet/</guid>
-      <description>Leaflet for mapping
-Maps are an important way of displaying data.
+      <description>Leaflet for mappingMaps are an important way of displaying data.
 The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
 Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
     </item>
@@ -279,8 +264,7 @@ Here’s a simple example where data from higher education institutions from wit
       
       <guid>https://teachdatascience.com/dsert/</guid>
       <description>The National Academies of Science, Engineering, and Medicine Roundtable on Data Science Postsecondary Education was convened in 2016 to work to develop a coherent vision for the emerging field of data science. The Roundtable, which consists of representatives from industry, government, and academia meets quarterly for a day to discuss best practices, ways to support the growing community, and approaches to help advance data science education.
-
-Full information about the roundtable including narrative summaries of past meetings can be found at https://nas.</description>
+Full information about the roundtable including narrative summaries of past meetings can be found at https://nas.</description>
     </item>
     
     <item>
@@ -289,8 +273,7 @@ Full information about the roundtable including narrative summaries of past meet
       <pubDate>Thu, 06 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/diversity/</guid>
-      <description>Calls for Diversity
-Data science is made up of not only sets of tools, methods, and problems to solve, but also actual people who make up the statistics &amp;amp; data science community. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem) includes a section on “Ensuring Broad Participation” which reiterates the importance of creating an inclusive community where all views are heard and supported.</description>
+      <description>Calls for DiversityData science is made up of not only sets of tools, methods, and problems to solve, but also actual people who make up the statistics &amp;amp; data science community. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem) includes a section on “Ensuring Broad Participation” which reiterates the importance of creating an inclusive community where all views are heard and supported.</description>
     </item>
     
     <item>
@@ -319,8 +302,7 @@ Hilary Parker and Roger Peng’s podcast, Not So Standard Deviations provides gl
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/screencast/</guid>
-      <description>Watching an expert work through a data analysis using the tidyverse
-Teaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
+      <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
 We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
     </item>
     
@@ -330,11 +312,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
-      <description>What is the Tidyverse?
-
-
-
-The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>
@@ -343,11 +321,8 @@ The tidyverse is a coherent system of R packages for data wrangling, exploration
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/projects/</guid>
-      <description>What are Projects?
-RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
-
-Why RStudio?
-It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
+      <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
+Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
     <item>
@@ -356,8 +331,7 @@ It goes almost without saying that as a group we have moved completely to the RS
       <pubDate>Wed, 29 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/rmarkdown/</guid>
-      <description>What is R Markdown?
-Straight from RStudio’s wonderful tutorial, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
+      <description>What is R Markdown?Straight from RStudio’s wonderful tutorial, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
 By including data work, code, and analysis narrative into a single document, R Markdown provides a fully reproducible vehicle for data science projects!</description>
     </item>
     
@@ -367,8 +341,7 @@ By including data work, code, and analysis narrative into a single document, R M
       <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/ingestingdata/</guid>
-      <description>Why use data from outside sources?
-The world is awash in data, and whatever else we teach in a data science curriculum, data must be at the center. Calls to modernize statistics and data science courses regularly point to using “real” data. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem/) reports Data Management &amp;amp; Curation as a core part of data acumen. Indeed, they recognize data provenance to be a key skill which is “important for all students in [a] data science program.</description>
+      <description>Why use data from outside sources?The world is awash in data, and whatever else we teach in a data science curriculum, data must be at the center. Calls to modernize statistics and data science courses regularly point to using “real” data. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem/) reports Data Management &amp;amp; Curation as a core part of data acumen. Indeed, they recognize data provenance to be a key skill which is “important for all students in [a] data science program.</description>
     </item>
     
     <item>
@@ -377,8 +350,7 @@ The world is awash in data, and whatever else we teach in a data science curricu
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/nasem/</guid>
-      <description>Data Science for Undergraduates
-As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
+      <description>Data Science for UndergraduatesAs the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     
     <item>
@@ -387,8 +359,7 @@ As the first entry in this blog, we thought it would be appropriate to begin wit
       <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/intro/</guid>
-      <description>Why another Data Science Education blog?
-This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+      <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     
     <item>
@@ -400,13 +371,40 @@ This is an exciting time to be teaching students how to extract meaning from dat
       <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://teachdatascience.com/acs01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/acs01/</guid>
+      <description>Title</description>
+    </item>
     
-
-
-
-
-
-</description>
+    <item>
+      <title></title>
+      <link>https://teachdatascience.com/acs02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/acs02/</guid>
+      <description>Title</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://teachdatascience.com/acs03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/acs03/</guid>
+      <description>Title</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://teachdatascience.com/acsx01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/acsx01/</guid>
+      <description>Title</description>
     </item>
     
   </channel>

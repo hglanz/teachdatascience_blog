@@ -1,7 +1,7 @@
 ---
 title: "Parallel processing and sparklyr"
 author: "Jo Hardin"
-date: '2019-07-12'
+date: '2019-07-11'
 output:
   html_document:
     df_print: paged
@@ -43,7 +43,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 6372
+## node of a socket cluster on host &#39;localhost&#39; with pid 10636
 
 stopCluster(cl)
 cl[[1]]
@@ -63,13 +63,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 11.38231
+## [1] 7.459071
 ## 
 ## [[2]]
-## [1] 79.01696
+## [1] 14.08358
 ## 
 ## [[3]]
-## [1] 3.850959
+## [1] 68.69175
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -82,7 +82,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 40.215198 24.948509  7.799893
+## [1] 107.139949   9.410941  33.862448
 
 stopCluster(cl)</code></pre>
 </div>
