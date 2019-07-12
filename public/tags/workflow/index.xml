@@ -27,8 +27,8 @@
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/teaching_programming_tips/</guid>
-      <description>Intro Hello! It’s my distinct pleasure to be guest-blogging for you today! My name is Kelly Bodwin and I’m an Assistant Professor of Statistics at Cal Poly, San Luis Obispo. In my two years at Cal Poly I have taught
- Stat 218 - An introductory course for non-majors Stat 419 - An upper-level course in multivariate analysis Stat 331 - Our department’s introductory R class  In all of these courses, I make extensive use of R.</description>
+      <description>IntroHello!It’s my distinct pleasure to be guest-blogging for you today! My name is Kelly Bodwin and I’m an Assistant Professor of Statistics at Cal Poly, San Luis Obispo. In my two years at Cal Poly I have taught
+Stat 218 - An introductory course for non-majorsStat 419 - An upper-level course in multivariate analysisStat 331 - Our department’s introductory R classIn all of these courses, I make extensive use of R.</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny2/</guid>
-      <description>Shiny Recap   Yesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
+      <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny1/</guid>
-      <description>What is R Shiny?   shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
+      <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <guid>https://teachdatascience.com/pairprogramming/</guid>
       <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
 Photo credit: Esti Alvarez
- Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
+Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
     </item>
     
     <item>
@@ -78,7 +78,7 @@ Previous posts have described working with R Projects and working with GitHub.</
       <guid>https://teachdatascience.com/github/</guid>
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
- “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
+“Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/screencast/</guid>
-      <description>Watching an expert work through a data analysis using the tidyverse Teaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
+      <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
 We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
     </item>
     
@@ -97,7 +97,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
-      <description>What is the Tidyverse?   The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>
@@ -106,8 +106,8 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/projects/</guid>
-      <description>What are Projects? RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
- Why RStudio? It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
+      <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
+Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Wed, 29 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/rmarkdown/</guid>
-      <description>What is R Markdown? Straight from RStudio’s wonderful tutorial, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
+      <description>What is R Markdown?Straight from RStudio’s wonderful tutorial, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
 By including data work, code, and analysis narrative into a single document, R Markdown provides a fully reproducible vehicle for data science projects!</description>
     </item>
     

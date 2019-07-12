@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Fri Jul 12 08:06:55 EDT 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-016b-e614-40b0-000011631098 
-on database directory memory:/Users/nickadmin/Dropbox/git/teachdatascience_blog/content/post/2019_07_12_Parallel/databaseName=metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@68d6520b 
-Loaded from file:/Users/nickadmin/spark/spark-2.4.3-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+Fri Jul 12 13:30:28 PDT 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-016b-e7e1-4292-000012eb2b88 
+on database directory memory:F:\Dropbox\DataScienceBlog\teachdatascience_blog\content\post\2019_07_12_Parallel\databaseName=metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@2341db6d 
+Loaded from file:/C:/Users/Hunter/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/jars/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_211-b12
-user.dir=/Users/nickadmin/Dropbox/git/teachdatascience_blog/content/post/2019_07_12_Parallel
-os.name=Mac OS X
-os.arch=x86_64
-os.version=10.14.5
+java.runtime.version=1.8.0_31-b13
+user.dir=F:\Dropbox\DataScienceBlog\teachdatascience_blog\content\post\2019_07_12_Parallel
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

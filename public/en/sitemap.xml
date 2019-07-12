@@ -14,6 +14,12 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/tags/rstudio/</loc>
+    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -55,12 +61,6 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/parallel-programming/</loc>
-    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/rstudio/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -137,6 +137,12 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/communication/</loc>
+    <lastmod>2019-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/community/</loc>
     <lastmod>2019-07-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -331,6 +337,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/mosaic.knit/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/modeling/</loc>
     <lastmod>2019-06-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -422,6 +433,12 @@
   <url>
     <loc>https://teachdatascience.com/diversity/</loc>
     <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/diversity/</loc>
+    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
