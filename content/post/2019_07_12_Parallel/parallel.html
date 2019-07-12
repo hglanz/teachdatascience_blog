@@ -18,11 +18,11 @@ categories: R
 
 
 
-<p>Today’s blog entry is on parallel computing. As a data science education blog, our focus is more on how to discuss ideas of parallel computing in the classroom rather than parallel computing for particular research projects. Indeed, at times there seems to be quite a bit of hype around parallel computing when it isn’t particularly necessary or helpful.</p>
-<p>In this blog, we’ll perform tasks that are <strong>embarassingly parallel</strong> which means there is no dependency or communication between the parallel tasks. Again, parallel computing can be powerful in ways that link computational tasks in complicated ways. But we believe that as a <em>first</em> pass at teaching parallel computing, we should teach the parallel structure before bringing in dependence across the parallel tasks. Examples of <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">embarrassingly parallel</a> algorithms include: Monte Carlo analysis, bootstrapping, growing trees for Random Forests, <code>group_by</code> analyses, and cross-validation. Additionally, data science methods increasingly use <a href="https://en.wikipedia.org/wiki/Randomized_algorithm">randomized algorithms</a> which can often be written in parallel.</p>
+<p>Today’s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see <a href="https://hdsr.mitpress.mit.edu/pub/9mdn32tq">“Ambitious data science can be painless”</a>). Early on in data science education it’s important to develop a foundation and precursors for future work.</p>
+<p>In this blog, we’ll explore ways to perform tasks that are <strong>embarrassingly parallel</strong> which means there is no dependency or communication between the parallel tasks. More sophisticated computing certainly has its place (see for example Majd Sakr’s <a href="http://www.cs.cmu.edu/~msakr/15619-s19/">Cloud Computing class</a> at CMU. But we believe that as a <em>first</em> pass at teaching parallel computing, we should teach the parallel structure before bringing in dependence across the parallel tasks. Examples of <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">embarrassingly parallel</a> algorithms include: Monte Carlo analysis, bootstrapping, growing trees for Random Forests, <code>group_by</code> analyses, and cross-validation. Additionally, data science methods increasingly use <a href="https://en.wikipedia.org/wiki/Randomized_algorithm">randomized algorithms</a> which can often be written in parallel.</p>
 <p>Indeed, it isn’t always easy to know when to use a parallel construction. Because of existing overhead processes (e.g., copying data across many threads, bring results together, etc.) an algorithm run on 10 parallel strands will not reduce an original (non-parallel) run time by 10-fold. Figuring out when a parallel implementation is appropriate is beyond the scope of this blog but should be carefully considered before embarking on large projects.</p>
-<div id="cluster-computing" class="section level2">
-<h2>Cluster computing</h2>
+<div id="parallel-and-cluster-computing" class="section level2">
+<h2>Parallel and cluster computing</h2>
 <p>The R package <code>parallel</code> is designed to send tasks to each of multiple cores. Today’s computers (even small laptops!) typically have multiple cores, and any server or cloud computing infrastructure can easily handle dozens or hundreds of parallel tasks. The structure of the R <code>parallel</code> implementation sends tasks to workers that don’t talk to one another until compiling their results at the end. In her <a href="https://rawgit.com/PPgp/useR2017public/master/tutorial.html">2017 UseR! tutorial</a>, Hana Sevcikova describes the function of workers which run code/functions/iterations separately before results are subsequently combined.</p>
 <center>
 <figure>
@@ -43,15 +43,15 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 10636
+## node of a socket cluster on host &#39;localhost&#39; with pid 52951
 
 stopCluster(cl)
 cl[[1]]
 ## Error in summary.connection(connection): invalid connection</code></pre>
 </div>
-<div id="embarassingly-embarassing-example" class="section level2">
-<h2>Embarassingly embarassing example</h2>
-<p>In the example below, we generate some Cauchy data and find the max of each sample. Note that for the current device there are 4 cores, so the process will happen 100/P = 25 times on each core. The second argument of <code>clusterApply</code> is a sequence of numbers that gets passed to each worker as the (first) argument of <code>func1</code>. Below, I’ve specified that the value 50 (number of reps) should be passed separately to 100 different workers.</p>
+<div id="embarrassingly-embarrassing-example" class="section level2">
+<h2>Embarrassingly embarrassing example</h2>
+<p>In the example below, we generate some data from a Cauchy distribution and find the max of each sample. Note that for the current device there are 4 cores, so the process will happen 100/P = 25 times on each core. The second argument of <code>clusterApply</code> is a sequence of numbers that gets passed to each worker as the (first) argument of <code>func1</code>. Below, I’ve specified that the value 50 (number of reps) should be passed separately to 100 different workers.</p>
 <pre class="r"><code>W &lt;- 100
 P &lt;- detectCores(logical=FALSE)
 cl &lt;- makeCluster(P)
@@ -63,13 +63,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 7.459071
+## [1] 356.465
 ## 
 ## [[2]]
-## [1] 14.08358
+## [1] 20.94348
 ## 
 ## [[3]]
-## [1] 68.69175
+## [1] 13.65501
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -82,7 +82,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 107.139949   9.410941  33.862448
+## [1]  33.91969 435.92493  17.32712
 
 stopCluster(cl)</code></pre>
 </div>
@@ -151,6 +151,7 @@ spark_disconnect(sc)
 <li><a href="https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf" class="uri">https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf</a></li>
 </ul></li>
 <li>Great blog <a href="https://thecodeforest.github.io/post/two_flavors_of_parallel_simulation.html">Two Flavors of Parallel Simulation</a> by Mark LeBoeuf comparing different ways to process code in parallel.</li>
+<li><a href="https://hdsr.mitpress.mit.edu/pub/9mdn32tq">“Ambitious data science can be painless”</a></li>
 </ul>
 </div>
 <div id="about-this-blog" class="section level3">

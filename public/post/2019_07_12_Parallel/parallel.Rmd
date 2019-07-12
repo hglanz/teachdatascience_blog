@@ -25,14 +25,14 @@ library(ggplot2)
 ```
 
 
-Today's blog entry is on parallel computing.  As a data science education blog, our focus is more on how to discuss ideas of parallel computing in the classroom rather than parallel computing for particular research projects.  Indeed, at times there seems to be quite a bit of hype around parallel computing when it isn't particularly necessary or helpful.
+Today's blog entry is on parallel and grid computing.  As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see ["Ambitious data science can be painless"](https://hdsr.mitpress.mit.edu/pub/9mdn32tq)).  Early on in data science education it's important to develop a foundation and precursors for future work.  
 
-In this blog, we'll perform tasks that are **embarassingly parallel** which means there is no dependency or communication between the parallel tasks.  Again, parallel computing can be powerful in ways that link computational tasks in complicated ways.  But we believe that as a *first* pass at teaching parallel computing, we should teach the parallel structure before bringing in dependence across the parallel tasks.  Examples of [embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) algorithms include: Monte Carlo analysis, bootstrapping, growing trees for Random Forests, `group_by` analyses, and cross-validation.  Additionally, data science methods increasingly use [randomized algorithms](https://en.wikipedia.org/wiki/Randomized_algorithm) which can often be written in parallel.
+In this blog, we'll explore ways to perform tasks that are **embarrassingly parallel** which means there is no dependency or communication between the parallel tasks.  More sophisticated computing certainly has its place (see for example Majd Sakr's [Cloud Computing class](http://www.cs.cmu.edu/~msakr/15619-s19/) at CMU.  But we believe that as a *first* pass at teaching parallel computing, we should teach the parallel structure before bringing in dependence across the parallel tasks.  Examples of [embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) algorithms include: Monte Carlo analysis, bootstrapping, growing trees for Random Forests, `group_by` analyses, and cross-validation.  Additionally, data science methods increasingly use [randomized algorithms](https://en.wikipedia.org/wiki/Randomized_algorithm) which can often be written in parallel.
 
 
 Indeed, it isn't always easy to know when to use a parallel construction.  Because of existing overhead processes (e.g., copying data across many threads, bring results together, etc.) an algorithm run on 10 parallel strands will not reduce an original (non-parallel) run time by 10-fold.  Figuring out when a parallel implementation is appropriate is beyond the scope of this blog but should be carefully considered before embarking on large projects.
 
-## Cluster computing
+## Parallel and cluster computing
 
 The R package `parallel` is designed to send tasks to each of multiple cores.  Today's computers (even small laptops!) typically have multiple cores, and any server or cloud computing infrastructure can easily handle dozens or hundreds of parallel tasks.  The structure of the R `parallel` implementation sends tasks to workers that don't talk to one another until compiling their results at the end.  In her [2017 UseR! tutorial](https://rawgit.com/PPgp/useR2017public/master/tutorial.html), Hana Sevcikova describes the function of workers which run code/functions/iterations separately before results are subsequently combined.
 
@@ -61,9 +61,9 @@ stopCluster(cl)
 cl[[1]]
 ```
 
-## Embarassingly embarassing example
+## Embarrassingly embarrassing example
 
-In the example below, we generate some Cauchy data and find the max of each sample.  Note that for the current device there are `r P` cores, so the process will happen 100/P = `r 100/P` times on each core.  The second argument of `clusterApply` is a sequence of numbers that gets passed to each worker as the (first) argument of `func1`.  Below, I've specified that the value 50 (number of reps) should be passed separately to 100 different workers.
+In the example below, we generate some data from a Cauchy distribution and find the max of each sample.  Note that for the current device there are `r P` cores, so the process will happen 100/P = `r 100/P` times on each core.  The second argument of `clusterApply` is a sequence of numbers that gets passed to each worker as the (first) argument of `func1`.  Below, I've specified that the value 50 (number of reps) should be passed separately to 100 different workers.
 
 ```{r}
 W <- 100
@@ -123,7 +123,6 @@ ggplot(bootstrap, aes(x = bsmean_PL)) + geom_histogram(bins = 25) + ggtitle("His
 
 ## Spark  and `sparklyr`
 
-
 Some of you may be familiar with [Apache Spark](http://spark.apache.org/) which is an open-source product for distributed cluster-computing.  You may want to learn more about its capabilities, including scheduling workflow, dispatching tasks, and consolidating end results.  While incredibly powerful, there has historically been a steep learning curve to getting R to work smoothly with a Spark connection.  Recently, RStudio has come out with a new package [`sparklyr`](https://spark.rstudio.com/) which integrates R and Spark seamlessly.  Note that in the example below, we've set up a local connection just for the purposes of the example.  For your work, you may want to connect to a cluster or cloud space with many cores.
 
 The [RStudio `sparklyr` webpage](https://spark.rstudio.com/) provides a plethora of good examples demonstrating the sophistication and power of the technology. `sparklyr` has particularly strong connections to the suite of `tidyverse` functions. Indeed, the power of `sparklyr` is more about distributing the computing than about parallelizing it.  For example, with `sparklyr` the computations are delayed until you need the results.  Additionally, Spark is doing the heavy lifting and only at the very end (when your results are called) do you need to worry about the size of the table, results, or computational space.  The example below repeats the bootstrapping work that was done previously.
@@ -173,6 +172,7 @@ While we continue to believe that introducing students to modern technology earl
     - https://www.rstudio.com/resources/cheatsheets/#sparklyr       
     - https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf
 - Great blog [Two Flavors of Parallel Simulation](https://thecodeforest.github.io/post/two_flavors_of_parallel_simulation.html) by Mark LeBoeuf comparing different ways to process code in parallel.
+- ["Ambitious data science can be painless"](https://hdsr.mitpress.mit.edu/pub/9mdn32tq)
 
 ### About this blog 
 

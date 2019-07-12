@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>RStudio</title>
-      <link>https://teachdatascience.com/tags/rstudio/</link>
-      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/rstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>cluster computing</title>
       <link>https://teachdatascience.com/tags/cluster-computing/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -54,6 +45,15 @@
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/parallel-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rstudio</title>
+      <link>https://teachdatascience.com/tags/rstudio/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/rstudio/</guid>
       <description></description>
     </item>
     

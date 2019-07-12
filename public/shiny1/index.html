@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://teachdatascience.com/shiny1/" />
 <meta property="og:locale" content="en">
 
-<meta property="content-source" content="post\2019_06_27_shiny1\shiny1.html">
+<meta property="content-source" content="post/2019_06_27_shiny1/shiny1.html">
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
 <meta property="og:article:published_time" content="2019-06-26T00:00:00Z" />
@@ -53,7 +53,7 @@
 <link rel="canonical" href="https://teachdatascience.com/shiny1/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
-<meta name="generator" content="Hugo 0.55.5" />
+<meta name="generator" content="Hugo 0.55.6" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -226,18 +226,12 @@
 <div id="what-is-r-shiny" class="section level2">
 <h2>What is R Shiny?</h2>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny1/shinyhex.jpg" />
-
-</div>
+<p><img src="https://teachdatascience.com/post/shiny1/shinyhex.jpg" /></p>
 </center>
 <p><a href="https://shiny.rstudio.com"><code>shiny</code></a> is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does <code>shiny</code> allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways. Instructors can utilize <code>shiny</code> in a number of innovative and useful ways.</p>
 <p>To create a new R <code>shiny</code> App, simply go to “File” (or the “New File” icon) in the upper left corner of RStudio and select “Shiny Web App”.</p>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny1/NewShinyApp.png" />
-
-</div>
+<p><img src="https://teachdatascience.com/post/shiny1/NewShinyApp.png" /></p>
 </center>
 <p><code>shiny</code> apps are unlike any other vehicle for R work that you’ve likely used before (unless you have experience with <em>reactive programming</em>. One of the first things to understand is that these applications consist of two primary components: a <em>server</em> and a <em>user interface</em>. When starting a new <code>shiny</code> application you’ll first be asked to specify three things:</p>
 <ol style="list-style-type: decimal">
@@ -248,7 +242,7 @@
 <p>The name is more for file organization and documentation than for the app itself. That is, the name of your app does not need to show up anywhere on your app itself.</p>
 <p>A single file configuration puts both the server and user interface code in a single app.R file, whereas the multiple file configuration puts them in their own separate files. Functionally, these configurations will produce the same app. The multiple file configuration is generally preferred, especially for larger applications, as it usually makes code easier to manage. For smaller apps, the single file configuration is likely a more efficient way to go.</p>
 <p>The home directory of your app is most important for your file management and organization. Your server and user interface will look to this directory, by default, for anything you reference or source within your app.</p>
-<p><code>shiny</code> apps can be deployed in a few different ways. They can be run from their local files in the home directory mentioned above; they can be hosted and run on a server at your organization (e.g. university); or they can even be hosted through RStudio (e.g. <a href="https://www.shinyapps.io/">shinyapps.io</a>).</p>
+<p><code>shiny</code> apps can be deployed in a few different ways. They can be run from their local files in the home directory mentioned above; they can be hosted and run on a server at your organization (e.g. university); or they can even be hosted through RStudio (e.g. <a href="https://www.shinyapps.io/">shinyapps.io</a>).</p>
 </div>
 <div id="what-can-you-do-with-in-a-shiny-app" class="section level2">
 <h2>What Can You Do with in a Shiny App?</h2>
@@ -257,44 +251,29 @@
 <h3>Iris k-Means Clustering App</h3>
 <p>One of the simplest examples to explore first involves the famous <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">iris dataset</a>, and can be found <a href="https://shiny.rstudio.com/gallery/kmeans-example.html">here</a>.</p>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny1/irisapp.png" />
-
-</div>
+<p><img src="https://teachdatascience.com/post/shiny1/irisapp.png" /></p>
 </center>
 <p>Note that this app uses the multiple file configuration as you can view the server.R and ui.R files on the right-hand side of the app page. Despite the numerous resources and documentation about <code>shiny</code> on RStudio’s site, <strong>never underestimate the power of copy-and-paste</strong> (a paraphrased quote from Hadley Wickham at the International Conference on Teaching Statistics 2018). The side-by-side code for this clustering application is surprisingly sufficient to get started creating very simple Shiny apps.</p>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny1/irisserver.png" />
-
-</div>
+<p><img src="https://teachdatascience.com/post/shiny1/irisserver.png" /></p>
 </center>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny1/irisui.png" />
-
-</div>
+<p><img src="https://teachdatascience.com/post/shiny1/irisui.png" /></p>
 </center>
 </div>
 <div id="rotten-tomatoes-movie-explorer-app" class="section level3">
 <h3>Rotten Tomatoes Movie Explorer App</h3>
 <p>Another nice example from the <a href="https://shiny.rstudio.com/gallery/">gallery</a> is this <code>shiny</code> app that allows the user to play around with movie data from <a href="https://www.rottentomatoes.com/">Rotten Tomatoes</a>. The app can be found <a href="https://shiny.rstudio.com/gallery/movie-explorer.html">here</a>.</p>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny1/movieapp.png" />
-
-</div>
+<p><img src="https://teachdatascience.com/post/shiny1/movieapp.png" /></p>
 </center>
-<p>Here you’re seeing some other really nice R packages in use for data visualization (e.g. <code>ggvis</code>), which <code>shiny</code> is able to integrate quite well. You may have noticed that there is no code accompanying this app in the way there was for the iris app. Never fear! Locate and click the “Get Code” button in the top-right corner of the page and all of the code is available via GitHub.</p>
+<p>Here you’re seeing some other really nice R packages in use for data visualization (e.g. <code>ggvis</code>), which <code>shiny</code> is able to integrate quite well. You may have noticed that there is no code accompanying this app in the way there was for the iris app. Never fear! Locate and click the “Get Code” button in the top-right corner of the page and all of the code is available via GitHub.</p>
 </div>
 <div id="zip-explorer-app" class="section level3">
 <h3>ZIP Explorer App</h3>
 <p>One last example for today’s blog entry is the ZIP explorer app. The interactivity of the previous two example apps shines (pun intended) so bright, but really comes alive in this app that puts our previously featured package, <a href="https://teachdatascience.com/leaflet/">leaflet</a>, to stunning use.</p>
 <center>
-<div class="figure">
-<img src="https://teachdatascience.com/post/shiny1/zipapp.png" />
-
-</div>
+<p><img src="https://teachdatascience.com/post/shiny1/zipapp.png" /></p>
 </center>
 <p>The data really come alive when you can zoom in, zoom out, click and drag the map around, and then click on individual points to see more information…all within a web page using R code!</p>
 <p>You’ve seen a few examples of what can be done with <code>shiny</code> apps and how to start your own. While the endless possibilities are undoubtedly running through your head, in tomorrow’s post we will discuss how to integrate <code>shiny</code> into your teaching.</p>
@@ -447,7 +426,7 @@
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li>
           </ul>
         </div>
       </div>

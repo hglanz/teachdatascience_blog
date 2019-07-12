@@ -18,8 +18,7 @@
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/parallel/</guid>
-      <description>Today’s blog entry is on parallel computing. As a data science education blog, our focus is more on how to discuss ideas of parallel computing in the classroom rather than parallel computing for particular research projects. Indeed, at times there seems to be quite a bit of hype around parallel computing when it isn’t particularly necessary or helpful.
-In this blog, we’ll perform tasks that are embarassingly parallel which means there is no dependency or communication between the parallel tasks.</description>
+      <description>Today’s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see “Ambitious data science can be painless”). Early on in data science education it’s important to develop a foundation and precursors for future work.</description>
     </item>
     
   </channel>
