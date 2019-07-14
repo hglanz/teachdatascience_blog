@@ -70,6 +70,16 @@ keep it simple (discussed in the “Less Volume, More Creativity” blog entry)
     </item>
     
     <item>
+      <title>RStudio Server Pro and Rstudio.cloud installations</title>
+      <link>https://teachdatascience.com/cloud.knit/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/cloud.knit/</guid>
+      <description>When people ask about how to get their students engaged with R in their introductory statistics and data science courses we offer three pieces of advice:
+ keep it simple (discussed in the &amp;laquo;Less Volume, More Creativity&amp;raquo; blog entry) engage students to provide peer-tutoring and drop-in office hours to assist with questions and coding to complement class and office hours (at Amherst College this is coordinated by the Statistics and Data Science Fellows) have students use a dedicated server to access R  We&amp;rsquo;ll talk more about the innovative Data 8 project later this summer, but for now we note that they have used these same strategies (see https://data.</description>
+    </item>
+    
+    <item>
       <title>Pair Programming for Data Science and Statistics</title>
       <link>https://teachdatascience.com/pairprogramming/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>

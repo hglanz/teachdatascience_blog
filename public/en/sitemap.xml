@@ -286,6 +286,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/cloud.knit/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/rstudio-server/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -333,11 +338,6 @@
   
   <url>
     <loc>https://teachdatascience.com/mosaic/</loc>
-    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/mosaic.knit/</loc>
     <lastmod>2019-06-18T00:00:00+00:00</lastmod>
   </url>
   
