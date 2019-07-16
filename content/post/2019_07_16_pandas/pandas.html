@@ -1,0 +1,80 @@
+---
+title: "pandas: Python Data Analysis Library"
+author: "Hunter Glanz"
+date: '2019-07-15'
+output:
+  html_document:
+    df_print: paged
+tags:
+- python
+- data technologies
+- data wrangling
+- jupyter
+categories: R, Python
+---
+
+
+
+<div id="about-pandas" class="section level2">
+<h2>About pandas</h2>
+<p>pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library’s <a href="https://pandas.pydata.org/">homepage</a>, “pandas helps fill Python’s long-standing gap in tools for data analysis and modeling.”</p>
+<p>In short, pandas offers some new and some improved Python tools for doing the following:</p>
+<ul>
+<li><p>Reading data in to data frame-type structures</p></li>
+<li><p>Viewing and selecting data</p></li>
+<li><p>Handling missing data</p></li>
+<li><p>Performing (more) SQL-type operations like group-by operations, merging, and reshaping</p></li>
+<li><p>Combining and wrangling time series data</p></li>
+</ul>
+<p>Let’s start by using a bit of the pandas library to look at the flights dataset (here in a Jupyter Notebook, see our blog entry on <a href="https://teachdatascience.com/jupyter/">Jupyter Notebooks</a>):</p>
+<center>
+<div class="figure">
+<img src="/post/pandas/reticulate_pandas_demo.png" />
+
+</div>
+</center>
+<p>To demonstrate the method chaining possible along with the aggregation functionality mentioned above, let’s compute the average departure delay and average arrival delay for each carrier.</p>
+<center>
+<div class="figure">
+<img src="/post/pandas/pandas_groupby_mean.png" />
+
+</div>
+</center>
+<p>If you’re unfamiliar with <strong>methods</strong> (in Python), you can think of them as being similar to functions but with the following properties:</p>
+<ul>
+<li><p>a method is called by its name, but it is <strong>associated to an object</strong> (dependent)</p></li>
+<li><p>a method is <strong>implicitly passed the object</strong> on which it is invoked</p></li>
+<li><p>it may or may not return any data</p></li>
+<li><p>a method <strong>can operate on the data that is contained by the corresponding class</strong></p></li>
+</ul>
+<p>whereas, say, functions are not associated to an object – they are independent. Methods exist in multiple languages, but are quite popular in Python.</p>
+<p>The method chaining above should be reminiscent of the piping found in our discussions about the Tidyverse, but this has always been a style of programming possible with pandas. Even so, <code>dplyr</code>, pandas, and many other packages out there continue to help inspire each other and evolve together.</p>
+</div>
+<div id="teaching-data-science-with-python" class="section level2">
+<h2>Teaching Data Science with Python</h2>
+<p>Data science with Python does not stand on the pandas library alone. There are a number of other Python libraries that have become widely popular for doing data science. In particular the libraries below, along with pandas, will give you in Python what a great deal of the Tidyverse provides you in <code>R</code>:</p>
+<ul>
+<li><p><a href="https://www.numpy.org/">NumPy</a></p></li>
+<li><p><a href="https://www.scipy.org/">SciPy</a></p></li>
+<li><p><a href="https://scikit-learn.org/">SciKit-Learn</a></p></li>
+<li><p><a href="https://matplotlib.org/">Matplotlib</a></p></li>
+<li><p><a href="https://seaborn.pydata.org/">Seaborn</a></p></li>
+</ul>
+<p>For more advanced statistics and machine learning there are even more libraries out there.</p>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<p>While pandas is arguable a Python staple in a data scientist’s toolkit, there are many other Python libraries widely used throughout the data science workflow. This post was just a taste of what pandas helps Python bring to the table. Numerous resources exist for more information and tutorials on the full functionality of pandas:</p>
+<ul>
+<li><p>Cheat sheet: <a href="https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf" class="uri">https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf</a></p></li>
+<li><p>Modern Pandas tutorial: <a href="https://github.com/TomAugspurger/effective-pandas" class="uri">https://github.com/TomAugspurger/effective-pandas</a></p></li>
+<li><p>pandas collection of tutorials: <a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html" class="uri">https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html</a></p></li>
+<li><p>pandas introduction: <a href="https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673" class="uri">https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673</a></p></li>
+<li><p>Blog entry on <a href="https://teachdatascience.com/jupyter/">Jupyter Notebooks</a></p></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
