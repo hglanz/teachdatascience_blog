@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>data technologies</title>
       <link>https://teachdatascience.com/tags/data-technologies/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-technologies/</guid>
       <description></description>
@@ -24,9 +24,45 @@
     <item>
       <title>data wrangling</title>
       <link>https://teachdatascience.com/tags/data-wrangling/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jupyterhub</title>
+      <link>https://teachdatascience.com/tags/jupyterhub/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/jupyterhub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://teachdatascience.com/tags/python/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reticulate</title>
+      <link>https://teachdatascience.com/tags/reticulate/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/reticulate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rmarkdown</title>
+      <link>https://teachdatascience.com/tags/rmarkdown/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/rmarkdown/</guid>
       <description></description>
     </item>
     
@@ -36,15 +72,6 @@
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/jupyter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://teachdatascience.com/tags/python/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/python/</guid>
       <description></description>
     </item>
     

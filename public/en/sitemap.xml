@@ -4,19 +4,19 @@
   
   <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -32,13 +32,42 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/data-technologies/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/data-wrangling/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/jupyterhub/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/python/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/reticulate/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/reticulate/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/rmarkdown/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,12 +80,6 @@
   <url>
     <loc>https://teachdatascience.com/pandas/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/python/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

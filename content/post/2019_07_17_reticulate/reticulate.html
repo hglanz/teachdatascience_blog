@@ -1,0 +1,198 @@
+---
+title: "reticulate: running Python within RStudio"
+author: "Jo Hardin"
+date: '2019-07-16'
+output:
+  html_document:
+    df_print: paged
+tags:
+- rmarkdown
+- reticulate
+- python
+- data technologies
+- data wrangling
+- jupyterhub
+categories: R, Python
+---
+
+
+
+<p>For many statisticians, their go-to software language is R. However, there is no doubt that Python is an equally important language in data science. Indeed, the <a href="https://teachdatascience.com/jupyter/">Jupyter</a> blog entry from earlier this week described the capacities of writing Python code (as well as R and Julia and other environments) using interactive Jupyter notebooks.</p>
+<pre class="r"><code>knitr::opts_chunk$set(collapse = TRUE)
+library(reticulate)
+use_virtualenv(&quot;r-reticulate&quot;)
+use_python(&quot;F:/Anaconda3&quot;, required = TRUE)
+py_config()</code></pre>
+<div id="teaching-python-and-r" class="section level2">
+<h2>Teaching Python and R</h2>
+<p>A quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate. We don’t take sides in that conversation, but we do recognize that teaching students about both Python and R can give them insight into both languages and more skills for doing data science in the wild. A previous blog entry on <a href="https://teachdatascience.com/jupyter/">Jupyter</a> discussed running Python code in its native environment. [n.b., Jupyter is a portmanteau combining Julia, Python, and R; Jupyter notebooks are able to run R code, too.] Below, we discuss running Python in the R Markdown environment. Whatever computational environment is used to execute instructions to the computer, it can be illuminating for students to see different implementations of the same syntax producing the same results, or alternatively, implementation of different syntax producing the same result. The more students can think broadly and confidently about their skill set, the more impact they will have in performing data analyses.</p>
+<p>Below we’ve provided a series of examples in markdown chunks (both Python chunks and R chunks). While there is a lot of repeated code, we included all the details for those of you who might be working with Python in R for the first time. Those of you who are familiar with chunks in different styles should easily be able to skim through the data wrangling.</p>
+</div>
+<div id="python-in-r" class="section level2">
+<h2>Python in R</h2>
+<p>Using <code>pandas</code> you can import data and do any relevant wrangling (see our recent blog entry on <a href="https://teachdatascience.com/pandas/">pandas</a>). Below, we’ve loaded the <code>flights.csv</code> dataset, specified that we are only interested in flights into Chicago, specified the three variables of interest, and removed all missing data.</p>
+<p>In R, full support for running Python is made available through the <code>reticulate</code> package. Chunks are specified to be a Python chunk (which indicates that R is running Python). Below we provide the syntax of how the chunk looks in a Markdown file:</p>
+<pre><code>```{python}
+import pandas
+flights = pandas.read_csv(&quot;flights.csv&quot;)
+flights = flights[flights[&quot;dest&quot;] == &quot;ORD&quot;]
+flights = flights[[&#39;carrier&#39;, &#39;dep_delay&#39;, &#39;arr_delay&#39;]]
+flights = flights.dropna()
+```</code></pre>
+<p>The Python chunk which is actually run:</p>
+<pre class="python"><code>import pandas
+flights = pandas.read_csv(&quot;flights.csv&quot;)
+flights = flights[flights[&quot;dest&quot;] == &quot;ORD&quot;]
+flights = flights[[&#39;carrier&#39;, &#39;dep_delay&#39;, &#39;arr_delay&#39;]]
+flights = flights.dropna()</code></pre>
+<p>Indeed, you might want to learn a little bit about the dataset using Python commands. Again, we first provide the syntax, then we run the chunk in Markdown.</p>
+<pre><code>```{python}
+flights.shape
+flights.head(5)
+flights.describe()
+```</code></pre>
+<pre class="python"><code>flights.shape
+## (12590, 3)
+flights.head(5)
+##    carrier  dep_delay  arr_delay
+## 4       UA       -4.0       12.0
+## 5       AA       -2.0        8.0
+## 22      AA       -1.0       14.0
+## 34      AA       -4.0        4.0
+## 43      UA        9.0       20.0
+flights.describe()
+##           dep_delay     arr_delay
+## count  12590.000000  12590.000000
+## mean      11.709770      2.917951
+## std       39.409704     44.885155
+## min      -20.000000    -62.000000
+## 25%       -6.000000    -22.000000
+## 50%       -2.000000    -10.000000
+## 75%        9.000000     10.000000
+## max      466.000000    448.000000</code></pre>
+<p>Or you might be interested in doing some computations on the dataset:</p>
+<pre><code>```{python}
+flights = pandas.read_csv(&quot;flights.csv&quot;)
+flights = flights[[&#39;carrier&#39;, &#39;dep_delay&#39;, &#39;arr_delay&#39;]]
+flights.groupby(&quot;carrier&quot;).mean()
+```</code></pre>
+<pre class="python"><code>flights = pandas.read_csv(&quot;flights.csv&quot;)
+flights = flights[[&#39;carrier&#39;, &#39;dep_delay&#39;, &#39;arr_delay&#39;, &#39;month&#39;]]
+flights.groupby(&quot;carrier&quot;).mean()
+##          dep_delay  arr_delay     month
+## carrier                                
+## AA        8.586016   0.364291  6.481683
+## AS        5.804775  -9.930889  6.414566
+## DL        9.264505   1.644341  6.574766
+## UA       12.106073   3.558011  6.561766
+## US        3.782418   2.129595  6.551568</code></pre>
+<p>For comparison, notice how an R chunk is specified to run R code. The R code uses <code>dplyr</code> to find the group averages from the data that was wrangled using <code>pandas</code> in Python. Arguably, one of the most important aspects of the code below is the command which pulls the dataset from the Python chunk into the R chunk. Notice that the dataset is now called <code>py$flights</code>.</p>
+<pre><code>```{r}
+library(dplyr)
+py$flights %&gt;%
+  dplyr::select(carrier, dep_delay, arr_delay) %&gt;%
+  tidyr::drop_na() %&gt;% 
+  group_by(carrier) %&gt;%
+  summarize(mean_dep_delay = mean(dep_delay), mean_arr_delay = mean(arr_delay))
+```</code></pre>
+<pre class="r"><code>library(dplyr)
+py$flights %&gt;%
+  dplyr::select(carrier, dep_delay, arr_delay) %&gt;%
+  tidyr::drop_na() %&gt;% 
+  group_by(carrier) %&gt;%
+  summarize(mean_dep_delay = mean(dep_delay), mean_arr_delay = mean(arr_delay))
+## # A tibble: 5 x 3
+##   carrier mean_dep_delay mean_arr_delay
+##   &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt;
+## 1 AA                8.57          0.364
+## 2 AS                5.83         -9.93 
+## 3 DL                9.22          1.64 
+## 4 UA               12.0           3.56 
+## 5 US                3.74          2.13</code></pre>
+<p>We can also use <code>ggplot2</code> to plot the data from the Python chunk. Maybe it’s better to avoid flying in the summer or in December.</p>
+<pre class="r"><code>library(ggplot2)
+py$flights %&gt;%
+  tidyr::drop_na() %&gt;%
+  group_by(carrier, month) %&gt;%
+  summarize(mean_dep_delay = mean(dep_delay)) %&gt;% 
+  ggplot(aes(x=as.factor(month), y = mean_dep_delay, group = carrier, color=carrier))  + 
+  geom_point() + geom_line() + xlab(&quot;Month&quot;) + ylab(&quot;Average Departure Delay&quot;)</code></pre>
+<p><img src="/post/2019_07_17_reticulate/reticulate_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>
+<div id="r-in-r" class="section level2">
+<h2>R in R</h2>
+<p>Seems worth a comparison of doing exactly the same thing using native R syntax. In this case, we’ve written everything in R, so we won’t show you the verbatim R chunks.</p>
+<pre class="r"><code>library(dplyr)
+library(readr)
+library(tidyr)
+flights &lt;- readr::read_csv(&quot;flights.csv&quot;)
+flights &lt;- flights %&gt;%
+  dplyr::filter(dest == &quot;ORD&quot;) %&gt;%
+  dplyr::select(carrier, dep_delay, arr_delay) %&gt;%
+  tidyr::drop_na()</code></pre>
+<pre class="r"><code>library(skimr)
+flights %&gt;% dim()
+## [1] 12590     3
+flights %&gt;% head(5)
+## # A tibble: 5 x 3
+##   carrier dep_delay arr_delay
+##   &lt;chr&gt;       &lt;dbl&gt;     &lt;dbl&gt;
+## 1 UA             -4        12
+## 2 AA             -2         8
+## 3 AA             -1        14
+## 4 AA             -4         4
+## 5 UA              9        20
+flights %&gt;% skimr::skim()
+## Skim summary statistics
+##  n obs: 12590 
+##  n variables: 3 
+## 
+## -- Variable type:character -------------------------------------------------
+##  variable missing complete     n min max empty n_unique
+##   carrier       0    12590 12590   2   2     0        2
+## 
+## -- Variable type:numeric ---------------------------------------------------
+##   variable missing complete     n  mean    sd  p0 p25 p50 p75 p100
+##  arr_delay       0    12590 12590  2.92 44.89 -62 -22 -10  10  448
+##  dep_delay       0    12590 12590 11.71 39.41 -20  -6  -2   9  466
+##      hist
+##  &lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;
+##  &lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</code></pre>
+<pre class="r"><code>flights &lt;- readr::read_csv(&quot;flights.csv&quot;)
+flights %&gt;%
+  dplyr::select(carrier, dep_delay, arr_delay) %&gt;%
+  tidyr::drop_na() %&gt;% 
+  group_by(carrier) %&gt;%
+  summarize(mean_dep_delay = mean(dep_delay), mean_arr_delay = mean(arr_delay))
+## # A tibble: 5 x 3
+##   carrier mean_dep_delay mean_arr_delay
+##   &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt;
+## 1 AA                8.57          0.364
+## 2 AS                5.83         -9.93 
+## 3 DL                9.22          1.64 
+## 4 UA               12.0           3.56 
+## 5 US                3.74          2.13</code></pre>
+<p>Same plot as above. Note, however, that we are calling the <code>flights</code> data directly from an R chunk to an R chunk, so there is no need to provide additional formatting to the name of the dataset (above we needed to specify <code>py$flights</code>).</p>
+<pre class="r"><code>library(ggplot2)
+library(dplyr)
+flights %&gt;%
+  tidyr::drop_na() %&gt;%
+  group_by(carrier, month) %&gt;%
+  summarize(mean_dep_delay = mean(dep_delay)) %&gt;% 
+  ggplot(aes(x=as.factor(month), y = mean_dep_delay, group = carrier, color=carrier))  + 
+  geom_point() + geom_line() + xlab(&quot;Month&quot;) + ylab(&quot;Average Departure Delay&quot;)</code></pre>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://rstudio.github.io/reticulate/">RStudio R Interface to Python</a></li>
+<li><a href="https://blog.rstudio.com/2018/10/09/rstudio-1-2-preview-reticulated-python/">RStudio blog on Reticulated Python</a></li>
+<li>Blog entry on <a href="https://teachdatascience.com/jupyter/">Jupyter Notebooks</a></li>
+<li>Blog entry on <a href="https://teachdatascience.com/pandas/">pandas</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
