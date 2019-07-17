@@ -1,5 +1,5 @@
 ---
-title: "The Conversation Around p-values"
+title: "The conversation Around p-values"
 author: "Jo Hardin"
 date: '2019-07-03'
 output:
