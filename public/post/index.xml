@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data8: The Foundations of Data Science at Berkeley</title>
+      <link>https://teachdatascience.com/data8/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/data8/</guid>
+      <description>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the http://Data8.org (Foundations of Data Science) course that has been offered by the University of California/Berkeley Division of Data Sciences.
+The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</description>
+    </item>
     
     <item>
       <title>reticulate: running Python within RStudio</title>
@@ -23,7 +33,7 @@ knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;q
     </item>
     
     <item>
-      <title>pandas: Python Data Analysis Library</title>
+      <title>pandas: Python data analysis library</title>
       <link>https://teachdatascience.com/pandas/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -36,7 +46,7 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
-      <title>Getting Started With Jupyter and JupyterHub</title>
+      <title>Getting started With Jupyter and JupyterHub</title>
       <link>https://teachdatascience.com/jupyter/</link>
       <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -52,6 +62,15 @@ In short, pandas offers some new and some improved Python tools for doing the fo
       
       <guid>https://teachdatascience.com/parallel/</guid>
       <description>Today’s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see “Ambitious data science can be painless”). Early on in data science education it’s important to develop a foundation and precursors for future work.</description>
+    </item>
+    
+    <item>
+      <title>Parallel processing and sparklyr</title>
+      <link>https://teachdatascience.com/parallel.utf8/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/parallel.utf8/</guid>
+      <description>Today&amp;rsquo;s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see &amp;laquo;Ambitious data science can be painless&amp;raquo;). Early on in data science education it&amp;rsquo;s important to develop a foundation and precursors for future work.</description>
     </item>
     
     <item>
@@ -95,7 +114,7 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
     </item>
     
     <item>
-      <title>Five Quick Tips for Coding in the Classroom</title>
+      <title>Five quick tips for coding in the classroom</title>
       <link>https://teachdatascience.com/teaching_programming_tips/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -105,7 +124,7 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
     </item>
     
     <item>
-      <title>The Conversation Around p-values</title>
+      <title>The conversation Around p-values</title>
       <link>https://teachdatascience.com/pvals/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       

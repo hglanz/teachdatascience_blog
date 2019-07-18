@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Data8: The Foundations of Data Science at Berkeley  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="python, berkeley, jupyterhub, education, ">
+
+
+<meta property="og:title" content="Data8: The Foundations of Data Science at Berkeley  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/data8/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_18_Data8\data8.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-17T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-17T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="python">
+    
+<meta property="og:article:tag" content="berkeley">
+    
+<meta property="og:article:tag" content="jupyterhub">
+    
+<meta property="og:article:tag" content="education">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/data8/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Data8: The Foundations of Data Science at Berkeley
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-17">17 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Nicholas Horton
+  
+  &middot; Read in about 4 min
+  &middot; (797 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data8%3a%20The%20Foundations%20of%20Data%20Science%20at%20Berkeley&amp;url=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fdata8%2f&amp;title=Data8%3a%20The%20Foundations%20of%20Data%20Science%20at%20Berkeley" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data8%3a%20The%20Foundations%20of%20Data%20Science%20at%20Berkeley&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fdata8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/python" class="label label-primary">python</a>
+  
+  <a href="https://teachdatascience.com/tags/berkeley" class="label label-primary">berkeley</a>
+  
+  <a href="https://teachdatascience.com/tags/jupyterhub" class="label label-primary">jupyterhub</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<p>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the <a href="http://Data8.org" class="uri">http://Data8.org</a> (Foundations of Data Science) course that has been offered by the University of California/Berkeley <a href="https://data.berkeley.edu">Division of Data Sciences</a>.</p>
+<p>The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</p>
+<p>The course objectives of Data 8 are wide-ranging. Upon completion of the class, students should be able to:</p>
+<ul>
+<li>Write correct small programs that manipulate and combine data sets and carry out iterative procedures.</li>
+<li>Extend a program with multiple functions so that it runs correctly with additional functionality.</li>
+<li>Calculate specified statistics of a given dataset.</li>
+<li>Identify the sources of randomness in an experiment.</li>
+<li>Formulate a null hypothesis that relates to a given question, which can be assessed using a statistical test.</li>
+<li>Carry out statistical analyses including computing confidence intervals and performing hypothesis tests in a variety of data settings.</li>
+<li>Given the result of a statistical analysis from the course, form correct conclusions about a question.</li>
+<li>Given a question and an analysis, explain whether the analysis addresses the question and how the analysis could change and still address the question.</li>
+<li>Articulate the benefits and limits of computing technology for analyzing data and answering questions.</li>
+<li>Correctly generate and interpret histograms, bar charts, and box plots.</li>
+<li>Correctly make predictions using regression and classification techniques.</li>
+<li>Assess the accuracy and variability of a prediction.</li>
+</ul>
+<p>The creators have developed a simplified approach to teaching Python with the goal of reducing the cognitive load of standard packages such as <a href="https://teachdatascience.com/pandas">pandas</a> (see a parallel in R in our <a href="https://teachdatascience.com/mosaic/">“Less Volume, More Creativity”</a> entry). They write:</p>
+<blockquote>
+<p>The course uses a module for table manipulation, charts, and maps that provides an interface appropriate for an introductory course. The Table class is similar to a DataFrame in Pandas, but explicitly does not support row indexes, hierarchical indexes, time series data, missing values, slicing, and many other advanced features that can complicate table manipulation for novices. The charting features use Matplotlib, but customize the output to match the pedagogical goals of the course. The mapping features are implemented by Folium, but aim to simplify working with tables and geojson files. While the datascience module can certainly be used outside the context of the course, it was specifically designed to support the Data 8 curriculum, while setting up students to transition to more standard tools such as Pandas.</p>
+</blockquote>
+<p>An example of the code to bootstrap a regression coefficient can be found <a href="https://www.inferentialthinking.com/chapters/16/2/Inference_for_the_True_Slope">here</a>. The textbook, available as a website, includes the other examples from the class.</p>
+<div id="other-resources" class="section level3">
+<h3>Other resources</h3>
+<ul>
+<li>There’s lots to explore here and we encourage you to do so. A recent workshop on <a href="https://data.berkeley.edu/academics/resources/data-science-education-workshops/2019-national-workshop-data-science-education">Data Science Education</a> led by Ani Adhikari and David Wagner took place at Berkeley in June with scads of lecture notes and pedagogical materials.</li>
+<li>Perusing the textbook, assignments, and lecture materials (all available for free under a Creative Commons license) is likely to yield useful insights, even if an instructor doesn’t use Python. See <a href="http://data8.org/sp17/resources.html">here</a> for final exam review materials and related resources.</li>
+<li>Don’t have a local Python 3 installation? The Berkeley folks have worked with EdX to develop a set of three courses that cover the Data8 material and provide access to cloud-based JupyterHub servers (see <a href="https://www.edx.org/course/foundations-of-data-science-computational-thinking-with-python-0" class="uri">https://www.edx.org/course/foundations-of-data-science-computational-thinking-with-python-0</a>).</li>
+</ul>
+</div>
+<div id="other-courses" class="section level3">
+<h3>Other courses</h3>
+<p>There are other innovative approaches that bear mentioning.</p>
+<ul>
+<li><a href="http://bit.ly/Passion-DrivenStatistics">Passion-Driven Statistics</a> is an NSF-funded multidisciplinary, project-based curriculum that supports students in conducting data-driven research, asking original questions, and communicating methods and results using the language of statistics.</li>
+<li>In 2015, Ben Baumer described a <a href="https://www.tandfonline.com/doi/pdf/10.1080/00031305.2015.1081105">A Data Science Course for Undergraduates: Thinking With Data</a>.</li>
+<li>Harvard’s <a href="https://canvas.harvard.edu/courses/29726/">Data Science 1</a> course and <a href="https://www.davidkane.info/files/gov_1005_fall_2019.html">Gov 1005: Data</a> courses provide other examples of alternative structures.</li>
+</ul>
+</div>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li>data8.org</li>
+<li><a href="https://data.berkeley.edu/academics/resources/data-science-education-workshops/2019-national-workshop-data-science-education" class="uri">https://data.berkeley.edu/academics/resources/data-science-education-workshops/2019-national-workshop-data-science-education</a> (Data Science Education 2019 workshop)</li>
+<li><a href="https://data.berkeley.edu/education/connectors" class="uri">https://data.berkeley.edu/education/connectors</a> (connector courses)</li>
+<li><a href="https://www.edx.org/course/foundations-of-data-science-computational-thinking-with-python-0" class="uri">https://www.edx.org/course/foundations-of-data-science-computational-thinking-with-python-0</a> (EdX data8 course)</li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data8%3a%20The%20Foundations%20of%20Data%20Science%20at%20Berkeley&amp;url=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fdata8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fdata8%2f&amp;title=Data8%3a%20The%20Foundations%20of%20Data%20Science%20at%20Berkeley" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data8%3a%20The%20Foundations%20of%20Data%20Science%20at%20Berkeley&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fdata8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/reticulate/" title="reticulate: running Python within RStudio">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/data8/">Data8: The Foundations of Data Science at Berkeley</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reticulate/">reticulate: running Python within RStudio</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pandas/">pandas: Python data analysis library</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/jupyter/">Getting started With Jupyter and JupyterHub</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/parallel/">Parallel processing and sparklyr</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/parallel.utf8/">Parallel processing and sparklyr</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reprex/">reprex:  Help me help you</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/user/">useR!</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/refactoring/">Teaching refactoring to improve code</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

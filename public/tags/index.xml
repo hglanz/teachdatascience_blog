@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>berkeley</title>
+      <link>https://teachdatascience.com/tags/berkeley/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/berkeley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://teachdatascience.com/tags/education/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jupyterhub</title>
+      <link>https://teachdatascience.com/tags/jupyterhub/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/jupyterhub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://teachdatascience.com/tags/python/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>data technologies</title>
@@ -27,24 +63,6 @@
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jupyterhub</title>
-      <link>https://teachdatascience.com/tags/jupyterhub/</link>
-      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/jupyterhub/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://teachdatascience.com/tags/python/</link>
-      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/python/</guid>
       <description></description>
     </item>
     
@@ -189,15 +207,6 @@
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>education</title>
-      <link>https://teachdatascience.com/tags/education/</link>
-      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/education/</guid>
       <description></description>
     </item>
     

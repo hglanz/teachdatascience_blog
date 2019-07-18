@@ -21,5 +21,14 @@
       <description>Today’s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see “Ambitious data science can be painless”). Early on in data science education it’s important to develop a foundation and precursors for future work.</description>
     </item>
     
+    <item>
+      <title>Parallel processing and sparklyr</title>
+      <link>https://teachdatascience.com/parallel.utf8/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/parallel.utf8/</guid>
+      <description>Today&amp;rsquo;s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see &amp;laquo;Ambitious data science can be painless&amp;raquo;). Early on in data science education it&amp;rsquo;s important to develop a foundation and precursors for future work.</description>
+    </item>
+    
   </channel>
 </rss>

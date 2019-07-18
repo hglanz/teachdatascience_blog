@@ -23,7 +23,7 @@ knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;q
     </item>
     
     <item>
-      <title>pandas: Python Data Analysis Library</title>
+      <title>pandas: Python data analysis library</title>
       <link>https://teachdatascience.com/pandas/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
