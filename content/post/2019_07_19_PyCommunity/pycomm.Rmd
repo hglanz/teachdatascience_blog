@@ -1,0 +1,120 @@
+---
+title: "The Python Community"
+author: "Jo Hardin"
+date: '2019-07-18'
+output:
+  html_document:
+    df_print: paged
+tags:
+- python
+- community
+- teamwork
+- education
+- collaboration
+categories: Python
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+All week we've been celebrating using Python in data science.  There is no question that Python is a fantastic and very powerful language.  Additionally, it is typically thought of as clearly the most used language for doing data science.  The [kaggle 2017 survey](https://www.kaggle.com/surveys/2017) reports that more than three-quarters of data scientists use Python (although they also mention that most statisticians use R).
+
+<br>
+
+<center>
+<figure>
+<img alt = 'kaggle' width='400' src='/post/pycomm/kaggle.png' />
+</figure>
+</center> <br>
+
+Knowing how to use Python is an important first step to engaging with the software.  But it is also vitally important to recognize the strong and active community of Python users.  For people trying to break into the Python community, we've listed some important groups and conferences below.  Don't be afraid to jump in with both feet: go to a Python meet-up, read a Python blog, and try a new function or two!
+
+
+* If you are a regular Python user, no doubt you know about the [Python Software Foundation](https://www.python.org/).   Their website includes many helpful resources including:  
+    - [Python Books](https://wiki.python.org/moin/PythonBooks)
+    - [Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide)
+    - [Conferences and Workshops](https://www.python.org/community/workshops/)
+
+<br>
+
+<center>
+<figure>
+<img alt = 'python' width='400' src='/post/pycomm/python.png' />
+</figure>
+</center> <br>
+
+* Available libraries:  [PyPI](https://pypi.org/) is the place to go for Python packages, boasting more than 186,000 projects.
+
+* [Jupyter](https://jupyter.org/) notebooks are to Python what Markdown files are to R.  [JupyterHub](https://jupyter.org/hub) brings the power of Jupyter notebooks to the cloud, providing access to computational environments and resources without installation.  
+
+<center>
+<figure>
+<img alt = 'jupyter' width='200' src='/post/pycomm/projjup.png' />
+</figure>
+</center> <br>
+
+
+## Conferences
+
+*  PyCon is the big Python conference of the year.  PyCon includes talks, events, workshops, and tutorials.  During the main conference days, there are dozens of talks and an exposition hall with sponsors and vendors.  PyCon also hosts a job fair for those looking for a job or an employee.  See the [PyCon 2019](https://us.pycon.org/2019/) site for the best of last year.  Stay tuned for PyCon 2020 in Pittsburgh, PA April 15-23, 2020
+
+
+<center>
+<figure>
+<img alt = 'pycon2020' width='400' src='/post/pycomm/pycon20.png' />
+</figure>
+</center> <br>
+
+
+* Many local conferences including:
+    - [North Bay Python](https://northbaypython.org/) -- Nov 2-3, 2019
+    - PyCascades -- Feb 2020; talks from 2019 at [PyCascades 2019](https://2019.pycascades.com/talks/)
+    - [PyOhio](https://www.pyohio.org/2019/) -- July 27-28, 2019
+    - [PyGotham](https://2019.pygotham.org/) -- Oct 4-5, 2019
+
+* Python conference focused on users and developers of data analysis tools:  [PyData](https://pydata.org/)
+    - [PyData Argentina](https://pydata.org/cordoba2019/) -- Sep 27-29, 2019 
+    - [PyData Berlin](https://de.pycon.org/) -- Oct 9-13, 2019
+    - [PyData NYC](https://pydata.org/events/pydata-nyc/) -- Nov 4-6, 2019
+    - [PyData Cambridge](https://pydata.org/events/pydata-cambridge/) -- Nov 15-17, 2019
+    - [PyData LA](https://pydata.org/events/pydata-los-angeles-2019/) -- Dec 3-5, 2019
+
+
+## Blogs
+
+* [Planet Python](https://planetpython.org/) blog, among the most popular and updated very regularly.
+* A fun blog [love-python](http://love-python.blogspot.com/) with lots of useful information.
+* [Python Tips](https://pythontips.com/) 
+
+## Python Outreach
+
+* [Write / Speak / Code](https://www.writespeakcode.com/)  annual conference and meetups for people whose gender or gender history is marginalized within tech.
+
+* [PyLadies](https://twitter.com/pyladies)
+
+> PyLadies is an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community.
+
+<center>
+<figure>
+<img alt = 'pyladies' width='200' src='/post/pycomm/pyladies.png' />
+</figure>
+</center> <br>
+
+* [Diversity in Python](https://wiki.python.org/moin/DiversityInPython)
+
+
+
+### Learn more
+
+- [Python Software Foundation](https://www.python.org/)
+- [Jupyter](https://jupyter.org/) 
+- 2019 National Workshop on [Data Science Education](https://data.berkeley.edu/academics/resources/data-science-education-workshops/2019-national-workshop-data-science-education) June 24-27, 2019.  Among other things, celebrating UC Berkeley's Data 8 class which is taught almost entirely in Python.
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

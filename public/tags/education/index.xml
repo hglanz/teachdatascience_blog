@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Python Community</title>
+      <link>https://teachdatascience.com/pycomm/</link>
+      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pycomm/</guid>
+      <description>All week we’ve been celebrating using Python in data science. There is no question that Python is a fantastic and very powerful language. Additionally, it is typically thought of as clearly the most used language for doing data science. The kaggle 2017 survey reports that more than three-quarters of data scientists use Python (although they also mention that most statisticians use R).
+
+
+Knowing how to use Python is an important first step to engaging with the software.</description>
+    </item>
     
     <item>
       <title>Data8: The Foundations of Data Science at Berkeley</title>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>The Python Community  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="python, community, teamwork, education, collaboration, ">
+
+
+<meta property="og:title" content="The Python Community  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/pycomm/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_19_PyCommunity\pycomm.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-18T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-18T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="python">
+    
+<meta property="og:article:tag" content="community">
+    
+<meta property="og:article:tag" content="teamwork">
+    
+<meta property="og:article:tag" content="education">
+    
+<meta property="og:article:tag" content="collaboration">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/pycomm/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>The Python Community
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-18">18 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Jo Hardin
+  
+  &middot; Read in about 3 min
+  &middot; (602 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=The%20Python%20Community&amp;url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f&amp;title=The%20Python%20Community" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=The%20Python%20Community&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fpycomm%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/python" class="label label-primary">python</a>
+  
+  <a href="https://teachdatascience.com/tags/community" class="label label-primary">community</a>
+  
+  <a href="https://teachdatascience.com/tags/teamwork" class="label label-primary">teamwork</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+  <a href="https://teachdatascience.com/tags/collaboration" class="label label-primary">collaboration</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<p>All week we’ve been celebrating using Python in data science. There is no question that Python is a fantastic and very powerful language. Additionally, it is typically thought of as clearly the most used language for doing data science. The <a href="https://www.kaggle.com/surveys/2017">kaggle 2017 survey</a> reports that more than three-quarters of data scientists use Python (although they also mention that most statisticians use R).</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'kaggle' width='400' src='https://teachdatascience.com/post/pycomm/kaggle.png' />
+</figure>
+</center>
+<p><br></p>
+<p>Knowing how to use Python is an important first step to engaging with the software. But it is also vitally important to recognize the strong and active community of Python users. For people trying to break into the Python community, we’ve listed some important groups and conferences below. Don’t be afraid to jump in with both feet: go to a Python meet-up, read a Python blog, and try a new function or two!</p>
+<ul>
+<li>If you are a regular Python user, no doubt you know about the <a href="https://www.python.org/">Python Software Foundation</a>. Their website includes many helpful resources including:
+<ul>
+<li><a href="https://wiki.python.org/moin/PythonBooks">Python Books</a></li>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide">Beginner’s Guide</a></li>
+<li><a href="https://www.python.org/community/workshops/">Conferences and Workshops</a></li>
+</ul></li>
+</ul>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'python' width='400' src='https://teachdatascience.com/post/pycomm/python.png' />
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li><p>Available libraries: <a href="https://pypi.org/">PyPI</a> is the place to go for Python packages, boasting more than 186,000 projects.</p></li>
+<li><p><a href="https://jupyter.org/">Jupyter</a> notebooks are to Python what Markdown files are to R. <a href="https://jupyter.org/hub">JupyterHub</a> brings the power of Jupyter notebooks to the cloud, providing access to computational environments and resources without installation.</p></li>
+</ul>
+<center>
+<figure>
+<img alt = 'jupyter' width='200' src='https://teachdatascience.com/post/pycomm/projjup.png' />
+</figure>
+</center>
+<p><br></p>
+<div id="conferences" class="section level2">
+<h2>Conferences</h2>
+<ul>
+<li>PyCon is the big Python conference of the year. PyCon includes talks, events, workshops, and tutorials. During the main conference days, there are dozens of talks and an exposition hall with sponsors and vendors. PyCon also hosts a job fair for those looking for a job or an employee. See the <a href="https://us.pycon.org/2019/">PyCon 2019</a> site for the best of last year. Stay tuned for PyCon 2020 in Pittsburgh, PA April 15-23, 2020</li>
+</ul>
+<center>
+<figure>
+<img alt = 'pycon2020' width='400' src='https://teachdatascience.com/post/pycomm/pycon20.png' />
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li>Many local conferences including:
+<ul>
+<li><a href="https://northbaypython.org/">North Bay Python</a> – Nov 2-3, 2019</li>
+<li>PyCascades – Feb 2020; talks from 2019 at <a href="https://2019.pycascades.com/talks/">PyCascades 2019</a></li>
+<li><a href="https://www.pyohio.org/2019/">PyOhio</a> – July 27-28, 2019</li>
+<li><a href="https://2019.pygotham.org/">PyGotham</a> – Oct 4-5, 2019</li>
+</ul></li>
+<li>Python conference focused on users and developers of data analysis tools: <a href="https://pydata.org/">PyData</a>
+<ul>
+<li><a href="https://pydata.org/cordoba2019/">PyData Argentina</a> – Sep 27-29, 2019</li>
+<li><a href="https://de.pycon.org/">PyData Berlin</a> – Oct 9-13, 2019</li>
+<li><a href="https://pydata.org/events/pydata-nyc/">PyData NYC</a> – Nov 4-6, 2019</li>
+<li><a href="https://pydata.org/events/pydata-cambridge/">PyData Cambridge</a> – Nov 15-17, 2019</li>
+<li><a href="https://pydata.org/events/pydata-los-angeles-2019/">PyData LA</a> – Dec 3-5, 2019</li>
+</ul></li>
+</ul>
+</div>
+<div id="blogs" class="section level2">
+<h2>Blogs</h2>
+<ul>
+<li><a href="https://planetpython.org/">Planet Python</a> blog, among the most popular and updated very regularly.</li>
+<li>A fun blog <a href="http://love-python.blogspot.com/">love-python</a> with lots of useful information.</li>
+<li><a href="https://pythontips.com/">Python Tips</a></li>
+</ul>
+</div>
+<div id="python-outreach" class="section level2">
+<h2>Python Outreach</h2>
+<ul>
+<li><p><a href="https://www.writespeakcode.com/">Write / Speak / Code</a> annual conference and meetups for people whose gender or gender history is marginalized within tech.</p></li>
+<li><p><a href="https://twitter.com/pyladies">PyLadies</a></p></li>
+</ul>
+<blockquote>
+<p>PyLadies is an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community.</p>
+</blockquote>
+<center>
+<figure>
+<img alt = 'pyladies' width='200' src='https://teachdatascience.com/post/pycomm/pyladies.png' />
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li><a href="https://wiki.python.org/moin/DiversityInPython">Diversity in Python</a></li>
+</ul>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://www.python.org/">Python Software Foundation</a></li>
+<li><a href="https://jupyter.org/">Jupyter</a></li>
+<li>2019 National Workshop on <a href="https://data.berkeley.edu/academics/resources/data-science-education-workshops/2019-national-workshop-data-science-education">Data Science Education</a> June 24-27, 2019. Among other things, celebrating UC Berkeley’s Data 8 class which is taught almost entirely in Python.</li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=The%20Python%20Community&amp;url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fpycomm%2f&amp;title=The%20Python%20Community" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=The%20Python%20Community&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fpycomm%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/data8/" title="Data8: The Foundations of Data Science at Berkeley">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/pycomm/">The Python Community</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/data8/">Data8: The Foundations of Data Science at Berkeley</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reticulate/">reticulate: running Python within RStudio</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pandas/">pandas: Python data analysis library</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/jupyter/">Getting started with Jupyter and JupyterHub</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/parallel/">Parallel processing and sparklyr</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reprex/">reprex:  Help me help you</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/user/">useR!</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/refactoring/">Teaching refactoring to improve code</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

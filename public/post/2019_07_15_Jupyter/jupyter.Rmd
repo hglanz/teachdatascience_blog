@@ -1,5 +1,5 @@
 ---
-title: "Getting started With Jupyter and JupyterHub"
+title: "Getting started with Jupyter and JupyterHub"
 author: "Hunter Glanz"
 date: '2019-07-14'
 output:
