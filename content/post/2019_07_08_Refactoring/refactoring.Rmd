@@ -8,6 +8,9 @@ output:
 tags:
 - R Markdown
 - refactoring
+- style
+- code smell
+- smell
 - functions
 categories: R
 ---
