@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/jupyterhub/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data100: Principles and Techniques of Data Science</title>
+      <link>https://teachdatascience.com/data100/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/data100/</guid>
+      <description>Last week’s entries focused on Python included a description of the innovative and popular data8, today we describe the follow-up course, data100, http://www.ds100.org/ (Principles and Techniques of Data Science) offered by the University of California/Berkeley Division of Data Sciences.
+
+
+Course GoalsThe goals of data100 are listed on the data100 website and reproduced here. The goals are lofty indeed, but they also address an incredibly important shortcoming in many undergraduate curricula – a student who is successful in data100 will hit the ground running doing data science after graduation.</description>
+    </item>
     
     <item>
       <title>Data8: The Foundations of Data Science at Berkeley</title>

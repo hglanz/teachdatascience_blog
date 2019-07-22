@@ -3,20 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://teachdatascience.com/data100/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -28,6 +33,30 @@
                 hreflang="en"
                 href="https://teachdatascience.com/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/berkeley/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/education/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/jupyterhub/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/python/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -48,18 +77,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/education/</loc>
-    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/python/</loc>
-    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/teamwork/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -68,18 +85,6 @@
   <url>
     <loc>https://teachdatascience.com/data8/</loc>
     <lastmod>2019-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/berkeley/</loc>
-    <lastmod>2019-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/jupyterhub/</loc>
-    <lastmod>2019-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -255,6 +260,12 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/tags/code-smell/</loc>
+    <lastmod>2019-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/functions/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -262,6 +273,18 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/refactoring/</loc>
+    <lastmod>2019-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/smell/</loc>
+    <lastmod>2019-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/style/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

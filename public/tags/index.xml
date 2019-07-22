@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>berkeley</title>
+      <link>https://teachdatascience.com/tags/berkeley/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/berkeley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://teachdatascience.com/tags/education/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jupyterhub</title>
+      <link>https://teachdatascience.com/tags/jupyterhub/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/jupyterhub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://teachdatascience.com/tags/python/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>collaboration</title>
@@ -31,47 +67,11 @@
     </item>
     
     <item>
-      <title>education</title>
-      <link>https://teachdatascience.com/tags/education/</link>
-      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://teachdatascience.com/tags/python/</link>
-      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>teamwork</title>
       <link>https://teachdatascience.com/tags/teamwork/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/teamwork/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>berkeley</title>
-      <link>https://teachdatascience.com/tags/berkeley/</link>
-      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/berkeley/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jupyterhub</title>
-      <link>https://teachdatascience.com/tags/jupyterhub/</link>
-      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/jupyterhub/</guid>
       <description></description>
     </item>
     
@@ -274,6 +274,15 @@
     </item>
     
     <item>
+      <title>code smell</title>
+      <link>https://teachdatascience.com/tags/code-smell/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/code-smell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>functions</title>
       <link>https://teachdatascience.com/tags/functions/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
@@ -288,6 +297,24 @@
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/refactoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>smell</title>
+      <link>https://teachdatascience.com/tags/smell/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/smell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>style</title>
+      <link>https://teachdatascience.com/tags/style/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/style/</guid>
       <description></description>
     </item>
     
