@@ -55,7 +55,7 @@
 <link rel="canonical" href="https://teachdatascience.com/parallel/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
-<meta name="generator" content="Hugo 0.55.5" />
+<meta name="generator" content="Hugo 0.55.4" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -252,7 +252,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 3692
+## node of a socket cluster on host &#39;localhost&#39; with pid 33924
 
 stopCluster(cl)
 cl[[1]]
@@ -272,13 +272,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 29.45217
+## [1] 222.3009
 ## 
 ## [[2]]
-## [1] 51.01546
+## [1] 160.0887
 ## 
 ## [[3]]
-## [1] 25.38972
+## [1] 5.000835
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -291,7 +291,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1]   14.711208 4241.123886    3.395672
+## [1] 44.847728  6.572057 28.821439
 
 stopCluster(cl)</code></pre>
 </div>
@@ -453,6 +453,10 @@ spark_disconnect(sc)
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
           </li>
         
@@ -486,10 +490,6 @@ spark_disconnect(sc)
         
           <li>
           <a href="https://teachdatascience.com/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/user/">useR!</a>
           </li>
         
         </ul>

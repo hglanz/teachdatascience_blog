@@ -51,7 +51,7 @@
 <link rel="canonical" href="https://teachdatascience.com/codap/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
-<meta name="generator" content="Hugo 0.55.5" />
+<meta name="generator" content="Hugo 0.55.4" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -239,7 +239,10 @@
 <p>Let’s give you some experience with CODAP. We won’t try to create a comprehensive course, a “CODAP 101,” but you will see how it feels to use a tool like CODAP for doing introductory data science. The upcoming illustrations will all be interactive (provided your system is mouse-based, not a touch-based phone or tablet).</p>
 <div id="trying-out-the-basics" class="section level3">
 <h3>Trying out the basics</h3>
-<p>Let’s begin. In the upcoming “figure,” you can see the top of a table, showing column headings. It’s a big table, with 1000 cases. Each row—each case—is a Californian from the 2013 American Community Survey. We know many things about these people, including their sex, race, and education; and what makes this especially juicy: their total income.</p>
+<p>Let’s begin. In the upcoming “figure,” you can see the top of a table, showing column headings.
+It’s a big table, with 1000 cases.
+Each row—each case—is a Californian from the 2013 American Community Survey.
+We know many things about these people, including their sex, race, and education; and what makes this especially juicy: their total income.</p>
 <p>You should also see a dot plot showing the income distribution where each dot represents an individual person. Do the following:</p>
 <ol style="list-style-type: decimal">
 <li>Drag the column heading for <strong>sex</strong> to the vertical axis of the graph. It should split to show two parallel dot plots.</li>
@@ -342,7 +345,8 @@ src="https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shar
 <p>Calculating the medians by sex is nice but hardly exciting. We’re not done. Strap in.</p>
 <p>Suppose we wanted to see if differences in <strong>Education</strong> could explain the sex differences in income.</p>
 <ol start="4" style="list-style-type: decimal">
-<li>Drag the column heading for <strong>Education</strong> to the left and drop it next to <strong>Sex</strong>. Now we have every combination of <strong>Sex</strong> and <strong>Education</strong> as a separate group, and our <strong>MedInc</strong> column computes the median total income <em>for each group</em>.</li>
+<li>Drag the column heading for <strong>Education</strong> to the left and drop it next to <strong>Sex</strong>.
+Now we have every combination of <strong>Sex</strong> and <strong>Education</strong> as a separate group, and our <strong>MedInc</strong> column computes the median total income <em>for each group</em>.</li>
 <li>Not only that, but you can treat the aggregate data in the table on the left as you would any data. Drag <strong>Education</strong> to the vertical axis of the graph and <strong>MedInc</strong> to the horizontal axis. You get a graph of the medians.</li>
 <li>The categories are out of order. Drag them up and down to fix that.</li>
 <li>Which dot is which sex? Drag <strong>Sex</strong> to the middle of the graph and drop it to create a legend. And weep.</li>
@@ -362,9 +366,13 @@ src="https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shar
 <h2>What? You want more??</h2>
 <p>Suppose you wanted to carry this further. Here is one idea:</p>
 <p>Someone might argue that the median comparison across sex is still unfair if there are a disproportionate number of women in the dataset with incomes set to zero because they do not in fact have jobs. What if women who have jobs get paid the same as men who have jobs, but the overall median for the women is depressed because more women than men work in the home and do not have traditional incomes?</p>
-<p>That drags down the graduate women’s median income and makes it look as if women <em>with jobs</em> get paid less than men, when in fact (one could claim) the incomes are really the same.</p>
+<p>That drags down the graduate women’s median income and makes it look as if women <em>with jobs</em> get paid less
+than men, when in fact (one could claim) the incomes are really the same.</p>
 <p>Do you think that the overall median difference might be from inaccurate summarizing due to different proportions in the labor force? As you will see, we can find out who is employed and who is not, so we can answer the question using data.</p>
-<p>While we’re at it, we reveal another wonderful secret: The 1000 cases you were working with before were not the only cases (or the only attributes) you have access to. The next illustration has a CODAP <em>plugin</em>, a data portal that connects to a database of 10122 Californians collected in 2013, with many more attributes that you saw last time.</p>
+<p>While we’re at it, we reveal another wonderful secret:
+The 1000 cases you were working with before were not the only cases (or the only attributes) you have access to.
+The next illustration has a CODAP <em>plugin</em>, a data portal that connects to a database of 10122 Californians collected in 2013,
+with many more attributes that you saw last time.</p>
 <ol style="list-style-type: decimal">
 <li>Look in the <strong>options</strong> tab to choose which attributes to collect.
 <ul>
@@ -505,6 +513,10 @@ src="https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shar
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
           </li>
         
@@ -538,10 +550,6 @@ src="https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shar
         
           <li>
           <a href="https://teachdatascience.com/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/user/">useR!</a>
           </li>
         
         </ul>

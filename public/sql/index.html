@@ -55,7 +55,7 @@
 <link rel="canonical" href="https://teachdatascience.com/sql/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
-<meta name="generator" content="Hugo 0.55.5" />
+<meta name="generator" content="Hugo 0.55.4" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -297,7 +297,8 @@ eightobs
 ## 12    Lewis_2015 114716</code></pre>
 <div id="accessing-a-database-using-dplyr-commands" class="section level2">
 <h2>Accessing a database using dplyr commands</h2>
-<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
+<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl
+objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
 <p>The setup process looks similar.</p>
 <pre class="r"><code>db &lt;- src_mysql(dbname = &quot;wai&quot;, host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
           password=&quot;smith_waiDB&quot;)
@@ -570,6 +571,10 @@ ggplot(onesubj, aes(x = Freq, y = Absorbance)) + geom_point() +
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
           </li>
         
@@ -603,10 +608,6 @@ ggplot(onesubj, aes(x = Freq, y = Absorbance)) + geom_point() +
         
           <li>
           <a href="https://teachdatascience.com/codap/">Using the Common Online Data Analysis Platform (CODAP) to teach data science</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/user/">useR!</a>
           </li>
         
         </ul>

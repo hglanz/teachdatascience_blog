@@ -19,7 +19,7 @@
       
       <guid>https://teachdatascience.com/reticulate/</guid>
       <description>For many statisticians, their go-to software language is R. However, there is no doubt that Python is an equally important language in data science. Indeed, the Jupyter blog entry from earlier this week described the capacities of writing Python code (as well as R and Julia and other environments) using interactive Jupyter notebooks.
-knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;F:/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
+knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;C:/Users/Maddie/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
-      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

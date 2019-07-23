@@ -19,7 +19,7 @@
       
       <guid>https://teachdatascience.com/jupyter/</guid>
       <description>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
-What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
+What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny2/</guid>
-      <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
+      <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny1/</guid>
-      <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
+      <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <guid>https://teachdatascience.com/pairprogramming/</guid>
       <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
 Photo credit: Esti Alvarez
-Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
+Pair programming has been thought to lead to better code, more enjoyable coding, andhigher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
-      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

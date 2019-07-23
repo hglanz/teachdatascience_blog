@@ -21,7 +21,7 @@ For many statisticians, their go-to software language is R.  However, there is n
 knitr::opts_chunk$set(collapse = TRUE)
 library(reticulate)
 use_virtualenv("r-reticulate")
-use_python("F:/Anaconda3", required = TRUE)
+use_python("C:/Users/Maddie/Anaconda3", required = TRUE)
 py_config()
 ```
 
@@ -29,7 +29,7 @@ py_config()
 knitr::opts_chunk$set(collapse = TRUE)
 library(reticulate)
 use_virtualenv("r-reticulate")
-use_python("F:/Anaconda3", required = TRUE)
+use_python("C:/Users/Maddie/Anaconda3", required = TRUE)
 py_config()
 ```
 

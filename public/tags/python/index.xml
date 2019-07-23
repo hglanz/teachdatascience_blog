@@ -53,7 +53,7 @@ The course combines three perspectives: inferential thinking, computational thin
       
       <guid>https://teachdatascience.com/reticulate/</guid>
       <description>For many statisticians, their go-to software language is R. However, there is no doubt that Python is an equally important language in data science. Indeed, the Jupyter blog entry from earlier this week described the capacities of writing Python code (as well as R and Julia and other environments) using interactive Jupyter notebooks.
-knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;F:/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
+knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;C:/Users/Maddie/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@ In short, pandas offers some new and some improved Python tools for doing the fo
       
       <guid>https://teachdatascience.com/jupyter/</guid>
       <description>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
-What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
+What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
     </item>
     
   </channel>
