@@ -1,0 +1,104 @@
+---
+title: "Breiman's two cultures"
+author: "Nicholas Horton"
+date: '2019-07-23'
+output:
+  html_document:
+    df_print: paged
+tags:
+- predictive analytics
+- regression modeling
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Eighteen years ago, Leo Breiman published an important paper entitled [Statistical modeling: the two cultures](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726) in *Statistical Science*.  In today's blog entry we discuss the implications of the paper for data science education.
+
+Breiman argued that the two cultures included:
+
+1. one that assumes a stochastic data model 
+2. one that uses an algorithmic model (and treats the data mechanism as unknown)
+
+Breiman asserted that the statistics community had almost exclusively focused on the former, with interpretation of parameters at the core.  He asserted that:
+
+> This commitment has led to irrelevant theory, questionable conclusions, and has kept statisticians from working on a large range of interesting current problems.
+
+When we look at the standard statistics curriculum nearly twenty years later, the lack of balance that Breiman noted still exists.  Predictive analytics approaches (what Breiman calls algorithmic modeling) is rarely if ever included in standard introductory statistics courses or even in applied regression classes. (We should note that many new courses have been added to the curriculum which embrace algorithmic modeling and use excellent resources such as [Introduction to Statistical Learning](http://www.statlearning.com): our focus here is on the standard statistics curriculum.)
+
+If you haven't read Breiman's paper (or haven't done so recently) we encourage you to do so.
+
+Regular readers will recall our guest blog entry on the [CODAP](https://teachdatascience.com/codap) environment.  [Teaching and learning about tree-based methods for exploratory data analysis](https://iase-web.org/icots/10/proceedings/pdfs/ICOTS10_7F3.pdf) described how CODAP could be used to teach algorithmic models to an audience of pre-university students.
+
+How hard would it be to bring in examples of algorithmic models early into statistics courses to motivate students and balance the presentation of topics?  
+
+### Introducing Trees
+
+Here's an example where [recursive partitioning](https://en.wikipedia.org/wiki/Recursive_partitioning) is used as an algorithmic model which predicts whether subjects in the [NHANES](https://cran.r-project.org/package=NHANES) (National Health and Nutrition Examination Survey) dataset report any lifetime use of marijuana.
+
+```{r message=FALSE, warning=FALSE}
+library(rpart)
+library(rpart.plot)
+library(mosaic)
+NHANESpot <- filter(NHANES::NHANES, !is.na(Marijuana), !is.na(Work))
+tally(~ Marijuana, data = NHANESpot)
+tally(~ Marijuana, format = "percent", data = NHANESpot)
+```
+
+We see that 59% of the analytic sample report using marijuana at least once over their lifetime.
+
+```{r}
+set.seed(420)
+trainrows <- sample(1:nrow(NHANESpot), 4000, replace = FALSE)
+NHANEStrain <- NHANESpot[trainrows,]
+NHANEStest <- NHANESpot[-trainrows,]
+tree1 <- rpart::rpart(Marijuana ~ Age + Gender + Education + Work, 
+               method = "class", 
+               control = rpart.control(minsplit = 10, cp = 0.008),
+               data = NHANEStrain)
+tree1
+rpart.plot::rpart.plot(tree1)
+```
+
+A relatively simple algorithmic model classifies the subjects into one of four groups: males with more than 8th grade education have a 63.9% chance of reporting use, while subjects with 8th grade had the lowest chance (25%).
+
+A more complicated model can be fit: the new model could be thought of as a "black-box" model where the decisions are hard to describe (but the model might have strong predictive ability in the test data).
+
+
+```{r}
+tree2 <- rpart::rpart(Marijuana ~ Age + Gender + Education + Work, 
+               method = "class", 
+               control = rpart.control(minsplit = 10, cp = 0.003),
+               data = NHANEStrain)
+rpart.plot::rpart.plot(tree2)
+```
+
+
+Recursive partitioning can be taught quickly in most levels of data science and statistics courses.   We recommend the following scrollytelling visualization by Lee and Chu which breaks down the details of partitioning, [A visual introduction to machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/).<br>
+
+<center>
+<figure>
+<img alt = 'nycsfscrolly' width='600' src='/post/twocultures/nycsf.png' />
+<figcaption>  An intuitive and visual description of how trees are built, [A visual introduction to machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) by Stephanie Yee and Tony Chu.
+</figcaption></figure>
+</center> <br>
+
+
+Breiman concluded by saying: 
+
+> If our goal as a field is to use data to solve problems, then we need to move away from exclusive dependence on data models and adopt a more diverse set of tools.
+
+
+### Learn more
+
+- [Statistical Modeling: The Two Cultures](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726) by Leo Breiman, *Statistical Science* (2001), 16(3):199-231.
+- [Introduction to Statistical Learning](http://www.statlearning.com)
+- An intuitive and visual description of how trees are built, [A visual introduction to machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) by Stephanie Yee and Tony Chu.
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.  However, comments on the blog should be constructive, encouraging, and supportive.  We reserve the right to delete comments that violate these guidelines.
