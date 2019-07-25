@@ -23,7 +23,7 @@ Many of you are likely to have been following the recent news (see [here](https:
 
 <center>
 <figure>
-<img alt = 'nytface' width='600' src='/post/algbias/nytface.png' />
+<img alt = 'nytface' width='500' src='/post/algbias/nytface.png' />
 </figure>
 </center> <br>
 
@@ -50,7 +50,7 @@ Many other examples exist.  Below is a series of translation of Turkish into Eng
 
 <center>
 <figure>
-<img alt = 'turkish' width='600' src='/post/algbias/turkish.png' />
+<img alt = 'turkish' width='500' src='/post/algbias/turkish.png' />
 <figcaption>  Facebook post by Emre &Scedil;arbak https://www.facebook.com/photo.php?fbid=10154851496086949&set=a.10150241543551949&type=3&theater
 </figcaption></figure>
 </center> <br>
@@ -63,7 +63,7 @@ Algorithmic bias isn't just an academic problem.  It is a problem with serious c
 
 <center>
 <figure>
-<img alt = 'arabic' width='600' src='/post/algbias/arabic.png' />
+<img alt = 'arabic' width='500' src='/post/algbias/arabic.png' />
 <figcaption> https://www.theguardian.com/technology/2017/oct/24/facebook-palestine-israel-translates-good-morning-attack-them-arrest
 </figcaption></figure>
 </center> <br>
@@ -72,7 +72,7 @@ Algorithmic bias isn't just an academic problem.  It is a problem with serious c
 
 <center>
 <figure>
-<img alt = 'credit' width='600' src='/post/algbias/credit.png' />
+<img alt = 'credit' width='500' src='/post/algbias/credit.png' />
 <figcaption> https://www.wsj.com/articles/what-your-face-may-tell-lenders-about-whether-youre-creditworthy-11560218700
 </figcaption></figure>
 </center> <br>
@@ -111,7 +111,7 @@ A number of recent books describe how math and algorithms can be weaponized to a
 
 * *Automating Inequality* discusses how automated decision-making creates a "digital poorhouse" that perpetuates the existing economic biases against marginalized people.  We end the blog entry with a quote from the text.  We agree with Eubanks that as data science educators it is a vital part of our job to communicate to our students that their work has real impacts for real people.
 
-> As we create a new national narrative and politics of poverty, we must also begin dismantling the digital poorhouse.  It will require flexing our imaginations and asking entirely different kinds of questions…  What would decision-making systems that see poor people, families, and neighborhoods as infinitely valuable and innovative look like?  It will also require sharpening our skills:  high-tech tools that protect human rights ad strengthen human capacity are more difficult to build than those that do not.
+> As we create a new national narrative and politics of poverty, we must also begin dismantling the digital poorhouse.  It will require flexing our imaginations and asking entirely different kinds of questions…  What would decision-making systems that see poor people, families, and neighborhoods as infinitely valuable and innovative look like?  It will also require sharpening our skills:  high-tech tools that protect human rights and strengthen human capacity are more difficult to build than those that do not.
 
 
 ##  In the classroom

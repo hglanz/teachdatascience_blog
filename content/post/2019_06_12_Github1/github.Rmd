@@ -1,5 +1,5 @@
 ---
-title: "Github for Fun and Profit"
+title: "GitHub for Fun and Profit"
 author: "Nicholas Horton"
 date: '2019-06-11'
 output:
