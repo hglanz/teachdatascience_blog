@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Algorithmic Bias  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="collaboration, education, communication, ">
+
+
+<meta property="og:title" content="Algorithmic Bias  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/algbias/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_25_AlgBias\algbias.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-24T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-24T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="collaboration">
+    
+<meta property="og:article:tag" content="education">
+    
+<meta property="og:article:tag" content="communication">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/algbias/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.4" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Algorithmic Bias
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-24">24 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Jo Hardin
+  
+  &middot; Read in about 5 min
+  &middot; (1021 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Algorithmic%20Bias&amp;url=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2falgbias%2f&amp;title=Algorithmic%20Bias" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Algorithmic%20Bias&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2falgbias%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/collaboration" class="label label-primary">collaboration</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+  <a href="https://teachdatascience.com/tags/communication" class="label label-primary">communication</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<p>Many of you are likely to have been following the recent news (see <a href="https://www.nytimes.com/2019/07/13/technology/databases-faces-facial-recognition-technology.html">here</a> and <a href="https://www.theguardian.com/uk-news/2019/jul/12/police-trials-facial-recognition-home-secretary-sajid-javid-technology-human-rights">here</a> and <a href="https://www.vox.com/future-perfect/2019/4/27/18518598/ai-facial-recognition-ban-apple-amazon-microsoft">here</a> and <a href="https://www.nytimes.com/2019/05/14/us/facial-recognition-ban-san-francisco.html">here</a> for recent articles) on facial recognition software, its use in the criminal justice system, and the systematic racial biases associated with facial recognition. You may also be aware of other algorithms which are systematically biased against a particular group of people.</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'nytface' width='600' src='https://teachdatascience.com/post/algbias/nytface.png' />
+</figure>
+</center>
+<p><br></p>
+<p>However, you may not have a plan for how to bring the ideas into the data science classroom. Below we provide a series of examples and connections to data science and statistics curricula that can help students connect course topics with the world around them.</p>
+<div id="biased-data-lead-to-poor-models" class="section level2">
+<h2>Biased data lead to poor models</h2>
+<p>The number one problem with algorithmic bias comes from bias in datasets. A model is thought to be good if it approximates the data on which it was built. The whole point of a model is to describe a given dataset! A model is no good if it doesn’t represent the data, which leads to the conclusion that any algorithm needs to be built on data which does not have systematic biases or underrepresentations.</p>
+<p>Of course, much of the world we live already systematically disadvantages certain groups of people, so even “random samples” can lead to algorithms that reinforce structural biases. One hugely impactful recent research study describes the inability of off-the-shelf facial recognition software to differentiate the gender of an individual if their skin is dark.</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'buolamwini' width='600' src='https://teachdatascience.com/post/algbias/buolamwini.png' />
+<figcaption>
+Table from Buolamwini and Gebru (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification, Journal of Machine Learning Research, 81: 1-15.
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<p>Many other examples exist. Below is a series of translation of Turkish into English. Where Turkish pronouns are gender-neutral, the translations below magnify our cultural biases about women’s roles, men’s roles, and stereotypical gender personalities.</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'turkish' width='600' src='https://teachdatascience.com/post/algbias/turkish.png' />
+<figcaption>
+Facebook post by Emre Şarbak <a href="https://www.facebook.com/photo.php?fbid=10154851496086949&amp;set=a.10150241543551949&amp;type=3&amp;theater" class="uri">https://www.facebook.com/photo.php?fbid=10154851496086949&amp;set=a.10150241543551949&amp;type=3&amp;theater</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+</div>
+<div id="serious-ramifications" class="section level2">
+<h2>Serious ramifications</h2>
+<p>Algorithmic bias isn’t just an academic problem. It is a problem with serious consequences for marginalized people.</p>
+<ul>
+<li>Poor translation led to the arrest of a Palestinian man who posted good morning on his Facebook account.<br></li>
+</ul>
+<center>
+<figure>
+<img alt = 'arabic' width='600' src='https://teachdatascience.com/post/algbias/arabic.png' />
+<figcaption>
+<a href="https://www.theguardian.com/technology/2017/oct/24/facebook-palestine-israel-translates-good-morning-attack-them-arrest" class="uri">https://www.theguardian.com/technology/2017/oct/24/facebook-palestine-israel-translates-good-morning-attack-them-arrest</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li>Facial recognition software is being used to determine the amount of insurance you can purchase.<br></li>
+</ul>
+<center>
+<figure>
+<img alt = 'credit' width='600' src='https://teachdatascience.com/post/algbias/credit.png' />
+<figcaption>
+<a href="https://www.wsj.com/articles/what-your-face-may-tell-lenders-about-whether-youre-creditworthy-11560218700" class="uri">https://www.wsj.com/articles/what-your-face-may-tell-lenders-about-whether-youre-creditworthy-11560218700</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li>The COMPAS algorithm which is used throughout the country to determine recidivism produces extremely different false positive and false negative rates across gender. If you teach about COMPAS and the ProPublica investigation, you might consider introducing the mathematics behind constraints on false positive, false negative, and accuracy rates as shown by <a href="https://arxiv.org/abs/1703.00056">Chouldechova</a>. <br></li>
+</ul>
+<center>
+<figure>
+<img alt = 'compas' width='600' src='https://teachdatascience.com/post/algbias/compas.png' />
+<figcaption>
+<a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" class="uri">https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<div id="math-as-a-weapon" class="section level3">
+<h3>Math as a weapon</h3>
+<p>A number of recent books describe how math and algorithms can be weaponized to appear impartial but to have a disproportionately negative impact on marginalized peoples. <br></p>
+<center>
+<figure>
+<img alt = 'books' width='300' src='https://teachdatascience.com/post/algbias/weapons.png' />
+<figcaption>
+Weapons of Math Destruction by Cathy O’Neil
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li>One of the chapters in <em>Weapons of Math Destruction</em> discusses algorithmic credit scores. O’Neil’s argument is underscored by work in the law field describing how algorithmic credit scores seemingly violate the Fair Credit Reporting Act, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2188560">Selling Consumers, Not Lists: The New World of Digital Decision-Making and the Role of the Fair Credit Reporting Act</a> by Mierzwinski and Chester.</li>
+</ul>
+<center>
+<figure>
+<img alt = 'automating' width='300' src='https://teachdatascience.com/post/algbias/automating.png' />
+<figcaption>
+Automating Inequality by Virginia Eubanks
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li><em>Automating Inequality</em> discusses how automated decision-making creates a “digital poorhouse” that perpetuates the existing economic biases against marginalized people. We end the blog entry with a quote from the text. We agree with Eubanks that as data science educators it is a vital part of our job to communicate to our students that their work has real impacts for real people.</li>
+</ul>
+<blockquote>
+<p>As we create a new national narrative and politics of poverty, we must also begin dismantling the digital poorhouse. It will require flexing our imaginations and asking entirely different kinds of questions… What would decision-making systems that see poor people, families, and neighborhoods as infinitely valuable and innovative look like? It will also require sharpening our skills: high-tech tools that protect human rights ad strengthen human capacity are more difficult to build than those that do not.</p>
+</blockquote>
+</div>
+</div>
+<div id="in-the-classroom" class="section level2">
+<h2>In the classroom</h2>
+<p>There are also good curricular materials that can help you incorporate algorithmic bias and ethics into your own classroom. Check them out for additional resources, out of class experiences (e.g., homework or research projects), and connections between data science topics and real world experiences.</p>
+<ul>
+<li>Baumer, Kaplan, and Horton’s <strong>Modern Data Science in R</strong> has a free <a href="https://mdsr-book.github.io/excerpts/mdsr-ethics.pdf">Chapter on data ethics</a></li>
+<li>Barocas, Hardt, and Narayanan have detailed <em>formal non-discrimination criteria</em> in their on-line textbook <a href="https://fairmlbook.org/pdf/fairmlbook.pdf">Fairness and Machine Learning</a></li>
+<li>Miles Ott posted his slides from Symposium on Data Science and Statistics 2019 <a href="http://www.science.smith.edu/~mott/SDSS2019.html#1">Incorporating Data Ethics in a Statistics / Data Science Major</a></li>
+<li>Fantastic discussion of biased algorithm with very telling unbiased (!) simulation <a href="http://aaronsadventures.blogspot.com/2019/01/discussion-of-unfairness-in-machine.html">Algorithmic Unfairness Without Any Bias Baked In</a></li>
+<li>Brianna Heggeseth &amp; Leslie Myint <a href="https://bcheggeseth.github.io/Math155Notes/ethical-considerations.html">Ethical Considerations</a> from Introduction to Statistical Modeling.</li>
+<li><a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html">The Belmont Report</a></li>
+<li><a href="https://www.onlineethics.org/Resources/45363.aspx">Ethics and Policy in Data Science</a>, INFO 4270 at Cornell University</li>
+<li><a href="https://geomblog.github.io/fairness/">A Cource on Fairness, Accountability, and Transparency in Machine Learning</a></li>
+<li>CS 294 at UC Berkeley <a href="https://fairmlclass.github.io/">Fairness in Machine Learning</a></li>
+</ul>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://ethical.institute/">The Institute for Ethical AI &amp; Machine Learning</a></li>
+<li><a href="https://www.wired.com/story/the-real-reason-tech-struggles-with-algorithmic-bias/">The real reason tech struggles with algorithmic bias</a></li>
+<li><a href="https://medium.com/humane-ai/ethics-in-machine-learning-54a71a75875c">Ethics in Machine Learning</a>, an Interview with Dr. Hanie Sedghi, Research Scientist at Google Brain</li>
+<li><a href="https://www.nitrd.gov/pubs/National-AI-RD-Strategy-2019.pdf">The National Artificial Intelligence Research and Development Strategic Plan: 2019 update</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones. However, comments on the blog should be constructive, encouraging, and supportive. We reserve the right to delete comments that violate these guidelines.</p>
+</div>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Algorithmic%20Bias&amp;url=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2falgbias%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2falgbias%2f&amp;title=Algorithmic%20Bias" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Algorithmic%20Bias&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2falgbias%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/twocultures/" title="Breiman&#39;s two cultures">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pycomm/">The Python Community</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/data8/">Data8: The Foundations of Data Science at Berkeley</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reticulate/">reticulate: running Python within RStudio</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pandas/">pandas: Python data analysis library</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/jupyter/">Getting started with Jupyter and JupyterHub</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/parallel/">Parallel processing and sparklyr</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

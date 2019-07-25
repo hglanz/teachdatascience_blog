@@ -1,0 +1,151 @@
+---
+title: "Algorithmic Bias"
+author: "Jo Hardin"
+date: '2019-07-24'
+output:
+  html_document:
+    df_print: paged
+tags:
+- collaboration
+- education
+- communication
+categories: R
+---
+
+
+
+<p>Many of you are likely to have been following the recent news (see <a href="https://www.nytimes.com/2019/07/13/technology/databases-faces-facial-recognition-technology.html">here</a> and <a href="https://www.theguardian.com/uk-news/2019/jul/12/police-trials-facial-recognition-home-secretary-sajid-javid-technology-human-rights">here</a> and <a href="https://www.vox.com/future-perfect/2019/4/27/18518598/ai-facial-recognition-ban-apple-amazon-microsoft">here</a> and <a href="https://www.nytimes.com/2019/05/14/us/facial-recognition-ban-san-francisco.html">here</a> for recent articles) on facial recognition software, its use in the criminal justice system, and the systematic racial biases associated with facial recognition. You may also be aware of other algorithms which are systematically biased against a particular group of people.</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'nytface' width='600' src='/post/algbias/nytface.png' />
+</figure>
+</center>
+<p><br></p>
+<p>However, you may not have a plan for how to bring the ideas into the data science classroom. Below we provide a series of examples and connections to data science and statistics curricula that can help students connect course topics with the world around them.</p>
+<div id="biased-data-lead-to-poor-models" class="section level2">
+<h2>Biased data lead to poor models</h2>
+<p>The number one problem with algorithmic bias comes from bias in datasets. A model is thought to be good if it approximates the data on which it was built. The whole point of a model is to describe a given dataset! A model is no good if it doesn’t represent the data, which leads to the conclusion that any algorithm needs to be built on data which does not have systematic biases or underrepresentations.</p>
+<p>Of course, much of the world we live already systematically disadvantages certain groups of people, so even “random samples” can lead to algorithms that reinforce structural biases. One hugely impactful recent research study describes the inability of off-the-shelf facial recognition software to differentiate the gender of an individual if their skin is dark.</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'buolamwini' width='600' src='/post/algbias/buolamwini.png' />
+<figcaption>
+Table from Buolamwini and Gebru (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification, Journal of Machine Learning Research, 81: 1-15.
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<p>Many other examples exist. Below is a series of translation of Turkish into English. Where Turkish pronouns are gender-neutral, the translations below magnify our cultural biases about women’s roles, men’s roles, and stereotypical gender personalities.</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'turkish' width='600' src='/post/algbias/turkish.png' />
+<figcaption>
+Facebook post by Emre Şarbak <a href="https://www.facebook.com/photo.php?fbid=10154851496086949&amp;set=a.10150241543551949&amp;type=3&amp;theater" class="uri">https://www.facebook.com/photo.php?fbid=10154851496086949&amp;set=a.10150241543551949&amp;type=3&amp;theater</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+</div>
+<div id="serious-ramifications" class="section level2">
+<h2>Serious ramifications</h2>
+<p>Algorithmic bias isn’t just an academic problem. It is a problem with serious consequences for marginalized people.</p>
+<ul>
+<li>Poor translation led to the arrest of a Palestinian man who posted good morning on his Facebook account.<br></li>
+</ul>
+<center>
+<figure>
+<img alt = 'arabic' width='600' src='/post/algbias/arabic.png' />
+<figcaption>
+<a href="https://www.theguardian.com/technology/2017/oct/24/facebook-palestine-israel-translates-good-morning-attack-them-arrest" class="uri">https://www.theguardian.com/technology/2017/oct/24/facebook-palestine-israel-translates-good-morning-attack-them-arrest</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li>Facial recognition software is being used to determine the amount of insurance you can purchase.<br></li>
+</ul>
+<center>
+<figure>
+<img alt = 'credit' width='600' src='/post/algbias/credit.png' />
+<figcaption>
+<a href="https://www.wsj.com/articles/what-your-face-may-tell-lenders-about-whether-youre-creditworthy-11560218700" class="uri">https://www.wsj.com/articles/what-your-face-may-tell-lenders-about-whether-youre-creditworthy-11560218700</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li>The COMPAS algorithm which is used throughout the country to determine recidivism produces extremely different false positive and false negative rates across gender. If you teach about COMPAS and the ProPublica investigation, you might consider introducing the mathematics behind constraints on false positive, false negative, and accuracy rates as shown by <a href="https://arxiv.org/abs/1703.00056">Chouldechova</a>. <br></li>
+</ul>
+<center>
+<figure>
+<img alt = 'compas' width='600' src='/post/algbias/compas.png' />
+<figcaption>
+<a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" class="uri">https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a>
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<div id="math-as-a-weapon" class="section level3">
+<h3>Math as a weapon</h3>
+<p>A number of recent books describe how math and algorithms can be weaponized to appear impartial but to have a disproportionately negative impact on marginalized peoples. <br></p>
+<center>
+<figure>
+<img alt = 'books' width='300' src='/post/algbias/weapons.png' />
+<figcaption>
+Weapons of Math Destruction by Cathy O’Neil
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li>One of the chapters in <em>Weapons of Math Destruction</em> discusses algorithmic credit scores. O’Neil’s argument is underscored by work in the law field describing how algorithmic credit scores seemingly violate the Fair Credit Reporting Act, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2188560">Selling Consumers, Not Lists: The New World of Digital Decision-Making and the Role of the Fair Credit Reporting Act</a> by Mierzwinski and Chester.</li>
+</ul>
+<center>
+<figure>
+<img alt = 'automating' width='300' src='/post/algbias/automating.png' />
+<figcaption>
+Automating Inequality by Virginia Eubanks
+</figcaption>
+</figure>
+</center>
+<p><br></p>
+<ul>
+<li><em>Automating Inequality</em> discusses how automated decision-making creates a “digital poorhouse” that perpetuates the existing economic biases against marginalized people. We end the blog entry with a quote from the text. We agree with Eubanks that as data science educators it is a vital part of our job to communicate to our students that their work has real impacts for real people.</li>
+</ul>
+<blockquote>
+<p>As we create a new national narrative and politics of poverty, we must also begin dismantling the digital poorhouse. It will require flexing our imaginations and asking entirely different kinds of questions… What would decision-making systems that see poor people, families, and neighborhoods as infinitely valuable and innovative look like? It will also require sharpening our skills: high-tech tools that protect human rights ad strengthen human capacity are more difficult to build than those that do not.</p>
+</blockquote>
+</div>
+</div>
+<div id="in-the-classroom" class="section level2">
+<h2>In the classroom</h2>
+<p>There are also good curricular materials that can help you incorporate algorithmic bias and ethics into your own classroom. Check them out for additional resources, out of class experiences (e.g., homework or research projects), and connections between data science topics and real world experiences.</p>
+<ul>
+<li>Baumer, Kaplan, and Horton’s <strong>Modern Data Science in R</strong> has a free <a href="https://mdsr-book.github.io/excerpts/mdsr-ethics.pdf">Chapter on data ethics</a></li>
+<li>Barocas, Hardt, and Narayanan have detailed <em>formal non-discrimination criteria</em> in their on-line textbook <a href="https://fairmlbook.org/pdf/fairmlbook.pdf">Fairness and Machine Learning</a></li>
+<li>Miles Ott posted his slides from Symposium on Data Science and Statistics 2019 <a href="http://www.science.smith.edu/~mott/SDSS2019.html#1">Incorporating Data Ethics in a Statistics / Data Science Major</a></li>
+<li>Fantastic discussion of biased algorithm with very telling unbiased (!) simulation <a href="http://aaronsadventures.blogspot.com/2019/01/discussion-of-unfairness-in-machine.html">Algorithmic Unfairness Without Any Bias Baked In</a></li>
+<li>Brianna Heggeseth &amp; Leslie Myint <a href="https://bcheggeseth.github.io/Math155Notes/ethical-considerations.html">Ethical Considerations</a> from Introduction to Statistical Modeling.</li>
+<li><a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html">The Belmont Report</a></li>
+<li><a href="https://www.onlineethics.org/Resources/45363.aspx">Ethics and Policy in Data Science</a>, INFO 4270 at Cornell University</li>
+<li><a href="https://geomblog.github.io/fairness/">A Cource on Fairness, Accountability, and Transparency in Machine Learning</a></li>
+<li>CS 294 at UC Berkeley <a href="https://fairmlclass.github.io/">Fairness in Machine Learning</a></li>
+</ul>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><a href="https://ethical.institute/">The Institute for Ethical AI &amp; Machine Learning</a></li>
+<li><a href="https://www.wired.com/story/the-real-reason-tech-struggles-with-algorithmic-bias/">The real reason tech struggles with algorithmic bias</a></li>
+<li><a href="https://medium.com/humane-ai/ethics-in-machine-learning-54a71a75875c">Ethics in Machine Learning</a>, an Interview with Dr. Hanie Sedghi, Research Scientist at Google Brain</li>
+<li><a href="https://www.nitrd.gov/pubs/National-AI-RD-Strategy-2019.pdf">The National Artificial Intelligence Research and Development Strategic Plan: 2019 update</a></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones. However, comments on the blog should be constructive, encouraging, and supportive. We reserve the right to delete comments that violate these guidelines.</p>
+</div>
+</div>
