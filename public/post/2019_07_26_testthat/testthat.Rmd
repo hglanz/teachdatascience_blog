@@ -27,11 +27,15 @@ Reproducibility is at the core of [data acumen](https://teachdatascience.com/nas
 
 ## The testthat package
 
+
+<br>
+
 <center>
+<figure>
+<img alt = 'testthathex' width='500' src='/post/testthat/testthathex.png' />
+</figure>
+</center> <br>
 
-![](/post/testthat/testthathex.png)
-
-</center>
 
 The goal of the [testthat package](https://github.com/r-lib/testthat) is to make testing `R` code less painful and tedious by
 
