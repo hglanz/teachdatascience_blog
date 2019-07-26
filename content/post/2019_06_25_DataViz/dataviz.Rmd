@@ -72,6 +72,7 @@ For inspiration, we look to our colleagues who are already implementing either f
  
 ### Learn more
 
+- NYT [What's Going On in This Graph](https://www.nytimes.com/column/whats-going-on-in-this-graph?)
 - List of Data Viz books:  https://policyviz.com/better-presentations/data-viz-resources/data-viz-books/
 - Even more references to visualization courses: http://civilstat.com/2015/11/teaching-data-visualization-approaches-and-syllabi/ 
 - Online data viz text:  [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/)
