@@ -32,7 +32,7 @@ Reproducibility is at the core of [data acumen](https://teachdatascience.com/nas
 
 <center>
 <figure>
-<img alt = 'testthathex' width='500' src='/post/testthat/testthathex.png' />
+<img alt = 'testthathex' width='200' src='/post/testthat/testthathex.png' />
 </figure>
 </center> <br>
 
