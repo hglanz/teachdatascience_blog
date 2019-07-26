@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 24 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data assertion and checks via testthat</title>
+      <link>https://teachdatascience.com/testthat/</link>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/testthat/</guid>
+      <description>Reproducibility and ReplicabilityOn May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, “New report examines reproducibility and replicability in science” article here. The report recommends “ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.”
+Reproducibility is at the core of data acumen and needs to be stressed at all levels of the data science curriculum.</description>
+    </item>
     
     <item>
       <title>Algorithmic Bias</title>
@@ -306,7 +316,7 @@ SQL (pronounced sequel) stands for Structured Query Language; it is a language d
     </item>
     
     <item>
-      <title>Github Classroom</title>
+      <title>GitHub Classroom</title>
       <link>https://teachdatascience.com/gitclass/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -326,7 +336,7 @@ Previous posts have described working with R Projects and working with GitHub.</
     </item>
     
     <item>
-      <title>Github for Fun and Profit</title>
+      <title>GitHub for Fun and Profit</title>
       <link>https://teachdatascience.com/github/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       

@@ -252,7 +252,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 32592
+## node of a socket cluster on host &#39;localhost&#39; with pid 35040
 
 stopCluster(cl)
 cl[[1]]
@@ -272,13 +272,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 7.464162
+## [1] 10.6997
 ## 
 ## [[2]]
-## [1] 16.61078
+## [1] 19.39565
 ## 
 ## [[3]]
-## [1] 7.503304
+## [1] 30.30719
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -291,7 +291,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 37.214628 14.903843  5.815554
+## [1] 163.328737  26.680333   6.453029
 
 stopCluster(cl)</code></pre>
 </div>
@@ -453,6 +453,10 @@ spark_disconnect(sc)
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
           </li>
         
@@ -486,10 +490,6 @@ spark_disconnect(sc)
         
           <li>
           <a href="https://teachdatascience.com/jupyter/">Getting started with Jupyter and JupyterHub</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/parallel/">Parallel processing and sparklyr</a>
           </li>
         
         </ul>

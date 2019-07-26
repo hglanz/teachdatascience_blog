@@ -3,25 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://teachdatascience.com/algbias/</loc>
-    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+    <loc>https://teachdatascience.com/testthat/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/r/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -33,6 +39,41 @@
                 hreflang="en"
                 href="https://teachdatascience.com/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/consistency-checking/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/data-checking/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/data-ingestation/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/reproducibility/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/workflow/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/algbias/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -89,12 +130,6 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/cherry-tree/</loc>
-    <lastmod>2019-07-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/data-ingestation/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -217,18 +252,6 @@
   <url>
     <loc>https://teachdatascience.com/jupyter/</loc>
     <lastmod>2019-07-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/reproducibility/</loc>
-    <lastmod>2019-07-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/workflow/</loc>
-    <lastmod>2019-07-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
