@@ -7,10 +7,91 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Markdown</title>
+      <link>https://teachdatascience.com/tags/r-markdown/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code review</title>
+      <link>https://teachdatascience.com/tags/code-review/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/code-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data ingestation</title>
+      <link>https://teachdatascience.com/tags/data-ingestation/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data wrangling</title>
+      <link>https://teachdatascience.com/tags/data-wrangling/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ferpa</title>
+      <link>https://teachdatascience.com/tags/ferpa/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/ferpa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://teachdatascience.com/tags/github/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://teachdatascience.com/tags/html/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>purrr</title>
+      <link>https://teachdatascience.com/tags/purrr/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/purrr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rvest</title>
+      <link>https://teachdatascience.com/tags/rvest/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/rvest/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R</title>
@@ -36,15 +117,6 @@
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/data-checking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data ingestation</title>
-      <link>https://teachdatascience.com/tags/data-ingestation/</link>
-      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
       <description></description>
     </item>
     
@@ -117,15 +189,6 @@
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/portland/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>https://teachdatascience.com/tags/r-markdown/</link>
-      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/r-markdown/</guid>
       <description></description>
     </item>
     
@@ -238,15 +301,6 @@
     </item>
     
     <item>
-      <title>data wrangling</title>
-      <link>https://teachdatascience.com/tags/data-wrangling/</link>
-      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>reticulate</title>
       <link>https://teachdatascience.com/tags/reticulate/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
@@ -333,15 +387,6 @@
       <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/debugging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>https://teachdatascience.com/tags/github/</link>
-      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/github/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Counting commits and peer code review  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, data ingestation, data wrangling, github, ferpa, purrr, rvest, html, code review, ">
+
+
+<meta property="og:title" content="Counting commits and peer code review  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/countingcommits/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_29_countingcommits\countingcommits.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-28T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-28T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="data ingestation">
+    
+<meta property="og:article:tag" content="data wrangling">
+    
+<meta property="og:article:tag" content="github">
+    
+<meta property="og:article:tag" content="ferpa">
+    
+<meta property="og:article:tag" content="purrr">
+    
+<meta property="og:article:tag" content="rvest">
+    
+<meta property="og:article:tag" content="html">
+    
+<meta property="og:article:tag" content="code review">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/countingcommits/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.4" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Counting commits and peer code review
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-28">28 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Amelia McNamara
+  
+  &middot; Read in about 13 min
+  &middot; (2715 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Counting%20commits%20and%20peer%20code%20review&amp;url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f&amp;title=Counting%20commits%20and%20peer%20code%20review" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Counting%20commits%20and%20peer%20code%20review&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://teachdatascience.com/tags/data-ingestation" class="label label-primary">data ingestation</a>
+  
+  <a href="https://teachdatascience.com/tags/data-wrangling" class="label label-primary">data wrangling</a>
+  
+  <a href="https://teachdatascience.com/tags/github" class="label label-primary">github</a>
+  
+  <a href="https://teachdatascience.com/tags/ferpa" class="label label-primary">ferpa</a>
+  
+  <a href="https://teachdatascience.com/tags/purrr" class="label label-primary">purrr</a>
+  
+  <a href="https://teachdatascience.com/tags/rvest" class="label label-primary">rvest</a>
+  
+  <a href="https://teachdatascience.com/tags/html" class="label label-primary">html</a>
+  
+  <a href="https://teachdatascience.com/tags/code-review" class="label label-primary">code review</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<p>Today’s guest entry by <a href="http://amelia.mn">Amelia McNamara</a> (University of St. Thomas) describes a creative way that she tackled a problem in one of her upper level courses.</p>
+<p>One note: The <a href="https://ww2.amstat.org/meetings/jsm/2019/onlineprogram/index.cfm">JSM</a> is underway. Looking for interesting talks? Mine’s excellent <a href="http://www.citizen-statistician.org/2019/07/shiny-for-jsm-2019/">Shiny for JSM 2019</a> app for those of you in Denver.</p>
+<p>This past semester, I taught two sections of a course called <a href="http://www.amelia.mn/STAT360/">Advanced Statistical Software</a> (yes, I’m aware of the acronym. We’re changing the course title soon…). The course was focused on R: we spent the first half of the semester going through <a href="https://r4ds.had.co.nz/">R for Data Science</a> and learning about <strong>doing data science in R</strong>, and the second half reading selections from <a href="https://adv-r.hadley.nz/">Advanced R</a>, and learning about <strong>R as a language.</strong> It was the most computationally-focused class I’ve ever been able to teach, which was fantastic.</p>
+<p>On top of R, I also taught students how to use git and GitHub, and all student work was submitted through private repositories. At the beginning of the semester, 63% of my students said they had never used git before (even though the majority of students were upper-level CS majors), and by the end of the semester everyone could commit, push, pull, manage merge conflicts, and more. I’m so proud of them!</p>
+<div id="private-repositories-for-student-work" class="section level2">
+<h2>Private repositories for student work</h2>
+<p>If you are going to use GitHub in a class, you likely need to generate a number of private repositories for your students to use. This is to avoid violating <a href="https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html">FERPA law</a>, as well as general ethics of not forcing students to put work on the internet that they might not want to share publicly. There are two ways to generate many private repos for class use:</p>
+<ul>
+<li>Follow <a href="https://twitter.com/minebocek">Mine Cetinkaya-Rundel</a> and <a href="https://twitter.com/rundel">Colin Rundel</a>’s <a href="https://rundel.github.io/ghclass/articles/ghclass.html">advice</a>, and generate private repositories on GitHub using the GitHub API, particularly through the <a href="https://github.com/rundel/ghclass">ghclass</a> package the Cetinkaya-Rundels have developed.</li>
+<li>Use GitHub Classroom to generate private repositories through their web interface. For more on this approach, see Jo Hardin’s <a href="https://teachdatascience.com/gitclass/">recent post</a>.</li>
+</ul>
+<p>Whichever approach you choose, you’ll want to <a href="https://education.github.com/teachers">verify yourself as an instructor with GitHub</a> to get additional benefits, including unlimited private repositories (crucial!) and a <a href="https://education.github.community/t/shopping-bags-get-a-github-swag-bag-for-your-classroom/33">swag bag for your classroom</a>.</p>
+</div>
+<div id="aside-on-github-swag" class="section level2">
+<h2>Aside on GitHub swag</h2>
+<p>I chose to use GitHub Classroom, and I asked for a swag bag in advance of my class, so I had lots of goodies for my students. The bag I received came with the following:</p>
+<ul>
+<li>copies of the <a href="https://education.github.com/git-cheat-sheet-education.pdf">git cheatsheet</a> for all my students. (five stars, very useful in case things fail with <a href="https://usethis.r-lib.org/">usethis</a> and we have to go to the terminal to re-sync RStudio and git)</li>
+<li>copies of the <a href="https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf">git flow cheatsheet</a> (pretty useless, I wish they’d stop sending)</li>
+<li>copies of the <a href="https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf">GitHub flavored markdown cheatsheet</a> (slightly useful at the beginning of the semester)</li>
+<li>copies of the <a href="https://cdn.shopify.com/s/files/1/0745/1301/products/robotcomicpic1_1024x1024.jpg">GitHub for robotics comic book</a> (fun, students seem to like)</li>
+<li>some number of GitHub posters (awful, I wish they would stop sending)</li>
+<li>enough <a href="https://github.myshopify.com/collections/stickers">GitHub stickers</a> for all my students to have some choice about which one they want (students who do a particularly good job on an early assignment get first pick, everyone gets a sticker)</li>
+<li>two redemption codes good for <a href="https://github.myshopify.com/collections/shirts">GitHub t-shirts</a></li>
+</ul>
+<p>Of course, with only two t-shirts and more than 50 students, I had to find a way to distribute the shirts. I decided on a whim that I would give them to the student in each section who had the most commits on GitHub over the course of the semester.</p>
+<p>I made this promise to students filled with data hubris, and without verifying it was possible to calculate this. It turns out, calculating the number of commits someone has made over a semester is a little tricky.</p>
+</div>
+<div id="counting-commits" class="section level2">
+<h2>Counting commits</h2>
+<p>GitHub has a <a href="https://developer.github.com/v3/">nice API</a>. If you want to access this API through R, you can use the <a href="https://github.com/r-lib/gh">gh package</a>. However, when I looked into this, it became clear that the API would make it challenging to compute commits per student. The API allows you to find <a href="https://developer.github.com/v3/repos/commits/">commits on a repository</a> but not commits from a particular user. So, if I’d gone down this road I’d have needed to generate a list of repos for each user, and then hit the API with requests for the number of commits on each of those repos. I think this is possible (I’d love to see code solutions if you have them!) but I went a different direction.</p>
+<p>Instead, I realized that if I went a user’s profile website, it said the number of commits they had made directly on the webpage:</p>
+<p><br></p>
+<center>
+<figure>
+<img alt = 'Screenshot of my GitHub profile page, showing 868 commits. Note that this number will be out of date by the time this post is published, because I am-- you guessed it-- tracking my work on the post with git.' width='400' src='https://teachdatascience.com/post/countingcommits/PublicCommitsAmeliaMN.png' />
+</figure>
+</center>
+<p><br></p>
+<p>I realized I could scrape that number from the HTML of each of my students’ profile pages. With GitHub classroom, you can download a roster for your class and get a list of their GitHub usernames, which can be easily converted into URLs. Here is some code to accomplish this. (As a note on style, instead of starting this blogpost with a list of packages, like we typically do in RMarkdown documents, I’ve inserted <code>library()</code> calls into the chunk where that package is first used.)</p>
+<pre class="r"><code>library(readxl)
+
+roster &lt;- read_excel(&quot;~/Downloads/classroom_roster.xls&quot;)
+
+roster &lt;- roster %&gt;%
+  mutate(url = paste0(&quot;https://github.com/&quot;, github_username)) %&gt;%
+  filter(!is.na(group_name))</code></pre>
+<p>For the purposes of this blog post, I’m not going to use my students’ data (remember, FERPA!). So, let’s make a little fake dataset.</p>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.6.1</code></pre>
+<pre class="r"><code>roster &lt;- tibble(url = c(&quot;https://github.com/AmeliaMN&quot;, &quot;https://github.com/hglanz&quot;, &quot;https://github.com/hardin47&quot;, &quot;https://github.com/nicholasjhorton&quot;))</code></pre>
+<p>Now that I have some GitHub URLs, I can use the <a href="http://rvest.tidyverse.org/">rvest package</a> to scrape the HTML pages. We’ll start with an HTML session,</p>
+<pre class="r"><code>library(rvest)
+
+session &lt;- html_session(&quot;https://github.com&quot;)</code></pre>
+<p>This step may seem unnecessary now, but we’ll come back to why a session is needed for this to work in my real problem, rather than this toy data.</p>
+<p>Once we’ve simulated a session in an HTML browser, we can write a function to compute the number of commits for a user. This code starts with a session, jumps to a GitHub URL, and reads the HTML. Then, it grabs a particular HTML node (I used Chrome Developer Tools to help me figure out that I was interested in <code>h2.f4.text-normal.mb-2</code>), extracts the text from that node, strips the whitespace from the number, plucks it out, and parses it as a number (in case the number of commits goes into the thousands, when the string gets formatted with a comma on GitHub).</p>
+<pre class="r"><code>library(readr)
+
+commits &lt;- function(url, session) {
+  session %&gt;%
+    jump_to(url) %&gt;%
+    read_html() %&gt;%
+    html_nodes(&quot;h2.f4.text-normal.mb-2&quot;) %&gt;%
+    html_text() %&gt;%
+    gsub(&quot;^\\s+|\\s+$&quot;, &quot;&quot;, .) %&gt;%
+    pluck(2) %&gt;%
+    parse_number()
+}</code></pre>
+<p>Of course, we could write a <code>for()</code> loop to iterate through the vector of URLs and find those numbers. In fact, that’s what I did while I was hacking my way through this problem at the end of the semester, with my students sending me “hey, who won those t-shirt??” messages on Slack.</p>
+<p>But, I knew that the more efficient and elegant way to do this was through the use of <code>purrr</code>. When I attempted to <a href="https://teachdatascience.com/refactoring">refactor</a> my own code for this blog post, I ran into trouble. Luckily, the gracious <a href="https://www.cwick.co.nz/">Charlotte Wickham</a> came to my rescue!</p>
+<pre class="r"><code>library(purrr)
+
+roster &lt;- roster %&gt;%
+  mutate(commits = map_dbl(url, commits, session = session))</code></pre>
+<p>Here is the crucial detail– that <code>map_dbl()</code> needs to be inside a <code>mutate()</code> command. That’s because it returns “an atomic vector of the indicated type” (in this case, double). To add it to my dataframe, I needed to <code>mutate()</code>. Once we have that done, we can see who made the most commits:</p>
+<pre class="r"><code>roster %&gt;%
+  arrange(desc(commits))</code></pre>
+<pre><code>## # A tibble: 4 x 2
+##   url                                commits
+##   &lt;chr&gt;                                &lt;dbl&gt;
+## 1 https://github.com/nicholasjhorton    1383
+## 2 https://github.com/AmeliaMN            881
+## 3 https://github.com/hardin47            376
+## 4 https://github.com/hglanz              232</code></pre>
+<p>If we were giving away t-shirts based on this, Nick Horton would win!</p>
+<p>I did this same process with my students’ data, and came up with the winners for each class. But, when looking at my data, I realized that counting the number of commits over the entire year wasn’t what I promised students. I actually said I would pick winners based on the commits <strong>during the semester.</strong> This required me to get creative. I realized that those little green boxes that show your GitHub activity actually have data associated with them. So instead of just grabbing the singular number, I could scrape the green boxes. Here is a function that finds those boxes and selects the data associated with them.</p>
+<pre class="r"><code>commits_by_date &lt;- function(url, session) {
+  session %&gt;%
+    jump_to(url) %&gt;%
+    read_html() %&gt;%
+    html_nodes(&quot;rect.day&quot;) %&gt;%
+    html_attrs() %&gt;%
+    map_dfr(as.list) %&gt;%
+    select(count = `data-count`, date = `data-date`) %&gt;%
+    mutate(
+      date = parse_date(date),
+      count = parse_number(count),
+    )
+}</code></pre>
+<p>Once again, this code has been generously refactored by Charlotte (who said something to the effect of “it was fun!” just proving what nerds we all really are). My hacky solution had <code>mutate()</code> commands creating dummy variables to allow me to <code>spread()</code> something that didn’t really make sense. Charlotte was able to insert some more <code>purrr</code> goodness into the function, with that <code>map_dfr(as.list)</code>.</p>
+<p>Now that we have a function to get the data from HTML pages, we can figure out who made the most commits. In my hacky, non-<code>purrr</code> solution, I’d had to do the date filtering inside my <code>for()</code> loop, because I didn’t have a good way to store all the dates for all the students in a good way, and thus needed to do all the computation on a per-student basis. Again, the refactor has made it more elegant.</p>
+<pre class="r"><code>library(tidyr)</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.6.1</code></pre>
+<pre class="r"><code>roster %&gt;%
+  mutate(by_date = map(url, commits_by_date, session = session)) %&gt;%
+  unnest() %&gt;%
+  filter(date &gt; as.Date(&quot;2019-02-04&quot;), date &lt; as.Date(&quot;2019-05-24&quot;)) %&gt;%
+  group_by(url) %&gt;%
+  summarise(total = sum(count)) %&gt;%
+  arrange(desc(total))</code></pre>
+<pre><code>## # A tibble: 4 x 2
+##   url                                total
+##   &lt;chr&gt;                              &lt;dbl&gt;
+## 1 https://github.com/AmeliaMN          697
+## 2 https://github.com/nicholasjhorton   459
+## 3 https://github.com/hardin47           59
+## 4 https://github.com/hglanz             46</code></pre>
+<p>If we go by this method, I would win the t-shirt! (I swear, I didn’t doctor this example just to hypothetically win a GitHub t-shirt.)</p>
+</div>
+<div id="authenticating-on-github" class="section level2">
+<h2>Authenticating on GitHub</h2>
+<p>There is actually one more wrinkle– almost all my students’ commits were in <strong>private repos</strong> in our GitHub Classroom. This means that looking at their profile pages without being logged in doesn’t work. If you ran the above code on my roster, you’d get many students with 0 commits. Again, this wasn’t fair to what I promised my students. To use this code to count commits in private repos (that I have access to), I needed to create a more complex <code>html_session()</code>. If you were authenticating with a site other than GitHub, this code would need to be different, but luckily for me I found <a href="https://github.com/rstudio/webinars/blob/master/32-Web-Scraping/navigation-and-authentication.md">Garrett Grolemund’s example with GitHub logins</a> so I didn’t have to generate the code myself.</p>
+<p>I don’t want to put my GitHub password into this blog post, so I can’t show you the output of this code, and you’re just going to have to take my word for it that this <code>rvest</code> code will also see private GitHub Classroom contributions.</p>
+<pre class="r"><code>session &lt;- html_session(&quot;https://github.com/login&quot;)
+
+login &lt;- session %&gt;%
+  html_node(&quot;form&quot;) %&gt;%
+  html_form() %&gt;%
+  set_values(login = &quot;YourGitHubUsername&quot;, password = &quot;SuperSecureP@ssw0rd&quot;)
+
+
+github &lt;- session %&gt;%
+  submit_form(login, submit = &quot;commit&quot;) %&gt;%
+  read_html()</code></pre>
+</div>
+<div id="so-what" class="section level2">
+<h2>So what?</h2>
+<p>My primary reason for writing this up was to help anyone else who might be searching the web to figure out how to fairly distribute their GitHub swag bag t-shirts.</p>
+<p>But, I can see the nugget of a lesson that could be applied to a future version of my Statistical Software class. Charlotte and I engaged in a sort of code review process. I had written something that worked, but was ugly and inelegant. But, because we both “speak” R, she was able to read and understand my work and consider how to rephrase it. Seeing the refactored code helped me learn more about <code>purrr</code>, because I was steeped in the context of the data.</p>
+<p>I think I could have come to the right solution for the first function and application of <code>map()</code> with a little more work on my own, but the second function and its elegant use of <code>map_dfr(as.list)</code> is something that I could <em>feel</em> on the edge of my consciousness, but I don’t think I would have made it to on my own.</p>
+<p>Could we give this experience to students in data science classes? Nick recently wrote <a href="https://teachdatascience.com/refactoring/">a post about refactoring</a>, which I think could be done by a student on their own work, or by another student in a peer code review. To me, it might be more useful in the code review format, but I’m not sure how it would be structured. Code review does seem to work better when the person reviewing the code is at least slightly more advanced than the person who wrote it. In this case, although I would consider Charlotte and myself to be peers, she’s clearly the <code>purrr</code> master.</p>
+<p>Of course, we can’t somehow rank our students and have them review the code for the person right below them in ability– there’s no objective way to assess “ability” in this way, and what happens to the person at the bottom of the ranking? Would they review the code of the person at the top? A better idea would probably be to pair students of similar ability levels, or simply to randomly assign pairings.</p>
+<p>I also suspect if students were doing peer code review on an assignment where everyone was trying to accomplish the same thing (e.g., generate a number of bootstrap samples), it would be hard for them to escape the easy cognitive route of refactoring their peer’s code to be closer to their own original approach. So, it might be better to have them review code from an assignment where each created something reasonably different (e.g., create a data visualization of your choice from data in the <code>fivethirtyeight</code> package). However, this activity of doing code review on a problem you’re not familiar with (as Charlotte did for me) is a more challenging task.</p>
+<p>I do think reviewing code on a problem with which you aren’t intimately familiar is a worthwhile skill to learn. It makes me think of <a href="https://resources.rstudio.com/rstudio-conf-2019/opening-keynote-day2">Felienne’s keynote</a> at rstudio::conf 2019, where she argued for teaching programming like we teach other literacies, emphasizing reading code as well as writing it. After hearing her talk, I immediately bumped up the amount of code read-aloud I do in my teaching. But most of the code my students read has been written by professionals, or by themselves. I’d love to give them the experience of reading code by their peers! I think I would assess this much like we assess peer review in writing courses, by giving credit for participating rather than grading the actual output.</p>
+<p>What do you think? Have you used peer code review in one of your courses? How did you group students? How did you assess their work?</p>
+</div>
+<div id="bio" class="section level2">
+<h2>Bio</h2>
+<p>This is a guest post by friend of the blog Amelia McNamara. Amelia holds a BA in English and mathematics from Macalester College, and a PhD in statistics from UCLA. She is an assistant professor in the department of Computer &amp; Information Sciences at the University of St Thomas, where she teaches statistics courses. She is active on <a href="https://www.twitter.com/AmeliaMN">twitter</a> and (of course) on <a href="https://www.github.com/AmeliaMN">GitHub</a>. Her website is <a href="https://www.amelia.mn">amelia.mn</a>.</p>
+</div>
+<div id="learn-more" class="section level2">
+<h2>Learn more</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Code_review">Code review</a></li>
+<li><a href="https://resources.rstudio.com/rstudio-conf-2019/opening-keynote-day2">Felienne’s keynote</a></li>
+<li><a href="https://github.com/rstudio/webinars/blob/master/32-Web-Scraping/navigation-and-authentication.md">Garrett Grolemund’s example with GitHub logins</a></li>
+<li><a href="http://www.amelia.mn/STAT360/">Advanced Statistical Software course</a></li>
+<li><a href="https://github.com/rundel/ghclass">ghclass</a></li>
+<li><a href="https://education.github.com/teachers">GitHub for teachers</a></li>
+</ul>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones. However, comments on the blog should be constructive, encouraging, and supportive. We reserve the right to delete comments that violate these guidelines.</p>
+</div>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Counting%20commits%20and%20peer%20code%20review&amp;url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f&amp;title=Counting%20commits%20and%20peer%20code%20review" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Counting%20commits%20and%20peer%20code%20review&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/testthat/" title="Data assertion and checks via testthat">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pycomm/">The Python Community</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/data8/">Data8: The Foundations of Data Science at Berkeley</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reticulate/">reticulate: running Python within RStudio</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/pandas/">pandas: Python data analysis library</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

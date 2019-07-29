@@ -54,6 +54,7 @@ Knowing how to use Python is an important first step to engaging with the softwa
 </figure>
 </center> <br>
 
+* As a data scientist using Python, the [Scientific Stack](https://www.scipy.org/about.html) is indispensable.  Jupyter is one piece, but `NumPy` (numerical computation), `pandas` (data frames, wrangling, etc.), `scikit-learn` (robust machine learning), and `matplotlib` (visualization) make up the rest of the core structure for data scientists.  As a general-purpose language, Python is dependent on third-party packages when it comes to data science applications.
 
 ## Conferences
 
@@ -66,6 +67,7 @@ Knowing how to use Python is an important first step to engaging with the softwa
 </figure>
 </center> <br>
 
+* Scientific Computing with Python, [SciPy2019](https://www.scipy2019.scipy.org/), has unfortunately already passed for 2019, but stay tuned for SciPy 2020 in Austin, TX (July 6-12) for a fantastic event which is heavily data science oriented.
 
 * Many local conferences including:
     - [North Bay Python](https://northbaypython.org/) -- Nov 2-3, 2019
