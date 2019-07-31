@@ -1,0 +1,137 @@
+---
+title: "More cloud computing: data science is not done on a laptop"
+author: "Nicholas Horton"
+date: '2019-07-30'
+output:
+  html_document:
+    df_print: paged
+tags:
+- cloud computing
+- education
+- Amazon web services
+- cluster computing
+- grid computing
+- workflow
+- high performance computing
+- authentication
+- SQL
+- BigQuery
+- Azure
+- Google cloud platform
+- computing
+categories: R
+---
+
+
+
+<p>Previous blog entries have discussed cloud based servers (<a href="https://teachdatascience.com/cloud">RStudio Server</a> and <a href="https://teachdatascience.com/jupyter">JupyterHub</a>) and <a href="https://teachdatascience.com/parallel">parallel/grid/cluster</a> computing. Today we will expand upon these ideas to discuss at a high level how data science students can leverage cloud based tools to undertake their analyses in a flexible manner.</p>
+<p>Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts. We’ve already noted the <a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/">fantastic example</a> that described multiple iterations needed to parse huge amounts of raw DNA sequencing data to undertake analyses for a given set of genetic locations. In <a href="https://hdsr.mitpress.mit.edu/pub/9mdn32tq">“Ambitious data science can be painless”</a> Monajemi et al. describe workflows that take advantage of new software stacks to undertake massive cloud-based experiments. While a few years older, Chamandy et al.’s <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2015.1089790">Teaching statistics at Google scale</a> described three examples where modern data challenges were overcome with creative statistical thinking (see companion report on <a href="https://ai.google/research/pubs/pub43157">Estimating uncertainty for massive data streams</a> ). Finally, the NSF-funded workshop report on <a href="https://dl.acm.org/citation.cfm?id=3233928">“Enabling computer and information science and engineering research and education in the cloud”</a> highlights opportunities as university computing migrates to cloud solutions more and more.</p>
+<p>We also really enjoyed reading the recent <a href="https://www.r-bloggers.com/three-strategies-for-working-with-big-data-in-r/">Three strategies for working with Big Data in R</a> blog post.</p>
+<p>Unfortunately, too few undergraduate students work with massive data streams in existing data science programs. Before entering the workforce, they would benefit from a foundation (or at least some exposure) in cloud computing, even as the specific tools change. How can we prepare them?</p>
+<div id="cloud-computing-at-cmu" class="section level2">
+<h2>Cloud computing at CMU</h2>
+<p><a href="https://www.cs.cmu.edu/~msakr/">Majd Sakr</a> at Carnegie Mellon University has been teaching an innovative course (cross-listed undergraduate and graduate level) on <a href="http://www.cs.cmu.edu/~msakr/15619-s19/">cloud computing</a> with the goal of skill building and problem solving using Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP).</p>
+<blockquote>
+<p>Students will utilize MapReduce, interactive programming using Jupyter Notebooks, and data science libraries to clean, prepare and analyze a large data set. Students will orchestrate the deployment of auto-scaled, load-balanced and fault-tolerant applications using virtual machines (VMs), Docker containers and Kubernetes, as well as serverless computing through Functions as a Service. Students will explore and experiment with different distributed cloud-storage abstractions (distributed file systems and databases) and compare their features, capabilities, applicability and consistency models. In addition, students will develop different analytics applications using batch, iterative and stream processing frameworks.</p>
+</blockquote>
+<p>An attractive feature of the course is that many of the assignments must be completed on two or more cloud environments, as a way for students to learn how to take advantage of these flexible and powerful systems.</p>
+</div>
+<div id="getting-started" class="section level2">
+<h2>Getting started</h2>
+<p>We’ve already discussed how to get started with precursors to larger scale <a href="https://teachdatascience.com/parallel">parallel and grid</a> computing. What are the next steps to explore cloud-based systems? Each of the main cloud providers have active educational outreach programs.</p>
+<ul>
+<li><p><a href="https://edu.google.com/programs/faculty/?modal_active=none">Google Compute Platform</a> allows faculty to apply to receive $100 in GCP credits and $50 per student. Credits can be used in courses, student clubs, and other faculty-sponsored events. (To replicate our example later in this blog, you’ll want to set up an account and request credits.)</p></li>
+<li><p><a href="https://azure.microsoft.com/en-us/education/">Azure for Education</a> provides access for educators to open source content for classes and $200 in Azure credits, plus free services.</p></li>
+<li><p><a href="https://aws.amazon.com/education/awseducate/">Amazon Web Services Educate</a> provides between $75 and $200 in AWS annual credits per educator (depending on membership status) and between $30 and $100 for students.</p></li>
+</ul>
+<p>Our advice is to sign up and start to explore. The world of cloud computing is quickly changing. By gaining experience through investment in time in learning these tools will help instructors provide guidance to their students in use of these modern compuational tools.</p>
+</div>
+<div id="an-example-bigquery-in-googles-gcp" class="section level2">
+<h2>An example: BigQuery in Google’s GCP</h2>
+<p>Our earlier discussion of <a href="https://teachdatascience.com/sql">SQL</a> highlighted the importance of databases and data technologies in data science education. How might one explore larger datasets? Let’s consider an example using GCP (kudos to <a href="https://www.shukryzablah.com">Shukry Zablah</a> for his assistance).</p>
+<p><a href="https://cloud.google.com/bigquery/">BigQuery</a> is Google’s serverless, highly-scalable, cloud data warehouse. A <a href="https://cloud.google.com/bigquery/docs/quickstarts">quickstart</a> document is available which discusses use of the web user interface and the GCP console as well as access through an API interface. The <a href="https://github.com/r-dbi/bigrquery">bigrquery</a> package in R makes it easy to work with data stored in Google BigQuery through queries to BigQuery tables.</p>
+<p>I began by requesting GCP credits (see above) and used the online interface to create a project that I called “Test Project for Blog”. Then I created an RMarkdown file which loaded needed packages.</p>
+<pre class="r"><code>library(dplyr)
+library(bigrquery)
+library(ggplot2)
+library(forcats)
+library(purrr)
+library(readr)</code></pre>
+<pre class="r"><code>projectId &lt;- &quot;bigquery-public-data&quot;  # replace with your own project
+billingId &lt;- &quot;test-project-for-blog&quot; # replace with your own billing ID
+datasetName &lt;- &quot;samples&quot;
+tableName &lt;- &quot;wikipedia&quot;</code></pre>
+<p>BigQuery includes a number of <a href="https://cloud.google.com/bigquery/public-data/">public datasets</a>.
+We are going to analyze the public dataset of the revisions of Wikipedia articles up to April 2010, hosted in GCP BigQuery. The size of the table is 35.69GB. The queries we will run will take only seconds.</p>
+<pre class="r"><code>query &lt;- &quot;SELECT  title, COUNT(title) as n
+          FROM `bigquery-public-data.samples.wikipedia` 
+          GROUP BY title
+          ORDER BY n DESC
+          LIMIT 500&quot;</code></pre>
+<p>For safety, always try to make sure that your queries have the <code>LIMIT</code> set on your queries.</p>
+<pre class="r"><code>mostRevisions_tb &lt;- 
+  bigrquery::bq_project_query(x = billingId, 
+    query = query) #creates temporary table</code></pre>
+<p>When the previous <code>bq_project_query()</code> function is run within RStudio, a connection is made to Google (GCP) and an authentication window will open up in a local browser.</p>
+<p>All the heavy lifting we perform is done on the database end (note that we are billed for it, though the first 1TB of accesses are free). The local machine only receives the data once we try to display it. Right now <code>mostRevisions_tb</code> is just a reference to a temporary table online. The query accessed 7GB of data.</p>
+<p>We can get a copy of the data on our local machine once we are confident that it is what we want.</p>
+<pre class="r"><code>mostRevisions &lt;- bq_table_download(mostRevisions_tb) </code></pre>
+<pre class="r"><code>glimpse(mostRevisions)
+## Observations: 500
+## Variables: 2
+## $ title &lt;chr&gt; &quot;Wikipedia:Administrator intervention against vandalism&quot;...
+## $ n     &lt;int&gt; 643271, 419695, 326337, 257893, 226802, 204469, 191679, ...</code></pre>
+<pre class="r"><code>clean &lt;- mostRevisions %&gt;% 
+  filter(!grepl(&quot;Wikipedia|User|Template|Talk&quot;, title)) %&gt;%
+  mutate(title = fct_reorder(title, n)) %&gt;% #to sort levels
+  glimpse()
+## Observations: 272
+## Variables: 2
+## $ title &lt;fct&gt; George W. Bush, List of World Wrestling Entertainment em...
+## $ n     &lt;int&gt; 43652, 30572, 27433, 23245, 21768, 20814, 20546, 20529, ...</code></pre>
+<p>Let’s plot the top 10 entries.</p>
+<pre class="r"><code>ggplot(clean %&gt;% head(10), aes(x = title, y = n, fill = n)) + 
+  geom_bar(stat = &quot;identity&quot;) + 
+  labs(x = &quot;Article Title&quot;,
+       y = &quot;Number of Revisions&quot;,
+       title = &quot;Most Revised Wikipedia Articles (Up to April 2010)&quot;) +
+  scale_fill_gradient(low = &quot;darkblue&quot;, high = &quot;darkred&quot;, guide = FALSE) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 20, hjust = 1)) </code></pre>
+<p><img src="/post/2019_07_31_Cloud2/cloud2_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>We’ve obviously just scratched the surface here. There are lots of other examples out there to consider replicating in your classroom (e.g., <a href="https://www.mikejohnpage.com/blog/returning-tweets-on-a-schedule-in-r-using-aws-ec2-rds-and-cron/">returning tweets on a schedule</a>). Hopefully you are intrigued enough to request some credits for you and your students and start to explore. Not sure where to begin? Check out the <a href="https://www.youtube.com/playlist?list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL">GCP Essentials Videos</a> series.</p>
+</div>
+<div id="a-shameless-plug-for-casi" class="section level2">
+<h2>A shameless plug for CASI</h2>
+<p>While we’re thinking more broadly about modern methods, we wanted to mention Efron and Hastie’s <a href="https://web.stanford.edu/~hastie/CASI/">Computer Age Statistical Inference: Algorithms, Evidence and Data Science</a> textbook, which is available in hard copy as well as a freely downloadable pdf. At Amherst College we’ve used it as a supplementary text for our STAT495 (Advanced Data Analysis) capstone course, which leverages prerequisites in theoretical statistics, applied statistics, and computation. While the book could be described as “great ideas that Efron and colleagues have come up with over the last few decades”, it provides an overview of key developments in an accessible framework that merits attention. As they describe:</p>
+<blockquote>
+<p>The twenty-first century has seen a breathtaking expansion of statistical methodology, both in scope and in influence. “Big data,” “data science,” and “machine learning” have become familiar terms in the news, as statistical methods are brought to bear upon the enormous data sets of modern science and commerce. How did we get here? And where are we going? This book takes us on a journey through the revolution in data analysis following the introduction of electronic computation in the 1950s.</p>
+</blockquote>
+<blockquote>
+<p>Beginning with classical inferential theories – Bayesian, frequentist, Fisherian – individual chapters take up a series of influential topics: survival analysis, logistic regression, empirical Bayes, the jackknife and bootstrap, random forests, neural networks, Markov chain Monte Carlo, inference after model selection, and dozens more. The book integrates methodology and algorithms with statistical inference, and ends with speculation on the future direction of statistics and data science.</p>
+</blockquote>
+<p>Some of the approaches are classical and don’t require much computation. Others (e.g., the bootstrap) make modest computational demands. A number (e.g., deep learning) require grid or cloud computing.</p>
+<p>In his <a href="https://rviews.rstudio.com/2016/10/28/book-review-computer-age-statistical-inference/">review</a>, Joseph Rickert noted:</p>
+<blockquote>
+<p>My take on Computer Age Statistical Inference is that experienced statisticians will find it helpful to have such a compact summary of twentieth-century statistics, even if they occasionally disagree with the book’s emphasis; students beginning the study of statistics will value the book as a guide to statistical inference that may offset the dangerously mind-numbing experience offered by most introductory statistics textbooks; and the rest of us non-experts interested in the details will enjoy hundreds of hours of pleasurable reading.</p>
+</blockquote>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><p><a href="https://www.r-bloggers.com/three-strategies-for-working-with-big-data-in-r/">Three strategies for working with Big Data in R</a></p></li>
+<li><p><a href="https://edu.google.com/programs/faculty/?modal_active=none">Google Compute Platform</a></p></li>
+<li><p><a href="https://azure.microsoft.com/en-us/education/">Azure for Education</a></p></li>
+<li><p><a href="https://aws.amazon.com/education/awseducate/">Amazon Web Services Educate</a></p></li>
+<li><p><a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2015.1089790">Teaching statistics at Google scale</a></p></li>
+<li><p><a href="https://dl.acm.org/citation.cfm?id=3233928">Enabling computer and information science and engineering research and education in the cloud</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL">GCP Essentials Videos</a></p></li>
+<li><p><a href="https://cloud.google.com/blog/products/data-analytics/query-without-a-credit-card-introducing-bigquery-sandbox">Query with a credit card: BigQuery sandbox</a></p></li>
+<li><p><a href="https://web.stanford.edu/~hastie/CASI/">Computer Age Statistical Inference: Algorithms, Evidence and Data Science</a></p></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones. However, comments on the blog should be constructive, encouraging, and supportive. We reserve the right to delete comments that violate these guidelines.</p>
+</div>
+</div>
