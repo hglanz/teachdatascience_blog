@@ -1,0 +1,38 @@
+---
+title: "Next Steps"
+author: "Jo Hardin"
+date: '2019-08-01'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Studio
+- education
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+To finish out the summer, we leave you with one last blog entry.  The links below provide information about upcoming endeavors related to data science education.  As we become aware of other projects, we are likely to add to the list.  Feel free to check back to see what is new on the horizon.  Thanks for all the great feedback that we've gotten over the summer.  Here's to many future discussions on data science education.
+
+* [Allan Rossman](https://statistics.calpoly.edu/allan-rossman) has started a new blog: [Ask Good Questions](https://askgoodquestions.blog/) where he plans to do just that ... ask good questions!!  We look forward to reading it over the next year!
+
+* [*The Journal of Statistics Education*](https://tandfonline.com/toc/ujse20/current) will be putting together a special issue on [Computing in the Statistics and Data Science Curriculum](https://nhorton.people.amherst.edu/JSEFlier2.pdf).   In 2020 it will have been 10 years since Nolan and Temple Lang's paper *Computing in the Statistics Curriculum*  was published (**The American Statistician** (2010), 64(2):97-107). Ten years after publication, what has changed? What still needs to change? What’s needed to implement curricular shifts?
+
+    - October 1, 2019: request for submission of draft abstracts (https://docs.google.com/forms/d/e/1FAIpQLSfxZKK-aLGy_e6LW8RjXl2jVvubxunAhBmy5o0O9HqyvBeh0g/viewform)
+    - December 1, 2019: call for reviewers
+    - December 15, 2019: deadline for submissions
+    - March 15, 2020: working deadline for initial editorial decisions
+    - July, 2020: working deadline for final revisions
+    - November, 2020: proposed publication date
+
+
+### About this blog 
+
+Each day during the summer of 2019 we added a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry was intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipated that these introductory pieces can be digested daily in 20 or 30 minute chunks that left readers in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you developed a clearer sense for the fast moving landscape of data science. 
+
+We welcome comments on entries.  However, comments on the blog should be constructive, encouraging, and supportive.  We reserve the right to delete comments that violate these guidelines.
+

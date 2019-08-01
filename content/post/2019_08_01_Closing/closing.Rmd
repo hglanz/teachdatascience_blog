@@ -1,0 +1,99 @@
+---
+title: "Closing: A summer of data science education"
+author: "Hunter Glanz, Jo Hardin, and Nick Horton"
+date: '2019-07-31'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R Studio
+- education
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+We don't know about you, but at the end of this project we find ourselves rejuvenated, empowered, and somewhat exhausted.  In writing ten weeks of daily blog entries, we have learned a tremendous amount in terms of technical skills, pedagogical ideas to try in our fall courses, and ways to connect to the amazing & large data science community. 
+
+One of our main goals we set for ourselves this summer was to create a roadmap for faculty development to "ease the learning curve and help busy people incorporate new tools and approaches into their teaching."   As each individual blog reader is in a different spot on the learning curve, we hope that our entries have been useful for both those who are just starting their journeys and those with much more expertise than we have.  As a way of summarizing, we've provided an organization of the entire list of blog entries.  Keep in mind that the blog also has tags for each entry, so feel free to continue to explore the blog in whatever ways are helpful for you.
+
+
+##  What topics did the blog cover?
+
+- data science software
+    - [Getting Started with R Markdown](https://teachdatascience.com/rmarkdown/)
+    - [Projects in RStudio](https://teachdatascience.com/projects/)
+    - [Github for Fun and Profit](https://teachdatascience.com/github/)
+    - [Using GitHub in R](https://teachdatascience.com/githubinr/)
+    - [GitHub Classroom](https://teachdatascience.com/gitclass/)
+    - [RStudio Server Pro and Rstudio.cloud installations](https://teachdatascience.com/cloud/)
+    - [Getting Started with Jupyter and JupyterHub](https://teachdatascience.com/jupyter/)
+- data ingestation 
+    - [Ingesting Data](https://teachdatascience.com/ingestingdata/)
+    - [SQL 101 in R](https://teachdatascience.com/sql/)
+    - [Counting commits and code review](https://teachdatascience.com/countingcommits)
+    - [Writing R data packages](https://teachdatascience.com/datapackage/)
+- data technologies
+    - [Leaflet for mapping](https://teachdatascience.com/leaflet/)
+    - [infer](https://teachdatascience.com/infer/)
+    - [Less Volume More Creativity in R](https://teachdatascience.com/mosaic/)
+    - [Style Guides for Coding](https://teachdatascience.com/styleguide/)
+    - [Creating Tutorials and Lessons in R using learnr](https://teachdatascience.com/learnr/)
+    - [Five Quick Tips for Coding in the Classroom](https://teachdatascience.com/teaching_programming_tips/)
+    - [Teaching refactoring to improve code](https://teachdatascience.com/refactoring/)
+    - [Using CODAP to teach data science](https://teachdatascience.com/codap/)
+    - [reprex: Help me help you](https://teachdatascience.com/reprex/)
+    - [Parallel processing and sparklyr](https://teachdatascience.com/parallel/)
+    - [reticulate: running Python within RStudio](https://teachdatascience.com/reticulate/)
+    - [Writing R data packages](https://teachdatascience.com/datapackage/)
+    - [testthat](https://teachdatascience.com/testthat/)
+    - [Counting commits and code review](https://teachdatascience.com/countingcommits)
+    - [One model to rule them all](https://teachdatascience.com/onemodel)
+    - [Cloud computing redux](https://teachdatascience.com/cloud2)
+- data wrangling
+    - [The Tidyverse](https://teachdatascience.com/tidyverse/)
+    - [pandas](https://teachdatascience.com/pandas/)
+    - [reticulate: running Python within RStudio](https://teachdatascience.com/reticulate/)
+- visualization and exploration
+    - [Teaching Data Visualization](https://teachdatascience.com/dataviz/)
+    - [An Introduction to R Shiny](https://teachdatascience.com/shiny1/)
+    - [Using Shiny in the Classroom](https://teachdatascience.com/shiny2/)
+- communication
+    - [Watching an expert work through a data analysis using the tidyverse](https://teachdatascience.com/screencast/)
+    - [Not So Standard Deviations: not your average data science podcast](https://teachdatascience.com/nssd/)
+    - [Diversity in Data Science & Statistics](https://teachdatascience.com/diversity/)
+    - [Practical Data Science: an introduction to the PeerJ collection](https://teachdatascience.com/peerj/)
+    - [Pair Programming for Data Science and Statistics](https://teachdatascience.com/pairprogramming/)
+    - [Data Science for Good](https://teachdatascience.com/data4good/)
+    - [The Conversation Around p-values](https://teachdatascience.com/pvals/)
+    - [useR!](https://teachdatascience.com/user/)
+    - [data8](https://teachdatascience.com/data8/)
+    - [data100](https://teachdatascience.com/data100/)
+    - [The Python Community](https://teachdatascience.com/pycomm/)
+    - [Algorithmic Bias](https://teachdatascience.com/algbias/)
+- key reports and findings
+    - [Data Science for Undergraduates](https://teachdatascience.com/nasem/)
+    - [Guidelines for Assessment and Instruction in Statistics Education](https://teachdatascience.com/gaise/)
+    - [Roundtable on Data Science Post Secondary Education](https://teachdatascience.com/dsert/)
+    - [Undergraduate Curriculum Guidelines](https://teachdatascience.com/pcmi/)
+    - [Breiman's Two Cultures](https://teachdatascience.com/twocultures/)
+
+##  Who are we?
+
+<img alt = 'Hunter' width='200' src='/post/intro/hunter.jpg' />
+
+**[Hunter Glanz](https://statistics.calpoly.edu/hunter-glanz)** ([twitter](https://twitter.com/hglanz)) is an Assistant Professor of Statistics and Data Science at California Polytechnic State University (Cal Poly, San Luis Obispo). He received a BS in Mathematics and a BS in Statistics from Cal Poly, San Luis Obispo followed by an MA and PhD in Statistics from Boston University. He maintains a passion for machine learning and statistical computing, and enjoys advancing education efforts in these areas. In particular, Cal Poly's courses in R, SAS, and Python give him the opportunity to connect students with exciting data science topics amidst a firm grounding in communication of statistical ideas. Hunter serves on numerous committees and organizations dedicated to delivering cutting edge statistical and data science content to students and professionals alike. In particular, the ASA's DataFest event at UCLA has been an extremely rewarding experience for the teams of Cal Poly students Hunter has had the pleasure of advising.
+
+
+
+<img alt = 'Jo' width='200' src='/post/intro/jo_headshot8.jpg' />
+
+**[Jo Hardin](https://www.pomona.edu/directory/people/johanna-s-hardin)** ([twitter](https://twitter.com/jo_hardin47)) is a statistician at Pomona College who is passionate about statistics and data science education for all.   She received her BA from Pomona College and her MS and PhD degrees from the University of California, Davis.  Two years of working at the Fred Hutchinson Cancer Research Center in Seattle, WA got her hooked into analyzing high throughput data (e.g., simultaneous gene expression of thousands of genes).   Much of her theoretical work has focused on computational approaches to  statistical problems in genetics.  Jo works hard to provide her students with current best practices, including teaching the `tidyverse` to her students in Introduction to Statistics.  Beyond the classroom, she has also worked to engage students in statistics and data science: she has worked on the ASA's curriculum guidelines task force, sent groups of students to UCLA's DataFest competition, and hosted a local StatFest conference.  Through her endeavors, she is working to help undergraduates learn about analyzing data in the wild and gain the skills to be effective and ethical when tasked with making claims from data.  This fall she will be teaching statistics inside the California Rehabilitation Center through the international [Inside-Out Prison Exchange Program](http://www.insideoutcenter.org/).
+
+
+<img alt = 'Nick' width='200' src='/post/intro/nick.jpg' />
+
+**[Nick Horton](https://www.amherst.edu/people/facstaff/nhorton)** ([twitter](https://twitter.com/askdrstats)) is Beitzel Professor of Technology and Society and Professor of Statistics and Data Science at Amherst College. His recent work has focused on statistics and data science education.  Nick is a fellow of the American Statistical Association and the American Association for the Advancement of Science. He chaired the Committee of Presidents of Statistical Societies and the ASA Curriculum Guidelines for Undergraduate Programs in Statistical Science workgroup.  Nick serves on the National Academies Committee for Applied and Theoretical Statistics and is a co-author of the 2018 "[Undergraduate Data Science: Opportunities and Options](https://nas.edu/envisioningds)" consensus study report and the ASA's revised GAISE ([Guidelines for Assessment and Instruction in Statistics Education](https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx)) College report.

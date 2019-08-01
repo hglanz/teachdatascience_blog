@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://teachdatascience.com/nextsteps/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/post/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/r-studio/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://teachdatascience.com/sv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://teachdatascience.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/education/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/closing/</loc>
+    <lastmod>2019-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/amazon-web-services/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -32,37 +82,9 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/sql/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv"
-                href="https://teachdatascience.com/sv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://teachdatascience.com/"
-                />
   </url>
   
   <url>
@@ -85,12 +107,6 @@
   
   <url>
     <loc>https://teachdatascience.com/tags/computing/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/education/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

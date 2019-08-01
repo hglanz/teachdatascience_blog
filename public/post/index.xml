@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Next Steps</title>
+      <link>https://teachdatascience.com/nextsteps/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/nextsteps/</guid>
+      <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we’ve gotten over the summer. Here’s to many future discussions on data science education.</description>
+    </item>
+    
+    <item>
+      <title>Closing: A summer of data science education</title>
+      <link>https://teachdatascience.com/closing/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/closing/</guid>
+      <description>We don’t know about you, but at the end of this project we find ourselves rejuvenated, empowered, and somewhat exhausted. In writing ten weeks of daily blog entries, we have learned a tremendous amount in terms of technical skills, pedagogical ideas to try in our fall courses, and ways to connect to the amazing &amp;amp; large data science community.
+One of our main goals we set for ourselves this summer was to create a roadmap for faculty development to “ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+    </item>
     
     <item>
       <title>More cloud computing: data science is not done on a laptop</title>

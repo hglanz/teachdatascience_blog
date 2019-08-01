@@ -252,7 +252,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 636
+## node of a socket cluster on host &#39;localhost&#39; with pid 42224
 
 stopCluster(cl)
 cl[[1]]
@@ -272,13 +272,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 17.00474
+## [1] 63.66075
 ## 
 ## [[2]]
-## [1] 42.10669
+## [1] 76.9543
 ## 
 ## [[3]]
-## [1] 10.56508
+## [1] 4.927445
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -291,7 +291,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1]  25.06197  27.29239 225.39934
+## [1] 15.569432  9.722850  8.483686
 
 stopCluster(cl)</code></pre>
 </div>
@@ -453,6 +453,14 @@ spark_disconnect(sc)
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/closing/">Closing: A summer of data science education</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/cloud2/">More cloud computing: data science is not done on a laptop</a>
           </li>
         
@@ -484,14 +492,6 @@ spark_disconnect(sc)
           <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
           </li>
         
-          <li>
-          <a href="https://teachdatascience.com/pycomm/">The Python Community</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/data8/">Data8: The Foundations of Data Science at Berkeley</a>
-          </li>
-        
         </ul>
       </div>
     </div>
@@ -504,7 +504,7 @@ spark_disconnect(sc)
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
           </ul>
         </div>
       </div>

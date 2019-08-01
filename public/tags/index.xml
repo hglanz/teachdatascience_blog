@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Studio</title>
+      <link>https://teachdatascience.com/tags/r-studio/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/r-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://teachdatascience.com/tags/education/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/education/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Amazon web services</title>
@@ -90,15 +108,6 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>education</title>
-      <link>https://teachdatascience.com/tags/education/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/education/</guid>
       <description></description>
     </item>
     
