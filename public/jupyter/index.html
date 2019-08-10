@@ -49,7 +49,7 @@
 <link rel="canonical" href="https://teachdatascience.com/jupyter/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
-<meta name="generator" content="Hugo 0.55.4" />
+<meta name="generator" content="Hugo 0.55.5" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -217,7 +217,10 @@
 
 <p>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.</p>
 <center>
-<p><img src="https://teachdatascience.com/post/jupyter/250px-Jupyter_logo.svg.png" /></p>
+<div class="figure">
+<img src="https://teachdatascience.com/post/jupyter/250px-Jupyter_logo.svg.png" />
+
+</div>
 </center>
 <div id="what-is-project-jupyter" class="section level2">
 <h2>What is Project Jupyter?</h2>
@@ -227,23 +230,38 @@
 <h3>Working with Jupyter</h3>
 <p>Installing Jupyter is very easy with the few short steps outlined on the project’s <a href="https://jupyter.org/install">install page</a>. The base installation will provide access to the Jupyter Notebook interface for use with Python, to just create traditional text files, or to open a new terminal:</p>
 <center>
-<p><img src="https://teachdatascience.com/post/jupyter/jupyterhome_newnb.png" /></p>
+<div class="figure">
+<img src="https://teachdatascience.com/post/jupyter/jupyterhome_newnb.png" />
+
+</div>
 </center>
 <p>You will notice in the screenshot above that there is an option to start a new Notebook using <code>R</code>. We’ll get to this more in a bit. For now, observe the format of a Python kernel in a fresh Jupyter Notebook:</p>
 <center>
-<p><img src="https://teachdatascience.com/post/jupyter/jupyter_newpythonnb.png" /></p>
+<div class="figure">
+<img src="https://teachdatascience.com/post/jupyter/jupyter_newpythonnb.png" />
+
+</div>
 </center>
 <p>In Jupyter, the pieces are called “cells” as opposed to the “chunks” that exist in R Markdown, and a new Notebook is initialized with a single code cell. Cells can contain different types of things, most notably live code or narrative text. The “type” of the cell needs to be specified (note the small dropdown menu at the top center of the new Notebook screenshot that says “Code”) so that Jupyter knows how to treat (run or render) the contents of that cell. In its most raw, un-executed form a Notebook would look like the following:</p>
 <center>
-<p><img src="https://teachdatascience.com/post/jupyter/rawpythonnb.png" /></p>
+<div class="figure">
+<img src="https://teachdatascience.com/post/jupyter/rawpythonnb.png" />
+
+</div>
 </center>
 <p>The Jupyter Notebook should be reminiscent of an R Markdown document. The first cell is text written in a markdown cell which supports plain text, markdown syntax, and even LaTeX syntax. The second cell is a code cell with a canonical first bit of code. Neither cell has been run at this point. There are dropdown menus and buttons at the top to run cells individually or many in sequence, but you can always execute the selected cell by hitting Ctrl + Enter. The first notable difference between Jupyter Notebooks and R Markdown documents is the ability to render markdown cells on-the-fly as opposed to needing to “Preview” or knit the whole document. Observe the result of “running” the first cell, but not the second:</p>
 <center>
-<p><img src="https://teachdatascience.com/post/jupyter/markdownpythonnb.png" /></p>
+<div class="figure">
+<img src="https://teachdatascience.com/post/jupyter/markdownpythonnb.png" />
+
+</div>
 </center>
 <p>The heading and text are now appearing as if part of a “finished” HTML document, and we no longer see the raw cell structure. After running the second cell as well:</p>
 <center>
-<p><img src="https://teachdatascience.com/post/jupyter/executedpythonnb.png" /></p>
+<div class="figure">
+<img src="https://teachdatascience.com/post/jupyter/executedpythonnb.png" />
+
+</div>
 </center>
 <p>Similar to R Markdown (Notebook) files, the code cells produce output inline in the compiled document. The arrow buttons at the top of Jupyter Notebooks, however, allow for the user to rearrange cells at will without cumbersome copy-and-pasting.</p>
 <p>Needless to say, Jupyter Notebooks provide an attractive and flexible alternative to RStudio to undertake interactive and reproducible data science work. They are an instinctive choice for many different projects when working in Python and many other languages including <code>R</code>, as you saw above. The choice between Jupyter and other tools such as R Markdown often depend on project specific details so make sure to check them all out so that you can choose what’s right for you.</p>
@@ -256,7 +274,10 @@
 </ul>
 <p>As a note on this last point, Jupyter Notebooks (or the output of them) can be downloaded in a number of different formats:</p>
 <center>
-<p><img src="https://teachdatascience.com/post/jupyter/jupyternb_savetypes.png" /></p>
+<div class="figure">
+<img src="https://teachdatascience.com/post/jupyter/jupyternb_savetypes.png" />
+
+</div>
 </center>
 </div>
 </div>
@@ -270,10 +291,10 @@
 <div id="learn-more" class="section level2">
 <h2>Learn more</h2>
 <ul>
-<li><p>Project Jupyter Home: <a href="https://jupyter.org/index.html">https://jupyter.org/index.html</a></p></li>
-<li><p>JupyterHub Home: <a href="https://jupyter.org/hub">https://jupyter.org/hub</a></p></li>
-<li><p>Data science with Julia: <a href="https://www.crcpress.com/Data-Science-with-Julia/McNicholas-Tait/p/book/9781138499980">https://www.crcpress.com/Data-Science-with-Julia/McNicholas-Tait/p/book/9781138499980</a></p></li>
-<li><p>Modularity and extensibility of Jupyter: <a href="https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54">https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54</a></p></li>
+<li><p>Project Jupyter Home: <a href="https://jupyter.org/index.html" class="uri">https://jupyter.org/index.html</a></p></li>
+<li><p>JupyterHub Home: <a href="https://jupyter.org/hub" class="uri">https://jupyter.org/hub</a></p></li>
+<li><p>Data science with Julia: <a href="https://www.crcpress.com/Data-Science-with-Julia/McNicholas-Tait/p/book/9781138499980" class="uri">https://www.crcpress.com/Data-Science-with-Julia/McNicholas-Tait/p/book/9781138499980</a></p></li>
+<li><p>Modularity and extensibility of Jupyter: <a href="https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54" class="uri">https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54</a></p></li>
 <li><p><a href="https://data.berkeley.edu/news/jupyterhub-journey-starting-small-and-scaling">The Jupyterhub Journey: Starting Small and Scaling Up</a> A great video and blog about the JupyterHub story and use in UC Berkeley’s Division of Data Science and Information.</p></li>
 </ul>
 <div id="about-this-blog" class="section level3">

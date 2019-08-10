@@ -1,32 +1,30 @@
 +++
-date = "2019-03-29"
+date = "2019-08-01"
 draft = false
 +++
 
 
 ## Why another Data Science Education blog?
 
-This is an exciting time to be teaching students how to extract meaning from data.  Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with.  In this blog, we're hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.  
+This is an exciting time to be teaching students how to extract meaning from data.  Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with.  In this blog, we were hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.  
 
-Each day during the summer we intend to add a new entry on a given topic, along with a short overview of *why* it is interesting and *how* it can be applied to teaching.  We intend to make the entries short, succinct, and easy to comprehend with the goal that they will motivate you to dive deeper.  We hope that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes.  We'll include next steps and additional readings to allow you explore more as you have interest and time.  Our focus will be the R environment (e.g., tidyverse and RStudio) with occasional mention of other relevant tools.
+Each day during the 2019 summer we added a new entry on a given topic, along with a short overview of *why* it is interesting and *how* it can be applied to teaching.  We intended to make the entries short, succinct, and easy to comprehend with the goal that they will motivate you to dive deeper.  We hope that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes.  We included next steps and additional readings to allow you to explore more as you have interest and time.  Our focus was the R environment (e.g., tidyverse and RStudio) with occasional mention of other relevant tools.
 
 
 There is definitely an art to googling well that not everyone (including the three of us) can master. The data science field is also moving quickly, so answers from useful sites such as [StackOverflow](https://stackoverflow.com) may be quickly out of date.  Our ambition is that by reading the short overview entries, a variety of instructors will take the opportunity to learn more about the exciting developments in data science and statistics.  
 
-To get started we plan to blog daily during summer 2019 starting on Tuesday, May 28th.  We hope that you bookmark the site and check in regularly.  Want a reminder?  Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+We hope that you bookmark the site and check in regularly.  Want a reminder about any future updates?  Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
 
-##  What topics will the blog cover?
+##  What topics does the blog cover?
 
-We plan to cover the entire data science analysis cycle:
+We aimed to cover the entire data science analysis cycle:
 
 - data ingestation, data technologies, and data wrangling
 - visualization and exploration
 - workflow and reproducibility
 - communication and reporting
 
-as well as providing overviews of key reports and findings.  
-
-We welcome suggestions for topics: don't hesitate to share your ideas (guest entries are also welcomed!)
+as well as provide overviews of key reports and findings.  
 
 ##  Who are we?
 

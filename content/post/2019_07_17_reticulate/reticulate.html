@@ -21,7 +21,7 @@ categories: R, Python
 <pre class="r"><code>knitr::opts_chunk$set(collapse = TRUE)
 library(reticulate)
 use_virtualenv(&quot;r-reticulate&quot;)
-use_python(&quot;C:/Users/Maddie/Anaconda3&quot;, required = TRUE)
+use_python(&quot;F:/Anaconda3&quot;, required = TRUE)
 py_config()</code></pre>
 <div id="teaching-python-and-r" class="section level2">
 <h2>Teaching Python and R</h2>
@@ -147,11 +147,11 @@ flights %&gt;% skimr::skim()
 ##  n obs: 12590 
 ##  n variables: 3 
 ## 
-## -- Variable type:character -----------------------------------------------------------------------
+## -- Variable type:character --------------------------------------------------------------------------------
 ##  variable missing complete     n min max empty n_unique
 ##   carrier       0    12590 12590   2   2     0        2
 ## 
-## -- Variable type:numeric -------------------------------------------------------------------------
+## -- Variable type:numeric ----------------------------------------------------------------------------------
 ##   variable missing complete     n  mean    sd  p0 p25 p50 p75 p100
 ##  arr_delay       0    12590 12590  2.92 44.89 -62 -22 -10  10  448
 ##  dep_delay       0    12590 12590 11.71 39.41 -20  -6  -2   9  466

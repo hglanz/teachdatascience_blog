@@ -41,7 +41,7 @@ The course combines three perspectives: inferential thinking, computational thin
       
       <guid>https://teachdatascience.com/reticulate/</guid>
       <description>For many statisticians, their go-to software language is R. However, there is no doubt that Python is an equally important language in data science. Indeed, the Jupyter blog entry from earlier this week described the capacities of writing Python code (as well as R and Julia and other environments) using interactive Jupyter notebooks.
-knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;C:/Users/Maddie/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
+knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;F:/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
     </item>
     
   </channel>

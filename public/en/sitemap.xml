@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://teachdatascience.com/about/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/nextsteps/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
@@ -770,11 +775,6 @@
   <url>
     <loc>https://teachdatascience.com/intro/</loc>
     <lastmod>2019-05-21T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/about/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>

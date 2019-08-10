@@ -59,7 +59,7 @@
 <link rel="canonical" href="https://teachdatascience.com/countingcommits/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://teachdatascience.com/favicon.png">
-<meta name="generator" content="Hugo 0.55.4" />
+<meta name="generator" content="Hugo 0.55.5" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -176,7 +176,7 @@
     &middot; by Amelia McNamara
   
   &middot; Read in about 13 min
-  &middot; (2715 words)
+  &middot; (2695 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
@@ -283,9 +283,9 @@ roster &lt;- roster %&gt;%
   mutate(url = paste0(&quot;https://github.com/&quot;, github_username)) %&gt;%
   filter(!is.na(group_name))</code></pre>
 <p>For the purposes of this blog post, I’m not going to use my students’ data (remember, FERPA!). So, let’s make a little fake dataset.</p>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.6.1</code></pre>
-<pre class="r"><code>roster &lt;- tibble(url = c(&quot;https://github.com/AmeliaMN&quot;, &quot;https://github.com/hglanz&quot;, &quot;https://github.com/hardin47&quot;, &quot;https://github.com/nicholasjhorton&quot;))</code></pre>
+<pre class="r"><code>library(dplyr)
+
+roster &lt;- tibble(url = c(&quot;https://github.com/AmeliaMN&quot;, &quot;https://github.com/hglanz&quot;, &quot;https://github.com/hardin47&quot;, &quot;https://github.com/nicholasjhorton&quot;))</code></pre>
 <p>Now that I have some GitHub URLs, I can use the <a href="http://rvest.tidyverse.org/">rvest package</a> to scrape the HTML pages. We’ll start with an HTML session,</p>
 <pre class="r"><code>library(rvest)
 
@@ -316,10 +316,10 @@ roster &lt;- roster %&gt;%
 <pre><code>## # A tibble: 4 x 2
 ##   url                                commits
 ##   &lt;chr&gt;                                &lt;dbl&gt;
-## 1 https://github.com/nicholasjhorton    1401
-## 2 https://github.com/AmeliaMN            882
+## 1 https://github.com/nicholasjhorton    1419
+## 2 https://github.com/AmeliaMN            886
 ## 3 https://github.com/hardin47            376
-## 4 https://github.com/hglanz              235</code></pre>
+## 4 https://github.com/hglanz              236</code></pre>
 <p>If we were giving away t-shirts based on this, Nick Horton would win!</p>
 <p>I did this same process with my students’ data, and came up with the winners for each class. But, when looking at my data, I realized that counting the number of commits over the entire year wasn’t what I promised students. I actually said I would pick winners based on the commits <strong>during the semester.</strong> This required me to get creative. I realized that those little green boxes that show your GitHub activity actually have data associated with them. So instead of just grabbing the singular number, I could scrape the green boxes. Here is a function that finds those boxes and selects the data associated with them.</p>
 <pre class="r"><code>commits_by_date &lt;- function(url, session) {
@@ -337,9 +337,8 @@ roster &lt;- roster %&gt;%
 }</code></pre>
 <p>Once again, this code has been generously refactored by Charlotte (who said something to the effect of “it was fun!” just proving what nerds we all really are). My hacky solution had <code>mutate()</code> commands creating dummy variables to allow me to <code>spread()</code> something that didn’t really make sense. Charlotte was able to insert some more <code>purrr</code> goodness into the function, with that <code>map_dfr(as.list)</code>.</p>
 <p>Now that we have a function to get the data from HTML pages, we can figure out who made the most commits. In my hacky, non-<code>purrr</code> solution, I’d had to do the date filtering inside my <code>for()</code> loop, because I didn’t have a good way to store all the dates for all the students in a good way, and thus needed to do all the computation on a per-student basis. Again, the refactor has made it more elegant.</p>
-<pre class="r"><code>library(tidyr)</code></pre>
-<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.6.1</code></pre>
-<pre class="r"><code>roster %&gt;%
+<pre class="r"><code>library(tidyr)
+roster %&gt;%
   mutate(by_date = map(url, commits_by_date, session = session)) %&gt;%
   unnest() %&gt;%
   filter(date &gt; as.Date(&quot;2019-02-04&quot;), date &lt; as.Date(&quot;2019-05-24&quot;)) %&gt;%
