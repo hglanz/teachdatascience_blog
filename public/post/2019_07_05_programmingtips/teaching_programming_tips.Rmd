@@ -305,7 +305,7 @@ Most simply select their own name, and follow all the steps in my example.  But 
 Some took it a step further and got creative with their name choices and plot design.  Here is my favorite example, from a student who had never seen a line of code before entering my class:
 
 ```{r, echo = FALSE, eval = TRUE}
-beatles <- read.csv("https://www.dropbox.com/s/47nhyh1ghfenhlv/beatles.csv?dl=1") %>%
+beatles <- read.csv("beatles.csv") %>%
   filter(Gender == "M") %>%
   mutate(
     Name = factor(Name, levels = c("John", "Paul", "George", "Ringo"))

@@ -147,17 +147,14 @@ flights %&gt;% skimr::skim()
 ##  n obs: 12590 
 ##  n variables: 3 
 ## 
-## -- Variable type:character --------------------------------------------------------------------------------
+## -- Variable type:character ---------------------------------------------------------------------
 ##  variable missing complete     n min max empty n_unique
 ##   carrier       0    12590 12590   2   2     0        2
 ## 
-## -- Variable type:numeric ----------------------------------------------------------------------------------
-##   variable missing complete     n  mean    sd  p0 p25 p50 p75 p100
-##  arr_delay       0    12590 12590  2.92 44.89 -62 -22 -10  10  448
-##  dep_delay       0    12590 12590 11.71 39.41 -20  -6  -2   9  466
-##      hist
-##  &lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;
-##  &lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</code></pre>
+## -- Variable type:numeric -----------------------------------------------------------------------
+##   variable missing complete     n  mean    sd  p0 p25 p50 p75 p100     hist
+##  arr_delay       0    12590 12590  2.92 44.89 -62 -22 -10  10  448 &lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;
+##  dep_delay       0    12590 12590 11.71 39.41 -20  -6  -2   9  466 &lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</code></pre>
 <pre class="r"><code>flights &lt;- readr::read_csv(&quot;flights.csv&quot;)
 flights %&gt;%
   dplyr::select(carrier, dep_delay, arr_delay) %&gt;%

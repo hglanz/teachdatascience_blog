@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Keeping Busy with Data Science</title>
+      <link>https://teachdatascience.com/keepbusy/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/keepbusy/</guid>
+      <description>It has become increasingly clear that many college students have found themselves without summer plans. Unfortunately, this blog entry is not a list of possible employment opportunities. Instead, it is a compilation of statistics and data science projects to enhance a summer spent socially distant.
+The list below represents opportunities at a variety of levels. If you are just beginning or quite advanced, there are many ideas for you.</description>
+    </item>
     
     <item>
       <title>Next Steps</title>
@@ -63,6 +73,17 @@ This past semester, I taught two sections of a course called Advanced Statistica
     </item>
     
     <item>
+      <title>Counting commits and peer code review</title>
+      <link>https://teachdatascience.com/countingcommits.knit/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/countingcommits.knit/</guid>
+      <description>Today&amp;rsquo;s guest entry by Amelia McNamara (University of St. Thomas) describes a creative way that she tackled a problem in one of her upper level courses.
+One note: The JSM is underway. Looking for interesting talks? Mine&amp;rsquo;s excellent Shiny for JSM 2019 app for those of you in Denver.
+This past semester, I taught two sections of a course called Advanced Statistical Software (yes, I&amp;rsquo;m aware of the acronym. We&amp;rsquo;re changing the course title soon&amp;hellip;).</description>
+    </item>
+    
+    <item>
       <title>Data assertion and checks via testthat</title>
       <link>https://teachdatascience.com/testthat/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
@@ -103,6 +124,16 @@ one that assumes a stochastic data modelone that uses an algorithmic model (and
       <guid>https://teachdatascience.com/datapackage/</guid>
       <description>Today’s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
 Sharing data with studentsThe beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can’t even load the data, then my first impressions of R are not going to be too great.</description>
+    </item>
+    
+    <item>
+      <title>Creating R data packages for teaching</title>
+      <link>https://teachdatascience.com/datapackage.knit/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/datapackage.knit/</guid>
+      <description>Today&amp;rsquo;s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
+Sharing data with students The beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can&amp;rsquo;t even load the data, then my first impressions of R are not going to be too great.</description>
     </item>
     
     <item>
@@ -169,7 +200,7 @@ In short, pandas offers some new and some improved Python tools for doing the fo
       
       <guid>https://teachdatascience.com/jupyter/</guid>
       <description>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
-What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
+What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
     </item>
     
     <item>
@@ -274,7 +305,7 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny2/</guid>
-      <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
+      <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
     </item>
     
     <item>
@@ -283,7 +314,7 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny1/</guid>
-      <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
+      <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
@@ -322,7 +353,7 @@ keep it simple (discussed in the “Less Volume, More Creativity” blog entry)
       <guid>https://teachdatascience.com/pairprogramming/</guid>
       <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
 Photo credit: Esti Alvarez
-Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
+Pair programming has been thought to lead to better code, more enjoyable coding, andhigher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
     </item>
     
     <item>
@@ -332,7 +363,7 @@ Photo credit: Esti Alvarez
       
       <guid>https://teachdatascience.com/peerj/</guid>
       <description>In 2017, Jenny Bryan and Hadley Wickham published the “Practical Data Science for Stats” PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
-The “Practical Data Science for Stats” Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
+The “Practical Data Science for Stats” Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
 There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
     </item>
     
@@ -413,8 +444,8 @@ Here’s a simple example where data from higher education institutions from wit
       <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/dsert/</guid>
-      <description>The National Academies of Science, Engineering, and Medicine Roundtable on Data Science Postsecondary Education was convened in 2016 to work to develop a coherent vision for the emerging field of data science. The Roundtable, which consists of representatives from industry, government, and academia meets quarterly for a day to discuss best practices, ways to support the growing community, and approaches to help advance data science education.
-Full information about the roundtable including narrative summaries of past meetings can be found at https://nas.</description>
+      <description>The National Academies of Science, Engineering, and MedicineRoundtable on Data Science Postsecondary Education was convened in 2016 to work to develop a coherent vision for the emerging field of data science. The Roundtable, which consists of representatives from industry, government, and academia meets quarterly for a day to discuss best practices, ways to support the growing community, and approaches to help advance data science education.
+Full information about the roundtable including narrative summaries of past meetings can be found at https://nas.</description>
     </item>
     
     <item>
@@ -432,7 +463,7 @@ Here’s a simple example where data from higher education institutions from wit
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/gaise/</guid>
-      <description>The American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
+      <description>The American Statistical Association has placeda priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
 Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
     </item>
     
@@ -462,7 +493,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
-      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

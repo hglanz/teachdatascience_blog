@@ -88,7 +88,8 @@ eightobs
 ## 12    Lewis_2015 114716</code></pre>
 <div id="accessing-a-database-using-dplyr-commands" class="section level2">
 <h2>Accessing a database using dplyr commands</h2>
-<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
+<p>Alternatively, a connection can be made to the server by creating a series of <code>dplyr</code> tbl
+objects. Connecting with familiar <code>dplyr</code> syntax is attractive because, as <a href="https://dbplyr.tidyverse.org/articles/dbplyr.html">Hadley Wickham</a> has noted, SQL and R have similar syntax (but sufficiently different to be confusing).</p>
 <p>The setup process looks similar.</p>
 <pre class="r"><code>db &lt;- src_mysql(dbname = &quot;wai&quot;, host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
           password=&quot;smith_waiDB&quot;)
@@ -101,8 +102,7 @@ Subject &lt;- tbl(db, &quot;Subject&quot;)</code></pre>
 <p>We explore the <code>PI_Info</code> table using the <code>collect()</code> function used to force computation on the database (and return the results). One attractive aspect of database systems is that they feature <a href="https://en.wikipedia.org/wiki/Lazy_evaluation"><em>lazy evaluation</em></a>, where computation is optimized and postponed as long as possible.</p>
 <pre class="r"><code>PI_Info  %&gt;% summarise(total = n())
 ## # Source:   lazy query [?? x 1]
-## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log
-## #   [waiuser@scidb.smith.edu:/wai]
+## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log [waiuser@scidb.smith.edu:/wai]
 ##   total
 ##   &lt;dbl&gt;
 ## 1    12
@@ -203,8 +203,7 @@ PI_Info %&gt;% select(-Email) %&gt;% collect() %&gt;% data.frame()
 <p>Similarly, we can explore the <code>Subjects</code> table.</p>
 <pre class="r"><code>Subject  %&gt;% summarise(total = n())
 ## # Source:   lazy query [?? x 1]
-## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log
-## #   [waiuser@scidb.smith.edu:/wai]
+## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log [waiuser@scidb.smith.edu:/wai]
 ##   total
 ##   &lt;dbl&gt;
 ## 1   640
@@ -227,8 +226,7 @@ Subject %&gt;% collect()  # be careful with collect() with large tables!
 <p>Let’s explore the <code>Measurements</code> table.</p>
 <pre class="r"><code>Measurements %&gt;% summarise(total = n())
 ## # Source:   lazy query [?? x 1]
-## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log
-## #   [waiuser@scidb.smith.edu:/wai]
+## # Database: mysql 5.5.58-0ubuntu0.14.04.1-log [waiuser@scidb.smith.edu:/wai]
 ##    total
 ##    &lt;dbl&gt;
 ## 1 286774</code></pre>

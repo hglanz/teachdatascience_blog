@@ -252,7 +252,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 12168
+## node of a socket cluster on host &#39;localhost&#39; with pid 5296
 
 stopCluster(cl)
 cl[[1]]
@@ -272,13 +272,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 7.431638
+## [1] 108.7489
 ## 
 ## [[2]]
-## [1] 22.15462
+## [1] 165.7668
 ## 
 ## [[3]]
-## [1] 78.12245
+## [1] 4.76126
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -291,7 +291,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 17.86656 81.20031 55.00936
+## [1] 44.055802  6.826559  5.765902
 
 stopCluster(cl)</code></pre>
 </div>
@@ -453,6 +453,10 @@ spark_disconnect(sc)
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
           </li>
         
@@ -473,6 +477,10 @@ spark_disconnect(sc)
           </li>
         
           <li>
+          <a href="https://teachdatascience.com/countingcommits.knit/">Counting commits and peer code review</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
           </li>
         
@@ -482,14 +490,6 @@ spark_disconnect(sc)
         
           <li>
           <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
           </li>
         
         </ul>
@@ -504,7 +504,7 @@ spark_disconnect(sc)
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
           </ul>
         </div>
       </div>

@@ -225,7 +225,8 @@
 favstats(~ drugrisk, data = HELPmiss)
 ##  min Q1 median Q3 max     mean       sd   n missing
 ##    0  0      0  1  21 1.869658 4.313479 468       2</code></pre>
-<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for the <code>drugrisk</code> variable.</p>
+<p>The <code>favstats()</code> function takes a formula as an argument to display the summary statistics for
+the <code>drugrisk</code> variable.</p>
 <p>Alternative the <code>df_stats()</code> function provides a similar display (but returns a dataframe).</p>
 <pre class="r"><code>df_stats(~ drugrisk, data = HELPmiss)
 ##   min Q1 median Q3 max     mean       sd   n missing
@@ -255,7 +256,8 @@ favstats(~ drugrisk, data = HELPmiss)
 <p>The key insight is the dramatic skew for the risk score: describing the distribution with means (as done with the <code>lm()</code> call) may be misleading.</p>
 <div id="a-more-complicated-example" class="section level3">
 <h3>A more complicated example</h3>
-<p>What if we were also interested in a third variable? The formula interface accommodates <em>multivariate thinking</em>.</p>
+<p>What if we were also interested in a third variable? The formula interface accommodates
+<em>multivariate thinking</em>.</p>
 <pre class="r"><code>gf_point(pcs ~ drugrisk, data = HELPmiss, color = ~ homeless) %&gt;%
   gf_lm()</code></pre>
 <p><img src="https://teachdatascience.com/post/2019_06_18_Mosaic/mosaic_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
@@ -271,7 +273,8 @@ favstats(~ drugrisk, data = HELPmiss)
 </div>
 <div id="replicating-the-above-analyses-without-mosaic" class="section level3">
 <h3>Replicating the above analyses without mosaic</h3>
-<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code> for graphics. But it’s more complicated to have beginning students run commands like:</p>
+<p>It’s certainly possible to undertake the same analysis using base R or using <code>ggplot2</code>
+for graphics. But it’s more complicated to have beginning students run commands like:</p>
 <pre class="r"><code>tapply(HELPmiss$drugrisk, HELPmiss$homeless, mean)
 ##   housed homeless 
 ##       NA       NA</code></pre>
@@ -402,6 +405,10 @@ favstats(~ drugrisk, data = HELPmiss)
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
           </li>
         
@@ -422,6 +429,10 @@ favstats(~ drugrisk, data = HELPmiss)
           </li>
         
           <li>
+          <a href="https://teachdatascience.com/countingcommits.knit/">Counting commits and peer code review</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
           </li>
         
@@ -431,14 +442,6 @@ favstats(~ drugrisk, data = HELPmiss)
         
           <li>
           <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
           </li>
         
         </ul>
@@ -453,7 +456,7 @@ favstats(~ drugrisk, data = HELPmiss)
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
           </ul>
         </div>
       </div>

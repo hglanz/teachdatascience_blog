@@ -24,6 +24,17 @@ This past semester, I taught two sections of a course called Advanced Statistica
     </item>
     
     <item>
+      <title>Counting commits and peer code review</title>
+      <link>https://teachdatascience.com/countingcommits.knit/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/countingcommits.knit/</guid>
+      <description>Today&amp;rsquo;s guest entry by Amelia McNamara (University of St. Thomas) describes a creative way that she tackled a problem in one of her upper level courses.
+One note: The JSM is underway. Looking for interesting talks? Mine&amp;rsquo;s excellent Shiny for JSM 2019 app for those of you in Denver.
+This past semester, I taught two sections of a course called Advanced Statistical Software (yes, I&amp;rsquo;m aware of the acronym. We&amp;rsquo;re changing the course title soon&amp;hellip;).</description>
+    </item>
+    
+    <item>
       <title>reticulate: running Python within RStudio</title>
       <link>https://teachdatascience.com/reticulate/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
@@ -72,7 +83,7 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
-      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+      <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

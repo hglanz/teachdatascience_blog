@@ -184,7 +184,7 @@
     &middot; by Nicholas Horton
   
   &middot; Read in about 9 min
-  &middot; (1764 words)
+  &middot; (1765 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fcloud2%2f" onclick="window.open(this.href, 'mywin',
@@ -252,7 +252,7 @@
 
 
 <p>Previous blog entries have discussed cloud based servers (<a href="https://teachdatascience.com/cloud">RStudio Server</a> and <a href="https://teachdatascience.com/jupyter">JupyterHub</a>) and <a href="https://teachdatascience.com/parallel">parallel/grid/cluster</a> computing. Today we will expand upon these ideas to discuss at a high level how data science students can leverage cloud based tools to undertake their analyses in a flexible manner.</p>
-<p>Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts. We’ve already noted the <a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/">fantastic example</a> that described multiple iterations needed to parse huge amounts of raw DNA sequencing data to undertake analyses for a given set of genetic locations. In <a href="https://hdsr.mitpress.mit.edu/pub/9mdn32tq">“Ambitious data science can be painless”</a> Monajemi et al. describe workflows that take advantage of new software stacks to undertake massive cloud-based experiments. While a few years older, Chamandy et al.’s <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2015.1089790">Teaching statistics at Google scale</a> described three examples where modern data challenges were overcome with creative statistical thinking (see companion report on <a href="https://ai.google/research/pubs/pub43157">Estimating uncertainty for massive data streams</a> ). Finally, the NSF-funded workshop report on <a href="https://dl.acm.org/citation.cfm?id=3233928">“Enabling computer and information science and engineering research and education in the cloud”</a> highlights opportunities as university computing migrates to cloud solutions more and more.</p>
+<p>Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts. We’ve already noted the <a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/">fantastic example</a> that described multiple iterations needed to parse huge amounts of raw DNA sequencing data to undertake analyses for a given set of genetic locations. In <a href="https://hdsr.mitpress.mit.edu/pub/9mdn32tq">“Ambitious data science can be painless”</a> Monajemi et al. describe workflows that take advantage of new software stacks to undertake massive cloud-based experiments. While a few years older, Chamandy et al.’s <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2015.1089790">Teaching statistics at Google scale</a> described three examples where modern data challenges were overcome with creative statistical thinking (see companion report on <a href="https://ai.google/research/pubs/pub43157">Estimating uncertainty for massive data streams</a> ). Finally, the NSF-funded workshop report on <a href="https://dl.acm.org/citation.cfm?id=3233928">“Enabling computer and information science and engineering research and education in the cloud”</a> highlights opportunities as university computing migrates to cloud solutions more and more.</p>
 <p>We also really enjoyed reading the recent <a href="https://www.r-bloggers.com/three-strategies-for-working-with-big-data-in-r/">Three strategies for working with Big Data in R</a> blog post.</p>
 <p>Unfortunately, too few undergraduate students work with massive data streams in existing data science programs. Before entering the workforce, they would benefit from a foundation (or at least some exposure) in cloud computing, even as the specific tools change. How can we prepare them?</p>
 <div id="cloud-computing-at-cmu" class="section level2">
@@ -288,7 +288,8 @@ library(readr)</code></pre>
 billingId &lt;- &quot;test-project-for-blog&quot; # replace with your own billing ID
 datasetName &lt;- &quot;samples&quot;
 tableName &lt;- &quot;wikipedia&quot;</code></pre>
-<p>BigQuery includes a number of <a href="https://cloud.google.com/bigquery/public-data/">public datasets</a>. We are going to analyze the public dataset of the revisions of Wikipedia articles up to April 2010, hosted in GCP BigQuery. The size of the table is 35.69GB. The queries we will run will take only seconds.</p>
+<p>BigQuery includes a number of <a href="https://cloud.google.com/bigquery/public-data/">public datasets</a>.
+We are going to analyze the public dataset of the revisions of Wikipedia articles up to April 2010, hosted in GCP BigQuery. The size of the table is 35.69GB. The queries we will run will take only seconds.</p>
 <pre class="r"><code>query &lt;- &quot;SELECT  title, COUNT(title) as n
           FROM `bigquery-public-data.samples.wikipedia` 
           GROUP BY title
@@ -303,18 +304,18 @@ tableName &lt;- &quot;wikipedia&quot;</code></pre>
 <p>We can get a copy of the data on our local machine once we are confident that it is what we want.</p>
 <pre class="r"><code>mostRevisions &lt;- bq_table_download(mostRevisions_tb) </code></pre>
 <pre class="r"><code>glimpse(mostRevisions)
-## Observations: 500
-## Variables: 2
-## $ title &lt;chr&gt; &quot;Wikipedia:Administrator intervention against vandalism&quot;...
-## $ n     &lt;int&gt; 643271, 419695, 326337, 257893, 226802, 204469, 191679, ...</code></pre>
+## Rows: 500
+## Columns: 2
+## $ title &lt;chr&gt; &quot;Wikipedia:Administrator intervention against vandalism&quot;, &quot;Wi...
+## $ n     &lt;int&gt; 643271, 419695, 326337, 257893, 226802, 204469, 191679, 18671...</code></pre>
 <pre class="r"><code>clean &lt;- mostRevisions %&gt;% 
   filter(!grepl(&quot;Wikipedia|User|Template|Talk&quot;, title)) %&gt;%
   mutate(title = fct_reorder(title, n)) %&gt;% #to sort levels
   glimpse()
-## Observations: 272
-## Variables: 2
-## $ title &lt;fct&gt; George W. Bush, List of World Wrestling Entertainment em...
-## $ n     &lt;int&gt; 43652, 30572, 27433, 23245, 21768, 20814, 20546, 20529, ...</code></pre>
+## Rows: 272
+## Columns: 2
+## $ title &lt;fct&gt; George W. Bush, List of World Wrestling Entertainment employe...
+## $ n     &lt;int&gt; 43652, 30572, 27433, 23245, 21768, 20814, 20546, 20529, 20225...</code></pre>
 <p>Let’s plot the top 10 entries.</p>
 <pre class="r"><code>ggplot(clean %&gt;% head(10), aes(x = title, y = n, fill = n)) + 
   geom_bar(stat = &quot;identity&quot;) + 
@@ -445,6 +446,10 @@ tableName &lt;- &quot;wikipedia&quot;</code></pre>
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
           </li>
         
@@ -465,6 +470,10 @@ tableName &lt;- &quot;wikipedia&quot;</code></pre>
           </li>
         
           <li>
+          <a href="https://teachdatascience.com/countingcommits.knit/">Counting commits and peer code review</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
           </li>
         
@@ -474,14 +483,6 @@ tableName &lt;- &quot;wikipedia&quot;</code></pre>
         
           <li>
           <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/datapackage/">Creating R data packages for teaching</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/data100/">Data100: Principles and Techniques of Data Science</a>
           </li>
         
         </ul>
@@ -496,7 +497,7 @@ tableName &lt;- &quot;wikipedia&quot;</code></pre>
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
           </ul>
         </div>
       </div>

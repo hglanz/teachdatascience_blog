@@ -33,11 +33,15 @@ Image credit: xkcd.com
 <p>The American Statistical Association has put out a <a href="https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf">Statement on Statistical Significance and p-values</a> which can serve as a template for what your students should believe about p-values. Recently, the <em>New England Journal of Medicine</em> has put out <a href="https://www.nejm.org/doi/full/10.1056/NEJMe1906559">New Guidelines for Statistical Reporting in the <em>Journal</em></a> based on the ASA’s reports.</p>
 <ol style="list-style-type: decimal">
 <li>P-values can indicate how incompatible the data are with a specified statistical model.</li>
-<li>P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.</li>
-<li>Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold.</li>
+<li>P-values do not measure the probability that the studied hypothesis is true, or the
+probability that the data were produced by random chance alone.</li>
+<li>Scientific conclusions and business or policy decisions should not be based only on
+whether a p-value passes a specific threshold.</li>
 <li>Proper inference requires full reporting and transparency.</li>
-<li>A p-value, or statistical significance, does not measure the size of an effect or the importance of a result.</li>
-<li>By itself, a p-value does not provide a good measure of evidence regarding a model or hypothesis.</li>
+<li>A p-value, or statistical significance, does not measure the size of an effect or the
+importance of a result.</li>
+<li>By itself, a p-value does not provide a good measure of evidence regarding a model or
+hypothesis.</li>
 </ol>
 <p>Of course, the topic would not be so heated if it were not also nuanced. Below we provide some details of the sides, but our blog is not nearly long enough to include a thorough treatment of the details of both sides. We encourage you to bring up the debate in class and have your students argue one side or another. If each student researches one small detail of the conversation, your class discussion can be incredibly rich and interesting.</p>
 <p>(note: The following interpretation of p-values and type I vs type II errors is credited to Roger Peng’s musings during an episode of Not So Standard Deviations, see our write up <a href="https://teachdatascience.com/nssd/">here</a>.)</p>
@@ -45,12 +49,12 @@ Image credit: xkcd.com
 <div id="the-case-for-p-values-worries-about-type-i-errors" class="section level2">
 <h2>The case for p-values (worries about type I errors)</h2>
 <p>The case for p-values centers around the idea that without p-values, making scientific claims is even harder to do than if we use them. Indeed, the human eye is drawn toward seeing trends, especially if the human has a vested interest in the research result!</p>
-<p>In 2016, the journal <em>Basic and Applied Social Psychology</em> banned the use of p-values and other measures of statistical significance (e.g., confidence intervals). Fricker et al. <a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1537892">look back</a> at one year of articles in <em>BASP</em> after the ban. They “found multiple instances of authors overstating conclusions beyond what the data would support if statistical significance had been considered. Readers would be largely unable to recognize this because the necessary information to do so was not readily available…In our opinion, the practices we have observed in the papers published in <em>BASP</em> post-ban will not help to solve this problem; in fact, we believe they will make it worse.”</p>
+<p>In 2016, the journal <em>Basic and Applied Social Psychology</em> banned the use of p-values and other measures of statistical significance (e.g., confidence intervals). Fricker et al. <a href="https://tandfonline.com/doi/full/10.1080/00031305.2018.1537892">look back</a> at one year of articles in <em>BASP</em> after the ban. They “found multiple instances of authors overstating conclusions beyond what the data would support if statistical significance had been considered. Readers would be largely unable to recognize this because the necessary information to do so was not readily available…In our opinion, the practices we have observed in the papers published in <em>BASP</em> post-ban will not help to solve this problem; in fact, we believe they will make it worse.”</p>
 <p>Indeed, Ioannidis makes a huge case for the worry about type I errors in his article on <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124">Why Most Published Research Findings are False</a> (which has now been viewed almost 3 million time). That is, without some (or rather, strict!) control on the false positive rate, there is no good mechanism for a reader to distinguish between a true result and a false positive.</p>
 </div>
 <div id="the-case-against-p-values-worries-about-type-ii-errors" class="section level2">
 <h2>The case against p-values (worries about type II errors)</h2>
-<p>The case against p-values focuses on type II errors. Amrhein et al. (including 800+ signatories) <a href="https://www.nature.com/articles/d41586-019-00857-9">call for an end</a> to using statistical significance in scientific reporting. Their main concern is in interpreting non-significant results as “no difference.” The key to their argument (and the argument of many of those who warn against using p-values) is that the crux of the problem lies in the dichotomization of the p-value (into two groups: significant and non significant). Indeed, they accurately report on the vast problem of incorrect interpretations of “large” p-values indicating no effect.</p>
+<p>The case against p-values focuses on type II errors. Amrhein et al. (including 800+ signatories) <a href="https://www.nature.com/articles/d41586-019-00857-9">call for an end</a> to using statistical significance in scientific reporting. Their main concern is in interpreting non-significant results as “no difference.” The key to their argument (and the argument of many of those who warn against using p-values) is that the crux of the problem lies in the dichotomization of the p-value (into two groups: significant and non significant). Indeed, they accurately report on the vast problem of incorrect interpretations of “large” p-values indicating no effect.</p>
 <center>
 <figure>
 <img alt = 'p-values' width='600' src='/post/pvalues/noeffect.png' />
@@ -69,7 +73,7 @@ Image from: “Scientists rise up against statistical significance”, <em>Natur
 <li><strong>o</strong>pen, and</li>
 <li><strong>m</strong>odest</li>
 </ul>
-<p>Indeed, being thoughtful, open, and modest leads to one important “don’t” recommendation from Wasserstein et al. which is:</p>
+<p>Indeed, being thoughtful, open, and modest leads to one important “don’t” recommendation from Wasserstein et al. which is:</p>
 <blockquote>
 <p>‘statistically significant’ – don’t say it and don’t use it.</p>
 </blockquote>
@@ -78,9 +82,11 @@ Image from: “Scientists rise up against statistical significance”, <em>Natur
 <h2>Teaching the conversation</h2>
 <p>While it may seem like an additional topic to cover in an already packed introductory statistics curriculum, we suggest that teaching about the conversation around p-values not only <strong>helps</strong> students understand the meaning of a p-value, but the information is part of the larger context necessary for doing ethical data science. One possible assignment would be for each student to choose a different journal article / editorial / newspaper article and present the issue in the article in either writing or as a brief in-class presentation. A possible structure to the presentation might be:</p>
 <ol style="list-style-type: decimal">
-<li>An introduction / motivation to the problem. Why did the authors decide to tackle the problem you are about to tell us?</li>
+<li>An introduction / motivation to the problem. Why did the authors decide to tackle the
+problem you are about to tell us?</li>
 <li>The specific problem which you will address.</li>
-<li>The logical argument, derivation, proof etc. The main gist of your paper is to convince the reader that the specific issue presented in your article is true (or false if your goal is to discount the author’s claim). Using what you know about statistics (and multiple comparisons) as well as what the paper argues, convince the reader. Again, be sure to cite anything that is not your own idea.</li>
+<li>The logical argument, derivation, proof etc. The main gist of your paper is to convince the reader that the specific issue presented in your article is true (or false if your goal is to discount the author’s claim). Using what you know about statistics (and multiple comparisons) as well as what the paper argues, convince the reader. Again, be sure to
+cite anything that is not your own idea.</li>
 <li>Conclusion / discussion. Contextualize your result in the general field of natural science, social science, or medicine.</li>
 </ol>
 <p>Some possible papers for students to work with include the following list:</p>
