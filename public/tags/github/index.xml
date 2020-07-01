@@ -24,17 +24,6 @@ This past semester, I taught two sections of a course called Advanced Statistica
     </item>
     
     <item>
-      <title>Counting commits and peer code review</title>
-      <link>https://teachdatascience.com/countingcommits.knit/</link>
-      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/countingcommits.knit/</guid>
-      <description>Today&amp;rsquo;s guest entry by Amelia McNamara (University of St. Thomas) describes a creative way that she tackled a problem in one of her upper level courses.
-One note: The JSM is underway. Looking for interesting talks? Mine&amp;rsquo;s excellent Shiny for JSM 2019 app for those of you in Denver.
-This past semester, I taught two sections of a course called Advanced Statistical Software (yes, I&amp;rsquo;m aware of the acronym. We&amp;rsquo;re changing the course title soon&amp;hellip;).</description>
-    </item>
-    
-    <item>
       <title>reprex:  Help me help you</title>
       <link>https://teachdatascience.com/reprex/</link>
       <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
@@ -51,6 +40,16 @@ This past semester, I taught two sections of a course called Advanced Statistica
       
       <guid>https://teachdatascience.com/gitclass/</guid>
       <description>GitHub ClassroomIf you have been reading along in the blog, you’ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
+But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
+    </item>
+    
+    <item>
+      <title>GitHub Classroom</title>
+      <link>https://teachdatascience.com/gitclass.utf8/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
+      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
 But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
     </item>
     

@@ -169,8 +169,8 @@
   <small>
     &middot; by Jo Hardin
   
-  &middot; Read in about 6 min
-  &middot; (1278 words)
+  &middot; Read in about 7 min
+  &middot; (1279 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2freticulate%2f" onclick="window.open(this.href, 'mywin',
@@ -348,19 +348,121 @@ flights %&gt;% head(5)
 ## 3 AA             -1        14
 ## 4 AA             -4         4
 ## 5 UA              9        20
-flights %&gt;% skimr::skim()
-## Skim summary statistics
-##  n obs: 12590 
-##  n variables: 3 
-## 
-## -- Variable type:character ---------------------------------------------------------------------
-##  variable missing complete     n min max empty n_unique
-##   carrier       0    12590 12590   2   2     0        2
-## 
-## -- Variable type:numeric -----------------------------------------------------------------------
-##   variable missing complete     n  mean    sd  p0 p25 p50 p75 p100     hist
-##  arr_delay       0    12590 12590  2.92 44.89 -62 -22 -10  10  448 &lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;
-##  dep_delay       0    12590 12590 11.71 39.41 -20  -6  -2   9  466 &lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</code></pre>
+flights %&gt;% skimr::skim()</code></pre>
+<table>
+<caption><span id="tab:unnamed-chunk-8">Table 1: </span>Data summary</caption>
+<tbody>
+<tr class="odd">
+<td align="left">Name</td>
+<td align="left">Piped data</td>
+</tr>
+<tr class="even">
+<td align="left">Number of rows</td>
+<td align="left">12590</td>
+</tr>
+<tr class="odd">
+<td align="left">Number of columns</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">_______________________</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Column type frequency:</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">character</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">numeric</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">________________________</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Group variables</td>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: character</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="right">min</th>
+<th align="right">max</th>
+<th align="right">empty</th>
+<th align="right">n_unique</th>
+<th align="right">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">carrier</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">p0</th>
+<th align="right">p25</th>
+<th align="right">p50</th>
+<th align="right">p75</th>
+<th align="right">p100</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">dep_delay</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">11.71</td>
+<td align="right">39.41</td>
+<td align="right">-20</td>
+<td align="right">-6</td>
+<td align="right">-2</td>
+<td align="right">9</td>
+<td align="right">466</td>
+<td align="left">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td align="left">arr_delay</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2.92</td>
+<td align="right">44.89</td>
+<td align="right">-62</td>
+<td align="right">-22</td>
+<td align="right">-10</td>
+<td align="right">10</td>
+<td align="right">448</td>
+<td align="left">▇▁▁▁▁</td>
+</tr>
+</tbody>
+</table>
 <pre class="r"><code>flights &lt;- readr::read_csv(&quot;flights.csv&quot;)
 flights %&gt;%
   dplyr::select(carrier, dep_delay, arr_delay) %&gt;%
@@ -483,11 +585,19 @@ flights %&gt;%
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps.knit/">Next Steps</a>
           </li>
         
           <li>
@@ -507,19 +617,11 @@ flights %&gt;%
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/countingcommits.knit/">Counting commits and peer code review</a>
-          </li>
-        
-          <li>
           <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
           </li>
         
         </ul>
@@ -534,7 +636,7 @@ flights %&gt;%
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
           </ul>
         </div>
       </div>

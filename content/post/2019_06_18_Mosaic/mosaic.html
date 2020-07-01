@@ -87,6 +87,7 @@ for graphics. But it’s more complicated to have beginning students run command
 <pre class="r"><code>HELPmiss %&gt;%
   group_by(homeless) %&gt;%
   summarize(meanval = mean(drugrisk, na.rm=TRUE))
+## `summarise()` ungrouping output (override with `.groups` argument)
 ## # A tibble: 2 x 2
 ##   homeless meanval
 ##   &lt;fct&gt;      &lt;dbl&gt;

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Re-Introduction: Ethics in Data Science Education  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="education, ethics, ">
+
+
+<meta property="og:title" content="Re-Introduction: Ethics in Data Science Education  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/reintro/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2020_07_01_Reintroduction\Reintro.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2020-07-01T00:00:00Z" />
+<meta property="og:article:modified_time" content="2020-07-01T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="education">
+    
+<meta property="og:article:tag" content="ethics">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/reintro/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Re-Introduction: Ethics in Data Science Education
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2020-07-01">1 Jul, 2020</time>
+</small>
+
+
+  <small>
+    &middot; by Hunter Glanz &amp; Jo Hardin &amp; Nick Horton
+  
+  &middot; Read in about 4 min
+  &middot; (788 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Re-Introduction%3a%20Ethics%20in%20Data%20Science%20Education&amp;url=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2freintro%2f&amp;title=Re-Introduction%3a%20Ethics%20in%20Data%20Science%20Education" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Re-Introduction%3a%20Ethics%20in%20Data%20Science%20Education&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2freintro%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+  <a href="https://teachdatascience.com/tags/ethics" class="label label-primary">ethics</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<div id="why-more-data-science-education-blogging" class="section level2">
+<h2>Why more Data Science Education blogging?</h2>
+<p>Last summer we wrote a series of blog entries designed to start converstations around teaching data science, <a href="https://teachdatascience.com/">Teach Data Science</a>. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp; exploration, communication, and key reports and findings on data science.</p>
+<p>One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science. We have now found ourselves in the summer of 2020, overwhelmed by the state of the world and re-committed to the ethical challenges which can help data science be a positive force for change.</p>
+<p>Although none of us are experts in ethics, we have all included ethics discussions in our classrooms for many years. In the weeks to come, we will share some of the ways we engage our students in these important topics. We will provide resources for readings, examples, datasets, and exercises. We believe that data ethics are part of every data science analysis and classroom experience, and we hope that this summer’s blog will entice you into presenting ethical dilemmas and related conversations to your students early and often.</p>
+<p>During summer 2020, we plan to write a dozen blog entries starting on Monday, July 6th. We hope that you bookmark the site and check in regularly. Want a reminder? Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+</div>
+<div id="what-topics-will-the-blog-cover" class="section level2">
+<h2>What topics will the blog cover?</h2>
+<p>We plan to cover many themes related to teaching data science ethics:</p>
+<ul>
+<li>data visualization</li>
+<li>data privacy</li>
+<li>philosophic tenets applicable to data science ethics</li>
+<li>sources for data to use in the classroom</li>
+<li>hippocratic oath for data scientists</li>
+</ul>
+<p>as well as providing case studies for teaching data science ethics.</p>
+<p>We welcome suggestions for topics. Also, please leave comments on the blog to continue the conversation and share your approaches to incorporating the ethics of data science into the classroom.</p>
+</div>
+<div id="who-are-we" class="section level2">
+<h2>Who are we?</h2>
+<p><img alt = 'Hunter' width='200' src='hunter.jpg' /></p>
+<p><strong><a href="https://statistics.calpoly.edu/hunter-glanz">Hunter Glanz</a></strong> (<a href="https://twitter.com/hglanz">twitter</a>) is an Associate Professor of Statistics and Data Science at California Polytechnic State University (Cal Poly, San Luis Obispo). He received a BS in Mathematics and a BS in Statistics from Cal Poly, San Luis Obispo followed by an MA and PhD in Statistics from Boston University. He maintains a passion for machine learning and statistical computing, and enjoys advancing education efforts in these areas. In particular, Cal Poly’s courses in R, SAS, and Python give him the opportunity to connect students with exciting data science topics amidst a firm grounding in communication of statistical ideas. Hunter serves on numerous committees and organizations dedicated to delivering cutting edge statistical and data science content to students and professionals alike. In particular, the ASA’s DataFest event at UCLA has been an extremely rewarding experience for the teams of Cal Poly students Hunter has had the pleasure of advising.</p>
+<p><img alt = 'Jo' width='200' src='jo_headshot8.jpg' /></p>
+<p><strong><a href="https://www.pomona.edu/directory/people/johanna-s-hardin">Jo Hardin</a></strong> (<a href="https://twitter.com/jo_hardin47">twitter</a>) is a statistician at Pomona College who is passionate about statistics and data science education for all. She received her BA from Pomona College and her MS and PhD degrees from the University of California, Davis. Two years of working at the Fred Hutchinson Cancer Research Center in Seattle, WA got her hooked into analyzing high throughput data (e.g., simultaneous gene expression of thousands of genes). Much of her theoretical work has focused on computational approaches to statistical problems in genetics. Jo works hard to provide her students with current best practices, including teaching the <code>tidyverse</code> to her students in Introduction to Statistics. Beyond the classroom, she has also worked to engage students in statistics and data science: she has worked on the ASA’s curriculum guidelines task force, sent groups of students to UCLA’s DataFest competition, and hosted a local StatFest conference. Through her endeavors, she is working to help undergraduates learn about analyzing data in the wild and gain the skills to be effective and ethical when tasked with making claims from data. She has taught statistics inside the California Rehabilitation Center through the international <a href="http://www.insideoutcenter.org/">Inside-Out Prison Exchange Program</a>.</p>
+<p><img alt = 'Nick' width='200' src='nick.jpg' /></p>
+<p><strong><a href="https://www.amherst.edu/people/facstaff/nhorton">Nick Horton</a></strong> (<a href="https://twitter.com/askdrstats">twitter</a>) is Beitzel Professor of Technology and Society and Professor of Statistics and Data Science at Amherst College. His recent work has focused on statistics and data science education. Nick is a fellow of the American Statistical Association and the American Association for the Advancement of Science. He chaired the Committee of Presidents of Statistical Societies and the ASA Curriculum Guidelines for Undergraduate Programs in Statistical Science workgroup. Nick serves as co-chair of the National Academies Committee for Applied and Theoretical Statistics, is a co-author of the 2018 “<a href="https://nas.edu/envisioningds">Undergraduate Data Science: Opportunities and Options</a>” consensus study report, and co-author of the ASA’s revised GAISE (<a href="https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx">Guidelines for Assessment and Instruction in Statistics Education</a>) College report.</p>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Re-Introduction%3a%20Ethics%20in%20Data%20Science%20Education&amp;url=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2freintro%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2freintro%2f&amp;title=Re-Introduction%3a%20Ethics%20in%20Data%20Science%20Education" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Re-Introduction%3a%20Ethics%20in%20Data%20Science%20Education&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2freintro%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/keepbusy/" title="Keeping Busy with Data Science">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps.knit/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/closing/">Closing: A summer of data science education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/cloud2/">More cloud computing: data science is not done on a laptop</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/onemodel/">One model to rule them all</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ethics on Teach Data Science</title>
+    <link>https://teachdatascience.com/tags/ethics/</link>
+    <description>Recent content in ethics on Teach Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>(c) 2019 Copyright Teach Data Science</copyright>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://teachdatascience.com/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Re-Introduction: Ethics in Data Science Education</title>
+      <link>https://teachdatascience.com/reintro/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reintro/</guid>
+      <description>Why more Data Science Education blogging?Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
+One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
+    </item>
+    
+  </channel>
+</rss>

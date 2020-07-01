@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Re-Introduction: Ethics in Data Science Education</title>
+      <link>https://teachdatascience.com/reintro/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reintro/</guid>
+      <description>Why more Data Science Education blogging?Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
+One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
+    </item>
     
     <item>
       <title>Keeping Busy with Data Science</title>
@@ -29,6 +39,15 @@ The list below represents opportunities at a variety of levels. If you are just 
       
       <guid>https://teachdatascience.com/nextsteps/</guid>
       <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we’ve gotten over the summer. Here’s to many future discussions on data science education.</description>
+    </item>
+    
+    <item>
+      <title>Next Steps</title>
+      <link>https://teachdatascience.com/nextsteps.knit/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/nextsteps.knit/</guid>
+      <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we&amp;rsquo;ve gotten over the summer. Here&amp;rsquo;s to many future discussions on data science education.</description>
     </item>
     
     <item>
@@ -181,6 +200,16 @@ Photo credit: Esti Alvarez
       
       <guid>https://teachdatascience.com/gitclass/</guid>
       <description>GitHub ClassroomIf you have been reading along in the blog, you’ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
+But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
+    </item>
+    
+    <item>
+      <title>GitHub Classroom</title>
+      <link>https://teachdatascience.com/gitclass.utf8/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
+      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
 But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
     </item>
     

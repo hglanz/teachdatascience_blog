@@ -35,7 +35,8 @@ con &lt;- dbConnect(
 ##   Tables_in_wai
 ## 1  Measurements
 ## 2       PI_Info
-## 3       Subject</code></pre>
+## 3  PI_Info_2020
+## 4       Subject</code></pre>
 <p>The <code>EXPLAIN</code> command describes the ten field names (variables) in the <code>PI_Info</code> table.</p>
 <pre class="r"><code>dbGetQuery(con, &quot;EXPLAIN PI_Info&quot;)
 ##          Field           Type Null Key Default Extra
@@ -93,6 +94,10 @@ objects. Connecting with familiar <code>dplyr</code> syntax is attractive becaus
 <p>The setup process looks similar.</p>
 <pre class="r"><code>db &lt;- src_mysql(dbname = &quot;wai&quot;, host = &quot;scidb.smith.edu&quot;, user = &quot;waiuser&quot;, 
           password=&quot;smith_waiDB&quot;)
+## Warning: `src_mysql()` is deprecated as of dplyr 1.0.0.
+## Please use `tbl()` directly with a database connection
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_warnings()` to see where this warning was generated.
 Measurements &lt;- tbl(db, &quot;Measurements&quot;)
 class(Measurements)
 ## [1] &quot;tbl_MySQLConnection&quot; &quot;tbl_dbi&quot;             &quot;tbl_sql&quot;            

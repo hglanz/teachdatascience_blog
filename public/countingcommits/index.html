@@ -176,7 +176,7 @@
     &middot; by Amelia McNamara
   
   &middot; Read in about 13 min
-  &middot; (2717 words)
+  &middot; (2698 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fcountingcommits%2f" onclick="window.open(this.href, 'mywin',
@@ -283,9 +283,9 @@ roster &lt;- roster %&gt;%
   mutate(url = paste0(&quot;https://github.com/&quot;, github_username)) %&gt;%
   filter(!is.na(group_name))</code></pre>
 <p>For the purposes of this blog post, I’m not going to use my students’ data (remember, FERPA!). So, let’s make a little fake dataset.</p>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.6.3</code></pre>
-<pre class="r"><code>roster &lt;- tibble(url = c(&quot;https://github.com/AmeliaMN&quot;, &quot;https://github.com/hglanz&quot;, &quot;https://github.com/hardin47&quot;, &quot;https://github.com/nicholasjhorton&quot;))</code></pre>
+<pre class="r"><code>library(dplyr)
+
+roster &lt;- tibble(url = c(&quot;https://github.com/AmeliaMN&quot;, &quot;https://github.com/hglanz&quot;, &quot;https://github.com/hardin47&quot;, &quot;https://github.com/nicholasjhorton&quot;))</code></pre>
 <p>Now that I have some GitHub URLs, I can use the <a href="http://rvest.tidyverse.org/">rvest package</a> to scrape the HTML pages. We’ll start with an HTML session,</p>
 <pre class="r"><code>library(rvest)
 
@@ -316,10 +316,10 @@ roster &lt;- roster %&gt;%
 <pre><code>## # A tibble: 4 x 2
 ##   url                                commits
 ##   &lt;chr&gt;                                &lt;dbl&gt;
-## 1 https://github.com/nicholasjhorton    1944
-## 2 https://github.com/AmeliaMN            404
-## 3 https://github.com/hardin47            316
-## 4 https://github.com/hglanz              179</code></pre>
+## 1 https://github.com/nicholasjhorton    1923
+## 2 https://github.com/AmeliaMN            393
+## 3 https://github.com/hardin47            346
+## 4 https://github.com/hglanz               99</code></pre>
 <p>If we were giving away t-shirts based on this, Nick Horton would win!</p>
 <p>I did this same process with my students’ data, and came up with the winners for each class. But, when looking at my data, I realized that counting the number of commits over the entire year wasn’t what I promised students. I actually said I would pick winners based on the commits <strong>during the semester.</strong> This required me to get creative. I realized that those little green boxes that show your GitHub activity actually have data associated with them. So instead of just grabbing the singular number, I could scrape the green boxes. Here is a function that finds those boxes and selects the data associated with them.</p>
 <pre class="r"><code>commits_by_date &lt;- function(url, session) {
@@ -345,15 +345,10 @@ roster %&gt;%
   group_by(url) %&gt;%
   summarise(total = sum(count)) %&gt;%
   arrange(desc(total))</code></pre>
-<pre><code>## Warning: `cols` is now required.
+<pre><code>## Warning: `cols` is now required when using unnest().
 ## Please use `cols = c(by_date)`</code></pre>
-<pre><code>## # A tibble: 4 x 2
-##   url                                total
-##   &lt;chr&gt;                              &lt;dbl&gt;
-## 1 https://github.com/nicholasjhorton    58
-## 2 https://github.com/hglanz             14
-## 3 https://github.com/AmeliaMN            4
-## 4 https://github.com/hardin47            1</code></pre>
+<pre><code>## # A tibble: 0 x 2
+## # ... with 2 variables: url &lt;chr&gt;, total &lt;dbl&gt;</code></pre>
 <p>If we go by this method, I would win the t-shirt! (I swear, I didn’t doctor this example just to hypothetically win a GitHub t-shirt.)</p>
 </div>
 <div id="authenticating-on-github" class="section level2">
@@ -434,7 +429,7 @@ github &lt;- session %&gt;%
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="https://teachdatascience.com/countingcommits.knit/" title="Counting commits and peer code review">
+          <a href="https://teachdatascience.com/testthat/" title="Data assertion and checks via testthat">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
@@ -487,11 +482,19 @@ github &lt;- session %&gt;%
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps.knit/">Next Steps</a>
           </li>
         
           <li>
@@ -511,19 +514,11 @@ github &lt;- session %&gt;%
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/countingcommits.knit/">Counting commits and peer code review</a>
-          </li>
-        
-          <li>
           <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
           </li>
         
         </ul>
@@ -538,7 +533,7 @@ github &lt;- session %&gt;%
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
           </ul>
         </div>
       </div>

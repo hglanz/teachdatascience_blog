@@ -172,7 +172,7 @@
     &middot; by Jo Hardin
   
   &middot; Read in about 8 min
-  &middot; (1508 words)
+  &middot; (1514 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fparallel%2f" onclick="window.open(this.href, 'mywin',
@@ -252,7 +252,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 5296
+## node of a socket cluster on host &#39;localhost&#39; with pid 2164
 
 stopCluster(cl)
 cl[[1]]
@@ -272,13 +272,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 108.7489
+## [1] 11.89191
 ## 
 ## [[2]]
-## [1] 165.7668
+## [1] 19.19419
 ## 
 ## [[3]]
-## [1] 4.76126
+## [1] 43.4622
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -291,7 +291,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 44.055802  6.826559  5.765902
+## [1] 16.59939 67.92208 52.21316
 
 stopCluster(cl)</code></pre>
 </div>
@@ -340,12 +340,12 @@ iris_samps_tbl %&gt;%
   ggplot(aes(x = result)) + geom_histogram(bins = 20) + ggtitle(&quot;Histogram of 100 Bootstrapped Means using sparklyr&quot;)</code></pre>
 <p><img src="https://teachdatascience.com/post/2019_07_12_Parallel/parallel_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>
-spark_disconnect(sc)
-## NULL</code></pre>
+spark_disconnect(sc)</code></pre>
 <p>For our particular application, the adept reader has probably noticed that the average of a variable using <code>group_by</code> is a very quick and easy task for <code>dplyr</code>. Indeed, the use of <code>sparklyr</code> above is overkill and is presented only as a way to demonstrate using <code>sparklyr</code>. We recommend working through RStudio’s help pages on <code>sparklyr</code> if you or your students are working with big datasets that require large computing infrastructure. Additionally, there are many instances of working with <code>Spark</code> in the wild, and you might consider a class activity of working through someone else’s <code>Spark</code> analysis like this <a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/">fantastic example</a> on splitting up large amounts of raw DNA sequencing to get data for a given genetic location.</p>
 <pre class="r"><code>iris_samps %&gt;% dplyr::group_by(replicate) %&gt;%
   dplyr::summarize(result = mean(Petal.Length)) %&gt;%
-  ggplot(aes(x = result)) + geom_histogram(bins = 25) + ggtitle(&quot;Histogram of 100 Bootstrapped Means using dplyr&quot;)</code></pre>
+  ggplot(aes(x = result)) + geom_histogram(bins = 25) + ggtitle(&quot;Histogram of 100 Bootstrapped Means using dplyr&quot;)
+## `summarise()` ungrouping output (override with `.groups` argument)</code></pre>
 <p><img src="https://teachdatascience.com/post/2019_07_12_Parallel/parallel_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>While we continue to believe that introducing students to modern technology early and often will help them become more adept and less apprehensive about using the tools, we also recognize that students need sufficient background in computer science to be able to fully engage with principles of high performance computing. You are likely to know your student audience well enough to determine the benefits of introducing ideas of parallel processing and distributed computing.</p>
 <div id="learn-more" class="section level3">
@@ -453,11 +453,19 @@ spark_disconnect(sc)
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps.knit/">Next Steps</a>
           </li>
         
           <li>
@@ -477,19 +485,11 @@ spark_disconnect(sc)
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/countingcommits.knit/">Counting commits and peer code review</a>
-          </li>
-        
-          <li>
           <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
           </li>
         
         </ul>
@@ -504,7 +504,7 @@ spark_disconnect(sc)
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/data-ingestation">data-ingestation</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
           </ul>
         </div>
       </div>

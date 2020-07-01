@@ -56,8 +56,6 @@ dplyr::glimpse(ds)
 <p>Here we have used simple html markup to create a two line label, with institution bolded, that will be displayed.</p>
 <pre class="r"><code># steps 2-3: generate leaflet map 
 library(leaflet)
-## This version of Shiny is designed to work with &#39;htmlwidgets&#39; &gt;= 1.5.
-##     Please upgrade via install.packages(&#39;htmlwidgets&#39;).
 m &lt;- leaflet(ds) %&gt;% 
   addTiles() %&gt;% 
   addMarkers(~lng, ~lat, popup = ~ label)
