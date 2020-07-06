@@ -33,6 +33,26 @@ One key element that was lacking on our 2019 blog was a discussion about and a c
     </item>
     
     <item>
+      <title>Re-Introduction: Ethics in Data Science Education</title>
+      <link>https://teachdatascience.com/reintro.knit/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reintro.knit/</guid>
+      <description>Why more Data Science Education blogging? Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
+One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
+    </item>
+    
+    <item>
+      <title>Re-Introduction: Ethics in Data Science Education</title>
+      <link>https://teachdatascience.com/reintro.utf8/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reintro.utf8/</guid>
+      <description>Why more Data Science Education blogging? Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
+One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
+    </item>
+    
+    <item>
       <title>Keeping Busy with Data Science</title>
       <link>https://teachdatascience.com/keepbusy/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
@@ -49,15 +69,6 @@ The list below represents opportunities at a variety of levels. If you are just 
       
       <guid>https://teachdatascience.com/nextsteps/</guid>
       <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we’ve gotten over the summer. Here’s to many future discussions on data science education.</description>
-    </item>
-    
-    <item>
-      <title>Next Steps</title>
-      <link>https://teachdatascience.com/nextsteps.utf8/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/nextsteps.utf8/</guid>
-      <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we&amp;rsquo;ve gotten over the summer. Here&amp;rsquo;s to many future discussions on data science education.</description>
     </item>
     
     <item>
@@ -135,17 +146,6 @@ one that assumes a stochastic data modelone that uses an algorithmic model (and
     </item>
     
     <item>
-      <title>Breiman&#39;s two cultures</title>
-      <link>https://teachdatascience.com/twocultures.knit/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/twocultures.knit/</guid>
-      <description>Eighteen years ago, Leo Breiman published an important paper entitled Statistical modeling: the two cultures in Statistical Science. In today&amp;rsquo;s blog entry we discuss the implications of the paper for data science education.
-Breiman argued that the two cultures included:
- one that assumes a stochastic data model one that uses an algorithmic model (and treats the data mechanism as unknown)  Breiman asserted that the statistics community had almost exclusively focused on the former, with interpretation of parameters at the core.</description>
-    </item>
-    
-    <item>
       <title>Creating R data packages for teaching</title>
       <link>https://teachdatascience.com/datapackage/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
@@ -153,6 +153,16 @@ Breiman argued that the two cultures included:
       <guid>https://teachdatascience.com/datapackage/</guid>
       <description>Today’s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
 Sharing data with studentsThe beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can’t even load the data, then my first impressions of R are not going to be too great.</description>
+    </item>
+    
+    <item>
+      <title>Creating R data packages for teaching</title>
+      <link>https://teachdatascience.com/datapackage.utf8/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/datapackage.utf8/</guid>
+      <description>Today&amp;rsquo;s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
+Sharing data with students The beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can&amp;rsquo;t even load the data, then my first impressions of R are not going to be too great.</description>
     </item>
     
     <item>
@@ -210,6 +220,19 @@ In short, pandas offers some new and some improved Python tools for doing the fo
 Reading data in to data frame-type structures
 Viewing and selecting data
 Handling missing data</description>
+    </item>
+    
+    <item>
+      <title>pandas: Python data analysis library</title>
+      <link>https://teachdatascience.com/pandas.knit/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pandas.knit/</guid>
+      <description>About pandas pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&amp;rsquo;s homepage, &amp;laquo;pandas helps fill Python&amp;rsquo;s long-standing gap in tools for data analysis and modeling.&amp;raquo;
+In short, pandas offers some new and some improved Python tools for doing the following:
+ Reading data in to data frame-type structures
+ Viewing and selecting data
+ Handling missing data</description>
     </item>
     
     <item>
@@ -448,17 +471,6 @@ Here’s a simple example where data from higher education institutions from wit
     </item>
     
     <item>
-      <title>Leaflet for mapping</title>
-      <link>https://teachdatascience.com/leaflet.knit/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/leaflet.knit/</guid>
-      <description>Leaflet for mapping Maps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here&amp;rsquo;s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
       <title>Roundtable on Data Science Post Secondary Education</title>
       <link>https://teachdatascience.com/dsert/</link>
       <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
@@ -517,6 +529,18 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
     </item>
     
     <item>
+      <title>The Tidyverse</title>
+      <link>https://teachdatascience.com/tidyverse.knit/</link>
+      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tidyverse.knit/</guid>
+      <description>What is the Tidyverse? 
+{width=125px}
+
+The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+    </item>
+    
+    <item>
       <title>Projects in RStudio</title>
       <link>https://teachdatascience.com/projects/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
@@ -561,6 +585,15 @@ By including data work, code, and analysis narrative into a single document, R M
       
       <guid>https://teachdatascience.com/intro/</guid>
       <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+    </item>
+    
+    <item>
+      <title>Introduction: A summer of data science education</title>
+      <link>https://teachdatascience.com/intro.knit/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/intro.knit/</guid>
+      <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     
     <item>

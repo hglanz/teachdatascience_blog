@@ -80,17 +80,6 @@ Here’s a simple example where data from higher education institutions from wit
     </item>
     
     <item>
-      <title>Leaflet for mapping</title>
-      <link>https://teachdatascience.com/leaflet.knit/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/leaflet.knit/</guid>
-      <description>Leaflet for mapping Maps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here&amp;rsquo;s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
       <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
@@ -107,6 +96,15 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       
       <guid>https://teachdatascience.com/intro/</guid>
       <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+    </item>
+    
+    <item>
+      <title>Introduction: A summer of data science education</title>
+      <link>https://teachdatascience.com/intro.knit/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/intro.knit/</guid>
+      <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     
   </channel>

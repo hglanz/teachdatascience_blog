@@ -33,6 +33,16 @@ Sharing data with studentsThe beginning of the data analysis cycle involves ing
     </item>
     
     <item>
+      <title>Creating R data packages for teaching</title>
+      <link>https://teachdatascience.com/datapackage.utf8/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/datapackage.utf8/</guid>
+      <description>Today&amp;rsquo;s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
+Sharing data with students The beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can&amp;rsquo;t even load the data, then my first impressions of R are not going to be too great.</description>
+    </item>
+    
+    <item>
       <title>Using the Common Online Data Analysis Platform (CODAP) to teach data science</title>
       <link>https://teachdatascience.com/codap/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
@@ -91,17 +101,6 @@ Here’s a simple example where data from higher education institutions from wit
     </item>
     
     <item>
-      <title>Leaflet for mapping</title>
-      <link>https://teachdatascience.com/leaflet.knit/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/leaflet.knit/</guid>
-      <description>Leaflet for mapping Maps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here&amp;rsquo;s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
       <title>Guidelines for Assessment and Instruction in Statistics Education</title>
       <link>https://teachdatascience.com/gaise/</link>
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
@@ -128,6 +127,18 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
       <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+    </item>
+    
+    <item>
+      <title>The Tidyverse</title>
+      <link>https://teachdatascience.com/tidyverse.knit/</link>
+      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tidyverse.knit/</guid>
+      <description>What is the Tidyverse? 
+{width=125px}
+
+The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

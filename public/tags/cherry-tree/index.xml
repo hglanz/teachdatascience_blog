@@ -22,5 +22,15 @@
 Sharing data with studentsThe beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can’t even load the data, then my first impressions of R are not going to be too great.</description>
     </item>
     
+    <item>
+      <title>Creating R data packages for teaching</title>
+      <link>https://teachdatascience.com/datapackage.utf8/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/datapackage.utf8/</guid>
+      <description>Today&amp;rsquo;s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
+Sharing data with students The beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can&amp;rsquo;t even load the data, then my first impressions of R are not going to be too great.</description>
+    </item>
+    
   </channel>
 </rss>

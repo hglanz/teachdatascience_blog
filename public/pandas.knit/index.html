@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>pandas: Python data analysis library  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="python, data technologies, data wrangling, jupyter, ">
+
+
+<meta property="og:title" content="pandas: Python data analysis library  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/pandas.knit/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_16_pandas\pandas.knit.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-15T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-15T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="python">
+    
+<meta property="og:article:tag" content="data technologies">
+    
+<meta property="og:article:tag" content="data wrangling">
+    
+<meta property="og:article:tag" content="jupyter">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/pandas.knit/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>pandas: Python data analysis library
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-15">15 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Hunter Glanz
+  
+  &middot; Read in about 3 min
+  &middot; (576 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=pandas%3a%20Python%20data%20analysis%20library&amp;url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f&amp;title=pandas%3a%20Python%20data%20analysis%20library" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=pandas%3a%20Python%20data%20analysis%20library&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/python" class="label label-primary">python</a>
+  
+  <a href="https://teachdatascience.com/tags/data-technologies" class="label label-primary">data technologies</a>
+  
+  <a href="https://teachdatascience.com/tags/data-wrangling" class="label label-primary">data wrangling</a>
+  
+  <a href="https://teachdatascience.com/tags/jupyter" class="label label-primary">jupyter</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<h2 id="about-pandas">About pandas</h2>
+
+<p>pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&rsquo;s <a href="https://pandas.pydata.org/">homepage</a>, &laquo;pandas helps fill Python&rsquo;s long-standing gap in tools for data analysis and modeling.&raquo;</p>
+
+<p>In short, pandas offers some new and some improved Python tools for doing the following:</p>
+
+<ul>
+<li><p>Reading data in to data frame-type structures</p></li>
+
+<li><p>Viewing and selecting data</p></li>
+
+<li><p>Handling missing data</p></li>
+
+<li><p>Performing (more) SQL-type operations like group-by operations, merging, and reshaping</p></li>
+
+<li><p>Combining and wrangling time series data</p></li>
+</ul>
+
+<p>Let&rsquo;s start by using a bit of the pandas library to look at the flights dataset (here in a Jupyter Notebook, see our blog entry on <a href="https://teachdatascience.com/jupyter/">Jupyter Notebooks</a>):</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/pandas/reticulate_pandas_demo.png" alt="" /></p>
+
+<p></center></p>
+
+<p>To demonstrate the method chaining possible along with the aggregation functionality mentioned above, let&rsquo;s compute the average departure delay and average arrival delay for each carrier.</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/pandas/pandas_groupby_mean.png" alt="" /></p>
+
+<p></center></p>
+
+<p>If you&rsquo;re unfamiliar with <strong>methods</strong> (in Python), you can think of them as being similar to functions but with the following properties:</p>
+
+<ul>
+<li><p>a method is called by its name, but it is <strong>associated to an object</strong> (dependent)</p></li>
+
+<li><p>a method is <strong>implicitly passed the object</strong> on which it is invoked</p></li>
+
+<li><p>it may or may not return any data</p></li>
+
+<li><p>a method <strong>can operate on the data that is contained by the corresponding class</strong></p></li>
+</ul>
+
+<p>whereas, say, functions are not associated to an object &ndash; they are independent. Methods exist in multiple languages, but are quite popular in Python.</p>
+
+<p>The method chaining above should be reminiscent of the piping found in our discussions about the Tidyverse, but this has always been a style of programming possible with pandas. Even so, <code>dplyr</code>, pandas, and many other packages out there continue to help inspire each other and evolve together.</p>
+
+<h2 id="teaching-data-science-with-python">Teaching Data Science with Python</h2>
+
+<p>Data science with Python does not stand on the pandas library alone. There are a number of other Python libraries  that have become widely popular for doing data science. In particular the libraries below, along with pandas, will give you in Python what a great deal of the Tidyverse provides you in <code>R</code>:</p>
+
+<ul>
+<li><p><a href="https://www.numpy.org/">NumPy</a></p></li>
+
+<li><p><a href="https://www.scipy.org/">SciPy</a></p></li>
+
+<li><p><a href="https://scikit-learn.org/">SciKit-Learn</a></p></li>
+
+<li><p><a href="https://matplotlib.org/">Matplotlib</a></p></li>
+
+<li><p><a href="https://seaborn.pydata.org/">Seaborn</a></p></li>
+</ul>
+
+<p>For more advanced statistics and machine learning there are even more libraries out there.</p>
+
+<h3 id="learn-more">Learn more</h3>
+
+<p>While pandas is arguable a Python staple in a data scientist&rsquo;s toolkit, there are many other Python libraries widely used throughout the data science workflow. This post was just a taste of what pandas helps Python bring to the table. Numerous resources exist for more information and tutorials on the full functionality of pandas:</p>
+
+<ul>
+<li><p>Cheat sheet: <a href="https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf">https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf</a></p></li>
+
+<li><p>Modern Pandas tutorial: <a href="https://github.com/TomAugspurger/effective-pandas">https://github.com/TomAugspurger/effective-pandas</a></p></li>
+
+<li><p>pandas collection of tutorials: <a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html">https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html</a></p></li>
+
+<li><p>pandas introduction: <a href="https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673">https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673</a></p></li>
+
+<li><p>Blog entry on <a href="https://teachdatascience.com/jupyter/">Jupyter Notebooks</a></p></li>
+</ul>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=pandas%3a%20Python%20data%20analysis%20library&amp;url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f&amp;title=pandas%3a%20Python%20data%20analysis%20library" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=pandas%3a%20Python%20data%20analysis%20library&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fpandas.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/jupyter/" title="Getting started with Jupyter and JupyterHub">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/pandas/" title="pandas: Python data analysis library">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro.knit/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro.utf8/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/closing/">Closing: A summer of data science education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/cloud2/">More cloud computing: data science is not done on a laptop</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/onemodel/">One model to rule them all</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

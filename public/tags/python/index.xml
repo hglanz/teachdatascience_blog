@@ -80,6 +80,19 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
+      <title>pandas: Python data analysis library</title>
+      <link>https://teachdatascience.com/pandas.knit/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pandas.knit/</guid>
+      <description>About pandas pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&amp;rsquo;s homepage, &amp;laquo;pandas helps fill Python&amp;rsquo;s long-standing gap in tools for data analysis and modeling.&amp;raquo;
+In short, pandas offers some new and some improved Python tools for doing the following:
+ Reading data in to data frame-type structures
+ Viewing and selecting data
+ Handling missing data</description>
+    </item>
+    
+    <item>
       <title>Getting started with Jupyter and JupyterHub</title>
       <link>https://teachdatascience.com/jupyter/</link>
       <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>

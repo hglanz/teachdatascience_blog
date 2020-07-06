@@ -162,7 +162,7 @@
     &middot; by Jo Hardin
   
   &middot; Read in about 8 min
-  &middot; (1506 words)
+  &middot; (1568 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fethicaldataviz%2f" onclick="window.open(this.href, 'mywin',
@@ -230,7 +230,7 @@
 <div id="the-basic-tenets-of-graphing" class="section level2">
 <h2>The Basic Tenets of Graphing</h2>
 <p>As a first foray into understanding how graphical information is utilized, it is important to discuss basic ideas of graph structure and visual perception. In order to present data well, one must <em>understand</em> how to read a chart and how others read a chart.</p>
-<p>Since Huff’s well-known “How to Lie with Statistics” was published in 1954, statistics educators have long taught students about the importance of scale, including zero as a baseline, labeling axes, and eliminating superfluous chart junk.</p>
+<p>Since Huff’s well-known “How to Lie with Statistics” was published in 1954, statistics educators have long taught students about the importance of scale, including zero as a baseline (usually), labeling axes, and pruning superfluous chart junk.</p>
 <p>Less well known, however, are more nuanced considerations of how a graph is interpreted. For example, Cleveland and McGill were able to rank different visual cues, summarized and expanded on by Yau.</p>
 <center>
 <figure>
@@ -300,9 +300,9 @@ Cone of uncertainty provided by NOAA describing Hurricane Sandy in October of 20
 </div>
 <div id="decision-making" class="section level2">
 <h2>Decision Making</h2>
-<p>As mentioned above as a first step, students should understand the structure of graphics and they should be exposed to as many problematic examples as possible. Many of the examples are self-explanatory (especially after the issue has been pointed out), and the more dubious patterns which are presented, the easier it will be for students to identify problematic graphs and create non-problematic graphs.</p>
+<p>As mentioned above as a first step, students should understand the structure of graphics and they should be exposed to as many problematic examples as possible. Many of the examples are self-explanatory (especially after the issue has been pointed out), and the more such patterns are presented, the easier it will be for students to identify problematic graphs and create non-problematic graphs.</p>
 <p>But along with practice identifying graphics themselves, it is valuable for students to really understand <em>why</em> it is so important to create graphics that convey real information.</p>
-<p>Edward Tufte, known for his work in visual communication of information, provides an example of a poor visualization having a catastrophic outcome. The example is based on the Challenger disaster from January 28, 1986 when the space shuttle took off from Cape Canaveral, FL and immediate exploded, killing all seven astronauts aboard. We now know that the reason for the explosion was due to the failure of two rubber O-rings which malfunctioned due to the cold temperature of the day (<span class="math inline">\(\sim 29^\circ\)</span> F).</p>
+<p>Edward Tufte, known for his work in visual communication of information, provides an example of a poor visualization having a catastrophic outcome. The example is based on the Space Shuttle Challenger disaster from January 28, 1986 when the space craft took off from Cape Canaveral, FL and immediate exploded, killing all seven astronauts aboard. We now know that the reason for the explosion was due to the failure of two rubber O-rings which malfunctioned due to the cold temperature of the day (<span class="math inline">\(\sim 29^\circ\)</span> F).</p>
 <p>It is now understood that the risks due to the cold weather were known by many of the engineers, but they were not able to convince the powers that be to postpone the launch. The evidence was clear but it was poorly communicated. Indeed, there was no intent to mislead or fool the reader. Just the opposite, the engineers were trying to use their graphics to argue the truth; unfortunately, the graphics were not up to the task.</p>
 <center>
 <figure>
@@ -342,7 +342,16 @@ The graphic the engineers should have led with in trying to persuade the adminis
 <li><p>Deb Nolan and Jamis Perrett <a href="https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2015.1123651">Teaching and Learning Data Visualization: Ideas and Assignments</a>, <em>TAS</em> 2016.</p></li>
 <li><p>Edward Tufte, <a href="http://www.edwardtufte.com/tufte/books_textb">Visual and Statistical Thinking: Displays of Evidence for Making decisions</a></p></li>
 <li><p>Nathan Yau, <a href="http://flowingdata.com/data-points/">Data Points: Visualization That Means Something</a></p></li>
+<li><p>Don’t know the best way to present your work visually? Try <a href="https://www.data-to-viz.com/">from Data to Viz</a></p></li>
+<li><p>At RStudio::conf 2020, <a href="https://rstudio.com/resources/rstudioconf-2020/the-glamour-of-graphics/">The Glamour of Graphics</a>, Will Chase makes some very important points about how and why making good graphics matters. The talk might be summarized by the plot below: fonts matter.</p></li>
 </ul>
+<center>
+<figure>
+<img alt = 'fontsmatter' width='600' src='fontsmatter.png' />
+<figcaption>
+Screen shot from Will Chase’s RStudio::conf 2020 talk “The Glamour of Graphics”.
+</figure>
+</center>
 </div>
 <div id="about-this-blog" class="section level3">
 <h3>About this blog</h3>
@@ -442,15 +451,19 @@ The graphic the engineers should have led with in trying to persuade the adminis
           </li>
         
           <li>
+          <a href="https://teachdatascience.com/reintro.knit/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro.utf8/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/nextsteps.utf8/">Next Steps</a>
           </li>
         
           <li>
@@ -469,10 +482,6 @@ The graphic the engineers should have led with in trying to persuade the adminis
           <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
           </li>
         
-          <li>
-          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
-          </li>
-        
         </ul>
       </div>
     </div>
@@ -485,7 +494,7 @@ The graphic the engineers should have led with in trying to persuade the adminis
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
           </ul>
         </div>
       </div>

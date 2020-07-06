@@ -40,7 +40,7 @@ Along the same lines, Nolan and Perrett describe three important ways that graph
 
 As a first foray into understanding how graphical information is utilized, it is important to discuss basic ideas of graph structure and visual perception.  In order to present data well, one must *understand* how to read a chart and how others read a chart.
 
-Since Huff's well-known "How to Lie with Statistics" was published in 1954, statistics educators have long taught students about the importance of scale, including zero as a baseline, labeling axes, and eliminating superfluous chart junk.
+Since Huff's well-known "How to Lie with Statistics" was published in 1954, statistics educators have long taught students about the importance of scale, including zero as a baseline (usually), labeling axes, and pruning superfluous chart junk.
 
 Less well known, however, are more nuanced considerations of how a graph is interpreted.  For example, Cleveland and McGill were able to rank different visual cues, summarized and expanded on by Yau.
 
@@ -112,11 +112,11 @@ Because educating data scientists is about engagement as well as information, it
 
 ## Decision Making
 
-As mentioned above as a first step, students should understand the structure of graphics and they should be exposed to as many problematic examples as possible. Many of the examples are self-explanatory (especially after the issue has been pointed out), and the more dubious patterns which are presented, the easier it will be for students to identify problematic graphs and create non-problematic graphs.
+As mentioned above as a first step, students should understand the structure of graphics and they should be exposed to as many problematic examples as possible. Many of the examples are self-explanatory (especially after the issue has been pointed out), and the more such patterns are presented, the easier it will be for students to identify problematic graphs and create non-problematic graphs.
 
 But along with practice identifying graphics themselves, it is valuable for students to really understand *why* it is so important to create graphics that convey real information.
 
-Edward Tufte, known for his work in visual communication of information, provides an example of a poor visualization having a catastrophic outcome.  The example is based on the Challenger disaster from January 28, 1986 when the space shuttle took off from Cape Canaveral, FL and immediate exploded, killing all seven astronauts aboard.  We now know that the reason for the explosion was due to the failure of two rubber O-rings which malfunctioned due to the cold temperature of the day ($\sim 29^\circ$ F).
+Edward Tufte, known for his work in visual communication of information, provides an example of a poor visualization having a catastrophic outcome.  The example is based on the Space Shuttle Challenger disaster from January 28, 1986 when the space craft took off from Cape Canaveral, FL and immediate exploded, killing all seven astronauts aboard.  We now know that the reason for the explosion was due to the failure of two rubber O-rings which malfunctioned due to the cold temperature of the day ($\sim 29^\circ$ F).
 
 It is now understood that the risks due to the cold weather were known by many of the engineers, but they were not able to convince the powers that be to postpone the launch.  The evidence was clear but it was poorly communicated.  Indeed, there was no intent to mislead or fool the reader.  Just the opposite, the engineers were trying to use their graphics to argue the truth; unfortunately, the graphics were not up to the task.
 
@@ -172,8 +172,16 @@ But at the end of the day, we believe that the conversations you have with your 
 
 - Nathan Yau, [Data Points: Visualization That Means Something](http://flowingdata.com/data-points/)
 
+- Don't know the best way to present your work visually?  Try [from Data to Viz](https://www.data-to-viz.com/)
 
+- At RStudio::conf 2020, [The Glamour of Graphics](https://rstudio.com/resources/rstudioconf-2020/the-glamour-of-graphics/), Will Chase makes some very important points about how and why making good graphics matters.  The talk might be summarized by the plot below: fonts matter. 
 
+<center>
+<figure>
+<img alt = 'fontsmatter' width='600' src='fontsmatter.png' />
+<figcaption>Screen shot from Will Chase's RStudio::conf 2020 talk "The Glamour of Graphics".
+</figure>
+</center>
 
 
 
