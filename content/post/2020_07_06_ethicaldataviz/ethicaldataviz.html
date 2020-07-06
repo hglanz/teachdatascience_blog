@@ -1,0 +1,164 @@
+---
+title: "Ethical Data Viz"
+author: "Jo Hardin"
+date: "2020-07-06"
+output:
+  html_document:
+    df_print: paged
+tags:
+- visualization
+- ethics
+categories: R
+---
+
+
+
+<p>Arguably, data have the broadest impact in engaging readers, changing minds, and determining policy when they are presented graphically. It is the potential for enormous impact that requires a data scientist to think most carefully about how their visualizations are created and then subsequently consumed.</p>
+<p>Many of us already teach data visualization in our statistics and data science classes. Therefore, introducing an ethical framework and a theory on valid graphics will be a natural fit into many classes.</p>
+<p>Michael Correll writes about the “Ethical Dimensions of Visualization Research” and suggests that we:</p>
+<blockquote>
+<p>have obligations in that we have a great deal of power over how people ultimately make use of data, both in the patterns they see and the conclusions they draw.</p>
+</blockquote>
+<p>He further suggests that in every data visualization it is important to:</p>
+<blockquote>
+<ul>
+<li>Make the Invisible Visible</li>
+<li>Collect Data with Empathy</li>
+<li>Challenge Structures of Power</li>
+</ul>
+</blockquote>
+<p>Along the same lines, Nolan and Perrett describe three important ways that graphics can be used to convey information from data.</p>
+<ol style="list-style-type: decimal">
+<li>Make the data stand out</li>
+<li>Facilitate comparisons</li>
+<li>Add information</li>
+</ol>
+<div id="the-basic-tenets-of-graphing" class="section level2">
+<h2>The Basic Tenets of Graphing</h2>
+<p>As a first foray into understanding how graphical information is utilized, it is important to discuss basic ideas of graph structure and visual perception. In order to present data well, one must <em>understand</em> how to read a chart and how others read a chart.</p>
+<p>Since Huff’s well-known “How to Lie with Statistics” was published in 1954, statistics educators have long taught students about the importance of scale, including zero as a baseline, labeling axes, and eliminating superfluous chart junk.</p>
+<p>Less well known, however, are more nuanced considerations of how a graph is interpreted. For example, Cleveland and McGill were able to rank different visual cues, summarized and expanded on by Yau.</p>
+<center>
+<figure>
+<img alt = 'Yau order' width='800' src='Yau_order.png' />
+<figcaption>
+</figcaption>
+</figure>
+</center>
+<p>Additionally, if the observer cannot see the graphic clearly, the information cannot be conveyed. Considering font size, labels, and colors are of utmost importance and part of the ethical considerations for all data scientists. For example, the R package <code>RColorBrewer</code> provides different color schemes for optimal visual perception.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> A discussion of using color in R (including color blindness) is provided on Jenny Bryan’s STAT545 course website <a href="https://stat545.com/colors.html" class="uri">https://stat545.com/colors.html</a>.</p>
+<pre class="r"><code>RColorBrewer::display.brewer.all()</code></pre>
+<p><img src="/post/2020_07_06_ethicaldataviz/ethicaldataviz_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
+</div>
+<div id="compelling-examples" class="section level2">
+<h2>Compelling Examples</h2>
+<p>Because educating data scientists is about engagement as well as information, it is often of utmost importance to provide examples of why and how visualizations can go wrong. Unfortunately, it is not difficult to find graphics that misrepresent information.</p>
+<ul>
+<li>The first example is astonishingly problematic, although for most people, it really takes a second glance to focus in on the y-axis.</li>
+</ul>
+<center>
+<figure>
+<img alt = 'FL guns' width='600' src='FLguns.jpg' />
+<figcaption>
+A great example of a misleading image taken from <strong>Modern Data Science with R</strong> by Baumer, Kaplan, and Horton
+</figcaption>
+</figure>
+</center>
+<ul>
+<li>Or another plot that has gotten a lot of press is the following. What is wrong with this plot? (Hint: again, look at the y-axis… apologies if the image is hard to see!)</li>
+</ul>
+<center>
+<figure>
+<img alt = 'climate' width='600' src='climate.png' />
+<figcaption>
+A tweet by <em>National Review</em> on December 14, 2015 showing the change in global temperature over time. Taken from <strong>Modern Data Science with R</strong> by Baumer, Kaplan, and Horton
+</figcaption>
+</figure>
+</center>
+<ul>
+<li>Recently, the Georgia Department of Health came out with a grouped barplot showing the number of COVID-19 cases by day in 5 populous counties in GA. The bars were arranged in some kind of decreasing order, but at first glance, the typical reader will <em>think</em> that the bars are sorted according to <strong>time</strong> increasing along the x-axis.</li>
+</ul>
+<center>
+<figure>
+<img alt = 'climate' width='600' src='GAcovid.jpg' />
+<figcaption>
+May 10, 2020, Georgia Department of Health, COVID-19 cases for 5 counties across time, sorted by ????. <a href="https://dph.georgia.gov/covid-19-daily-status-report" class="uri">https://dph.georgia.gov/covid-19-daily-status-report</a>
+</figcaption>
+</figure>
+</center>
+<center>
+<figure>
+<img alt = 'climate' width='600' src='GAcovid2.jpg' />
+<figcaption>
+May 17, 2020, Georgia Department of Health, COVID-19 cases for 5 counties across time, sorted by time. <a href="https://dph.georgia.gov/covid-19-daily-status-report" class="uri">https://dph.georgia.gov/covid-19-daily-status-report</a>
+</figcaption>
+</figure>
+</center>
+<ul>
+<li>In his book <strong>How Charts Lie</strong>, Albert Cairo discusses the importance of graphs to communicate uncertainty. Consider the hurricane graph below that describes a “cone of uncertainty”. The increasing path is meant to indicate that the path becomes less certain, but the widening is commonly interpreted to indicate that the hurricane is getting larger or stronger. (The graphical issues are described in detail from an excellent <em>NY Times</em> interactive article “Those Hurricane Maps Don’t Mean What You Think They Mean”, <a href="https://www.nytimes.com/interactive/2019/08/29/opinion/hurricane-dorian-forecast-map.html" class="uri">https://www.nytimes.com/interactive/2019/08/29/opinion/hurricane-dorian-forecast-map.html</a>.)</li>
+</ul>
+<center>
+<figure>
+<img alt = 'hurricane' width='600' src='hurricane.png' />
+<figcaption>
+Cone of uncertainty provided by NOAA describing Hurricane Sandy in October of 2012, <a href="https://www.nhc.noaa.gov/aboutcone.shtml" class="uri">https://www.nhc.noaa.gov/aboutcone.shtml</a>.&gt;
+</figure>
+</center>
+</div>
+<div id="decision-making" class="section level2">
+<h2>Decision Making</h2>
+<p>As mentioned above as a first step, students should understand the structure of graphics and they should be exposed to as many problematic examples as possible. Many of the examples are self-explanatory (especially after the issue has been pointed out), and the more dubious patterns which are presented, the easier it will be for students to identify problematic graphs and create non-problematic graphs.</p>
+<p>But along with practice identifying graphics themselves, it is valuable for students to really understand <em>why</em> it is so important to create graphics that convey real information.</p>
+<p>Edward Tufte, known for his work in visual communication of information, provides an example of a poor visualization having a catastrophic outcome. The example is based on the Challenger disaster from January 28, 1986 when the space shuttle took off from Cape Canaveral, FL and immediate exploded, killing all seven astronauts aboard. We now know that the reason for the explosion was due to the failure of two rubber O-rings which malfunctioned due to the cold temperature of the day (<span class="math inline">\(\sim 29^\circ\)</span> F).</p>
+<p>It is now understood that the risks due to the cold weather were known by many of the engineers, but they were not able to convince the powers that be to postpone the launch. The evidence was clear but it was poorly communicated. Indeed, there was no intent to mislead or fool the reader. Just the opposite, the engineers were trying to use their graphics to argue the truth; unfortunately, the graphics were not up to the task.</p>
+<center>
+<figure>
+<img alt = 'challenger' width='600' src='challenger2.jpg' />
+<figcaption>
+One of the engineers’ visualizations to demonstrate the frequency of o-ring failure as it relates to external temperature&gt;
+</figure>
+</center>
+<p>Tufte created the graphic below which should have been used before the launch to convince others to postpone. The basic scatterplot is extremely convincing.</p>
+<center>
+<figure>
+<img alt = 'Tufte' width='600' src='TuftestemperatureandOringrelationshi.jpg' />
+<figcaption>
+The graphic the engineers should have led with in trying to persuade the administrators not to launch. It is evident that the number of O-ring failures is quite highly associated with the ambient temperature. Note the <em>vital</em> information on the x-axis associated with the large number of launches at warm temperatures that had <em>zero</em> O-ring failures.
+</figure>
+</center>
+</div>
+<div id="classroom-activities" class="section level2">
+<h2>Classroom Activities</h2>
+<p>Of course, a part of teaching any topic is structuring classroom activities. In 2019, we wrote a series of blog posts, and we point you to the post on <a href="https://teachdatascience.com/dataviz/">Teaching Data Visualization</a> which includes ideas for assignments as well as a large number of resources for books, articles, and courses that include classroom activities and assessment.</p>
+<p><a href="https://mdsr-book.github.io/index.html">Modern Data Science with R</a> devotes an entire chapter to Ethics (free online), including data visualization ethics, and includes homework problems to use.</p>
+<p>But at the end of the day, we believe that the conversations you have with your students and the ideas generated from many examples will have the most powerful impact on helping students be good consumers and producers of data visualizations. Keep asking your students good questions:</p>
+<ul>
+<li>What did you learn from the chart someone else made?</li>
+<li>What did someone else learn from the chart you made?</li>
+</ul>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><p>Stephanie Andalde. 2014. “Misleading Graphs: Real Life Examples.” <a href="http://www.statisticshowto.com/misleading-graphs/" class="uri">http://www.statisticshowto.com/misleading-graphs/</a>.</p></li>
+<li><p><a href="https://mdsr-book.github.io/index.html">Modern Data Science with R</a> by Baumer, Kaplan, and Horton devotes a chapters to ethics, including the ethics associated with visualizations. (As a textbook, MDSR provides many great examples and end of chapter exercises.)</p></li>
+<li><p>Alberto Cairo. 2019. “How Charts Lie.”</p></li>
+<li><p>Cleveland and McGill. 1984. “Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods”.</p></li>
+<li><p>Alberto Cairo &amp; Tala Schlossberg, 8/29/2019, “Those Hurricane Maps Don’t Mean What You Think They Mean”, <em>New York Times</em>, <a href="https://www.nytimes.com/interactive/2019/08/29/opinion/hurricane-dorian-forecast-map.html" class="uri">https://www.nytimes.com/interactive/2019/08/29/opinion/hurricane-dorian-forecast-map.html</a></p></li>
+<li><p>Michael Correll. 2019. “Ethical Dimensions of Visualization Research.” Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems. <a href="https://dl.acm.org/doi/10.1145/3290605.3300418" class="uri">https://dl.acm.org/doi/10.1145/3290605.3300418</a>; <a href="https://arxiv.org/pdf/1811.07271.pdf" class="uri">https://arxiv.org/pdf/1811.07271.pdf</a>.</p></li>
+<li><p>“Data Visualization”, MSIS 2696 at Santa Clara University, <a href="https://mschermann.github.io/data_viz_reader/ethics.html">A Reader on Data Visualization, Chapter 5 on Ethics</a></p></li>
+<li><p>Deb Nolan and Jamis Perrett <a href="https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2015.1123651">Teaching and Learning Data Visualization: Ideas and Assignments</a>, <em>TAS</em> 2016.</p></li>
+<li><p>Edward Tufte, <a href="http://www.edwardtufte.com/tufte/books_textb">Visual and Statistical Thinking: Displays of Evidence for Making decisions</a></p></li>
+<li><p>Nathan Yau, <a href="http://flowingdata.com/data-points/">Data Points: Visualization That Means Something</a></p></li>
+</ul>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Each day during the summer of 2019 we blogged on a given topic of interest to educators teaching data science and statistics courses. This summer we are focusing on data ethics. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The original colorbrewer was designed by Cynthia Brewer as described at <a href="http://colorbrewer2.org" class="uri">http://colorbrewer2.org</a>.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

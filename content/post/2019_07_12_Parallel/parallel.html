@@ -43,7 +43,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 2164
+## node of a socket cluster on host &#39;localhost&#39; with pid 12576
 
 stopCluster(cl)
 cl[[1]]
@@ -63,13 +63,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 11.89191
+## [1] 27.43499
 ## 
 ## [[2]]
-## [1] 19.19419
+## [1] 14.90039
 ## 
 ## [[3]]
-## [1] 43.4622
+## [1] 164.9806
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -82,7 +82,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 16.59939 67.92208 52.21316
+## [1]  8.953610  7.474034 60.357070
 
 stopCluster(cl)</code></pre>
 </div>

@@ -44,16 +44,6 @@ But using GitHub to navigate a dozen homework assignments with 50 students can b
     </item>
     
     <item>
-      <title>GitHub Classroom</title>
-      <link>https://teachdatascience.com/gitclass.utf8/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
-      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
-But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
-    </item>
-    
-    <item>
       <title>Using GitHub in R</title>
       <link>https://teachdatascience.com/githubinr/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>

@@ -14,7 +14,7 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="R Markdown, visualization, dynamic visualization, mapping, ">
+<meta name="keywords" content="R Markdown, visualization, dynamic visualization, mapping, statistics, ">
 
 
 <meta property="og:title" content="Leaflet for mapping  &middot; Teach Data Science ">
@@ -37,6 +37,8 @@
 <meta property="og:article:tag" content="dynamic visualization">
     
 <meta property="og:article:tag" content="mapping">
+    
+<meta property="og:article:tag" content="statistics">
     
   
 
@@ -166,7 +168,7 @@
     &middot; by Nicholas Horton
   
   &middot; Read in about 3 min
-  &middot; (620 words)
+  &middot; (621 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fleaflet.knit%2f" onclick="window.open(this.href, 'mywin',
@@ -199,6 +201,8 @@
   <a href="https://teachdatascience.com/tags/dynamic-visualization" class="label label-primary">dynamic visualization</a>
   
   <a href="https://teachdatascience.com/tags/mapping" class="label label-primary">mapping</a>
+  
+  <a href="https://teachdatascience.com/tags/statistics" class="label label-primary">statistics</a>
   
 
 
@@ -239,13 +243,13 @@ students &lt;- c(1792, 1175, 2255, 2600, 28635)
 label &lt;- paste0(&quot;&lt;b&gt;&quot;, institution, &quot;&lt;/b&gt;&lt;br&gt;&quot;, students, &quot; students&quot;, sep=&quot;&quot;)
 ds &lt;- dplyr::tibble(institution, lat, lng, students, label)
 dplyr::glimpse(ds)
-## Observations: 5
-## Variables: 5
-## $ institution &lt;chr&gt; &quot;Amherst College&quot;, &quot;Hampshire College&quot;, &quot;Mount Hol...
+## Rows: 5
+## Columns: 5
+## $ institution &lt;chr&gt; &quot;Amherst College&quot;, &quot;Hampshire College&quot;, &quot;Mount Holyoke ...
 ## $ lat         &lt;dbl&gt; 42.37090, 42.32508, 42.25559, 42.31812, 42.39120
 ## $ lng         &lt;dbl&gt; -72.51700, -72.53084, -72.57450, -72.63814, -72.52670
 ## $ students    &lt;dbl&gt; 1792, 1175, 2255, 2600, 28635
-## $ label       &lt;chr&gt; &quot;&lt;b&gt;Amherst College&lt;/b&gt;&lt;br&gt;1792 students&quot;, &quot;&lt;b&gt;Ham...
+## $ label       &lt;chr&gt; &quot;&lt;b&gt;Amherst College&lt;/b&gt;&lt;br&gt;1792 students&quot;, &quot;&lt;b&gt;Hampshir...
 </code></pre>
 
 <p>Here we have used simple html markup to create a two line label, with institution bolded, that will be displayed.</p>
@@ -258,8 +262,8 @@ m &lt;- leaflet(ds) %&gt;%
 m # step 4: display the results
 </code></pre>
 
-<p><!--html_preserve--><div id="htmlwidget-58b91c55aaf411186c96" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-58b91c55aaf411186c96">{&laquo;x&raquo;:{&laquo;options&raquo;:{&laquo;crs&raquo;:{&laquo;crsClass&raquo;:&laquo;L.CRS.EPSG3857&raquo;,&laquo;code&raquo;:null,&laquo;proj4def&raquo;:null,&laquo;projectedBounds&raquo;:null,&laquo;options&raquo;:{}}},&laquo;calls&raquo;:[{&laquo;method&raquo;:&laquo;addTiles&raquo;,&laquo;args&raquo;:[&laquo;//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&raquo;,null,null,{&laquo;minZoom&raquo;:0,&laquo;maxZoom&raquo;:18,&laquo;maxNativeZoom&raquo;:null,&laquo;tileSize&raquo;:256,&laquo;subdomains&raquo;:&laquo;abc&raquo;,&laquo;errorTileUrl&raquo;:&laquo;&raquo;,&laquo;tms&raquo;:false,&laquo;continuousWorld&raquo;:false,&laquo;noWrap&raquo;:false,&laquo;zoomOffset&raquo;:0,&laquo;zoomReverse&raquo;:false,&laquo;opacity&raquo;:1,&laquo;zIndex&raquo;:null,&laquo;unloadInvisibleTiles&raquo;:null,&laquo;updateWhenIdle&raquo;:null,&laquo;detectRetina&raquo;:false,&laquo;reuseTiles&raquo;:false,&laquo;attribution&raquo;:&raquo;&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap&lt;\/a&gt; contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA&lt;\/a&gt;&laquo;}]},{&laquo;method&raquo;:&laquo;addMarkers&raquo;,&laquo;args&raquo;:[[42.3709,42.325079,42.255586,42.318119,42.3912],[-72.517,-72.530837,-72.574503,-72.638139,-72.5267],null,null,null,{&laquo;clickable&raquo;:true,&laquo;draggable&raquo;:false,&laquo;keyboard&raquo;:true,&laquo;title&raquo;:&laquo;&raquo;,&laquo;alt&raquo;:&laquo;&raquo;,&laquo;zIndexOffset&raquo;:0,&laquo;opacity&raquo;:1,&laquo;riseOnHover&raquo;:false,&laquo;riseOffset&raquo;:250},[&raquo;<b>Amherst College&lt;\/b&gt;<br>1792 students&raquo;,&raquo;<b>Hampshire College&lt;\/b&gt;<br>1175 students&raquo;,&raquo;<b>Mount Holyoke College&lt;\/b&gt;<br>2255 students&raquo;,&raquo;<b>Smith College&lt;\/b&gt;<br>2600 students&raquo;,&raquo;<b>University of Massachusetts&lt;\/b&gt;<br>28635 students&raquo;],null,null,null,null,null,null]}],&laquo;limits&raquo;:{&laquo;lat&raquo;:[42.255586,42.3912],&laquo;lng&raquo;:[-72.638139,-72.517]}},&laquo;evals&raquo;:[],&laquo;jsHooks&raquo;:[]}</script><!--/html_preserve-->
+<p><!--html_preserve--><div id="htmlwidget-6e5b716616def33e6f37" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6e5b716616def33e6f37">{&laquo;x&raquo;:{&laquo;options&raquo;:{&laquo;crs&raquo;:{&laquo;crsClass&raquo;:&laquo;L.CRS.EPSG3857&raquo;,&laquo;code&raquo;:null,&laquo;proj4def&raquo;:null,&laquo;projectedBounds&raquo;:null,&laquo;options&raquo;:{}}},&laquo;calls&raquo;:[{&laquo;method&raquo;:&laquo;addTiles&raquo;,&laquo;args&raquo;:[&laquo;//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&raquo;,null,null,{&laquo;minZoom&raquo;:0,&laquo;maxZoom&raquo;:18,&laquo;tileSize&raquo;:256,&laquo;subdomains&raquo;:&laquo;abc&raquo;,&laquo;errorTileUrl&raquo;:&laquo;&raquo;,&laquo;tms&raquo;:false,&laquo;noWrap&raquo;:false,&laquo;zoomOffset&raquo;:0,&laquo;zoomReverse&raquo;:false,&laquo;opacity&raquo;:1,&laquo;zIndex&raquo;:1,&laquo;detectRetina&raquo;:false,&laquo;attribution&raquo;:&raquo;&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap&lt;\/a&gt; contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA&lt;\/a&gt;&laquo;}]},{&laquo;method&raquo;:&laquo;addMarkers&raquo;,&laquo;args&raquo;:[[42.3709,42.325079,42.255586,42.318119,42.3912],[-72.517,-72.530837,-72.574503,-72.638139,-72.5267],null,null,null,{&laquo;interactive&raquo;:true,&laquo;draggable&raquo;:false,&laquo;keyboard&raquo;:true,&laquo;title&raquo;:&laquo;&raquo;,&laquo;alt&raquo;:&laquo;&raquo;,&laquo;zIndexOffset&raquo;:0,&laquo;opacity&raquo;:1,&laquo;riseOnHover&raquo;:false,&laquo;riseOffset&raquo;:250},[&raquo;<b>Amherst College&lt;\/b&gt;<br>1792 students&raquo;,&raquo;<b>Hampshire College&lt;\/b&gt;<br>1175 students&raquo;,&raquo;<b>Mount Holyoke College&lt;\/b&gt;<br>2255 students&raquo;,&raquo;<b>Smith College&lt;\/b&gt;<br>2600 students&raquo;,&raquo;<b>University of Massachusetts&lt;\/b&gt;<br>28635 students&raquo;],null,null,null,null,{&laquo;interactive&raquo;:false,&laquo;permanent&raquo;:false,&laquo;direction&raquo;:&laquo;auto&raquo;,&laquo;opacity&raquo;:1,&laquo;offset&raquo;:[0,0],&laquo;textsize&raquo;:&laquo;10px&raquo;,&laquo;textOnly&raquo;:false,&laquo;className&raquo;:&laquo;&raquo;,&laquo;sticky&raquo;:true},null]}],&laquo;limits&raquo;:{&laquo;lat&raquo;:[42.255586,42.3912],&laquo;lng&raquo;:[-72.638139,-72.517]}},&laquo;evals&raquo;:[],&laquo;jsHooks&raquo;:[]}</script><!--/html_preserve-->
 The popups for each of the five institutions can be clicked to see information contained in the <code>label</code> variable.  Here&rsquo;s an example of what happens if Amherst College is clicked:</p>
 
 <p><img src="https://teachdatascience.com/post/leaflet/popup.png" alt="" /></p>
@@ -378,43 +382,43 @@ your rmarkdown file:</p>
         <ul>
         
           <li>
-          <a href="https://teachdatascience.com/data4good/">Data Science for Good</a>
+          <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/dataviz/">Teaching Data Visualization</a>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/cloud/">RStudio Server Pro and Rstudio.cloud installations</a>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/pairprogramming/">Pair Programming for Data Science and Statistics</a>
+          <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/peerj/">Practical Data Science: an introduction to the PeerJ collection</a>
+          <a href="https://teachdatascience.com/nextsteps.utf8/">Next Steps</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/mosaic/">Less Volume More Creativity in R</a>
+          <a href="https://teachdatascience.com/closing/">Closing: A summer of data science education</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/sql/">SQL 101 in R</a>
+          <a href="https://teachdatascience.com/cloud2/">More cloud computing: data science is not done on a laptop</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/infer/">infer</a>
+          <a href="https://teachdatascience.com/onemodel/">One model to rule them all</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/gitclass/">Github Classroom</a>
+          <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
           </li>
         
           <li>
-          <a href="https://teachdatascience.com/githubinr/">Using GitHub in R</a>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
           </li>
         
         </ul>
@@ -429,7 +433,7 @@ your rmarkdown file:</p>
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/reports">reports</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/tidyverse">tidyverse</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
           </ul>
         </div>
       </div>

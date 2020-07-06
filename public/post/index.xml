@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ethical Data Viz</title>
+      <link>https://teachdatascience.com/ethicaldataviz/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/ethicaldataviz/</guid>
+      <description>Arguably, data have the broadest impact in engaging readers, changing minds, and determining policy when they are presented graphically. It is the potential for enormous impact that requires a data scientist to think most carefully about how their visualizations are created and then subsequently consumed.
+Many of us already teach data visualization in our statistics and data science classes. Therefore, introducing an ethical framework and a theory on valid graphics will be a natural fit into many classes.</description>
+    </item>
     
     <item>
       <title>Re-Introduction: Ethics in Data Science Education</title>
@@ -43,10 +53,10 @@ The list below represents opportunities at a variety of levels. If you are just 
     
     <item>
       <title>Next Steps</title>
-      <link>https://teachdatascience.com/nextsteps.knit/</link>
+      <link>https://teachdatascience.com/nextsteps.utf8/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/nextsteps.knit/</guid>
+      <guid>https://teachdatascience.com/nextsteps.utf8/</guid>
       <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we&amp;rsquo;ve gotten over the summer. Here&amp;rsquo;s to many future discussions on data science education.</description>
     </item>
     
@@ -122,6 +132,17 @@ However, you may not have a plan for how to bring the ideas into the data scienc
       <description>Eighteen years ago, Leo Breiman published an important paper entitled Statistical modeling: the two cultures in Statistical Science. In today’s blog entry we discuss the implications of the paper for data science education.
 Breiman argued that the two cultures included:
 one that assumes a stochastic data modelone that uses an algorithmic model (and treats the data mechanism as unknown)Breiman asserted that the statistics community had almost exclusively focused on the former, with interpretation of parameters at the core.</description>
+    </item>
+    
+    <item>
+      <title>Breiman&#39;s two cultures</title>
+      <link>https://teachdatascience.com/twocultures.knit/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/twocultures.knit/</guid>
+      <description>Eighteen years ago, Leo Breiman published an important paper entitled Statistical modeling: the two cultures in Statistical Science. In today&amp;rsquo;s blog entry we discuss the implications of the paper for data science education.
+Breiman argued that the two cultures included:
+ one that assumes a stochastic data model one that uses an algorithmic model (and treats the data mechanism as unknown)  Breiman asserted that the statistics community had almost exclusively focused on the former, with interpretation of parameters at the core.</description>
     </item>
     
     <item>
@@ -376,16 +397,6 @@ The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Hort
     </item>
     
     <item>
-      <title>SQL 101 in R</title>
-      <link>https://teachdatascience.com/sql/</link>
-      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/sql/</guid>
-      <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
-SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
-    </item>
-    
-    <item>
       <title>infer</title>
       <link>https://teachdatascience.com/infer/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
@@ -401,16 +412,6 @@ SQL (pronounced sequel) stands for Structured Query Language; it is a language d
       
       <guid>https://teachdatascience.com/gitclass/</guid>
       <description>GitHub ClassroomIf you have been reading along in the blog, you’ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
-But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
-    </item>
-    
-    <item>
-      <title>GitHub Classroom</title>
-      <link>https://teachdatascience.com/gitclass.utf8/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
-      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
 But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
     </item>
     
@@ -444,6 +445,17 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
       <description>Leaflet for mappingMaps are an important way of displaying data.
 The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
 Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
+    </item>
+    
+    <item>
+      <title>Leaflet for mapping</title>
+      <link>https://teachdatascience.com/leaflet.knit/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/leaflet.knit/</guid>
+      <description>Leaflet for mapping Maps are an important way of displaying data.
+The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
+Here&amp;rsquo;s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
     </item>
     
     <item>
@@ -549,6 +561,16 @@ By including data work, code, and analysis narrative into a single document, R M
       
       <guid>https://teachdatascience.com/intro/</guid>
       <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+    </item>
+    
+    <item>
+      <title>SQL 101 in R</title>
+      <link>https://teachdatascience.com/sql/</link>
+      <pubDate>Sun, 17 Jun 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/sql/</guid>
+      <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
+SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
     </item>
     
     <item>

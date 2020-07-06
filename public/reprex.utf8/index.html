@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>reprex:  Help me help you  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="rstudio, github, debugging, collaboration, ">
+
+
+<meta property="og:title" content="reprex:  Help me help you  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/reprex.utf8/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_11_Reprex\reprex.utf8.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-10T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-10T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="rstudio">
+    
+<meta property="og:article:tag" content="github">
+    
+<meta property="og:article:tag" content="debugging">
+    
+<meta property="og:article:tag" content="collaboration">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/reprex.utf8/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>reprex:  Help me help you
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-10">10 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Jo Hardin
+  
+  &middot; Read in about 5 min
+  &middot; (910 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=reprex%3a%20%20Help%20me%20help%20you&amp;url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f&amp;title=reprex%3a%20%20Help%20me%20help%20you" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=reprex%3a%20%20Help%20me%20help%20you&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/rstudio" class="label label-primary">rstudio</a>
+  
+  <a href="https://teachdatascience.com/tags/github" class="label label-primary">github</a>
+  
+  <a href="https://teachdatascience.com/tags/debugging" class="label label-primary">debugging</a>
+  
+  <a href="https://teachdatascience.com/tags/collaboration" class="label label-primary">collaboration</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<blockquote>
+<p>&hellip;if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.</p>
+</blockquote>
+
+<p>The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie&rsquo;s novel, <em>Mrs. Dymond</em> (1885).  The point is well understood &ndash; one of the most important things we can teach our students is how they can help themselves.  For today&rsquo;s challenges, some common ways to get help with computing problems are through <a href="https://stackoverflow.com/">Stack Overflow</a>, <a href="https://stat.ethz.ch/mailman/listinfo/r-help">R-help mailing lists</a>, course <a href="https://slack.com/">Slack channels</a>, and <strong>issues</strong> in a GitHub repo (see previous blog post on <a href="https://teachdatascience.com/github/">GitHub</a>).  In order to get help with a particular problem, you must provide enough information that the person helping you with the problem understands the crux of the issue.  Indeed, they should be able to reproduce the problem on their own machine.</p>
+
+<p>Stack Overflow provides advice not only on technical questions but also on how to ask good questions!  A very popular post addresses <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">how to make a great R reproducible example</a>:</p>
+
+<p><center>
+<figure>
+<img alt = 'stackov' width='400' src='https://teachdatascience.com/post/reprex/stackov.png' />
+<figcaption> <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">how to make a great R reproducible example</a></figcaption>
+</figure>
+</center></p>
+
+<h2 id="how-to-create-a-minimal-repr-oducible-ex-ample-using-reprex">How to create a minimal <code>repr</code>oducible <code>ex</code>ample using <code>reprex</code></h2>
+
+<p>While teaching cadres of students at University of British Columbia in <a href="https://stat545.com/">Stat 545</a>, Jenny Bryan found herself trying to parse snippets of code from GitHub issues where students had posted questions.  Some questions were easy to address, but other questions were not clear about what was being asked.  She found that it was not straightforward for her students to create reproducible examples.  That experience led her to create the R package <a href="https://reprex.tidyverse.org/index.html"><code>reprex</code></a>.</p>
+
+<p>By running code with the <code>reprex</code>, you can create a reproducible example to post to Stack Overflow, Slack, GitHub, or an email to your collaborator.</p>
+
+<h2 id="using-reprex">Using <code>reprex</code></h2>
+
+<p>One important aspect of <code>reprex</code> is that it works best with whatever is currently saved on your clipboard (that is, highlight with your mouse and use command-c or control-c).  The <code>reprex</code> vignettes provide great examples that are definitely worth looking through!</p>
+
+<p>Below we work through a few examples of using <code>reprex</code> to debug some code.  We include the code-to-debug directly into the <code>reprex()</code> command, but again, you may want to work entirely within copy-and-paste.</p>
+
+<h4 id="example-first-try">Example: first try</h4>
+
+<pre><code class="language-r">library(reprex)
+data(iris)
+
+reprex(iris %&gt;% summarize(Petal.Length))
+</code></pre>
+
+<p><center>
+<figure>
+<img alt = 'iris1' width='400' src='https://teachdatascience.com/post/reprex/iris1.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption>
+</figure>
+</figure>
+</center></p>
+
+<p>Note that the error message given is that the <code>library(dplyr)</code> command is missing.  <code>reprex</code> is checking to make sure all the data <strong>and</strong> packages are appropriately loaded!  The information above is now <em>automatically</em> stored on your clipboard, and you can paste it directly to Stack Overflow, Slack, or GitHub issues as needed.</p>
+
+<h4 id="example-second-try">Example: second try</h4>
+
+<pre><code class="language-r">library(dplyr)
+data(iris)
+
+reprex(iris %&gt;% summarize(Petal.Length))
+</code></pre>
+
+<p><center>
+<figure>
+<img alt = 'iris2' width='400' src='https://teachdatascience.com/post/reprex/iris2.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption>
+</figure>
+</center></p>
+
+<p>Wait, I thought I loaded <code>dplyr</code>???  But the <code>library(dplyr)</code> command is not contained in the code which was submitted to <code>reprex</code>, so <code>reprex</code> didn&rsquo;t know that <code>library(dplyr)</code> command had been provided previously.</p>
+
+<h4 id="example-third-try">Example: third try</h4>
+
+<pre><code class="language-r">data(iris)
+
+reprex({library(dplyr); iris %&gt;% summarize(Petal.Length)})
+</code></pre>
+
+<p><center>
+<figure>
+<img alt = 'iris3' width='400' src='https://teachdatascience.com/post/reprex/iris3.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption>
+</figure>
+</center></p>
+
+<p>For the third try, we make sure that the <code>library(dplyr)</code> command is part of the reproducible example.  Now it seems like there is a different error; we forgot the <code>mean</code> function in <code>summarize</code>.</p>
+
+<h4 id="example-fourth-try">Example: fourth try</h4>
+
+<pre><code class="language-r">data(iris)
+
+reprex({library(dplyr); iris %&gt;% summarize(Petal.Length)})
+</code></pre>
+
+<p><center>
+<figure>
+<img alt = 'iris4' width='400' src='https://teachdatascience.com/post/reprex/iris4.png' />
+<figcaption> Information is now on your clipboard!  Paste directly to Stack Overflow, Slack, or GitHub.</figcaption>
+</figure>
+</center></p>
+
+<p>On the fourth try, it works!   The code runs as we thought it would.</p>
+
+<h2 id="copy-and-paste">Copy and paste</h2>
+
+<p>It&rsquo;s worth pointing out one more time that <code>reprex</code> works extremely well with code that is on your clipboard.  So instead of writing the code inside the <code>reprex()</code> call (as done above), a more typical use would be to copy the code with your mouse and then type <code>reprex()</code> in the console of RStudio.  The output (seen above) is then automatically copied onto your clipboard (replacing the code) and you can paste into Stack Overflow, Slack, or GitHub as needed.</p>
+
+<h2 id="in-the-classroom">In the classroom</h2>
+
+<p>As with all things in life, practice is key.  <code>reprex</code> is surprisingly straightforward, despite possibly seeming like <em>one more thing to learn</em>.  If your class uses a <a href="https://slack.com/">slack channel</a> or <a href="https://piazza.com/">piazza</a> for classroom communication, a very short semester-long assignment would be a requirement of posting at least one <code>reprex</code>-generated technical question to the class.  Our experience is that if students get used to posting technical questions to the class, the process immediately becomes nonthreatening and useful.</p>
+
+<h3 id="learn-more">Learn more</h3>
+
+<ul>
+<li><code>reprex</code> <a href="https://reprex.tidyverse.org/index.html">vignette</a></li>
+<li><code>reprex</code> <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html">dos and don&rsquo;ts</a></li>
+<li><a href="https://resources.rstudio.com/webinars/help-me-help-you-creating-reproducible-examples-jenny-bryan">Help me help you.  Creating reproducible examples.</a>  Jenny Bryan webinar for RStudio.</li>
+</ul>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=reprex%3a%20%20Help%20me%20help%20you&amp;url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f&amp;title=reprex%3a%20%20Help%20me%20help%20you" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=reprex%3a%20%20Help%20me%20help%20you&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2freprex.utf8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/codap/" title="Using the Common Online Data Analysis Platform (CODAP) to teach data science">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/reprex/" title="reprex:  Help me help you">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/closing/">Closing: A summer of data science education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/cloud2/">More cloud computing: data science is not done on a laptop</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/onemodel/">One model to rule them all</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/algbias/">Algorithmic Bias</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/twocultures/">Breiman&#39;s two cultures</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

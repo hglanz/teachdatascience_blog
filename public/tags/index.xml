@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ethics</title>
+      <link>https://teachdatascience.com/tags/ethics/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualization</title>
+      <link>https://teachdatascience.com/tags/visualization/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/visualization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>education</title>
@@ -18,15 +36,6 @@
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ethics</title>
-      <link>https://teachdatascience.com/tags/ethics/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/ethics/</guid>
       <description></description>
     </item>
     
@@ -409,15 +418,6 @@
     </item>
     
     <item>
-      <title>visualization</title>
-      <link>https://teachdatascience.com/tags/visualization/</link>
-      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>berkeley</title>
       <link>https://teachdatascience.com/tags/berkeley/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
@@ -688,15 +688,6 @@
     </item>
     
     <item>
-      <title>database</title>
-      <link>https://teachdatascience.com/tags/database/</link>
-      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>tidyverse</title>
       <link>https://teachdatascience.com/tags/tidyverse/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
@@ -756,6 +747,15 @@
       <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tags/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://teachdatascience.com/tags/database/</link>
+      <pubDate>Sun, 17 Jun 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tags/database/</guid>
       <description></description>
     </item>
     
