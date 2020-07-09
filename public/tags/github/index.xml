@@ -44,6 +44,16 @@ But using GitHub to navigate a dozen homework assignments with 50 students can b
     </item>
     
     <item>
+      <title>GitHub Classroom</title>
+      <link>https://teachdatascience.com/gitclass.utf8/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
+      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
+But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
+    </item>
+    
+    <item>
       <title>Using GitHub in R</title>
       <link>https://teachdatascience.com/githubinr/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
@@ -62,6 +72,17 @@ Previous posts have described working with R Projects and working with GitHub.</
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
 “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
+    </item>
+    
+    <item>
+      <title>GitHub for Fun and Profit</title>
+      <link>https://teachdatascience.com/github.utf8/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/github.utf8/</guid>
+      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
+The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
+ &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
     </item>
     
   </channel>

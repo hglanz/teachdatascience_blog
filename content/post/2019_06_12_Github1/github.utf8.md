@@ -1,0 +1,76 @@
+---
+title: "GitHub for Fun and Profit"
+author: "Nicholas Horton"
+date: '2019-06-11'
+output:
+  html_document:
+    df_print: paged
+tags:
+- github
+- workflow
+- collaboration
+categories: notR
+---
+
+
+
+How do we help students carry out data analysis workflows that are comprehensible and reproducible?  
+The 2018 NASEM "Data Science for Undergraduates" [report](https://teachdatascience.com/nasem) enunciated the importance of workflow and reproducibility as a key component of data acumen.  
+
+> "Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way" (NASEM 2019, page 2-12).
+
+The report includes the following key concepts/skills which are important for all students:
+
+- workflows and workflow systems
+- reproducible analysis
+- documentation and code standards
+- source code (version) control systems
+- collaboration
+
+Previous blog entries discussed aspects of workflow and reproducible analysis (see https://teachdatascience.com/rmarkdown and https://teachdatascience.com/projects).  Today, in the first of a series of related entries, we will motivate the use of GitHub as a tool for version control.  
+
+In her excellent PeerJ and TAS paper ["Excuse me, do you have a moment to talk about version control?"]("https://peerj.com/preprints/3159/), [Jenny Bryan](https://jennybryan.org) motivates the importance of version control:
+
+> "Data analysis, statistical research, and teaching statistics have at least one thing in common: these activities all produce many files! There are data files, source code, figures, tables, prepared reports, and much more. Most of these files evolve over the course of a project and often need to be shared with others, for reading or edits, as a project unfolds. Without explicit and structured management, project organization can easily descend into chaos, taking time away from the primary work and reducing the quality of the final product. This unhappy result can be avoided by repurposing tools and workflows from the software development world, namely, distributed version control."
+
+While there are a number of version control systems, GitHub, now a subsidiary of Microsoft, is a powerful and popular system that also provides task management and wikis that are free for educational users (and many others).  As of May 2019 GitHub reported that there were more than 37 million users and 57 million [*repositories*](https://help.github.com/en/articles/about-repositories) (or more commonly "repos"), a place to house a data analysis project.
+
+GitHub has an active [education](https://education.github.com) presence.  While much of their efforts are focused on computer science and information technology, there has a growing use of GitHub 
+for data science.
+
+Some notes:
+
+- Repositories can be either *public* or *private*: for [FERPA](https://www2.ed.gov/ferpa) compliance reasons, we've used *private* repos for any student work
+- Repos can be up to 1 GB in size
+- Individual files within a repo are limited to 100 MB in size
+- Departments and programs can request an organization (e.g., https://github.com/Amherst-Statistics) to organize sets of repos
+- Students can set up free accounts at https://github.com which will provide them with a GitHub username
+
+We've integrated GitHub into our intermediate and advanced courses to help students develop important reproducible workflow capacities. Using GitHub comes with a cost: GitHub has a deserved reputation for being a powerful expert-friendly system (see https://happygitwithr.com/comic-relief.html for some comic relief).  But it's important that our students know how to use the system in order to be effective in the workforce.  
+
+To help onboard students we've generally started by introducing them to the web interface of a class repository that we've created.
+
+To help you the reader explore, we encourage you to connect to the [Open Intro](https://openintro.org) textbook [repository](https://github.com/OpenIntroStat/openintro-statistics) and explore the web interface. 
+This public repo hosts the materials for their open-source intro stats textbook.  While more complicated than a typical course repo, this features a `README.md` file describing the repo, a pointer to the more than 400 commits that have been pushed to this repository, issues and tasks that are pending, and a web interface to each of the files needed to compile the book.
+
+In my first exposure to GitHub, I have students log in to GitHub then `Watch` the class repository.  This will subscribe them to notifications and changes to issues that ensue.  In class they will comment on an issue, and see the back and forth.  (An example of this in practice is the now closed issue from the OpenIntro repo that discusses a pedagogical point regarding the variability of a point estimate, see https://github.com/OpenIntroStat/openintro-statistics/issues/10).  
+
+I've found that breaking up my introduction to GitHub into several class periods helps them to get up to speed and helps to avoid cognitive overload.  
+
+We will continue our discussion of GitHub in future blog entries.  For those interested in learning more, we suggest taking the time to read Jenny Bryan's 
+["Excuse me, do you have a moment to talk about version control?"]("https://peerj.com/preprints/3159).
+
+### Learn more
+
+- https://education.github.com (GitHub for Education)
+- https://happygitwithr.com (Happy Git with R)
+- https://peerj.com/preprints/3159/ (Do you have a moment to talk about version control?)
+- https://nas.edu/envisioningds (Data Science for Undergraduates: Opportunities and Options)
+- https://github.com/OpenIntroStat/openintro-statistics/issues/10 (Sample github repo)
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

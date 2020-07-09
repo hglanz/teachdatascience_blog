@@ -252,7 +252,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 9716
+## node of a socket cluster on host &#39;localhost&#39; with pid 8840
 
 stopCluster(cl)
 cl[[1]]
@@ -272,13 +272,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 29.50956
+## [1] 211.639
 ## 
 ## [[2]]
-## [1] 24.5749
+## [1] 11.46306
 ## 
 ## [[3]]
-## [1] 15.02973
+## [1] 27.29455
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -291,7 +291,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 30.49282 33.96271 32.46884
+## [1] 33.32714 13.00393 90.03065
 
 stopCluster(cl)</code></pre>
 </div>
@@ -453,19 +453,15 @@ spark_disconnect(sc)</code></pre>
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/reintro.knit/">Re-Introduction: Ethics in Data Science Education</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/reintro.utf8/">Re-Introduction: Ethics in Data Science Education</a>
           </li>
         
           <li>
@@ -492,6 +488,10 @@ spark_disconnect(sc)</code></pre>
           <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
           </li>
         
+          <li>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
         </ul>
       </div>
     </div>
@@ -504,7 +504,7 @@ spark_disconnect(sc)</code></pre>
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li>
           </ul>
         </div>
       </div>

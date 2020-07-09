@@ -96,6 +96,17 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
     </item>
     
     <item>
+      <title>GitHub for Fun and Profit</title>
+      <link>https://teachdatascience.com/github.utf8/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/github.utf8/</guid>
+      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
+The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
+ &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
+    </item>
+    
+    <item>
       <title>Projects in RStudio</title>
       <link>https://teachdatascience.com/projects/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>

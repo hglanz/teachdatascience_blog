@@ -112,6 +112,17 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
     </item>
     
     <item>
+      <title>GitHub for Fun and Profit</title>
+      <link>https://teachdatascience.com/github.utf8/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/github.utf8/</guid>
+      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
+The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
+ &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
+    </item>
+    
+    <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
       <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
@@ -128,18 +139,6 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
       <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
-    </item>
-    
-    <item>
-      <title>The Tidyverse</title>
-      <link>https://teachdatascience.com/tidyverse.knit/</link>
-      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/tidyverse.knit/</guid>
-      <description>What is the Tidyverse? 
-{width=125px}
-
-The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

@@ -316,10 +316,10 @@ roster &lt;- roster %&gt;%
 <pre><code>## # A tibble: 4 x 2
 ##   url                                commits
 ##   &lt;chr&gt;                                &lt;dbl&gt;
-## 1 https://github.com/nicholasjhorton    1957
-## 2 https://github.com/AmeliaMN            400
-## 3 https://github.com/hardin47            362
-## 4 https://github.com/hglanz              101</code></pre>
+## 1 https://github.com/nicholasjhorton    1942
+## 2 https://github.com/AmeliaMN            403
+## 3 https://github.com/hardin47            371
+## 4 https://github.com/hglanz               96</code></pre>
 <p>If we were giving away t-shirts based on this, Nick Horton would win!</p>
 <p>I did this same process with my students’ data, and came up with the winners for each class. But, when looking at my data, I realized that counting the number of commits over the entire year wasn’t what I promised students. I actually said I would pick winners based on the commits <strong>during the semester.</strong> This required me to get creative. I realized that those little green boxes that show your GitHub activity actually have data associated with them. So instead of just grabbing the singular number, I could scrape the green boxes. Here is a function that finds those boxes and selects the data associated with them.</p>
 <pre class="r"><code>commits_by_date &lt;- function(url, session) {
@@ -482,19 +482,15 @@ github &lt;- session %&gt;%
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/reintro.knit/">Re-Introduction: Ethics in Data Science Education</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/reintro.utf8/">Re-Introduction: Ethics in Data Science Education</a>
           </li>
         
           <li>
@@ -521,6 +517,10 @@ github &lt;- session %&gt;%
           <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
           </li>
         
+          <li>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
         </ul>
       </div>
     </div>
@@ -533,7 +533,7 @@ github &lt;- session %&gt;%
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li>
           </ul>
         </div>
       </div>

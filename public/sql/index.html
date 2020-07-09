@@ -170,7 +170,7 @@
     &middot; by Nicholas Horton
   
   &middot; Read in about 32 min
-  &middot; (6780 words)
+  &middot; (6777 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fsql%2f" onclick="window.open(this.href, 'mywin',
@@ -237,14 +237,13 @@ con &lt;- dbConnect(
 ## [1] &quot;data.frame&quot;</code></pre>
 <p>There are multiple tables within the <code>wai</code> database.</p>
 <pre class="r"><code>dbGetQuery(con, &quot;SHOW TABLES&quot;)
-##            Tables_in_wai
-## 1           Measurements
-## 2      Measurements_2020
-## 3 Measurements_Abur_2014
-## 4                PI_Info
-## 5            PI_Info_OLD
-## 6                Subject
-## 7          Subjects_2020</code></pre>
+##       Tables_in_wai
+## 1      Measurements
+## 2 Measurements_2020
+## 3           PI_Info
+## 4       PI_Info_OLD
+## 5           Subject
+## 6     Subjects_2020</code></pre>
 <p>The <code>EXPLAIN</code> command describes the ten field names (variables) in the <code>PI_Info</code> table.</p>
 <pre class="r"><code>dbGetQuery(con, &quot;EXPLAIN PI_Info&quot;)
 ##                 Field        Type Null Key Default Extra
@@ -562,7 +561,7 @@ ggplot(onesubj, aes(x = Freq, y = Absorbance)) + geom_point() +
 
     
       <li class="next">
-        <a href="https://teachdatascience.com/intro.knit/" title="Introduction: A summer of data science education">
+        <a href="https://teachdatascience.com/intro/" title="Introduction: A summer of data science education">
             Next <span aria-hidden="true">&rarr;</span>
         </a>
       </li>
@@ -607,19 +606,15 @@ ggplot(onesubj, aes(x = Freq, y = Absorbance)) + geom_point() +
         <ul>
         
           <li>
+          <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
           </li>
         
           <li>
           <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/reintro.knit/">Re-Introduction: Ethics in Data Science Education</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/reintro.utf8/">Re-Introduction: Ethics in Data Science Education</a>
           </li>
         
           <li>
@@ -646,6 +641,10 @@ ggplot(onesubj, aes(x = Freq, y = Absorbance)) + geom_point() +
           <a href="https://teachdatascience.com/countingcommits/">Counting commits and peer code review</a>
           </li>
         
+          <li>
+          <a href="https://teachdatascience.com/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
         </ul>
       </div>
     </div>
@@ -658,7 +657,7 @@ ggplot(onesubj, aes(x = Freq, y = Absorbance)) + geom_point() +
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li>
           </ul>
         </div>
       </div>
