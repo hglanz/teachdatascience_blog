@@ -2,760 +2,760 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>education</title>
-      <link>https://teachdatascience.com/tags/education/</link>
+      <link>/tags/education/</link>
       <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/education/</guid>
+      <guid>/tags/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ethics</title>
-      <link>https://teachdatascience.com/tags/ethics/</link>
+      <link>/tags/ethics/</link>
       <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/ethics/</guid>
+      <guid>/tags/ethics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>visualization</title>
-      <link>https://teachdatascience.com/tags/visualization/</link>
+      <link>/tags/visualization/</link>
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/visualization/</guid>
+      <guid>/tags/visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>communication</title>
-      <link>https://teachdatascience.com/tags/communication/</link>
+      <link>/tags/communication/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/communication/</guid>
+      <guid>/tags/communication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Studio</title>
-      <link>https://teachdatascience.com/tags/r-studio/</link>
+      <link>/tags/r-studio/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/r-studio/</guid>
+      <guid>/tags/r-studio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Amazon web services</title>
-      <link>https://teachdatascience.com/tags/amazon-web-services/</link>
+      <link>/tags/amazon-web-services/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/amazon-web-services/</guid>
+      <guid>/tags/amazon-web-services/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure</title>
-      <link>https://teachdatascience.com/tags/azure/</link>
+      <link>/tags/azure/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/azure/</guid>
+      <guid>/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BigQuery</title>
-      <link>https://teachdatascience.com/tags/bigquery/</link>
+      <link>/tags/bigquery/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/bigquery/</guid>
+      <guid>/tags/bigquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google cloud platform</title>
-      <link>https://teachdatascience.com/tags/google-cloud-platform/</link>
+      <link>/tags/google-cloud-platform/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/google-cloud-platform/</guid>
+      <guid>/tags/google-cloud-platform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SQL</title>
-      <link>https://teachdatascience.com/tags/sql/</link>
+      <link>/tags/sql/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/sql/</guid>
+      <guid>/tags/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>authentication</title>
-      <link>https://teachdatascience.com/tags/authentication/</link>
+      <link>/tags/authentication/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/authentication/</guid>
+      <guid>/tags/authentication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cloud computing</title>
-      <link>https://teachdatascience.com/tags/cloud-computing/</link>
+      <link>/tags/cloud-computing/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/cloud-computing/</guid>
+      <guid>/tags/cloud-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cluster computing</title>
-      <link>https://teachdatascience.com/tags/cluster-computing/</link>
+      <link>/tags/cluster-computing/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/cluster-computing/</guid>
+      <guid>/tags/cluster-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computing</title>
-      <link>https://teachdatascience.com/tags/computing/</link>
+      <link>/tags/computing/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/computing/</guid>
+      <guid>/tags/computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>grid computing</title>
-      <link>https://teachdatascience.com/tags/grid-computing/</link>
+      <link>/tags/grid-computing/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/grid-computing/</guid>
+      <guid>/tags/grid-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>high performance computing</title>
-      <link>https://teachdatascience.com/tags/high-performance-computing/</link>
+      <link>/tags/high-performance-computing/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/high-performance-computing/</guid>
+      <guid>/tags/high-performance-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>workflow</title>
-      <link>https://teachdatascience.com/tags/workflow/</link>
+      <link>/tags/workflow/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/workflow/</guid>
+      <guid>/tags/workflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://teachdatascience.com/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>causal inference</title>
-      <link>https://teachdatascience.com/tags/causal-inference/</link>
+      <link>/tags/causal-inference/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/causal-inference/</guid>
+      <guid>/tags/causal-inference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>confounding</title>
-      <link>https://teachdatascience.com/tags/confounding/</link>
+      <link>/tags/confounding/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/confounding/</guid>
+      <guid>/tags/confounding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>inference</title>
-      <link>https://teachdatascience.com/tags/inference/</link>
+      <link>/tags/inference/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/inference/</guid>
+      <guid>/tags/inference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>modeling</title>
-      <link>https://teachdatascience.com/tags/modeling/</link>
+      <link>/tags/modeling/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/modeling/</guid>
+      <guid>/tags/modeling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://teachdatascience.com/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistics</title>
-      <link>https://teachdatascience.com/tags/statistics/</link>
+      <link>/tags/statistics/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/statistics/</guid>
+      <guid>/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>https://teachdatascience.com/tags/r-markdown/</link>
+      <link>/tags/r-markdown/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/r-markdown/</guid>
+      <guid>/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code review</title>
-      <link>https://teachdatascience.com/tags/code-review/</link>
+      <link>/tags/code-review/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/code-review/</guid>
+      <guid>/tags/code-review/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data ingestation</title>
-      <link>https://teachdatascience.com/tags/data-ingestation/</link>
+      <link>/tags/data-ingestation/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/data-ingestation/</guid>
+      <guid>/tags/data-ingestation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data wrangling</title>
-      <link>https://teachdatascience.com/tags/data-wrangling/</link>
+      <link>/tags/data-wrangling/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/data-wrangling/</guid>
+      <guid>/tags/data-wrangling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ferpa</title>
-      <link>https://teachdatascience.com/tags/ferpa/</link>
+      <link>/tags/ferpa/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/ferpa/</guid>
+      <guid>/tags/ferpa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>https://teachdatascience.com/tags/github/</link>
+      <link>/tags/github/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/github/</guid>
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://teachdatascience.com/tags/html/</link>
+      <link>/tags/html/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/html/</guid>
+      <guid>/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>purrr</title>
-      <link>https://teachdatascience.com/tags/purrr/</link>
+      <link>/tags/purrr/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/purrr/</guid>
+      <guid>/tags/purrr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rvest</title>
-      <link>https://teachdatascience.com/tags/rvest/</link>
+      <link>/tags/rvest/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/rvest/</guid>
+      <guid>/tags/rvest/</guid>
       <description></description>
     </item>
     
     <item>
       <title>consistency checking</title>
-      <link>https://teachdatascience.com/tags/consistency-checking/</link>
+      <link>/tags/consistency-checking/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/consistency-checking/</guid>
+      <guid>/tags/consistency-checking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data checking</title>
-      <link>https://teachdatascience.com/tags/data-checking/</link>
+      <link>/tags/data-checking/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/data-checking/</guid>
+      <guid>/tags/data-checking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reproducibility</title>
-      <link>https://teachdatascience.com/tags/reproducibility/</link>
+      <link>/tags/reproducibility/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/reproducibility/</guid>
+      <guid>/tags/reproducibility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>collaboration</title>
-      <link>https://teachdatascience.com/tags/collaboration/</link>
+      <link>/tags/collaboration/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/collaboration/</guid>
+      <guid>/tags/collaboration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>predictive analytics</title>
-      <link>https://teachdatascience.com/tags/predictive-analytics/</link>
+      <link>/tags/predictive-analytics/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/predictive-analytics/</guid>
+      <guid>/tags/predictive-analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression modeling</title>
-      <link>https://teachdatascience.com/tags/regression-modeling/</link>
+      <link>/tags/regression-modeling/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/regression-modeling/</guid>
+      <guid>/tags/regression-modeling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Portland</title>
-      <link>https://teachdatascience.com/tags/portland/</link>
+      <link>/tags/portland/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/portland/</guid>
+      <guid>/tags/portland/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cherry tree</title>
-      <link>https://teachdatascience.com/tags/cherry-tree/</link>
+      <link>/tags/cherry-tree/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/cherry-tree/</guid>
+      <guid>/tags/cherry-tree/</guid>
       <description></description>
     </item>
     
     <item>
       <title>leaflet</title>
-      <link>https://teachdatascience.com/tags/leaflet/</link>
+      <link>/tags/leaflet/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/leaflet/</guid>
+      <guid>/tags/leaflet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mapping</title>
-      <link>https://teachdatascience.com/tags/mapping/</link>
+      <link>/tags/mapping/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/mapping/</guid>
+      <guid>/tags/mapping/</guid>
       <description></description>
     </item>
     
     <item>
       <title>packages</title>
-      <link>https://teachdatascience.com/tags/packages/</link>
+      <link>/tags/packages/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/packages/</guid>
+      <guid>/tags/packages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>roxygen2</title>
-      <link>https://teachdatascience.com/tags/roxygen2/</link>
+      <link>/tags/roxygen2/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/roxygen2/</guid>
+      <guid>/tags/roxygen2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>berkeley</title>
-      <link>https://teachdatascience.com/tags/berkeley/</link>
+      <link>/tags/berkeley/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/berkeley/</guid>
+      <guid>/tags/berkeley/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jupyterhub</title>
-      <link>https://teachdatascience.com/tags/jupyterhub/</link>
+      <link>/tags/jupyterhub/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/jupyterhub/</guid>
+      <guid>/tags/jupyterhub/</guid>
       <description></description>
     </item>
     
     <item>
       <title>community</title>
-      <link>https://teachdatascience.com/tags/community/</link>
+      <link>/tags/community/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/community/</guid>
+      <guid>/tags/community/</guid>
       <description></description>
     </item>
     
     <item>
       <title>teamwork</title>
-      <link>https://teachdatascience.com/tags/teamwork/</link>
+      <link>/tags/teamwork/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/teamwork/</guid>
+      <guid>/tags/teamwork/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data technologies</title>
-      <link>https://teachdatascience.com/tags/data-technologies/</link>
+      <link>/tags/data-technologies/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/data-technologies/</guid>
+      <guid>/tags/data-technologies/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reticulate</title>
-      <link>https://teachdatascience.com/tags/reticulate/</link>
+      <link>/tags/reticulate/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/reticulate/</guid>
+      <guid>/tags/reticulate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rmarkdown</title>
-      <link>https://teachdatascience.com/tags/rmarkdown/</link>
+      <link>/tags/rmarkdown/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/rmarkdown/</guid>
+      <guid>/tags/rmarkdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jupyter</title>
-      <link>https://teachdatascience.com/tags/jupyter/</link>
+      <link>/tags/jupyter/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/jupyter/</guid>
+      <guid>/tags/jupyter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RStudio</title>
-      <link>https://teachdatascience.com/tags/rstudio/</link>
+      <link>/tags/rstudio/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/rstudio/</guid>
+      <guid>/tags/rstudio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>parallel programming</title>
-      <link>https://teachdatascience.com/tags/parallel-programming/</link>
+      <link>/tags/parallel-programming/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/parallel-programming/</guid>
+      <guid>/tags/parallel-programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spark</title>
-      <link>https://teachdatascience.com/tags/spark/</link>
+      <link>/tags/spark/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/spark/</guid>
+      <guid>/tags/spark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>debugging</title>
-      <link>https://teachdatascience.com/tags/debugging/</link>
+      <link>/tags/debugging/</link>
       <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/debugging/</guid>
+      <guid>/tags/debugging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CODAP</title>
-      <link>https://teachdatascience.com/tags/codap/</link>
+      <link>/tags/codap/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/codap/</guid>
+      <guid>/tags/codap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>multivariate thinking</title>
-      <link>https://teachdatascience.com/tags/multivariate-thinking/</link>
+      <link>/tags/multivariate-thinking/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/multivariate-thinking/</guid>
+      <guid>/tags/multivariate-thinking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>useR conference</title>
-      <link>https://teachdatascience.com/tags/user-conference/</link>
+      <link>/tags/user-conference/</link>
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/user-conference/</guid>
+      <guid>/tags/user-conference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code smell</title>
-      <link>https://teachdatascience.com/tags/code-smell/</link>
+      <link>/tags/code-smell/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/code-smell/</guid>
+      <guid>/tags/code-smell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>functions</title>
-      <link>https://teachdatascience.com/tags/functions/</link>
+      <link>/tags/functions/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/functions/</guid>
+      <guid>/tags/functions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>refactoring</title>
-      <link>https://teachdatascience.com/tags/refactoring/</link>
+      <link>/tags/refactoring/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/refactoring/</guid>
+      <guid>/tags/refactoring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>smell</title>
-      <link>https://teachdatascience.com/tags/smell/</link>
+      <link>/tags/smell/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/smell/</guid>
+      <guid>/tags/smell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>style</title>
-      <link>https://teachdatascience.com/tags/style/</link>
+      <link>/tags/style/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/style/</guid>
+      <guid>/tags/style/</guid>
       <description></description>
     </item>
     
     <item>
       <title>plot</title>
-      <link>https://teachdatascience.com/tags/plot/</link>
+      <link>/tags/plot/</link>
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/plot/</guid>
+      <guid>/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>https://teachdatascience.com/tags/regression/</link>
+      <link>/tags/regression/</link>
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/regression/</guid>
+      <guid>/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reports</title>
-      <link>https://teachdatascience.com/tags/reports/</link>
+      <link>/tags/reports/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/reports/</guid>
+      <guid>/tags/reports/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiny</title>
-      <link>https://teachdatascience.com/tags/shiny/</link>
+      <link>/tags/shiny/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/shiny/</guid>
+      <guid>/tags/shiny/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dynamic visualization</title>
-      <link>https://teachdatascience.com/tags/dynamic-visualization/</link>
+      <link>/tags/dynamic-visualization/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/dynamic-visualization/</guid>
+      <guid>/tags/dynamic-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reactive</title>
-      <link>https://teachdatascience.com/tags/reactive/</link>
+      <link>/tags/reactive/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/reactive/</guid>
+      <guid>/tags/reactive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RStudio server</title>
-      <link>https://teachdatascience.com/tags/rstudio-server/</link>
+      <link>/tags/rstudio-server/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/rstudio-server/</guid>
+      <guid>/tags/rstudio-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RStudio.cloud</title>
-      <link>https://teachdatascience.com/tags/rstudio.cloud/</link>
+      <link>/tags/rstudio.cloud/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/rstudio.cloud/</guid>
+      <guid>/tags/rstudio.cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>server</title>
-      <link>https://teachdatascience.com/tags/server/</link>
+      <link>/tags/server/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/server/</guid>
+      <guid>/tags/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>teaching</title>
-      <link>https://teachdatascience.com/tags/teaching/</link>
+      <link>/tags/teaching/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/teaching/</guid>
+      <guid>/tags/teaching/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tidyverse</title>
-      <link>https://teachdatascience.com/tags/tidyverse/</link>
+      <link>/tags/tidyverse/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/tidyverse/</guid>
+      <guid>/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Projects</title>
-      <link>https://teachdatascience.com/tags/r-projects/</link>
+      <link>/tags/r-projects/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/r-projects/</guid>
+      <guid>/tags/r-projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>community colleges</title>
-      <link>https://teachdatascience.com/tags/community-colleges/</link>
+      <link>/tags/community-colleges/</link>
       <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/tags/community-colleges/</guid>
+      <guid>/tags/community-colleges/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diversity</title>
-      <link>https://teachdatascience.com/tags/diversity/</link>
+      <link>/tags/diversity/</link>
       <pubDate>Thu, 06 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/diversity/</guid>
+      <guid>/tags/diversity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Simpson&#39;s paradox</title>
-      <link>https://teachdatascience.com/tags/simpsons-paradox/</link>
+      <link>/tags/simpsons-paradox/</link>
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/simpsons-paradox/</guid>
+      <guid>/tags/simpsons-paradox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>entertainment</title>
-      <link>https://teachdatascience.com/tags/entertainment/</link>
+      <link>/tags/entertainment/</link>
       <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/entertainment/</guid>
+      <guid>/tags/entertainment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>podcast</title>
-      <link>https://teachdatascience.com/tags/podcast/</link>
+      <link>/tags/podcast/</link>
       <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/podcast/</guid>
+      <guid>/tags/podcast/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
-      <link>https://teachdatascience.com/tags/database/</link>
+      <link>/tags/database/</link>
       <pubDate>Sun, 17 Jun 2018 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/tags/database/</guid>
+      <guid>/tags/database/</guid>
       <description></description>
     </item>
     

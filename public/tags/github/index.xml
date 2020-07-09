@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/github/</link>
+    <link>/tags/github/</link>
     <description>Recent content in github on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Counting commits and peer code review</title>
-      <link>https://teachdatascience.com/countingcommits/</link>
+      <link>/countingcommits/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/countingcommits/</guid>
+      <guid>/countingcommits/</guid>
       <description>Today’s guest entry by Amelia McNamara (University of St. Thomas) describes a creative way that she tackled a problem in one of her upper level courses.
 One note: The JSM is underway. Looking for interesting talks? Mine’s excellent Shiny for JSM 2019 app for those of you in Denver.
 This past semester, I taught two sections of a course called Advanced Statistical Software (yes, I’m aware of the acronym. We’re changing the course title soon…).</description>
@@ -25,64 +25,53 @@ This past semester, I taught two sections of a course called Advanced Statistica
     
     <item>
       <title>reprex:  Help me help you</title>
-      <link>https://teachdatascience.com/reprex/</link>
+      <link>/reprex/</link>
       <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/reprex/</guid>
+      <guid>/reprex/</guid>
       <description>…if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
 The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie’s novel, Mrs. Dymond (1885). The point is well understood – one of the most important things we can teach our students is how they can help themselves.</description>
     </item>
     
     <item>
       <title>GitHub Classroom</title>
-      <link>https://teachdatascience.com/gitclass/</link>
+      <link>/gitclass/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/gitclass/</guid>
+      <guid>/gitclass/</guid>
       <description>GitHub ClassroomIf you have been reading along in the blog, you’ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
 But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
     </item>
     
     <item>
-      <title>GitHub Classroom</title>
-      <link>https://teachdatascience.com/gitclass.utf8/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      <title>Using GitHub in R</title>
+      <link>/githubinr/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
-      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
-But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
+      <guid>/githubinr/</guid>
+      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+Previous posts have described working with R Projects and working with GitHub.</description>
     </item>
     
     <item>
       <title>Using GitHub in R</title>
-      <link>https://teachdatascience.com/githubinr/</link>
+      <link>/githubinr.utf8/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/githubinr/</guid>
+      <guid>/githubinr.utf8/</guid>
       <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
 Previous posts have described working with R Projects and working with GitHub.</description>
     </item>
     
     <item>
       <title>GitHub for Fun and Profit</title>
-      <link>https://teachdatascience.com/github/</link>
+      <link>/github/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/github/</guid>
+      <guid>/github/</guid>
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
 “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
-    </item>
-    
-    <item>
-      <title>GitHub for Fun and Profit</title>
-      <link>https://teachdatascience.com/github.utf8/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/github.utf8/</guid>
-      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
-The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
- &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
     </item>
     
   </channel>

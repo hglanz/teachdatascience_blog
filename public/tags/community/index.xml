@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>community on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/community/</link>
+    <link>/tags/community/</link>
     <description>Recent content in community on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/community/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/community/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Python Community</title>
-      <link>https://teachdatascience.com/pycomm/</link>
+      <link>/pycomm/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pycomm/</guid>
+      <guid>/pycomm/</guid>
       <description>All week we’ve been celebrating using Python in data science. There is no question that Python is a fantastic and very powerful language. Additionally, it is typically thought of as clearly the most used language for doing data science. The kaggle 2017 survey reports that more than three-quarters of data scientists use Python (although they also mention that most statisticians use R).
 
 
@@ -26,20 +26,20 @@ Knowing how to use Python is an important first step to engaging with the softwa
     
     <item>
       <title>useR!</title>
-      <link>https://teachdatascience.com/user/</link>
+      <link>/user/</link>
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/user/</guid>
+      <guid>/user/</guid>
       <description>Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year’s useR! conference. We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the useR! 2019 twitter page and the #user2019 hashtag.
 And, great news!!!! The keynote addresses will be live streaming at R Consortium youtube. Thanks to the support of RConsortium for making the live stream possible.</description>
     </item>
     
     <item>
       <title>Diversity in Data Science &amp; Statistics</title>
-      <link>https://teachdatascience.com/diversity/</link>
+      <link>/diversity/</link>
       <pubDate>Thu, 06 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/diversity/</guid>
+      <guid>/diversity/</guid>
       <description>Calls for DiversityData science is made up of not only sets of tools, methods, and problems to solve, but also actual people who make up the statistics &amp;amp; data science community. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem) includes a section on “Ensuring Broad Participation” which reiterates the importance of creating an inclusive community where all views are heard and supported.</description>
     </item>
     

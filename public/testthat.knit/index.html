@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Data assertion and checks via testthat  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R, reproducibility, data checking, consistency checking, workflow, data ingestation, ">
+
+
+<meta property="og:title" content="Data assertion and checks via testthat  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="/testthat.knit/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_26_testthat\testthat.knit.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-25T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-25T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="R">
+    
+<meta property="og:article:tag" content="reproducibility">
+    
+<meta property="og:article:tag" content="data checking">
+    
+<meta property="og:article:tag" content="consistency checking">
+    
+<meta property="og:article:tag" content="workflow">
+    
+<meta property="og:article:tag" content="data ingestation">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="/testthat.knit/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Data assertion and checks via testthat
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-25">25 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Hunter Glanz and Nicholas Horton
+  
+  &middot; Read in about 5 min
+  &middot; (1017 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data%20assertion%20and%20checks%20via%20testthat&amp;url=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2ftestthat.knit%2f&amp;title=Data%20assertion%20and%20checks%20via%20testthat" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data%20assertion%20and%20checks%20via%20testthat&amp;body=Check out this site %2ftestthat.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="/tags/r" class="label label-primary">R</a>
+  
+  <a href="/tags/reproducibility" class="label label-primary">reproducibility</a>
+  
+  <a href="/tags/data-checking" class="label label-primary">data checking</a>
+  
+  <a href="/tags/consistency-checking" class="label label-primary">consistency checking</a>
+  
+  <a href="/tags/workflow" class="label label-primary">workflow</a>
+  
+  <a href="/tags/data-ingestation" class="label label-primary">data ingestation</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<h2 id="reproducibility-and-replicability">Reproducibility and Replicability</h2>
+
+<p>On May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, &laquo;New report examines reproducibility and replicability in science&raquo; <a href="https://phys.org/news/2019-05-replicability-science.html">article here</a>. The report recommends &laquo;ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.&raquo;</p>
+
+<p>Reproducibility is at the core of <a href="https://teachdatascience.com/nasem">data acumen</a> and needs to be stressed at all levels of the data science curriculum.  In today&rsquo;s entry, we discuss <a href="https://en.wikipedia.org/wiki/Regression_testing">regression testing</a> in the context of data analysis.  (Here regression is referring to returning to a former or less developed state, not a statistical model.) Typically software testing is used to ensure that programmatic outputs remain consistent as updates and changes are made to a software package.  In our context, we describe how the <code>testthat</code> package in R is helpful to verify assumptions about the underlying data as a minimal standard for ensuring that analyses using that data are appropriate.</p>
+
+<h2 id="the-testthat-package">The testthat package</h2>
+
+<p><br></p>
+
+<p><center>
+<figure>
+<img alt = 'testthathex' width='200' src='/post/testthat/testthathex.png' />
+</figure>
+</center> <br></p>
+
+<p>The goal of the <a href="https://github.com/r-lib/testthat">testthat package</a> is to make testing <code>R</code> code less painful and tedious by</p>
+
+<ul>
+<li><p>providing functions that make it easy to describe what you expect a function to do, including catching errors, warnings, and messages;</p></li>
+
+<li><p>integrating into existing workflow, whether it&rsquo;s information testing on the command line, building test suites, or using R CMD check;</p></li>
+
+<li><p>displaying test progress visually, showing a pass, fail, or error for every expectation possibly in color.</p></li>
+</ul>
+
+<p>A thorough walkthrough of code testing can be found in Hadley Wickham&rsquo;s book on <a href="http://r-pkgs.had.co.nz/tests.html">R Packages</a>, and is definitely worth a read no matter your experience level with code testing.</p>
+
+<h2 id="data-assertion-and-checks">data assertion and checks</h2>
+
+<p>The <code>testthat</code> package can also be used to help with data consistency checking or data validation (part of the <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">ETL (Extract, Transform, Load)</a> process) by embedding assertions and checks into a data analysis workflow.</p>
+
+<p>Here we consider an example where data are loaded from the <code>fivethirtyeight</code> package (see <a href="https://escholarship.org/uc/item/0rx1231m">The fivethirtyeight R Package: &laquo;Tame Data&raquo; Principles for Introductory Statistics and Data Science Courses</a>.</p>
+
+<p>Let&rsquo;s see how we might ensure consistency checking for the <code>biopics</code> dataset (the raw data behind the 538 <a href="https://fivethirtyeight.com/features/straight-outta-compton-is-the-rare-biopic-not-about-white-dudes/">&laquo;‘Straight Outta Compton’ Is The Rare Biopic Not About White Dudes&raquo;</a> blog post).</p>
+
+<pre><code class="language-r">library(fivethirtyeight)
+library(tidyverse)
+library(testthat)
+glimpse(biopics)
+</code></pre>
+
+<pre><code>## Rows: 761
+## Columns: 14
+## $ title              &lt;chr&gt; &quot;10 Rillington Place&quot;, &quot;12 Years a Slave&quot;, &quot;127 ...
+## $ site               &lt;chr&gt; &quot;tt0066730&quot;, &quot;tt2024544&quot;, &quot;tt1542344&quot;, &quot;tt283307...
+## $ country            &lt;chr&gt; &quot;UK&quot;, &quot;US/UK&quot;, &quot;US/UK&quot;, &quot;Canada&quot;, &quot;US&quot;, &quot;US&quot;, &quot;U...
+## $ year_release       &lt;int&gt; 1971, 2013, 2010, 2014, 1998, 2008, 2002, 2013, ...
+## $ box_office         &lt;dbl&gt; NA, 5.67e+07, 1.83e+07, NA, 5.37e+05, 8.12e+07, ...
+## $ director           &lt;chr&gt; &quot;Richard Fleischer&quot;, &quot;Steve McQueen&quot;, &quot;Danny Boy...
+## $ number_of_subjects &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 3, 3, 3, 1, ...
+## $ subject            &lt;chr&gt; &quot;John Christie&quot;, &quot;Solomon Northup&quot;, &quot;Aron Ralsto...
+## $ type_of_subject    &lt;chr&gt; &quot;Criminal&quot;, &quot;Other&quot;, &quot;Athlete&quot;, &quot;Other&quot;, &quot;Other&quot;...
+## $ race_known         &lt;chr&gt; &quot;Unknown&quot;, &quot;Known&quot;, &quot;Unknown&quot;, &quot;Known&quot;, &quot;Unknown...
+## $ subject_race       &lt;chr&gt; NA, &quot;African American&quot;, NA, &quot;White&quot;, NA, &quot;Asian ...
+## $ person_of_color    &lt;lgl&gt; FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, T...
+## $ subject_sex        &lt;chr&gt; &quot;Male&quot;, &quot;Male&quot;, &quot;Male&quot;, &quot;Male&quot;, &quot;Male&quot;, &quot;Male&quot;, ...
+## $ lead_actor_actress &lt;chr&gt; &quot;Richard Attenborough&quot;, &quot;Chiwetel Ejiofor&quot;, &quot;Jam...
+</code></pre>
+
+<pre><code class="language-r">inspectdf::inspect_types(biopics)
+</code></pre>
+
+<pre><code>## # A tibble: 4 x 4
+##   type        cnt  pcnt col_name    
+##   &lt;chr&gt;     &lt;int&gt; &lt;dbl&gt; &lt;named list&gt;
+## 1 character    10 71.4  &lt;chr [10]&gt;  
+## 2 integer       2 14.3  &lt;chr [2]&gt;   
+## 3 logical       1  7.14 &lt;chr [1]&gt;   
+## 4 numeric       1  7.14 &lt;chr [1]&gt;
+</code></pre>
+
+<pre><code class="language-r">table(biopics$country)
+</code></pre>
+
+<pre><code>## 
+##       Canada    Canada/UK           UK           US    US/Canada        US/UK 
+##           18           13          146          489           11           82 
+## US/UK/Canada 
+##            2
+</code></pre>
+
+<pre><code class="language-r">length(table(biopics$country))
+</code></pre>
+
+<pre><code>## [1] 7
+</code></pre>
+
+<p>Imagine that we are planning to analyse the <code>country</code> variable (which designates the country of origin for the biopic) which has seven distinct levels.  The <code>testthat</code> package can help us to confirm assertions about the variable.</p>
+
+<pre><code class="language-r">countrycheck &lt;- c(&quot;Canada&quot;, &quot;Canada/UK&quot;, &quot;UK&quot;, &quot;US&quot;, &quot;US/Canada&quot;, &quot;US/UK&quot;, &quot;US/UK/Canada&quot;)
+testthat::expect_setequal(biopics$country, countrycheck)
+</code></pre>
+
+<p>When we test against the list of all countries, we do not get an error.<br />
+However, when we compare against the smaller country list the <code>expect_setequal()</code> function will tell us which entries in the country vector are not in our smaller test set.</p>
+
+<pre><code class="language-r">countrysmall &lt;- c(&quot;Canada&quot;, &quot;UK&quot;, &quot;US&quot;)
+testthat::expect_setequal(biopics$country, countrysmall)
+</code></pre>
+
+<pre><code>## Error: biopics$country[c(2, 3, 10, 11, 13, 14, 15, 19, 20, ...)] absent from `countrysmall`
+</code></pre>
+
+<pre><code class="language-r">biopics$country[2]
+</code></pre>
+
+<pre><code>## [1] &quot;US/UK&quot;
+</code></pre>
+
+<p>Other sanity checks can be added.  Here we can (incorrectly) assume that all of the biopics date from later than 1950.</p>
+
+<pre><code class="language-r">range(biopics$year_release)
+</code></pre>
+
+<pre><code>## [1] 1915 2014
+</code></pre>
+
+<pre><code class="language-r">expect_lt(max(biopics$year_release), 2015)
+expect_gt(min(biopics$year_release), 1950)
+</code></pre>
+
+<pre><code>## Error: min(biopics$year_release) is not strictly more than 1950. Difference: -35
+</code></pre>
+
+<p>We see that the earliest biopic was released in 1915.</p>
+
+<p>Taking time to ensure that variables and datasets correspond to what is described in the codebook is an important component of data validation.  Students can and should incorporate such checks into their data ingestation workflow (and they should be required to do so as part of their projects and analyses).</p>
+
+<h3 id="learn-more">Learn more</h3>
+
+<ul>
+<li><p>testthat home github repo: <a href="https://github.com/r-lib/testthat">https://github.com/r-lib/testthat</a></p></li>
+
+<li><p>Testing chapter in R Packages book: <a href="http://r-pkgs.had.co.nz/tests.html">http://r-pkgs.had.co.nz/tests.html</a></p></li>
+
+<li><p>usethis home github repo: <a href="https://github.com/r-lib/usethis">https://github.com/r-lib/usethis</a></p></li>
+
+<li><p><a href="https://escholarship.org/uc/item/0rx1231m">The fivethirtyeight R Package: &laquo;Tame Data&raquo; Principles for Introductory Statistics and Data Science Courses</a></p></li>
+</ul>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<p>We always welcome comments on entries and suggestions for new ones.  However, comments on the blog should be constructive, encouraging, and supportive.  We reserve the right to delete comments that violate these guidelines.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data%20assertion%20and%20checks%20via%20testthat&amp;url=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2ftestthat.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2ftestthat.knit%2f&amp;title=Data%20assertion%20and%20checks%20via%20testthat" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data%20assertion%20and%20checks%20via%20testthat&amp;body=Check out this site %2ftestthat.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="/algbias/" title="Algorithmic Bias">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="/testthat/" title="Data assertion and checks via testthat">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="/ethicaldataviz/">Ethical Data Viz</a>
+          </li>
+        
+          <li>
+          <a href="/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
+          <a href="/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="/closing/">Closing: A summer of data science education</a>
+          </li>
+        
+          <li>
+          <a href="/cloud2/">More cloud computing: data science is not done on a laptop</a>
+          </li>
+        
+          <li>
+          <a href="/onemodel/">One model to rule them all</a>
+          </li>
+        
+          <li>
+          <a href="/countingcommits/">Counting commits and peer code review</a>
+          </li>
+        
+          <li>
+          <a href="/testthat/">Data assertion and checks via testthat</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/tags/education">education</a></li><li><a href="/tags/r-markdown">r-markdown</a></li><li><a href="/tags/workflow">workflow</a></li><li><a href="/tags/visualization">visualization</a></li><li><a href="/tags/collaboration">collaboration</a></li><li><a href="/tags/statistics">statistics</a></li><li><a href="/tags/communication">communication</a></li><li><a href="/tags/rstudio">rstudio</a></li><li><a href="/tags/data-wrangling">data-wrangling</a></li><li><a href="/tags/python">python</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

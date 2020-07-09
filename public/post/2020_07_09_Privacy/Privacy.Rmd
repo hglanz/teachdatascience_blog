@@ -36,7 +36,7 @@ Data that are **anonymous** keep the identity of the individual hidden, and migh
 ### Conversation around Data Privacy
 
 The National Academies
-[Roundtable on Data Science Postsecondary Education](https://nas.edu/dsert) focused on aspects of ethics and privacy during its December 2017 (see https://www.nationalacademies.org/event/12-08-2017/docs/D8EE65EFC7F4B0C368D267EDAD10E5AB1BAFBE3369D2 for the detailed notes from the meeting.)
+[Roundtable on Data Science Postsecondary Education](https://nas.edu/dsert) focused on aspects of ethics and privacy during its December 2017 (see [this site](https://www.nationalacademies.org/event/12-08-2017/docs/D8EE65EFC7F4B0C368D267EDAD10E5AB1BAFBE3369D2) for the detailed notes from the meeting.)
 
 The meeting featured presentations and discussions by a number of notable individuals:
 

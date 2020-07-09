@@ -1,0 +1,187 @@
+---
+title: "Data assertion and checks via testthat"
+author: "Hunter Glanz and Nicholas Horton"
+date: '2019-07-25'
+output:
+  html_document:
+    df_print: paged
+tags:
+- R
+- reproducibility
+- data checking
+- consistency checking
+- workflow
+- data ingestation
+categories: R, Python
+---
+
+
+
+## Reproducibility and Replicability
+
+On May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, "New report examines reproducibility and replicability in science" [article here](https://phys.org/news/2019-05-replicability-science.html). The report recommends "ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research." 
+
+Reproducibility is at the core of [data acumen](https://teachdatascience.com/nasem) and needs to be stressed at all levels of the data science curriculum.  In today's entry, we discuss [regression testing](https://en.wikipedia.org/wiki/Regression_testing) in the context of data analysis.  (Here regression is referring to returning to a former or less developed state, not a statistical model.) Typically software testing is used to ensure that programmatic outputs remain consistent as updates and changes are made to a software package.  In our context, we describe how the `testthat` package in R is helpful to verify assumptions about the underlying data as a minimal standard for ensuring that analyses using that data are appropriate.
+
+## The testthat package
+
+
+<br>
+
+<center>
+<figure>
+<img alt = 'testthathex' width='200' src='/post/testthat/testthathex.png' />
+</figure>
+</center> <br>
+
+
+The goal of the [testthat package](https://github.com/r-lib/testthat) is to make testing `R` code less painful and tedious by
+
+* providing functions that make it easy to describe what you expect a function to do, including catching errors, warnings, and messages;
+
+* integrating into existing workflow, whether it's information testing on the command line, building test suites, or using R CMD check;
+
+* displaying test progress visually, showing a pass, fail, or error for every expectation possibly in color.
+
+A thorough walkthrough of code testing can be found in Hadley Wickham's book on [R Packages](http://r-pkgs.had.co.nz/tests.html), and is definitely worth a read no matter your experience level with code testing.
+
+## data assertion and checks
+
+The `testthat` package can also be used to help with data consistency checking or data validation (part of the [ETL (Extract, Transform, Load)](https://en.wikipedia.org/wiki/Extract,_transform,_load) process) by embedding assertions and checks into a data analysis workflow.  
+
+Here we consider an example where data are loaded from the `fivethirtyeight` package (see [The fivethirtyeight R Package: "Tame Data" Principles for Introductory Statistics and Data Science Courses](https://escholarship.org/uc/item/0rx1231m).
+
+Let's see how we might ensure consistency checking for the `biopics` dataset (the raw data behind the 538 ["‘Straight Outta Compton’ Is The Rare Biopic Not About White Dudes"](https://fivethirtyeight.com/features/straight-outta-compton-is-the-rare-biopic-not-about-white-dudes/) blog post).
+
+
+```r
+library(fivethirtyeight)
+library(tidyverse)
+library(testthat)
+glimpse(biopics)
+```
+
+```
+## Rows: 761
+## Columns: 14
+## $ title              <chr> "10 Rillington Place", "12 Years a Slave", "127 ...
+## $ site               <chr> "tt0066730", "tt2024544", "tt1542344", "tt283307...
+## $ country            <chr> "UK", "US/UK", "US/UK", "Canada", "US", "US", "U...
+## $ year_release       <int> 1971, 2013, 2010, 2014, 1998, 2008, 2002, 2013, ...
+## $ box_office         <dbl> NA, 5.67e+07, 1.83e+07, NA, 5.37e+05, 8.12e+07, ...
+## $ director           <chr> "Richard Fleischer", "Steve McQueen", "Danny Boy...
+## $ number_of_subjects <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 3, 3, 3, 1, ...
+## $ subject            <chr> "John Christie", "Solomon Northup", "Aron Ralsto...
+## $ type_of_subject    <chr> "Criminal", "Other", "Athlete", "Other", "Other"...
+## $ race_known         <chr> "Unknown", "Known", "Unknown", "Known", "Unknown...
+## $ subject_race       <chr> NA, "African American", NA, "White", NA, "Asian ...
+## $ person_of_color    <lgl> FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, T...
+## $ subject_sex        <chr> "Male", "Male", "Male", "Male", "Male", "Male", ...
+## $ lead_actor_actress <chr> "Richard Attenborough", "Chiwetel Ejiofor", "Jam...
+```
+
+```r
+inspectdf::inspect_types(biopics)
+```
+
+```
+## # A tibble: 4 x 4
+##   type        cnt  pcnt col_name    
+##   <chr>     <int> <dbl> <named list>
+## 1 character    10 71.4  <chr [10]>  
+## 2 integer       2 14.3  <chr [2]>   
+## 3 logical       1  7.14 <chr [1]>   
+## 4 numeric       1  7.14 <chr [1]>
+```
+
+```r
+table(biopics$country)
+```
+
+```
+## 
+##       Canada    Canada/UK           UK           US    US/Canada        US/UK 
+##           18           13          146          489           11           82 
+## US/UK/Canada 
+##            2
+```
+
+```r
+length(table(biopics$country))
+```
+
+```
+## [1] 7
+```
+
+Imagine that we are planning to analyse the `country` variable (which designates the country of origin for the biopic) which has seven distinct levels.  The `testthat` package can help us to confirm assertions about the variable.
+
+
+```r
+countrycheck <- c("Canada", "Canada/UK", "UK", "US", "US/Canada", "US/UK", "US/UK/Canada")
+testthat::expect_setequal(biopics$country, countrycheck)
+```
+
+When we test against the list of all countries, we do not get an error.  
+However, when we compare against the smaller country list the `expect_setequal()` function will tell us which entries in the country vector are not in our smaller test set.
+
+
+
+```r
+countrysmall <- c("Canada", "UK", "US")
+testthat::expect_setequal(biopics$country, countrysmall)
+```
+
+```
+## Error: biopics$country[c(2, 3, 10, 11, 13, 14, 15, 19, 20, ...)] absent from `countrysmall`
+```
+
+```r
+biopics$country[2]
+```
+
+```
+## [1] "US/UK"
+```
+
+Other sanity checks can be added.  Here we can (incorrectly) assume that all of the biopics date from later than 1950.
+
+
+```r
+range(biopics$year_release)
+```
+
+```
+## [1] 1915 2014
+```
+
+```r
+expect_lt(max(biopics$year_release), 2015)
+expect_gt(min(biopics$year_release), 1950)
+```
+
+```
+## Error: min(biopics$year_release) is not strictly more than 1950. Difference: -35
+```
+
+We see that the earliest biopic was released in 1915.  
+
+Taking time to ensure that variables and datasets correspond to what is described in the codebook is an important component of data validation.  Students can and should incorporate such checks into their data ingestation workflow (and they should be required to do so as part of their projects and analyses).
+
+
+###  Learn more
+
+* testthat home github repo: [https://github.com/r-lib/testthat](https://github.com/r-lib/testthat)
+
+* Testing chapter in R Packages book: [http://r-pkgs.had.co.nz/tests.html](http://r-pkgs.had.co.nz/tests.html)
+
+* usethis home github repo: [https://github.com/r-lib/usethis](https://github.com/r-lib/usethis)
+* [The fivethirtyeight R Package: "Tame Data" Principles for Introductory Statistics and Data Science Courses](https://escholarship.org/uc/item/0rx1231m)
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.  However, comments on the blog should be constructive, encouraging, and supportive.  We reserve the right to delete comments that violate these guidelines.
+

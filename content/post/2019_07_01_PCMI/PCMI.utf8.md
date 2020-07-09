@@ -1,0 +1,105 @@
+---
+title: "Undergraduate Curriculum Guidelines"
+author: "Jo Hardin"
+date: '2019-06-30'
+output:
+  html_document:
+    df_print: paged
+tags:
+- reports
+- statistics
+- education
+- communication
+categories: notR
+---
+
+
+
+
+Throughout the summer 2019 blog series, we have given teaching tips, best data science practices, links to compilations of papers in data science and in teaching data science, and ways to participate in the larger data science community.  That is, for anyone already working in a data science community (e.g., in a job or an academic institution) or for anyone doing data science for fun, we have provided myriad rabbit holes in which to get lost for your entire summer.  However, for someone who would like to start a data science program, we have not yet provided any structure on how to put together all the data science pieces into one cohesive curricular structure as a sequence, minor, or major.  Today's blog entry focuses on two recent curricular guidelines that are excellent resources for anyone working to build an academic data science program.
+
+It is worth noting that the National Academies Report "Data Science for Undergraduates:  Opportunities and Options" (see the [related blog](https://teachdatascience.com/nasem/)) provides a wealth of information about data science programs (including curricular guidance).  The guides below, however, are shorter focuses specifically on building / modernizing a curriculum and may help jump start a discussion for those newly embarking on the endeavor.
+
+
+### Curriculum Guidelines for Undergraduate Programs in Data Science
+
+Lead by Dick De Veaux, the [Curriculum Guidelines for Undergraduate Programs in Data Science](https://www.amstat.org/asa/files/pdfs/EDU-DataScienceGuidelines.pdf) gives a structure for a data science major based on a ten semester-course major.   The report is 16 pages long and contains information which ranges from the philosophy of what should go into a data science program all the way to the technical aspects of building a program from scratch.
+
+> The Park City Math Institute 2016 Summer Undergraduate Faculty Program met for the purpose of composing guidelines for undergraduate programs in data science. The group consisted of 25 undergraduate faculty from a variety of institutions in the United States, primarily from the disciplines of mathematics, statistics, and computer science. These guidelines are meant to provide some structure for institutions planning for or revising a major in data science.
+
+
+The guiding principles for the data science curriculum guidelines focus on how to approach data science rather than explicit course topics at the heart of the field. The principles include:
+
+* Data science as science
+* Interdisciplinary Nature of data science
+* Data at the core
+* Analytical (computational and statistical) thinking
+* Mathematical foundations
+* Flexibility
+
+They do not, however, shy away from listing foundational competencies necessary for an undergraduate major in data science.  The technical and communication skills are of utmost importance to the training for students who will eventually work with data in the wild.
+
+<center>
+<img width='600' src='/post/pcmi/pcmi.png' />
+</center>
+
+And they provide a structure and possible set of courses for a data science major which is being built from scratch:
+
+
+<center>
+<img width='600' src='/post/pcmi/pcmi2.png' />
+</center>
+
+###  American Statistical Association's Curriculum Guidelines for Undergraduate Programs in Statistical Science
+
+In 2014 the American Statistical Association brought together an ad-hoc committee chaired by Nick Horton to create [Curriculum Guidelines for Undergraduate Programs in Statistical Science](https://www.amstat.org/asa/education/Curriculum-Guidelines-for-Undergraduate-Programs-in-Statistical-Science.aspx).  Similar to the data science curriculum guide report, the statistical science curriculum guide is grounded in the idea that:
+
+>The American Statistical Association endorses the value of undergraduate programs in statistics as a reflection of the increasing importance of the discipline. We expect statistics programs to provide sufficient background in the following core skill areas: statistical methods and theory, data management, computation, mathematical foundations, and statistical practice. Statistics programs should be flexible enough to prepare bachelor's graduates to either be functioning statisticians or go on to graduate school.
+
+The statistics curriculum guidelines build on a foundation where students have sufficient background in:
+
+* Statistical methods and theory
+* Data management and computation
+* Mathematical foundations
+* Statistical practice
+* Discipline-specific knowledge
+
+As with the data science guide, the statistics guide spells out the technical and logistical details of a program in the statistical sciences which is driven by data and modern in scope.
+
+
+##  Beyond the curriculum
+
+Both sets of curriculum guidelines above spend ample attention to aspects of statistics and data science which are not always covered within a standard classroom.  The data science community seems to be in agreement that doing data science outside the classroom is of utmost importance and should always be a part of any data science degree.
+
+From the data science guidelines:
+
+> The recursive data cycle should be a featured component of most data science learning experiences, and projects involving group analysis and presentation should be common throughout the curriculum. Capstone projects are also an essential component of the experience and internships fit naturally in a data science program.
+
+From the statistics guidelines:
+
+> Undergraduate curricula must provide ample opportunities to practice the work of being a statistician. The completion of such requirements in statistics can help ensure that graduates have the necessary skills to work as practicing statisticians... Whenever possible, the undergraduate experience should include opportunities for internships, senior-level capstone courses, consulting experiences, research experiences, or a combination. 
+
+
+## Limitations
+
+As pointed out by both reports, to modernize a curriculum requires a re-thinking of current courses.  De Veaux et al. capture the sentiment when reflecting on their own curricular suggestions:
+
+> We show a possible selection of current courses that cover most of the basics of our identified skills in Section 6. However, it is important to point out that this smorgasbord approach to course selection is less than ideal. We believe that many of the courses traditionally found in computer science, statistics, and mathematics offerings should be redesigned for the data science major in the interests of efficiency and the potential synergy that integrated courses would offer. Relying on existing courses at most institutions, a student might have to take 14 or more courses in order to obtain all the skills one would expect from a data science major. With some significant course redesign, we think that this number could be substantially reduced to fit into the constraints of a typical ten-course liberal arts major.
+
+One additional consideration in building a data science curriculum is the need for attention to faculty development.  At most institutions there are those at the forefront, there are those who want to move forward but don't know how, and there are those who are unwilling to make changes to modernize the curricula.  Our hope is that the blog we've provided will serve as a source of training and inspiration so as to move all faculty members to the former group of instructors at the forefront of data science.
+
+
+### Learn more
+
+- [Data Science Undergraduate Curricular Guidelines](https://www.amstat.org/asa/files/pdfs/EDU-DataScienceGuidelines.pdf)
+- [Statistics Undergraduate Curricular Guidelines](https://www.amstat.org/asa/education/Curriculum-Guidelines-for-Undergraduate-Programs-in-Statistical-Science.aspx)
+- [Computer Science Undergraduate Curricular Guidelines](https://www.acm.org/education/CS2013-final-report.pdf)
+- [GAISE report](https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx)
+- [Special Issue of *The American Statistician*](https://www.tandfonline.com/doi/full/10.1080/00031305.2015.1094283) focusing on modernizing the curriculum in-line with the statistics guidelines.
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+
