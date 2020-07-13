@@ -2,89 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>visualization on Teach Data Science</title>
-    <link>/tags/visualization/</link>
+    <link>https://teachdatascience.com/tags/visualization/</link>
     <description>Recent content in visualization on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ethical Data Viz</title>
-      <link>/ethicaldataviz/</link>
+      <link>https://teachdatascience.com/ethicaldataviz/</link>
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/ethicaldataviz/</guid>
+      <guid>https://teachdatascience.com/ethicaldataviz/</guid>
       <description>Arguably, data have the broadest impact in engaging readers, changing minds, and determining policy when they are presented graphically. It is the potential for enormous impact that requires a data scientist to think most carefully about how their visualizations are created and then subsequently consumed.
 Many of us already teach data visualization in our statistics and data science classes. Therefore, introducing an ethical framework and a theory on valid graphics will be a natural fit into many classes.</description>
     </item>
     
     <item>
       <title>Creating R data packages for teaching</title>
-      <link>/datapackage/</link>
+      <link>https://teachdatascience.com/datapackage/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/datapackage/</guid>
+      <guid>https://teachdatascience.com/datapackage/</guid>
       <description>Today’s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
 Sharing data with studentsThe beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can’t even load the data, then my first impressions of R are not going to be too great.</description>
     </item>
     
     <item>
       <title>Using the Common Online Data Analysis Platform (CODAP) to teach data science</title>
-      <link>/codap/</link>
+      <link>https://teachdatascience.com/codap/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/codap/</guid>
+      <guid>https://teachdatascience.com/codap/</guid>
       <description>Today we have a guest entry authored by Tim Erickson (eeps media) and Bill Finzer (Concord Consortium) about the use of the Common Online Data Analysis Platform (CODAP) to teach data science. They write:
 We’ve been designing point-and-click data software since the early 90’s. From the beginning, though, we wanted to get beyond point-and-click to a user experience of data immersion. (William Gibson’s 1984 cyberpunk novel Neuromancer and its “cyberspace” both inspired and eluded us.</description>
     </item>
     
     <item>
       <title>Using Shiny in the Classroom</title>
-      <link>/shiny2/</link>
+      <link>https://teachdatascience.com/shiny2/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/shiny2/</guid>
+      <guid>https://teachdatascience.com/shiny2/</guid>
       <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
     </item>
     
     <item>
+      <title>Using Shiny in the Classroom</title>
+      <link>https://teachdatascience.com/shiny2.utf8/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/shiny2.utf8/</guid>
+      <description>Shiny Recap 
+
+Yesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn&amp;rsquo;t catch yesterday&amp;rsquo;s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio&amp;rsquo;s gallery at https://shiny.</description>
+    </item>
+    
+    <item>
       <title>An Introduction to R Shiny</title>
-      <link>/shiny1/</link>
+      <link>https://teachdatascience.com/shiny1/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/shiny1/</guid>
+      <guid>https://teachdatascience.com/shiny1/</guid>
       <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
       <title>Teaching Data Visualization</title>
-      <link>/dataviz/</link>
+      <link>https://teachdatascience.com/dataviz/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/dataviz/</guid>
+      <guid>https://teachdatascience.com/dataviz/</guid>
       <description>As statistics educators, it is often easier to focus our teaching on methods instead of communication. And while many of us understand the value of good communication, actually teaching it is difficult and outside of our comfort zone. There has been quite a bit of work done on the science of visualization (e.g., the Grammar of Graphics by Wilkinson). There is general consensus that teaching students to communicate using visualizations is of paramount importance (see recent blog entries: National Academies Report on Data Science and GAISE).</description>
     </item>
     
     <item>
       <title>Less Volume More Creativity in R</title>
-      <link>/mosaic/</link>
+      <link>https://teachdatascience.com/mosaic/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/mosaic/</guid>
+      <guid>https://teachdatascience.com/mosaic/</guid>
       <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
 The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
     </item>
     
     <item>
       <title>Leaflet for mapping</title>
-      <link>/leaflet/</link>
+      <link>https://teachdatascience.com/leaflet/</link>
       <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/leaflet/</guid>
+      <guid>https://teachdatascience.com/leaflet/</guid>
       <description>Leaflet for mappingMaps are an important way of displaying data.
 The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
 Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
@@ -92,39 +103,39 @@ Here’s a simple example where data from higher education institutions from wit
     
     <item>
       <title>Guidelines for Assessment and Instruction in Statistics Education</title>
-      <link>/gaise/</link>
+      <link>https://teachdatascience.com/gaise/</link>
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>/gaise/</guid>
+      <guid>https://teachdatascience.com/gaise/</guid>
       <description>The American Statistical Association has placeda priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
 Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
     </item>
     
     <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
-      <link>/screencast/</link>
+      <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>/screencast/</guid>
+      <guid>https://teachdatascience.com/screencast/</guid>
       <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
 We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
     </item>
     
     <item>
       <title>The Tidyverse</title>
-      <link>/tidyverse/</link>
+      <link>https://teachdatascience.com/tidyverse/</link>
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>/tidyverse/</guid>
+      <guid>https://teachdatascience.com/tidyverse/</guid>
       <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>
       <title>SQL 101 in R</title>
-      <link>/sql/</link>
+      <link>https://teachdatascience.com/sql/</link>
       <pubDate>Sun, 17 Jun 2018 21:13:14 -0500</pubDate>
       
-      <guid>/sql/</guid>
+      <guid>https://teachdatascience.com/sql/</guid>
       <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
 SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
     </item>

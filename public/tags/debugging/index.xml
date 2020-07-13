@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>debugging on Teach Data Science</title>
-    <link>/tags/debugging/</link>
+    <link>https://teachdatascience.com/tags/debugging/</link>
     <description>Recent content in debugging on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reprex:  Help me help you</title>
-      <link>/reprex/</link>
+      <link>https://teachdatascience.com/reprex/</link>
       <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/reprex/</guid>
+      <guid>https://teachdatascience.com/reprex/</guid>
       <description>…if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
 The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie’s novel, Mrs. Dymond (1885). The point is well understood – one of the most important things we can teach our students is how they can help themselves.</description>
     </item>

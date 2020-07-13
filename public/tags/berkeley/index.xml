@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>berkeley on Teach Data Science</title>
-    <link>/tags/berkeley/</link>
+    <link>https://teachdatascience.com/tags/berkeley/</link>
     <description>Recent content in berkeley on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/berkeley/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/berkeley/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data100: Principles and Techniques of Data Science</title>
-      <link>/data100/</link>
+      <link>https://teachdatascience.com/data100/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data100/</guid>
+      <guid>https://teachdatascience.com/data100/</guid>
       <description>Last week’s entries focused on Python included a description of the innovative and popular data8, today we describe the follow-up course, data100, http://www.ds100.org/ (Principles and Techniques of Data Science) offered by the University of California/Berkeley Division of Data Sciences.
 
 
@@ -26,10 +26,10 @@ Course GoalsThe goals of data100 are listed on the data100 website and reproduc
     
     <item>
       <title>Data8: The Foundations of Data Science at Berkeley</title>
-      <link>/data8/</link>
+      <link>https://teachdatascience.com/data8/</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data8/</guid>
+      <guid>https://teachdatascience.com/data8/</guid>
       <description>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the http://Data8.org (Foundations of Data Science) course that has been offered by the University of California/Berkeley Division of Data Sciences.
 The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</description>
     </item>

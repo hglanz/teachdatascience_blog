@@ -2,130 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>workflow on Teach Data Science</title>
-    <link>/tags/workflow/</link>
+    <link>https://teachdatascience.com/tags/workflow/</link>
     <description>Recent content in workflow on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>More cloud computing: data science is not done on a laptop</title>
-      <link>/cloud2/</link>
+      <link>https://teachdatascience.com/cloud2/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/cloud2/</guid>
+      <guid>https://teachdatascience.com/cloud2/</guid>
       <description>Previous blog entries have discussed cloud based servers (RStudio Server and JupyterHub) and parallel/grid/cluster computing. Today we will expand upon these ideas to discuss at a high level how data science students can leverage cloud based tools to undertake their analyses in a flexible manner.
 Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts.</description>
     </item>
     
     <item>
       <title>Data assertion and checks via testthat</title>
-      <link>/testthat/</link>
+      <link>https://teachdatascience.com/testthat/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/testthat/</guid>
+      <guid>https://teachdatascience.com/testthat/</guid>
       <description>Reproducibility and ReplicabilityOn May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, “New report examines reproducibility and replicability in science” article here. The report recommends “ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.”
 Reproducibility is at the core of data acumen and needs to be stressed at all levels of the data science curriculum.</description>
     </item>
     
     <item>
-      <title>Data assertion and checks via testthat</title>
-      <link>/testthat.knit/</link>
-      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/testthat.knit/</guid>
-      <description>Reproducibility and Replicability On May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, &amp;laquo;New report examines reproducibility and replicability in science&amp;raquo; article here. The report recommends &amp;laquo;ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.&amp;raquo;
-Reproducibility is at the core of data acumen and needs to be stressed at all levels of the data science curriculum.</description>
-    </item>
-    
-    <item>
       <title>Getting started with Jupyter and JupyterHub</title>
-      <link>/jupyter/</link>
+      <link>https://teachdatascience.com/jupyter/</link>
       <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/jupyter/</guid>
+      <guid>https://teachdatascience.com/jupyter/</guid>
       <description>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
 What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
     </item>
     
     <item>
       <title>Parallel processing and sparklyr</title>
-      <link>/parallel/</link>
+      <link>https://teachdatascience.com/parallel/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/parallel/</guid>
+      <guid>https://teachdatascience.com/parallel/</guid>
       <description>Today’s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see “Ambitious data science can be painless”). Early on in data science education it’s important to develop a foundation and precursors for future work.</description>
     </item>
     
     <item>
       <title>Five quick tips for coding in the classroom</title>
-      <link>/teaching_programming_tips/</link>
+      <link>https://teachdatascience.com/teaching_programming_tips/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/teaching_programming_tips/</guid>
+      <guid>https://teachdatascience.com/teaching_programming_tips/</guid>
       <description>IntroHello!It’s my distinct pleasure to be guest-blogging for you today! My name is Kelly Bodwin and I’m an Assistant Professor of Statistics at Cal Poly, San Luis Obispo. In my two years at Cal Poly I have taught
 Stat 218 - An introductory course for non-majorsStat 419 - An upper-level course in multivariate analysisStat 331 - Our department’s introductory R classIn all of these courses, I make extensive use of R.</description>
     </item>
     
     <item>
       <title>Using Shiny in the Classroom</title>
-      <link>/shiny2/</link>
+      <link>https://teachdatascience.com/shiny2/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/shiny2/</guid>
+      <guid>https://teachdatascience.com/shiny2/</guid>
       <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
     </item>
     
     <item>
+      <title>Using Shiny in the Classroom</title>
+      <link>https://teachdatascience.com/shiny2.utf8/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/shiny2.utf8/</guid>
+      <description>Shiny Recap 
+
+Yesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn&amp;rsquo;t catch yesterday&amp;rsquo;s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio&amp;rsquo;s gallery at https://shiny.</description>
+    </item>
+    
+    <item>
       <title>An Introduction to R Shiny</title>
-      <link>/shiny1/</link>
+      <link>https://teachdatascience.com/shiny1/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/shiny1/</guid>
+      <guid>https://teachdatascience.com/shiny1/</guid>
       <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
       <title>Pair Programming for Data Science and Statistics</title>
-      <link>/pairprogramming/</link>
+      <link>https://teachdatascience.com/pairprogramming/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/pairprogramming/</guid>
+      <guid>https://teachdatascience.com/pairprogramming/</guid>
       <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
 Photo credit: Esti Alvarez
 Pair programming has been thought to lead to better code, more enjoyable coding, andhigher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
     </item>
     
     <item>
+      <title>Pair Programming for Data Science and Statistics</title>
+      <link>https://teachdatascience.com/pairprogramming.utf8/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pairprogramming.utf8/</guid>
+      <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
+Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
+    </item>
+    
+    <item>
       <title>Using GitHub in R</title>
-      <link>/githubinr/</link>
+      <link>https://teachdatascience.com/githubinr/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/githubinr/</guid>
+      <guid>https://teachdatascience.com/githubinr/</guid>
       <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
 Previous posts have described working with R Projects and working with GitHub.</description>
     </item>
     
     <item>
       <title>Using GitHub in R</title>
-      <link>/githubinr.utf8/</link>
+      <link>https://teachdatascience.com/githubinr.knit/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/githubinr.utf8/</guid>
+      <guid>https://teachdatascience.com/githubinr.knit/</guid>
+      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+Previous posts have described working with R Projects and working with GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Using GitHub in R</title>
+      <link>https://teachdatascience.com/githubinr.utf8/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/githubinr.utf8/</guid>
       <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
 Previous posts have described working with R Projects and working with GitHub.</description>
     </item>
     
     <item>
       <title>GitHub for Fun and Profit</title>
-      <link>/github/</link>
+      <link>https://teachdatascience.com/github/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/github/</guid>
+      <guid>https://teachdatascience.com/github/</guid>
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
 “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
@@ -133,39 +154,39 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
     
     <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
-      <link>/screencast/</link>
+      <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>/screencast/</guid>
+      <guid>https://teachdatascience.com/screencast/</guid>
       <description>Watching an expert work through a data analysis using the tidyverseTeaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it’s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
 We’ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
     </item>
     
     <item>
       <title>The Tidyverse</title>
-      <link>/tidyverse/</link>
+      <link>https://teachdatascience.com/tidyverse/</link>
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>/tidyverse/</guid>
+      <guid>https://teachdatascience.com/tidyverse/</guid>
       <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>
       <title>Projects in RStudio</title>
-      <link>/projects/</link>
+      <link>https://teachdatascience.com/projects/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>/projects/</guid>
+      <guid>https://teachdatascience.com/projects/</guid>
       <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
 Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
     <item>
       <title>Getting Started With R Markdown</title>
-      <link>/rmarkdown/</link>
+      <link>https://teachdatascience.com/rmarkdown/</link>
       <pubDate>Wed, 29 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>/rmarkdown/</guid>
+      <guid>https://teachdatascience.com/rmarkdown/</guid>
       <description>What is R Markdown?Straight from RStudio’s wonderful tutorial, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
 By including data work, code, and analysis narrative into a single document, R Markdown provides a fully reproducible vehicle for data science projects!</description>
     </item>

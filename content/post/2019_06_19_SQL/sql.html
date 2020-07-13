@@ -32,12 +32,13 @@ con &lt;- dbConnect(
 <p>There are multiple tables within the <code>wai</code> database.</p>
 <pre class="r"><code>dbGetQuery(con, &quot;SHOW TABLES&quot;)
 ##       Tables_in_wai
-## 1      Measurements
-## 2 Measurements_2020
-## 3           PI_Info
-## 4       PI_Info_OLD
-## 5           Subject
-## 6     Subjects_2020</code></pre>
+## 1          Codebook
+## 2      Measurements
+## 3 Measurements_2020
+## 4           PI_Info
+## 5       PI_Info_OLD
+## 6           Subject
+## 7     Subjects_2020</code></pre>
 <p>The <code>EXPLAIN</code> command describes the ten field names (variables) in the <code>PI_Info</code> table.</p>
 <pre class="r"><code>dbGetQuery(con, &quot;EXPLAIN PI_Info&quot;)
 ##                 Field        Type Null Key Default Extra

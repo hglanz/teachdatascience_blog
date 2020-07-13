@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>predictive analytics on Teach Data Science</title>
-    <link>/tags/predictive-analytics/</link>
+    <link>https://teachdatascience.com/tags/predictive-analytics/</link>
     <description>Recent content in predictive analytics on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/predictive-analytics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/predictive-analytics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Breiman&#39;s two cultures</title>
-      <link>/twocultures/</link>
+      <link>https://teachdatascience.com/twocultures/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/twocultures/</guid>
+      <guid>https://teachdatascience.com/twocultures/</guid>
       <description>Eighteen years ago, Leo Breiman published an important paper entitled Statistical modeling: the two cultures in Statistical Science. In today’s blog entry we discuss the implications of the paper for data science education.
 Breiman argued that the two cultures included:
 one that assumes a stochastic data modelone that uses an algorithmic model (and treats the data mechanism as unknown)Breiman asserted that the statistics community had almost exclusively focused on the former, with interpretation of parameters at the core.</description>
@@ -25,21 +25,10 @@ one that assumes a stochastic data modelone that uses an algorithmic model (and
     
     <item>
       <title>Breiman&#39;s two cultures</title>
-      <link>/twocultures.knit/</link>
+      <link>https://teachdatascience.com/twocultures.knit/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/twocultures.knit/</guid>
-      <description>Eighteen years ago, Leo Breiman published an important paper entitled Statistical modeling: the two cultures in Statistical Science. In today&amp;rsquo;s blog entry we discuss the implications of the paper for data science education.
-Breiman argued that the two cultures included:
- one that assumes a stochastic data model one that uses an algorithmic model (and treats the data mechanism as unknown)  Breiman asserted that the statistics community had almost exclusively focused on the former, with interpretation of parameters at the core.</description>
-    </item>
-    
-    <item>
-      <title>Breiman&#39;s two cultures</title>
-      <link>/twocultures.utf8/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/twocultures.utf8/</guid>
+      <guid>https://teachdatascience.com/twocultures.knit/</guid>
       <description>Eighteen years ago, Leo Breiman published an important paper entitled Statistical modeling: the two cultures in Statistical Science. In today&amp;rsquo;s blog entry we discuss the implications of the paper for data science education.
 Breiman argued that the two cultures included:
  one that assumes a stochastic data model one that uses an algorithmic model (and treats the data mechanism as unknown)  Breiman asserted that the statistics community had almost exclusively focused on the former, with interpretation of parameters at the core.</description>

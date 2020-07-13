@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CODAP on Teach Data Science</title>
-    <link>/tags/codap/</link>
+    <link>https://teachdatascience.com/tags/codap/</link>
     <description>Recent content in CODAP on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/codap/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/codap/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using the Common Online Data Analysis Platform (CODAP) to teach data science</title>
-      <link>/codap/</link>
+      <link>https://teachdatascience.com/codap/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/codap/</guid>
+      <guid>https://teachdatascience.com/codap/</guid>
       <description>Today we have a guest entry authored by Tim Erickson (eeps media) and Bill Finzer (Concord Consortium) about the use of the Common Online Data Analysis Platform (CODAP) to teach data science. They write:
 We’ve been designing point-and-click data software since the early 90’s. From the beginning, though, we wanted to get beyond point-and-click to a user experience of data immersion. (William Gibson’s 1984 cyberpunk novel Neuromancer and its “cyberspace” both inspired and eluded us.</description>
     </item>

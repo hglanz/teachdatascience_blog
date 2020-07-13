@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>diversity on Teach Data Science</title>
-    <link>/tags/diversity/</link>
+    <link>https://teachdatascience.com/tags/diversity/</link>
     <description>Recent content in diversity on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 06 Jun 2019 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/tags/diversity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/diversity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Diversity in Data Science &amp; Statistics</title>
-      <link>/diversity/</link>
+      <link>https://teachdatascience.com/diversity/</link>
       <pubDate>Thu, 06 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>/diversity/</guid>
+      <guid>https://teachdatascience.com/diversity/</guid>
       <description>Calls for DiversityData science is made up of not only sets of tools, methods, and problems to solve, but also actual people who make up the statistics &amp;amp; data science community. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem) includes a section on “Ensuring Broad Participation” which reiterates the importance of creating an inclusive community where all views are heard and supported.</description>
     </item>
     

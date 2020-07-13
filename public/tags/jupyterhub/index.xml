@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jupyterhub on Teach Data Science</title>
-    <link>/tags/jupyterhub/</link>
+    <link>https://teachdatascience.com/tags/jupyterhub/</link>
     <description>Recent content in jupyterhub on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/jupyterhub/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://teachdatascience.com/tags/jupyterhub/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data100: Principles and Techniques of Data Science</title>
-      <link>/data100/</link>
+      <link>https://teachdatascience.com/data100/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data100/</guid>
+      <guid>https://teachdatascience.com/data100/</guid>
       <description>Last week’s entries focused on Python included a description of the innovative and popular data8, today we describe the follow-up course, data100, http://www.ds100.org/ (Principles and Techniques of Data Science) offered by the University of California/Berkeley Division of Data Sciences.
 
 
@@ -26,20 +26,20 @@ Course GoalsThe goals of data100 are listed on the data100 website and reproduc
     
     <item>
       <title>Data8: The Foundations of Data Science at Berkeley</title>
-      <link>/data8/</link>
+      <link>https://teachdatascience.com/data8/</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data8/</guid>
+      <guid>https://teachdatascience.com/data8/</guid>
       <description>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the http://Data8.org (Foundations of Data Science) course that has been offered by the University of California/Berkeley Division of Data Sciences.
 The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</description>
     </item>
     
     <item>
       <title>reticulate: running Python within RStudio</title>
-      <link>/reticulate/</link>
+      <link>https://teachdatascience.com/reticulate/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/reticulate/</guid>
+      <guid>https://teachdatascience.com/reticulate/</guid>
       <description>For many statisticians, their go-to software language is R. However, there is no doubt that Python is an equally important language in data science. Indeed, the Jupyter blog entry from earlier this week described the capacities of writing Python code (as well as R and Julia and other environments) using interactive Jupyter notebooks.
 knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;F:/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
     </item>
