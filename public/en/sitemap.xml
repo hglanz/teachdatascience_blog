@@ -3,25 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://teachdatascience.com/bookclub/</loc>
-    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+    <loc>https://teachdatascience.com/datafem/</loc>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/</loc>
-    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/</loc>
-    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -36,13 +36,30 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/education/</loc>
-    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+    <loc>https://teachdatascience.com/tags/communication/</loc>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/entertainment/</loc>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/tags/ethics/</loc>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/bookclub/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/tags/education/</loc>
     <lastmod>2020-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -74,18 +91,17 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/communication/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/about/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/nextsteps/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/nextsteps.utf8/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -319,11 +335,6 @@
   
   <url>
     <loc>https://teachdatascience.com/twocultures/</loc>
-    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/twocultures.knit/</loc>
     <lastmod>2019-07-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -610,11 +621,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/shiny2.utf8/</loc>
-    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/dynamic-visualization/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -628,6 +634,11 @@
   
   <url>
     <loc>https://teachdatascience.com/shiny1/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/shiny1.utf8/</loc>
     <lastmod>2019-06-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -696,11 +707,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/infer.knit/</loc>
-    <lastmod>2019-06-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/tidyverse/</loc>
     <lastmod>2019-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -728,11 +734,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/githubinr.knit/</loc>
-    <lastmod>2019-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/githubinr.utf8/</loc>
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
   </url>
@@ -743,7 +744,17 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/github.utf8/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/leaflet/</loc>
+    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/leaflet.utf8/</loc>
     <lastmod>2019-06-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -775,6 +786,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/gaise.utf8/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/simpsons-paradox/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -783,12 +799,6 @@
   <url>
     <loc>https://teachdatascience.com/nssd/</loc>
     <lastmod>2019-06-04T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/entertainment/</loc>
-    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

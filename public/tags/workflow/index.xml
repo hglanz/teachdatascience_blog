@@ -71,23 +71,23 @@ Reproducibility is at the core of data acumen and needs to be stressed at all le
     </item>
     
     <item>
-      <title>Using Shiny in the Classroom</title>
-      <link>https://teachdatascience.com/shiny2.utf8/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/shiny2.utf8/</guid>
-      <description>Shiny Recap 
-
-Yesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn&amp;rsquo;t catch yesterday&amp;rsquo;s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio&amp;rsquo;s gallery at https://shiny.</description>
-    </item>
-    
-    <item>
       <title>An Introduction to R Shiny</title>
       <link>https://teachdatascience.com/shiny1/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny1/</guid>
       <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to R Shiny</title>
+      <link>https://teachdatascience.com/shiny1.utf8/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/shiny1.utf8/</guid>
+      <description>What is R Shiny? 
+
+shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
@@ -123,16 +123,6 @@ Previous posts have described working with R Projects and working with GitHub.</
     
     <item>
       <title>Using GitHub in R</title>
-      <link>https://teachdatascience.com/githubinr.knit/</link>
-      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/githubinr.knit/</guid>
-      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
-Previous posts have described working with R Projects and working with GitHub.</description>
-    </item>
-    
-    <item>
-      <title>Using GitHub in R</title>
       <link>https://teachdatascience.com/githubinr.utf8/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -150,6 +140,17 @@ Previous posts have described working with R Projects and working with GitHub.</
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
 “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
+    </item>
+    
+    <item>
+      <title>GitHub for Fun and Profit</title>
+      <link>https://teachdatascience.com/github.utf8/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/github.utf8/</guid>
+      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
+The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
+ &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
     </item>
     
     <item>

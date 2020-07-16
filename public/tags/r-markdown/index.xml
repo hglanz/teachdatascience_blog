@@ -114,16 +114,6 @@ Previous posts have described working with R Projects and working with GitHub.</
     
     <item>
       <title>Using GitHub in R</title>
-      <link>https://teachdatascience.com/githubinr.knit/</link>
-      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/githubinr.knit/</guid>
-      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
-Previous posts have described working with R Projects and working with GitHub.</description>
-    </item>
-    
-    <item>
-      <title>Using GitHub in R</title>
       <link>https://teachdatascience.com/githubinr.utf8/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -144,12 +134,33 @@ Here’s a simple example where data from higher education institutions from wit
     </item>
     
     <item>
+      <title>Leaflet for mapping</title>
+      <link>https://teachdatascience.com/leaflet.utf8/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/leaflet.utf8/</guid>
+      <description>Leaflet for mapping Maps are an important way of displaying data.
+The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
+Here&amp;rsquo;s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
+    </item>
+    
+    <item>
       <title>Guidelines for Assessment and Instruction in Statistics Education</title>
       <link>https://teachdatascience.com/gaise/</link>
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/gaise/</guid>
       <description>The American Statistical Association has placeda priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
+Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
+    </item>
+    
+    <item>
+      <title>Guidelines for Assessment and Instruction in Statistics Education</title>
+      <link>https://teachdatascience.com/gaise.utf8/</link>
+      <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/gaise.utf8/</guid>
+      <description>The American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
 Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
     </item>
     
