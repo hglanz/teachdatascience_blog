@@ -62,6 +62,15 @@ The list below represents opportunities at a variety of levels. If you are just 
     </item>
     
     <item>
+      <title>Next Steps</title>
+      <link>https://teachdatascience.com/nextsteps.utf8/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/nextsteps.utf8/</guid>
+      <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we&amp;rsquo;ve gotten over the summer. Here&amp;rsquo;s to many future discussions on data science education.</description>
+    </item>
+    
+    <item>
       <title>Closing: A summer of data science education</title>
       <link>https://teachdatascience.com/closing/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
@@ -211,15 +220,6 @@ Pair programming has been thought to lead to better code, more enjoyable coding,
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/infer/</guid>
-      <description>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.</description>
-    </item>
-    
-    <item>
-      <title>infer</title>
-      <link>https://teachdatascience.com/infer.knit/</link>
-      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/infer.knit/</guid>
       <description>Although an agreed upon definition of data science is hard to come by, there is clear consensus that statistics plays a key role in the foundational knowledge of anyone working with data. One important aspect of statistics is understanding of the inferential process that allows claims to be made about a population from a dataset. Most Introductory Statistics courses and textbooks spend substantial time presenting statistical inference as a way to generate p-values and make claims (or not) about a research hypothesis.</description>
     </item>
     

@@ -1,0 +1,120 @@
+---
+title: "An Introduction to R Shiny"
+author: "Hunter Glanz"
+date: '2019-06-26'
+output:
+  html_document:
+    df_print: paged
+tags:
+- Shiny
+- workflow
+- visualization
+- dynamic visualization
+- rstudio
+- reactive
+categories: R
+---
+
+
+
+
+## What is R Shiny? 
+
+<center>
+
+![](/post/shiny1/shinyhex.jpg)
+
+</center>
+
+[`shiny`](https://shiny.rstudio.com) is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does `shiny` allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.  Instructors can utilize `shiny` in a number of innovative and useful ways.
+
+To create a new R `shiny` App, simply go to "File" (or the "New File" icon) in the upper left corner of RStudio and select "Shiny Web App".
+
+<center>
+
+![](/post/shiny1/NewShinyApp.png)
+
+</center>
+
+`shiny` apps are unlike any other vehicle for R work that you've likely used before (unless you have experience with *reactive programming*. One of the first things to understand is that these applications consist of two primary components: a *server* and a *user interface*. When starting a new `shiny` application you'll first be asked to specify three things:
+
+1. A name for the app
+
+2. Application type: single file (app.R) or multiple file (ui.R/server.R)
+
+3. Home directory for the app
+
+The name is more for file organization and documentation than for the app itself. That is, the name of your app does not need to show up anywhere on your app itself. 
+
+A single file configuration puts both the server and user interface code in a single app.R file, whereas the multiple file configuration puts them in their own separate files. Functionally, these configurations will produce the same app. The multiple file configuration is generally preferred, especially for larger applications, as it usually makes code easier to manage. For smaller apps, the single file configuration is likely a more efficient way to go.
+
+The home directory of your app is most important for your file management and organization. Your server and user interface will look to this directory, by default, for anything you reference or source within your app.
+
+`shiny` apps can be deployed in a few different ways. They can be run from their local files in the home directory mentioned above; they can be hosted and run on a server at your organization (e.g. university); or they can even be hosted through RStudio (e.g. [shinyapps.io](https://www.shinyapps.io/)).
+
+## What Can You Do with in a Shiny App?
+
+Now that you know how start a new `shiny` app within RStudio, the next steps include designing and actually building your app. With R as the base language and data science as the context it should be no surprise that some of the most popular uses of `shiny` apps are data exploration/visualization and data analysis. RStudio hosts a fantastic gallery of Shiny applications that you can play around with and see the code for, so that you don't need to start from scratch.
+
+### Iris k-Means Clustering App
+One of the simplest examples to explore first involves the famous [iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set), and can be found [here](https://shiny.rstudio.com/gallery/kmeans-example.html).
+
+<center>
+
+![](/post/shiny1/irisapp.png)
+
+</center>
+
+Note that this app uses the multiple file configuration as you can view the server.R and ui.R files on the right-hand side of the app page. Despite the numerous resources and documentation about `shiny` on RStudio's site, **never underestimate the power of copy-and-paste** (a paraphrased quote from Hadley Wickham at the International Conference on Teaching Statistics 2018). The side-by-side code for this clustering application is surprisingly sufficient to get started creating very simple Shiny apps.
+
+<center>
+
+![](/post/shiny1/irisserver.png)
+
+</center>
+<center>
+
+![](/post/shiny1/irisui.png)
+
+</center>
+
+### Rotten Tomatoes Movie Explorer App
+
+Another nice example from the [gallery](https://shiny.rstudio.com/gallery/) is this `shiny` app that allows the user to play around with movie data from [Rotten Tomatoes](https://www.rottentomatoes.com/). The app can be found [here](https://shiny.rstudio.com/gallery/movie-explorer.html).
+
+
+<center>
+
+![](/post/shiny1/movieapp.png)
+
+</center>
+
+Here you're seeing some other really nice R packages in use for data visualization (e.g. `ggvis`), which `shiny` is able to integrate quite well. You may have noticed that there is no code accompanying this app in the way there was for the iris app. Never fear! Locate and click the "Get Code" button in the top-right corner of the page and all of the code is available via GitHub.
+
+### ZIP Explorer App
+
+One last example for today's blog entry is the ZIP explorer app. The interactivity of the previous two example apps shines (pun intended) so bright, but really comes alive in this app that puts our previously featured package, [leaflet](https://teachdatascience.com/leaflet/), to stunning use. 
+
+<center>
+
+![](/post/shiny1/zipapp.png)
+
+</center>
+
+The data really come alive when you can zoom in, zoom out, click and drag the map around, and then click on individual points to see more information...all within a web page using R code! 
+
+You've seen a few examples of what can be done with `shiny` apps and how to start your own. While the endless possibilities are undoubtedly running through your head, in tomorrow's post we will discuss how to integrate `shiny` into your teaching.
+
+## Learn more
+
+* `shiny` Home: https://shiny.rstudio.com/
+
+* RStudio `shiny` Gallery (there are others): https://shiny.rstudio.com/gallery/
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+
