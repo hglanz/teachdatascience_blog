@@ -62,7 +62,7 @@ m <- leaflet(ds) %>%
 m # step 4: display the results
 ```
 
-preservea91d7edefda27a5e
+preserve2cf93d54798ffa5e
 The popups for each of the five institutions can be clicked to see information contained in the `label` variable.  Here's an example of what happens if Amherst College is clicked:
 
 ![](/post/leaflet/popup.png)

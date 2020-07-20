@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://teachdatascience.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hippocratic Oath</title>
+      <link>https://teachdatascience.com/oath/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/oath/</guid>
+      <description>An oath is a solemn promise. While somewhat old-school, oaths exist in many professions. Wikipedia describes such an oath for the Ritual of the Calling of an Engineer:
+The Ritual of the Calling of an Engineer has been instituted with the simple end of directing the young engineer towards a consciousness of his profession and its significance, and indicating to the older engineer his responsibilities in receiving, welcoming and supporting the young engineers in their beginnings.</description>
+    </item>
     
     <item>
       <title>Data Feminism</title>
@@ -19,6 +29,15 @@
       
       <guid>https://teachdatascience.com/datafem/</guid>
       <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D’Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
+    </item>
+    
+    <item>
+      <title>Data Feminism</title>
+      <link>https://teachdatascience.com/datafem.utf8/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/datafem.utf8/</guid>
+      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
     </item>
     
     <item>
@@ -337,6 +356,15 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
     </item>
     
     <item>
+      <title>Style Guides for Coding</title>
+      <link>https://teachdatascience.com/styleguide.utf8/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/styleguide.utf8/</guid>
+      <description>The Importance of Good Coding Style To begin with another quote from Hadley Wickham: &amp;laquo;Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.&amp;raquo; In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
+    </item>
+    
+    <item>
       <title>Undergraduate Curriculum Guidelines</title>
       <link>https://teachdatascience.com/pcmi/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
@@ -435,6 +463,17 @@ There are many aspects of day-to-day data analytical work that are almost absent
     </item>
     
     <item>
+      <title>Practical Data Science: an introduction to the PeerJ collection</title>
+      <link>https://teachdatascience.com/peerj.utf8/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/peerj.utf8/</guid>
+      <description>In 2017, Jenny Bryan and Hadley Wickham published the &amp;laquo;Practical Data Science for Stats&amp;raquo; PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
+The &amp;laquo;Practical Data Science for Stats&amp;raquo; Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
+There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
+    </item>
+    
+    <item>
       <title>Less Volume More Creativity in R</title>
       <link>https://teachdatascience.com/mosaic/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
@@ -464,31 +503,11 @@ But using GitHub to navigate a dozen homework assignments with 50 students can b
     </item>
     
     <item>
-      <title>GitHub Classroom</title>
-      <link>https://teachdatascience.com/gitclass.utf8/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
-      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
-But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
-    </item>
-    
-    <item>
       <title>Using GitHub in R</title>
       <link>https://teachdatascience.com/githubinr/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/githubinr/</guid>
-      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
-Previous posts have described working with R Projects and working with GitHub.</description>
-    </item>
-    
-    <item>
-      <title>Using GitHub in R</title>
-      <link>https://teachdatascience.com/githubinr.utf8/</link>
-      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/githubinr.utf8/</guid>
       <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
 Previous posts have described working with R Projects and working with GitHub.</description>
     </item>
@@ -502,17 +521,6 @@ Previous posts have described working with R Projects and working with GitHub.</
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
 “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
-    </item>
-    
-    <item>
-      <title>GitHub for Fun and Profit</title>
-      <link>https://teachdatascience.com/github.utf8/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/github.utf8/</guid>
-      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
-The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
- &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
     </item>
     
     <item>
@@ -563,16 +571,6 @@ Full information about the roundtable including narrative summaries of past meet
       
       <guid>https://teachdatascience.com/gaise/</guid>
       <description>The American Statistical Association has placeda priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
-Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
-    </item>
-    
-    <item>
-      <title>Guidelines for Assessment and Instruction in Statistics Education</title>
-      <link>https://teachdatascience.com/gaise.utf8/</link>
-      <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/gaise.utf8/</guid>
-      <description>The American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
 Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
     </item>
     
@@ -641,6 +639,24 @@ By including data work, code, and analysis narrative into a single document, R M
       
       <guid>https://teachdatascience.com/nasem/</guid>
       <description>Data Science for UndergraduatesAs the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
+    </item>
+    
+    <item>
+      <title>Data Science for Undergraduates</title>
+      <link>https://teachdatascience.com/nasem.knit/</link>
+      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/nasem.knit/</guid>
+      <description>Data Science for Undergraduates As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report &amp;laquo;Data Science for Undergraduates: Opportunities and Options&amp;raquo;. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
+    </item>
+    
+    <item>
+      <title>Data Science for Undergraduates</title>
+      <link>https://teachdatascience.com/nasem.utf8/</link>
+      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/nasem.utf8/</guid>
+      <description>Data Science for Undergraduates As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report &amp;laquo;Data Science for Undergraduates: Opportunities and Options&amp;raquo;. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     
     <item>

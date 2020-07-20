@@ -93,31 +93,11 @@ But using GitHub to navigate a dozen homework assignments with 50 students can b
     </item>
     
     <item>
-      <title>GitHub Classroom</title>
-      <link>https://teachdatascience.com/gitclass.utf8/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/gitclass.utf8/</guid>
-      <description>GitHub Classroom If you have been reading along in the blog, you&amp;rsquo;ve noticed the last two entries describing GitHub and GitHub in R. And certainly, we continue to advocate teaching students to use GitHub as an integral part of their data science workflow. And GitHub may be the perfect place to store student projects either as public or private repositories.
-But using GitHub to navigate a dozen homework assignments with 50 students can become logistically difficult.</description>
-    </item>
-    
-    <item>
       <title>Using GitHub in R</title>
       <link>https://teachdatascience.com/githubinr/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/githubinr/</guid>
-      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
-Previous posts have described working with R Projects and working with GitHub.</description>
-    </item>
-    
-    <item>
-      <title>Using GitHub in R</title>
-      <link>https://teachdatascience.com/githubinr.utf8/</link>
-      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/githubinr.utf8/</guid>
       <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
 Previous posts have described working with R Projects and working with GitHub.</description>
     </item>
@@ -151,16 +131,6 @@ Here&amp;rsquo;s a simple example where data from higher education institutions 
       
       <guid>https://teachdatascience.com/gaise/</guid>
       <description>The American Statistical Association has placeda priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
-Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
-    </item>
-    
-    <item>
-      <title>Guidelines for Assessment and Instruction in Statistics Education</title>
-      <link>https://teachdatascience.com/gaise.utf8/</link>
-      <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/gaise.utf8/</guid>
-      <description>The American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
 Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
     </item>
     

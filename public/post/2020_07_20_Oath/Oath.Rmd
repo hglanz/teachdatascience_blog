@@ -1,0 +1,156 @@
+---
+title: "Hippocratic Oath"
+author: "Nick Horton"
+date: '2020-07-20'
+output:
+  html_document:
+    df_print: paged
+tags:
+- education
+- ethics
+categories: R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(tidyverse)
+library(readxl)
+library(knitr)
+```
+
+
+An oath is a solemn promise.  While somewhat old-school, oaths exist in many professions. [Wikipedia](https://en.wikipedia.org/wiki/Ritual_of_the_Calling_of_an_Engineer) describes such an oath for the Ritual of the Calling of an Engineer:
+
+> The Ritual of the Calling of an Engineer has been instituted with the simple end of directing the young engineer towards a consciousness of his profession and its significance, and indicating to the older engineer his responsibilities in receiving, welcoming and supporting the young engineers in their beginnings.
+
+This ritual, instituted in the 1920's in Canada, was written by author [Rudyard Kipling](https://en.wikipedia.org/wiki/Rudyard_Kipling) as a statement of ethical practice.  (Kipling is not himself without ethical [controversies and criticisms](https://www.newyorker.com/magazine/2019/07/08/rudyard-kipling-in-america).) 
+
+<a title="manuscript:Unknown author
+scan used in book: Foto de la Biblioteca Vaticana
+
+scan from book: User:Rmrfstar / Public domain" href="https://commons.wikimedia.org/wiki/File:HippocraticOath.jpg"><img width="256" alt="HippocraticOath" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/HippocraticOath.jpg/256px-HippocraticOath.jpg"></a>
+
+Other famous oaths include the [Hippocratic Oath](https://www.nlm.nih.gov/hmd/greek/greek_oath.html), shown above, was part of Greek medical texts, dating back to circa AD 275.  The Hippocratic Oath has been broadly avowed by physicians.  Key principles of the medical Hippocratic Oath (also relevant for data science) include ethical concepts of confidentiality and non-maleficence.
+
+## Hippocratic Oath for Data Science
+
+The committee that drafted the [Data Science for Undergraduates](https://nas.edu/envisioningds) (NASEM 2018) report proposed a Data Science Oath in their interim report in hopes that it could foster efforts to establish a code of ethics for data scientists.  
+
+They noted:
+
+> The potential consequences of the ethical implications of data science cannot be overstated. Previously, data were small and specialized, but now data are pervasive. The fact that all humans are in this together (e.g., generating data and economic activity) means that they all have a responsibility to each other.
+
+Below we provide a line-by-line comparison of the original Hippocratic Oath and the proposed Data Science Oath:
+
+```{r echo = FALSE}
+oaths <- readxl::read_excel("oaths.xlsx") %>%
+  rename(`Original Hippocratic Oath`= original, 
+         `Proposed Data Science Oath` = proposed) %>%
+  select(-line)
+kable(oaths[1:2,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> The first two lines are almost identical.
+
+```{r echo = FALSE}
+kable(oaths[3,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> Doctors treat the sick.  Data scientists act for the benefit of all members of society.  What is the equivalent of *therapeutic nihilism* in the context of data science (misrepresentation seems to only capture part of this concept)?  
+
+```{r echo = FALSE}
+kable(oaths[4,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> Both medicine and data science are humanistic approaches (bedside manner applies to both professions).
+
+```{r echo = FALSE}
+kable(oaths[5,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> Doctors and data scientists are not expected to know everything.  It's important to be able to be able to observe when expert referrals are needed.  
+
+```{r echo = FALSE}
+kable(oaths[6,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> Privacy and data ethics are of great importance for both professions.  The aspects of saving and taking lives seem to be central to the physician's responsibilities that of the data scientist.
+
+```{r echo = FALSE}
+kable(oaths[7,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> It's obvious that no one "treats a fever chart".  Here the broader impact of data science on larger societal issues distinguish the two oaths.
+
+```{r echo = FALSE}
+kable(oaths[8,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> Prevention doesn't have a direct analogue to data science.  The proposed Data Science Oath here seems to miss the mark.
+
+```{r echo = FALSE}
+kable(oaths[9,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> Both professions exist in broader society, with attendant ethical responsibilities.
+
+```{r echo = FALSE}
+kable(oaths[10,]) %>% 
+  kableExtra::kable_styling() %>%
+  kableExtra::column_spec(1:2, width = "30em")
+```
+
+<span style="color:blue">**COMMENTARY:**</span> Both oaths close with a similar *call* as to the Canadian Engineers highlighted earlier.
+
+
+The NASEM (2018) report noted many commonalities between the the Hippocratic Oath and the proposed Data Science Oath.  An important takeaway is that both provide necessary but not sufficient guidance about addressing current and future ethical considerations.  The need for more comprehensive ethical standards may be one reason why the Hippocratic Oath is thought of as a historical oath.
+While these oath(s) are insufficient, they play an important role in framing ethical questions in medicine and data science, respectfully. 
+Ideally, they help new professionals reflect on ideas of ethics.
+
+The NASEM report draft oath was just that: a preliminary attempt to craft an ethical statement that data scientists could adopt.  It was not included in the consensus report (only included as an appendix).  Other efforts (see for example [this](https://virginia-eubanks.com/2018/02/21/a-hippocratic-oath-for-data-science) and [that](https://medium.com/@dpatil/a-code-of-ethics-for-data-science-cda27d1fac1)) have been suggested.  It will be important for the community to discuss and debate what principles should guide data science practice and how students can develop a sophisticated understanding of those principles.
+
+
+## Learn more
+
+- NASEM (2018) Data Science for Undergraduates (Opportunities and Options): https://nas.edu/envisioningds
+- Source for original Hippocratic Oath (Lasagna, 1964): https://www.pbs.org/wgbh/nova/doctors/oath_modern.html
+- Hippocratic Oath: https://www.nlm.nih.gov/hmd/greek/greek_oath.html
+- Ritual of the Calling of an Engineer: https://en.wikipedia.org/wiki/Ritual_of_the_Calling_of_an_Engineer
+- Proposal for data science ethics: https://thedataist.com/a-proposal-for-data-science-ethics/
+- Accenture universal principles of data ethics: https://www.accenture.com/t20160629T012639Z__w__/us-en/_acnmedia/PDF-24/Accenture-Universal-Principles-Data-Ethics.pdf
+- A Hippocratic Oath for Data Science: https://virginia-eubanks.com/2018/02/21/a-hippocratic-oath-for-data-science/
+and https://medium.com/@dpatil/a-code-of-ethics-for-data-science-cda27d1fac1
+
+## Full text of both oaths
+
+```{r echo = FALSE}
+DT::datatable(oaths)
+```
+
+## More info on the blog
+
+Last summer we wrote a series of blog entries designed to start conversations around teaching data science, [Teach Data Science](https://teachdatascience.com/).  We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization & exploration, communication, and key reports and findings on data science.
+
+One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.  We have now found ourselves in the summer of 2020, overwhelmed by the state of the world and re-committed to the ethical challenges which can help data science be a positive force for change.
+
+Although none of us are experts in ethics, we have all included ethics discussions in our classrooms for many years.  In the weeks to come, we will share some of the ways we engage our students in these important topics.  We will provide resources for readings, examples, datasets, and exercises.  We believe that data ethics are part of every data science analysis and classroom experience, and we hope that this summer's blog will entice you into presenting ethical dilemmas and related conversations to your students early and often.
+
+
+During the summer of 2020, we plan to write a dozen blog entries.  We hope that you bookmark the site and check in regularly.  Want a reminder?  Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
