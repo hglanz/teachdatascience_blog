@@ -109,15 +109,6 @@ The list below represents opportunities at a variety of levels. If you are just 
     </item>
     
     <item>
-      <title>Next Steps</title>
-      <link>https://teachdatascience.com/nextsteps.utf8/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/nextsteps.utf8/</guid>
-      <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we&amp;rsquo;ve gotten over the summer. Here&amp;rsquo;s to many future discussions on data science education.</description>
-    </item>
-    
-    <item>
       <title>Closing: A summer of data science education</title>
       <link>https://teachdatascience.com/closing/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
@@ -288,6 +279,26 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
+      <title>reprex:  Help me help you</title>
+      <link>https://teachdatascience.com/reprex.knit/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reprex.knit/</guid>
+      <description>&amp;hellip;if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+ The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie&amp;rsquo;s novel, Mrs. Dymond (1885). The point is well understood &amp;ndash; one of the most important things we can teach our students is how they can help themselves.</description>
+    </item>
+    
+    <item>
+      <title>reprex:  Help me help you</title>
+      <link>https://teachdatascience.com/reprex.utf8/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reprex.utf8/</guid>
+      <description>&amp;hellip;if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+ The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie&amp;rsquo;s novel, Mrs. Dymond (1885). The point is well understood &amp;ndash; one of the most important things we can teach our students is how they can help themselves.</description>
+    </item>
+    
+    <item>
       <title>Using the Common Online Data Analysis Platform (CODAP) to teach data science</title>
       <link>https://teachdatascience.com/codap/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
@@ -356,15 +367,6 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
     </item>
     
     <item>
-      <title>Style Guides for Coding</title>
-      <link>https://teachdatascience.com/styleguide.utf8/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/styleguide.utf8/</guid>
-      <description>The Importance of Good Coding Style To begin with another quote from Hadley Wickham: &amp;laquo;Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.&amp;raquo; In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
-    </item>
-    
-    <item>
       <title>Undergraduate Curriculum Guidelines</title>
       <link>https://teachdatascience.com/pcmi/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
@@ -392,22 +394,20 @@ Wikipedia defines code refactoring as “the process of restructuring existing c
     </item>
     
     <item>
-      <title>An Introduction to R Shiny</title>
-      <link>https://teachdatascience.com/shiny1.utf8/</link>
-      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/shiny1.utf8/</guid>
-      <description>What is R Shiny? 
-
-shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
-    </item>
-    
-    <item>
       <title>Data Science for Good</title>
       <link>https://teachdatascience.com/data4good/</link>
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/data4good/</guid>
+      <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
+    </item>
+    
+    <item>
+      <title>Data Science for Good</title>
+      <link>https://teachdatascience.com/data4good.knit/</link>
+      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/data4good.knit/</guid>
       <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
     </item>
     
@@ -442,16 +442,6 @@ Photo credit: Esti Alvarez
     </item>
     
     <item>
-      <title>Pair Programming for Data Science and Statistics</title>
-      <link>https://teachdatascience.com/pairprogramming.utf8/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/pairprogramming.utf8/</guid>
-      <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
-Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
-    </item>
-    
-    <item>
       <title>Practical Data Science: an introduction to the PeerJ collection</title>
       <link>https://teachdatascience.com/peerj/</link>
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
@@ -463,22 +453,21 @@ There are many aspects of day-to-day data analytical work that are almost absent
     </item>
     
     <item>
-      <title>Practical Data Science: an introduction to the PeerJ collection</title>
-      <link>https://teachdatascience.com/peerj.utf8/</link>
-      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/peerj.utf8/</guid>
-      <description>In 2017, Jenny Bryan and Hadley Wickham published the &amp;laquo;Practical Data Science for Stats&amp;raquo; PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
-The &amp;laquo;Practical Data Science for Stats&amp;raquo; Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
-There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
-    </item>
-    
-    <item>
       <title>Less Volume More Creativity in R</title>
       <link>https://teachdatascience.com/mosaic/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/mosaic/</guid>
+      <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
+The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
+    </item>
+    
+    <item>
+      <title>Less Volume More Creativity in R</title>
+      <link>https://teachdatascience.com/mosaic.knit/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/mosaic.knit/</guid>
       <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
 The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
     </item>
@@ -513,6 +502,16 @@ Previous posts have described working with R Projects and working with GitHub.</
     </item>
     
     <item>
+      <title>Using GitHub in R</title>
+      <link>https://teachdatascience.com/githubinr.utf8/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/githubinr.utf8/</guid>
+      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+Previous posts have described working with R Projects and working with GitHub.</description>
+    </item>
+    
+    <item>
       <title>GitHub for Fun and Profit</title>
       <link>https://teachdatascience.com/github/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
@@ -524,6 +523,17 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
     </item>
     
     <item>
+      <title>GitHub for Fun and Profit</title>
+      <link>https://teachdatascience.com/github.knit/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/github.knit/</guid>
+      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
+The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
+ &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
+    </item>
+    
+    <item>
       <title>Leaflet for mapping</title>
       <link>https://teachdatascience.com/leaflet/</link>
       <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
@@ -532,17 +542,6 @@ The 2018 NASEM “Data Science for Undergraduates” report enunciated the impor
       <description>Leaflet for mappingMaps are an important way of displaying data.
 The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
 Here’s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
-    </item>
-    
-    <item>
-      <title>Leaflet for mapping</title>
-      <link>https://teachdatascience.com/leaflet.utf8/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/leaflet.utf8/</guid>
-      <description>Leaflet for mapping Maps are an important way of displaying data.
-The leaflet package in R provides access to the Leaflet Javascript libraries (http://leafletjs.com), an open-source mechanism to create interactive maps. The leaflet package (https://rstudio.github.io/leaflet/) provides an interface within R that allows for composing maps using map tiles (e.g., from OpenStreetMap, https://www.openstreetmap.org/#map=5/38.007/-95.844) that can be annotated with markers, lines, popups.
-Here&amp;rsquo;s a simple example where data from higher education institutions from within the Five College Consortium in Western Massachusetts is mapped.</description>
     </item>
     
     <item>
@@ -647,15 +646,6 @@ By including data work, code, and analysis narrative into a single document, R M
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/nasem.knit/</guid>
-      <description>Data Science for Undergraduates As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report &amp;laquo;Data Science for Undergraduates: Opportunities and Options&amp;raquo;. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
-    </item>
-    
-    <item>
-      <title>Data Science for Undergraduates</title>
-      <link>https://teachdatascience.com/nasem.utf8/</link>
-      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/nasem.utf8/</guid>
       <description>Data Science for Undergraduates As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report &amp;laquo;Data Science for Undergraduates: Opportunities and Options&amp;raquo;. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     

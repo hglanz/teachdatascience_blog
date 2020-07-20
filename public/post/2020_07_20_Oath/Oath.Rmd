@@ -12,7 +12,7 @@ categories: R
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
+knitr::opts_chunk$set(collapse = TRUE, warning = FALSE)
 library(tidyverse)
 library(readxl)
 library(knitr)
@@ -42,7 +42,7 @@ They noted:
 
 Below we provide a line-by-line comparison of the original Hippocratic Oath and the proposed Data Science Oath:
 
-```{r echo = FALSE}
+```{r echo = FALSE, warning = FALSE, message = FALSE}
 oaths <- readxl::read_excel("oaths.xlsx") %>%
   rename(`Original Hippocratic Oath`= original, 
          `Proposed Data Science Oath` = proposed) %>%
@@ -139,8 +139,8 @@ and https://medium.com/@dpatil/a-code-of-ethics-for-data-science-cda27d1fac1
 
 ## Full text of both oaths
 
-```{r echo = FALSE}
-DT::datatable(oaths)
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+kable(oaths)
 ```
 
 ## More info on the blog

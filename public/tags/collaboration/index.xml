@@ -47,6 +47,26 @@ Knowing how to use Python is an important first step to engaging with the softwa
     </item>
     
     <item>
+      <title>reprex:  Help me help you</title>
+      <link>https://teachdatascience.com/reprex.knit/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reprex.knit/</guid>
+      <description>&amp;hellip;if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+ The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie&amp;rsquo;s novel, Mrs. Dymond (1885). The point is well understood &amp;ndash; one of the most important things we can teach our students is how they can help themselves.</description>
+    </item>
+    
+    <item>
+      <title>reprex:  Help me help you</title>
+      <link>https://teachdatascience.com/reprex.utf8/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reprex.utf8/</guid>
+      <description>&amp;hellip;if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+ The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie&amp;rsquo;s novel, Mrs. Dymond (1885). The point is well understood &amp;ndash; one of the most important things we can teach our students is how they can help themselves.</description>
+    </item>
+    
+    <item>
       <title>Five quick tips for coding in the classroom</title>
       <link>https://teachdatascience.com/teaching_programming_tips/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
@@ -66,20 +86,20 @@ Knowing how to use Python is an important first step to engaging with the softwa
     </item>
     
     <item>
-      <title>Style Guides for Coding</title>
-      <link>https://teachdatascience.com/styleguide.utf8/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/styleguide.utf8/</guid>
-      <description>The Importance of Good Coding Style To begin with another quote from Hadley Wickham: &amp;laquo;Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.&amp;raquo; In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
-    </item>
-    
-    <item>
       <title>Data Science for Good</title>
       <link>https://teachdatascience.com/data4good/</link>
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/data4good/</guid>
+      <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
+    </item>
+    
+    <item>
+      <title>Data Science for Good</title>
+      <link>https://teachdatascience.com/data4good.knit/</link>
+      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/data4good.knit/</guid>
       <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
     </item>
     
@@ -94,6 +114,16 @@ Previous posts have described working with R Projects and working with GitHub.</
     </item>
     
     <item>
+      <title>Using GitHub in R</title>
+      <link>https://teachdatascience.com/githubinr.utf8/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/githubinr.utf8/</guid>
+      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+Previous posts have described working with R Projects and working with GitHub.</description>
+    </item>
+    
+    <item>
       <title>GitHub for Fun and Profit</title>
       <link>https://teachdatascience.com/github/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
@@ -102,6 +132,17 @@ Previous posts have described working with R Projects and working with GitHub.</
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
 “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
+    </item>
+    
+    <item>
+      <title>GitHub for Fun and Profit</title>
+      <link>https://teachdatascience.com/github.knit/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/github.knit/</guid>
+      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
+The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
+ &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
     </item>
     
     <item>

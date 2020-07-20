@@ -111,11 +111,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nextsteps.utf8/</loc>
-    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/r-studio/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -514,6 +509,16 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/reprex.knit/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/reprex.utf8/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/codap/</loc>
     <lastmod>2019-07-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -609,11 +614,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/styleguide.utf8/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/pcmi/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
@@ -653,12 +653,12 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/shiny1.utf8/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <loc>https://teachdatascience.com/data4good/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/data4good/</loc>
+    <loc>https://teachdatascience.com/data4good.knit/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -696,11 +696,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/pairprogramming.utf8/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/teaching/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -712,12 +707,12 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/peerj.utf8/</loc>
-    <lastmod>2019-06-19T00:00:00+00:00</lastmod>
+    <loc>https://teachdatascience.com/mosaic/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/mosaic/</loc>
+    <loc>https://teachdatascience.com/mosaic.knit/</loc>
     <lastmod>2019-06-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -749,17 +744,22 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/githubinr.utf8/</loc>
+    <lastmod>2019-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/github/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/leaflet/</loc>
-    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
+    <loc>https://teachdatascience.com/github.knit/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/leaflet.utf8/</loc>
+    <loc>https://teachdatascience.com/leaflet/</loc>
     <lastmod>2019-06-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -839,11 +839,6 @@
   
   <url>
     <loc>https://teachdatascience.com/nasem.knit/</loc>
-    <lastmod>2019-05-27T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/nasem.utf8/</loc>
     <lastmod>2019-05-27T21:13:14-05:00</lastmod>
   </url>
   

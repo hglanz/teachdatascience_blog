@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Data Science for Good  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="collaboration, education, communication, ">
+
+
+<meta property="og:title" content="Data Science for Good  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/data4good.knit/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_06_26_Data4Good\data4good.knit.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-06-25T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-06-25T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="collaboration">
+    
+<meta property="og:article:tag" content="education">
+    
+<meta property="og:article:tag" content="communication">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/data4good.knit/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Data Science for Good
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-25">25 Jun, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Jo Hardin
+  
+  &middot; Read in about 5 min
+  &middot; (1035 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data%20Science%20for%20Good&amp;url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f&amp;title=Data%20Science%20for%20Good" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data%20Science%20for%20Good&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/collaboration" class="label label-primary">collaboration</a>
+  
+  <a href="https://teachdatascience.com/tags/education" class="label label-primary">education</a>
+  
+  <a href="https://teachdatascience.com/tags/communication" class="label label-primary">communication</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<p>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers.  It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work.  However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.  Instead, it is worth introducing our students to the range of industries that require skilled data scientists, including what is broadly understood to be data science for good.</p>
+
+<h2 id="organizations-worth-noting">Organizations worth noting</h2>
+
+<ul>
+<li><a href="https://hrdag.org/">Human Rights Data Analysis Group</a>, who is, from their website, &laquo;a non-profit, non-partisan organization that applies rigorous science to the analysis of human rights violations around the world.&raquo; In particular, the following &laquo;are the data pitfalls that HRDAG has identified.&raquo;
+
+<ul>
+<li>under-registration<br /></li>
+<li>selection bias<br /></li>
+<li>duplicate reporting and multiple systems estimation<br /></li>
+<li>complexity<br /></li>
+<li>data security<br />
+<br /></li>
+</ul></li>
+</ul>
+
+<p><center>
+<figure>
+<img alt = 'hrdag' width='400' src='https://teachdatascience.com/post/data4good/hrdag.jpg' />
+</figure>
+</center></p>
+
+<p><a href="https://hrdag.org/category/hrdag-jobs/">Apply here</a></p>
+
+<ul>
+<li><p><a href="https://dssg.uchicago.edu/">Data Science for Social Good</a> at the University of Chicago.  DSSG works hard to train a generation of scientists who are committed to doing good with their data science skills.  <a href="https://dssg.uchicago.edu/faq-page/">Apply here</a></p>
+
+<ul>
+<li>DSSG funds and trains fellows &amp; mentors</li>
+<li>DSSG holds regular conferences</li>
+<li>DSSG <a href="https://dssg.uchicago.edu/blog/">blogs</a> about their projects
+<br /></li>
+</ul></li>
+
+<li><p><a href="https://policylab.stanford.edu/">Stanford Computational Policy Lab</a> From their website:  <a href="https://policylab.stanford.edu/jobs/">Apply here</a></p></li>
+</ul>
+
+<blockquote>
+<p>At the Stanford Computational Policy Lab, we use technology to tackle pressing issues in criminal justice, education, voting rights, and beyond. Leveraging advances in data science, we study the impact of policy choices at unprecedented scales, and build algorithmic tools to guide high-stakes decisions. By bringing a computational perspective to public policy, we aim to improve the lives of millions of people — especially those affected by inefficient and unfair systems and practices.</p>
+</blockquote>
+
+<ul>
+<li><a href="https://www.datafordemocracy.org/project/global-data-ethics-project">The Global Data Ethics Project</a>  is built on five principles that provide an ethical framework for doing datascience.  They encourage all data scientists to <a href="https://www.datafordemocracy.org/pledge">sign the ethics pledge</a>.  <a href="https://www.datafordemocracy.org/join-us">Apply here</a></li>
+</ul>
+
+<p><center>
+<figure>
+<img alt = 'pledge' width='600' src='https://teachdatascience.com/post/data4good/FORTS.jpg' />
+</figure>
+</center></p>
+
+<ul>
+<li><p><a href="https://www.classy.org/">Classy</a> is an integrated suite of fundraising tools for nonprofits.  From their website &laquo;We welcome any nonprofits who want to empower their teams to create a modern and engaging online presence.&raquo;  And later, &laquo;Classy is trusted by more than 4,000+ organizations of all sizes and causes, from major events like disease outbreaks, disasters, mass shootings, and social movements, to mainstay world challenges like environmental issues, child trafficking, human rights, and animal rights.&raquo;  <a href="https://www.classy.org/careers/">Apply here</a></p></li>
+
+<li><p><a href="https://www.fwd.us/">fwd.us</a> is a &laquo;group of business and tech leaders committed to meaningful reform and moving America forward.&raquo;  In particular, fwd.us is working on issues of criminal justice and immigration.  They have been involved in pushing the <a href="https://www.fwd.us/action/dream-and-promise-act-thank-you/">Dream and Promise Act</a> which recently passed the U.S. House of Representatives.  <a href="https://www.fwd.us/careers/">Apply here</a></p></li>
+
+<li><p><a href="https://www.media.mit.edu/">MIT Media Lab</a>  From their website:</p></li>
+</ul>
+
+<blockquote>
+<p>True to Jerry’s vision, for over 30 years Media Lab researchers have anticipated and created technologies to make our lives safer, cleaner, healthier, fairer, and more productive. But along with benefits, technology’s everyday efficiencies have also brought their share of issues: obesity, poverty, ethical implications, bullying, divergent politics. The Media Lab’s antidisciplinary research community is uniquely equipped to address these concerns, leveraging the best that technology has to offer, and connecting technology back to the social and the human. Current Lab research examines the deeper implications of where technology creation and adoption has led us—and where we want to go next.</p>
+</blockquote>
+
+<p><a href="https://www.media.mit.edu/about/job-opportunities/">Apply here</a></p>
+
+<ul>
+<li><a href="https://ai4good.org/">AI for Good Foundation</a> From their website:</li>
+</ul>
+
+<blockquote>
+<p>To date, the unbalanced nature of incentives and funding for Artificial Intelligence research has favored commercial applications, such as defense and advertising, at the expense of altruistic applications. Artificial Intelligence research must be applied beyond these sectors — to help solve social, economic, and environmental problems — if it will benefit society to the fullest extent possible.</p>
+
+<p>The Artificial Intelligence for Good Foundation applies Artificial Intelligence research for global sustainable development. Our current projects are helping to advance the global sustainable development agenda — a set of goals adopted by 150 countries to end poverty, protect the planet, and ensure prosperity for all.</p>
+</blockquote>
+
+<p><a href="https://ai4good.org/about/membership/">Get involved</a></p>
+
+<ul>
+<li><a href="https://www.datakind.org/">DataKind</a>  From their website:</li>
+</ul>
+
+<blockquote>
+<p>DataKind is always looking for enthusiastic do-gooders to join us in tackling the world’s toughest problems with data science. We&rsquo;re a fast-growing, global team that believes in the power of data and collaboration to change the world. We want to build a diverse and inclusive work environment that reflects the society and communities in which we are located. We’re committed to diversity and actively seek out applicants from groups facing systemic inequities in the tech sector. We also encourage individuals with non-traditional backgrounds to apply and to include and describe parallel or equivalent experience wherever appropriate.</p>
+</blockquote>
+
+<p><a href="https://www.datakind.org/careers/">Apply here</a></p>
+
+<h2 id="collections-of-data-science-for-good-resources">Collections of Data Science for Good Resources</h2>
+
+<p>Our blog isn&rsquo;t the only place to find out about data science for good endeavors and opportunities.</p>
+
+<ul>
+<li>AMSTAT News has a regular column, <a href="https://magazine.amstat.org/blog/category/columnnews/stats4good/">Stats4Good</a> with resources, suggestions, and musings.</li>
+</ul>
+
+<p><center>
+<figure>
+<img alt = 'hrdag' width='800' src='https://teachdatascience.com/post/data4good/amstatnews.jpg' />
+</figure>
+</center></p>
+
+<ul>
+<li><p>The National Academies recently focused one of their roundtables on <a href="http://sites.nationalacademies.org/DEPS/BMSA/DEPS_189279">Motivating Data Science Education through Social Good</a>.  The complete <a href="https://vimeo.com/showcase/5686009">recorded webcast</a> is available to watch along with a narrative <a href="http://sites.nationalacademies.org/cs/groups/depssite/documents/webpage/deps_191820.pdf">summary</a>.</p></li>
+
+<li><p>Mass Mutual, a leader in <a href="https://datascience.massmutual.com/">data science education</a>, has a regular <a href="https://blog.massmutual.com/post/data-days-good">Data Days for Good</a> initiative.</p></li>
+</ul>
+
+<h3 id="learn-more">Learn more</h3>
+
+<ul>
+<li>American Statistical Association&rsquo;s annual <a href="https://www.amstat.org/asa/files/pdfs/2018StewardshipReport.pdf">Stewardship Report</a></li>
+<li>Tobias Pfaff&rsquo;s blog <a href="http://blog.datalook.io/definitive-guide-data-science-good/">The Definitive Guide to Do Data Science for Good</a> which includes a list of international group meetings and events which are opportunities to network.</li>
+<li><a href="https://swb.wildapricot.org/">Statistics Without Borders</a>, a volunteer outreach group providing statistics and data science services.</li>
+</ul>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Data%20Science%20for%20Good&amp;url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f&amp;title=Data%20Science%20for%20Good" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Data%20Science%20for%20Good&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fdata4good.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/dataviz/" title="Teaching Data Visualization">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/data4good/" title="Data Science for Good">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/oath/">Hippocratic Oath</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem.utf8/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/bookclub/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/closing/">Closing: A summer of data science education</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

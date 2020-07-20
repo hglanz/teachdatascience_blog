@@ -34,6 +34,26 @@ This past semester, I taught two sections of a course called Advanced Statistica
     </item>
     
     <item>
+      <title>reprex:  Help me help you</title>
+      <link>https://teachdatascience.com/reprex.knit/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reprex.knit/</guid>
+      <description>&amp;hellip;if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+ The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie&amp;rsquo;s novel, Mrs. Dymond (1885). The point is well understood &amp;ndash; one of the most important things we can teach our students is how they can help themselves.</description>
+    </item>
+    
+    <item>
+      <title>reprex:  Help me help you</title>
+      <link>https://teachdatascience.com/reprex.utf8/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reprex.utf8/</guid>
+      <description>&amp;hellip;if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
+ The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie&amp;rsquo;s novel, Mrs. Dymond (1885). The point is well understood &amp;ndash; one of the most important things we can teach our students is how they can help themselves.</description>
+    </item>
+    
+    <item>
       <title>GitHub Classroom</title>
       <link>https://teachdatascience.com/gitclass/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
@@ -54,6 +74,16 @@ Previous posts have described working with R Projects and working with GitHub.</
     </item>
     
     <item>
+      <title>Using GitHub in R</title>
+      <link>https://teachdatascience.com/githubinr.utf8/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/githubinr.utf8/</guid>
+      <description>Once you get the hang of using Projects in RStudio, you may be inclined to collaborate with others on the same project. If so, you will want to set up a Project that links directly to GitHub. By having your project on GitHub (and regularly saving it / updating it on GitHub), your collaborators will always have access to the most up to date analysis information.
+Previous posts have described working with R Projects and working with GitHub.</description>
+    </item>
+    
+    <item>
       <title>GitHub for Fun and Profit</title>
       <link>https://teachdatascience.com/github/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
@@ -62,6 +92,17 @@ Previous posts have described working with R Projects and working with GitHub.</
       <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
 The 2018 NASEM “Data Science for Undergraduates” report enunciated the importance of workflow and reproducibility as a key component of data acumen.
 “Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way” (NASEM 2019, page 2-12).</description>
+    </item>
+    
+    <item>
+      <title>GitHub for Fun and Profit</title>
+      <link>https://teachdatascience.com/github.knit/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/github.knit/</guid>
+      <description>How do we help students carry out data analysis workflows that are comprehensible and reproducible?
+The 2018 NASEM &amp;laquo;Data Science for Undergraduates&amp;raquo; report enunciated the importance of workflow and reproducibility as a key component of data acumen.
+ &amp;laquo;Documenting and sharing workflows enable others to understand how data have been used and refined and what steps were taken in an analysis process. This can increase the confidence in results and improve trust in the process as well as enable reuse of analyses or results in a meaningful way&amp;raquo; (NASEM 2019, page 2-12).</description>
     </item>
     
   </channel>

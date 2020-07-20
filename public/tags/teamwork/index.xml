@@ -35,15 +35,5 @@ Photo credit: Esti Alvarez
 Pair programming has been thought to lead to better code, more enjoyable coding, andhigher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
     </item>
     
-    <item>
-      <title>Pair Programming for Data Science and Statistics</title>
-      <link>https://teachdatascience.com/pairprogramming.utf8/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/pairprogramming.utf8/</guid>
-      <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
-Pair programming has been thought to lead to better code, more enjoyable coding, and higher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>
-    </item>
-    
   </channel>
 </rss>

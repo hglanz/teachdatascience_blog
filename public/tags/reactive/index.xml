@@ -30,16 +30,5 @@
       <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
-    <item>
-      <title>An Introduction to R Shiny</title>
-      <link>https://teachdatascience.com/shiny1.utf8/</link>
-      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/shiny1.utf8/</guid>
-      <description>What is R Shiny? 
-
-shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
-    </item>
-    
   </channel>
 </rss>
