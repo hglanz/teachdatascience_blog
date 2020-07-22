@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>plot on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/plot/</link>
+    <link>/tags/plot/</link>
     <description>Recent content in plot on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Tue, 02 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/plot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating Tutorials and Lessons in R using learnr</title>
-      <link>https://teachdatascience.com/learnr/</link>
+      <link>/learnr/</link>
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/learnr/</guid>
+      <guid>/learnr/</guid>
       <description>What is the learnr package?The learnr package makes it easy to turn any R Markdown document into an interactive tutorial. With this vehicle instructors can offer interactive tools to their students to allow them to explore datasets in use from the class, a textbook, or even collected themselves. Straight from Garrett Grolemund’s fantastic introduction to the package, tutorials can include any or all of the following:
 Narrative, figures, illustrations, and equations.</description>
     </item>

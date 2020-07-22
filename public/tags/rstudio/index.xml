@@ -2,139 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RStudio on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/rstudio/</link>
+    <link>/tags/rstudio/</link>
     <description>Recent content in RStudio on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Parallel processing and sparklyr</title>
-      <link>https://teachdatascience.com/parallel/</link>
+      <link>/parallel/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/parallel/</guid>
+      <guid>/parallel/</guid>
       <description>Today’s blog entry is on parallel and grid computing. As a data science education blog, our focus is more on how to discuss ways to help students learn about high performance computing in the classroom rather than parallel computing for particular research projects (for a recent example see “Ambitious data science can be painless”). Early on in data science education it’s important to develop a foundation and precursors for future work.</description>
     </item>
     
     <item>
       <title>reprex:  Help me help you</title>
-      <link>https://teachdatascience.com/reprex/</link>
+      <link>/reprex/</link>
       <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/reprex/</guid>
+      <guid>/reprex/</guid>
       <description>…if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.
 The quote is often attributed to a Chinese proverb and is excerpted from Anne Isabella Thackeray Ritchie’s novel, Mrs. Dymond (1885). The point is well understood – one of the most important things we can teach our students is how they can help themselves.</description>
     </item>
     
     <item>
       <title>useR!</title>
-      <link>https://teachdatascience.com/user/</link>
+      <link>/user/</link>
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/user/</guid>
+      <guid>/user/</guid>
       <description>Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year’s useR! conference. We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the useR! 2019 twitter page and the #user2019 hashtag.
 And, great news!!!! The keynote addresses will be live streaming at R Consortium youtube. Thanks to the support of RConsortium for making the live stream possible.</description>
     </item>
     
     <item>
       <title>Style Guides for Coding</title>
-      <link>https://teachdatascience.com/styleguide/</link>
+      <link>/styleguide/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/styleguide/</guid>
+      <guid>/styleguide/</guid>
       <description>The Importance of Good Coding StyleTo begin with another quote from Hadley Wickham: “Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.” In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
     </item>
     
     <item>
-      <title>Style Guides for Coding</title>
-      <link>https://teachdatascience.com/styleguide.utf8/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/styleguide.utf8/</guid>
-      <description>The Importance of Good Coding Style To begin with another quote from Hadley Wickham: &amp;laquo;Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.&amp;raquo; In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
-    </item>
-    
-    <item>
       <title>Using Shiny in the Classroom</title>
-      <link>https://teachdatascience.com/shiny2/</link>
+      <link>/shiny2/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/shiny2/</guid>
+      <guid>/shiny2/</guid>
       <description>Shiny RecapYesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn’t catch yesterday’s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio’s gallery at https://shiny.</description>
     </item>
     
     <item>
-      <title>Using Shiny in the Classroom</title>
-      <link>https://teachdatascience.com/shiny2.utf8/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/shiny2.utf8/</guid>
-      <description>Shiny Recap 
-
-Yesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn&amp;rsquo;t catch yesterday&amp;rsquo;s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio&amp;rsquo;s gallery at https://shiny.</description>
-    </item>
-    
-    <item>
       <title>An Introduction to R Shiny</title>
-      <link>https://teachdatascience.com/shiny1/</link>
+      <link>/shiny1/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/shiny1/</guid>
+      <guid>/shiny1/</guid>
       <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
-      <title>An Introduction to R Shiny</title>
-      <link>https://teachdatascience.com/shiny1.utf8/</link>
-      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/shiny1.utf8/</guid>
-      <description>What is R Shiny? 
-
-shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
-    </item>
-    
-    <item>
       <title>Projects in RStudio</title>
-      <link>https://teachdatascience.com/projects/</link>
+      <link>/projects/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/projects/</guid>
+      <guid>/projects/</guid>
       <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
 Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
     <item>
-      <title>Projects in RStudio</title>
-      <link>https://teachdatascience.com/projects.utf8/</link>
-      <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/projects.utf8/</guid>
-      <description>What are Projects? RStudio Projects are a mechanism for keeping all the files associated with a project together in one place &amp;ndash; data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
-Why RStudio? It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
-    </item>
-    
-    <item>
       <title>Introduction: A summer of data science education</title>
-      <link>https://teachdatascience.com/intro/</link>
+      <link>/intro/</link>
       <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/intro/</guid>
+      <guid>/intro/</guid>
       <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
-    </item>
-    
-    <item>
-      <title>Introduction: A summer of data science education</title>
-      <link>https://teachdatascience.com/intro.knit/</link>
-      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/intro.knit/</guid>
-      <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     
   </channel>

@@ -2,120 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ethics on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/ethics/</link>
+    <link>/tags/ethics/</link>
     <description>Recent content in ethics on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hippocratic Oath</title>
-      <link>https://teachdatascience.com/oath/</link>
+      <link>/oath/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/oath/</guid>
+      <guid>/oath/</guid>
       <description>An oath is a solemn promise. While somewhat old-school, oaths exist in many professions. Wikipedia describes such an oath for the Ritual of the Calling of an Engineer:
 The Ritual of the Calling of an Engineer has been instituted with the simple end of directing the young engineer towards a consciousness of his profession and its significance, and indicating to the older engineer his responsibilities in receiving, welcoming and supporting the young engineers in their beginnings.</description>
     </item>
     
     <item>
       <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem/</link>
+      <link>/datafem/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/datafem/</guid>
+      <guid>/datafem/</guid>
       <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D’Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
     </item>
     
     <item>
-      <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem.knit/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/datafem.knit/</guid>
-      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
-    </item>
-    
-    <item>
-      <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem.utf8/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/datafem.utf8/</guid>
-      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
-    </item>
-    
-    <item>
       <title>Bookclub on Data Science Ethics</title>
-      <link>https://teachdatascience.com/bookclub/</link>
+      <link>/bookclub/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/bookclub/</guid>
-      <description>It is human nature to be intrigued and motivated by case studies and real examples to which we feel a connection. Certainly, the plethora of books and articles in the popular data science literature are likely what motivated many of us to choose to become data scientists and statisticians. Wanting to know more or to know why encourages us to dive into the theory, and novel teaching or research projects can develop.</description>
-    </item>
-    
-    <item>
-      <title>Bookclub on Data Science Ethics</title>
-      <link>https://teachdatascience.com/bookclub.utf8/</link>
-      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/bookclub.utf8/</guid>
+      <guid>/bookclub/</guid>
       <description>It is human nature to be intrigued and motivated by case studies and real examples to which we feel a connection. Certainly, the plethora of books and articles in the popular data science literature are likely what motivated many of us to choose to become data scientists and statisticians. Wanting to know more or to know why encourages us to dive into the theory, and novel teaching or research projects can develop.</description>
     </item>
     
     <item>
       <title>Data Privacy</title>
-      <link>https://teachdatascience.com/privacy/</link>
+      <link>/privacy/</link>
       <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/privacy/</guid>
+      <guid>/privacy/</guid>
       <description>Data PrivacyData privacy is an increasingly important problem.The flood of data available throughsensors, smartphones, and our interactions on the internet have great potential to improve our lives andaddress long-standing issues and problems.Yet they also raise critical questions about misuse of such data.
 What is data privacy? And how is it different from anonymous or secure data?
 Data privacy is concerned with three main components:</description>
     </item>
     
     <item>
-      <title>Data Privacy</title>
-      <link>https://teachdatascience.com/privacy.knit/</link>
-      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/privacy.knit/</guid>
-      <description>Data Privacy Data privacy is an increasingly important problem. The flood of data available through sensors, smartphones, and our interactions on the internet have great potential to improve our lives and address long-standing issues and problems. Yet they also raise critical questions about misuse of such data.
-What is data privacy? And how is it different from anonymous or secure data?
-Data privacy is concerned with three main components:</description>
-    </item>
-    
-    <item>
       <title>Ethical Data Viz</title>
-      <link>https://teachdatascience.com/ethicaldataviz/</link>
+      <link>/ethicaldataviz/</link>
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/ethicaldataviz/</guid>
+      <guid>/ethicaldataviz/</guid>
       <description>Arguably, data have the broadest impact in engaging readers, changing minds, and determining policy when they are presented graphically. It is the potential for enormous impact that requires a data scientist to think most carefully about how their visualizations are created and then subsequently consumed.
 Many of us already teach data visualization in our statistics and data science classes. Therefore, introducing an ethical framework and a theory on valid graphics will be a natural fit into many classes.</description>
     </item>
     
     <item>
       <title>Re-Introduction: Ethics in Data Science Education</title>
-      <link>https://teachdatascience.com/reintro/</link>
+      <link>/reintro/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/reintro/</guid>
+      <guid>/reintro/</guid>
       <description>Why more Data Science Education blogging?Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
-One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
-    </item>
-    
-    <item>
-      <title>Re-Introduction: Ethics in Data Science Education</title>
-      <link>https://teachdatascience.com/reintro.knit/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/reintro.knit/</guid>
-      <description>Why more Data Science Education blogging? Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
 One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
     </item>
     

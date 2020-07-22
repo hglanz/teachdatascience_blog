@@ -2,36 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>causal inference on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/causal-inference/</link>
+    <link>/tags/causal-inference/</link>
     <description>Recent content in causal inference on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/causal-inference/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/causal-inference/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>One model to rule them all</title>
-      <link>https://teachdatascience.com/onemodel/</link>
+      <link>/onemodel/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/onemodel/</guid>
+      <guid>/onemodel/</guid>
       <description>As we near the end of our summer posts, we’ve started to think more broadly about statistics as well as data science courses. Today’s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
 Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.</description>
-    </item>
-    
-    <item>
-      <title>One model to rule them all</title>
-      <link>https://teachdatascience.com/onemodel.utf8/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/onemodel.utf8/</guid>
-      <description>As we near the end of our summer posts, we&amp;rsquo;ve started to think more broadly about statistics as well as data science courses. Today&amp;rsquo;s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
-Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.
-
-    Cheatsheets in R and Python describe how standard statistical tests (e.</description>
     </item>
     
   </channel>

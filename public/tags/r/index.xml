@@ -2,44 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/r/</link>
+    <link>/tags/r/</link>
     <description>Recent content in R on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>One model to rule them all</title>
-      <link>https://teachdatascience.com/onemodel/</link>
+      <link>/onemodel/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/onemodel/</guid>
+      <guid>/onemodel/</guid>
       <description>As we near the end of our summer posts, we’ve started to think more broadly about statistics as well as data science courses. Today’s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
 Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.</description>
     </item>
     
     <item>
-      <title>One model to rule them all</title>
-      <link>https://teachdatascience.com/onemodel.utf8/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/onemodel.utf8/</guid>
-      <description>As we near the end of our summer posts, we&amp;rsquo;ve started to think more broadly about statistics as well as data science courses. Today&amp;rsquo;s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
-Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.
-
-    Cheatsheets in R and Python describe how standard statistical tests (e.</description>
-    </item>
-    
-    <item>
       <title>Data assertion and checks via testthat</title>
-      <link>https://teachdatascience.com/testthat/</link>
+      <link>/testthat/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/testthat/</guid>
+      <guid>/testthat/</guid>
       <description>Reproducibility and ReplicabilityOn May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, “New report examines reproducibility and replicability in science” article here. The report recommends “ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.”
 Reproducibility is at the core of data acumen and needs to be stressed at all levels of the data science curriculum.</description>
     </item>

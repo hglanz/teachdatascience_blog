@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on Teach Data Science</title>
-    <link>https://teachdatascience.com/topics/</link>
+    <link>/topics/</link>
     <description>Recent content in Topics on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     
-	<atom:link href="https://teachdatascience.com/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -2,44 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/python/</link>
+    <link>/tags/python/</link>
     <description>Recent content in python on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>One model to rule them all</title>
-      <link>https://teachdatascience.com/onemodel/</link>
+      <link>/onemodel/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/onemodel/</guid>
+      <guid>/onemodel/</guid>
       <description>As we near the end of our summer posts, we’ve started to think more broadly about statistics as well as data science courses. Today’s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
 Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.</description>
     </item>
     
     <item>
-      <title>One model to rule them all</title>
-      <link>https://teachdatascience.com/onemodel.utf8/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/onemodel.utf8/</guid>
-      <description>As we near the end of our summer posts, we&amp;rsquo;ve started to think more broadly about statistics as well as data science courses. Today&amp;rsquo;s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
-Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.
-
-    Cheatsheets in R and Python describe how standard statistical tests (e.</description>
-    </item>
-    
-    <item>
       <title>Data100: Principles and Techniques of Data Science</title>
-      <link>https://teachdatascience.com/data100/</link>
+      <link>/data100/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/data100/</guid>
+      <guid>/data100/</guid>
       <description>Last week’s entries focused on Python included a description of the innovative and popular data8, today we describe the follow-up course, data100, http://www.ds100.org/ (Principles and Techniques of Data Science) offered by the University of California/Berkeley Division of Data Sciences.
 
 
@@ -47,22 +35,11 @@ Course GoalsThe goals of data100 are listed on the data100 website and reproduc
     </item>
     
     <item>
-      <title>Data100: Principles and Techniques of Data Science</title>
-      <link>https://teachdatascience.com/data100.utf8/</link>
-      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/data100.utf8/</guid>
-      <description>Last week&amp;rsquo;s entries focused on Python included a description of the innovative and popular data8, today we describe the follow-up course, data100, http://www.ds100.org/ (Principles and Techniques of Data Science) offered by the University of California/Berkeley Division of Data Sciences.
-
-    Course Goals The goals of data100 are listed on the data100 website and reproduced here. The goals are lofty indeed, but they also address an incredibly important shortcoming in many undergraduate curricula &amp;ndash; a student who is successful in data100 will hit the ground running doing data science after graduation.</description>
-    </item>
-    
-    <item>
       <title>The Python Community</title>
-      <link>https://teachdatascience.com/pycomm/</link>
+      <link>/pycomm/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pycomm/</guid>
+      <guid>/pycomm/</guid>
       <description>All week we’ve been celebrating using Python in data science. There is no question that Python is a fantastic and very powerful language. Additionally, it is typically thought of as clearly the most used language for doing data science. The kaggle 2017 survey reports that more than three-quarters of data scientists use Python (although they also mention that most statisticians use R).
 
 
@@ -71,40 +48,30 @@ Knowing how to use Python is an important first step to engaging with the softwa
     
     <item>
       <title>Data8: The Foundations of Data Science at Berkeley</title>
-      <link>https://teachdatascience.com/data8/</link>
+      <link>/data8/</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/data8/</guid>
-      <description>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the http://Data8.org (Foundations of Data Science) course that has been offered by the University of California/Berkeley Division of Data Sciences.
-The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</description>
-    </item>
-    
-    <item>
-      <title>Data8: The Foundations of Data Science at Berkeley</title>
-      <link>https://teachdatascience.com/data8.utf8/</link>
-      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/data8.utf8/</guid>
+      <guid>/data8/</guid>
       <description>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the http://Data8.org (Foundations of Data Science) course that has been offered by the University of California/Berkeley Division of Data Sciences.
 The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</description>
     </item>
     
     <item>
       <title>reticulate: running Python within RStudio</title>
-      <link>https://teachdatascience.com/reticulate/</link>
+      <link>/reticulate/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/reticulate/</guid>
+      <guid>/reticulate/</guid>
       <description>For many statisticians, their go-to software language is R. However, there is no doubt that Python is an equally important language in data science. Indeed, the Jupyter blog entry from earlier this week described the capacities of writing Python code (as well as R and Julia and other environments) using interactive Jupyter notebooks.
 knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;F:/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
     </item>
     
     <item>
       <title>pandas: Python data analysis library</title>
-      <link>https://teachdatascience.com/pandas/</link>
+      <link>/pandas/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pandas/</guid>
+      <guid>/pandas/</guid>
       <description>About pandaspandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library’s homepage, “pandas helps fill Python’s long-standing gap in tools for data analysis and modeling.”
 In short, pandas offers some new and some improved Python tools for doing the following:
 Reading data in to data frame-type structures
@@ -113,38 +80,13 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
-      <title>pandas: Python data analysis library</title>
-      <link>https://teachdatascience.com/pandas.utf8/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/pandas.utf8/</guid>
-      <description>About pandas pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&amp;rsquo;s homepage, &amp;laquo;pandas helps fill Python&amp;rsquo;s long-standing gap in tools for data analysis and modeling.&amp;raquo;
-In short, pandas offers some new and some improved Python tools for doing the following:
- Reading data in to data frame-type structures
- Viewing and selecting data
- Handling missing data</description>
-    </item>
-    
-    <item>
       <title>Getting started with Jupyter and JupyterHub</title>
-      <link>https://teachdatascience.com/jupyter/</link>
+      <link>/jupyter/</link>
       <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/jupyter/</guid>
+      <guid>/jupyter/</guid>
       <description>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
 What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
-    </item>
-    
-    <item>
-      <title>Getting started with Jupyter and JupyterHub</title>
-      <link>https://teachdatascience.com/jupyter.utf8/</link>
-      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/jupyter.utf8/</guid>
-      <description>For the entire week, we&amp;rsquo;re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we&amp;rsquo;re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
-
-
-What is Project Jupyter? Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
     </item>
     
   </channel>

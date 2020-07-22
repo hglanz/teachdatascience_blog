@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>teamwork on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/teamwork/</link>
+    <link>/tags/teamwork/</link>
     <description>Recent content in teamwork on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/teamwork/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/teamwork/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Python Community</title>
-      <link>https://teachdatascience.com/pycomm/</link>
+      <link>/pycomm/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pycomm/</guid>
+      <guid>/pycomm/</guid>
       <description>All week we’ve been celebrating using Python in data science. There is no question that Python is a fantastic and very powerful language. Additionally, it is typically thought of as clearly the most used language for doing data science. The kaggle 2017 survey reports that more than three-quarters of data scientists use Python (although they also mention that most statisticians use R).
 
 
@@ -26,10 +26,10 @@ Knowing how to use Python is an important first step to engaging with the softwa
     
     <item>
       <title>Pair Programming for Data Science and Statistics</title>
-      <link>https://teachdatascience.com/pairprogramming/</link>
+      <link>/pairprogramming/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pairprogramming/</guid>
+      <guid>/pairprogramming/</guid>
       <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
 Photo credit: Esti Alvarez
 Pair programming has been thought to lead to better code, more enjoyable coding, andhigher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>

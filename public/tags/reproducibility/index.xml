@@ -2,84 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reproducibility on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/reproducibility/</link>
+    <link>/tags/reproducibility/</link>
     <description>Recent content in reproducibility on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data assertion and checks via testthat</title>
-      <link>https://teachdatascience.com/testthat/</link>
+      <link>/testthat/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/testthat/</guid>
+      <guid>/testthat/</guid>
       <description>Reproducibility and ReplicabilityOn May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, “New report examines reproducibility and replicability in science” article here. The report recommends “ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.”
 Reproducibility is at the core of data acumen and needs to be stressed at all levels of the data science curriculum.</description>
     </item>
     
     <item>
       <title>Getting started with Jupyter and JupyterHub</title>
-      <link>https://teachdatascience.com/jupyter/</link>
+      <link>/jupyter/</link>
       <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/jupyter/</guid>
+      <guid>/jupyter/</guid>
       <description>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
 What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
     </item>
     
     <item>
-      <title>Getting started with Jupyter and JupyterHub</title>
-      <link>https://teachdatascience.com/jupyter.utf8/</link>
-      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/jupyter.utf8/</guid>
-      <description>For the entire week, we&amp;rsquo;re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we&amp;rsquo;re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
-
-
-What is Project Jupyter? Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
-    </item>
-    
-    <item>
       <title>Style Guides for Coding</title>
-      <link>https://teachdatascience.com/styleguide/</link>
+      <link>/styleguide/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/styleguide/</guid>
+      <guid>/styleguide/</guid>
       <description>The Importance of Good Coding StyleTo begin with another quote from Hadley Wickham: “Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.” In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
     </item>
     
     <item>
-      <title>Style Guides for Coding</title>
-      <link>https://teachdatascience.com/styleguide.utf8/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/styleguide.utf8/</guid>
-      <description>The Importance of Good Coding Style To begin with another quote from Hadley Wickham: &amp;laquo;Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.&amp;raquo; In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
-    </item>
-    
-    <item>
       <title>Projects in RStudio</title>
-      <link>https://teachdatascience.com/projects/</link>
+      <link>/projects/</link>
       <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/projects/</guid>
+      <guid>/projects/</guid>
       <description>What are Projects?RStudio Projects are a mechanism for keeping all the files associated with a project together in one place – data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
 Why RStudio?It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
-    </item>
-    
-    <item>
-      <title>Projects in RStudio</title>
-      <link>https://teachdatascience.com/projects.utf8/</link>
-      <pubDate>Thu, 30 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/projects.utf8/</guid>
-      <description>What are Projects? RStudio Projects are a mechanism for keeping all the files associated with a project together in one place &amp;ndash; data, R scripts, results, figures, reports, etc. Projects are built in to the RStudio IDE, and for good reproducible workflow, all projects should start by creating a Project.
-Why RStudio? It goes almost without saying that as a group we have moved completely to the RStudio interface to R.</description>
     </item>
     
   </channel>

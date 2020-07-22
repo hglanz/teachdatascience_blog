@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jupyter on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/jupyter/</link>
+    <link>/tags/jupyter/</link>
     <description>Recent content in jupyter on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pandas: Python data analysis library</title>
-      <link>https://teachdatascience.com/pandas/</link>
+      <link>/pandas/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pandas/</guid>
+      <guid>/pandas/</guid>
       <description>About pandaspandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library’s homepage, “pandas helps fill Python’s long-standing gap in tools for data analysis and modeling.”
 In short, pandas offers some new and some improved Python tools for doing the following:
 Reading data in to data frame-type structures
@@ -26,38 +26,13 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
-      <title>pandas: Python data analysis library</title>
-      <link>https://teachdatascience.com/pandas.utf8/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/pandas.utf8/</guid>
-      <description>About pandas pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&amp;rsquo;s homepage, &amp;laquo;pandas helps fill Python&amp;rsquo;s long-standing gap in tools for data analysis and modeling.&amp;raquo;
-In short, pandas offers some new and some improved Python tools for doing the following:
- Reading data in to data frame-type structures
- Viewing and selecting data
- Handling missing data</description>
-    </item>
-    
-    <item>
       <title>Getting started with Jupyter and JupyterHub</title>
-      <link>https://teachdatascience.com/jupyter/</link>
+      <link>/jupyter/</link>
       <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/jupyter/</guid>
+      <guid>/jupyter/</guid>
       <description>For the entire week, we’re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we’re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
 What is Project Jupyter?Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
-    </item>
-    
-    <item>
-      <title>Getting started with Jupyter and JupyterHub</title>
-      <link>https://teachdatascience.com/jupyter.utf8/</link>
-      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/jupyter.utf8/</guid>
-      <description>For the entire week, we&amp;rsquo;re going to be celebrating using Python for data science education. Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community. But before we get to any of those topics, we&amp;rsquo;re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.
-
-
-What is Project Jupyter? Project Jupyter is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages.</description>
     </item>
     
   </channel>

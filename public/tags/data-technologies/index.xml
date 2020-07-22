@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data technologies on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/data-technologies/</link>
+    <link>/tags/data-technologies/</link>
     <description>Recent content in data technologies on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/data-technologies/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/data-technologies/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reticulate: running Python within RStudio</title>
-      <link>https://teachdatascience.com/reticulate/</link>
+      <link>/reticulate/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/reticulate/</guid>
+      <guid>/reticulate/</guid>
       <description>For many statisticians, their go-to software language is R. However, there is no doubt that Python is an equally important language in data science. Indeed, the Jupyter blog entry from earlier this week described the capacities of writing Python code (as well as R and Julia and other environments) using interactive Jupyter notebooks.
 knitr::opts_chunk$set(collapse = TRUE)library(reticulate)use_virtualenv(&amp;quot;r-reticulate&amp;quot;)use_python(&amp;quot;F:/Anaconda3&amp;quot;, required = TRUE)py_config()Teaching Python and RA quick google search can quickly bring up many arguments on both sides of the heated Python vs R debate.</description>
     </item>
     
     <item>
       <title>pandas: Python data analysis library</title>
-      <link>https://teachdatascience.com/pandas/</link>
+      <link>/pandas/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pandas/</guid>
+      <guid>/pandas/</guid>
       <description>About pandaspandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library’s homepage, “pandas helps fill Python’s long-standing gap in tools for data analysis and modeling.”
 In short, pandas offers some new and some improved Python tools for doing the following:
 Reading data in to data frame-type structures
@@ -36,42 +36,20 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
-      <title>pandas: Python data analysis library</title>
-      <link>https://teachdatascience.com/pandas.utf8/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/pandas.utf8/</guid>
-      <description>About pandas pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&amp;rsquo;s homepage, &amp;laquo;pandas helps fill Python&amp;rsquo;s long-standing gap in tools for data analysis and modeling.&amp;raquo;
-In short, pandas offers some new and some improved Python tools for doing the following:
- Reading data in to data frame-type structures
- Viewing and selecting data
- Handling missing data</description>
-    </item>
-    
-    <item>
       <title>Data Science for Undergraduates</title>
-      <link>https://teachdatascience.com/nasem/</link>
+      <link>/nasem/</link>
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/nasem/</guid>
+      <guid>/nasem/</guid>
       <description>Data Science for UndergraduatesAs the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     
     <item>
-      <title>Data Science for Undergraduates</title>
-      <link>https://teachdatascience.com/nasem.utf8/</link>
-      <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/nasem.utf8/</guid>
-      <description>Data Science for Undergraduates As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report &amp;laquo;Data Science for Undergraduates: Opportunities and Options&amp;raquo;. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
-    </item>
-    
-    <item>
       <title>SQL 101 in R</title>
-      <link>https://teachdatascience.com/sql/</link>
+      <link>/sql/</link>
       <pubDate>Sun, 17 Jun 2018 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/sql/</guid>
+      <guid>/sql/</guid>
       <description>The NASEM Data Science for Undergraduates report noted that the storage, preparation, and accessing of data is at the heart of data science and that students need to directly experience multiple forms of data, including the use of databases.
 SQL (pronounced sequel) stands for Structured Query Language; it is a language designed to manage data in a relational database system. The papers https://chance.amstat.org/2015/04/setting-the-stage and https://chance.amstat.org/2015/04/databases/ provide a high level overview of database systems.</description>
     </item>

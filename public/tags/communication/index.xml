@@ -2,59 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>communication on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/communication/</link>
+    <link>/tags/communication/</link>
     <description>Recent content in communication on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/communication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/communication/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem/</link>
+      <link>/datafem/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/datafem/</guid>
+      <guid>/datafem/</guid>
       <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D’Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
     </item>
     
     <item>
-      <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem.knit/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/datafem.knit/</guid>
-      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
-    </item>
-    
-    <item>
-      <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem.utf8/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/datafem.utf8/</guid>
-      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
-    </item>
-    
-    <item>
       <title>Keeping Busy with Data Science</title>
-      <link>https://teachdatascience.com/keepbusy/</link>
+      <link>/keepbusy/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/keepbusy/</guid>
+      <guid>/keepbusy/</guid>
       <description>It has become increasingly clear that many college students have found themselves without summer plans. Unfortunately, this blog entry is not a list of possible employment opportunities. Instead, it is a compilation of statistics and data science projects to enhance a summer spent socially distant.
 The list below represents opportunities at a variety of levels. If you are just beginning or quite advanced, there are many ideas for you.</description>
     </item>
     
     <item>
       <title>Algorithmic Bias</title>
-      <link>https://teachdatascience.com/algbias/</link>
+      <link>/algbias/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/algbias/</guid>
+      <guid>/algbias/</guid>
       <description>Many of you are likely to have been following the recent news (see here and here and here and here for recent articles) on facial recognition software, its use in the criminal justice system, and the systematic racial biases associated with facial recognition. You may also be aware of other algorithms which are systematically biased against a particular group of people.
 
 
@@ -63,56 +45,56 @@ However, you may not have a plan for how to bring the ideas into the data scienc
     
     <item>
       <title>useR!</title>
-      <link>https://teachdatascience.com/user/</link>
+      <link>/user/</link>
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/user/</guid>
+      <guid>/user/</guid>
       <description>Today is July 9, 2019, and we are having serious FOMO for not being in Toulouse, France for this year’s useR! conference. We will be following along on twitter (and encourage you to do the same) to keep up with the best talks via the useR! 2019 twitter page and the #user2019 hashtag.
 And, great news!!!! The keynote addresses will be live streaming at R Consortium youtube. Thanks to the support of RConsortium for making the live stream possible.</description>
     </item>
     
     <item>
       <title>The conversation around p-values</title>
-      <link>https://teachdatascience.com/pvals/</link>
+      <link>/pvals/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pvals/</guid>
+      <guid>/pvals/</guid>
       <description>Image credit: xkcd.comStatistics for scienceFiguring out truth is really hard to do. Teaching students how to attempt it may be even harder. As statisticians we know that statistical significance isn’t truth, but we still hope that the process by which we analyze data will lead us on a path toward scientific discovery. How do we teach students the best way to stay on the path of using statistics to move science forward?</description>
     </item>
     
     <item>
       <title>Undergraduate Curriculum Guidelines</title>
-      <link>https://teachdatascience.com/pcmi/</link>
+      <link>/pcmi/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/pcmi/</guid>
+      <guid>/pcmi/</guid>
       <description>Throughout the summer 2019 blog series, we have given teaching tips, best data science practices, links to compilations of papers in data science and in teaching data science, and ways to participate in the larger data science community. That is, for anyone already working in a data science community (e.g., in a job or an academic institution) or for anyone doing data science for fun, we have provided myriad rabbit holes in which to get lost for your entire summer.</description>
     </item>
     
     <item>
       <title>Data Science for Good</title>
-      <link>https://teachdatascience.com/data4good/</link>
+      <link>/data4good/</link>
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/data4good/</guid>
+      <guid>/data4good/</guid>
       <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
     </item>
     
     <item>
       <title>Teaching Data Visualization</title>
-      <link>https://teachdatascience.com/dataviz/</link>
+      <link>/dataviz/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/dataviz/</guid>
+      <guid>/dataviz/</guid>
       <description>As statistics educators, it is often easier to focus our teaching on methods instead of communication. And while many of us understand the value of good communication, actually teaching it is difficult and outside of our comfort zone. There has been quite a bit of work done on the science of visualization (e.g., the Grammar of Graphics by Wilkinson). There is general consensus that teaching students to communicate using visualizations is of paramount importance (see recent blog entries: National Academies Report on Data Science and GAISE).</description>
     </item>
     
     <item>
       <title>Getting Started With R Markdown</title>
-      <link>https://teachdatascience.com/rmarkdown/</link>
+      <link>/rmarkdown/</link>
       <pubDate>Wed, 29 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/rmarkdown/</guid>
+      <guid>/rmarkdown/</guid>
       <description>What is R Markdown?Straight from RStudio’s wonderful tutorial, R Markdown is an authoring framework for data science. An R Markdown file is a plain text file with three types of content: code chunks to run, text to display, and metadata to help govern the R Markdown build process. Put simply, R Markdown is an exciting new reporting medium that seamlessly integrates executable code and expository text.
 By including data work, code, and analysis narrative into a single document, R Markdown provides a fully reproducible vehicle for data science projects!</description>
     </item>

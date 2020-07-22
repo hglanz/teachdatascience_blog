@@ -3,983 +3,843 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://teachdatascience.com/oath/</loc>
+    <loc>/oath/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/post/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/</loc>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://teachdatascience.com/sv/"
+                href="/sv/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://teachdatascience.com/"
+                href="/"
                 />
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/education/</loc>
+    <loc>/tags/education/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/ethics/</loc>
+    <loc>/tags/ethics/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/datafem/</loc>
+    <loc>/datafem/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/datafem.knit/</loc>
-    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/datafem.utf8/</loc>
-    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/communication/</loc>
+    <loc>/tags/communication/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/entertainment/</loc>
+    <loc>/tags/entertainment/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/bookclub/</loc>
+    <loc>/bookclub/</loc>
     <lastmod>2020-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/bookclub.utf8/</loc>
-    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/privacy/</loc>
+    <loc>/privacy/</loc>
     <lastmod>2020-07-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/privacy.knit/</loc>
-    <lastmod>2020-07-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/ethicaldataviz/</loc>
+    <loc>/ethicaldataviz/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/visualization/</loc>
+    <loc>/tags/visualization/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/reintro/</loc>
+    <loc>/reintro/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/reintro.knit/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/keepbusy/</loc>
+    <loc>/keepbusy/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nextsteps/</loc>
+    <loc>/nextsteps/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nextsteps.knit/</loc>
-    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/r-studio/</loc>
+    <loc>/tags/r-studio/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/closing/</loc>
+    <loc>/closing/</loc>
     <lastmod>2019-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/amazon-web-services/</loc>
+    <loc>/tags/amazon-web-services/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/azure/</loc>
+    <loc>/tags/azure/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/bigquery/</loc>
+    <loc>/tags/bigquery/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/google-cloud-platform/</loc>
+    <loc>/tags/google-cloud-platform/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/cloud2/</loc>
+    <loc>/cloud2/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/cloud2.utf8/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/sql/</loc>
+    <loc>/tags/sql/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/authentication/</loc>
+    <loc>/tags/authentication/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/cloud-computing/</loc>
+    <loc>/tags/cloud-computing/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/cluster-computing/</loc>
+    <loc>/tags/cluster-computing/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/computing/</loc>
+    <loc>/tags/computing/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/grid-computing/</loc>
+    <loc>/tags/grid-computing/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/high-performance-computing/</loc>
+    <loc>/tags/high-performance-computing/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/workflow/</loc>
+    <loc>/tags/workflow/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/onemodel/</loc>
+    <loc>/onemodel/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/onemodel.utf8/</loc>
-    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/causal-inference/</loc>
+    <loc>/tags/causal-inference/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/confounding/</loc>
+    <loc>/tags/confounding/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/inference/</loc>
+    <loc>/tags/inference/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/modeling/</loc>
+    <loc>/tags/modeling/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/python/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/statistics/</loc>
+    <loc>/tags/statistics/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/countingcommits/</loc>
+    <loc>/countingcommits/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/r-markdown/</loc>
-    <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/code-review/</loc>
+    <loc>/tags/r-markdown/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/data-ingestation/</loc>
+    <loc>/tags/code-review/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/data-wrangling/</loc>
+    <loc>/tags/data-ingestation/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/ferpa/</loc>
+    <loc>/tags/data-wrangling/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/github/</loc>
+    <loc>/tags/ferpa/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/html/</loc>
+    <loc>/tags/github/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/purrr/</loc>
+    <loc>/tags/html/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/rvest/</loc>
+    <loc>/tags/purrr/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/testthat/</loc>
+    <loc>/tags/rvest/</loc>
+    <lastmod>2019-07-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/testthat/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/consistency-checking/</loc>
+    <loc>/tags/consistency-checking/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/data-checking/</loc>
+    <loc>/tags/data-checking/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/reproducibility/</loc>
+    <loc>/tags/reproducibility/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/algbias/</loc>
+    <loc>/algbias/</loc>
     <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/collaboration/</loc>
+    <loc>/tags/collaboration/</loc>
     <lastmod>2019-07-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/twocultures/</loc>
+    <loc>/twocultures/</loc>
     <lastmod>2019-07-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/twocultures.knit/</loc>
-    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/twocultures.utf8/</loc>
-    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/predictive-analytics/</loc>
+    <loc>/tags/predictive-analytics/</loc>
     <lastmod>2019-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/regression-modeling/</loc>
+    <loc>/tags/regression-modeling/</loc>
     <lastmod>2019-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/datapackage/</loc>
+    <loc>/datapackage/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/portland/</loc>
-    <lastmod>2019-07-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/cherry-tree/</loc>
+    <loc>/tags/portland/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/leaflet/</loc>
+    <loc>/tags/cherry-tree/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/mapping/</loc>
+    <loc>/tags/leaflet/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/packages/</loc>
+    <loc>/tags/mapping/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/roxygen2/</loc>
+    <loc>/tags/packages/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/data100/</loc>
+    <loc>/tags/roxygen2/</loc>
+    <lastmod>2019-07-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/data100/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/data100.utf8/</loc>
-    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/berkeley/</loc>
+    <loc>/tags/berkeley/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/jupyterhub/</loc>
+    <loc>/tags/jupyterhub/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/pycomm/</loc>
+    <loc>/pycomm/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/community/</loc>
+    <loc>/tags/community/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/teamwork/</loc>
+    <loc>/tags/teamwork/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/data8/</loc>
+    <loc>/data8/</loc>
     <lastmod>2019-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/data8.utf8/</loc>
-    <lastmod>2019-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/data-technologies/</loc>
+    <loc>/tags/data-technologies/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/reticulate/</loc>
+    <loc>/tags/reticulate/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/reticulate/</loc>
+    <loc>/reticulate/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/rmarkdown/</loc>
+    <loc>/tags/rmarkdown/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/jupyter/</loc>
+    <loc>/tags/jupyter/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/pandas/</loc>
+    <loc>/pandas/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/pandas.utf8/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/jupyter/</loc>
+    <loc>/jupyter/</loc>
     <lastmod>2019-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/jupyter.utf8/</loc>
-    <lastmod>2019-07-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/parallel/</loc>
+    <loc>/parallel/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/rstudio/</loc>
+    <loc>/tags/rstudio/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/parallel-programming/</loc>
+    <loc>/tags/parallel-programming/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/spark/</loc>
+    <loc>/tags/spark/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/debugging/</loc>
+    <loc>/tags/debugging/</loc>
     <lastmod>2019-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/reprex/</loc>
+    <loc>/reprex/</loc>
     <lastmod>2019-07-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/codap/</loc>
+    <loc>/tags/codap/</loc>
     <lastmod>2019-07-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/codap/</loc>
+    <loc>/codap/</loc>
     <lastmod>2019-07-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/multivariate-thinking/</loc>
+    <loc>/tags/multivariate-thinking/</loc>
     <lastmod>2019-07-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/user-conference/</loc>
+    <loc>/tags/user-conference/</loc>
     <lastmod>2019-07-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/user/</loc>
+    <loc>/user/</loc>
     <lastmod>2019-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/refactoring/</loc>
+    <loc>/refactoring/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/refactoring.knit/</loc>
-    <lastmod>2019-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/code-smell/</loc>
+    <loc>/tags/code-smell/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/functions/</loc>
+    <loc>/tags/functions/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/refactoring/</loc>
+    <loc>/tags/refactoring/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/smell/</loc>
+    <loc>/tags/smell/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/style/</loc>
+    <loc>/tags/style/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/teaching_programming_tips/</loc>
+    <loc>/teaching_programming_tips/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/pvals/</loc>
+    <loc>/pvals/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/learnr/</loc>
+    <loc>/learnr/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/plot/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/regression/</loc>
+    <loc>/tags/plot/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/styleguide/</loc>
+    <loc>/tags/regression/</loc>
+    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/styleguide/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/styleguide.utf8/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/pcmi/</loc>
+    <loc>/pcmi/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/reports/</loc>
+    <loc>/tags/reports/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/shiny/</loc>
+    <loc>/tags/shiny/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/shiny2/</loc>
+    <loc>/shiny2/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/shiny2.utf8/</loc>
-    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/dynamic-visualization/</loc>
+    <loc>/tags/dynamic-visualization/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/reactive/</loc>
+    <loc>/tags/reactive/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/shiny1/</loc>
+    <loc>/shiny1/</loc>
     <lastmod>2019-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/shiny1.utf8/</loc>
-    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/data4good/</loc>
+    <loc>/data4good/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/dataviz/</loc>
+    <loc>/dataviz/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/cloud/</loc>
+    <loc>/cloud/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/rstudio-server/</loc>
-    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/rstudio.cloud/</loc>
+    <loc>/tags/rstudio-server/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/server/</loc>
+    <loc>/tags/rstudio.cloud/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/pairprogramming/</loc>
+    <loc>/tags/server/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/pairprogramming/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/teaching/</loc>
+    <loc>/tags/teaching/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/peerj/</loc>
+    <loc>/peerj/</loc>
     <lastmod>2019-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/mosaic/</loc>
+    <loc>/mosaic/</loc>
     <lastmod>2019-06-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/infer/</loc>
+    <loc>/infer/</loc>
     <lastmod>2019-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/tidyverse/</loc>
+    <loc>/tags/tidyverse/</loc>
     <lastmod>2019-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/gitclass/</loc>
+    <loc>/gitclass/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/r-projects/</loc>
+    <loc>/tags/r-projects/</loc>
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/githubinr/</loc>
+    <loc>/githubinr/</loc>
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/github/</loc>
+    <loc>/github/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/leaflet/</loc>
+    <loc>/leaflet/</loc>
     <lastmod>2019-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/dsert/</loc>
+    <loc>/dsert/</loc>
     <lastmod>2019-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/community-colleges/</loc>
+    <loc>/tags/community-colleges/</loc>
     <lastmod>2019-06-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/diversity/</loc>
+    <loc>/diversity/</loc>
     <lastmod>2019-06-06T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/diversity.utf8/</loc>
-    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/diversity/</loc>
+    <loc>/tags/diversity/</loc>
     <lastmod>2019-06-06T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/gaise/</loc>
+    <loc>/gaise/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/gaise.knit/</loc>
-    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/gaise.utf8/</loc>
-    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/simpsons-paradox/</loc>
+    <loc>/tags/simpsons-paradox/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nssd/</loc>
+    <loc>/nssd/</loc>
     <lastmod>2019-06-04T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nssd.knit/</loc>
-    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/nssd.utf8/</loc>
-    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tags/podcast/</loc>
+    <loc>/tags/podcast/</loc>
     <lastmod>2019-06-04T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/screencast/</loc>
+    <loc>/screencast/</loc>
     <lastmod>2019-06-03T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/screencast.utf8/</loc>
-    <lastmod>2019-06-03T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/tidyverse/</loc>
+    <loc>/tidyverse/</loc>
     <lastmod>2019-06-02T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tidyverse.utf8/</loc>
-    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/projects/</loc>
+    <loc>/projects/</loc>
     <lastmod>2019-05-30T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/projects.utf8/</loc>
-    <lastmod>2019-05-30T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/rmarkdown/</loc>
+    <loc>/rmarkdown/</loc>
     <lastmod>2019-05-29T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/ingestingdata/</loc>
+    <loc>/ingestingdata/</loc>
     <lastmod>2019-05-28T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nasem/</loc>
+    <loc>/nasem/</loc>
     <lastmod>2019-05-27T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nasem.utf8/</loc>
-    <lastmod>2019-05-27T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/intro/</loc>
+    <loc>/intro/</loc>
     <lastmod>2019-05-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/intro.knit/</loc>
-    <lastmod>2019-05-21T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/sql/</loc>
+    <loc>/sql/</loc>
     <lastmod>2018-06-17T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/tags/database/</loc>
+    <loc>/tags/database/</loc>
     <lastmod>2018-06-17T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/acs01/</loc>
+    <loc>/acs01/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/acs02/</loc>
+    <loc>/acs02/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/acs03/</loc>
+    <loc>/acs03/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/acsx01/</loc>
+    <loc>/acsx01/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/topics/</loc>
+    <loc>/topics/</loc>
     <priority>0</priority>
   </url>
   

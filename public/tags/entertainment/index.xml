@@ -2,71 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>entertainment on Teach Data Science</title>
-    <link>https://teachdatascience.com/tags/entertainment/</link>
+    <link>/tags/entertainment/</link>
     <description>Recent content in entertainment on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
     <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://teachdatascience.com/tags/entertainment/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/entertainment/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem/</link>
+      <link>/datafem/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://teachdatascience.com/datafem/</guid>
+      <guid>/datafem/</guid>
       <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D’Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
     </item>
     
     <item>
-      <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem.knit/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/datafem.knit/</guid>
-      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
-    </item>
-    
-    <item>
-      <title>Data Feminism</title>
-      <link>https://teachdatascience.com/datafem.utf8/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/datafem.utf8/</guid>
-      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
-    </item>
-    
-    <item>
       <title>Not So Standard Deviations: not your average data science podcast</title>
-      <link>https://teachdatascience.com/nssd/</link>
+      <link>/nssd/</link>
       <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/nssd/</guid>
+      <guid>/nssd/</guid>
       <description>As an instructor teaching data, it is often difficult to explain the world the students will be joining (industry) given the experiences of the instructor (academia). One way to bridge the two worlds is to peek into the world of data science outside of academia and then tell your students about it.
 Hilary Parker and Roger Peng’s podcast, Not So Standard Deviations provides glimpses into data science challenges, obstacles, opportunities, and solutions in the real world.</description>
-    </item>
-    
-    <item>
-      <title>Not So Standard Deviations: not your average data science podcast</title>
-      <link>https://teachdatascience.com/nssd.knit/</link>
-      <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/nssd.knit/</guid>
-      <description>As an instructor teaching data, it is often difficult to explain the world the students will be joining (industry) given the experiences of the instructor (academia). One way to bridge the two worlds is to peek into the world of data science outside of academia and then tell your students about it.
-Hilary Parker and Roger Peng&amp;rsquo;s podcast, Not So Standard Deviations provides glimpses into data science challenges, obstacles, opportunities, and solutions in the real world.</description>
-    </item>
-    
-    <item>
-      <title>Not So Standard Deviations: not your average data science podcast</title>
-      <link>https://teachdatascience.com/nssd.utf8/</link>
-      <pubDate>Tue, 04 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>https://teachdatascience.com/nssd.utf8/</guid>
-      <description>As an instructor teaching data, it is often difficult to explain the world the students will be joining (industry) given the experiences of the instructor (academia). One way to bridge the two worlds is to peek into the world of data science outside of academia and then tell your students about it.
-Hilary Parker and Roger Peng&amp;rsquo;s podcast, Not So Standard Deviations provides glimpses into data science challenges, obstacles, opportunities, and solutions in the real world.</description>
     </item>
     
   </channel>
