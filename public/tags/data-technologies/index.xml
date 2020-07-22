@@ -36,6 +36,19 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
+      <title>pandas: Python data analysis library</title>
+      <link>https://teachdatascience.com/pandas.utf8/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pandas.utf8/</guid>
+      <description>About pandas pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&amp;rsquo;s homepage, &amp;laquo;pandas helps fill Python&amp;rsquo;s long-standing gap in tools for data analysis and modeling.&amp;raquo;
+In short, pandas offers some new and some improved Python tools for doing the following:
+ Reading data in to data frame-type structures
+ Viewing and selecting data
+ Handling missing data</description>
+    </item>
+    
+    <item>
       <title>Data Science for Undergraduates</title>
       <link>https://teachdatascience.com/nasem/</link>
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
@@ -46,10 +59,10 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     
     <item>
       <title>Data Science for Undergraduates</title>
-      <link>https://teachdatascience.com/nasem.knit/</link>
+      <link>https://teachdatascience.com/nasem.utf8/</link>
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>https://teachdatascience.com/nasem.knit/</guid>
+      <guid>https://teachdatascience.com/nasem.utf8/</guid>
       <description>Data Science for Undergraduates As the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report &amp;laquo;Data Science for Undergraduates: Opportunities and Options&amp;raquo;. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     

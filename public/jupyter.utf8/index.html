@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Getting started with Jupyter and JupyterHub  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="jupyter, workflow, reproducibility, python, ">
+
+
+<meta property="og:title" content="Getting started with Jupyter and JupyterHub  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/jupyter.utf8/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_07_15_Jupyter\jupyter.utf8.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-07-14T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-07-14T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="jupyter">
+    
+<meta property="og:article:tag" content="workflow">
+    
+<meta property="og:article:tag" content="reproducibility">
+    
+<meta property="og:article:tag" content="python">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/jupyter.utf8/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Getting started with Jupyter and JupyterHub
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-07-14">14 Jul, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Hunter Glanz
+  
+  &middot; Read in about 6 min
+  &middot; (1151 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Getting%20started%20with%20Jupyter%20and%20JupyterHub&amp;url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f&amp;title=Getting%20started%20with%20Jupyter%20and%20JupyterHub" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Getting%20started%20with%20Jupyter%20and%20JupyterHub&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/jupyter" class="label label-primary">jupyter</a>
+  
+  <a href="https://teachdatascience.com/tags/workflow" class="label label-primary">workflow</a>
+  
+  <a href="https://teachdatascience.com/tags/reproducibility" class="label label-primary">reproducibility</a>
+  
+  <a href="https://teachdatascience.com/tags/python" class="label label-primary">python</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<p>For the entire week, we&rsquo;re going to be celebrating using Python for data science education.  Stay tuned for topics on specific Python functionality, using Python inside RStudio, Python in the curriculum, and the larger Python community.  But before we get to any of those topics, we&rsquo;re going to start by introducing the go-to interface for Python programming, Jupyter Notebooks.</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/jupyter/250px-Jupyter_logo.svg.png" alt="" /></p>
+
+<p></center></p>
+
+<h2 id="what-is-project-jupyter">What is Project Jupyter?</h2>
+
+<p><a href="https://jupyter.org/index.html">Project Jupyter</a> is a non-profit, open-source project, developed in 2014 out of the IPython Project and designed to support interactive data science and scientific computing across multiple programming languages. Because our blog introduced R Markdown (and implicitly R Notebooks) earlier, if you have not worked with Jupyter before then you might think of Jupyter Notebooks as being similar to R Markdown documents in many ways. There are differences, though; some of which will be described in this post.</p>
+
+<p>More specifically, the Jupyter Notebook is an open-source web application that allows you to create and share documents which contain live code, equations, visualizations and narrative text. While the IPython Project focused on using Python, Jupyter initially evolved out of a broader sense of data science and scientific computer which involved the <a href="https://julialang.org/"><strong>Ju</strong>lia</a>, <strong>Pyt</strong>hon, and <strong>R</strong> languages. It has grown to accommodate over 40 programming languages (including SAS as well!), and there is now widespread support for viewing and working with Jupyter Notebook files on sites like GitHub and <a href="https://gke.mybinder.org/">binder</a>.</p>
+
+<h3 id="working-with-jupyter">Working with Jupyter</h3>
+
+<p>Installing Jupyter is very easy with the few short steps outlined on the project&rsquo;s <a href="https://jupyter.org/install">install page</a>. The base installation will provide access to the Jupyter Notebook interface for use with Python, to just create traditional text files, or to open a new terminal:</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/jupyter/jupyterhome_newnb.png" alt="" /></p>
+
+<p></center></p>
+
+<p>You will notice in the screenshot above that there is an option to start a new Notebook using <code>R</code>. We&rsquo;ll get to this more in a bit. For now, observe the format of a Python kernel in a fresh Jupyter Notebook:</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/jupyter/jupyter_newpythonnb.png" alt="" /></p>
+
+<p></center></p>
+
+<p>In Jupyter, the pieces are called &laquo;cells&raquo; as opposed to the &laquo;chunks&raquo; that exist in R Markdown, and a new Notebook is initialized with a single code cell. Cells can contain different types of things, most notably live code or narrative text. The &laquo;type&raquo; of the cell needs to be specified (note the small dropdown menu at the top center of the new Notebook screenshot that says &laquo;Code&raquo;) so that Jupyter knows how to treat (run or render) the contents of that cell. In its most raw, un-executed form a Notebook would look like the following:</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/jupyter/rawpythonnb.png" alt="" /></p>
+
+<p></center></p>
+
+<p>The Jupyter Notebook should be reminiscent of an R Markdown document. The first cell is text written in a markdown cell which supports plain text, markdown syntax, and even LaTeX syntax. The second cell is a code cell with a canonical first bit of code. Neither cell has been run at this point. There are dropdown menus and buttons at the top to run cells individually or many in sequence, but you can always execute the selected cell by hitting Ctrl + Enter. The first notable difference between Jupyter Notebooks and R Markdown documents is the ability to render markdown cells on-the-fly as opposed to needing to &laquo;Preview&raquo; or knit the whole document. Observe the result of &laquo;running&raquo; the first cell, but not the second:</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/jupyter/markdownpythonnb.png" alt="" /></p>
+
+<p></center></p>
+
+<p>The heading and text are now appearing as if part of a &laquo;finished&raquo; HTML document, and we no longer see the raw cell structure. After running the second cell as well:</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/jupyter/executedpythonnb.png" alt="" /></p>
+
+<p></center></p>
+
+<p>Similar to R Markdown (Notebook) files, the code cells produce output inline in the compiled document. The arrow buttons at the top of Jupyter Notebooks, however, allow for the user to rearrange cells at will without cumbersome copy-and-pasting.</p>
+
+<p>Needless to say, Jupyter Notebooks provide an attractive and flexible alternative to RStudio to undertake interactive and reproducible data science work. They are an instinctive choice for many different projects when working in Python and many other languages including <code>R</code>, as you saw above. The choice between Jupyter and other tools such as R Markdown often depend on project specific details so make sure to check them all out so that you can choose what&rsquo;s right for you.</p>
+
+<p>Installing additional kernels (language support) for Jupyter is also relatively painless. The kernel for <code>R</code> can be found <a href="https://github.com/IRkernel/IRkernel">here</a> on GitHub, and there are very nice instructions for getting <code>R</code> running in Jupyter in <a href="https://medium.com/@kyleake/how-to-install-r-in-jupyter-with-irkernel-in-3-steps-917519326e41">3 easy steps</a>.</p>
+
+<p>Similar to R Markdown, Jupyter Notebooks are a great way to:</p>
+
+<ul>
+<li>deliver content to students,</li>
+<li>provide activities and assignment templates to students,</li>
+<li>allow students to undertake and submit their data science work.</li>
+</ul>
+
+<p>As a note on this last point, Jupyter Notebooks (or the output of them) can be downloaded in a number of different formats:</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/jupyter/jupyternb_savetypes.png" alt="" /></p>
+
+<p></center></p>
+
+<h2 id="what-is-jupyterhub">What is JupyterHub?</h2>
+
+<p>Put simply, JupyterHub &laquo;is a multi-user version of the notebook designed for companies, classrooms and research labs.&raquo; (<a href="https://jupyter.org/hub">JupyterHub homepage</a>) JupyterHub runs in the cloud or on your own hardware, and makes it possible to serve a pre-configured data science environment to any user in your organization. It is customizable and scalable!</p>
+
+<p>Despite how pain-free it is to set-up Jupyter on one&rsquo;s personal machine is, JupyterHub streamlines the environment of your data science classroom. Instructors can maintain access to their students&rsquo; materials while students only have, say, write access to their own directories and read access to the instructor&rsquo;s directory of materials. To this end, JupyterHub can be configured with authentication.  (Setting up a JupyterHub is akin to serving RStudio in the cloud, as disucssed in our blog on <a href="https://teachdatascience.com/cloud/">RStudio in the cloud</a>.)</p>
+
+<p>The icing on the cake is the fact that JupyterHub is not limited to the Jupyter Notebook interface. It can be used to serve a variety of environments including RStudio!</p>
+
+<p>As with the rest of the Jupyter Project, the JupyterHub technology is open-source and available on GitHub <a href="https://github.com/jupyterhub/jupyterhub">here</a>.</p>
+
+<h2 id="learn-more">Learn more</h2>
+
+<ul>
+<li><p>Project Jupyter Home: <a href="https://jupyter.org/index.html">https://jupyter.org/index.html</a></p></li>
+
+<li><p>JupyterHub Home: <a href="https://jupyter.org/hub">https://jupyter.org/hub</a></p></li>
+
+<li><p>Data science with Julia: <a href="https://www.crcpress.com/Data-Science-with-Julia/McNicholas-Tait/p/book/9781138499980">https://www.crcpress.com/Data-Science-with-Julia/McNicholas-Tait/p/book/9781138499980</a></p></li>
+
+<li><p>Modularity and extensibility of Jupyter: <a href="https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54">https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54</a></p></li>
+
+<li><p><a href="https://data.berkeley.edu/news/jupyterhub-journey-starting-small-and-scaling">The Jupyterhub Journey: Starting Small and Scaling Up</a>  A great video and blog about the JupyterHub story and use in UC Berkeley&rsquo;s Division of Data Science and Information.</p></li>
+</ul>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Getting%20started%20with%20Jupyter%20and%20JupyterHub&amp;url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f&amp;title=Getting%20started%20with%20Jupyter%20and%20JupyterHub" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Getting%20started%20with%20Jupyter%20and%20JupyterHub&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fjupyter.utf8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/parallel/" title="Parallel processing and sparklyr">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/jupyter/" title="Getting started with Jupyter and JupyterHub">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/oath/">Hippocratic Oath</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem.knit/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem.utf8/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/bookclub/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/bookclub.utf8/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy.knit/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/ethics">ethics</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

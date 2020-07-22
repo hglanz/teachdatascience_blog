@@ -52,12 +52,34 @@ We’ve been designing point-and-click data software since the early 90’s. Fro
     </item>
     
     <item>
+      <title>Using Shiny in the Classroom</title>
+      <link>https://teachdatascience.com/shiny2.utf8/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/shiny2.utf8/</guid>
+      <description>Shiny Recap 
+
+Yesterday we introduced R Shiny and discussed how it allows you to build interactive web applications straight from R. We saw a few examples highlighting the wondrous interactivity of exploratory data analysis, data visualization, and data models that it enables. If you didn&amp;rsquo;t catch yesterday&amp;rsquo;s post, check it out at https://teachdatascience.com/shiny1/ and be sure to go play around with some Shiny apps at RStudio&amp;rsquo;s gallery at https://shiny.</description>
+    </item>
+    
+    <item>
       <title>An Introduction to R Shiny</title>
       <link>https://teachdatascience.com/shiny1/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/shiny1/</guid>
       <description>What is R Shiny?shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to R Shiny</title>
+      <link>https://teachdatascience.com/shiny1.utf8/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/shiny1.utf8/</guid>
+      <description>What is R Shiny? 
+
+shiny is a powerful and flexible R package that makes it easy to build interactive web applications and dynamic dashboards straight from R. These apps can be hosted on a standalone webpage or embedded in R Markdown documents. Not only does shiny allow you to build these web apps from R, but it enables their construction using only R code. Knowledge of HTML and web development is not required at all, though it can be used to enhance your apps in numerous ways.</description>
     </item>
     
     <item>
@@ -75,16 +97,6 @@ We’ve been designing point-and-click data software since the early 90’s. Fro
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/mosaic/</guid>
-      <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
-The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
-    </item>
-    
-    <item>
-      <title>Less Volume More Creativity in R</title>
-      <link>https://teachdatascience.com/mosaic.knit/</link>
-      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/mosaic.knit/</guid>
       <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
 The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
     </item>
@@ -111,6 +123,26 @@ Two GAISE reports have been written: one focused on statistics at the PreK-12 le
     </item>
     
     <item>
+      <title>Guidelines for Assessment and Instruction in Statistics Education</title>
+      <link>https://teachdatascience.com/gaise.knit/</link>
+      <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/gaise.knit/</guid>
+      <description>The American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
+Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
+    </item>
+    
+    <item>
+      <title>Guidelines for Assessment and Instruction in Statistics Education</title>
+      <link>https://teachdatascience.com/gaise.utf8/</link>
+      <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/gaise.utf8/</guid>
+      <description>The American Statistical Association has placed a priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
+Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
+    </item>
+    
+    <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
       <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
@@ -121,12 +153,34 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
     </item>
     
     <item>
+      <title>Watching an expert work through a data analysis using the tidyverse</title>
+      <link>https://teachdatascience.com/screencast.utf8/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/screencast.utf8/</guid>
+      <description>Watching an expert work through a data analysis using the tidyverse Teaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it&amp;rsquo;s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
+We&amp;rsquo;ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
+    </item>
+    
+    <item>
       <title>The Tidyverse</title>
       <link>https://teachdatascience.com/tidyverse/</link>
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
       <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+    </item>
+    
+    <item>
+      <title>The Tidyverse</title>
+      <link>https://teachdatascience.com/tidyverse.utf8/</link>
+      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tidyverse.utf8/</guid>
+      <description>What is the Tidyverse? 
+{width=125px}
+
+The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

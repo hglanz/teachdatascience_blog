@@ -252,7 +252,7 @@ P
 ## [1] 4
 cl &lt;- makeCluster(P)
 cl[[1]]
-## node of a socket cluster on host &#39;localhost&#39; with pid 14296
+## node of a socket cluster on host &#39;localhost&#39; with pid 10288
 
 stopCluster(cl)
 cl[[1]]
@@ -272,13 +272,13 @@ func1 &lt;- function(reps){
 
 clusterApply(cl, rep(50,W), fun = func1) %&gt;% head(3)
 ## [[1]]
-## [1] 66.4029
+## [1] 4.876291
 ## 
 ## [[2]]
-## [1] 58.02023
+## [1] 25.30384
 ## 
 ## [[3]]
-## [1] 33.62797
+## [1] 68.19195
 
 stopCluster(cl)</code></pre>
 <p>There are many R functions which implement parallel processing. For example, the same code from above can be processed using <code>foreach</code>.</p>
@@ -291,7 +291,7 @@ doParallel::registerDoParallel(cl)
 foreach(reps = rep(50, 100), .combine = &#39;c&#39;) %dopar% {
   max(rcauchy(reps))
        } %&gt;% head(3)
-## [1] 97.10087 41.94372 33.41600
+## [1] 210.93402  12.23342 116.20735
 
 stopCluster(cl)</code></pre>
 </div>
@@ -408,7 +408,7 @@ spark_disconnect(sc)</code></pre>
 
     
       <li class="next">
-        <a href="https://teachdatascience.com/jupyter/" title="Getting started with Jupyter and JupyterHub">
+        <a href="https://teachdatascience.com/jupyter.utf8/" title="Getting started with Jupyter and JupyterHub">
             Next <span aria-hidden="true">&rarr;</span>
         </a>
       </li>
@@ -461,6 +461,10 @@ spark_disconnect(sc)</code></pre>
           </li>
         
           <li>
+          <a href="https://teachdatascience.com/datafem.knit/">Data Feminism</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/datafem.utf8/">Data Feminism</a>
           </li>
         
@@ -469,7 +473,15 @@ spark_disconnect(sc)</code></pre>
           </li>
         
           <li>
+          <a href="https://teachdatascience.com/bookclub.utf8/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
           <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy.knit/">Data Privacy</a>
           </li>
         
           <li>
@@ -478,18 +490,6 @@ spark_disconnect(sc)</code></pre>
         
           <li>
           <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/keepbusy/">Keeping Busy with Data Science</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/nextsteps/">Next Steps</a>
-          </li>
-        
-          <li>
-          <a href="https://teachdatascience.com/closing/">Closing: A summer of data science education</a>
           </li>
         
         </ul>
@@ -504,7 +504,7 @@ spark_disconnect(sc)</code></pre>
 
         <div class="content">
           <ul>
-            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/github">github</a></li><li><a href="https://teachdatascience.com/tags/data-wrangling">data-wrangling</a></li>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/ethics">ethics</a></li>
           </ul>
         </div>
       </div>

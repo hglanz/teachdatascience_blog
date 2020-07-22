@@ -32,6 +32,15 @@
     </item>
     
     <item>
+      <title>Bookclub on Data Science Ethics</title>
+      <link>https://teachdatascience.com/bookclub.utf8/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/bookclub.utf8/</guid>
+      <description>It is human nature to be intrigued and motivated by case studies and real examples to which we feel a connection. Certainly, the plethora of books and articles in the popular data science literature are likely what motivated many of us to choose to become data scientists and statisticians. Wanting to know more or to know why encourages us to dive into the theory, and novel teaching or research projects can develop.</description>
+    </item>
+    
+    <item>
       <title>Data Privacy</title>
       <link>https://teachdatascience.com/privacy/</link>
       <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
@@ -43,12 +52,33 @@ Data privacy is concerned with three main components:</description>
     </item>
     
     <item>
+      <title>Data Privacy</title>
+      <link>https://teachdatascience.com/privacy.knit/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/privacy.knit/</guid>
+      <description>Data Privacy Data privacy is an increasingly important problem. The flood of data available through sensors, smartphones, and our interactions on the internet have great potential to improve our lives and address long-standing issues and problems. Yet they also raise critical questions about misuse of such data.
+What is data privacy? And how is it different from anonymous or secure data?
+Data privacy is concerned with three main components:</description>
+    </item>
+    
+    <item>
       <title>Re-Introduction: Ethics in Data Science Education</title>
       <link>https://teachdatascience.com/reintro/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/reintro/</guid>
       <description>Why more Data Science Education blogging?Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
+One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
+    </item>
+    
+    <item>
+      <title>Re-Introduction: Ethics in Data Science Education</title>
+      <link>https://teachdatascience.com/reintro.knit/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/reintro.knit/</guid>
+      <description>Why more Data Science Education blogging? Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
 One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
     </item>
     
@@ -72,6 +102,15 @@ The list below represents opportunities at a variety of levels. If you are just 
     </item>
     
     <item>
+      <title>Next Steps</title>
+      <link>https://teachdatascience.com/nextsteps.knit/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/nextsteps.knit/</guid>
+      <description>To finish out the summer, we leave you with one last blog entry. The links below provide information about upcoming endeavors related to data science education. As we become aware of other projects, we are likely to add to the list. Feel free to check back to see what is new on the horizon. Thanks for all the great feedback that we&amp;rsquo;ve gotten over the summer. Here&amp;rsquo;s to many future discussions on data science education.</description>
+    </item>
+    
+    <item>
       <title>Closing: A summer of data science education</title>
       <link>https://teachdatascience.com/closing/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
@@ -87,6 +126,16 @@ One of our main goals we set for ourselves this summer was to create a roadmap f
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/cloud2/</guid>
+      <description>Previous blog entries have discussed cloud based servers (RStudio Server and JupyterHub) and parallel/grid/cluster computing. Today we will expand upon these ideas to discuss at a high level how data science students can leverage cloud based tools to undertake their analyses in a flexible manner.
+Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts.</description>
+    </item>
+    
+    <item>
+      <title>More cloud computing: data science is not done on a laptop</title>
+      <link>https://teachdatascience.com/cloud2.utf8/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/cloud2.utf8/</guid>
       <description>Previous blog entries have discussed cloud based servers (RStudio Server and JupyterHub) and parallel/grid/cluster computing. Today we will expand upon these ideas to discuss at a high level how data science students can leverage cloud based tools to undertake their analyses in a flexible manner.
 Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts.</description>
     </item>
@@ -116,6 +165,17 @@ Course GoalsThe goals of data100 are listed on the data100 website and reproduc
     </item>
     
     <item>
+      <title>Data100: Principles and Techniques of Data Science</title>
+      <link>https://teachdatascience.com/data100.utf8/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/data100.utf8/</guid>
+      <description>Last week&amp;rsquo;s entries focused on Python included a description of the innovative and popular data8, today we describe the follow-up course, data100, http://www.ds100.org/ (Principles and Techniques of Data Science) offered by the University of California/Berkeley Division of Data Sciences.
+
+    Course Goals The goals of data100 are listed on the data100 website and reproduced here. The goals are lofty indeed, but they also address an incredibly important shortcoming in many undergraduate curricula &amp;ndash; a student who is successful in data100 will hit the ground running doing data science after graduation.</description>
+    </item>
+    
+    <item>
       <title>The Python Community</title>
       <link>https://teachdatascience.com/pycomm/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
@@ -133,6 +193,16 @@ Knowing how to use Python is an important first step to engaging with the softwa
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/data8/</guid>
+      <description>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the http://Data8.org (Foundations of Data Science) course that has been offered by the University of California/Berkeley Division of Data Sciences.
+The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</description>
+    </item>
+    
+    <item>
+      <title>Data8: The Foundations of Data Science at Berkeley</title>
+      <link>https://teachdatascience.com/data8.utf8/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/data8.utf8/</guid>
       <description>As part of our week of Python, we wanted to focus on innovative pedagogical approaches that have been used to scale outreach efforts. A great example is the http://Data8.org (Foundations of Data Science) course that has been offered by the University of California/Berkeley Division of Data Sciences.
 The course combines three perspectives: inferential thinking, computational thinking, and real-world relevance. Students are asked to use real data to understand relationships and patterns while teaching critical concepts and skills in computer programming and statistical inference.</description>
     </item>
@@ -181,15 +251,6 @@ We’ve been designing point-and-click data software since the early 90’s. Fro
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/data4good/</guid>
-      <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
-    </item>
-    
-    <item>
-      <title>Data Science for Good</title>
-      <link>https://teachdatascience.com/data4good.knit/</link>
-      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/data4good.knit/</guid>
       <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
     </item>
     
@@ -243,12 +304,30 @@ But using GitHub to navigate a dozen homework assignments with 50 students can b
     </item>
     
     <item>
+      <title>Diversity in Data Science &amp; Statistics</title>
+      <link>https://teachdatascience.com/diversity.utf8/</link>
+      <pubDate>Thu, 06 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/diversity.utf8/</guid>
+      <description>Calls for Diversity Data science is made up of not only sets of tools, methods, and problems to solve, but also actual people who make up the statistics &amp;amp; data science community. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem) includes a section on &amp;laquo;Ensuring Broad Participation&amp;raquo; which reiterates the importance of creating an inclusive community where all views are heard and supported.</description>
+    </item>
+    
+    <item>
       <title>Introduction: A summer of data science education</title>
       <link>https://teachdatascience.com/intro/</link>
       <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/intro/</guid>
       <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+    </item>
+    
+    <item>
+      <title>Introduction: A summer of data science education</title>
+      <link>https://teachdatascience.com/intro.knit/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/intro.knit/</guid>
+      <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     
   </channel>

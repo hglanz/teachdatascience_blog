@@ -1,0 +1,106 @@
+---
+title: "Diversity in Data Science & Statistics"
+author: "Jo Hardin"
+date: '2019-06-06T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- education
+- community
+- diversity
+categories: R
+---
+
+
+
+### Calls for Diversity
+
+Data science is made up of not only sets of tools, methods, and problems to solve, but also actual people who make up the statistics & data science community.  The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem) includes a section on "Ensuring Broad Participation" which reiterates the importance of creating an inclusive community where all views are heard and supported.  In their report they say:
+
+> According to the South Big Data Innovation Hub’s *Keeping Data Science Broad*, "the variety of perspectives such diversity [in terms of race, gender, religious affiliation, socioeconomic status, ethnicity, and first-generation status] provides is as essential as that provided by the trans-disciplinary nature of data science for innovation and growth of the field" ([Rawlings-Goss et al.](http://bit.ly/KeepingDataScienceBroad_Report), 2018, p. 29). The report explains that the first step in creating a more inclusive environment is to ensure that students and faculty alike—at all types of educational institutions—have equitable access to resources (e.g., high-quality data, tools, technology, adaptable and appropriate curriculum, and advisors). Also crucial to retaining broad participation in data science is a "culturally relevant curriculum," a more diverse faculty, and collaborations between majority-serving and minority-serving institutions ([Rawlings-Goss et al.](http://bit.ly/KeepingDataScienceBroad_Report), 2018, p. 31).
+
+> Thus, it is the responsibility of academic institutions to ensure inclusion and broad participation and engagement in data science programs. [Master (Nov 7, 2017, webinar)](http://www.nas.edu/envisioningDS) suggests that data science programs at higher education institutions increase exposure to data science fields, broaden beliefs about who belongs in these fields, challenge students’ beliefs about fixed abilities, and show that data science can make a difference in society in order to broaden participation and engagement in data science. [Williams (Nov 7, 2017, webinar)]( http://www.nas.edu/envisioningDS) suggests that faculty adjust curriculum to be more inclusive, create opportunities for students to engage in community data, affirm student ability, and create diverse teams of students. The efforts highlighted by Master and Williams not only lead to increased engagement, but they also stand to sustain participation of underrepresented populations in data science. If data science is to avoid a similar decrease in participation that occurred in the 1980s in computer science among female students, it is imperative that underrepresented students are supported both academically and through mentorship, recognizing the opportunities that the field of data science presents and the value they can add to it.
+
+> Some of the introductory data science courses described in this report have made inclusion and broad participation a central goal, shaping pedagogy, technical infrastructure, and staffing. 
+
+
+Additionally, the more different perspectives that get brought to a field, the better off the field will be.   A more diverse organization is more interesting, more socially conscious, and smarter.  [Scientific American](https://www.scientificamerican.com/article/how-diversity-makes-us-smarter/) recently laid out the benefits.
+
+<img width='800' src='/post/2019_06_07_Diversity/sciamer.png' />
+
+>Decades of research by organizational scientists, psychologists, sociologists, economists and demographers show that socially diverse groups (that is, those with a diversity of race, ethnicity, gender and sexual orientation) are more innovative than homogeneous groups. [Phillips, 2014](https://www.scientificamerican.com/article/how-diversity-makes-us-smarter/)
+
+
+And hopefully it also goes without saying that, as educators, we all recognize that diversifying is just the right thing to do.  But calls for diversifying any community are not always embraced or understood.  We lay out a few ways that the statistics, data science, machine learning, and R communities are working to build inclusive spaces.
+
+### R-Ladies
+
+Those that follow the `#rstats` hashtag know that the community of R users is quite welcoming to women and gender minorities.   A [recent article](https://reshamas.github.io/why-women-are-flourishing-in-r-community-but-lagging-in-python/) by Reshama Shaikh details some of the positive steps that the larger R community has taken to become more inclusive.
+
+<img width='600' src='/post/2019_06_07_Diversity/Rinclus.png' />
+
+A big part of that effort has come through the network of [R-Ladies](https://rladies.org/).  From the R-Ladies website:
+
+>As a diversity initiative, R-Ladies’ mission is to achieve proportionate representation by encouraging, inspiring, and empowering the minorities currently underrepresented in the R community. R-Ladies’ primary focus, therefore, is on supporting the R enthusiasts who identify as an underrepresented minority to achieve their programming potential, by building a collaborative global network of R leaders, mentors, learners, and developers to facilitate individual and collective progress worldwide.
+
+
+
+
+### StatFest
+
+The ASA Committee on Minorities in Statistics organizes an annual [StatFest Conference](https://community.amstat.org/cmis/events/statfest) aimed at encouraging undergraduate students from traditionally marginalized backgrounds (in particular, Black, Hispanic, and Native students) to consider careers and graduate studies in the statistical sciences. 
+
+The conference includes:
+
+* presentations from established professionals, academic leaders, and current graduate students that will help attendees understand the opportunities and routes for success in the field,
+* opportunities for networking,
+* opportunity for attendees to submit and present posters describing their research, and
+* panel forums that will provide information and tips for a rewarding graduate student experience, achieving success as an academic statistician, opportunities in the private and government arenas, among other topics.
+
+The first StatFest took place at Spelman College in 2001, and Fall 2019 (September 21, 2019) will be the 19th annual StatFest, hosted at The University of Texas Health Science Center at Houston. Encourage your undergraduate students of color to attend! [Sign up here.](https://community.amstat.org/cmis/events/statfest/statfest-2019)
+
+
+<img width='800' src='/post/2019_06_07_Diversity/StatFestGroupPhoto-1.jpg' />
+
+The Committee on Minorities in Statistics is also putting together a pre-JSM [Diversity Workshop and Mentoring Program](https://community.amstat.org/cmis/events/dwmp/dwmp2019).  [Sign-up here.](https://community.amstat.org/cmis/events/dwmp/dwmp2019)
+
+### LGBTQ+ Resources
+
+Recently, *Significance* magazine put together a comprehensive set of [resources for statisticians and data scientists](https://www.significancemagazine.com/2-uncategorised/624-lgbt-resources-for-statisticians-and-data-scientists?highlight=WyJsZ2J0Il0=) to use in the classroom and the workplace.  Their focus on creating inclusive spaces discusses issues specific to the LGBTQ+ community (e.g., pronouns), but their approach to creating a safe space is valid for all classrooms and professional settings for all individuals.  Related, *Significance* published an article [Friends and allies: LGBT+ inclusion in statistics and data science](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2019.01280.x) sharing advice and making recommendation for creating more inclusive and supportive statistics and data science spaces for gender non-conforming and LGBTQ+ persons.
+
+<img width='800' src='/post/2019_06_07_Diversity/sigLGBT.png' />
+
+Additionally, the [resources](https://www.significancemagazine.com/2-uncategorised/624-lgbt-resources-for-statisticians-and-data-scientists?highlight=WyJsZ2J0Il0=) above give suggestions for data sets that are inclusive and tips for using data in class.  For educators, being thoughtful to introduce data in a respectful and inclusive manner seems a low bar that we should all be able to cross when working with students.
+
+[Catherine D'Ignazio](https://twitter.com/kanarinka) is working on [Non-Binary Gender and Big Data](https://civic.mit.edu/2016/6/3/a-primer-on-non-binary-gender-and-big-data/) an important topic for all data scientists to think about.
+
+### Moving Forward
+
+It is worth pointing out those who **support** data scientists who are women, LGBTQ+ persons, differently abled persons,  and people of color continue to play a role in improving dynamics of the R community.  Shout out to those in positions of privilege who, when offered an invitation to speak at a conference, ask about the gender, racial, LGBTQ+, and able-bodied balance of the other speakers.  [New York R Conference](https://www.rstats.nyc/) did a great job last month with their female speakers.  Here's to continued support of data scientists whose voices are not typically or publicly lifted up.
+
+
+<img width='800' src='/post/2019_06_07_Diversity/nyR.png' />
+
+### Learn more
+
+- Data for Black Lives: http://d4bl.org/
+- Women in Machine Learning: https://wimlworkshop.org/
+- Black in AI: https://blackinai.github.io/
+- LatinX in AI: http://www.latinxinai.org/
+- R-Ladies: https://rladies.org/
+- [Resources for Women in Data Science](https://reshamas.github.io/resources-for-women-in-data-science/)
+- Women in Statistics and Data Science conference: https://ww2.amstat.org/meetings/wsds/2019/
+- ASA LGBT Concerns Committee: https://ww2.amstat.org/committees/commdetails.cfm?txtComm=CCNDVR04
+- Computing Research Association has a Grad Cohort for Underrepresented Minorities & Persons with Disabilities: https://cra.org/events/2019-urmd-grad-cohort/
+- ACM Richard Tapia Conference: http://tapiaconference.org/
+- Sherri Rose keeps a detailed list of diversity resources for statisticians on her website: http://drsherrirose.org/resources/
+- Keeping Data Science Broad report (Rawlings-Goss et al.): http://bit.ly/KeepingDataScienceBroad_Report
+
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.
+

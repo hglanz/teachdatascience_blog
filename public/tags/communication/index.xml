@@ -23,6 +23,15 @@
     
     <item>
       <title>Data Feminism</title>
+      <link>https://teachdatascience.com/datafem.knit/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/datafem.knit/</guid>
+      <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D&amp;rsquo;Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
+    </item>
+    
+    <item>
+      <title>Data Feminism</title>
       <link>https://teachdatascience.com/datafem.utf8/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
       
@@ -86,15 +95,6 @@ However, you may not have a plan for how to bring the ideas into the data scienc
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://teachdatascience.com/data4good/</guid>
-      <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
-    </item>
-    
-    <item>
-      <title>Data Science for Good</title>
-      <link>https://teachdatascience.com/data4good.knit/</link>
-      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/data4good.knit/</guid>
       <description>As educators, it is exciting that our course enrollments are up and students are excited about data science topics, models, software, and careers. It is also validating that when they graduate, our students are able to support themselves doing interesting and engaging work. However, it can be sometimes disheartening to realize how many of our data science students use their skills to maximize the number of times viewers click on ads.</description>
     </item>
     

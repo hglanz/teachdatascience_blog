@@ -53,6 +53,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/datafem.knit/</loc>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/datafem.utf8/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url>
@@ -75,7 +80,17 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/bookclub.utf8/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/privacy/</loc>
+    <lastmod>2020-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/privacy.knit/</loc>
     <lastmod>2020-07-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -96,6 +111,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/reintro.knit/</loc>
+    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/keepbusy/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
   </url>
@@ -107,6 +127,11 @@
   
   <url>
     <loc>https://teachdatascience.com/nextsteps/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/nextsteps.knit/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -147,6 +172,11 @@
   
   <url>
     <loc>https://teachdatascience.com/cloud2/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/cloud2.utf8/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -200,6 +230,11 @@
   
   <url>
     <loc>https://teachdatascience.com/onemodel/</loc>
+    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/onemodel.utf8/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -344,6 +379,16 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/twocultures.knit/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/twocultures.utf8/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/predictive-analytics/</loc>
     <lastmod>2019-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -402,6 +447,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/data100.utf8/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/berkeley/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -432,6 +482,11 @@
   
   <url>
     <loc>https://teachdatascience.com/data8/</loc>
+    <lastmod>2019-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/data8.utf8/</loc>
     <lastmod>2019-07-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -470,7 +525,17 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/pandas.utf8/</loc>
+    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/jupyter/</loc>
+    <lastmod>2019-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/jupyter.utf8/</loc>
     <lastmod>2019-07-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -509,16 +574,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/reprex.knit/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/reprex.utf8/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/tags/codap/</loc>
     <lastmod>2019-07-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -548,6 +603,11 @@
   
   <url>
     <loc>https://teachdatascience.com/refactoring/</loc>
+    <lastmod>2019-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/refactoring.knit/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -614,6 +674,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/styleguide.utf8/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/pcmi/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
@@ -636,6 +701,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/shiny2.utf8/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/dynamic-visualization/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -653,12 +723,12 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/data4good/</loc>
-    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
+    <loc>https://teachdatascience.com/shiny1.utf8/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/data4good.knit/</loc>
+    <loc>https://teachdatascience.com/data4good/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -712,11 +782,6 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/mosaic.knit/</loc>
-    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/infer/</loc>
     <lastmod>2019-06-16T00:00:00+00:00</lastmod>
   </url>
@@ -744,17 +809,7 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/githubinr.utf8/</loc>
-    <lastmod>2019-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teachdatascience.com/github/</loc>
-    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teachdatascience.com/github.knit/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -780,6 +835,11 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/diversity.utf8/</loc>
+    <lastmod>2019-06-06T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/diversity/</loc>
     <lastmod>2019-06-06T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -787,6 +847,16 @@
   
   <url>
     <loc>https://teachdatascience.com/gaise/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/gaise.knit/</loc>
+    <lastmod>2019-06-05T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/gaise.utf8/</loc>
     <lastmod>2019-06-05T21:13:14-05:00</lastmod>
   </url>
   
@@ -802,6 +872,16 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/nssd.knit/</loc>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/nssd.utf8/</loc>
+    <lastmod>2019-06-04T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tags/podcast/</loc>
     <lastmod>2019-06-04T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -813,12 +893,27 @@
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/screencast.utf8/</loc>
+    <lastmod>2019-06-03T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/tidyverse/</loc>
     <lastmod>2019-06-02T21:13:14-05:00</lastmod>
   </url>
   
   <url>
+    <loc>https://teachdatascience.com/tidyverse.utf8/</loc>
+    <lastmod>2019-06-02T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teachdatascience.com/projects/</loc>
+    <lastmod>2019-05-30T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/projects.utf8/</loc>
     <lastmod>2019-05-30T21:13:14-05:00</lastmod>
   </url>
   
@@ -838,12 +933,17 @@
   </url>
   
   <url>
-    <loc>https://teachdatascience.com/nasem.knit/</loc>
+    <loc>https://teachdatascience.com/nasem.utf8/</loc>
     <lastmod>2019-05-27T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://teachdatascience.com/intro/</loc>
+    <lastmod>2019-05-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teachdatascience.com/intro.knit/</loc>
     <lastmod>2019-05-21T21:13:14-05:00</lastmod>
   </url>
   

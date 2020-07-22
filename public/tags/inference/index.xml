@@ -23,6 +23,18 @@ Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that comm
     </item>
     
     <item>
+      <title>One model to rule them all</title>
+      <link>https://teachdatascience.com/onemodel.utf8/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/onemodel.utf8/</guid>
+      <description>As we near the end of our summer posts, we&amp;rsquo;ve started to think more broadly about statistics as well as data science courses. Today&amp;rsquo;s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
+Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.
+
+    Cheatsheets in R and Python describe how standard statistical tests (e.</description>
+    </item>
+    
+    <item>
       <title>The conversation around p-values</title>
       <link>https://teachdatascience.com/pvals/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>

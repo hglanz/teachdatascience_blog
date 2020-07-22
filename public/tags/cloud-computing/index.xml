@@ -23,6 +23,16 @@ Our discussion is motivated by several recent papers and blog posts that describ
     </item>
     
     <item>
+      <title>More cloud computing: data science is not done on a laptop</title>
+      <link>https://teachdatascience.com/cloud2.utf8/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/cloud2.utf8/</guid>
+      <description>Previous blog entries have discussed cloud based servers (RStudio Server and JupyterHub) and parallel/grid/cluster computing. Today we will expand upon these ideas to discuss at a high level how data science students can leverage cloud based tools to undertake their analyses in a flexible manner.
+Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts.</description>
+    </item>
+    
+    <item>
       <title>RStudio Server Pro and Rstudio.cloud installations</title>
       <link>https://teachdatascience.com/cloud/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>

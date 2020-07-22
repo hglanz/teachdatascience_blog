@@ -1,0 +1,112 @@
+---
+title: "Not So Standard Deviations: not your average data science podcast"
+author: "Jo Hardin"
+date: '2019-06-04T21:13:14-05:00'
+output:
+  html_document:
+    df_print: paged
+tags:
+- entertainment
+- podcast
+categories: R
+---
+
+
+
+
+As an instructor teaching data, it is often difficult to explain the world the students will be joining (industry) given the experiences of the instructor (academia).   One way to bridge the two worlds is to peek into the world of data science outside of academia and then tell your students about it.  
+
+Hilary Parker and Roger Peng's podcast, [Not So Standard Deviations](http://nssdeviations.com/) provides glimpses into data science challenges, obstacles, opportunities, and solutions in the real world.  Their conversations are quite varied and reach a wide audience. While not every conversation is relevant for every listener, I've found many of the discussions highly relevant for my teaching and my classes.  
+
+I've detailed a few episodes that speak directly to the idea of statistics and data science education.  The topics raised can be used in the classroom setting to help students think more broadly about how and why learning data science is important.
+
+<center>
+<img alt = 'NSSD' width='600' src='/post/nssd/nssd1screenshot.png' />
+</center>
+
+
+## Who are they?
+
+**Roger Peng** is a Biostatistician and Data Scientist whose research is on the health effects of air pollution and climate change.  He is a collaborator in the [Johns Hopkins Data Science Lab](https://jhudatascience.org/).  Roger has long worked hard to share his ideas broadly: in 2011 he co-founded the [SimplyStatistics blog](https://simplystatistics.org/); with co-authors Jeff Leek and Brian Caffo, he created the [Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specializations/jhu-data-science); and he has written seven books describing different aspects of Data Science. 
+
+
+<center>
+<img alt = 'Johns Hopkins Data Science Lab' width='600' src='/post/nssd/nssd3screenshot.png' />
+</center>
+
+**Hilary Parker** is a Data Scientist at Stitch Fix where she works on the Styling Algorithms team.  Formerly, she worked at Etsy as a Senior Data Analyst on data-informed development.  She received her PhD in Biostatistics from Johns Hopkins working with Jeff Leek (after receiving her BA from Pomona College).  She is well known for her [opinionated data analysis development](https://resources.rstudio.com/wistia-rstudio-conf-2017/opinionated-analysis-development-hilary-parker), a topic discussed directly and indirectly on the podcast regularly.      
+
+<center>
+<img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd5screenshot.png' />
+</center>
+
+
+
+##  What do they talk about?
+
+They talk about all things data science, broadly writ.  From how to get a job, what different companies do with data science, what makes a good analysis, which tool is best for which job, coding style guides, conference highlights, cloud computing, and more.  The episodes and topics below add a rich dimension to any statistics or data science classroom.
+
+
+####  Many Facets of Data Science
+
+In episode [#34 - F Dist](http://nssdeviations.com/episode-34-f-dist) Hilary and Roger discuss the massive data science team at Stitch Fix and how the different data science tasks are all important to create the end product.  Recently the Stitch Fix algorithms team put together a visualization describing the [algorithm](https://algorithms-tour.stitchfix.com/) for how data science is used to choose clothing for their clients.   By using the [scrollytelling](https://vallandingham.me/scroller.html) software, the technical details are made accessible to data scientists at all levels (including those in an introductory data science course).  Additionally, the breadth of methods is laid out to demonstrate both how varied the work can be and how broad data science skills (either for an individual to have or for a group to exhibit together as a team) are necessary for successfully working with data.  Some of the data science topics they describe include:  
+
+* statistical methods -- logistic regression, mixed-effects models, Markov chain models,
+* optimization methods -- binary optimization, combinatorial optimization (traveling salesman problem)
+* machine learning methods -- natural language processing, genetic algorithms
+* domain knowledge -- clothing trends, warehouse operations
+* software engineering -- smoothly making the analysis pieces work together
+
+<center>
+<img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd4screenshot.png' />
+</center>
+
+####  Data Analysis as Music
+
+In episode [#38 - Banging on the Piano](http://nssdeviations.com/episode-38-banging-on-the-piano) Roger discusses his Johns Hopkins Dean's Lecture on the [Past and Future of Data Analysis](https://www.youtube.com/watch?v=qFtJaq4TlqE).  Roger spends the majority of the talk connecting the structure of data analysis to the core tenets of music theory.  Seemingly, music (and data analysis) is a subjective area where different people enjoy different genres of music.  But that said, there is an understanding across the music community of some basic tenets.  For example, many people agree on what harmonies sound good and which don't; that agreement leads to an ability to predict what will sound good before the music is even played.  The understanding of the sounds leads to what we know of as music theory.  Roger takes the idea of music theory and argues that the future of good data analysis is theory.  You know good data analysis when you see it, but teaching someone how to create a good data analysis requires an understanding of the theoretical aspects (e.g., reproducibility).   Of course, just like music, once there is a foundational structure to the theory of data analysis, there is plenty of room for creativity and new ideas.
+
+<center>
+<img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd6screenshot.png' />
+
+<img alt = 'Stitch Fix' width='600' src='/post/nssd/nssd7screenshot.png' />
+</center>
+
+
+####  Data Science Case Study
+
+In episode [#71 - Compromised Shoe Situation](http://nssdeviations.com/71-compromised-shoe-situation) Hilary talked about trying to collect data on what might seemingly be a straightforward research question:  how long does it take to get to work?  Hilary and Roger discussed the scenario in such a way that the data science challenges were apparent to both experts and those new to the field alike.  After the discussion, Roger wrote a blog at [Simply Statistics](https://simplystatistics.org/2019/01/09/how-data-scientists-think-a-mini-case-study/) about the data science challenges and how data scientists approach problems.  Indeed, the case study is one that could be used in any statistics or data science course as a way to generate discussion on how data is / should be used as a way of understanding the world around us.
+
+<center>
+<img alt = 'Case Study' width='600' src='/post/nssd/nssd2screenshot.png' />
+</center>
+
+
+
+####  P-values
+
+In episode [#77 - Back to Statistics](http://nssdeviations.com/77-back-to-statistics) they talk about the significance of statistical significance.  The episode was prompted by a recent [*Nature* article](https://www.nature.com/articles/d41586-019-00857-9) which (once again) calls for the removal of p-values from all of science.  Hilary and Roger's thoughtful back-and-forth helps frame both the importance and the over-reliance of p-values.  However, Roger gives great insight in comparing the epidemiologist Sander Greenland (an author of the *Nature* article) with the [reaction](https://www.nature.com/articles/d41586-019-00969-2) of John Ioannidis (physician-scientist).  The insight is that those who advocate getting rid of p-values are often quite concerned with type II errors; indeed the *Nature* article expresses concerns of missed effects.  Ioannidis, on the other hand, is [troubled by](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124) type I errors and the idea that across the board, false positives dominate the scientific literature.  
+
+#### Data Ethics
+
+
+In episode [#79 - Things Never Get Dirty If You're Always Cleaning](http://nssdeviations.com/79-things-never-get-dirty-if-youre-always-cleaning) Hilary and Roger talk about [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)  (GDPR), the goals of EU law on data protection and privacy, and the impact it has had on data companies of all kinds.
+
+The GDPR conversation can enrich any classroom discussion which focuses on using data.  Understanding data ethics is paramount to understanding data science.  It is important to know the latest on how companies are using data and how governments are regulating the use of data.  As students who may end up working with data, they need to understand the greater context of how data are used.
+
+What I find most helpful is that Hilary and Roger reinforce the importance of data ethics and they make it accessible.  Hilary reported on a conference she had recently gone to where [Brit Shields](https://www.seas.upenn.edu/directory/profile.php?ID=211) spoke about the historical context of where we (as a data science community) currently are with respect to data privacy.  She likened our current situation to the 1928 movie [Speedy](https://www.imdb.com/title/tt0019412/) about a [cab ride](https://www.youtube.com/watch?v=BnIDGxKsCSY) which is completely out of control, partly due to the lack of sign posts, road demarcations, or any other guiding principles.   Understanding how laws, regulations, and guiding principles make *driving* safer helps students understand how and why laws, regulations, and guiding principles can make data collection safer.
+
+We need more such examples.
+
+
+## Learn more
+
+- [Not So Standard Deviations podcast](http://nssdeviations.com)
+- [Hilary Parker talk](https://resources.rstudio.com/wistia-rstudio-conf-2017/opinionated-analysis-development-hilary-parker)
+- [Roger Peng talk](https://www.youtube.com/watch?v=qFtJaq4TlqE)
+- [SimplyStatistics blog](https://simplystatistics.org/)
+
+### About this blog 
+
+Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at https://groups.google.com/forum/#!forum/teach-data-science (you must be logged into Google to sign up).
+
+We always welcome comments on entries and suggestions for new ones.

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>The Tidyverse  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, data wrangling, visualization, tidyverse, workflow, ">
+
+
+<meta property="og:title" content="The Tidyverse  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/tidyverse.utf8/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_06_03_tidyverse\tidyverse.utf8.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-06-02T21:13:14-05:00" />
+<meta property="og:article:modified_time" content="2019-06-02T21:13:14-05:00" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="data wrangling">
+    
+<meta property="og:article:tag" content="visualization">
+    
+<meta property="og:article:tag" content="tidyverse">
+    
+<meta property="og:article:tag" content="workflow">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/tidyverse.utf8/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>The Tidyverse
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-02">2 Jun, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Hunter Glanz
+  
+  &middot; Read in about 6 min
+  &middot; (1160 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=The%20Tidyverse&amp;url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f&amp;title=The%20Tidyverse" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=The%20Tidyverse&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://teachdatascience.com/tags/data-wrangling" class="label label-primary">data wrangling</a>
+  
+  <a href="https://teachdatascience.com/tags/visualization" class="label label-primary">visualization</a>
+  
+  <a href="https://teachdatascience.com/tags/tidyverse" class="label label-primary">tidyverse</a>
+  
+  <a href="https://teachdatascience.com/tags/workflow" class="label label-primary">workflow</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<h2 id="what-is-the-tidyverse">What is the Tidyverse?</h2>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/tidyverse/tidyversehex.jpg" alt="" />{width=125px}</p>
+
+<p></center></p>
+
+<p>The <code>tidyverse</code> is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated <a href="https://r4ds.had.co.nz/">book</a> or blog in itself. Instead, what this post aims to do is give you an introduction and a clear, easy path forward to learning more. A very nice introduction and motivation can be found in this <a href="https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/">RStudio post</a> and Hadley Wickham&rsquo;s <a href="https://www.rstudio.com/resources/videos/data-science-in-the-tidyverse/">keynote address</a> at the 2017 RStudio Conference.</p>
+
+<p>Nowadays you can simply load the foundation of tidyverse packages with the following:</p>
+
+<pre><code class="language-r">library(tidyverse)
+</code></pre>
+
+<p>The above library statement loads the following tidyverse packages: <code>readr</code>, <code>tibble</code>, <code>tidyr</code>, <code>dplyr</code>, <code>purrr</code>, and <code>ggplot2</code>. Together these form the basis of the following popular data scientist workflow:</p>
+
+<p><center></p>
+
+<p><img src="https://teachdatascience.com/post/tidyverse/tidyverse-package-workflow.png" alt="" />{width=350px}
+</center></p>
+
+<p>The tidyverse includes many other packages like <code>stringr</code> and <code>lubridate</code> which must be loaded explicitly.</p>
+
+<h2 id="why-use-the-tidyverse">Why Use The Tidyverse</h2>
+
+<p>One of the biggest reasons to learn the tidyverse is <strong>consistency</strong>. Throughout these packages, <strong>consistency</strong> comes in three primary forms:</p>
+
+<ol>
+<li><p>The first formal argument of tidyverse functions is always a data frame that provides the function&rsquo;s input.</p></li>
+
+<li><p>The idea of <em>tidy data</em>: a data frame where each row is an observation and each column contains the value of a single variable.</p></li>
+
+<li><p>The pipe operator, <code>%&gt;%</code>, guides the flow of operations on data.</p></li>
+</ol>
+
+<p>The consistency of the tidyverse, together with the goal of increasing productivity, mean that the syntax of tidyverse functions is typically straightforward to learn. Function names like <code>spread</code>, <code>gather</code>, <code>filter</code>, <code>group_by</code> and so many others do exactly what they sound like and can be combined seamlessly with the pipe operator. As Hadley Wickham often quotes of Hal Abelson, &laquo;Programs must be written for people to read and only incidentally for machines to execute.&raquo; The third point above, concerning the pipe operator, deserves an introdution of its own which can be found <a href="https://github.com/dtkaplan/CVC/blob/gh-pages/Summer2016/Learn/Parts_of_speech/R-command-structure.Rmd">here</a>, but for now think of it as the way to chain your commands or functions together.</p>
+
+<p>The computing workflow induced by the tidyverse necessarily means increased readability and reproducibility because functions are so organically named and every task can be so easily decomposed into single-function operations. Take the following example using the <code>iris</code> dataset which</p>
+
+<ul>
+<li><p>Selects two variables of interest, <strong>then</strong></p></li>
+
+<li><p>Filters down to two of the three species, <strong>then</strong></p></li>
+
+<li><p>Groups by species, <strong>then</strong></p></li>
+
+<li><p>Summarizes each variable by computing means</p></li>
+</ul>
+
+<pre><code class="language-r">iris %&gt;%
+  select(Petal.Length, Petal.Width, Species) %&gt;%
+  filter(Species %in% c(&quot;versicolor&quot;, &quot;setosa&quot;)) %&gt;%
+  group_by(Species) %&gt;%
+  summarize(
+    AvgPetalLength = mean(Petal.Length),
+    AvgPetalWidth = mean(Petal.Width))
+## # A tibble: 2 x 3
+##   Species    AvgPetalLength AvgPetalWidth
+##   &lt;fct&gt;               &lt;dbl&gt;         &lt;dbl&gt;
+## 1 setosa               1.46         0.246
+## 2 versicolor           4.26         1.33
+</code></pre>
+
+<p>The beauty of the code above is that it can actually be read exactly as the bullets above it are read, with the pipe operator being read as &laquo;then&raquo;. Contrast this to the base R implementation below:</p>
+
+<pre><code class="language-r">iris_sub &lt;- iris[iris$Species %in% c(&quot;versicolor&quot;, &quot;setosa&quot;),]
+rbind(tapply(iris_sub$Petal.Length, iris_sub$Species, mean),
+      tapply(iris_sub$Petal.Width, iris_sub$Species, mean))
+##      setosa versicolor virginica
+## [1,]  1.462      4.260        NA
+## [2,]  0.246      1.326        NA
+</code></pre>
+
+<p>which is much harder to read outloud and can be daunting to parse for students who are new to R.</p>
+
+<h2 id="why-teach-the-tidyverse">Why Teach The Tidyverse</h2>
+
+<p>David Robinson has been a major proponent of not only teaching the tidyverse, but teaching it <strong>first</strong>. Whereas the authors of this blog and many more out there probably grew up learning base R first, the above small iris example is likely sufficient to convince a great many why the tidyverse should be taught before base R. The tidyverse is actually EASIER for students to learn than base R because the code flows naturally from the goals of the data anlaysis: subset, group, aggregate. In Robinson&rsquo;s <a href="http://varianceexplained.org/r/teach-tidyverse/">words</a>, &laquo;get students doing powerful things quickly.&raquo; Low barriers to entry of data analysis will resonate quite strongly with those teaching or learning statistical computing and data science. The vast majority of exploratory data analysis is accessible via the tidyverse packages.</p>
+
+<p>For example, descriptive statistics are often desired in the following format, which is made vastly simpler by the tidyverse.</p>
+
+<pre><code class="language-r">iris %&gt;%
+  gather(key = &quot;flower_att&quot;, value = &quot;measurement&quot;, Petal.Length, Petal.Width, Sepal.Length, Sepal.Width) %&gt;%
+  group_by(flower_att) %&gt;%
+  summarize(Mean = mean(measurement),
+            SD = sd(measurement))
+## # A tibble: 4 x 3
+##   flower_att    Mean    SD
+##   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt;
+## 1 Petal.Length  3.76 1.77 
+## 2 Petal.Width   1.20 0.762
+## 3 Sepal.Length  5.84 0.828
+## 4 Sepal.Width   3.06 0.436
+</code></pre>
+
+<p>Some of the other most commonly encountered data wrangling challenges involve creating new variables and sorting. Below, two new variables are created then the dataset is sorted (arranged) by them.</p>
+
+<pre><code class="language-r">iris %&gt;%
+  mutate(PetalRatio = Petal.Length/Petal.Width,
+         SepalRatio = Sepal.Length/Sepal.Width) %&gt;%
+  arrange(desc(PetalRatio), SepalRatio) %&gt;%
+  slice(1:5)
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species PetalRatio
+## 1          5.2         4.1          1.5         0.1  setosa         15
+## 2          4.9         3.1          1.5         0.1  setosa         15
+## 3          4.9         3.6          1.4         0.1  setosa         14
+## 4          4.8         3.0          1.4         0.1  setosa         14
+## 5          4.3         3.0          1.1         0.1  setosa         11
+##   SepalRatio
+## 1   1.268293
+## 2   1.580645
+## 3   1.361111
+## 4   1.600000
+## 5   1.433333
+</code></pre>
+
+<p>The tidyverse tools are helpful for aspiring data scientists to jumpstart their work with data in R. Of course there are limitations of the tidyverse, and nobody is suggesting that the tidyverse be the <strong>only</strong> set of tools taught. The philosophy and consistency of the tidyverse are still fairly young and do not sync nicely with all R packages. Some uses of R for, say, certain types of software development or advanced statistical modeling are not covered by the current collection of tidyverse packages. And so broader knowledge of base R and core computer science techniques are still needed at certain levels.</p>
+
+<p>In any case, knowledge of the tidyverse will make working in R easier and more productive for a great deal of a data scientist&rsquo;s education.</p>
+
+<h2 id="learn-more">Learn more</h2>
+
+<ul>
+<li><p>Getting started with the tidyverse: <a href="http://www.storybench.org/getting-started-with-tidyverse-in-r/">http://www.storybench.org/getting-started-with-tidyverse-in-r/</a></p></li>
+
+<li><p>R for Data Science: <a href="https://r4ds.had.co.nz/">https://r4ds.had.co.nz/</a></p></li>
+
+<li><p>David Robinson&rsquo;s blog posts about the tidyverse: <a href="http://varianceexplained.org/r/teach-tidyverse/">http://varianceexplained.org/r/teach-tidyverse/</a></p></li>
+
+<li><p>R Markdown file for this blog post <a href="https://github.com/hglanz/teachdatascience_blog/blob/master/content/post/2019_06_3_tidyverse/tidyverse.Rmd">here</a></p></li>
+</ul>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=The%20Tidyverse&amp;url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f&amp;title=The%20Tidyverse" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=The%20Tidyverse&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2ftidyverse.utf8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/projects/" title="Projects in RStudio">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/tidyverse/" title="The Tidyverse">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/oath/">Hippocratic Oath</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem.knit/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem.utf8/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/bookclub/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/bookclub.utf8/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy.knit/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/ethics">ethics</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

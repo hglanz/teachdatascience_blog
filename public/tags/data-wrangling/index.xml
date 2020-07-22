@@ -47,6 +47,19 @@ In short, pandas offers some new and some improved Python tools for doing the fo
     </item>
     
     <item>
+      <title>pandas: Python data analysis library</title>
+      <link>https://teachdatascience.com/pandas.utf8/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/pandas.utf8/</guid>
+      <description>About pandas pandas is an open-source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Straight from the library&amp;rsquo;s homepage, &amp;laquo;pandas helps fill Python&amp;rsquo;s long-standing gap in tools for data analysis and modeling.&amp;raquo;
+In short, pandas offers some new and some improved Python tools for doing the following:
+ Reading data in to data frame-type structures
+ Viewing and selecting data
+ Handling missing data</description>
+    </item>
+    
+    <item>
       <title>Watching an expert work through a data analysis using the tidyverse</title>
       <link>https://teachdatascience.com/screencast/</link>
       <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
@@ -57,12 +70,34 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
     </item>
     
     <item>
+      <title>Watching an expert work through a data analysis using the tidyverse</title>
+      <link>https://teachdatascience.com/screencast.utf8/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/screencast.utf8/</guid>
+      <description>Watching an expert work through a data analysis using the tidyverse Teaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it&amp;rsquo;s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
+We&amp;rsquo;ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
+    </item>
+    
+    <item>
       <title>The Tidyverse</title>
       <link>https://teachdatascience.com/tidyverse/</link>
       <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/tidyverse/</guid>
       <description>What is the Tidyverse?The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
+    </item>
+    
+    <item>
+      <title>The Tidyverse</title>
+      <link>https://teachdatascience.com/tidyverse.utf8/</link>
+      <pubDate>Sun, 02 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/tidyverse.utf8/</guid>
+      <description>What is the Tidyverse? 
+{width=125px}
+
+The tidyverse is a coherent system of R packages for data wrangling, exploration and visualization that share a common design philosophy. These packages are intended to make statisticians and data scientists more productive by guiding them through workflows that facilitate communication, and result in reproducible work products. Unpacking the tidyverse, all that it means and contains, could easily take a dedicated book or blog in itself.</description>
     </item>
     
     <item>

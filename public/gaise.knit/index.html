@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Guidelines for Assessment and Instruction in Statistics Education  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="R Markdown, visualization, multivariate thinking, Simpson&#39;s paradox, regression, reports, ">
+
+
+<meta property="og:title" content="Guidelines for Assessment and Instruction in Statistics Education  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="https://teachdatascience.com/gaise.knit/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2019_06_06_GAISE\gaise.knit.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-06-05T21:13:14-05:00" />
+<meta property="og:article:modified_time" content="2019-06-05T21:13:14-05:00" />
+
+  
+    
+<meta property="og:article:tag" content="R Markdown">
+    
+<meta property="og:article:tag" content="visualization">
+    
+<meta property="og:article:tag" content="multivariate thinking">
+    
+<meta property="og:article:tag" content="Simpson&#39;s paradox">
+    
+<meta property="og:article:tag" content="regression">
+    
+<meta property="og:article:tag" content="reports">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="https://teachdatascience.com/gaise.knit/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://teachdatascience.com/touch-icon-144-precomposed.png">
+<link rel="icon" href="https://teachdatascience.com/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://teachdatascience.com/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://teachdatascience.com/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://teachdatascience.com/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Guidelines for Assessment and Instruction in Statistics Education
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-06-05">5 Jun, 2019</time>
+</small>
+
+
+  <small>
+    &middot; by Nicholas Horton
+  
+  &middot; Read in about 6 min
+  &middot; (1178 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Guidelines%20for%20Assessment%20and%20Instruction%20in%20Statistics%20Education&amp;url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f&amp;title=Guidelines%20for%20Assessment%20and%20Instruction%20in%20Statistics%20Education" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Guidelines%20for%20Assessment%20and%20Instruction%20in%20Statistics%20Education&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://teachdatascience.com/tags/r-markdown" class="label label-primary">R Markdown</a>
+  
+  <a href="https://teachdatascience.com/tags/visualization" class="label label-primary">visualization</a>
+  
+  <a href="https://teachdatascience.com/tags/multivariate-thinking" class="label label-primary">multivariate thinking</a>
+  
+  <a href="https://teachdatascience.com/tags/simpsons-paradox" class="label label-primary">Simpson&#39;s paradox</a>
+  
+  <a href="https://teachdatascience.com/tags/regression" class="label label-primary">regression</a>
+  
+  <a href="https://teachdatascience.com/tags/reports" class="label label-primary">reports</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<p>The <a href="https://www.amstat.org">American Statistical Association</a> has placed
+a priority on how best to <em>teach</em> statistics and data science.  The Guidelines for Assessment and Instruction in Statistics Education (GAISE) <a href="https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx">reports</a> have served a key role in guiding instructors and institutions in their pedagogical choices.</p>
+
+<p>Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses.  In this GAISE blog entry we focus on the college report.</p>
+
+<p>The key findings from the report remain consistent from the original GAISE report:</p>
+
+<ol>
+<li>Teach statistical thinking.<br />
+  a. Teach statistics as an investigative process of problem-solving and decision- making.<br />
+  b. Give students experience with <strong>multivariable thinking</strong>.<br /></li>
+<li>Focus on conceptual understanding.<br /></li>
+<li>Integrate real data with a context and purpose.<br /></li>
+<li>Foster active learning.<br /></li>
+<li>Use <strong>technology</strong> to explore concepts and analyze data.<br /></li>
+<li>Use assessments to improve and evaluate student learning.<br /></li>
+</ol>
+
+<p>If you haven&rsquo;t read the report now might be a good time to do so.  (The appendices are also worth a read, particularly the section on assessment that has general value for both data science and statistics courses.)</p>
+
+<h3 id="multivariate-thinking">Multivariate Thinking</h3>
+
+<p>One key change, noted in <strong>bold</strong> above, was to reinforce that statistical thinking incorporate multivariate thinking (and not just explore univariate or bivariate relationships).</p>
+
+<p>Multivariate thinking is discussed as a key component of data acumen of the NASEM &laquo;Data Science for Undergraduates&raquo; <a href="https://teachdatascience.com/nasem">report</a> in two ways: as part of <em>mathematical foundations</em> and <em>statistical foundations</em>.</p>
+
+<p>Another key change was to clarify that technology did not mean use of calculators, but instead environments that can allow students to explore using flexible and modern tools (e.g., R, Python, JMP, <a href="https://codap.concord.org">CODAP</a>).</p>
+
+<h2 id="implementing-the-gaise-recommendations-using-r">Implementing the GAISE recommendations using R</h2>
+
+<p>What does this mean for instructors?  For me it has caused me to ensure that my students engage almost immediately with technology to start to explore multivariate relationships.  Here&rsquo;s an example in R (taken from the appendix of the revised college report) that explores the relationship between teacher salaries (in thousands of dollars) and SAT scores (a high-stakes college entrance exam) at the state level from the year 2010.</p>
+
+<pre><code class="language-r">library(tidyverse)
+</code></pre>
+
+<pre><code class="language-r">sat &lt;- mdsr::SAT_2010
+ggplot(sat, aes(x = salary, y = total)) + stat_smooth(method = lm) + 
+  geom_point()
+## `geom_smooth()` using formula 'y ~ x'
+</code></pre>
+
+<p><img src="gaise_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+
+<p>We see that there is a strong negative association between the explanatory and response variables.  Should we conclude that reducing teacher salary is the best way to increase SAT scores?  Not at all, it turns out, due to the role of a third variable.</p>
+
+<p>The GAISE College report writes:</p>
+
+<blockquote>
+<p>But the real story is hidden behind one of the &laquo;other factors&raquo; that we warn students about but do not generally teach how to address! The proportion of students taking the SAT varies dramatically between states, as do teacher salaries. In the Midwest and Plains states, where teacher salaries tend to be lower, relatively few high school students take the SAT. Those that do are typically the top students who are planning to attend college out of state, while many others take the alternative standardized ACT test that is required for their state. For each of the three groups of states defined by the fraction taking the SAT, the association is non-negative. The net result is that the fraction taking the SAT is a confounding factor.</p>
+</blockquote>
+
+<pre><code class="language-r">sat &lt;- sat %&gt;%
+  mutate(
+    fracgrp = cut(sat_pct, 
+      breaks = c(0, 30, 60, 94), 
+      labels = c(&quot;low fraction&quot;, &quot;medium fraction&quot;, &quot;high fraction&quot;)
+    )
+  )
+</code></pre>
+
+<pre><code class="language-r">ggplot(sat, aes(x = salary, y = total, colour = fracgrp)) + 
+  stat_smooth(method = lm) + geom_point()
+## `geom_smooth()` using formula 'y ~ x'
+</code></pre>
+
+<p><img src="gaise_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+
+<p>By stratifying (a simple process achieved with the <code>ggplot()</code> function using the <code>colour</code> aesthetic) we can start to disentangle the complex and interesting set of relationships seen with the SAT data.  We may take a step back and start to explore each of the three pairwise relationships.</p>
+
+<pre><code class="language-r">satsmall &lt;- sat %&gt;% 
+  select(salary, total, sat_pct)
+GGally::ggpairs(satsmall)
+## Registered S3 method overwritten by 'GGally':
+##   method from   
+##   +.gg   ggplot2
+</code></pre>
+
+<p><img src="gaise_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+
+<p>Here we see strong bivariate relationships and evidence of confounding.</p>
+
+<p>We can also fit regression models to explore the relationships:</p>
+
+<pre><code class="language-r">coef(lm(salary ~ total, data = sat))
+## (Intercept)       total 
+## 90108.48337   -22.16604
+coef(lm(salary ~ total + sat_pct, data = sat))
+##  (Intercept)        total      sat_pct 
+## -15926.04951     38.22782    249.69211
+</code></pre>
+
+<p>The sign of the coefficient for total SAT score has flipped which is described by <a href="https://en.wikipedia.org/wiki/Simpson%27s_paradox">Simpson&rsquo;s Paradox</a>.</p>
+
+<p>In my courses I&rsquo;ve often had my students engage on day one in an activity to explore multivariate relationships (see the <a href="https://escholarship.org/uc/item/84v3774z">Data Viz on Day One paper</a><a href="https://escholarship.org/uc/item/84v3774z">https://escholarship.org/uc/item/84v3774z</a>)</p>
+
+<h2 id="key-take-home-message">Key take home message</h2>
+
+<p>For me, the important take home message here is that <em>design matters</em>.  When analyzing observational data it&rsquo;s critical to understand where the data came from, what factors (measured or otherwise) are relevant for our analysis, the role of domain knowledge, and most importantly, how to combine all of these to avoid making incorrect conclusions.  No formal inference was undertaken here (or necessary: the data are a census of all states) but the implications are clear: we would make an incorrect conclusion about the relationship between salary and SAT scores using the first figure.  We need to dig a little deeper to better understand the relationships.</p>
+
+<p>We think that it is critical for students and instructors to move beyond &laquo;correlation does not imply causation&raquo;.  By using techniques such as stratification or multiple regression students in statistics and data science courses can move beyond two group comparisons.  In later courses, we can start to deepen understanding of confounding and causal inference (listed as key components of <em>statistical foundations</em> in the NASEM &laquo;Data Science for Undergraduates&raquo; report).</p>
+
+<h3 id="learn-more">Learn more</h3>
+
+<ul>
+<li>GAISE College report: <a href="https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx">https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx</a></li>
+<li>Updated guidelines, updated curriculum: <a href="https://arxiv.org/abs/1705.09530">https://arxiv.org/abs/1705.09530</a></li>
+<li><a href="https://stat.psu.edu/people/klm47">Kari Lock Morgan</a> Multivariate thinking slides from JSM 2018: <a href="https://github.com/Amherst-Statistics/JSM2018">https://github.com/Amherst-Statistics/JSM2018</a></li>
+<li>Shiny App: confounding and the SAT: <a href="https://r.amherst.edu/apps/nhorton/sat-ggplot/">https://r.amherst.edu/apps/nhorton/sat-ggplot/</a></li>
+<li>Teaching Statistics (a bag of tricks): <a href="http://www.stat.columbia.edu/~gelman/bag-of-tricks/">http://www.stat.columbia.edu/~gelman/bag-of-tricks/</a></li>
+<li>Data Viz on Day One: <a href="https://escholarship.org/uc/item/84v3774z">https://escholarship.org/uc/item/84v3774z</a></li>
+</ul>
+
+<h3 id="2016-gaise-college-report-authors">2016 GAISE College Report authors</h3>
+
+<p>Robert Carver (Stonehill College), Michelle Everson, co-chair (The Ohio State University), John Gabrosek (Grand Valley State University), Nicholas Horton (Amherst College), Robin Lock (St. Lawrence University), Megan Mocko, co-chair (University of Florida), Allan Rossman (Cal Poly – San Luis Obispo), Ginger Holmes Rowell (Middle Tennessee State University), Paul Velleman (Cornell University), Jeffrey Witmer (Oberlin College), and Beverly Wood (Embry-Riddle Aeronautical University)</p>
+
+<h3 id="about-this-blog">About this blog</h3>
+
+<p>Each day during the summer of 2019 we intend to add a new entry to this blog on a given topic of interest to educators teaching data science and statistics courses. Each entry is intended to provide a short overview of why it is interesting and how it can be applied to teaching. We anticipate that these introductory pieces can be digested daily in 20 or 30 minute chunks that will leave you in a position to decide whether to explore more or integrate the material into your own classes. By following along for the summer, we hope that you will develop a clearer sense for the fast moving landscape of data science. Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+
+<p>We always welcome comments on entries and suggestions for new ones.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Guidelines%20for%20Assessment%20and%20Instruction%20in%20Statistics%20Education&amp;url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f&amp;title=Guidelines%20for%20Assessment%20and%20Instruction%20in%20Statistics%20Education" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Guidelines%20for%20Assessment%20and%20Instruction%20in%20Statistics%20Education&amp;body=Check out this site https%3a%2f%2fteachdatascience.com%2fgaise.knit%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://teachdatascience.com/gaise.utf8/" title="Guidelines for Assessment and Instruction in Statistics Education">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://teachdatascience.com/gaise/" title="Guidelines for Assessment and Instruction in Statistics Education">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://teachdatascience.com/oath/">Hippocratic Oath</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem.knit/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/datafem.utf8/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/bookclub/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/bookclub.utf8/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/privacy.knit/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/ethicaldataviz/">Ethical Data Viz</a>
+          </li>
+        
+          <li>
+          <a href="https://teachdatascience.com/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://teachdatascience.com/tags/education">education</a></li><li><a href="https://teachdatascience.com/tags/r-markdown">r-markdown</a></li><li><a href="https://teachdatascience.com/tags/workflow">workflow</a></li><li><a href="https://teachdatascience.com/tags/visualization">visualization</a></li><li><a href="https://teachdatascience.com/tags/rstudio">rstudio</a></li><li><a href="https://teachdatascience.com/tags/python">python</a></li><li><a href="https://teachdatascience.com/tags/statistics">statistics</a></li><li><a href="https://teachdatascience.com/tags/collaboration">collaboration</a></li><li><a href="https://teachdatascience.com/tags/communication">communication</a></li><li><a href="https://teachdatascience.com/tags/ethics">ethics</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://teachdatascience.com/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

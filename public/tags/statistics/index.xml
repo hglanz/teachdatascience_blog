@@ -23,6 +23,18 @@ Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that comm
     </item>
     
     <item>
+      <title>One model to rule them all</title>
+      <link>https://teachdatascience.com/onemodel.utf8/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://teachdatascience.com/onemodel.utf8/</guid>
+      <description>As we near the end of our summer posts, we&amp;rsquo;ve started to think more broadly about statistics as well as data science courses. Today&amp;rsquo;s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
+Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.
+
+    Cheatsheets in R and Python describe how standard statistical tests (e.</description>
+    </item>
+    
+    <item>
       <title>The conversation around p-values</title>
       <link>https://teachdatascience.com/pvals/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
@@ -60,16 +72,6 @@ The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Hort
     </item>
     
     <item>
-      <title>Less Volume More Creativity in R</title>
-      <link>https://teachdatascience.com/mosaic.knit/</link>
-      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://teachdatascience.com/mosaic.knit/</guid>
-      <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
-The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
-    </item>
-    
-    <item>
       <title>infer</title>
       <link>https://teachdatascience.com/infer/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
@@ -100,12 +102,31 @@ We’ve been using the data science cycle promulgated by Hadley Wickham and Garr
     </item>
     
     <item>
+      <title>Watching an expert work through a data analysis using the tidyverse</title>
+      <link>https://teachdatascience.com/screencast.utf8/</link>
+      <pubDate>Mon, 03 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/screencast.utf8/</guid>
+      <description>Watching an expert work through a data analysis using the tidyverse Teaching Data Science is challenging since it involves teaching the entire data science analysis cycle. While it&amp;rsquo;s helpful for students to experience this process, they can often feel at sea in terms of the decisions they need to make and the iterative process of exploration, modeling, summarization.
+We&amp;rsquo;ve been using the data science cycle promulgated by Hadley Wickham and Garrett Grolemund (both from RStudio) that was published in their excellent book: R for Data Science, https://r4ds.</description>
+    </item>
+    
+    <item>
       <title>Introduction: A summer of data science education</title>
       <link>https://teachdatascience.com/intro/</link>
       <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
       
       <guid>https://teachdatascience.com/intro/</guid>
       <description>Why another Data Science Education blog?This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we’re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
+    </item>
+    
+    <item>
+      <title>Introduction: A summer of data science education</title>
+      <link>https://teachdatascience.com/intro.knit/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>https://teachdatascience.com/intro.knit/</guid>
+      <description>Why another Data Science Education blog? This is an exciting time to be teaching students how to extract meaning from data. Amidst the flood of information available in almost all domains there have been a flourishing of powerful, open-source tools to help with the process. For instructors, the many changes can be hard to keep up with. In this blog, we&amp;rsquo;re hoping to create a roadmap for faculty development that will ease the learning curve and help busy people incorporate new tools and approaches into their teaching.</description>
     </item>
     
   </channel>
