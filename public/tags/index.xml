@@ -7,33 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>education</title>
-      <link>/tags/education/</link>
-      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ethics</title>
-      <link>/tags/ethics/</link>
-      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ethics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>communication</title>
       <link>/tags/communication/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/communication/</guid>
       <description></description>
@@ -42,9 +24,45 @@
     <item>
       <title>entertainment</title>
       <link>/tags/entertainment/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/entertainment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ethics</title>
+      <link>/tags/ethics/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>predictive analytics</title>
+      <link>/tags/predictive-analytics/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/predictive-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>teamwork</title>
+      <link>/tags/teamwork/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/teamwork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>/tags/education/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/education/</guid>
       <description></description>
     </item>
     
@@ -355,15 +373,6 @@
     </item>
     
     <item>
-      <title>predictive analytics</title>
-      <link>/tags/predictive-analytics/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/predictive-analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>regression modeling</title>
       <link>/tags/regression-modeling/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
@@ -450,15 +459,6 @@
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/community/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>teamwork</title>
-      <link>/tags/teamwork/</link>
-      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/teamwork/</guid>
       <description></description>
     </item>
     

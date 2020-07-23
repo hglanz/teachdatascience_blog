@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Philosophical Ethics for Data Science</title>
+      <link>/philosophy/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/philosophy/</guid>
+      <description>In philosophy departments, classes and modules centered around data ethics are not a new thing. The ethical challenges around working with data are not fundamentally different from the ethical challenges philosophers have always faced. But putting an ethical framework around data science principles (see here and here) is indeed new for most data scientists, and for many of us, we are woefully under-prepared to teach so far outside our comfort zone.</description>
+    </item>
     
     <item>
       <title>Hippocratic Oath</title>

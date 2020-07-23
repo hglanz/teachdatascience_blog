@@ -1,0 +1,176 @@
+---
+title: "Philosophical Ethics for Data Science"
+author: "Jo Hardin"
+date: "2020-07-23"
+output:
+  html_document:
+    df_print: paged
+tags:
+- communication
+- ethics
+- predictive-analytics
+- teamwork
+- entertainment
+categories: R
+---
+
+
+
+<p>In philosophy departments, classes and modules centered around data ethics are not a new thing. The ethical challenges around working with data are not fundamentally different from the ethical challenges philosophers have always faced. But putting an ethical framework around data science principles (see <a href="https://plato.stanford.edu/entries/ethics-computer/">here</a> and <a href="https://plato.stanford.edu/entries/ethics-internet-research/">here</a>) is indeed <strong>new for most data scientists</strong>, and for many of us, we are woefully under-prepared to teach so far outside our comfort zone.</p>
+<p>We start with a grounding in the definition of Ethics:</p>
+<blockquote>
+<p><strong>Ethics</strong>, also called <strong>moral philosophy</strong>, has three main branches:</p>
+</blockquote>
+<blockquote>
+<p><a href="https://www.oxfordbibliographies.com/view/document/obo-9780195396577/obo-9780195396577-0006.xml"><strong>Applied ethics</strong></a> “is a branch of ethics devoted to the treatment of moral problems, practices, and policies in personal life, professions, technology, and government.”</p>
+</blockquote>
+<blockquote>
+<p><a href="https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199234769.001.0001/oxfordhb-9780199234769-e-2"><strong>Ethical theory</strong></a> “is concerned with the articulation and the justification of the fundamental principles that govern the issues of how we should live and what we morally ought to do. Its most general concerns are providing an account of moral evaluation and, possibly, articulating a decision procedure to guide moral action.”</p>
+</blockquote>
+<blockquote>
+<p><a href="https://plato.stanford.edu/entries/metaethics/"><strong>Metaethics</strong></a> “is the attempt to understand the metaphysical, epistemological, semantic, and psychological, presuppositions and commitments of moral thought, talk, and practice.”</p>
+</blockquote>
+<p>While, unfortunately, there are myriad examples of ethical data science problems (see, for example, blog posts <a href="https://teachdatascience.com/bookclub/">bookclub</a> and <a href="https://teachdatascience.com/datafem/">data feminism</a>), today’s entry connects some of the broader data science ethics issues with the existing philosophical literature. We point out that we are only scratching the surface and a deeper dive might involve education in related philosophical fields (epistemology, metaphysics, or philosophy of science), philosophical methodologies, and ethical schools of thought. You can peruse all of these through, for example, a course or readings introducing the discipline of philosophy. Indeed, maybe this blog post will whet your appetite to create a vital interdisciplinary bridge (here between philosophy and data science) which can only enhance both fields.</p>
+<p>Below we provide some thoughts on how to approach a data science problem using a philosophical lens.</p>
+<div id="case-study-to-structure-ethical-discussion" class="section level2">
+<h2>Case Study to Structure Ethical Discussion</h2>
+<p>Many ethics case studies provided in a classroom setting describe algorithms built on data which are meant to predict outcomes. Large scale algorithmic decision making presents particular ethical predicaments because of both the scale of impact and the “black-box” sense of how the algorithm is generating predictions.</p>
+<p>Consider the well-known issue of using facial recognition software in policing. There are many questions surrounding the policing issue: what are the action options with respect to the outcome of the algorithm? What are the good and bad aspects of each action and how are these to be weighed against each other?</p>
+<div class="figure">
+<img src="LAPD.png" alt="https://www.cnn.com/2019/09/12/tech/california-body-cam-facial-recognition-ban/index.html" />
+<p class="caption"><a href="https://www.cnn.com/2019/09/12/tech/california-body-cam-facial-recognition-ban/index.html" class="uri">https://www.cnn.com/2019/09/12/tech/california-body-cam-facial-recognition-ban/index.html</a></p>
+</div>
+<p>The two main ethical concerns surrounding facial recognition software break down into how the algorithms were developed and how the algorithm is used. When thinking about the questions below, reflect on the good aspects and the bad aspects and how one might weight the good versus the bad.</p>
+<div id="creating-the-algorithm" class="section level4">
+<h4>Creating the algorithm</h4>
+<ul>
+<li>What data should be used?
+<ul>
+<li>If the accuracy rates of the algorithm differ based on the demographics of the subgroups within the data, is more data and testing required?</li>
+</ul></li>
+<li>Who and what criteria should be used to tune the algorithm?
+<ul>
+<li>Who should be involved in decisions on the tuning parameters of the algorithm?</li>
+<li>Which optimization criteria should be used (e.g., accuracy? false positive rate? false negative rate?)</li>
+</ul></li>
+<li>Issues of access:
+<ul>
+<li>Who should own or have control of the facial image data?
+<ul>
+<li>Do individuals have a right to keep their facial image private from being in databases?<br />
+</li>
+<li>Do individuals have a right to be notified that their facial image is in the data base? For example, if I ring someone’s doorbell and my face is captured in a database, do I need to be told? [While traditional human subjects and IRB requirements necessitate consent to be included in any research project, in most cases it is legal to photograph a person without their consent.]<br />
+</li>
+</ul></li>
+<li>Should the data be accessible to researchers working to make the field more equitable? What if allowing accessibility thereby makes the data accessible to bad actors?</li>
+</ul></li>
+</ul>
+</div>
+<div id="using-the-algorithm" class="section level4">
+<h4>Using the algorithm</h4>
+<ul>
+<li>Issues of personal impact:
+<ul>
+<li>The software might make it easier to accurately associate an individual with a crime, but it might also make it easier to <em>mistakenly</em> associate an individual with a crime. How should the pro vs con be weighed against each other?</li>
+<li>Do individuals have a right to know, correct, or delete personal information included in a database?</li>
+</ul></li>
+<li>Issues of societal impact:
+<ul>
+<li>Is it permissible to use a facial recognition software which has been trained primarily on Caucasian faces, given that this results in false positive and false negative rates that are not equally dispersed across racial lines?</li>
+<li>While the software might make it easier to protect against criminal activity, it also makes it easier to undermine specific communities when their members are mistakenly identified with criminal activity. How should the pro vs con of different communities be weighed against each other?</li>
+</ul></li>
+<li>Issues of money:
+<ul>
+<li>Is it permissible for a software company to profit from an algorithm while having no financial responsibility for its misuse or negative impacts?</li>
+<li>Who should pay the court fees and missed work hours of those who were mistakenly accused of crimes?</li>
+</ul></li>
+</ul>
+<p>To settle the questions above, we need to study various ethical theories, and it turns out that the different theories may lead us to different conclusions. As non-philosophers, we recognize that the suggested readings and ideas may come across as overwhelming. If you are overwhelmed, we suggest that you choose one ethical theory, think carefully about how it informs decision making, and help your students to connect the ethical framework to a data science case study.</p>
+<!--Mittelstadt et al. (2016) break down parts of the algorithmic decision-making process as belonging to two sets of ethical concerns: epistemic and normative.
+
+!["The ethics of Algorithms: Mapping the debate", Mittelstadt et al. (2016). https://journals.sagepub.com/doi/pdf/10.1177/2053951716679679](episnorm.png){ width=60% }
+
+
+
+Their organizing structure given above takes into account that algorithms:
+
+> (1) turn data into evidence for a given outcome (henceforth
+conclusion), and that this outcome is then used to 
+> (2) trigger and motivate an action that (on its own, or when
+combined with other actions) may not be ethically neutral. This work is performed in ways that are complex and (semi-)autonomous, which 
+> (3) complicates apportionment of responsibility for effects of actions driven by algorithms.
+
+-->
+</div>
+</div>
+<div id="some-readings-in-philosophy" class="section level2">
+<h2>Some Readings in Philosophy</h2>
+<p>In order to break down the algorithmic steps outlined above, students probably need some grounding in ethical structures. You might choose to use only one of the following as a lens to investigate an ethical case study. Alternatively, you may provide snippets from a variety of sources and compare how the different ethical frameworks would inform the algorithmic decisions.</p>
+<ul>
+<li><a href="https://plato.stanford.edu/entries/logic-epistemic/">Epistemic Logic</a> centers around knowing through a sequence of implications from one step to the next.
+<ul>
+<li>Boaz Miller and Isaac Record <a href="https://www.cambridge.org/core/journals/episteme/article/justified-belief-in-a-digital-age-on-the-epistemic-implications-of-secret-internet-technologies/5E6041428F4876B8BA2A8EF424AE6CF6">Justified Belief in a Digital Age: on the epistemic implications of secret internet technologies</a> <em>Privacy, Secrecy, and Epistemology</em>, 2013.</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Normative_ethics">Ethical Theories</a> are different foundational frameworks for answering such questions as what is morally right and wrong.
+<ul>
+<li><p><a href="https://plato.stanford.edu/entries/ethics-virtue/">Virtue ethics</a>:</p>
+<ul>
+<li>Julia Annas <a href="https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780195325911.001.0001/oxfordhb-9780195325911-e-19">Virtue Ethics</a></li>
+</ul></li>
+<li><p><a href="https://plato.stanford.edu/entries/kant-moral/">Kantian ethics</a></p>
+<ul>
+<li>Christine Korsgaard <a href="https://www.cambridge.org/core/books/sources-of-normativity/5A85034A6566FDFDE374073A015CBD2A">The Sources of Normativity</a><br />
+</li>
+<li>Barbara Herman <a href="https://www.hup.harvard.edu/catalog.php?isbn=9780674697188">The Practice of Moral Judgment</a></li>
+</ul></li>
+<li><p><a href="https://plato.stanford.edu/entries/consequentialism/">Consequentialism</a>:</p>
+<ul>
+<li>Utilitarianism originated from work from <a href="https://www.britannica.com/topic/utilitarianism-philosophy">Mill and Bentham</a>, two philosophers &amp; economists who are <a href="https://peped.org/philosophicalinvestigations/compare-bentham-v-mill38/">compared here</a>.<br />
+</li>
+<li><a href="https://www.veryshortintroductions.com/view/10.1093/actrade/9780198728795.001.0001/actrade-9780198728795">Utilitarianism: A Very Short Introduction</a>, by Katarzyna de Lazari-Radek and Peter Singer</li>
+</ul></li>
+<li><p><a href="https://plato.stanford.edu/entries/ethics-deontological/">Deonotological Ethics</a></p></li>
+<li><p><a href="https://plato.stanford.edu/entries/contractualism/">Contractualism</a></p></li>
+<li><p><a href="https://plato.stanford.edu/entries/feminism-ethics/">Feminist Ethics</a></p></li>
+</ul></li>
+</ul>
+<!--
+## Making Decisions Based on Algorithms
+
+An understanding of the ethical challenges in data science is one part of the discussion.  The follow-up concerns issues of "what do we do from here?" Ananny (2015) breaks down the follow-up decision making process into three different approaches:
+
+* **deontological**:  based on a set of rules, is the action itself right or wrong?  [Kantian ethics](https://en.wikipedia.org/wiki/Kantian_ethics) provides the structure for deontological ethical theory, requiring a set of moral laws that apply to all people without contradictions.
+* **teleological**: based on the consequences of the action and the end goal, what produces the most good? [Teleological](https://en.wikipedia.org/wiki/Teleology) is grounded in the existence of God and highlights an *extrinsic* motivator for decision making.  Much of the work comes from the writings of Plato and Aristotle.
+* **virtue**: based on internal moral compass, is the action the "right" thing to do? [Virtue ethics](https://en.wikipedia.org/wiki/Virtue_ethics) characterizes internal characteristics that make the possessor a good person.  Virtues are in contrast to single decisions, actions, or feelings.  Virtue ethics originated with Socrates. In [Meno](https://en.wikipedia.org/wiki/Meno), Socrates works to determine the definition of virtue.   
+-->
+<p>We note that some of the links above point to reference articles (instead of original or scholarly works). While we recognize the value in reading original sources, we also have experience in the difficulty of grappling with new philosophical ideas (especially for students in disciplines outside of philosophy or ethics). If you are using original sources in your classroom that are accessible to data science students, please add the sources to our discussion of this blog, as we are certain that the citations would be much appreciated in the data science community!</p>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><p>An excellent and comprehensive list of <a href="https://github.com/jknowles/ethical_data_science_reader/blob/master/Ethical%20and%20Inclusive%20Data%20Science%20Readings.pdf">Readings in Ethical Data Science</a> by Jared Knowles</p></li>
+<li><p>Eirini Malliaraki put together a <a href="https://medium.com/@eirinimalliaraki/toward-ethical-transparent-and-fair-ai-ml-a-critical-reading-list-d950e70a70ea">critical reading list</a> for ethical, transparent, and fair AI/ML.</p></li>
+<li><p>Shannon Vallor, <a href="https://www.scu.edu/media/ethics-center/technology-ethics/IntroToDataEthics.pdf">An Introduction to Data Ethics</a> is a complete text with ethical frameworks and corresponding case studies.</p></li>
+<li><p>A compilation of many sets of <a href="http://aiethics.site/course-materials">course materials</a> for Data Ethics courses across the world.</p></li>
+<li><p>Brent Mittelstadt, Patrick Allo, Mariarosaria Taddeo, Sandra Wachter, and Luciano Floridi, <a href="https://journals.sagepub.com/doi/pdf/10.1177/2053951716679679">The ethics of algorithms: Mapping the debate</a>, <em>Big Data &amp; Society</em>, 2016.</p></li>
+<li><p>Mike Loukides, Hilary Mason, and DJ Patil, <a href="https://www.oreilly.com/library/view/ethics-and-data/9781492043898/">Ethics and Data Science</a>, 2018.</p></li>
+<li><p>Thinking beyond Western literature:</p>
+<ul>
+<li><a href="https://plato.stanford.edu/entries/african-ethics/">African Ethics</a></li>
+<li><a href="https://plato.stanford.edu/entries/ethics-chinese/">Chinese Ethics</a></li>
+<li>Chris Fraser’s <a href="http://cjfraser.net/projects/mohist-thought/">work on Mohism</a></li>
+<li>Damien Keown <a href="https://global.oup.com/academic/product/buddhist-ethics-a-very-short-introduction-9780192804570?cc=us&amp;lang=en&amp;">Buddhist Ethics: A Very Short Introduction</a></li>
+</ul></li>
+</ul>
+<div id="acknowledgements" class="section level4">
+<h4>Acknowledgements</h4>
+<p>Thanks much to Julie Tannenbaum and Michael Spezio whose careful reads of previous drafts led to a much improved blog entry.</p>
+</div>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Last summer we wrote a series of blog entries designed to start conversations around teaching data science, <a href="https://teachdatascience.com/">Teach Data Science</a>. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp; exploration, communication, and key reports and findings on data science.</p>
+<p>One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science. We have now found ourselves in the summer of 2020, overwhelmed by the state of the world and re-committed to the ethical challenges which can help data science be a positive force for change.</p>
+<p>Although none of us are experts in ethics, we have all included ethics discussions in our classrooms for many years. In the weeks to come, we will share some of the ways we engage our students in these important topics. We will provide resources for readings, examples, datasets, and exercises. We believe that data ethics are part of every data science analysis and classroom experience, and we hope that this summer’s blog will entice you into presenting ethical dilemmas and related conversations to your students early and often.</p>
+<p>During the summer of 2020, we plan to write a dozen blog entries. We hope that you bookmark the site and check in regularly. Want a reminder? Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+</div>
+</div>
