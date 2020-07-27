@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Engaging data science students with COVID-19 data  &middot; Teach Data Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="education, ethics, ">
+
+
+<meta property="og:title" content="Engaging data science students with COVID-19 data  &middot; Teach Data Science ">
+<meta property="og:site_name" content="Teach Data Science"/>
+<meta property="og:url" content="/covid/" />
+<meta property="og:locale" content="en">
+
+<meta property="content-source" content="post\2020_07_27_covid\covid.html">
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2020-07-27T00:00:00Z" />
+<meta property="og:article:modified_time" content="2020-07-27T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="education">
+    
+<meta property="og:article:tag" content="ethics">
+    
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="/covid/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.55.5" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.9cecddc0b0a806321dce2745c30cd884bab99ef1359b5380fd4eebe290bb48ce7d3bd9e879986198c555a3b400fc233603177172e60fb4652500b61c152c4034.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="Teach Data Science" src="https://raw.githubusercontent.com/hglanz/DS-Blog-Ex-Test/master/teachdslogosnip2.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="/about/"  title="About">
+                  <i class='fa fa-road'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="/tags/"  title="Tags">
+                  
+                  Tags
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Engaging data science students with COVID-19 data
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2020-07-27">27 Jul, 2020</time>
+</small>
+
+
+  <small>
+    &middot; by Guest entry: Maria Tackett and Mine Çetinkaya-Rundel
+  
+  &middot; Read in about 8 min
+  &middot; (1595 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Engaging%20data%20science%20students%20with%20COVID-19%20data&amp;url=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fcovid%2f&amp;title=Engaging%20data%20science%20students%20with%20COVID-19%20data" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Engaging%20data%20science%20students%20with%20COVID-19%20data&amp;body=Check out this site %2fcovid%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="/tags/education" class="label label-primary">education</a>
+  
+  <a href="/tags/ethics" class="label label-primary">ethics</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+
+<div id="covid-19-case-study" class="section level2">
+<h2>COVID-19 Case Study</h2>
+<p>Today we have a guest entry authored by Maria Tackett (Duke University) and
+Mine Çetinkaya-Rundel (University of Edinburgh, RStudio, and Duke) about engaging data science students with COVID-19 data. They write:</p>
+<p>Given the prevalence of data and statistics in many corners of society, it is not hard to find real-world examples that can be used in the classroom. Using real and relevant data can help show students how they apply what they’ve learned outside of the classroom and it helps students connect what they’re learning to what is happening on the news, online, and conversations they’re having with their peers.</p>
+<p>Though there are benefits to use timely data to help students make these connections, there are some topics and data sets that warrant additional consideration before an instructor uses them in class. One such topic is the COVID-19 pandemic. Since early 2020, there has been a deluge of new data sets, visualizations (good and bad), and statistical models aiming to help the public better understand the pandemic and its impacts. Though this has made it easier to incorporate this topic in statistics classes through in-class examples or data analysis, this could be a challenging topic for students to discuss given the impacts and ongoing effects from the pandemic that may be experienced by some students.</p>
+<p>Here we offer a few considerations instructors can make before using COVID-19 data for in-class examples or assignments.</p>
+</div>
+<div id="take-a-trauma-informed-approach" class="section level2">
+<h2>Take a “trauma-informed” approach</h2>
+<p>These considerations are based on the 2020 eCOTS panel <a href="https://www.causeweb.org/cause/ecots/ecots20/panels/2"><em>Engaging Students during the COVID-19 Health Crisis</em></a> by <a href="https://directory.sph.umn.edu/bio/sph-a-z/laura-le">Laura Le</a>, <a href="http://www.personal.psu.edu/klm47/">Kari Lock Morgan</a>, and <a href="https://www.lucymcgowan.com/">Lucy McGowan</a>. One of the primary messages from the panel is that the pedagogy should be “trauma-informed” due to the potential direct impact on students. This approach can help instructors create an environment where students feel safe to discuss this sensitive topic while reducing the risk of retraumatizing students who may be directly impacted by the pandemic.</p>
+<div class="figure">
+<img src="ecotspanel.png" alt="eCOTS panel in May 2020, recording available: https://www.causeweb.org/cause/ecots/ecots20/panels/2" style="width:70.0%" />
+<p class="caption">eCOTS panel in May 2020, recording available: <a href="https://www.causeweb.org/cause/ecots/ecots20/panels/2" class="uri">https://www.causeweb.org/cause/ecots/ecots20/panels/2</a></p>
+</div>
+<p>Here are a few practical steps the panelists shared to take a trauma-informed approach when using COVID-19 data in the classroom.</p>
+<ul>
+<li>Start by taking an anonymous poll asking students whether or not they want to talk about data related to the pandemic in class. If the data will be used multiple times in a semester, it is good to repeat the poll to get point-in-time feedback, since students’ feelings may change as the situation around the pandemic evolves.</li>
+<li>Indicate in the syllabus when data about the pandemic will be used, so students know when to expect the topic to be discussed in class.</li>
+<li>Create an alternative assignment or discussion prompt for students who do not wish to discuss the pandemic.</li>
+<li>If the course is designed for a more specialized audience, such as biostatistics or graduate students, the instructor can address the fact that the topic is sensitive but is also an important area of research. This is also an opportunity to talk about strategies for maintaining a healthy relationship with emotions when doing research on sensitive topics.</li>
+<li>Instructors should be honest about our experience with working with COVID-19 data and, where appropriate, provide a disclaimer that we are not experts in epidemiology and infectious diseases, that we have not done an exhaustive literature review, and that we can’t vouch for everyone’s models and predictions.</li>
+</ul>
+</div>
+<div id="focus-on-other-societal-impacts" class="section level2">
+<h2>Focus on other societal impacts</h2>
+<p>Another approach to incorporating COVID-19 data in the classroom is to use examples that do not focus on direct health outcomes of the pandemic. This was the approach taken at this year’s DataFest events, where students were encouraged to analyze a societal impact of the pandemic other than direct health outcomes. Potential topics include</p>
+<ul>
+<li>How has the pandemic affected the airline industry and what are some potential downstream effects of this other than economic strain on the industry?</li>
+<li>As a student, how would you quantify the effect of the pandemic on your education?</li>
+<li>With shelter-in-place / lockdown orders, many workers have started working from home, which requires internet access. How prepared was the nation / your local area for this shift?</li>
+<li>How has the spread of the pandemic affected people’s opinion on government tracking and privacy?</li>
+<li>What is the effect of the social distancing / shelter-in-place / lockdown recommendations and policies on pollution?</li>
+<li>How can we quantify the potential effects on nutrition and general health of the public, outside of those affected by the virus?</li>
+<li>How are refugees affected by COVID-19?</li>
+</ul>
+<p>This allows students to still explore data that is timely and relevant to our current moment, while not having to engage with some of the most sensitive data - the direct health outcomes.</p>
+<p>For inspiration, check out projects by students who participated in DataFest 2020 in the following institutions:</p>
+<ul>
+<li><a href="https://www2.stat.duke.edu/datafest-covid19/winners.html">Duke University</a></li>
+<li><a href="http://datafest.stat.ucla.edu/2020-results/2020-winners/">UCLA</a></li>
+<li><a href="http://bit.ly/df-edi">University of Edinburgh</a></li>
+<li><a href="https://datafestuoft.github.io/">University of Toronto</a></li>
+</ul>
+</div>
+<div id="visualising-covid-19" class="section level2">
+<h2>Visualising COVID-19</h2>
+<p>COVID-19 is the pandemic of data visualisation and infographics. From <a href="https://en.wikipedia.org/wiki/Flattening_the_curve">#FlattenTheCurve</a> to the <a href="https://www.washingtonpost.com/graphics/2020/world/corona-simulator/">Washington Post article on exponential spread</a> to the <a href="https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441">pink graphs of the Financial Times</a>, we have been consuming these visualisations since the beginning of the outbreak. Some of these data visualisations and infographics have had an extremely important effect on public health awareness and some have been the source of much critique due to how they misrepresent the underlying data.</p>
+<div class="figure">
+<img src="FTgraphic.png" alt="Financial Times, updated July 22, 2020" style="width:70.0%" />
+<p class="caption">Financial Times, updated July 22, 2020</p>
+</div>
+<p>Below are a few ways you can engage students with data visualisations based on COVID-19 data:</p>
+<ul>
+<li><p>Critique a data visualisation: You might ask the students to find a visualisation of COVID-19 data, or provide options for them. We recommend not just focusing on visualisations that are clearly bad. We have been collecting visualisations of COVID-19 data <a href="https://github.com/mine-cetinkaya-rundel/covid19-viz">in a GitHub repository</a>, and we hope you will contribute some you think would be good fits for this exercise there as well!</p></li>
+<li><p>Improve a data visualisation: We recently wrote a piece for CHANCE magazine titled “<a href="https://doi.org/10.1080/09332480.2020.1754074">From Drab to Fab: Teaching Visualization via Incremental Improvements</a>” (you can find an open version of the piece <a href="https://github.com/mine-cetinkaya-rundel/take-a-chance/blob/master/2020-02-drab-to-fab/2020-02-drab-to-fab.pdf">here</a>). In this piece we describe how to structure a visualisation improvement exercise. This type of exercise could be tagged on to the previous critique exercise, in cases where the raw data is available or can be recreated from the visualisation.</p></li>
+</ul>
+<p>We should note that it is especially important to keep the context, a pandemic that has taken hundreds of thousands lives and turned many others upside down, while working on these data visualisations. Especially when critiquing poorly made data visualisations it’s easy to get caught up in the technical errors and how to correct them and lose sight of <em>why</em> it’s so important for visualisations of COVID-19 data to reflect the truth accurately and communicate it as effectively as possible.</p>
+</div>
+<div id="data-and-analysis-examples" class="section level2">
+<h2>Data and analysis examples</h2>
+<p>Visit the websites below to find data, visualizations, class activities, and other resources helpful for teaching. If you have data or examples you’d like to share, you can also contribute to these sites.</p>
+<ul>
+<li><a href="https://coronavirus-teaching-resources.netlify.app">Teaching Statistics During the COVID-19 Health Crisis</a></li>
+<li><a href="https://mine-cetinkaya-rundel.github.io/covid19-r/">covid19-r: Collection of analyses, packages, visualizations of COVID-19 data in R</a></li>
+<li><a href="https://tinyletter.com/data-is-plural/letters/data-is-plural-2020-07-15-edition">Data Is Plural - 2020.07.15 edition</a></li>
+</ul>
+</div>
+<div id="further-reading" class="section level2">
+<h2>Further reading</h2>
+<ul>
+<li><a href="https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2020.305710">Teaching Public Health Will Never Be the Same</a> by Nadia Abuelezam</li>
+<li><a href="https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model">Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> by Maggie Koerth, Laura Bronner, and Jasmine Mithani</li>
+<li><a href="https://link.medium.com/cJR6WVlFX7">Ten Considerations Before You Create Another Chart About COVID-19</a> by Amanda Makulec</li>
+<li><a href="https://www.nytimes.com/2020/02/27/learning/dangerous-numbers-teaching-about-data-and-statistics-using-the-coronavirus-outbreak.html">Dangerous Numbers? Teaching About Data and Statistics Using the Coronavirus Outbreak</a> by Patrick Honner</li>
+<li>Look forward to our column “Taking the Chance in the Classroom: COVID-19 data in the classroom” in the upcoming volume of <a href="https://www.tandfonline.com/toc/ucha20/current">CHANCE</a>!</li>
+</ul>
+</div>
+<div id="bio" class="section level2">
+<h2>Bio</h2>
+<p>This is a guest post by friends of the blog Maria Tackett and Mine Çetinkaya-Rundel. Maria holds a PhD in Statistics from the University of Virginia and is now an Assistant Professor of the Practice in the Department of Statistical Science at Duke University. She is active on <a href="https://twitter.com/MT_statistics">twitter</a> and on <a href="https://github.com/matackett">GitHub</a>. She can be found at <a href="https://www.mariatackett.net/">https://www.mariatackett.net/</a>. Mine holds a PhD in Statistics from UCLA and is a Senior Lecturer at University of Edinburgh and a Data Scientist at RStudio. She <a href="https://twitter.com/minebocek">tweets</a> and engages regularly on <a href="https://github.com/mine-cetinkaya-rundel">GitHub</a>. Mine’s <a href="http://www2.stat.duke.edu/~mc301/">website</a> profiles her work which includes, among other things, her open access textbooks through <a href="https://www.openintro.org/">OpenIntro</a>.</p>
+</div>
+<div id="about-this-blog" class="section level2">
+<h2>About this blog</h2>
+<p>Last summer we wrote a series of blog entries designed to start conversations around teaching data science, <a href="https://teachdatascience.com/">Teach Data Science</a>. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp; exploration, communication, and key reports and findings on data science.</p>
+<p>One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science. We have now found ourselves in the summer of 2020, overwhelmed by the state of the world and re-committed to the ethical challenges which can help data science be a positive force for change.</p>
+<p>Although none of us are experts in ethics, we have all included ethics discussions in our classrooms for many years. In the weeks to come, we will share some of the ways we engage our students in these important topics. We will provide resources for readings, examples, datasets, and exercises. We believe that data ethics are part of every data science analysis and classroom experience, and we hope that this summer’s blog will entice you into presenting ethical dilemmas and related conversations to your students early and often.</p>
+<p>During the summer of 2020, we plan to write a dozen blog entries on data ethics. We hope that you bookmark the site and check in regularly. Want a reminder? Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+</div>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Engaging%20data%20science%20students%20with%20COVID-19%20data&amp;url=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2fcovid%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fcovid%2f&amp;title=Engaging%20data%20science%20students%20with%20COVID-19%20data" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Engaging%20data%20science%20students%20with%20COVID-19%20data&amp;body=Check out this site %2fcovid%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="/philosophy/" title="Philosophical Ethics for Data Science">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//teachdatascience-com.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="/covid/">Engaging data science students with COVID-19 data</a>
+          </li>
+        
+          <li>
+          <a href="/philosophy/">Philosophical Ethics for Data Science</a>
+          </li>
+        
+          <li>
+          <a href="/oath/">Hippocratic Oath</a>
+          </li>
+        
+          <li>
+          <a href="/datafem/">Data Feminism</a>
+          </li>
+        
+          <li>
+          <a href="/bookclub/">Bookclub on Data Science Ethics</a>
+          </li>
+        
+          <li>
+          <a href="/privacy/">Data Privacy</a>
+          </li>
+        
+          <li>
+          <a href="/ethicaldataviz/">Ethical Data Viz</a>
+          </li>
+        
+          <li>
+          <a href="/reintro/">Re-Introduction: Ethics in Data Science Education</a>
+          </li>
+        
+          <li>
+          <a href="/keepbusy/">Keeping Busy with Data Science</a>
+          </li>
+        
+          <li>
+          <a href="/nextsteps/">Next Steps</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/tags/education">education</a></li><li><a href="/tags/r-markdown">r-markdown</a></li><li><a href="/tags/workflow">workflow</a></li><li><a href="/tags/visualization">visualization</a></li><li><a href="/tags/communication">communication</a></li><li><a href="/tags/collaboration">collaboration</a></li><li><a href="/tags/statistics">statistics</a></li><li><a href="/tags/ethics">ethics</a></li><li><a href="/tags/rstudio">rstudio</a></li><li><a href="/tags/data-wrangling">data-wrangling</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/appernetic/hugo-bootstrap-premium">Bootstrap</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>. Designed and written in California and Massachusetts.
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2019 Copyright Teach Data Science
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  false , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "teachdslogosnip2.png",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" ></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

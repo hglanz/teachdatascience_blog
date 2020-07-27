@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Engaging data science students with COVID-19 data</title>
+      <link>/covid/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/covid/</guid>
+      <description>COVID-19 Case StudyToday we have a guest entry authored by Maria Tackett (Duke University) andMine Çetinkaya-Rundel (University of Edinburgh, RStudio, and Duke) about engaging data science students with COVID-19 data. They write:
+Given the prevalence of data and statistics in many corners of society, it is not hard to find real-world examples that can be used in the classroom. Using real and relevant data can help show students how they apply what they’ve learned outside of the classroom and it helps students connect what they’re learning to what is happening on the news, online, and conversations they’re having with their peers.</description>
+    </item>
     
     <item>
       <title>Philosophical Ethics for Data Science</title>
