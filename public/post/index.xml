@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Social Justice &amp; Data Science</title>
+      <link>/socialjustice/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/socialjustice/</guid>
+      <description>When we reflect on the origin of this blog, we remember that the goal was to consider new ideas about, provoke debate on, and provide examples for teaching data science. That is, we wanted the blog to help inform our own classrooms and those of our readers.
+Today’s blog entry is about bringing data science examples related to social justice into your classroom. There are myriad reasons why such examples are important for a data science classroom, but we recognize that treatment of sensitive topics should be done thoughtfully and with regard to the larger context surrounding the data.</description>
+    </item>
     
     <item>
       <title>Engaging data science students with COVID-19 data</title>

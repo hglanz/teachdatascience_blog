@@ -1,0 +1,89 @@
+---
+title: "Social Justice & Data Science"
+author: "Jo Hardin"
+date: "2020-07-29"
+output:
+  html_document:
+    df_print: paged
+tags:
+- communication
+- ethics
+- teamwork
+categories: R
+---
+
+
+
+<p>When we reflect on the origin of this blog, we remember that the goal was to consider new ideas about, provoke debate on, and provide examples for <strong>teaching</strong> data science. That is, we wanted the blog to help inform our own classrooms and those of our readers.</p>
+<p>Today’s blog entry is about bringing data science examples related to social justice into your classroom. There are myriad reasons why such examples are important for a data science classroom, but we recognize that treatment of sensitive topics should be done thoughtfully and with regard to the larger context surrounding the data. How were they were collected? And why? And by whom?</p>
+<div id="land-acknowledgment" class="section level2">
+<h2>Land Acknowledgment</h2>
+<p>As someone who lives and works in Southern California it is important to
+honor the original occupants of the place where we live and work. This land
+acknowledgment recognizes systemic and institutional systems of power that have oppressed Indigenous peoples, with many of the same systems in place today that continue to marginalize those with less power.</p>
+<blockquote>
+<p>With our deepest respects to the Tongva and Serrano Peoples, past, present, and emerging.</p>
+</blockquote>
+<div class="figure">
+<img src="Tongva.png" alt="http://www.laalmanac.com/history/hi05.php" style="width:70.0%" />
+<p class="caption"><a href="http://www.laalmanac.com/history/hi05.php" class="uri">http://www.laalmanac.com/history/hi05.php</a></p>
+</div>
+</div>
+<div id="on-language" class="section level2">
+<h2>On language</h2>
+<p>As data scientists, we are surrounded by numbers, but we must come to terms with language that can be as powerful as the associated analyses. A common refrain in teaching data science surrounds communication as a vital aspect of the data science pipeline. But we don’t often hear reflections on how and what we are communicating.</p>
+<p>Table 2.1 from <strong>Data Feminism</strong> describes words and concepts juxtaposed according to ideas of <em>securing power</em> versus <em>challenging</em> power.</p>
+<div class="figure">
+<img src="datajustice.jpeg" alt="Data Feminism https://datafeminism.io/" style="width:60.0%" />
+<p class="caption"><strong>Data Feminism</strong> <a href="https://datafeminism.io/" class="uri">https://datafeminism.io/</a></p>
+</div>
+</div>
+<div id="examples" class="section level2">
+<h2>Examples</h2>
+<div id="bias-vs-oppression" class="section level4">
+<h4>Bias vs Oppression</h4>
+<p><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">Machine Bias</a> by Angwin et al. describes an algorithm that predicts recidivism rates for individuals charged with a crime. The data used, obtained by a FOIA (Freedom of Information Act) request, is provided on the <a href="https://github.com/propublica/compas-analysis">associated GitHub site</a>.</p>
+<p>The data and associated analyses show clearly that the accuracy associated with predicted recidivism is similar across Black and white individuals. <strong>However</strong> Black individuals are predicted to recidivate with a false positive rate nearly double that of whites; white individuals are predicted to recidivate with a false negative rate nearly double that of Blacks.</p>
+<p>As the title of the article suggests, the recidivism algorithm is <strong>biased</strong> against Black defendants. However, the impact of the bias for Black defendants results in systematic <strong>oppression</strong> of liberty (false convictions) and franchisement (convictions lead to disenfranchisement in many states).</p>
+</div>
+<div id="fairness-vs-equity" class="section level4">
+<h4>Fairness vs Equity</h4>
+<p>We provide the image below to indicate the difference between being equal and equitable. We see that each person in the image on the right (equity) has the number of crates that they need to stand on in order to be able to watch the game. Additionally, we also recognize that the individuals are different heights, not because of their inherent worth (i.e., a deficit model) but because of opportunity gaps driven by the context around them.</p>
+<div class="figure">
+<img src="IISC_EqualityEquity.png" alt="Image credit: Interaction Institute for Social Change | Artist: Angus Maguire." style="width:50.0%" />
+<p class="caption"><a href="https://interactioninstitute.org/illustrating-equality-vs-equity/">Image credit: Interaction Institute for Social Change | Artist: Angus Maguire</a>.</p>
+</div>
+<p><a href="https://openpolicing.stanford.edu/">The Stanford Open Policing Project</a> has provided a comprehensive <a href="https://openpolicing.stanford.edu/data/">data repository</a> including traffic stops for dozens of state and local police departments across the US.</p>
+<p>An <a href="https://www.nature.com/articles/s41562-020-0858-1">analysis of the data</a> indicates that there are substantial racial discrepancies in traffic policing. The analysis does an excellent job creating comparison groups to make their claims, yet, there is still room for understanding the larger context of traffic and racial discrepancies.</p>
+<p>Consider one system that created structural racial discrepancies in the US. <a href="https://en.wikipedia.org/wiki/Redlining">Redlining</a> refers to the systematic exclusion of people of color from various governmental services and, in particular, housing that took place in the second half of the 20th century. The use of a neighborhood’s racial demographics as a significant component in determining property values prevented people of color from obtaining mortgages, and specifically from participating in Federal mortgage lending programs. As a result home ownership levels remain far lower for people of color. Such housing discrimination resulted in many individuals of color needing to live far distances from their employment, a trend which continues today.</p>
+<p>If we understand the larger systems which influence where people live and work, do we believe that traffic regulations should be implemented equally or equitably? To be clear, we note, the data and analysis suggest that the traffic policing happens neither equitably nor equally. But we are remiss in having the discussion of traffic policing if it is not done in a larger context of other injustices.</p>
+</div>
+</div>
+<div id="in-the-classroom" class="section level2">
+<h2>In the Classroom</h2>
+<p>We recognize that bringing up data and issues of social justice in the classroom can be fraught. The work we do to become anti-racist is a life-long endeavor and a practice in which we are always learning and growing. For us, we try to listen carefully, to recognize that our impact outweighs our intention, and to avoid becoming defensive.</p>
+<p>Our students help us on this journey, and they appreciate the effort we take to bring difficult conversations to the classroom in a thoughtful way. Surveying them anonymously and asking for feedback demonstrates that you have an open mind and are ready to listen. Their comments may provide you with creative approaches to the classroom environment.</p>
+<p>Our colleagues in other disciplines (e.g., the humanities and social sciences) are important partners, as many teach and research about these highly charged yet critically important questions. As always, we value and encourage interdisciplinary collaboration!</p>
+<div id="learn-more" class="section level3">
+<h3>Learn more</h3>
+<ul>
+<li><p><a href="https://education.rstudio.com/blog/2020/06/native-classroom/">Data analysis for social justice in a Native classroom</a> by <a href="http://www.nicolethompsongonzalez.com/">Nic Thompson Gonzalez</a></p></li>
+<li><p><a href="https://datapopalliance.org/">Data-Pop Alliance</a> is a collaborative laboratory created by the Harvard Humanitarian Initiative, MIT Connection Science, and Overseas Development Institute.</p></li>
+<li><p><a href="https://www.naco.org/node/129601">Data-Driven Justice</a> initiative brings communities together to disrupt the cycle of incarceration and crisis.</p></li>
+<li><p><a href="http://connection.mit.edu/">MIT Connection Science</a> The world’s largest digital networks afford limitless new possibilities … some promising, others alarming. Our aim is to revolutionize these networks, rather than be controlled by them, through intensive, multi-disciplinary research that provides ground-breaking insights into human behavior and fosters innovations that improve lives.</p></li>
+<li><p><a href="https://www.datakind.org/">DataKind Labs</a> brings high-impact organizations together with leading data scientists to use data science in the service of humanity.</p></li>
+<li><p>Pierson et al. <a href="https://www.nature.com/articles/s41562-020-0858-1">A large-scale analysis of racial disparities in police stops across the United States</a>, <em>Nature: Human Behaviour</em>, 2020.</p></li>
+</ul>
+<div id="acknowledgments" class="section level4">
+<h4>Acknowledgments</h4>
+<p>Thanks much to Leah Schmalzbauer and Karen Sanchez-Eppler for useful conversations about how to address issues of diversity and inclusion in the classroom and our teaching.</p>
+</div>
+</div>
+<div id="about-this-blog" class="section level3">
+<h3>About this blog</h3>
+<p>Last summer we wrote a series of blog entries designed to start conversations around teaching data science, <a href="https://teachdatascience.com/">Teach Data Science</a>. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp; exploration, communication, and key reports and findings on data science.</p>
+<p>One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science. We have now found ourselves in the summer of 2020, overwhelmed by the state of the world and re-committed to the ethical challenges which can help data science be a positive force for change.</p>
+<p>Although none of us are experts in ethics, we have all included ethics discussions in our classrooms for many years. In the weeks to come, we will share some of the ways we engage our students in these important topics. We will provide resources for readings, examples, datasets, and exercises. We believe that data ethics are part of every data science analysis and classroom experience, and we hope that this summer’s blog will entice you into presenting ethical dilemmas and related conversations to your students early and often.</p>
+<p>During the summer of 2020, we plan to write a dozen blog entries starting on Monday, July 6th. We hope that you bookmark the site and check in regularly. Want a reminder? Sign up for emails at <a href="https://groups.google.com/forum/#!forum/teach-data-science" class="uri">https://groups.google.com/forum/#!forum/teach-data-science</a> (you must be logged into Google to sign up).</p>
+</div>
+</div>
