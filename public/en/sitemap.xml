@@ -3,25 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/jsm/</loc>
-    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <loc>/guidelines/</loc>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guidelines.knit/</loc>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -37,14 +42,19 @@
   
   <url>
     <loc>/tags/education/</loc>
-    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/ethics/</loc>
-    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/jsm/</loc>
+    <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>

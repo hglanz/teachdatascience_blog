@@ -7,10 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrating ethics training into any quantitative course</title>
+      <link>/guidelines/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/guidelines/</guid>
+      <description>Today we have a guest entry authored by Rochelle Tractenberg (Georgetown University) about integrating ethics training into any quantitative course. She writes:
+This blog post focuses on encouraging instructors to use structurein order to facilitate the integration of ethics training into theircourses. In particular, five structural features are briefly introduced.
+Instructors can use professional ethicalpractice standards, not issues, to guide instruction/learningobjectives.
+This assumes (or, also encourages) the use of instructionaland/or curriculum development guidelines–all of which will placethe articulation of realistic and meaningful learning outcomes inthe primary decision making position–such that all later instructionaldecisions follow from the learning objectives.</description>
+    </item>
+    
+    <item>
+      <title>Integrating ethics training into any quantitative course</title>
+      <link>/guidelines.knit/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/guidelines.knit/</guid>
+      <description>Today we have a guest entry authored by Rochelle Tractenberg (Georgetown University) about integrating ethics training into any quantitative course. She writes:
+This blog post focuses on encouraging instructors to use structure in order to facilitate the integration of ethics training into their courses. In particular, five structural features are briefly introduced.
+Instructors can use professional ethical practice standards, not issues, to guide instruction/learning objectives.
+This assumes (or, also encourages) the use of instructional and/or curriculum development guidelines&amp;ndash;all of which will place the articulation of realistic and meaningful learning outcomes in the primary decision making position&amp;ndash;such that all later instructional decisions follow from the learning objectives.</description>
+    </item>
     
     <item>
       <title>A preview of the JSM</title>
