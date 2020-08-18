@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Wed, 12 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>communication</title>
+      <link>/tags/communication/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ethics</title>
+      <link>/tags/ethics/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>teamwork</title>
+      <link>/tags/teamwork/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/teamwork/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>education</title>
@@ -18,33 +45,6 @@
       <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ethics</title>
-      <link>/tags/ethics/</link>
-      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ethics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>communication</title>
-      <link>/tags/communication/</link>
-      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/communication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>teamwork</title>
-      <link>/tags/teamwork/</link>
-      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/teamwork/</guid>
       <description></description>
     </item>
     
