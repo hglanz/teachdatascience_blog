@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Closing 2020: A summer of ethics in data science education</title>
+      <link>/closing2020/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/closing2020/</guid>
+      <description>2020 has been a tough year, and the summer has been no different. In so many ways, we feel defeated, overwhelmed, and worried about the world around us. However, this summer’s blog entries on infusing ethics into data science education has provided a small respite for using our data science classrooms as positive forces in these turbulent times.
+Through writing the blog entries we have honed our own perspectives and gained tools for bringing ethics into the classroom.</description>
+    </item>
     
     <item>
       <title>Data Sources</title>
