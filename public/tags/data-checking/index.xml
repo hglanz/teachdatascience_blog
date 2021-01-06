@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data checking on Teach Data Science</title>
-    <link>/tags/data-checking/</link>
+    <link>https://teachdatascience.com/tags/data-checking/</link>
     <description>Recent content in data checking on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/data-checking/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/data-checking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data assertion and checks via testthat</title>
-      <link>/testthat/</link>
+      <link>https://teachdatascience.com/testthat/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/testthat/</guid>
+      <guid>https://teachdatascience.com/testthat/</guid>
       <description>Reproducibility and ReplicabilityOn May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, “New report examines reproducibility and replicability in science” article here. The report recommends “ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.”
 Reproducibility is at the core of data acumen and needs to be stressed at all levels of the data science curriculum.</description>
     </item>

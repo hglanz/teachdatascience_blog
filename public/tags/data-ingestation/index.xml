@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data ingestation on Teach Data Science</title>
-    <link>/tags/data-ingestation/</link>
+    <link>https://teachdatascience.com/tags/data-ingestation/</link>
     <description>Recent content in data ingestation on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/data-ingestation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/data-ingestation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Counting commits and peer code review</title>
-      <link>/countingcommits/</link>
+      <link>https://teachdatascience.com/countingcommits/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/countingcommits/</guid>
+      <guid>https://teachdatascience.com/countingcommits/</guid>
       <description>Today’s guest entry by Amelia McNamara (University of St. Thomas) describes a creative way that she tackled a problem in one of her upper level courses.
 One note: The JSM is underway. Looking for interesting talks? Mine’s excellent Shiny for JSM 2019 app for those of you in Denver.
 This past semester, I taught two sections of a course called Advanced Statistical Software (yes, I’m aware of the acronym. We’re changing the course title soon…).</description>
@@ -25,40 +21,40 @@ This past semester, I taught two sections of a course called Advanced Statistica
     
     <item>
       <title>Data assertion and checks via testthat</title>
-      <link>/testthat/</link>
+      <link>https://teachdatascience.com/testthat/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/testthat/</guid>
+      <guid>https://teachdatascience.com/testthat/</guid>
       <description>Reproducibility and ReplicabilityOn May 7, 2019 the National Academies of Sciences, Engineering, Medicine published, “New report examines reproducibility and replicability in science” article here. The report recommends “ways that researchers, academic institutions, journals, and funders should help strengthen rigor and transparency in order to improve the reproducibility and replicability of scientific research.”
 Reproducibility is at the core of data acumen and needs to be stressed at all levels of the data science curriculum.</description>
     </item>
     
     <item>
       <title>Creating R data packages for teaching</title>
-      <link>/datapackage/</link>
+      <link>https://teachdatascience.com/datapackage/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/datapackage/</guid>
+      <guid>https://teachdatascience.com/datapackage/</guid>
       <description>Today’s guest entry by Kelly McConville (Reed College) describes the creation of data packages in R by instructors and students.
 Sharing data with studentsThe beginning of the data analysis cycle involves ingesting data. For novice students in the first week or two of an introductory course, this can be a tricky step. If I am new to R and I can’t even load the data, then my first impressions of R are not going to be too great.</description>
     </item>
     
     <item>
       <title>Using the Common Online Data Analysis Platform (CODAP) to teach data science</title>
-      <link>/codap/</link>
+      <link>https://teachdatascience.com/codap/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/codap/</guid>
+      <guid>https://teachdatascience.com/codap/</guid>
       <description>Today we have a guest entry authored by Tim Erickson (eeps media) and Bill Finzer (Concord Consortium) about the use of the Common Online Data Analysis Platform (CODAP) to teach data science. They write:
 We’ve been designing point-and-click data software since the early 90’s. From the beginning, though, we wanted to get beyond point-and-click to a user experience of data immersion. (William Gibson’s 1984 cyberpunk novel Neuromancer and its “cyberspace” both inspired and eluded us.</description>
     </item>
     
     <item>
       <title>Ingesting Data</title>
-      <link>/ingestingdata/</link>
+      <link>https://teachdatascience.com/ingestingdata/</link>
       <pubDate>Tue, 28 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>/ingestingdata/</guid>
+      <guid>https://teachdatascience.com/ingestingdata/</guid>
       <description>Why use data from outside sources?The world is awash in data, and whatever else we teach in a data science curriculum, data must be at the center. Calls to modernize statistics and data science courses regularly point to using “real” data. The National Academies Report on Data Science for Undergraduates (see previous blog post at: https://teachdatascience.com/nasem/) reports Data Management &amp;amp; Curation as a core part of data acumen. Indeed, they recognize data provenance to be a key skill which is “important for all students in [a] data science program.</description>
     </item>
     

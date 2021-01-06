@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>teamwork on Teach Data Science</title>
-    <link>/tags/teamwork/</link>
+    <link>https://teachdatascience.com/tags/teamwork/</link>
     <description>Recent content in teamwork on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/teamwork/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/teamwork/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Sources</title>
-      <link>/datasources/</link>
+      <link>https://teachdatascience.com/datasources/</link>
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/datasources/</guid>
+      <guid>https://teachdatascience.com/datasources/</guid>
       <description>Today’s blog is a compilation of datasets and data sources to use in a data science classroom whose goals are to include relevant and timely information to consider issues of the day. We hope that the datasets below can be used in conjunction with some of this summer’s previous blogs, for example, considering
 health implications when describing COVID data,
 language around describing social justice data, and
@@ -26,29 +22,29 @@
     
     <item>
       <title>Social Justice &amp; Data Science</title>
-      <link>/socialjustice/</link>
+      <link>https://teachdatascience.com/socialjustice/</link>
       <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/socialjustice/</guid>
+      <guid>https://teachdatascience.com/socialjustice/</guid>
       <description>When we reflect on the origin of this blog, we remember that the goal was to consider new ideas about, provoke debate on, and provide examples for teaching data science. That is, we wanted the blog to help inform our own classrooms and those of our readers.
 Today’s blog entry is about bringing data science examples related to social justice into your classroom. There are myriad reasons why such examples are important for a data science classroom, but we recognize that treatment of sensitive topics should be done thoughtfully and with regard to the larger context surrounding the data.</description>
     </item>
     
     <item>
       <title>Philosophical Ethics for Data Science</title>
-      <link>/philosophy/</link>
+      <link>https://teachdatascience.com/philosophy/</link>
       <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/philosophy/</guid>
+      <guid>https://teachdatascience.com/philosophy/</guid>
       <description>In philosophy departments, classes and modules centered around data ethics are not a new thing. The ethical challenges around working with data are not fundamentally different from the ethical challenges philosophers have always faced. But putting an ethical framework around data science principles (see here and here) is indeed new for most data scientists, and for many of us, we are woefully under-prepared to teach so far outside our comfort zone.</description>
     </item>
     
     <item>
       <title>The Python Community</title>
-      <link>/pycomm/</link>
+      <link>https://teachdatascience.com/pycomm/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/pycomm/</guid>
+      <guid>https://teachdatascience.com/pycomm/</guid>
       <description>All week we’ve been celebrating using Python in data science. There is no question that Python is a fantastic and very powerful language. Additionally, it is typically thought of as clearly the most used language for doing data science. The kaggle 2017 survey reports that more than three-quarters of data scientists use Python (although they also mention that most statisticians use R).
 
 
@@ -57,10 +53,10 @@ Knowing how to use Python is an important first step to engaging with the softwa
     
     <item>
       <title>Pair Programming for Data Science and Statistics</title>
-      <link>/pairprogramming/</link>
+      <link>https://teachdatascience.com/pairprogramming/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/pairprogramming/</guid>
+      <guid>https://teachdatascience.com/pairprogramming/</guid>
       <description>Pair programming is a technique from software development where two programmers work in tandem to code. One is designated the driver, responsible for typing, while the other, often called the navigator or observer reviews the code and provides a high-level overview of the task.
 Photo credit: Esti Alvarez
 Pair programming has been thought to lead to better code, more enjoyable coding, andhigher productivity, with some research findings supporting those conclusions (see some of the references at the end of this entry).</description>

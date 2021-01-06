@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ethics on Teach Data Science</title>
-    <link>/tags/ethics/</link>
+    <link>https://teachdatascience.com/tags/ethics/</link>
     <description>Recent content in ethics on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Sources</title>
-      <link>/datasources/</link>
+      <link>https://teachdatascience.com/datasources/</link>
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/datasources/</guid>
+      <guid>https://teachdatascience.com/datasources/</guid>
       <description>Today’s blog is a compilation of datasets and data sources to use in a data science classroom whose goals are to include relevant and timely information to consider issues of the day. We hope that the datasets below can be used in conjunction with some of this summer’s previous blogs, for example, considering
 health implications when describing COVID data,
 language around describing social justice data, and
@@ -26,10 +22,10 @@
     
     <item>
       <title>Integrating ethics training into any quantitative course</title>
-      <link>/guidelines/</link>
+      <link>https://teachdatascience.com/guidelines/</link>
       <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/guidelines/</guid>
+      <guid>https://teachdatascience.com/guidelines/</guid>
       <description>Today we have a guest entry authored by Rochelle Tractenberg (Georgetown University) about integrating ethics training into any quantitative course. She writes:
 This blog post focuses on encouraging instructors to use structurein order to facilitate the integration of ethics training into theircourses. In particular, five structural features are briefly introduced.
 Instructors can use professional ethicalpractice standards, not issues, to guide instruction/learningobjectives.
@@ -38,10 +34,10 @@ This assumes (or, also encourages) the use of instructionaland/or curriculum de
     
     <item>
       <title>A preview of the JSM</title>
-      <link>/jsm/</link>
+      <link>https://teachdatascience.com/jsm/</link>
       <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/jsm/</guid>
+      <guid>https://teachdatascience.com/jsm/</guid>
       <description>The (virtual) JSM 2020 kicks off this weekend, and as always, there are some great events on the schedule.In this entry, we begin by enumerating some sessions that are relevant to data ethics, then close with some other sessions that we suspect may be of interest to those teaching statistics and data science courses.
 Want to learn more? Check out the online program.
 Ethics-related sessionsEthical Academic Collaboration from the Outside In: Invited Poster (Sunday, August 2nd 12:30-3:30pm)Weapons of Math Destruction: panel discussion (Monday, August 3rd 10:00am-11:50pm)Doing Social Justice: Turning Talk into Action in a Statistics Service-Learning Course: Topic Contributed talk (Monday, August 3rd: 1:00-2:50pm)Assessing Racial and Ethnic Fairness of a Suicide Risk Prediction Model: Invited talk (Tuesday, August 4th 10:00-11:50am)Detecting Undercompensated Groups in Plan Payment Risk Adjustment: Invited talk (Tuesday, August 4th 10:00-11:50am)Ethics and Data Science: Roundtable session (Tuesday, August 4th 12:00-1:00pm)Experimental Evaluation of Computer-Assisted Human Decision Making: Application to Pretrial Risk Assessment Instrument: Invited talk (Tuesday, August 4th 1:00-2:50pm)Privatization of Data and Data Privacy: Local Data Flows: Topic Contributed talk (Tuesday, August 4th 1:00-2:50pm)Cocreating and Recreating an Inclusive Statistical and Data Sciences Program at Smith College: Topic Contributed talk (Tuesday, August 4th 1:00-2:50 PM)Assessing Risk Assessment in San Francisco: Invited talk (Wednesday, August 5th 10:00-11:50am)Teaching Ethics to Econometrics Students: Contributed talk (Wednesday, August 5th 10:00am-2:00pm)The Need for Interpretable and Fair Algorithms in Health Care and Policy: Invited talk (Wednesday, August 5th 1:00-2:50pm)Teaching with Data for the Public Good: Inside-Out Statistics: Teaching Evidence-Based Reasoning in Introductory Courses,Who’s Underrepresented?</description>
@@ -49,67 +45,67 @@ Ethics-related sessionsEthical Academic Collaboration from the Outside In: Inv
     
     <item>
       <title>Social Justice &amp; Data Science</title>
-      <link>/socialjustice/</link>
+      <link>https://teachdatascience.com/socialjustice/</link>
       <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/socialjustice/</guid>
+      <guid>https://teachdatascience.com/socialjustice/</guid>
       <description>When we reflect on the origin of this blog, we remember that the goal was to consider new ideas about, provoke debate on, and provide examples for teaching data science. That is, we wanted the blog to help inform our own classrooms and those of our readers.
 Today’s blog entry is about bringing data science examples related to social justice into your classroom. There are myriad reasons why such examples are important for a data science classroom, but we recognize that treatment of sensitive topics should be done thoughtfully and with regard to the larger context surrounding the data.</description>
     </item>
     
     <item>
       <title>Engaging data science students with COVID-19 data</title>
-      <link>/covid/</link>
+      <link>https://teachdatascience.com/covid/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/covid/</guid>
+      <guid>https://teachdatascience.com/covid/</guid>
       <description>COVID-19 Case StudyToday we have a guest entry authored by Maria Tackett (Duke University) andMine Çetinkaya-Rundel (University of Edinburgh, RStudio, and Duke) about engaging data science students with COVID-19 data. They write:
 Given the prevalence of data and statistics in many corners of society, it is not hard to find real-world examples that can be used in the classroom. Using real and relevant data can help show students how they apply what they’ve learned outside of the classroom and it helps students connect what they’re learning to what is happening on the news, online, and conversations they’re having with their peers.</description>
     </item>
     
     <item>
       <title>Philosophical Ethics for Data Science</title>
-      <link>/philosophy/</link>
+      <link>https://teachdatascience.com/philosophy/</link>
       <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/philosophy/</guid>
+      <guid>https://teachdatascience.com/philosophy/</guid>
       <description>In philosophy departments, classes and modules centered around data ethics are not a new thing. The ethical challenges around working with data are not fundamentally different from the ethical challenges philosophers have always faced. But putting an ethical framework around data science principles (see here and here) is indeed new for most data scientists, and for many of us, we are woefully under-prepared to teach so far outside our comfort zone.</description>
     </item>
     
     <item>
       <title>Hippocratic Oath</title>
-      <link>/oath/</link>
+      <link>https://teachdatascience.com/oath/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/oath/</guid>
+      <guid>https://teachdatascience.com/oath/</guid>
       <description>An oath is a solemn promise. While somewhat old-school, oaths exist in many professions. Wikipedia describes such an oath for the Ritual of the Calling of an Engineer:
 The Ritual of the Calling of an Engineer has been instituted with the simple end of directing the young engineer towards a consciousness of his profession and its significance, and indicating to the older engineer his responsibilities in receiving, welcoming and supporting the young engineers in their beginnings.</description>
     </item>
     
     <item>
       <title>Data Feminism</title>
-      <link>/datafem/</link>
+      <link>https://teachdatascience.com/datafem/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/datafem/</guid>
+      <guid>https://teachdatascience.com/datafem/</guid>
       <description>Earlier this week, we blogged about using books that are full of fantastic examples to generate discussion questions for the classroom and for your own engagement in data science ethics. The idea for the entry came from the Data Feminism Reading Group which met for nine weeks starting in April 17, 2020 to discuss Data Feminism by Catherine D’Ignazio and Lauren Klein. Each week the authors presented a few ideas from a single chapter, and then they took questions from the group for discussion.</description>
     </item>
     
     <item>
       <title>Bookclub on Data Science Ethics</title>
-      <link>/bookclub/</link>
+      <link>https://teachdatascience.com/bookclub/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/bookclub/</guid>
+      <guid>https://teachdatascience.com/bookclub/</guid>
       <description>It is human nature to be intrigued and motivated by case studies and real examples to which we feel a connection. Certainly, the plethora of books and articles in the popular data science literature are likely what motivated many of us to choose to become data scientists and statisticians. Wanting to know more or to know why encourages us to dive into the theory, and novel teaching or research projects can develop.</description>
     </item>
     
     <item>
       <title>Data Privacy</title>
-      <link>/privacy/</link>
+      <link>https://teachdatascience.com/privacy/</link>
       <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/privacy/</guid>
+      <guid>https://teachdatascience.com/privacy/</guid>
       <description>Data PrivacyData privacy is an increasingly important problem.The flood of data available throughsensors, smartphones, and our interactions on the internet have great potential to improve our lives andaddress long-standing issues and problems.Yet they also raise critical questions about misuse of such data.
 What is data privacy? And how is it different from anonymous or secure data?
 Data privacy is concerned with three main components:</description>
@@ -117,20 +113,20 @@ Data privacy is concerned with three main components:</description>
     
     <item>
       <title>Ethical Data Viz</title>
-      <link>/ethicaldataviz/</link>
+      <link>https://teachdatascience.com/ethicaldataviz/</link>
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/ethicaldataviz/</guid>
+      <guid>https://teachdatascience.com/ethicaldataviz/</guid>
       <description>Arguably, data have the broadest impact in engaging readers, changing minds, and determining policy when they are presented graphically. It is the potential for enormous impact that requires a data scientist to think most carefully about how their visualizations are created and then subsequently consumed.
 Many of us already teach data visualization in our statistics and data science classes. Therefore, introducing an ethical framework and a theory on valid graphics will be a natural fit into many classes.</description>
     </item>
     
     <item>
       <title>Re-Introduction: Ethics in Data Science Education</title>
-      <link>/reintro/</link>
+      <link>https://teachdatascience.com/reintro/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/reintro/</guid>
+      <guid>https://teachdatascience.com/reintro/</guid>
       <description>Why more Data Science Education blogging?Last summer we wrote a series of blog entries designed to start converstations around teaching data science, Teach Data Science. We covered topics such as data science software, data ingestation, data technologies, data wrangling, visualization &amp;amp; exploration, communication, and key reports and findings on data science.
 One key element that was lacking on our 2019 blog was a discussion about and a commitment to teaching the ethical aspects of data science.</description>
     </item>

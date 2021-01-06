@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google cloud platform on Teach Data Science</title>
-    <link>/tags/google-cloud-platform/</link>
+    <link>https://teachdatascience.com/tags/google-cloud-platform/</link>
     <description>Recent content in Google cloud platform on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/google-cloud-platform/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/google-cloud-platform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>More cloud computing: data science is not done on a laptop</title>
-      <link>/cloud2/</link>
+      <link>https://teachdatascience.com/cloud2/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/cloud2/</guid>
+      <guid>https://teachdatascience.com/cloud2/</guid>
       <description>Previous blog entries have discussed cloud based servers (RStudio Server and JupyterHub) and parallel/grid/cluster computing. Today we will expand upon these ideas to discuss at a high level how data science students can leverage cloud based tools to undertake their analyses in a flexible manner.
 Our discussion is motivated by several recent papers and blog posts that describe how complex, real-world data science computation can be structured in ways that would not have been feasible in past years without herculean efforts.</description>
     </item>

@@ -1,33 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>modeling on Teach Data Science</title>
-    <link>/tags/modeling/</link>
+    <link>https://teachdatascience.com/tags/modeling/</link>
     <description>Recent content in modeling on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/modeling/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>One model to rule them all</title>
-      <link>/onemodel/</link>
+      <link>https://teachdatascience.com/onemodel/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/onemodel/</guid>
+      <guid>https://teachdatascience.com/onemodel/</guid>
       <description>As we near the end of our summer posts, we’ve started to think more broadly about statistics as well as data science courses. Today’s post considers a broad question relevant for many courses: how can we teach statistical thinking without having to resort to introducing a profusion of tests?
 Jonas Kristoffer Lindeløv proposed an elegant approach using the idea that common statistical tests are linear models.</description>
     </item>
     
     <item>
       <title>Less Volume More Creativity in R</title>
-      <link>/mosaic/</link>
+      <link>https://teachdatascience.com/mosaic/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/mosaic/</guid>
+      <guid>https://teachdatascience.com/mosaic/</guid>
       <description>In 2016, GAISE enunciated the importance of multivariate thinking and technology when teaching introductory statistics and data science courses. A big challenge is how to do this using R and RStudio without running into cognitive overload with our students.
 The mosaic package was created by Randall Pruim, Danny Kaplan, and Nicholas Horton with the goal of introducing a Less Volume, More Creativity approach to introductory statistics that could simplify the use of technology.</description>
     </item>

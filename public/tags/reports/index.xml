@@ -1,32 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reports on Teach Data Science</title>
-    <link>/tags/reports/</link>
+    <link>https://teachdatascience.com/tags/reports/</link>
     <description>Recent content in reports on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/reports/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/reports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Undergraduate Curriculum Guidelines</title>
-      <link>/pcmi/</link>
+      <link>https://teachdatascience.com/pcmi/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/pcmi/</guid>
+      <guid>https://teachdatascience.com/pcmi/</guid>
       <description>Throughout the summer 2019 blog series, we have given teaching tips, best data science practices, links to compilations of papers in data science and in teaching data science, and ways to participate in the larger data science community. That is, for anyone already working in a data science community (e.g., in a job or an academic institution) or for anyone doing data science for fun, we have provided myriad rabbit holes in which to get lost for your entire summer.</description>
     </item>
     
     <item>
       <title>Practical Data Science: an introduction to the PeerJ collection</title>
-      <link>/peerj/</link>
+      <link>https://teachdatascience.com/peerj/</link>
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/peerj/</guid>
+      <guid>https://teachdatascience.com/peerj/</guid>
       <description>In 2017, Jenny Bryan and Hadley Wickham published the “Practical Data Science for Stats” PeerJ collection. (The papers were also published in a special issue of The American Statistician.)
 The “Practical Data Science for Stats” Collection contains a series of short papers focused on the practical side of data science workflows and statistical analysis.
 There are many aspects of day-to-day data analytical work that are almost absent from the conventional statistics literature and curriculum.</description>
@@ -34,30 +30,30 @@ There are many aspects of day-to-day data analytical work that are almost absent
     
     <item>
       <title>Roundtable on Data Science Post Secondary Education</title>
-      <link>/dsert/</link>
+      <link>https://teachdatascience.com/dsert/</link>
       <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/dsert/</guid>
+      <guid>https://teachdatascience.com/dsert/</guid>
       <description>The National Academies of Science, Engineering, and MedicineRoundtable on Data Science Postsecondary Education was convened in 2016 to work to develop a coherent vision for the emerging field of data science. The Roundtable, which consists of representatives from industry, government, and academia meets quarterly for a day to discuss best practices, ways to support the growing community, and approaches to help advance data science education.
 Full information about the roundtable including narrative summaries of past meetings can be found at https://nas.</description>
     </item>
     
     <item>
       <title>Guidelines for Assessment and Instruction in Statistics Education</title>
-      <link>/gaise/</link>
+      <link>https://teachdatascience.com/gaise/</link>
       <pubDate>Wed, 05 Jun 2019 21:13:14 -0500</pubDate>
       
-      <guid>/gaise/</guid>
+      <guid>https://teachdatascience.com/gaise/</guid>
       <description>The American Statistical Association has placeda priority on how best to teach statistics and data science. The Guidelines for Assessment and Instruction in Statistics Education (GAISE) reports have served a key role in guiding instructors and institutions in their pedagogical choices.
 Two GAISE reports have been written: one focused on statistics at the PreK-12 level and another, revised in 2016, focused on college level courses. In this GAISE blog entry we focus on the college report.</description>
     </item>
     
     <item>
       <title>Data Science for Undergraduates</title>
-      <link>/nasem/</link>
+      <link>https://teachdatascience.com/nasem/</link>
       <pubDate>Mon, 27 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>/nasem/</guid>
+      <guid>https://teachdatascience.com/nasem/</guid>
       <description>Data Science for UndergraduatesAs the first entry in this blog, we thought it would be appropriate to begin with the 2018 consensus report “Data Science for Undergraduates: Opportunities and Options”. Nick was a co-author of this National Academies Report and it provides an accessible overview of undergraduate data science courses and programs. Co-chairs of the committee were Laura Haas (University of Massachusetts/Amherst, https://www.cics.umass.edu/faculty/directory/haas-laura) and Al Hero (University of Michigan, https://hero.</description>
     </item>
     

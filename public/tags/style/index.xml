@@ -1,43 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>style on Teach Data Science</title>
-    <link>/tags/style/</link>
+    <link>https://teachdatascience.com/tags/style/</link>
     <description>Recent content in style on Teach Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>(c) 2019 Copyright Teach Data Science</copyright>
-    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/style/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://teachdatascience.com/tags/style/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Teaching refactoring to improve code</title>
-      <link>/refactoring/</link>
+      <link>https://teachdatascience.com/refactoring/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/refactoring/</guid>
+      <guid>https://teachdatascience.com/refactoring/</guid>
       <description>A previous entry discussed the importance of coding style and “code smell” to help data analyses be clearer and more comprehensible. In this entry we will extend that discussion to describe ways of teaching code refactoring.
 Wikipedia defines code refactoring as “the process of restructuring existing computer code—changing the factoring—without changing its external behavior. Refactoring is intended to improve nonfunctional attributes of the software. Advantages include improved code readability and reduced complexity; these can improve source-code maintainability and create a more expressive internal architecture or object model to improve extensibility.</description>
     </item>
     
     <item>
       <title>Five quick tips for coding in the classroom</title>
-      <link>/teaching_programming_tips/</link>
+      <link>https://teachdatascience.com/teaching_programming_tips/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/teaching_programming_tips/</guid>
+      <guid>https://teachdatascience.com/teaching_programming_tips/</guid>
       <description>IntroHello!It’s my distinct pleasure to be guest-blogging for you today! My name is Kelly Bodwin and I’m an Assistant Professor of Statistics at Cal Poly, San Luis Obispo. In my two years at Cal Poly I have taught
 Stat 218 - An introductory course for non-majorsStat 419 - An upper-level course in multivariate analysisStat 331 - Our department’s introductory R classIn all of these courses, I make extensive use of R.</description>
     </item>
     
     <item>
       <title>Style Guides for Coding</title>
-      <link>/styleguide/</link>
+      <link>https://teachdatascience.com/styleguide/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/styleguide/</guid>
+      <guid>https://teachdatascience.com/styleguide/</guid>
       <description>The Importance of Good Coding StyleTo begin with another quote from Hadley Wickham: “Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.” In this way, coding style is very much an example of a negative virtue. You are much more likely to be told if you have a bad coding style than you are if you have a good coding style.</description>
     </item>
     

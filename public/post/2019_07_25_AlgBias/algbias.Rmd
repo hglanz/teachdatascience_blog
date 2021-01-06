@@ -118,7 +118,7 @@ A number of recent books describe how math and algorithms can be weaponized to a
 
 There are also good curricular materials that can help you incorporate algorithmic bias and ethics into your own classroom.  Check them out for additional resources, out of class experiences (e.g., homework or research projects), and connections between data science topics and real world experiences. 
 
-- Baumer, Kaplan, and Horton's **Modern Data Science in R** has a free [Chapter on data ethics](https://mdsr-book.github.io/excerpts/mdsr-ethics.pdf)
+- Baumer, Kaplan, and Horton's **Modern Data Science in R** has a free [Chapter on data ethics](https://beanumber.github.io/mdsr2e/ch-ethics.html)
 - Barocas, Hardt, and Narayanan have detailed *formal non-discrimination criteria* in their on-line textbook [Fairness and Machine Learning](https://fairmlbook.org/pdf/fairmlbook.pdf)
 - Miles Ott posted his slides from Symposium on Data Science and Statistics 2019 [Incorporating Data Ethics in a Statistics / Data Science Major](http://www.science.smith.edu/~mott/SDSS2019.html#1)
 - Fantastic discussion of biased algorithm with very telling unbiased (!) simulation [Algorithmic Unfairness Without Any Bias Baked In](http://aaronsadventures.blogspot.com/2019/01/discussion-of-unfairness-in-machine.html)
